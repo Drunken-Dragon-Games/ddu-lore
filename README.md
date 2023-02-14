@@ -16,9 +16,9 @@ This repo allows the creation of alternate timelines by creating branches that f
 
 The use of a Git repository to manage the lore of The Drunken Dragon Universe ensures that the universe remains consistent and coherent. The use of versioning and a hierarchical structure allows for the easy addition of new facts and subtopics while ensuring that the universe remains consistent over time.
 
-## Lore Record Definition Files
+## Lore Definition Files
 
-We keep track of the lore through the Lore Record Definition Files. These are YAML files with a header and a recursive list of facts from The Drunken Dragon Universe.
+We keep track of the lore through the `Lore Definition Files`. These are YAML files with a header and a recursive list of facts from The Drunken Dragon Universe.
 
 ### Base Fact Records
 
