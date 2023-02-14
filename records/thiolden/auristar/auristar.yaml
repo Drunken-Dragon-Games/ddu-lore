@@ -1,84 +1,18 @@
-about:
-  topic: The Drunken Dragon Universe
-  facts:
-  - Magic is ruled by 2 forces, Arcane fields (physical) and Aether currents (abstract).
-  - Valia is a continent in the universe.
+document: fact-records/v1
+topic: The City-state of Auristar
+context: 
+- Dates use the Varian Imperial System of meassuring years, where year 0 is the founding of the Varian Empire
+subtopics: 
 
----
-about:
-  topic: Thiolden
-  facts:
-  - Thiolden is a country in Valia.
-  - Norsund is the most common language.
-  - Thiolden means "land of the brave" in Norsund.
-  - Thiolnay is the demonym for Thiolden.
-  - Thiolden is known for its many dangers from evolved beasts, new monsters, undead and demons.
-  - Thiolden is inhabited by many conscious fantasy races.
-
----
-about:
-  topic: Thiolden's Geography
-  facts:
-  - Thiolden is divided by mountains and a river from other countries.
-  - The most common biomes are dark pine forests, tumulus plains, wraith lands, mountains, and enchanted forests.
-  - Tumulus plains have underground dungeons with hidden magic, treasures, and dangers.
-  - Wraith lands are regions plagued with the undead and unholy beings.
-  - Thiolden is inhabited by rational and non-rational beings, including the Vilnayan towns, Auristar, Karhak'Modan, Ik'nal'tar, Runmyren, and demons/undead factions.
-
----
-about:
-  topic: The Vilnayan
-  facts:
-  - Vilnayan is the name for independent villages, towns and small cities in Thiolden.
-  - Vilnayan architecture focuses on defense and reflects their culture.
-  - Vilnay is the demonym for Vilnayan.
-  - Most Vilnayan towns have a night guard (Nimkjold) for defense.
-  - Vilnayan towns trade rare resources from magical beasts and the land for wealth.
-
----
-about:
-  topic: Vilnayan Culture
-  facts:
-  - Vilnayan towns are diverse and made up of many races.
-  - Defense and combat skills are highly valued in Vilnayan culture.
-
----
-about:
-  topic: Vilnayan Professions
-  facts:
-  - Vilkyren are "free swords" who hunt dangerous beasts and monsters, bound by a code of chivalry.
-  - Sundwanderen are bards who write songs about their adventures and serve as important sources of communication.
-  - Gatherers, crafters, and traders gather, craft, and trade magical materials and weapons.
-  - Night guards (Nimkjold) serve as the first line of defense for the Vilnayan.
-
----
-about:
-  topic: The Vilkyren
-  facts:
-  - > 
-    The Vilkyren possess a unique ability known as the "Visions of the Hunt," which allows them to see the aura 
-    of magic-infused creatures, as well as the trails of their movements. 
-  - They tipically have exceptional combat skills, martial or magical
-  - Highly sought after by the towns and cities of Thiolden for their services as monster hunters. 
-  - > 
-    The Vilkyren are proud of their abilities and often decorate their weapons and armor with the auras of the 
-    creatures they have defeated, creating a visual representation of their hunting prowess.
-
----
-about:
-  topic: Auristar
+- topic: About Auristar
   facts:
   - Aurinay is the demonym for Auristar.
   - Auristar is the most successful and developed city in Thiolden.
   - Auristar is a beacon of hope in Thiolden with a rich history, powerful religion, strong government, and thriving economy.
   - Auristar is the only faction with political influence outside Thiolden and serves as a gate to access Thiolden's resources.
 
-
-
-# NEEDS REVIEW
----
-about: 
-  topic: Auristar Background
+- topic: Background
+  needsReview: true
   facts:
   - After 37 years of campaign in Arbury and Exeter, Emperor Rechtar Vaire arrived in Thiolden
   - He brought a large army to Oudeheim, but the city held its own for 13 years
@@ -87,9 +21,8 @@ about:
   - Rechtar was seen as a tyrant and a demigod
   - A year after his death, a new star was seen in the sky, changing the history of Thiolden
 
----
-about:
-  topic: Foundation of Auristar
+- topic: Foundation
+  needsReview: true
   facts:
   - 53 years after the cataclysm, the survivors founded Auristar at Rechtar's Regret
   - The group traveled with the light of the celestial body and with the protection of their new gods
@@ -97,17 +30,17 @@ about:
   - The gem provided resources to build the city and improved resistance, strength, and durability of objects and living beings
   - The city is still prohibited from using runic magic
 
----
-about:
-  topic: 7 Lights of Auristar
+
+- topic: 7 Lights of Auristar
+  needsReview: true
   facts:
   - The 7 Lights serve as advisors to the 2 rulers of Auristar
   - They are chosen for their great love for the city and their skills in various disciplines
   - They are tasked with making Auristar great
 
----
-about:
-  topic: About the city of Auristar
+
+- topic: About the city
+  needsReview: true
   facts:
   - Auristar is a city-state dedicated to commerce
   - It is located in the center of Thiolden on Midelmar mountain and has a population of 523,208
@@ -121,9 +54,9 @@ about:
     to enlightenment. Access to the library's restricted section is only granted to scholars and 
     researchers with special permission from the 7 Lights.
 
----
-about:
-  topic: Religion in Auristar
+
+- topic: Religion
+  needsReview: true
   facts:
   - Auristar's religion is closely linked to the stars and celestial bodies of the night sky
   - The night sky is a plane reserved for their gods and mortals who transcend
@@ -132,9 +65,9 @@ about:
   - Two main deities, Ur and Nett, represent the aggrandizement and fulfillment of living beings
   - Constellations are the abode of individuals who have triumphed in life in various disciplines
 
----
-about:
-  topic: Politics and Economy of Auristar
+
+- topic: Politics and Economy
+  needsReview: true
   facts:
   - Auristar has a system of canals and roads, transportation is by boats and carriages
   - The city is divided into 5 rings delimited by the great wall, the Kjoldmur
@@ -144,34 +77,34 @@ about:
   - The fourth ring is dedicated to commerce, with large gardens, crops, and buildings with shops of all kinds
   - The fifth ring is the entrance to the city and houses the barracks and legal operations
 
----
-about:
-  topic: The Starifjolden Caverns
+
+- topic: The Starifjolden Caverns
+  needsReview: true
   facts:
   - Historical context
   - Role in the city
   - Dangers (Flora and fauna)
   - Habitants
 
----
-about:
-  topic: Tyr
+
+- topic: Tyr
+  needsReview: true
   facts:
   - Leads the Norstarkjold guard
   - Personality
   - Responsibilities as a counselor and in charge of maintaining order in the city
   - Goals and aspirations
 
----
-about:
-  topic: Unions
+
+- topic: Unions
+  needsReview: true
   facts:
   - Role in the economy and security of Auristar
   - The guilds of Auristar
   - Materials come from Midelmar Mountain
 
----
-about:
-  topic: Adventurers
+
+- topic: Adventurers
+  needsReview: true
   facts:
   - Protect Auristar through

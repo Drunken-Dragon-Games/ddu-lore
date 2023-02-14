@@ -1,0 +1,18 @@
+document: fact-records/v1
+topic: The Varian Empire
+context: 
+- Dates use the Varian Imperial System of meassuring years, where year 0 is the founding of the Varian Empire
+subtopics:
+- topic: The Varian Empire
+  facts:
+  - The Varian Empire was the most important historic event of the last 300 years.
+  - Currently split.
+  - Located at the north-western part of Valinor, the northern part of Valia.
+  - Starts at the Kingdom of Reinovaire.
+  - Founded on 0 a.v.e led by a human called Rechtar Vaire.
+
+- topic: Rechtar Vaire
+  facts:
+  - Rechtar was the emperor of the Varian Empire.
+  - Deseased on 210 a.v.e
+  - Lived 253 years.
