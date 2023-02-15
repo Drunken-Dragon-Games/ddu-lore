@@ -26,7 +26,7 @@ To document the true facts of The Drunken Dragon Universe, we use the following 
 
 ```yaml
 document: fact-records/v1
-topic: <tapic_to_describe>
+topic: <topic_to_describe>
 context: 
 - <context_for_reader>
 - <context_for_reader>
