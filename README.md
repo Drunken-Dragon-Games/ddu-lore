@@ -29,7 +29,7 @@ To document the true facts of The Drunken Dragon Universe, we use the following 
 ```yaml
 document: fact-records/v1
 topic: <topic_to_describe>
-contributor: <author_creator_discord_name_goes_here>
+contributor: <optional_author_creator_discord_name_goes_here>
 context: 
 - <context_for_reader>
 - <context_for_reader>
@@ -39,12 +39,12 @@ facts:
 subtopics:
 
 - topic: <derived_topic>
-  contributor: <author_creator_discord_name_goes_here>
+  contributor: <optional_author_creator_discord_name_goes_here>
   facts:
     - <related_true_fact>
     - <related_true_fact>
 - topic: <derived_topic>
-  contributor: <author_creator_discord_name_goes_here>
+  contributor: <optional_author_creator_discord_name_goes_here>
   facts:
     - <related_true_fact>
     - <related_true_fact>
@@ -69,14 +69,14 @@ subtopics:
 ```yaml
 document: fact-records/v1
 topic: The Drunken Dragon Universe
-contributor: Vledic#4102
+contributor: Vledic#0001
 context: 
 - Dates use the Varian Imperial System of meassuring years, where year 0 is the founding of the Varian Empire
 facts:
 - Gods exist and are morally grey.
 subtopics:
 - topic: The World
-  contributor: Vledic#4102
+  contributor: Vledic#0001
   facts:
   - Valia is a continent in the universe.
 - import: ./magic-rules
