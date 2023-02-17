@@ -1,0 +1,12 @@
+document: bestiary-record/v1
+topic: The Compendium of Beasts in Thiolden Region
+context: 
+- Description of various animals and even rocks in all of Thiolden
+subtopics:
+
+- topic: Thiolden's Beasts
+  facts:
+  - Since the founding of the Varian Imperial System, adventurers have been documenting evolved beasts, new monsters, undead and demons they encountered hoping to help others following their footsteps.
+
+- import: ./sprites
+- import: ./slimes
