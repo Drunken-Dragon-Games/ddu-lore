@@ -12,6 +12,8 @@ For any product derived from The Drunken Dragon Franchise to become **official**
 
 This repo allows the creation of alternate timelines by creating branches that follow the same rules as described earlier. The git system also helps in keeping a record of where the timeline branches from, as it maps directly to the commit history.
 
+If GitHub or the process is too daunting for you but you still want to contribute your ideas, reach out to fellow Innkeeper or Lorekeeper in [Drunken Dragon Discord](https://discord.gg/drunkendragon) and they'll assist you to the best of their abilities. We promise not to bite.
+
 ## Git Repository Usage
 
 The use of a Git repository to manage the lore of The Drunken Dragon Universe ensures that the universe remains consistent and coherent. The use of versioning and a hierarchical structure allows for the easy addition of new facts and subtopics while ensuring that the universe remains consistent over time.
@@ -27,6 +29,7 @@ To document the true facts of The Drunken Dragon Universe, we use the following 
 ```yaml
 document: fact-records/v1
 topic: <topic_to_describe>
+contributor: <author_creator_discord_name_goes_here>
 context: 
 - <context_for_reader>
 - <context_for_reader>
@@ -36,10 +39,12 @@ facts:
 subtopics:
 
 - topic: <derived_topic>
+  contributor: <author_creator_discord_name_goes_here>
   facts:
     - <related_true_fact>
     - <related_true_fact>
 - topic: <derived_topic>
+  contributor: <author_creator_discord_name_goes_here>
   facts:
     - <related_true_fact>
     - <related_true_fact>
@@ -64,12 +69,14 @@ subtopics:
 ```yaml
 document: fact-records/v1
 topic: The Drunken Dragon Universe
+contributor: Vledic#4102
 context: 
 - Dates use the Varian Imperial System of meassuring years, where year 0 is the founding of the Varian Empire
 facts:
 - Gods exist and are morally grey.
 subtopics:
 - topic: The World
+  contributor: Vledic#4102
   facts:
   - Valia is a continent in the universe.
 - import: ./magic-rules

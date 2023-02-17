@@ -1,10 +1,12 @@
 document: fact-record/v1
 topic: The Thiolden Region
+contributor: Vledic#4102
 context: 
 - Dates use the Varian Imperial System of meassuring years, where year 0 is the founding of the Varian Empire
 subtopics:
 
 - topic: Thiolden
+  contributor: Vledic#4102
   facts:
   - Thiolden is a country in Valia.
   - Norsund is the most common language.
@@ -14,6 +16,7 @@ subtopics:
   - Thiolden is inhabited by many conscious fantasy races.
 
 - topic: Thiolden's Geography
+  contributor: Vledic#4102
   facts:
   - Thiolden is divided by mountains and a river from other countries.
   - The most common biomes are dark pine forests, tumulus plains, wraith lands, mountains, and enchanted forests.

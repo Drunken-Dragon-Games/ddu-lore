@@ -1,10 +1,12 @@
 document: fact-record/v1
 topic: The City-state of Auristar
+contributor: Vledic#4102
 context: 
 - Dates use the Varian Imperial System of meassuring years, where year 0 is the founding of the Varian Empire
 subtopics: 
 
 - topic: About Auristar
+  contributor: Vledic#4102
   facts:
   - Aurinay is the demonym for Auristar.
   - Auristar is the most successful and developed city in Thiolden.
@@ -12,6 +14,7 @@ subtopics:
   - Auristar is the only faction with political influence outside Thiolden and serves as a gate to access Thiolden's resources.
 
 - topic: Background
+  contributor: Vledic#4102
   needsReview: true
   facts:
   - After 37 years of campaign in Arbury and Exeter, Emperor Rechtar Vaire arrived in Thiolden
@@ -22,6 +25,7 @@ subtopics:
   - A year after his death, a new star was seen in the sky, changing the history of Thiolden
 
 - topic: Foundation
+  contributor: Vledic#4102
   needsReview: true
   facts:
   - 53 years after the cataclysm, the survivors founded Auristar at Rechtar's Regret
@@ -32,6 +36,7 @@ subtopics:
 
 
 - topic: 7 Lights of Auristar
+  contributor: Vledic#4102
   needsReview: true
   facts:
   - The 7 Lights serve as advisors to the 2 rulers of Auristar
@@ -40,6 +45,7 @@ subtopics:
 
 
 - topic: About the city
+  contributor: Vledic#4102
   needsReview: true
   facts:
   - Auristar is a city-state dedicated to commerce
@@ -56,6 +62,7 @@ subtopics:
 
 
 - topic: Religion
+  contributor: Vledic#4102
   needsReview: true
   facts:
   - Auristar's religion is closely linked to the stars and celestial bodies of the night sky
@@ -67,6 +74,7 @@ subtopics:
 
 
 - topic: Politics and Economy
+  contributor: Vledic#4102
   needsReview: true
   facts:
   - Auristar has a system of canals and roads, transportation is by boats and carriages
@@ -79,6 +87,7 @@ subtopics:
 
 
 - topic: The Starifjolden Caverns
+  contributor: Vledic#4102
   needsReview: true
   facts:
   - Historical context
@@ -88,6 +97,7 @@ subtopics:
 
 
 - topic: Tyr
+  contributor: Vledic#4102
   needsReview: true
   facts:
   - Leads the Norstarkjold guard
@@ -97,6 +107,7 @@ subtopics:
 
 
 - topic: Unions
+  contributor: Vledic#4102
   needsReview: true
   facts:
   - Role in the economy and security of Auristar
@@ -105,6 +116,8 @@ subtopics:
 
 
 - topic: Adventurers
+  contributor: Vledic#4102
   needsReview: true
   facts:
   - Protect Auristar through
+  
