@@ -1,13 +1,16 @@
 document: fact-record/v1
 topic: The Drunken Dragon Universe
+contributor: Vledic#4102
 context: 
 - Dates use the Varian Imperial System of meassuring years, where year 0 is the founding of the Varian Empire
+
 subtopics:
 - topic: The Drunken Dragon Universe
+  contributor: Vledic#4102
   facts:
   - Valia is a continent in the universe.
+
 - import: ./magic-rules
 - import: ./varian-empire
 - import: ./thiolden/thiolden
 - import: ./bestiary/bestiary
-
