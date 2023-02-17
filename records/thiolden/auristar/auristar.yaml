@@ -1,12 +1,12 @@
 document: fact-record/v1
 topic: The City-state of Auristar
-contributor: Vledic#4102
+contributor: Vledic#0001
 context: 
 - Dates use the Varian Imperial System of meassuring years, where year 0 is the founding of the Varian Empire
 subtopics: 
 
 - topic: About Auristar
-  contributor: Vledic#4102
+  contributor: Vledic#0001
   facts:
   - Aurinay is the demonym for Auristar.
   - Auristar is the most successful and developed city in Thiolden.
@@ -14,7 +14,7 @@ subtopics:
   - Auristar is the only faction with political influence outside Thiolden and serves as a gate to access Thiolden's resources.
 
 - topic: Background
-  contributor: Vledic#4102
+  contributor: Vledic#0001
   needsReview: true
   facts:
   - After 37 years of campaign in Arbury and Exeter, Emperor Rechtar Vaire arrived in Thiolden
@@ -25,7 +25,7 @@ subtopics:
   - A year after his death, a new star was seen in the sky, changing the history of Thiolden
 
 - topic: Foundation
-  contributor: Vledic#4102
+  contributor: Vledic#0001
   needsReview: true
   facts:
   - 53 years after the cataclysm, the survivors founded Auristar at Rechtar's Regret
@@ -34,18 +34,16 @@ subtopics:
   - The gem provided resources to build the city and improved resistance, strength, and durability of objects and living beings
   - The city is still prohibited from using runic magic
 
-
 - topic: 7 Lights of Auristar
-  contributor: Vledic#4102
+  contributor: Vledic#0001
   needsReview: true
   facts:
   - The 7 Lights serve as advisors to the 2 rulers of Auristar
   - They are chosen for their great love for the city and their skills in various disciplines
   - They are tasked with making Auristar great
 
-
 - topic: About the city
-  contributor: Vledic#4102
+  contributor: Vledic#0001
   needsReview: true
   facts:
   - Auristar is a city-state dedicated to commerce
@@ -60,9 +58,8 @@ subtopics:
     to enlightenment. Access to the library's restricted section is only granted to scholars and 
     researchers with special permission from the 7 Lights.
 
-
 - topic: Religion
-  contributor: Vledic#4102
+  contributor: Vledic#0001
   needsReview: true
   facts:
   - Auristar's religion is closely linked to the stars and celestial bodies of the night sky
@@ -72,9 +69,8 @@ subtopics:
   - Two main deities, Ur and Nett, represent the aggrandizement and fulfillment of living beings
   - Constellations are the abode of individuals who have triumphed in life in various disciplines
 
-
 - topic: Politics and Economy
-  contributor: Vledic#4102
+  contributor: Vledic#0001
   needsReview: true
   facts:
   - Auristar has a system of canals and roads, transportation is by boats and carriages
@@ -85,9 +81,8 @@ subtopics:
   - The fourth ring is dedicated to commerce, with large gardens, crops, and buildings with shops of all kinds
   - The fifth ring is the entrance to the city and houses the barracks and legal operations
 
-
 - topic: The Starifjolden Caverns
-  contributor: Vledic#4102
+  contributor: Vledic#0001
   needsReview: true
   facts:
   - Historical context
@@ -95,9 +90,8 @@ subtopics:
   - Dangers (Flora and fauna)
   - Habitants
 
-
 - topic: Tyr
-  contributor: Vledic#4102
+  contributor: Vledic#0001
   needsReview: true
   facts:
   - Leads the Norstarkjold guard
@@ -105,19 +99,17 @@ subtopics:
   - Responsibilities as a counselor and in charge of maintaining order in the city
   - Goals and aspirations
 
-
 - topic: Unions
-  contributor: Vledic#4102
+  contributor: Vledic#0001
   needsReview: true
   facts:
   - Role in the economy and security of Auristar
   - The guilds of Auristar
   - Materials come from Midelmar Mountain
 
-
 - topic: Adventurers
-  contributor: Vledic#4102
+  contributor: Vledic#0001
   needsReview: true
   facts:
-  - Protect Auristar through
+  - Protect all of Thiolden through various Adventurers Guild
   
