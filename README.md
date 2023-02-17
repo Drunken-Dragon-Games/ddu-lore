@@ -56,6 +56,8 @@ subtopics:
 
 * `topic`: describes what aspect of The Drunken Dragon Universe this record describes.
 
+* `contributor`: optionally describes who contributed to the record in the event that a Pull Request is not used.
+
 * `context`: adds the minimum facts the reader or the machine should know to understand the facts contained in this document.
 
 * `facts`: describes the topic. Each fact can be a short sentence or a detailed paragraph that adds depth and detail to the universe.
