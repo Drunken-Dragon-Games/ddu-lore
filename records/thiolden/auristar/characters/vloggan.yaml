@@ -1,0 +1,28 @@
+document: vloggan/v1
+topic: Vloggan, Adventuring Gear Shopkeeper of Kudwaren
+needsReview: true
+context: 
+- Defining Volggan
+
+subtopics: 
+- topic: Race
+  facts: 
+  - Vulkin
+
+- topic: Human equivalent age
+  facts: 
+  - 46
+
+- topic: Class
+  facts:
+  - Trader
+
+- topic: About Vloggan
+  facts:
+  - Volggan lives quietly sheltered in the capital territories with his wife and bribes the guards who require to inspect their merchandise. He can get any hidden gem, weapon, tool, or relic in Thiolden, so all clients are welcome, especially those with deep pockets.
+
+- topic: More info
+  facts:
+  - >
+    If you are looking for a magical artifact, a forbidden tool, an alternative remedy, or a relic forgotten in history, you have to visit Volggan the collector. Since his arrival in Thiolden he built his business with his own hands in the safety of the eastern fold of Auristar. Obtaining various resources from nearby clans and abroad.
+    He has excellent quality merchandise and is the point of sale of illicit materials for the people of Auristar, offering from time to time enough bribes to continue operating.
