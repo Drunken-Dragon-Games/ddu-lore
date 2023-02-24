@@ -1,0 +1,26 @@
+document: birds/v1
+topic: The Birds around Thiolden
+context: 
+- A study on the unique biology of birds
+subtopics:
+
+- topic: Bird's Biology
+  facts:
+  - warm-blooded vertebrates, characterised by feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a strong yet lightweight skeleton.
+
+- topic: Eagle
+  needsReview: true
+  facts:
+  - large, powerfully-built, with heavy heads and beaks.
+  - extremely powerful eye that spots potential prey from a very long distance.
+  - carnivorous.
+  - found in Mountain Peak.
+
+- topic: Raven
+  needsReview: true
+  facts:
+  - large all-black.
+  - regarded as pests.
+  - omnivorous.
+  - Lindorin is a raven (of some sort).
+  
