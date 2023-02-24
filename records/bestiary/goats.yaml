@@ -1,0 +1,18 @@
+document: goats/v1
+topic: The Goats around Thiolden
+context: 
+- A study on the unique biology of goats
+subtopics:
+
+- topic: Goat's Biology
+  facts:
+  - domesticated species but should not take their gentleness for weakness.
+  - used for milk, meat, fur, and skins.
+
+- topic: Goat
+  needsReview: true
+  facts:
+  - most goats naturally have two horns of various shapes and sizes.
+  - eats almost anything.
+  - found in Mountain Peak.
+  
