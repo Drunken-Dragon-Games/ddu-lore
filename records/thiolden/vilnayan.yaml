@@ -6,7 +6,6 @@ context:
 subtopics:
 
 - topic: The Vilnayan
-  contributor: Vledic#0001
   facts:
   - Vilnayan is the name for independent villages, towns and small cities in Thiolden.
   - Vilnayan architecture focuses on defense and reflects their culture.
@@ -15,13 +14,11 @@ subtopics:
   - Vilnayan towns trade rare resources from magical beasts and the land for wealth.
 
 - topic: Vilnayan Culture
-  contributor: Vledic#0001
   facts:
   - Vilnayan towns are diverse and made up of many races.
   - Defense and combat skills are highly valued in Vilnayan culture.
 
 - topic: Vilnayan Professions
-  contributor: Vledic#0001
   facts:
   - Vilkyren are "free swords" who hunt dangerous beasts and monsters, bound by a code of chivalry.
   - Sundwanderen are bards who write songs about their adventures and serve as important sources of communication.
@@ -29,7 +26,6 @@ subtopics:
   - Night guards (Nimkjold) serve as the first line of defense for the Vilnayan.
 
 - topic: The Vilkyren
-  contributor: Vledic#0001
   facts:
   - > 
     The Vilkyren possess a unique ability known as the "Visions of the Hunt," which allows them to see the aura 

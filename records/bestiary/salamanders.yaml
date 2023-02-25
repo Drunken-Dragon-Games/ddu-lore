@@ -1,0 +1,12 @@
+document: salamanders/v1
+topic: The Salamanders around Thiolden
+context: 
+- A study on the unique biology of salamanders
+subtopics:
+
+- topic: Axolotl-like Creature
+  needsReview: true
+  facts:
+  - so illusive that its description is currently unknown.
+  - said to be found in Starifjolden.
+  

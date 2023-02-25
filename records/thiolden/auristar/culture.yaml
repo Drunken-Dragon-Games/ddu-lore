@@ -1,0 +1,68 @@
+document: culture/v1
+topic: The Culture of Auristar
+context: 
+- The customary beliefs, social forms, and material traits of a racial, religious, or social group of Auristar.
+subtopics:
+
+- topic: Wearables
+  context:
+  - Of course the Vilkyren has to wear something.
+  
+  subtopics:
+
+  - topic: Armor
+    facts: 
+    - The official armor of the Auristar military forces includes the breastplate, shoulder protection and wrist and leg protection.
+    - It has the scale details with the 7 stars.
+  
+  - topic: Clothes
+    needsReview: true
+    facts: 
+    - The acceptable bear minimum is a loincloth.
+  
+  - topic: Weapons
+    facts: 
+    - The auristar arms have the ornament of the city itself with the 7-pointed star.
+
+- topic: Festivities and Traditions
+  context:
+  - Many festivals have religious origins and entwine cultural and religious significance in traditional activities.
+
+  subtopics:
+
+  - topic: Council's Competition Event
+    facts:
+    - Needs a better name but seems to stick.
+    - Olymics style event.
+    - Organized by city sections and by disciplines.
+    - The champions win a seat in the Council of Middlemar.
+    - Every 7 years, lasts 7 days.
+
+  - topic: Trial of Mountain and Star
+    facts:
+    - The best champions that already won a seat in the council.
+    - They are sent into the mountain.
+    - They go through a hard challenge where they must show their prowess and "be chosen by the Middlemar and the Auristar".
+
+- topic: Furniture Styles
+  needsReview: true
+  context:
+  - Credits to the master blacksmith and carpenters. 
+  - Otherwise, Vilkyren will be dining on the floor.
+  
+  subtopics:
+
+    - topic: Tavern Utensils
+      facts: 
+      - Tankards.
+      - Tavern Barrels.
+      - Anything that can hold alcohol.
+    
+    - topic: Illumination
+      needsReview: true
+      facts: 
+      - Without these we will all be drinking in the dark.
+    
+    - topic: Water-powered Tools
+      facts: 
+      - Born out of how to quicken the alcohol making process.

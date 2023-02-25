@@ -6,7 +6,6 @@ context:
 subtopics: 
 
 - topic: About Auristar
-  contributor: Vledic#0001
   facts:
   - Aurinay is the demonym for Auristar.
   - Auristar is the most successful and developed city in Thiolden.
@@ -14,7 +13,6 @@ subtopics:
   - Auristar is the only faction with political influence outside Thiolden and serves as a gate to access Thiolden's resources.
 
 - topic: Background
-  contributor: Vledic#0001
   needsReview: true
   facts:
   - After 37 years of campaign in Arbury and Exeter, Emperor Rechtar Vaire arrived in Thiolden
@@ -25,7 +23,6 @@ subtopics:
   - A year after his death, a new star was seen in the sky, changing the history of Thiolden
 
 - topic: Foundation
-  contributor: Vledic#0001
   needsReview: true
   facts:
   - 53 years after the cataclysm, the survivors founded Auristar at Rechtar's Regret
@@ -35,7 +32,6 @@ subtopics:
   - The city is still prohibited from using runic magic
 
 - topic: 7 Lights of Auristar
-  contributor: Vledic#0001
   needsReview: true
   facts:
   - The 7 Lights serve as advisors to the 2 rulers of Auristar
@@ -43,7 +39,6 @@ subtopics:
   - They are tasked with making Auristar great
 
 - topic: About the city
-  contributor: Vledic#0001
   needsReview: true
   facts:
   - Auristar is a city-state dedicated to commerce
@@ -59,7 +54,6 @@ subtopics:
     researchers with special permission from the 7 Lights.
 
 - topic: Religion
-  contributor: Vledic#0001
   needsReview: true
   facts:
   - Auristar's religion is closely linked to the stars and celestial bodies of the night sky
@@ -70,7 +64,6 @@ subtopics:
   - Constellations are the abode of individuals who have triumphed in life in various disciplines
 
 - topic: Politics and Economy
-  contributor: Vledic#0001
   needsReview: true
   facts:
   - Auristar has a system of canals and roads, transportation is by boats and carriages
@@ -82,16 +75,28 @@ subtopics:
   - The fifth ring is the entrance to the city and houses the barracks and legal operations
 
 - topic: The Starifjolden Caverns
-  contributor: Vledic#0001
   needsReview: true
   facts:
-  - Historical context
+  - Bioluminiscent-like water for undergound aquiferous formations that look like the north.
+  - Caverns illuminated by crystals that look like they contain stars inside.
+  - The roof of the caverns look like a stared night sky with continuesly flying comets and meteorites which are actually rock-based living forms.
+  - Underground rivers and water streams everywhere.
+  - The water of the Auristar, rich in aether, which filters through the rock and into underground rivers gives life to all kind of arcane-rock based lifeforms.
+  - The water of the Auristar within the mountain looks like a deep glowing blue with some colorful yellow, purple and green tones that some times appear, together with what it looks like stars within the water itself but untouchable if you try.
   - Role in the city
   - Dangers (Flora and fauna)
   - Habitants
+  # to review file paths
+  import: ./bestiary/bestiary
+
+- topic: The Crystal and Rock Formations of The Starifjolden Caverns
+  needsReview: true
+  facts:
+  - Mineral formations of different colors with various shapes and points pointing to the Auristar.
+  - Crystals normally form almost shaped like stars.
+  - Many stellar colors.
 
 - topic: Tyr
-  contributor: Vledic#0001
   needsReview: true
   facts:
   - Leads the Norstarkjold guard
@@ -100,7 +105,6 @@ subtopics:
   - Goals and aspirations
 
 - topic: Unions
-  contributor: Vledic#0001
   needsReview: true
   facts:
   - Role in the economy and security of Auristar
@@ -108,7 +112,6 @@ subtopics:
   - Materials come from Midelmar Mountain
 
 - topic: Adventurers
-  contributor: Vledic#0001
   needsReview: true
   facts:
   - Protect all of Thiolden through various Adventurers Guild
@@ -131,3 +134,4 @@ subtopics:
   - Presents himself as a tired old man
   - Knowledgable about Merfolk
   
+import: ./culture
