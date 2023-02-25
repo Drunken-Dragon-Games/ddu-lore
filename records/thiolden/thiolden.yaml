@@ -6,7 +6,6 @@ context:
 subtopics:
 
 - topic: Thiolden
-  contributor: Vledic#0001
   facts:
   - Thiolden is a country in Valia.
   - Norsund is the most common language.
@@ -16,7 +15,6 @@ subtopics:
   - Thiolden is inhabited by many conscious fantasy races.
 
 - topic: Thiolden's Geography
-  contributor: Vledic#0001
   facts:
   - Thiolden is divided by mountains and a river from other countries.
   - The most common biomes are dark pine forests, tumulus plains, wraith lands, mountains, and enchanted forests.
@@ -24,5 +22,5 @@ subtopics:
   - Wraith lands are regions plagued with the undead and unholy beings.
   - Thiolden is inhabited by rational and non-rational beings, including the Vilnayan towns, Auristar, Karhak'Modan, Ik'nal'tar, Runmyren, and demons/undead factions.
 
-- import: ./vilnayan
 - import: ./auristar/auristar
+- import: ./vilnayan
