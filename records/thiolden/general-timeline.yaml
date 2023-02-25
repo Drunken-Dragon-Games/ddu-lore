@@ -5,7 +5,9 @@ context:
   subtopic: Vairean Imperial System for Dates
 subtopics:
 - topic: Year 463 b.v.e
-  facts: The town of Keras is founded. Later it becomes the capital of the Kindom of Reinovaire and later the Vaire Empire.
+  facts: 
+  - The town of Keras is founded. 
+  - Later it becomes the capital of the Kingdom of Reinovaire and later the Vaire Empire.
   
 - topic: Year 450 b.v.e
   facts:
@@ -19,13 +21,14 @@ subtopics:
   
 - topic: Year 432 b.v.e
   facts:
-  - Marheim is founded as a village. Later it became known as the lost city of Oudeheim. 
+  - Marheim is founded as a village. 
+  - Later it became known as the lost city of Oudeheim. 
   # To be moved to their own files
   subtopics:
   - topic: Marheim / Oudeheim
     facts:
     - Founded by surviving settlers after struggling to survive the lands of northern Thiolden.
-    - Founded on northern Thiolden, northwest of the Pass of Kharak
+    - Founded on northern Thiolden, northwest of the Pass of Kharak.
   
 - topic: Year 397 b.v.e
   facts:
@@ -41,11 +44,11 @@ subtopics:
   
 - topic: Year 343 b.v.e
   facts:
-  - The colossal walls of Marheim start their construction after Erdrik "the Great Architect", rises to power.
+  - The colossal walls of Marheim started construction after Erdrik "the Great Architect", rises to power.
   
 - topic: Year 212 b.v.e
   facts:
-  - The collocal walls of Marheim finish the construction. A bad omen predicts their cataclysmic destruction.
+  - The construction of colossal walls of Marheim is finished. A bad omen predicts their cataclysmic destruction.
   
 - topic: Year 189 b.v.e
   facts: 
@@ -53,11 +56,12 @@ subtopics:
   
 - topic: Year 48 b.v.e
   facts: 
-  - Rechtar Vaire was born in Keras, heir of the Vaire bloodline. He would later become the first Emperor of the Vairean Empire.
+  - Rechtar Vaire was born in Keras, heir of the Vaire bloodline. 
+  - He would later become the first Emperor of the Vairean Empire.
   
 - topic: Year 30 b.v.e
   facts:
-  - Rechtar Vaire is crowned king of Reinovaire.
+  - Rechtar Vaire is crowned King of Reinovaire.
   
 - topic: Year 31 b.v.e
   facts: 
@@ -66,14 +70,14 @@ subtopics:
 - topic: Year 0 a.v.e
   facts: 
   - The Reinovairean first civil war ends, and the Vairean Empire is founded.
-  - Luxis the goddess of light (Luxis in Kedre, Lysmar in Norsund), blesses the Vaire bloodline. 
+  - Luxis the Goddess of Light (Luxis in Kedre, Lysmar in Norsund), blesses the Vaire bloodline. 
   - Rechtar Vaire becomes Emperor.
   - Rechtar Vaire becomes Pope of the Church of Light.
   
 - topic: Year 37 a.v.e
   facts:
   - Rechtar Vaire invades Thiolden after securing the Pass of Kharak through a diplomatic alliance with the dwarves of Karhak'Modan.
-  - Rechtar Vaire innitiates the siege of Marheim.
+  - Rechtar Vaire initiates the Siege of Marheim.
   
 - topic: Year 49 a.v.e
   facts:
