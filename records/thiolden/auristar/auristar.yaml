@@ -121,9 +121,9 @@ subtopics:
   facts:
   - The most popular tavern of all Auristar
   - In the Northern region of Auristar, in the fourth ring
-  import: ./characters/astrid
-  import: ./characters/gadrull
-  import: ./characters/vadanna
+  - import: ./characters/astrid
+  - import: ./characters/gadrull
+  - import: ./characters/vadanna
 
 - topic: The Mad Chronicler
   needsReview: true

@@ -1,0 +1,30 @@
+document: fact-record/v1
+topic: History of Auristar
+context: 
+- import: ../../time-measurements
+subtopics: 
+
+- topic: Oudeheim
+  facts:
+  - Before Auristar existed, it's people lived in the city state of Oudeheim.
+  - Founded in 146 b.v.e by the 
+
+- topic: Background
+  needsReview: true
+  facts:
+  - After 37 years of campaign in Arbury and Exeter, Emperor Rechtar Vaire arrived in Thiolden
+  - He brought a large army to Oudeheim, but the city held its own for 13 years
+  - Rechtar caused a cataclysm, destroying the city and contaminating the north of Thiolden
+  - The event strained relations with the Emperor of Keria and the clans of Thiolden
+  - Rechtar was seen as a tyrant and a demigod
+  - A year after his death, a new star was seen in the sky, changing the history of Thiolden
+
+- topic: Foundation
+  needsReview: true
+  facts:
+  - 53 years after the cataclysm, the survivors founded Auristar at Rechtar's Regret
+  - The group traveled with the light of the celestial body and with the protection of their new gods
+  - They reached Midelmar Mountain and a meteorite fell on the top of the mountain, revealing a gem with magical powers
+  - The gem provided resources to build the city and improved resistance, strength, and durability of objects and living beings
+  - The city is still prohibited from using runic magic
+

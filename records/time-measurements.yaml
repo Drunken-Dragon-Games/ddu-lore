@@ -1,0 +1,8 @@
+document: fact-record/v1
+topic: Time Measurement
+subtopics:
+- topic: Varian Imperial System for Dates
+  facts:
+  - Year 0 is the founding of the Varian Empire.
+  - Negative dates use b.v.e "Before the Varian Empire".
+  - Positive dates use a.v.e "After the Varian Empire".
