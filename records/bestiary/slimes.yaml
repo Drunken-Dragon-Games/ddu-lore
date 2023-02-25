@@ -1,0 +1,32 @@
+document: slimes/v1
+topic: The Slimes around Thiolden
+contributor: dvwl#3447
+context: 
+- A study on the unique biology of slimes
+subtopics:
+
+- topic: Slime's Biology
+  contributor: dvwl#3447
+  facts:
+  - a small, mischievous creature.
+  - moves by flowing rather than walking.
+  - can be tamed.
+  - does not run in low health but summons more slimes to overwhelm their enemies.
+  - a slime attacks in melee range.
+  - not recommended to taste them.
+  - not aggressive unless provoked.
+
+- topic: Beer Slime
+  contributor: dvwl#3447
+  facts:
+  - surprisingly attracted to taverns all over Thiolden.
+  - often found in tavern barrels.
+  - smells and taste of beer.
+
+- topic: Wine Slime
+  contributor: dvwl#3447
+  facts:
+  - attracted to taverns serving wine.
+  - often found in high-class taverns.
+  - smells and taste of wine.
+  

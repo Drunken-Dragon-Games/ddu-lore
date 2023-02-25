@@ -1,0 +1,19 @@
+document: pumas/v1
+topic: The Pumas around Thiolden
+context: 
+- A study on the unique biology of pumas
+subtopics:
+
+- topic: Puma's Biology
+  facts:
+  - large and secretive.
+  - not to be confused with cats.
+
+- topic: Puma
+  needsReview: true
+  facts:
+  - powerful forequarters, necks, and jaws which help grasp and hold prey. 
+  - have four retractable claws on their fore paws, and also their hind paws.
+  - carnivorous.
+  - found in Mountain Peak.
+  

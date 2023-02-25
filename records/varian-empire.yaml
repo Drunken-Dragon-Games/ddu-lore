@@ -1,5 +1,6 @@
 document: fact-record/v1
 topic: The Varian Empire
+contributor: Vledic#0001
 context: 
 - import: ./time-measurements
   subtopic: Varian Imperial System for Dates

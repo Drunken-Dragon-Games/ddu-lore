@@ -19,5 +19,5 @@ subtopics:
   - Wraith lands are regions plagued with the undead and unholy beings.
   - Thiolden is inhabited by rational and non-rational beings, including the Vilnayan towns, Auristar, Karhak'Modan, Ik'nal'tar, Runmyren, and demons/undead factions.
 
-- import: ./vilnayan
 - import: ./auristar/auristar
+- import: ./vilnayan

@@ -1,0 +1,19 @@
+document: bears/v1
+topic: The Bears around Thiolden
+context: 
+- A study on the unique biology of bears
+subtopics:
+
+- topic: Bear's Biology
+  facts:
+  - large bodies with stocky legs, long snouts, small rounded ears, shaggy hair, plantigrade paws with five nonretractile claws, and short tails.
+  - not to be confused with dogs.
+  - used for meat and fur.
+
+- topic: Bear
+  needsReview: true
+  facts:
+  - generally bulky and robust with short tails.
+  - mostly carnivorous.
+  - found in Mountain Peak.
+  

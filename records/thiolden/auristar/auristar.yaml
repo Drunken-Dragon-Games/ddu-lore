@@ -1,5 +1,6 @@
 document: fact-record/v1
 topic: The City-state of Auristar
+contributor: Vledic#0001
 context: 
 - Dates use the Varian Imperial System of meassuring years, where year 0 is the founding of the Varian Empire
 subtopics: 
@@ -30,14 +31,12 @@ subtopics:
   - The gem provided resources to build the city and improved resistance, strength, and durability of objects and living beings
   - The city is still prohibited from using runic magic
 
-
 - topic: 7 Lights of Auristar
   needsReview: true
   facts:
   - The 7 Lights serve as advisors to the 2 rulers of Auristar
   - They are chosen for their great love for the city and their skills in various disciplines
   - They are tasked with making Auristar great
-
 
 - topic: About the city
   needsReview: true
@@ -54,7 +53,6 @@ subtopics:
     to enlightenment. Access to the library's restricted section is only granted to scholars and 
     researchers with special permission from the 7 Lights.
 
-
 - topic: Religion
   needsReview: true
   facts:
@@ -64,7 +62,6 @@ subtopics:
   - The religious experience is linked to the exaltation of the individual through work, sacrifice, and dedication
   - Two main deities, Ur and Nett, represent the aggrandizement and fulfillment of living beings
   - Constellations are the abode of individuals who have triumphed in life in various disciplines
-
 
 - topic: Politics and Economy
   needsReview: true
@@ -77,15 +74,27 @@ subtopics:
   - The fourth ring is dedicated to commerce, with large gardens, crops, and buildings with shops of all kinds
   - The fifth ring is the entrance to the city and houses the barracks and legal operations
 
-
 - topic: The Starifjolden Caverns
   needsReview: true
   facts:
-  - Historical context
+  - Bioluminiscent-like water for undergound aquiferous formations that look like the north.
+  - Caverns illuminated by crystals that look like they contain stars inside.
+  - The roof of the caverns look like a stared night sky with continuesly flying comets and meteorites which are actually rock-based living forms.
+  - Underground rivers and water streams everywhere.
+  - The water of the Auristar, rich in aether, which filters through the rock and into underground rivers gives life to all kind of arcane-rock based lifeforms.
+  - The water of the Auristar within the mountain looks like a deep glowing blue with some colorful yellow, purple and green tones that some times appear, together with what it looks like stars within the water itself but untouchable if you try.
   - Role in the city
   - Dangers (Flora and fauna)
   - Habitants
+  # to review file paths
+  import: ./bestiary/bestiary
 
+- topic: The Crystal and Rock Formations of The Starifjolden Caverns
+  needsReview: true
+  facts:
+  - Mineral formations of different colors with various shapes and points pointing to the Auristar.
+  - Crystals normally form almost shaped like stars.
+  - Many stellar colors.
 
 - topic: Tyr
   needsReview: true
@@ -95,7 +104,6 @@ subtopics:
   - Responsibilities as a counselor and in charge of maintaining order in the city
   - Goals and aspirations
 
-
 - topic: Unions
   needsReview: true
   facts:
@@ -103,8 +111,27 @@ subtopics:
   - The guilds of Auristar
   - Materials come from Midelmar Mountain
 
-
 - topic: Adventurers
   needsReview: true
   facts:
-  - Protect Auristar through
+  - Protect all of Thiolden through various Adventurers Guild
+
+- topic: Winterbeard's Sigil
+  needsReview: true
+  facts:
+  - The most popular tavern of all Auristar
+  - In the Northern region of Auristar, in the fourth ring
+  import: ./characters/astrid
+  import: ./characters/gadrull
+  import: ./characters/vadanna
+
+- topic: The Mad Chronicler
+  needsReview: true
+  contributor: Marv2.0/ChaosDelivery#2855
+  facts:
+  - Goes by many name amongst the townsfolk
+  - 'Chronicler' is fine by him
+  - Presents himself as a tired old man
+  - Knowledgable about Merfolk
+  
+import: ./culture
