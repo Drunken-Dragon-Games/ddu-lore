@@ -54,14 +54,15 @@ subtopics:
 
     - topic: Tavern Utensils
       facts: 
-      - Tankards.
-      - Tavern Barrels.
-      - Anything that can hold alcohol.
-    
+      - A small hand held tool used for food and drinks, typically, found in taverns.
+      - Made by repurposing parts of beasts.
+      - Example, a tankard made of goat's horns decorated with crystals.
+
     - topic: Illumination
       needsReview: true
       facts: 
       - Without these we will all be drinking in the dark.
+      - A Nimkjold's best friend when they are on patrol.
     
     - topic: Water-powered Tools
       facts: 
