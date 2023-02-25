@@ -1,0 +1,144 @@
+document: fact-record/v1
+topic: General Timeline of Thiolden
+context: 
+- import: ./time-measurements
+  subtopic: Vairean Imperial System for Dates
+subtopics:
+
+- topic: Year 463 b.v.e
+  facts: The town of Keras is founded. Later to become the capital of the Kindom of Reinovaire and later the Vaire Empire.
+
+- topic: Year 450 b.v.e
+  facts:
+  - The first adventuring settlers arrive to Thiolden.
+  # To be moved to their own files
+  subtopics:
+  - topic: First adventuring settlers of Thiolden
+    facts:
+    - Originating mostly from the island of Farheim.
+    - Made of a variety of adventurers of several races in search of new lands to explore.
+
+- topic: Year 432 b.v.e
+  facts:
+  - Marheim is founded as a village. Later to be known as the lost city of Oudeheim. 
+  # To be moved to their own files
+  subtopics:
+  - topic: Marheim / Oudeheim
+    facts:
+    - Founded by surviving settlers after struggling to survive the lands of northern Thiolden.
+    - Founded on northern Thiolden, northwest of the Pass of Kharak
+
+- topic: Year 397 b.v.e
+  facts:
+  - Some adventurers either get lost in Thiolden or join native intelligent races, creating the first known Runmyren.
+
+- topic: Year 371 b.v.e
+  facts: 
+  - The Nurmyr arrive to their sacred forst of Ilinvirden, where they receive the blessing of Naum.
+
+- topic: Year 366 b.v.e
+  facts:
+  - The Kullmyr are blessed by Firen and start peaceful shamanistic traditions under the leadership of Dethiol the Undying.
+
+- topic: Year 343 b.v.e
+  facts:
+  - The colossal walls of Marheim start their construction after Erdrik "the Great Architect" is raise to power.
+
+- topic: Year 212 b.v.e
+  facts:
+  - The collocal walls of Marheim finish the construction. A bad omen predicts their cataclysmic destruction.
+
+- topic: Year 189 b.v.e
+  facts: 
+  - The first Vilnayan villages and towns start to thrive.
+
+- topic: Year 48 b.v.e
+  facts: 
+  - Rechtar Vaire was born in Keras, heir of the Vaire bloodline. He would later become the first Emperor of the Vairean Empire.
+
+- topic: Year 30 b.v.e
+  facts:
+  - Rechtar Vaire is crowned king of Reinovaire.
+
+- topic: Year 31 b.v.e
+  facts: 
+  - The Reinovairean first civil war begins between the crown of Reinovaire and different factions of noble houses.
+
+- topic: Year 0 a.v.e
+  facts: 
+  - The Reinovairean first civil war ends and the Vairean Empire is founded.
+  - Luxis the godess of light, (Luxis in Kedre, Lysmar in Norsund) blesses the Vaire bloodline. 
+  - Rechtar Vaire becomes Emperor.
+  - Rechtar Vaire becomes Pope of the Church of Light.
+
+- topic: Year 37 a.v.e
+  facts:
+  - Rechtar Vaire invades Thiolden after securing the Pass of Kharak through a diplomatic alliance with the dwarves of Karhak'Modan.
+  - Rechtar Vaire innitiates the siege of Marheim.
+
+- topic: Year 49 a.v.e
+  facts:
+  - Rundir Voidet, head of the Imperial Academy of Alchemy, uses the local runemagic to create volatile and powerful explosives.
+
+- topic: Year 50 a.v.e
+  facts:
+  - Rechtar Vaire commands its army to use excessive rune magic against the defence of Marheim, resulting in the cataclysmic destruction of the colossal walls and most of the city.
+  - The city of Marheim is erased by the undead risen from the rune magic used against its walls.
+  - Rundir Voidet is banished from the Vairean Empire and considered a traitor, doomed to die at the hands of the undead he spawned. 
+  - Survivors of the destruction of Marheim start to wander the lands of Thiolden. Forming the 7 Wandering Houses of Oudeheim.
+  - Marheim receives the alternative names of "Oudeheim" and "Rechtar's Regret".
+
+- topic: Year 51 a.v.e
+  facts:
+  - Rechtars campaign in Thiolden finishes successfully.
+  - Doir Vaire, daughter of Rechatar Vaire, is left in charge of the Vilnayan towns and villages of Thiolden.
+
+- topic: Year 57 a.v.e
+  facts: 
+  - Each leader of the 7 Wandering Houses of Oudeheim receives visions and the blessings of Myr and Heid.
+  - The 7 Wandering Houses of Oudeheim receive the divine order of finding their new home. 
+  - The prophecy of the Auristar is created, and the 7 Wandering Houses of Oudeheim search for an immovable silver star in the sky.
+  - Rundir Voidet, the banished, is well received by Dethiol the Undying and is taught the shamanistic ways of the Kullmyr.
+
+- topic: Year 87 a.v.e
+  facts: 
+  - Rechtar Vaire dies at the age of 135 of natural causes in the Imperial City of Keras.
+
+- topic: Year 88 a.v.e
+  facts:
+  - The prophecied Auristar appears in the sky, and the 7 Wandering House of Oudeheim start their long journey towards the dangerous centre of Thiolden.
+
+- topic: Year 90 a.v.e
+  facts:
+  - The 7 Wandering Houses of Oudeheim arrive at the same time to Midelmar, the lonely mountain in the centre of Thiolden.
+  - The Auristar falls from the sky, landing near the peak of Midelmar.
+  - The Auristar starts flowing endless inmense streams of water, creating 4 of the most important rivers of Thiolden.
+  - The magical water of The Auristar starts spawning new life forms and new kinds of materials.
+  - The 7 Wandering Houses of Oudeheim found the City of Auristar on top of the Midelmar mountain.
+  - The 7 leaders of the 7 Wandering Houses of Oudeheim become the first 7 Light of Auristar. 
+
+- topic: Year 91 a.v.e
+  facts: 
+  - The First Ring of the Kjoldmur of Auristar starts construction around the Auristar.
+
+- topic: Year 99 a.v.e
+  facts: 
+  - The First Ring of the Kjoldmur of Auristar finishes construction. 
+  - The Second Ring of the Kjoldmur of Auristar starts construction. 
+  - The Back Ring of the Kjoldmur of Auristar starts construction.
+
+- topic: Year 102 a.v.e
+  facts:
+  - The Back Ring of the Kjoldmur of Auristar finishes construction.
+
+- topic: Year 113 a.v.e
+  facts: 
+  - The Third Ring of the Kjoldmur of Auristar starts construction.
+
+- topic: Year 114 a.v.e
+  facts:
+  - The Second Ring of the Kjoldmur of Auristar finishes construction.
+
+- topic: Year 124 a.v.e
+  facts:
+  - The Third Ring of the Kjoldmur of Auristar finishes construction.

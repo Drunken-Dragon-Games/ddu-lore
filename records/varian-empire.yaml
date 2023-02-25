@@ -1,7 +1,8 @@
 document: fact-record/v1
 topic: The Varian Empire
 context: 
-- Dates use the Varian Imperial System of meassuring years, where year 0 is the founding of the Varian Empire
+- import: ./time-measurements
+  subtopic: Varian Imperial System for Dates
 subtopics:
 - topic: The Varian Empire
   facts:
