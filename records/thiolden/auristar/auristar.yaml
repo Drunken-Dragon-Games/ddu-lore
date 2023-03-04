@@ -86,7 +86,6 @@ subtopics:
   - Role in the city
   - Dangers (Flora and fauna)
   - Habitants
-  # to review file paths
   import: ./bestiary/bestiary
 
 - topic: The Crystal and Rock Formations of The Starifjolden Caverns

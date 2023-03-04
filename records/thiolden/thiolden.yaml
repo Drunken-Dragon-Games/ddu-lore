@@ -20,4 +20,5 @@ subtopics:
   - Thiolden is inhabited by rational and non-rational beings, including the Vilnayan towns, Auristar, Karhak'Modan, Ik'nal'tar, Runmyren, and demons/undead factions.
 
 - import: ./auristar/auristar
+- import: ./bestiary/bestiary
 - import: ./vilnayan
