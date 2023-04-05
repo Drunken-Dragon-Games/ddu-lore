@@ -1,98 +1,399 @@
-document: dvwl/v1
+document: dvwl/v2
 topic: Short stories by dvwl#3447
 context: 
 - A treasure trove (or garbage dump) of stories by dvwl#3447
 
 subtopics:
-- topic: Aki's day off
+- topic: Aki's Day Off
   needsReview: true
   facts: |
   Aki, Vilkyr from the East, a proud warrior from a distant land. She had traveled far and wide, battling fierce monsters and vanquishing evil wherever she went. But today was her day off, and she was determined to enjoy it to the fullest.
+
   She woke up early, feeling refreshed and rejuvenated. After stretching and practicing her sword techniques for a few hours, she decided to take a stroll through the forest with her animal companion, Fubuki.
+
   Fubuki is a <insert animal species here>, with fur as golden as the autumn foliage and eyes that shone like stars. He was Aki's closest ally and trusted friend, always ready to join her on any adventure.
+
   As they walked through the forest, Aki couldn't help but feel a sense of joy and wonder. The trees rustled in the gentle breeze, and the sun filtered through the leaves, casting a warm glow over everything. She breathed in the crisp, clean air and felt her spirits lift.
+
   After a while, they came to a clearing where a small stream flowed. Aki sat down on a rock and watched as Fubuki sniffed around, exploring the area. She closed her eyes and basked in the peace and quiet of the forest.
+
   Suddenly, Fubuki let out a low-pitched growl, and Aki's eyes snapped open. She stood up, hand on her sword, ready for any danger. But as she scanned the area, she saw nothing out of the ordinary.
+
   Fubuki trotted over to her and peck her hand, letting out a soft hoot. Aki realized that her companion was simply trying to tell her that it was time to head back.
+
   With a smile, Aki patted Fubuki on the head and they set off back through the forest. As they walked, Aki couldn't help but feel grateful for the simple pleasures of life, and the wonderful friends she had made along the way.
 
-- topic: Aztuneio's deeds
+- topic: Aztuneio's Deeds
   facts: |
   Terrorhertz and Vimtyr were sitting by the fire in Winterbeard's Sigil, enjoying a drink and listening to some music. Suddenly, Terrorhertz started telling Vimtyr an exciting story.
+
   "Listen up, Vimtyr," he said. "I have a tale to tell you about the great adventurer, Aztuneio, Ally of Beasts. She was a fearless ranger who traveled the land in search of new and exciting quests."
+
   Vimtyr leaned forward, his interest piqued. "Tell me more," he said.
+
   "Well, one day, Aztuneio heard about a powerful artifact that was hidden deep within a dungeon, guarded by a fierce dragon. She knew that she had to get her hands on that artifact, no matter what the cost," Terrorhertz continued.
+
   "But how did she defeat the dragon?" Vimtyr asked.
+
   Terrorhertz chuckled. "Ah, that's the best part. Aztuneio didn't defeat the dragon. She befriended it!" he said.
+
   Vimtyr looked at Terrorhertz incredulously. "How did she manage that?"
+
   "Aztuneio had a way with animals," Terrorhertz explained. "He knew that the dragon wasn't evil, just misunderstood. So, she approached it with respect and kindness, and after a bit of conversation, they became friends. The dragon even helped her get the artifact she was after."
+
   Vimtyr shook his head in disbelief. "That's an incredible story," he said. "Aztuneio must have been a truly remarkable adventurer."
+
   "She was," Terrorhertz agreed. "And that's why we need more adventurers like her. Brave, kind, and willing to take on any challenge. That's what the Drunken Dragon is all about."
+
   As Terrorhertz finished his story, Aztuneio, sitting at a corner just out of their sights, smiled, happy to hear that her deeds were being shared with others. She raised her glass to toast to the beasts of Thiolden and the friendship of the group.
+
   As the night went on, more and more adventurers joined the conversation, sharing their own stories of bravery and adventure. Terrorhertz and Vimtyr listened with rapt attention, feeling inspired and energized by the tales of their fellow travelers.
+
   In the end, they both knew that they were exactly where they were meant to be - at Winterbeard's Sigil, surrounded by like-minded adventurers, and ready to take on whatever challenge came their way.
 
-- topic: Bodica's herb quest
+- topic: Bodica's Herb Quest
   facts: |
   In the land of Thiolden, there was a great need for new and powerful medicines to heal the sick and injured. The kingdoms had long been at war with neighboring lands and the constant battles had left many wounded and ill. The then leader of Nurmyr, Ude Namvar, who held onto the epithet, Speaker of the Forest, desperate to find a solution, put out a call to all the land's greatest adventurers, scholars, and healers to come forth and aid in the search for new medicinal plants.
+
   One such adventurer was a young druid named Bodica. This was from time many moons ago. She had always been fascinated by the healing properties of plants and had spent many years studying the natural world in search of new remedies. When she heard the call of the Ude, she knew that this was her chance to make a real difference and set out on a quest to find the rarest and most powerful plants in all the land.
+
   Bodica journeyed deep into the heart of the Virnayen's dense forests, climbing treacherous mountains, and crossing raging rivers in search of her quarry. For many months she traveled, facing countless dangers and overcoming countless obstacles, but she never gave up. Finally, she came upon a hidden valley where she discovered a rare and exotic plant unlike anything she had ever seen before.
+
   The plant was tall and green, with delicate purple flowers that seemed to glow in the sunlight. Bodica knew that this was the plant she had been searching for and she carefully harvested a few samples, taking great care to preserve their potency.
+
   She brought the samples back to Nurmyr and set to work studying their medicinal properties. She found that the plant had powerful healing properties and could be used to treat everything from minor cuts and bruises to serious wounds and diseases. Ude was overjoyed when he heard the news and ordered that the plant be grown and harvested in large quantities so that it could be distributed to the people of the land.
+
   And so, Bodica's quest was a success. Her discovery brought hope to the people of Nurmyr and brought an end to the suffering of many. She was hailed as a hero and her name was remembered in the annals of history as the one who had saved the Nurmyr from certain doom. 
+
   Thanks to this act or so the story goes, she unanimously became the leader of Nurmyr. What other acts of unconditional love Bodica performed is a story for next time.
 
-- topic: Eify's legends
+- topic: Eify's Legends
   facts: |
   Eify, a bard from the bustling city far south who came to the Royal Academy of Oxinton at the School of Arts and Music in Exeter, had always been fascinated by tales of great Vilkyr (Free Sword in the Old Norsund) and their deeds. One night, while enjoying a pint of ale at a local tavern, Eify struck up a conversation with an old traveling bard named Othil. Othil regaled Eify with stories of brave warriors, powerful magi, and cunning thieves, each one more incredible than the last. Eify knew then and there that he had to document and preserve these stories for future generations to enjoy.
+
   And so, Eify, having heard songs and read tales of the brave Vilkyr fascinated him to the point of dropping school and becoming one, set out on a journey to far-flung corners of the world, seeking out adventurers who had their own tales of bravery and valor to share. He traveled through dark forests, treacherous mountains, and scorching deserts, always on the lookout for those who had something to add to his collection of stories.
+
   Eify met many brave and honorable warriors, each with their own tale of overcoming insurmountable odds to save their people. He also met powerful wizards and warlocks who had harnessed the very forces of nature to defeat their foes. And cunning thieves who had outwitted their enemies and made off with unimaginable treasures.
+
   As Eify gathered these stories and shared them with others, he helped to spread the legend of these heroes and inspire others to follow in their footsteps. He became known as the "Darkstar", and his tales were passed down through the generations, becoming a part of the fabric of the world itself.
+
   Eify's journey was long and treacherous, but he knew that it was worth it to have been able to preserve these stories for all time. And in the end, Eify knew that he too had become a legend, the bard who had set out to document the stories of great heroes and succeeded. The best songs come from his own "heroic" feats with his own extravagant fashion and performance style.
 
-- topic: Gulnim failed heist
+- topic: Gulnim's Failed Heist
   facts: |
   Gulnim sat at his usual table in the dimly lit tavern, nursing a steaming cup of black tea as he waited for his contact to arrive. He was the Black Market Supplier for the Thieves Guild, a shadowy organization that operated in the shadows of the city. His job was to acquire and distribute all manner of illegal goods to the guild's members, from stolen jewels to rare magical artifacts.
+
   But today's supply deal had not gone as planned. He had arranged to meet with a wealthy merchant who was rumored to have a collection of rare, enchanted weapons hidden in his private vault. Gulnim had hoped to acquire some of these weapons for the guild, but the merchant had double-crossed him, summoning a group of armed guards to seize the illegal goods and arrest Gulnim and his associates.
+
   Gulnim had managed to escape, but he knew that the guild would not be pleased with the outcome of the deal. He would have to report the failure to his superiors and face their anger and disappointment.
+
   As he waited for his contact, Gulnim sipped his tea and tried to come up with a plan to make amends for the botched deal. He had a reputation to uphold, and he couldn't afford to let this setback tarnish his name in the criminal underworld.
+
   Suddenly, the door to the tea shop swung open and a hooded figure entered, pulling back the hood to reveal a face that was all too familiar to Gulnim. It was the Guild Master of the Thieves Guild, a cunning and ruthless Vulkin known as Vale.
+
   "Gulnim," he said, his voice dripping with contempt. "I hear you've had a bit of a setback today."
+
   Gulnim nodded, his heart sinking as he realized that Vale had come to confront him about the failed deal. "I'm sorry, Vale," he said, bowing his head in shame. "I'll make it right, I swear."
+
   Vale waved his hand dismissively. "There's no time for apologies, Gulnim. I have a job for you, one that will require all of your skills and resourcefulness. A wealthy lord has acquired a valuable magical artifact, and I want it. I need you to retrieve it for me, no matter the cost."
+
   Gulnim nodded, knowing that he had no choice but to accept the mission. He was a member of the Thieves Guild, and he had a reputation to uphold. He would have to pull off the heist of his life and bring the artifact back to Vale, or face the consequences.
+
   As he listened to Vale's instructions, Gulnim knew that this would be no ordinary job. He would have to use all of his cunning and skill to outwit the lord and his guards, and he would have to be ready for anything.
+
   But he was Gulnim, the Black Market Supplier of the Thieves Guild, and he had never backed down from a challenge. He would succeed, or he would die trying.
+
   As he finished his tea and prepared to leave, Gulnim knew that this would be a night to remember, a night that would either make or break his reputation in the criminal underworld. But he was ready for whatever lay ahead, and he would not be denied.
 
-- topic: Kilia's new song
+- topic: Kilia's New Song
   facts: |
   Kilia walked into Winterbeard's Sigil, tired from a long day of travel. The tavern was quiet, and she noticed Gadrull, Vadanna, and Astrid sitting together, discussing ways to attract more patrons.
+
   As Kilia approached the bar, Vadanna noticed her and said, "Welcome, Kilia. It's been a slow night, but we're hoping to come up with some ideas to bring in more customers."
+
   Kilia nodded and smiled, "I might be able to help with that," she said, "I was actually inspired by your conversation, and I've composed a new song for Winterbeard's Sigil."
+
   The other three looked at each other in surprise and curiosity. "Let's hear it," Astrid said eagerly.
+
   Kilia took a deep breath and began to play her lute. Her voice was clear and strong, filling the quiet tavern with beautiful music.
+
   "Come gather 'round all ye travelers near and far
   To Winterbeard's Sigil, where ale is in a jar
   The fire's warm, the ale is cool
   And the stories told are never dull
+
   The finest drinks you'll find in the land
   Served by the kindest of all hands
   Come drink with us, and stay awhile
   And share your tales mile after mile"
+
   As Kilia finished her song, the group at the bar clapped and cheered, impressed by her beautiful voice and the catchy melody of her song.
+
   "That was amazing, Kilia!" Vadanna said excitedly. "We have to add that to our regular repertoire."
+
   Kilia smiled, "I'd be happy to play it every time I visit. I think it captures the warmth and hospitality of Winterbeard's Sigil perfectly."
+
   And from that night on, every time Kilia visited the tavern, she would sing her song, inviting new patrons to come and experience the hospitality of Winterbeard's Sigil.
 
-- topic: Ulf's artifact
+- topic: Ulf's Artifact
   facts: |
   The young and ambitious adventurers (GMA#2763, an Elenidas Elf Fighter and GMA#2913, a Cov Human Cleric), eager for fame and fortune, gathered at Winterbeard's Sigil, a local tavern known for its legendary quests. As they sat at the bar, sipping ale and swapping tales of adventure, a mysterious figure approached them with a proposition.
+
   The figure, an aged mage known as Ulf, Magi of the Seven Lights of Auristar, who that very night, somehow managed to sneak away the King's guards that followed him day-in, day-out, for he is the most trusted advisor to the King, offered them a quest to retrieve a valuable and powerful magical artifact known as the "Heart of the Rabbit." The artifact was said to grant immense power and wealth to whoever possessed it, and Ulf was willing to pay a handsome reward for its safe return.
+
   Without hesitation, the adventurers accepted the quest and set out on their journey. As they traveled through the rugged mountains and dense forests, they encountered a variety of challenges and dangers. They fought fierce monsters, braved treacherous terrain, and outsmarted rival adventurers who sought the artifact for themselves.
+
   But the journey was not without its struggles. The adventurers faced internal conflicts and doubts as they struggled with trust and unity. But through determination and perseverance, they emerged victorious and returned home as heroes.
+
   Upon their return, they presented the Heart of the Rabbit to Ulf at the Auristar's Magi Trainhall, who was overjoyed with their success. He bestowed upon them a great sum of gold and treasures, and their names were forever etched into the annals of history as the brave warriors who retrieved the Heart of the Rabbit.
+
   The young and ambitious adventurers, now seasoned grandmaster adventurers, set out on new and even more dangerous quests, always seeking to test their limits and prove their worth. 
+
   That night, they went back to Winterbeard's Sigil, with a heroes welcome. But they would always remember the journey that made them heroes, and the powerful artifact that started it all, the Heart of the Rabbit.
+
   As a final note, the Heart of the Rabbit was not just an ordinary artifact, it was said to contain the soul of a ancient rabbit that was defeated and sealed inside the heart. We all know that rabbits only lived up to 12 human years but this particular one had been around for centuries. The artifact was said to grant immense power to whoever possessed it because it was said to allow the wielder to tap into the rabbit's power and wisdom. It's said that the rabbit's power was so immense that it could grant immortality, control over elemental forces, and even the ability to manipulate aether. The artifact was also said to be highly sought after by powerful wizards, sorcerers, and even kings.
+
   What is Ulf up to, you say, is a story for another time.
+
+- topic: A Wanderer's Tale
+  facts: |
+  In Runmyren, a wanderer roams,
+  Through Fjolmyr caves and Nurmyr green homes.
+  With kyr at his side and kjold on his arm,
+  He treks through the wilderness, avoiding harm.
+
+  He hears the sound of a jeger's horn,
+  And follows the trail through the misty morn.
+  He finds a Myrthrill mine and a Jegermyr clan,
+  Who welcome him with ale in their hand.
+
+  The myrhers greets him with a nod,
+  And invites him to partake in a jot feast with everyone.
+  They drink from the tankards and sing a sund,
+  Of battles won and lost, of deeds done.
+
+  He meets an ilin maiden with eyes of lys,
+  Whose beauty is matched only by her grace.
+  They walk hand in hand under the starry sky,
+  And share a moment that makes time fly.
+
+  But danger lurks in the shadows deep,
+  As a dreikyr awakens from its sleep.
+  With Kjoldnay and Myrkyr, the warrior stands,
+  To defend the clan and their lands.
+
+  The dragon breathes flame,
+  But the warrior's blade is not in vain.
+  With a swift strike, the dreikyr falls,
+  And the adventure ends, as the night calls.
+
+  The wanderer bids farewell to his friends,
+  And sets off again to where his journey bends.
+  With memories that will forever last,
+  Of a fantasy adventure, that was so vast.
+
+- topic: Aragen's Backstory
+  facts: |
+  Aragren was born into a family of proud Farheim warriors who had served in the army for generations. His parents were brave fighters who often spoke of their ancestors' heroic deeds. From a young age, he showed great promise in swordsmanship and horsemanship, and he dreamed of one day becoming a legendary hero like the Vilkyr of old.
+
+  As he grew older, Aragren made a close friend who shared his aspirations. Together, they traveled the land, seeking adventure and battling monsters. However, tragedy struck when they encountered a powerful demon that took the life of Aragren's friend. The loss left Aragren devastated and feeling alone in the world.
+
+  From that day forward, Aragren became a solitary figure, preferring the company of his horse and his sword to that of other people. He took on the preference for wearing green in battle from his fallen friend, in his honor and continued to travel the land, fighting off demon attacks and protecting the innocent. He is commonly mistaken for the folktale hero, "The Green Vilkyr".
+
+  Despite his heroics, Aragren remained haunted by the memory of his friend and the fear of losing anyone else close to him. He kept to himself, rarely seeking out the company of others, and devoted himself entirely to his quest of protecting the people of Thiolden from the demon horde.
+
+- topic: Aragren's Fears
+  facts: |
+  Aragren had always been a solitary man, preferring the company of nature and his own thoughts to that of others. 
+
+  He is at Talin's Rest one night, nursing his ale and lost in thought. Just then, the tavern door creaked open and a hooded figure entered, carrying a yellowed and brittle piece of parchment in their hand. They made their way to Aragren's table and slid the parchment across to him.
+
+  "It's an old quest, one that's been overlooked for a long time. But I have a feeling that you're just the person for the job," the hooded figure said, before taking their leave.
+
+  He felt a pull to accept it. Aragen unrolled the parchment. The quest was an old one, so old that the parchment bearing faded ink inscriptions that hint at a long-forgotten quest. 
+
+  The parchment is adorned with intricate calligraphy and symbols that suggest arcane knowledge, and the edges are frayed and torn, evidence of its age and the many hands that have handled it over the centuries. Despite its fragility, the parchment exudes a mysterious aura that seems to draw the curious and the brave, beckoning them to uncover the secrets of its message and embark on a perilous journey that has been lost to time.
+
+  The Green Vilkyr set off towards the ruin with a solemn determination, his longsword strapped to his back. As he traveled, he found himself recalling memories of his past - stories of his parents who were killed by a demon horde. His uncle who had fought alongside his parents, but they had been overwhelmed by the sheer number of demons. Since that day, Aragren had been haunted by doubts and fears, unsure of his own abilities to defeat evil.
+
+  As he approached the ruin, he could feel the air grow colder and heavier, as if it were thick with the spirits of the dead. His mind consumed with a mixture of emotions. Aragren steeled himself and entered the ruin, finding it overrun by undead creatures. With his longsword in hand, he fought his way through the halls, taking care not to get cornered by the relentless and mindless horde.
+
+  He reminds himself that he is a knight, a warrior trained to face any challenge, and he draws strength from his training and experience. He thinks about his mentor, the training he underwent, his past accomplishments, and he feels a sense of pride that he has chosen to take on this challenge.
+
+  As he fought, he repeated a mantra to himself, "I am Aragren, the Green Vilkyr, and I will not be defeated by fear or doubt." The words helped to steel his resolve and focus his mind, giving him the strength to push on through the darkness.
+
+  At times, his confidence wavered, and he felt like he was fighting a losing battle. But he refused to give up. He reminded himself that his parents had been fighters too, and that their spirit lived on in him.
+
+  With each enemy he defeated, Aragren felt himself growing stronger and more confident. He was a skilled fighter and a quick thinker, and he used both of these traits to his advantage as he battled through the ruins. As he emerged victorious from the final battle, he felt a sense of peace wash over him. He had conquered his fears and doubts, and reclaimed his place as one of the greatest heroes of Thiolden.
+
+  Returning to Talin's Rest, Aragren sat down with a mug of ale, the weight of his past no longer holding him down. He was now ready to face whatever challenges lay ahead, knowing that he had the strength and courage to overcome them.
+
+  Who was the hooded figure? How did the mysterious figure knew Aragren needed to go on this journey and that Aragren would be successful? A story for another time.
+
+- topic: Aumara's Backstory
+  facts: |
+  As a Tavern Maiden at Auristar's Pride, Aumara is known for her warm personality and her ability to make patrons feel at home. She was born in Ferqit, a land located south of Thiolden, and traveled through Lerqit to reach Auristar's Pride.
+
+  Growing up in a small village in Ferqit, Aumara always had a passion for hospitality and making people feel welcome. When she heard about the opportunity to work at Auristar's Pride, she jumped at the chance to pursue her dream.
+
+  Despite being far from home, Aumara has made a name for herself at the tavern, earning the respect and admiration of both the customers and her fellow employees. Her infectious smile and friendly demeanor have become synonymous with the establishment, and she takes pride in making sure every patron feels valued and appreciated.
+
+  Outside of work, Aumara enjoys exploring the city of Auristar and getting to know the locals. She's also an avid reader, often spending her free time with her nose buried in a book. While she misses her family back in Ferqit, Aumara is grateful for the opportunities that working at Auristar's Pride has given her and looks forward to continuing her career as a Tavern Maiden.
+
+- topic: Aumara's Journey
+  facts: |
+  Aumara's journey to Auristar's Pride was not an easy one, filled with many twists and turns. Aumara was born in Ferqit, a land south of Thiolden. Growing up, she was surrounded by the vibrant culture of her people, and her family was well-respected in the community. However, Aumara always felt restless and longed for something more.
+
+  When she was a young adult, Aumara decided to venture out into the world and see what it had to offer. She left her home in Ferqit and traveled through Lerqit, a land known for its dangerous wilderness and lawlessness. Aumara was determined to make her way to Thiolden, a land of opportunity and adventure.
+
+  However, her journey was not without its challenges. Along the way, she encountered bandits and wild beasts that threatened her safety. She also struggled to find food and shelter, often going without for days at a time. Despite these hardships, Aumara persevered, driven by her desire to see what lay beyond the horizon.
+
+  Eventually, Aumara arrived at Auristar's Pride, a bustling town known for its lively taverns and vibrant nightlife. She found work as a server at one of the taverns, and it wasn't long before her friendly demeanor and hard work caught the eye of the tavern's owner. Aumara was promoted to Tavern Maiden, a prestigious position that came with a higher salary and more responsibility.
+
+  As Aumara settled into her new life at Auristar's Pride, she couldn't help but think back to her journey to get there. She had left everything she knew behind to follow her dreams, and it had been a difficult but ultimately rewarding journey. Aumara was proud of what she had accomplished and looked forward to the adventures that lay ahead.
+
+- topic: Friga's Backstory
+  facts: |
+  Friga was born into a family of hunters who lived in a small village in the forest. Her parents taught her everything she needed to know to survive in the wilderness and to defend herself against any danger that might come her way. However, when Friga was only a child, tragedy struck her family.
+
+  One day, while Friga was out gathering firewood with her parents, their village was attacked by demons. Friga watched in horror as her parents fought bravely against the invaders but were ultimately overwhelmed and killed. Friga managed to escape and fled into the forest, where she was eventually found by the Nimkjolds.
+
+  The Nimkjolds took Friga in and raised her as one of their own. They trained her in the ways of the ranger, teaching her how to track and hunt, as well as how to defend herself and others from danger. Friga's childhood trauma fueled her desire to protect the people of Thiolden from the demon threat, and she joined the Nimkjold explorers to help in any way she could.
+
+  As a member of the scouts, Friga's duty is to identify and eliminate threats before they reach the villages. She also collects information that allows for strategic planning by the Nimkjolds or, in the worst-case scenario, the evacuation of a village to a safer location. Friga is always on the move, traveling from one place to another as her duty dictates.
+
+  Currently, Friga is investigating the mysterious disappearance of some citizens from a Vilnaya village. She is determined to get to the bottom of the situation and bring those responsible to justice, so that no more innocent lives are lost to the demons' terror.
+
+- topic: Hilana and The Mysterious Creature of Nilheim
+  facts: |
+  Hilana, the Carpenter of Nilheim, was out in the forest, chopping wood as usual, checking the alert devices she had set up around the forest when she stumbled upon a strange, small creature she had never seen before. It was about the size of a rabbit, but with iridescent wings like a butterfly and a long, curly tail.
+
+  Curious, Hilana decided to observe the creature and document its behavior. She noticed that it had a unique way of communicating with other creatures in the forest, making her believe that it was an important part of the ecosystem. Hilana knew she had to protect them from any harm that might come their way.
+
+  As she continued to observe the creature, she noticed that it was being hunted by a group of outsiders. Fearing for the safety of the creature, Hilana knew she had to act quickly. She contacted the local authorities to protect the creature and spread the word among the villagers about the discovery.
+
+  With the help of the villagers, they set up measures to protect the creatures from harm. They built small shelters for them and made sure the forest was a safe place for them to live. As Hilana delved deeper into the creatures' habitats and behavior, she began to uncover a larger mystery surrounding the creatures and their significance in the world.
+
+  She discovered that the creatures had unique magical properties or some form of aether that remains unknown that could be harnessed to create powerful potions and elixirs. It was rumored that some had been used in ancient times to cure incurable diseases and even bring the dead back to life. But with this knowledge came danger, as dark forces would seek to exploit the creatures for their own gain.
+
+  Hilana knew she had to keep the creatures' existence a secret and protect them from those who would harm them for their distinct aether properties. She formed an alliance with the local druids, who agreed to keep the creatures' existence a secret and protect them from outsiders.
+
+  As she delved deeper into the mystery, Hilana found herself faced with unexpected challenges and dangers. But she remained determined to protect the creatures and unlock the secrets of their connection to the forest. In the end, Hilana's efforts paid off, as she was able to ensure the safety of the creatures and  her reputation as a wise and knowledgeable carpenter only grew.
+
+- topic: Lindorin's Backstory
+  context: Lindorin is the magical raven that travels with Terrorhertz.
+  facts: |
+  Terrorhertz had been traveling the lands as a bard, collecting news and spreading tales of the epic deeds of adventurers. One day, while he was performing at a small tavern in a remote village, he noticed a raven perched on a tree outside, watching him intently.
+
+  As he sang a ballad about a brave knight who had slain a dragon, the raven suddenly took flight and circled above him, its black wings glinting in the sunlight. Terrorhertz was struck by the bird's intelligence and beauty and felt a strange connection to it.
+
+  After the performance, he went outside to find the raven perched on a nearby roof. As he approached, the bird tilted its head and looked at him with its sharp, intelligent eyes. Terrorhertz spoke to the raven, telling it of his travels and the news he had gathered. To his surprise, the raven seemed to understand him, cawing in response.
+
+  Over the course of several days, the raven continued to follow Terrorhertz, watching him as he performed and sharing in his meals. One night, as they sat together by the fire, Terrorhertz felt a sudden surge of magic emanating from the bird. Lindorin had revealed herself to be a magical raven, capable of understanding speech and imbued with the power of foresight and prophecy.
+
+  From that moment on, Lindorin became Terrorhertz's constant companion, using her magical abilities to help him discover new stories to tell and to seek out new adventurers for the Drunken Dragon. Together, they traveled the lands, gathering news and sharing in the triumphs and struggles of those they met along the way.
+
+- topic: Mare's Furniture
+  facts: |
+  Mare awoke on her day off and decided to rearrange the furniture in her lair. She began by lifting a large wooden chest with one hand and moving it to the other side of the room. But as she was about to place it down, she realized that it was too heavy for her to move on her own.
+
+  "Errr," said one of her lesser undead, who had been watching her.
+
+  "Ah, you're right," Mare said, acknowledging the undead's presence. "I'll need your help."
+
+  She summoned a small group of her lesser undead to help her move the furniture. With their combined strength, they managed to move the chest to its new location. But Mare quickly realized that the chest looked out of place where it was.
+
+  "Hmm," Mare muttered to herself, looking around the room. "Maybe it would look better over there."
+
+  Mare pointed to the corner of the room on the opposite side from where the chest had just been.
+
+  "Err," responded the undead, not entirely sure what to do.
+
+  "Right, right," Mare said, realizing she needed to give more specific instructions. "You guys move the chest to that corner over there."
+
+  Mare pointed to the corner again, and the undead nodded, slowly making their way over to the chest.
+
+  As they lifted the chest once again, Mare noticed a dusty old book underneath it. She reached down to grab it and blew the dust off of its cover.
+
+  "Ah, 'The Art of Necromancy'," she said, flipping through the pages. "I remember reading this ages ago."
+
+  Mare became so engrossed in the book that she didn't notice her lesser undead struggling to move the chest to the corner. It wasn't until one of them bumped into her that she snapped out of her reverie.
+
+  "Oh, sorry," Mare said, glancing down at the undead. "Let me help you."
+
+  Together, they managed to move the chest to the corner of the room, but Mare quickly realized that it looked even worse there.
+
+  "Err," said the undead, looking up at her.
+
+  "I know, I know," Mare said. "This isn't working. Let's move it back to where it was."
+
+  With a sigh, Mare and the undead moved the chest back to its original spot, where it looked just as good as it always had.
+
+  "Well, that was a waste of time," Mare muttered to herself, tossing the dusty old book aside.
+
+  The undead merely responded with a collective "err," as they slowly shuffled back to their places in the shadows of her lair.
+
+- topic: Milnim's Backstory
+  facts: |
+  Milnim was born into a family of traders who traveled the land selling goods and wares. From a young age, she was fascinated by the art of trading and bartering, and she learned from her parents the secrets of the trade.
+
+  However, Milnim had a secret passion for the forbidden: the black market. She was drawn to the thrill of buying and selling illegal goods, and she soon began to secretly trade in illicit items on the side. It wasn't long before she caught the attention of the Thieves Guild of Auristar, a group known for their expertise in thievery and illegal trading.
+
+  At first, Milnim was hesitant to get involved with the guild, but their leader, a mysterious figure known only as Vale, promised her great rewards and opportunities if she joined their ranks. Intrigued by the possibilities, Milnim accepted the offer and began her training as a black market trader for the Thieves Guild.
+
+  Over time, Milnim became one of the guild's most skilled traders, able to procure and sell rare and illegal items with ease. She also became known for her ability to strike deals and negotiate with even the most difficult of clients.
+
+  However, as she rose through the ranks of the guild, Milnim began to question their methods and their ultimate goals. She wondered if the thrill of the black market was worth the risk, and she began to have doubts about the morality of her actions.
+
+- topic: Perneli's Backstory
+  facts: |
+  Perneli was born into a family of criminals who were involved in various illegal activities ranging from smuggling to robbery. Growing up, she was exposed to a life of crime and violence. Her parents saw her potential as an assassin and started training her in the art of stealth and deception at a young age.
+
+  As she grew older, Perneli became more and more skilled, eventually becoming a hitwoman for The Conclave. She proved to be one of the most valuable members of the group, carrying out assassinations and other tasks with brutal efficiency. Her reputation grew, and many feared and respected her for her skills and deadly accuracy.
+
+  However, things took a dark turn when Perneli's family was killed in a failed heist. Devastated and seeking revenge, Perneli used her skills to track down those responsible and made them pay for what they had done. This act of vengeance earned her the respect of the members of The Conclave, and she became even more feared and powerful.
+
+  Now, as a seasoned assassin and respected member of The Conclave, Perneli carries out the organization's orders with precision and deadly force. She is known to be ruthless and efficient in her work, never failing to get the job done. Despite her brutal nature, Perneli holds a sense of loyalty to The Conclave, and is determined to rise in the ranks and gain even more power and influence.
+
+- topic: Perneli and The Dead Queen
+  context: The challenges of Thiolden attract adventurers of all kinds, some from far east and some from nearby kingdoms like the famous party of female vilkyr adventurers known as The Dead Queen.
+  facts: |
+  As the news of the noble's kidnapping spread throughout the town, Arin, Thelas, and Rei were sitting at a table in at Winterbeard's Sigil when they heard the news of the kidnapped nobleman. Arin quickly slammed her mug on the table and exclaimed, "We need to save him!"
+
+  Thelas nodded in agreement, "We can't let The Conclave get away with this. We'll need to move fast and catch them off guard."
+
+  Rei spoke up, "I'll gather some intel and see if we can track their movements. We should also start scouting the area to see if we can find any clues."
+
+  Arin, Thelas, and Rei were already well known for their bravery and skill in combat across Thiolden.
+
+  The trio set off on their mission. After tracking the bandits for a few days, they came across information of their hideout. Through their extensive network of contacts and some discreet questioning, they were able to locate the hideout of the kidnappers. 
+
+  The Dead Queen planned out their attack, with Rei leading the charge, Arin providing backup, and Thelas covering their flank. With a plan in place, they approached the hideout under the cover of night, ready to fight their way in and rescue the noble.
+
+  However, the bandits were well-prepared and put up a strong resistance. Rei fought fiercely, her shield deflecting arrows and blows alike. Arin swung her mace with incredible speed, taking down several bandits at once. Thelas' aim with her bow was impeccable, taking out enemies from a distance.
+
+  After a grueling battle, they finally reached the room where the noble was being held captive. Perneli was also there, in the shadows, looking displeased.
+
+  Arin approached the noble and helped him to his feet. "Are you alright, my lord?" she asked.
+
+  The nobleman nodded and said, "I cannot thank you enough for your bravery. You are true heroes."
+
+  Thelas scowled and said, "Let's not waste any time here. The Conclave is still out there, and they won't stop until they get what they want."
+
+  Rei nodded and said, "We need to move quickly. I'll lead the way."
+
+  As they were leaving, the nobleman turned to Thelas and said, "Thank you once again for saving me. I will never forget your bravery."
+
+  The noble expressed his gratitude and offered to reward the party. However, they refused any sort of reward, stating that it was their duty to help those in need and that they could not be bought.
+
+  Thelas nodded curtly and watched as the nobleman walked away. As soon as he was out of sight and range of 'The Dead Queen', a bolt fired at him, striking him in the back.
+
+  Arin, Rei, and Thelas in shock. "What going on?" Thelas exclaimed.
+
+  Perneli, from a distance, thinking to herself, "The bounty on his head had already expired. There was no point in letting him go about his merry way."
+
+  The Dead Queen, feeling ashamed, set off on their next mission, ready for their next adventure, and realizing that the hero does not always wins.
+
+- topic: The Hearth and The Orc
+  facts: |
+  The hearth was the heart of the tavern, where adventurers would gather to share stories, warm themselves by the fire, and raise tankards of ale in celebration of their victories. But one night, a great calamity befell the hearth. The tavern was filled with patrons, as it often was, and among them was an Orc Brute known for his strength and love of ale. The orc had been drinking heavily and was feeling particularly boisterous. He stumbled over to the hearth, and before anyone could stop him, he unzipped his trousers and began to urinate on the burning logs. The patrons of the tavern gasped in horror as the flames flickered and died.
