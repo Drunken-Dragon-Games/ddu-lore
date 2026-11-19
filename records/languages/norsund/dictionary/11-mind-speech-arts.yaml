@@ -1,0 +1,439 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: Mind, speech and arts
+field: mind
+contributor: Vledic#0001
+defaults: {layer: native, tier: common, status: ratified, epoch: old}
+context:
+- Thinking, feeling, speaking, storytelling, music, performance, writing and learning.
+- Greetings, thanks and toasts for the phrasebook are at the end of the file.
+- Related words in other files include thyn "name" (03), thula "to bring news" (03), lykning "performance" (03), gremm "curse" (08), folm "book" and ritheim "library" (10).
+
+entries:
+# --- Thought and memory ---
+- lemma: dorn
+  pos: noun
+  class: inanimate
+  gloss: [thought, mind]
+  tier: core
+  derived:
+  - {lemma: dorna, pos: verb, class: weak, gloss: [to think, to ponder], tier: core}
+  - {lemma: dorning, pos: noun, class: inanimate, gloss: [reflection, thinking]}
+  - {lemma: dornug, pos: adj, gloss: [thoughtful, pensive]}
+  - {lemma: dornir, pos: noun, class: animate, gloss: [thinker, philosopher]}
+- lemma: tholm
+  pos: noun
+  class: inanimate
+  gloss: [memory, remembrance]
+  derived:
+  - {lemma: tholma, pos: verb, class: weak, gloss: [to remember, to recall], tier: core}
+  - {lemma: tholmning, pos: noun, class: inanimate, gloss: [remembrance, memorial rite]}
+  - {lemma: tholmug, pos: adj, gloss: [mindful, remembering]}
+- lemma: svinna
+  pos: verb
+  class: weak
+  gloss: [to forget, to fade from mind]
+  tier: core
+  derived:
+  - {lemma: svinning, pos: noun, class: inanimate, gloss: [oblivion, forgetting]}
+  - {lemma: svinnug, pos: adj, gloss: [forgetful]}
+- lemma: nemsa
+  pos: verb
+  class: weak
+  gloss: [to learn, to study]
+  derived:
+  - {lemma: nemsir, pos: noun, class: animate, gloss: [learner, apprentice, student]}
+  - {lemma: nemsning, pos: noun, class: inanimate, gloss: [learning, study]}
+- lemma: sterda
+  pos: verb
+  class: weak
+  gloss: [to teach, to instruct]
+  derived:
+  - {lemma: sterdir, pos: noun, class: animate, gloss: [teacher, master (of a craft)]}
+  - {lemma: sterdning, pos: noun, class: inanimate, gloss: [teaching, lesson]}
+  - {lemma: sterdheim, pos: noun, class: inanimate, gloss: [school], parts: [sterda, heim], notes: "the second ring of Auristar is full of them"}
+- lemma: thrav
+  pos: noun
+  class: inanimate
+  gloss: [belief, faith]
+  derived:
+  - {lemma: thrava, pos: verb, class: weak, gloss: [to believe]}
+  - {lemma: thravug, pos: adj, gloss: [faithful, devout]}
+  - {lemma: thravnuth, pos: adj, gloss: [faithless, unbelieving]}
+- lemma: byrn
+  pos: noun
+  class: inanimate
+  gloss: [hope]
+  notes: "cf. byra 'to sail': hope is a fair wind"
+  derived:
+  - {lemma: byrna, pos: verb, class: weak, gloss: [to hope]}
+  - {lemma: byrnug, pos: adj, gloss: [hopeful]}
+  - {lemma: byrnnuth, pos: adj, gloss: [hopeless]}
+- lemma: mjold
+  pos: adj
+  gloss: [wise, learned]
+  derived:
+  - {lemma: mjoldeth, pos: noun, class: inanimate, gloss: [wisdom]}
+  - {lemma: mjoldir, pos: noun, class: animate, gloss: [sage, wise one]}
+- lemma: lyrk
+  pos: adj
+  gloss: [clever, quick-witted]
+  derived:
+  - {lemma: lyrketh, pos: noun, class: inanimate, gloss: [cleverness, wit]}
+- lemma: glopp
+  pos: noun
+  class: animate
+  gloss: [oaf, idiot]
+  notes: "a mild insult, common in taverns; a professional fool is a gykk"
+  derived:
+  - {lemma: gloppug, pos: adj, gloss: [foolish]}
+  - {lemma: gloppeth, pos: noun, class: inanimate, gloss: [folly]}
+- lemma: orr
+  pos: adj
+  gloss: [mad, crazed]
+  derived:
+  - {lemma: orreth, pos: noun, class: inanimate, gloss: [madness]}
+  - {lemma: orrir, pos: noun, class: animate, gloss: [madman, lunatic]}
+- lemma: tarn
+  pos: noun
+  class: inanimate
+  gloss: [feeling, sense]
+  derived:
+  - {lemma: tarna, pos: verb, class: weak, gloss: [to feel, to sense]}
+  - {lemma: tarnug, pos: adj, gloss: [sensitive]}
+- lemma: fjarm
+  pos: noun
+  class: inanimate
+  gloss: [wonder, marvel]
+  derived:
+  - {lemma: fjarma, pos: verb, class: weak, gloss: [to marvel, to wonder]}
+  - {lemma: fjarmug, pos: adj, gloss: [wondrous, marvellous]}
+- lemma: olk
+  pos: noun
+  class: inanimate
+  gloss: [doubt]
+  derived:
+  - {lemma: olka, pos: verb, class: weak, gloss: [to doubt]}
+  - {lemma: olkug, pos: adj, gloss: [doubtful, unsure]}
+- lemma: sjold
+  pos: noun
+  class: inanimate
+  gloss: [trust, faith (in someone)]
+  derived:
+  - {lemma: sjolda, pos: verb, class: weak, gloss: [to trust, to rely on]}
+  - {lemma: sjoldug, pos: adj, gloss: [trustworthy, reliable]}
+  - {lemma: nesjoldug, pos: adj, gloss: [untrustworthy, treacherous]}
+- lemma: orsk
+  pos: noun
+  class: inanimate
+  gloss: [reason, cause]
+  derived:
+  - {lemma: orskug, pos: adj, gloss: [reasonable, sensible]}
+  - {lemma: orsknuth, pos: adj, gloss: [senseless, without cause]}
+- lemma: hyrv
+  pos: noun
+  class: inanimate
+  gloss: [meaning, sense (of a word)]
+  derived:
+  - {lemma: hyrva, pos: verb, class: weak, gloss: [to mean, to signify]}
+  - {lemma: hyrvnuth, pos: adj, gloss: [meaningless]}
+- {lemma: bidning, pos: noun, class: inanimate, gloss: [patience, waiting], parts: [bida, ning]}
+- {lemma: thursning, pos: noun, class: inanimate, gloss: [longing, desire], parts: [thursa, ning]}
+- {lemma: farthurs, pos: noun, class: inanimate, gloss: [wanderlust (lit. far-desire)], parts: [far, thursa], notes: "Marendil's longing to see the world"}
+
+# --- Feelings ---
+- lemma: ryst
+  pos: noun
+  class: inanimate
+  gloss: [fear, dread]
+  tier: core
+  derived:
+  - {lemma: rysta, pos: verb, class: weak, gloss: [to fear, to dread], tier: core}
+  - {lemma: rystug, pos: adj, gloss: [afraid, fearful]}
+  - {lemma: rystnuth, pos: adj, gloss: [fearless]}
+- lemma: hjarl
+  pos: noun
+  class: inanimate
+  gloss: [love]
+  tier: core
+  derived:
+  - {lemma: hjarla, pos: verb, class: weak, gloss: [to love], tier: core}
+  - {lemma: hjarlir, pos: noun, class: animate, gloss: [lover, beloved]}
+  - {lemma: hjarlug, pos: adj, gloss: [loving, tender]}
+- lemma: vrimm
+  pos: noun
+  class: inanimate
+  gloss: [hatred, scorn]
+  derived:
+  - {lemma: vrimma, pos: verb, class: weak, gloss: [to hate, to scorn]}
+  - {lemma: vrimmug, pos: adj, gloss: [hateful, spiteful]}
+- lemma: brath
+  pos: noun
+  class: inanimate
+  gloss: [anger, wrath]
+  derived:
+  - {lemma: bratha, pos: verb, class: weak, gloss: [to rage, to be angry]}
+  - {lemma: brathug, pos: adj, gloss: [angry, wrathful]}
+- lemma: gaum
+  pos: noun
+  class: inanimate
+  gloss: [joy, merriment]
+  derived:
+  - {lemma: gauma, pos: verb, class: weak, gloss: [to rejoice, to make merry]}
+  - {lemma: gaumug, pos: adj, gloss: [joyful, merry]}
+  - {lemma: Gaumjovir, pos: noun, class: animate, gloss: [Joybringer (lit. joy-giver)], parts: [gaum, jova, ir], notes: "Vadanna's title"}
+- lemma: velm
+  pos: noun
+  class: inanimate
+  gloss: [grief, sorrow]
+  derived:
+  - {lemma: velma, pos: verb, class: weak, gloss: [to grieve, to mourn]}
+  - {lemma: velmug, pos: adj, gloss: [sorrowful, mournful]}
+  - {lemma: velmsund, pos: noun, class: inanimate, gloss: [lament, dirge], parts: [velm, sund]}
+- {lemma: tara, pos: verb, class: weak, gloss: [to weep, to shed tears], parts: [tar], notes: "verb from tar 'tear, drop'"}
+- lemma: thramm
+  pos: noun
+  class: inanimate
+  gloss: [pride]
+  derived:
+  - {lemma: thrammug, pos: adj, gloss: [proud, haughty]}
+- lemma: stilm
+  pos: noun
+  class: inanimate
+  gloss: [peace, calm]
+  derived:
+  - {lemma: stilma, pos: verb, class: weak, gloss: [to calm, to soothe]}
+  - {lemma: stilmug, pos: adj, gloss: [calm, peaceful]}
+  - {lemma: stilmir, pos: noun, class: animate, gloss: [peacemaker], notes: "said of Haakon, who seeks dialogue before weapons"}
+- lemma: thusk
+  pos: noun
+  class: inanimate
+  gloss: [worry, unease]
+  derived:
+  - {lemma: thuska, pos: verb, class: weak, gloss: [to worry, to fret]}
+  - {lemma: thuskug, pos: adj, gloss: [anxious, uneasy]}
+- lemma: gulsk
+  pos: noun
+  class: inanimate
+  gloss: [envy, jealousy]
+  derived:
+  - {lemma: gulskug, pos: adj, gloss: [envious, jealous]}
+- lemma: blidd
+  pos: adj
+  gloss: [kind, gentle]
+  derived:
+  - {lemma: bliddeth, pos: noun, class: inanimate, gloss: [kindness, gentleness]}
+- lemma: vresk
+  pos: adj
+  gloss: [cruel, harsh]
+  derived:
+  - {lemma: vresketh, pos: noun, class: inanimate, gloss: [cruelty]}
+- {lemma: ynsam, pos: adj, gloss: [alone, lonely], parts: [yn, sam], notes: "Midelmar is called ynsam mar, the lonely mountain"}
+- lemma: myl
+  pos: noun
+  class: inanimate
+  gloss: [smile]
+  derived:
+  - {lemma: myla, pos: verb, class: weak, gloss: [to smile]}
+- lemma: mjunn
+  pos: noun
+  class: inanimate
+  gloss: [kiss]
+  derived:
+  - {lemma: mjunna, pos: verb, class: weak, gloss: [to kiss]}
+
+# --- Speech ---
+- lemma: thrin
+  pos: noun
+  class: inanimate
+  gloss: [question]
+  derived:
+  - {lemma: thrina, pos: verb, class: weak, gloss: [to ask, to question], tier: core}
+  - {lemma: thrinir, pos: noun, class: animate, gloss: [questioner, inquisitor]}
+- lemma: gjend
+  pos: noun
+  class: inanimate
+  gloss: [answer, reply]
+  derived:
+  - {lemma: gjenda, pos: verb, class: weak, gloss: [to answer, to reply], tier: core}
+- lemma: hjom
+  pos: noun
+  class: inanimate
+  gloss: [call, cry, shout]
+  derived:
+  - {lemma: hjoma, pos: verb, class: weak, gloss: [to shout, to cry out, to summon]}
+  - {lemma: hjomug, pos: adj, gloss: [loud, clamorous]}
+- {lemma: melning, pos: noun, class: inanimate, gloss: [speech, address, oration], parts: [mela, ning]}
+- {lemma: melir, pos: noun, class: animate, gloss: [speaker, voice (as a title)], parts: [mela, ir], notes: "Haakon, Voice of the Seven Lights, is Stevlyseni Melir"}
+- lemma: stull
+  pos: noun
+  class: inanimate
+  gloss: [silence]
+  derived:
+  - {lemma: stullug, pos: adj, gloss: [silent]}
+  - {lemma: stulla, pos: verb, class: weak, gloss: [to fall silent, to hush]}
+- {lemma: aftsund, pos: noun, class: inanimate, gloss: [echo (lit. back-voice)], parts: [aft, sund]}
+- lemma: frast
+  pos: noun
+  class: inanimate
+  gloss: [story, tale]
+  derived:
+  - {lemma: frasta, pos: verb, class: weak, gloss: [to tell a story]}
+  - {lemma: frastir, pos: noun, class: animate, gloss: [storyteller]}
+  - {lemma: langfrast, pos: noun, class: inanimate, gloss: [epic, saga (lit. long tale)], parts: [lang, frast]}
+  - {lemma: kjalfrast, pos: noun, class: inanimate, gloss: [tavern gossip, tall tale (lit. drink-tale)], parts: [kjal, frast]}
+- lemma: lusk
+  pos: noun
+  class: inanimate
+  gloss: [lie, falsehood]
+  derived:
+  - {lemma: luska, pos: verb, class: weak, gloss: [to lie, to deceive]}
+  - {lemma: luskir, pos: noun, class: animate, gloss: [liar, deceiver]}
+  - {lemma: luskug, pos: adj, gloss: ["false", deceitful], tier: core, notes: "the opposite of sjand 'true'"}
+- lemma: jart
+  pos: noun
+  class: inanimate
+  gloss: [promise, word of honour]
+  derived:
+  - {lemma: jarta, pos: verb, class: weak, gloss: [to promise]}
+  - {lemma: jartbrosten, pos: adj, gloss: [forsworn, promise-broken], parts: [jart, brosten]}
+- lemma: lom
+  pos: noun
+  class: inanimate
+  gloss: [praise]
+  derived:
+  - {lemma: loma, pos: verb, class: weak, gloss: [to praise, to extol]}
+  - {lemma: lomsund, pos: noun, class: inanimate, gloss: [praise-song], parts: [lom, sund]}
+- lemma: hadd
+  pos: noun
+  class: inanimate
+  gloss: [insult, mockery]
+  derived:
+  - {lemma: hadda, pos: verb, class: weak, gloss: [to insult, to mock]}
+  - {lemma: haddir, pos: noun, class: animate, gloss: [mocker]}
+- lemma: vrok
+  pos: noun
+  class: inanimate
+  gloss: [oath (swear-word), profanity]
+  notes: "not a sworn oath (that is veth); for a magical curse see gremm"
+  derived:
+  - {lemma: vroka, pos: verb, class: weak, gloss: [to swear, to curse aloud]}
+  - {lemma: vrokug, pos: adj, gloss: [foul-mouthed]}
+  - {lemma: vrok, pos: interj, gloss: [damn!], notes: "the commonest oath in Thiolden; stronger is Nuth hensa du! 'may the void take you!'"}
+- lemma: gjak
+  pos: noun
+  class: inanimate
+  gloss: [joke, jest]
+  derived:
+  - {lemma: gjaka, pos: verb, class: weak, gloss: [to joke, to jest]}
+  - {lemma: gjakir, pos: noun, class: animate, gloss: [joker, wit]}
+- {lemma: vrell, pos: noun, class: inanimate, gloss: [riddle]}
+- lemma: ovasunda
+  pos: verb
+  class: weak
+  gloss: [to translate, to interpret (lit. to speak across)]
+  parts: [ova, sunda]
+  derived:
+  - {lemma: ovasundir, pos: noun, class: animate, gloss: [translator, interpreter]}
+  - {lemma: ovasundning, pos: noun, class: inanimate, gloss: [translation]}
+
+# --- Writing and learning ---
+- {lemma: arrit, pos: noun, class: inanimate, gloss: [chronicle, annals (lit. year-writing)], parts: [ar, rit], derived: [{lemma: arritir, pos: noun, class: animate, gloss: [chronicler], notes: "the Mad Chronicler is Arritir Orrin"}]}
+- {lemma: skynir, pos: noun, class: animate, gloss: [scholar (lit. one who knows)], parts: [skyna, ir]}
+
+# --- Music, verse and performance ---
+- {lemma: lykheim, pos: noun, class: inanimate, gloss: [theatre, playhouse], parts: [lyka, heim]}
+- {lemma: sundlyk, pos: noun, class: inanimate, gloss: [music (lit. song-play)], parts: [sund, lyka], derived: [{lemma: sundlykir, pos: noun, class: animate, gloss: [musician]}]}
+- {lemma: svafsund, pos: noun, class: inanimate, gloss: [lullaby (lit. sleep-song)], parts: [svaf, sund]}
+- lemma: sjarv
+  pos: noun
+  class: inanimate
+  gloss: [verse, stanza]
+  derived:
+  - {lemma: sjarvir, pos: noun, class: animate, gloss: [verse-maker, poet]}
+- {lemma: ljut, pos: noun, class: inanimate, gloss: [lute], layer: kedre, epoch: contact, etymology: "Kedre liuto"}
+- {lemma: kitar, pos: noun, class: inanimate, gloss: [kitar, six-stringed instrument], layer: kedre, epoch: contact, etymology: "Kedre kitara", notes: "the bard Enkian's instrument"}
+- {lemma: gjel, pos: noun, class: inanimate, gloss: [string (of an instrument), cord]}
+- lemma: bjolk
+  pos: noun
+  class: inanimate
+  gloss: [horn (instrument)]
+  derived:
+  - {lemma: bjolka, pos: verb, class: weak, gloss: [to sound a horn]}
+  - {lemma: bjolkir, pos: noun, class: animate, gloss: [horn-blower]}
+- lemma: sviv
+  pos: noun
+  class: inanimate
+  gloss: [flute, pipe]
+  derived:
+  - {lemma: svivir, pos: noun, class: animate, gloss: [piper]}
+- lemma: sveip
+  pos: noun
+  class: inanimate
+  gloss: [dance]
+  derived:
+  - {lemma: sveipa, pos: verb, class: weak, gloss: [to dance]}
+  - {lemma: sveipir, pos: noun, class: animate, gloss: [dancer]}
+- lemma: sjaka
+  pos: verb
+  class: weak
+  gloss: [to juggle]
+  derived:
+  - {lemma: sjakir, pos: noun, class: animate, gloss: [juggler]}
+- lemma: dulm
+  pos: noun
+  class: inanimate
+  gloss: [mask, disguise]
+  derived:
+  - {lemma: dulma, pos: verb, class: weak, gloss: [to disguise, to mask]}
+
+# --- Art and image ---
+- lemma: gelm
+  pos: noun
+  class: inanimate
+  gloss: [art, adornment]
+  derived:
+  - {lemma: gelma, pos: verb, class: weak, gloss: [to adorn, to make art]}
+  - {lemma: gelmir, pos: noun, class: animate, gloss: [artist]}
+  - {lemma: gelmug, pos: adj, gloss: [ornate, artful]}
+- lemma: grepp
+  pos: noun
+  class: inanimate
+  gloss: [print, stamp, impression]
+  derived:
+  - {lemma: greppa, pos: verb, class: weak, gloss: [to print, to press]}
+  - {lemma: greppir, pos: noun, class: animate, gloss: [printer, print-maker], notes: "Abbelka of Auristar is a famed greppir"}
+- lemma: thyld
+  pos: noun
+  class: inanimate
+  gloss: [picture, image, likeness]
+  derived:
+  - {lemma: thylda, pos: verb, class: weak, gloss: [to depict, to portray]}
+  - {lemma: thyldir, pos: noun, class: animate, gloss: [portraitist]}
+
+# --- Greetings, thanks and toasts (phrasebook) ---
+- lemma: vels
+  pos: noun
+  class: inanimate
+  gloss: [greeting, salutation]
+  notes: "for welcoming a guest use velk (see 03)"
+  derived:
+  - {lemma: velsa, pos: verb, class: weak, gloss: [to greet, to salute]}
+- {lemma: lys dy, pos: interj, gloss: [hello (lit. light to you)], parts: [lys, dy], tier: core, notes: "Starisund greeting; polite form lys dyn. Reply: eth dy lys"}
+- {lemma: eth dy lys, pos: interj, gloss: [and light to you (reply to a greeting)], parts: [eth, dy, lys]}
+- {lemma: starkjold, pos: interj, gloss: [farewell (lit. star-ward)], parts: [star, kjold], tier: core, notes: "worn down from ma staren kjolda du 'may the stars keep you'"}
+- {lemma: thiol, pos: interj, gloss: [hail! (hunters' greeting, lit. brave!)], notes: "Vilkyren greet each other with a raised blade and Thiol!"}
+- {lemma: kjal, pos: interj, gloss: [cheers! (lit. a drink!)], notes: "tavern greeting and toast"}
+- lemma: mund
+  pos: noun
+  class: inanimate
+  gloss: [thanks, gratitude]
+  tier: core
+  derived:
+  - {lemma: munda, pos: verb, class: weak, gloss: [to thank]}
+  - {lemma: mundug, pos: adj, gloss: [grateful, thankful]}
+  - {lemma: mund, pos: interj, gloss: [thanks!]}
+  - {lemma: ful mund, pos: interj, gloss: [many thanks]}
+- {lemma: nekut, pos: interj, gloss: ["you're welcome (lit. nothing)"], notes: "the pronoun nekut 'nothing' used as a reply to thanks"}
+- {lemma: marthyn, pos: noun, class: inanimate, gloss: [fame, renown (lit. high name)], parts: [mar, thyn]}

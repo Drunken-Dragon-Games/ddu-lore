@@ -1,0 +1,36 @@
+document: fact-record/v1
+topic: Old Norsund, the settlers' tongue
+contributor: Vledic#0001
+context:
+- Version 1.0.0, part of the Norsund language build approved on 2026-11-19. Grammar, dictionary and texts live beside this record.
+- Dates use the Vairean imperial system (b.v.e. / a.v.e.).
+facts:
+- Old Norsund is the language of the adventurers who settled Thiolden from the island of Farheim around 450 b.v.e.
+- Old Norsund was the everyday language of Marheim and the first Vilnayan villages.
+- Old Norsund gave way to Norsund around 100 a.v.e., about the time the First Ring of the Kjoldmur was finished.
+- Vilkyr ("free sword") is an Old Norsund word that Norsund kept unchanged.
+- Old Norsund descends from Proto-Norsund, spoken on Farheim, and ultimately from Proto-Valian.
+subtopics:
+
+- topic: How it differs from Norsund
+  facts:
+  - Old Norsund nouns have four cases (nominative, accusative, genitive, dative).
+  - Its endings keep full vowels, for example the animate plural -in and the present -ur, which became Norsund -en and -er.
+  - The word for "the" was hin, a separate word placed after the noun; Norsund fused it into the suffix -in.
+  - Verbs still agree with plural subjects (kjoldur "guards", kjoldum "they guard").
+  - Subordinate clauses put the verb last.
+  - It has no evidential particles; oaths call the gods as witnesses instead.
+
+- topic: Where it is still used
+  facts:
+  - Vilkyr oaths are sworn in Old Norsund.
+  - The laws carved on the Kjoldmur are written in Old Norsund.
+  - The oldest temple invocations of Auristar are in Old Norsund and use the old god-names Myr and Heid.
+  - Rune-craft formulas and sagas are composed in Old Norsund.
+  - Farheim island speech keeps some Old Norsund forms in songs.
+
+- topic: Writing
+  facts:
+  - Old Norsund was written in runes, carved on wood, bone and slate.
+  - The rune-row does not mark vowel length or double consonants, so the same carving can be read more than one way.
+  - Scholars cite Old Norsund with þ, ð and acute accents for long vowels (þjol, veða, tír); lore writers may use the plain spelling (thiol, vetha, tiir).

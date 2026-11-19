@@ -1,0 +1,34 @@
+document: fact-record/v1
+topic: Kedre, the imperial tongue
+contributor: Vledic#0001
+context:
+- Version 1.0.0, part of the Norsund language build approved on 2026-11-19. Grammar, dictionary and texts live beside this record.
+- Dates use the Vairean imperial system (b.v.e. / a.v.e.).
+facts:
+- Kedre is the language of the Vairean Empire. Its name means "the Tongue".
+- Kedre is spoken in Keras, the imperial city, and in the old Kingdom of Reinovaire.
+- Kedre and Norsund are distant cousins; both descend from Proto-Valian.
+- Lysmar (Norsund) and Luxis (Kedre) are the same word in the two branches, both meaning light.
+subtopics:
+
+- topic: How it looks and sounds
+  facts:
+  - Most Kedre words end in a vowel, and stress falls on the second-to-last syllable.
+  - Kedre has no th or y sounds.
+  - Kedre writes k for the k sound (Keras, Keria) and x for ks (Luxis).
+  - Kedre puts the head of a phrase first (Reinovaire "realm of Vaire", sangia Vaire "the bloodline of Vaire"), the opposite of Norsund.
+  - The suffix -s marks gods, imperial titles and holy cities (Luxis, Keras).
+  - Imperial decrees begin with the verb.
+
+- topic: Kedre in Thiolden
+  facts:
+  - Kedre arrived in Thiolden with Rechtar Vaire's conquest (37 to 51 a.v.e.) and Doir Vaire's rule over the Vilnayan towns.
+  - Norsund borrowed Kedre words for walls, canals, markets, squares, towers and gates (mur, rie, merk, kamp, tur, port) and the subordinator ke.
+  - Scholars of the Starlight Library later borrowed learned Kedre words such as alkimia, medikina and kupola.
+  - Kedre borrowed runa from Norsund to name the rune magic of Thiolden; native Kedre runo only means "secret".
+
+- topic: Names
+  facts:
+  - Keras means "the Crowned" and Keria "the crown-land", the Empire.
+  - Rechtar means "ruler".
+  - The suggested Kedre names Exaire ("domain of the springs") and Arbaire ("domain of the trees") replaced the real-world names Exeter and Arbury in the lore pull request.

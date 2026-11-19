@@ -1,0 +1,44 @@
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: Poetics (sundlag, kennings, heiti)
+contributor: Vledic#0001
+status: ratified
+context:
+- The Sundwanderen (song-wanderers) carry news across Thiolden in verse. Their measure is the sundlag ("song-law").
+
+rules:
+- id: POET-01
+  title: The sundlag line
+  rule: >
+    A line has two half-lines with two stressed syllables each, separated in writing by a raised dot. The first stressed
+    syllable of the second half-line must alliterate with one or both stressed syllables of the first half-line.
+    All vowels alliterate with each other. sk, st and sp alliterate only with themselves. Unstressed syllables are free.
+  examples:
+  - {form: "Vil kyrin · vothen sundin", translation: "Free the blade · bound the word (alliteration on v)"}
+  - {form: "Star dul ur nettin · stari, sund", translation: "The star fell from the sky · fated, sung (alliteration on st)"}
+
+- id: POET-02
+  title: Kennings
+  rule: >
+    Instead of a plain noun, verse names a thing by an image: base + modifier, often with -i-. Kennings can nest
+    (a kenning inside a kenning). Each bard is judged by fresh kennings; stock ones are listed in the dictionary with register poetic.
+  examples:
+  - {form: "kyrsund", gloss: "blade-song", translation: "battle"}
+  - {form: "starigand", gloss: "star-road", translation: "a canal of Auristar"}
+  - {form: "nettylv", gloss: "sky-water", translation: "the water of the Auristar"}
+  - {form: "fyrin kjalheimi", gloss: "fire-DEF tavern-GEN", translation: "the tavern cook"}
+  - {form: "lysmari tar", gloss: "Lysmar-GEN tear", translation: "a pearl, a drop of starlit water"}
+  - {form: "ulfi kjal", gloss: "wolf-GEN drink", translation: "blood"}
+
+- id: POET-03
+  title: Heiti
+  rule: >
+    Heiti are single poetic synonyms that exist only in verse, usually Old Norsund words: jor "steed" for hest "horse",
+    bran "blade" for kyr, ljom "radiance" for lys. They are marked register poetic in the dictionary.
+
+- id: POET-04
+  title: Openings and closings
+  rule: >
+    A song opens with "Sund!" ("Hear the song!") and closes with "Sva sundade em, sund." ("Thus I sang it, as it is sung.").
+    Praise poems for the Lights close with "stari".

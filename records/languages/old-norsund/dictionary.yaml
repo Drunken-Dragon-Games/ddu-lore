@@ -1,0 +1,186 @@
+document: lang-dictionary/v1
+language: old-norsund
+version: 1.0.0
+topic: Old Norsund dictionary
+field: old-norsund
+contributor: Vledic#0001
+defaults: {layer: native, tier: common, status: ratified, epoch: old, register: old}
+context:
+- Words of Old Norsund, the settlers' language (450 b.v.e. to c. 100 a.v.e.) and the later register of oaths, law, liturgy, rune-craft and verse.
+- forms.norsund gives the modern Norsund word where one exists; forms.scholarly gives the citation spelling with þ, ð and acute accents.
+- Etymologies use the Proto-Valian forms of records/languages/norsund/grammar/13-history.yaml.
+
+entries:
+# --- Cognate set (must match grammar/13-history.yaml) ---
+- {lemma: thiol,   pos: adj,  gloss: [brave, bold], forms: {norsund: thiol, scholarly: þjol}, etymology: "Proto-Valian *telu (Kedre telo)", tier: core}
+- {lemma: kjold,   pos: noun, class: inanimate, gloss: [ward, shield, guard-post], forms: {norsund: kjold}, etymology: "Proto-Valian *geldhu (Kedre geldo)", tier: core}
+- {lemma: kyr,     pos: noun, class: inanimate, gloss: [blade, sword], forms: {norsund: kyr}, etymology: "Proto-Valian *guri (Kedre guri)", tier: core}
+- {lemma: tyr,     pos: noun, class: inanimate, gloss: [point, edge, spearhead], forms: {norsund: tyr}, etymology: "Proto-Valian *duri (Kedre duri)"}
+- {lemma: star,    pos: noun, class: inanimate, gloss: [star], forms: {norsund: star}, etymology: "Proto-Valian *staru (Kedre staro)", tier: core, notes: "inanimate in Old Norsund; Starisund later made stars animate"}
+- {lemma: lys,     pos: noun, class: inanimate, gloss: [light], forms: {norsund: lys}, etymology: "Proto-Valian *luksi (Kedre luxi, Luxis)", tier: core}
+- {lemma: den,     pos: noun, class: inanimate, gloss: [land, realm], forms: {norsund: den}, etymology: "Proto-Valian *dhens (Kedre fens)"}
+- {lemma: heim,    pos: noun, class: inanimate, gloss: [home, settlement], forms: {norsund: heim}, etymology: "Proto-Valian *kaimu (Kedre kaimo)", tier: core}
+- {lemma: sund,    pos: noun, class: inanimate, gloss: [voice, song, word], forms: {norsund: sund}, etymology: "Proto-Valian *sundhu (Kedre sundo)", tier: core}
+- {lemma: nor,     pos: noun, class: inanimate, gloss: [north], forms: {norsund: nor}, etymology: "Proto-Valian *noru (Kedre noro)"}
+- {lemma: vil,     pos: adj,  gloss: [free, unbound], forms: {norsund: vil}, etymology: "Proto-Valian *wili (Kedre vili)", tier: core}
+- {lemma: negi,    pos: noun, class: animate, gloss: [folk, people], forms: {norsund: nay, accusative: nega, genitive: negis, dative: nege, plural: negin}, etymology: "Proto-Valian *naghi (Kedre nahi)", tier: core, notes: "g between vowels later became j, giving Norsund nay"}
+- {lemma: myr,     pos: noun, class: animate, gloss: [kin, god-blessed tribe], forms: {norsund: myr}, etymology: "Proto-Valian *muri (Kedre muri)"}
+- {lemma: mar,     pos: adj,  gloss: [high, lofty, great], forms: {norsund: mar}, etymology: "Proto-Valian *maru (Kedre maro)"}
+- {lemma: kull,    pos: noun, class: inanimate, gloss: [ember, coal], forms: {norsund: kull}, etymology: "Proto-Valian *gulnu (Kedre gulno)"}
+- {lemma: nur,     pos: adj,  gloss: [green, living], forms: {norsund: nur}, etymology: "Proto-Valian *nuru (Kedre nuro)"}
+- {lemma: run,     pos: noun, class: inanimate, gloss: [rune, secret], forms: {norsund: run}, etymology: "Proto-Valian *runu (Kedre runo 'secret')", tier: core}
+- {lemma: vir,     pos: noun, class: inanimate, gloss: [forest], forms: {norsund: vir}, etymology: "Proto-Valian *wiru (Kedre viro)"}
+- {lemma: iliin,   pos: adj,  gloss: [holy, hallowed], forms: {norsund: ilin, scholarly: ilín}, etymology: "Proto-Valian *iliinu (Kedre ilino)"}
+- {lemma: fjol,    pos: prep, gloss: [beneath, under], forms: {norsund: fjol}, etymology: "Proto-Valian *pelu (Kedre pelo)", notes: "takes the dative; also a noun 'the deep'"}
+- {lemma: aur,     pos: adj,  gloss: [silver-bright], forms: {norsund: aur}, etymology: "Proto-Valian *auru (Kedre auro)"}
+- {lemma: nim,     pos: noun, class: inanimate, gloss: [night], forms: {norsund: nim}, etymology: "Proto-Valian *nimu (Kedre nimo)"}
+- {lemma: nett,    pos: noun, class: inanimate, gloss: [firmament], forms: {norsund: nett}, etymology: "Proto-Valian *neddu (Kedre neddo)"}
+- {lemma: ur,      pos: noun, class: inanimate, gloss: [origin, source], forms: {norsund: ur}, etymology: "Proto-Valian *uru (Kedre uro)", notes: "also the preposition 'out of'"}
+- {lemma: thamm,   pos: noun, class: animate, gloss: [hand], forms: {norsund: thamm, plural: themm}, etymology: "Proto-Valian *tammu (Kedre tammo)", notes: "also the number five"}
+- {lemma: dov,     pos: num,  gloss: [two], forms: {norsund: dov}, etymology: "Proto-Valian *dhowu (Kedre fovo)", tier: core}
+- {lemma: thrim,   pos: num,  gloss: [three], forms: {norsund: thrim, scholarly: þrim}, etymology: "Proto-Valian *trimi (Kedre trimi)", tier: core}
+- {lemma: sev,     pos: num,  gloss: [seven], forms: {norsund: sev}, etymology: "Proto-Valian *sewi (Kedre sevi)", tier: core}
+- {lemma: hwander, pos: noun, class: animate, gloss: [wanderer], forms: {norsund: wander}, etymology: "Proto-Valian *kwandhru (Kedre kvandro)"}
+- {lemma: dauth,   pos: noun, class: inanimate, gloss: [death], forms: {norsund: dauth, scholarly: dauð}, etymology: "Proto-Valian *dhautu (Kedre fauto)"}
+- {lemma: ar,      pos: noun, class: inanimate, gloss: [year], forms: {norsund: ar}, etymology: "Proto-Valian *aru (Kedre aro)"}
+
+# --- Pronouns and grammar words ---
+- {lemma: em,    pos: pron, gloss: [I], forms: {accusative: om, genitive: emi, dative: ome}, tier: core}
+- {lemma: dy,    pos: pron, gloss: [you (one)], forms: {accusative: du, genitive: dys, dative: due}, tier: core}
+- {lemma: sel,   pos: pron, gloss: [he, she (a being)], forms: {accusative: sal, genitive: seli, dative: sale}, tier: core}
+- {lemma: at,    pos: pron, gloss: [it], forms: {accusative: at, genitive: ati, dative: ate}, tier: core}
+- {lemma: emin,  pos: pron, gloss: [we], forms: {norsund: emen, accusative: omin, genitive: emini, dative: omum}, tier: core}
+- {lemma: dyn,   pos: pron, gloss: [you (several)], forms: {accusative: dun, genitive: dyni, dative: dunum}}
+- {lemma: selin, pos: pron, gloss: [they (beings)], forms: {norsund: selen, accusative: salin, genitive: selini, dative: salum}}
+- {lemma: atar,  pos: pron, gloss: [they (things)], forms: {accusative: atar, genitive: atari, dative: atum}}
+- {lemma: sjo,   pos: pron, gloss: [self]}
+- {lemma: hin,   pos: det,  gloss: [the (after the noun)], forms: {plural: hine}, notes: "fused in Norsund into the suffixes -in, -ene, -arne"}
+- {lemma: hes,   pos: det,  gloss: [this], forms: {plural.inanimate: hesar, plural.animate: hesin}}
+- {lemma: thas,  pos: det,  gloss: [that, that one], forms: {accusative: thasa}}
+- {lemma: ys,    pos: conj, gloss: [who, which, that (relative)], notes: "replaced in Norsund by the Kedre loan ke"}
+- {lemma: ne,    pos: part, gloss: [not], notes: "always directly before the finite verb"}
+- {lemma: eth,   pos: conj, gloss: [and]}
+- {lemma: ava,   pos: conj, gloss: [but]}
+- {lemma: vo,    pos: conj, gloss: [or]}
+- {lemma: sof,   pos: conj, gloss: [if]}
+- {lemma: kuna,  pos: conj, gloss: [when]}
+- {lemma: kum,   pos: pron, gloss: [who, whoever]}
+- {lemma: kut,   pos: pron, gloss: [what, whatever]}
+- {lemma: sva,   pos: adv,  gloss: [thus, so]}
+- {lemma: i,     pos: prep, gloss: [in]}
+- {lemma: a,     pos: prep, gloss: [on, at]}
+- {lemma: ve,    pos: prep, gloss: [to, toward]}
+- {lemma: ter,   pos: prep, gloss: [for, for the sake of]}
+- {lemma: aft,   pos: prep, gloss: [after, in memory of]}
+- {lemma: hjo,   pos: prep, gloss: [with, beside]}
+- {lemma: mid,   pos: prep, gloss: [among]}
+- {lemma: ute,   pos: prep, gloss: [outside]}
+- {lemma: yn,    pos: num,  gloss: [one, a certain]}
+- {lemma: dovthamm, pos: num, gloss: [ten (lit. two hands)], parts: [dov, thamm], forms: {norsund: tamm}, notes: "contracted to tamm in Norsund"}
+- {lemma: haun,  pos: num,  gloss: [hundred]}
+
+# --- Verbs ---
+- {lemma: vesa,   pos: verb, class: irregular, gloss: [to be], forms: {present: es, present.plural: erum, past: vas, past.plural: varum, participle: vesin, optative: si}, tier: core}
+- {lemma: hala,   pos: verb, class: weak, gloss: [to owe, to be bound to], forms: {present: halur, past: halde, norsund: hal}, notes: "future auxiliary; halur > Norsund hal, halde > Norsund halde 'would'"}
+- {lemma: maga,   pos: verb, class: weak, gloss: [to be able, to have the power to], forms: {present: magur, past: matte, norsund: ma}, notes: "worn down to the Norsund wish particle ma"}
+- {lemma: vetha,  pos: verb, class: strong, gloss: [to swear, to bind by oath], forms: {present: vethur, past: vath, participle: vothin, scholarly: veða}}
+- {lemma: dola,   pos: verb, class: strong, gloss: [to fall], forms: {present: dolur, past: dul, participle: dolin}}
+- {lemma: lida,   pos: verb, class: strong, gloss: [to come], forms: {present: lidur, past: leid, participle: lidin}}
+- {lemma: gana,   pos: verb, class: strong, gloss: [to go], forms: {present: ganur, past: gon, participle: ganin}}
+- {lemma: saja,   pos: verb, class: irregular, gloss: [to see], forms: {present: sajur, past: sa, participle: sajin}, notes: "its past sa became the Norsund evidential 'I saw it'"}
+- {lemma: jova,   pos: verb, class: irregular, gloss: [to give], forms: {present: jovur, past: jav, participle: jovin, imperative: jov}}
+- {lemma: bita,   pos: verb, class: strong, gloss: [to bite], forms: {present: bitur, past: beit, participle: bitin, optative: biti}}
+- {lemma: bresta, pos: verb, class: strong, gloss: [to break, to burst], forms: {present: brestur, past: brast, participle: brostin}}
+- {lemma: hensa,  pos: verb, class: strong, gloss: [to take], forms: {present: hensur, past: hans, participle: honsin}}
+- {lemma: mela,   pos: verb, class: strong, gloss: [to speak], forms: {present: melur, past: mal, participle: molin}}
+- {lemma: aga,    pos: verb, class: strong, gloss: [to have, to own], forms: {present: agur, past: og, participle: agin}}
+- {lemma: marlida, pos: verb, class: strong, gloss: [to rise, to ascend, to transcend], parts: [mar, lida], forms: {past: marleid, participle: marlidin, optative.plural: marlidim}, notes: "used of the triumphant dead rising into the night sky"}
+- {lemma: kjolda,  pos: verb, class: weak, gloss: [to guard, to keep watch], forms: {present: kjoldur, optative: kjoldi}}
+- {lemma: thiarka, pos: verb, class: weak, gloss: [to hunt, to track]}
+- {lemma: skrinka, pos: verb, class: weak, gloss: [to shrink back, to flee]}
+- {lemma: hjalda,  pos: verb, class: weak, gloss: [to raise, to build]}
+- {lemma: rista,   pos: verb, class: weak, gloss: [to carve, to cut (runes)]}
+- {lemma: runa,    pos: verb, class: weak, gloss: [to work rune-craft]}
+- {lemma: heita,   pos: verb, class: weak, gloss: [to call upon, to invoke, to name], derived: [{lemma: heiti, pos: noun, class: inanimate, gloss: [poetic name, a calling]}]}
+- {lemma: skila,   pos: verb, class: weak, gloss: [to judge, to decide]}
+- {lemma: ilina,   pos: verb, class: weak, gloss: [to hallow]}
+- {lemma: sunda,   pos: verb, class: weak, gloss: [to sing]}
+- {lemma: hwandra, pos: verb, class: weak, gloss: [to wander], forms: {norsund: wandra}}
+- {lemma: lysa,    pos: verb, class: weak, gloss: [to shine, to glow], forms: {present.participle: lysande}}
+- {lemma: kjala,   pos: verb, class: weak, gloss: [to drink together]}
+- {lemma: lada,    pos: verb, class: weak, gloss: [to charge (a rune) with aether], notes: "a charged rune glows; this is rune magic"}
+
+# --- Oath and law ---
+- {lemma: vath,   pos: noun, class: inanimate, gloss: [oath], notes: "the past stem of vetha used as a noun: 'the binding'"}
+- {lemma: lag,    pos: noun, class: inanimate, gloss: [law], tier: core}
+- {lemma: utlag,  pos: noun, class: animate, gloss: [outlaw, one outside the law], parts: [ute, lag]}
+- {lemma: skil,   pos: noun, class: inanimate, gloss: [judgment, discernment]}
+- {lemma: skilir, pos: noun, class: animate, gloss: [judge], parts: [skil, ir]}
+- {lemma: sak,    pos: noun, class: inanimate, gloss: [charge, guilt, case at law]}
+- {lemma: bot,    pos: noun, class: inanimate, gloss: [redress, blood-price]}
+- {lemma: grith,  pos: noun, class: inanimate, gloss: [sanctuary, truce, the peace of a place]}
+- {lemma: sajir,  pos: noun, class: animate, gloss: [witness], parts: [saja, ir]}
+- {lemma: stemn,  pos: noun, class: inanimate, gloss: [assembly, court-gathering]}
+- {lemma: urlag,  pos: noun, class: inanimate, gloss: [fate (lit. origin-law)], parts: [ur, lag]}
+- {lemma: strith, pos: noun, class: inanimate, gloss: [strife, war]}
+
+# --- Faith and liturgy ---
+- {lemma: ilinheim, pos: noun, class: inanimate, gloss: [temple], parts: [ilin, heim]}
+- {lemma: horg,     pos: noun, class: inanimate, gloss: [altar, offering-cairn]}
+- {lemma: javn,     pos: noun, class: inanimate, gloss: [offering], notes: "from jav, past of jova 'give'"}
+- {lemma: ilinir,   pos: noun, class: animate, gloss: [priest, hallower], parts: [ilin, ir]}
+- {lemma: ond,      pos: noun, class: inanimate, gloss: [breath, soul]}
+- {lemma: starmyr,  pos: noun, class: animate, gloss: [constellation (lit. star-kin, the triumphant dead)], parts: [star, myr]}
+- {lemma: nuth,     pos: noun, class: inanimate, gloss: [void]}
+- {lemma: heid,     pos: noun, class: inanimate, gloss: [clear sky, honour]}
+- {lemma: Myr,      pos: name, class: animate, gloss: [Myr, the Kin-maker], notes: "old name of Ur"}
+- {lemma: Heid,     pos: name, class: animate, gloss: [Heid, the Clear Sky], notes: "old name of Nett"}
+- {lemma: thioleth, pos: noun, class: inanimate, gloss: [courage, valour], parts: [thiol, eth]}
+
+# --- Rune-craft and magic ---
+- {lemma: runrad, pos: noun, class: inanimate, gloss: [rune-row, the runic alphabet], parts: [run, rad]}
+- {lemma: rad,    pos: noun, class: inanimate, gloss: [row, line]}
+- {lemma: stav,   pos: noun, class: inanimate, gloss: [stave, a single rune, carved stick]}
+- {lemma: gald,   pos: noun, class: inanimate, gloss: [chant, spell-song]}
+- {lemma: vald,   pos: noun, class: inanimate, gloss: [arcane field, binding power (physical magic)]}
+- {lemma: sveim,  pos: noun, class: inanimate, gloss: [aether current (abstract magic)]}
+- {lemma: glod,   pos: noun, class: inanimate, gloss: [glow, the light of a charged rune], notes: "in verse also a heiti for 'star'"}
+
+# --- Heiti (poetic synonyms) ---
+- {lemma: jor,   pos: noun, class: animate,   gloss: [steed], register: poetic, notes: "heiti for hest 'horse'"}
+- {lemma: bran,  pos: noun, class: inanimate, gloss: [blade], register: poetic, notes: "heiti for kyr"}
+- {lemma: ljom,  pos: noun, class: inanimate, gloss: [radiance], register: poetic, notes: "heiti for lys"}
+- {lemma: varg,  pos: noun, class: animate,   gloss: [wolf], register: poetic, notes: "heiti for ulf"}
+- {lemma: krak,  pos: noun, class: animate,   gloss: [raven], register: poetic}
+- {lemma: log,   pos: noun, class: inanimate, gloss: [flame], register: poetic, notes: "heiti for fyr"}
+- {lemma: dreng, pos: noun, class: animate,   gloss: [warrior, bold one], register: poetic}
+- {lemma: berg,  pos: noun, class: inanimate, gloss: [mountain], register: poetic}
+- {lemma: dreyr, pos: noun, class: inanimate, gloss: [blood], register: poetic}
+- {lemma: brag,  pos: noun, class: inanimate, gloss: [poetry, praise-song], register: poetic}
+- {lemma: tiir,  pos: noun, class: inanimate, gloss: [glory], register: poetic, forms: {scholarly: tír}, notes: "long vowel"}
+- {lemma: liik,  pos: noun, class: inanimate, gloss: [corpse], register: poetic, forms: {scholarly: lík}, notes: "long vowel"}
+
+# --- People, beasts and things ---
+- {lemma: Vilkyr, pos: noun, class: animate, gloss: [free sword, monster hunter], parts: [vil, kyr], forms: {plural: Vilkyrin, norsund.plural: Vilkyren}, attested: [records/user-submitted-stories/dvwl.yaml], notes: "canon: 'Free Sword in the Old Norsund'", tier: core}
+- {lemma: skrym, pos: noun, class: animate, gloss: [monster, giant beast]}
+- {lemma: lud,   pos: noun, class: animate, gloss: [person], forms: {plural: lyd}}
+- {lemma: brod,  pos: noun, class: animate, gloss: [sibling], forms: {plural: bred}}
+- {lemma: gat,   pos: noun, class: animate, gloss: [goat], forms: {plural: get}}
+- {lemma: hest,  pos: noun, class: animate, gloss: [horse]}
+- {lemma: drott, pos: noun, class: animate, gloss: [ruler, lord]}
+- {lemma: vond,  pos: adj,  gloss: [evil, bad]}
+- {lemma: hel,   pos: adj,  gloss: [whole, good]}
+- {lemma: aul,   pos: noun, class: inanimate, gloss: [ale]}
+- {lemma: grjot, pos: noun, class: inanimate, gloss: [stone]}
+- {lemma: ylv,   pos: noun, class: inanimate, gloss: [water]}
+- {lemma: haug,  pos: noun, class: inanimate, gloss: [barrow, burial mound]}
+- {lemma: skar,  pos: noun, class: inanimate, gloss: [isle, skerry]}
+- {lemma: dag,   pos: noun, class: inanimate, gloss: [day]}
+- {lemma: fyr,   pos: noun, class: inanimate, gloss: [fire]}
+
+# --- Names in Old Norsund texts ---
+- {lemma: Norvir,   pos: name, class: inanimate, gloss: [the North-forest], parts: [nor, vir], status: proposed, notes: "a forest north of Marheim, named on the settlers' slate"}
+- {lemma: Marheim,  pos: name, class: inanimate, gloss: [Marheim, high home], parts: [mar, heim], attested: [records/thiolden/general-timeline.yaml]}
+- {lemma: Thiolden, pos: name, class: inanimate, gloss: [Thiolden, land of the brave], parts: [thiol, den], forms: {dative: Thioldene}}
+- {lemma: Farheim,  pos: name, class: inanimate, gloss: [Farheim, far home], parts: [far, heim]}
+- {lemma: Kjoldmur, pos: name, class: inanimate, gloss: [the Kjoldmur], parts: [kjold, mur], notes: "built 91-124 a.v.e.; mur is a Kedre loan, so the name is not true Old Norsund, but it is used in Old Norsund law formulas"}

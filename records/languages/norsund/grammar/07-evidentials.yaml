@@ -1,0 +1,45 @@
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: Evidentials
+contributor: Vledic#0001
+status: ratified
+context:
+- Norsund speakers mark how they know what they say. The marker is a particle at the end of the sentence, set off by a comma.
+- Each particle grew out of an ordinary word (grammaticalization), which is how real grammar forms.
+
+morphology:
+  particles:
+  - {form: "sa", gloss: "EVID.SEEN", meaning: "I witnessed it", source: "past tense of saja \"to see\""}
+  - {form: "sund", gloss: "EVID.SUNG", meaning: "so it is sung; I heard it", source: "sund \"song, voice\""}
+  - {form: "stari", gloss: "EVID.FATED", meaning: "so the stars say; it is fated", source: "star-i \"of the stars\""}
+
+rules:
+- id: EVID-01
+  title: Three particles
+  rule: >
+    sa (witnessed), sund (heard, reported, sung) and stari (foretold, fated). Without a particle a statement is plain
+    assertion. Only one particle per sentence; it scopes over the main clause.
+  examples:
+  - {form: "Tyr kjold-ade mur-in, sa.", gloss: "Tyr guard-PST wall-DEF EVID.SEEN", translation: "Tyr guarded the wall. (I saw it.)"}
+  - {form: "Tyr kjold-ade mur-in, sund.", gloss: "Tyr guard-PST wall-DEF EVID.SUNG", translation: "Tyr guarded the wall. (So the songs say.)"}
+  - {form: "Tyr hal kjold-a mur-in, stari.", gloss: "Tyr FUT guard-INF wall-DEF EVID.FATED", translation: "Tyr will guard the wall. (It is foretold.)"}
+
+- id: EVID-02
+  title: Where they are required
+  rule: >
+    Oaths and court testimony take sa; testimony without sa counts as hearsay in an Auristar court. Prophecies, star-readings
+    and temple decrees end in stari. A Sundwanderen song opens with the formula "Sund!" and its narrative lines take sund.
+    Everyday speech uses them freely.
+
+- id: EVID-03
+  title: In questions
+  rule: In a question, the particle asks about the listener's source.
+  examples:
+  - {form: "Kum kjold-ade mur-in, sa?", gloss: "who guard-PST wall-DEF EVID.SEEN", translation: "Who guarded the wall — did you see it yourself?"}
+
+- id: EVID-04
+  title: Dialect preferences
+  rule: >
+    Starisund speakers favour stari (it is fated); Vilnayan speakers favour sund (it is sung); Vilkyren reports favour sa.
+    The Old Norsund register has no evidentials, which is why old oaths sound strangely bare to modern ears.

@@ -1,0 +1,115 @@
+document: lang-text/v1
+language: norsund
+version: 1.0.0
+topic: Standard test texts
+contributor: Vledic#0001
+context:
+- Two texts that conlangers translate so languages can be compared side by side. Both are adapted to Valia where a literal version would not make sense in-world.
+
+texts:
+- id: babel
+  title: The Babel text (Genesis 11:1-9), adapted
+  register: common
+  source: "Genesis 11:1-9 (the Babel text, proposed as a conlang test by Jeffrey Henning in 1996)"
+  context: >
+    Retold as a Valian myth of why the peoples of Valia speak many tongues. The tower reaches for the sky, and the god who
+    comes down is Nett, the Firmament, whose realm the tower threatens.
+  lines:
+  - text: "Lang og al lyd yn sund eth sam sundar."
+    morphemes: "lang og al lyd yn sund eth sam sund-ar"
+    gloss: "long.ago have.PST all person.PL one tongue and same word-PL.IN"
+    translation: "Long ago all people had one tongue and the same words."
+  - text: "Kuna lydene wandrade ur austin, hyttade selen slaun, eth thal thurmade selen."
+    morphemes: "kuna lyd-ene wandr-ade ur aust-in hytt-ade selen slaun eth thal thurm-ade selen"
+    gloss: "when person.PL-DEF.PL.AN roam-PST from east-DEF find-PST 3PL.AN plain and there settle-PST 3PL.AN"
+    translation: "When the people wandered from the east, they found a plain, and there they settled."
+  - text: "Selen mal ve sjosjo: Heia, ma emen smida grjot ur lerv eth gylla at helt!"
+    morphemes: "selen mal ve sjosjo heia ma emen smid-a grjot ur lerv eth gyll-a at hel-t"
+    gloss: "3PL.AN say.PST to RECP hey OPT 1PL make-INF stone from clay and bake-INF 3SG.IN good-ADV"
+    translation: "They said to each other: Come, let us make stone out of clay and bake it well!"
+  - text: "Thana mal selen: Heia, ma emen hjalda burd eth tur, ke ati tyr tagger nettin!"
+    morphemes: "thana mal selen heia ma emen hjald-a burd eth tur ke ati tyr tagg-er nett-in"
+    gloss: "then say.PST 3PL.AN hey OPT 1PL raise-INF city and tower REL 3SG.IN.POSS point touch-PRS sky-DEF"
+    translation: "Then they said: Come, let us build a city and a tower whose point touches the sky!"
+  - text: "Ma emen smida orth ter sjo."
+    morphemes: "ma emen smid-a orth ter sjo"
+    gloss: "OPT 1PL make-INF renown for REFL"
+    translation: "Let us make a name for ourselves."
+  - text: "Thana dul Nett ur nettin eth sa burdin eth turin."
+    morphemes: "thana dul Nett ur nett-in eth sa burd-in eth tur-in"
+    gloss: "then fall.PST Nett from sky-DEF and see.PST city-DEF and tower-DEF"
+    translation: "Then Nett came down from the sky and saw the city and the tower."
+  - text: "Nett mal: Se, selen es yn nay, eth al ager sam sund."
+    morphemes: "Nett mal se selen es yn nay eth al ag-er sam sund"
+    gloss: "Nett say.PST see.IMP 3PL.AN be.PRS one folk and all have-PRS same tongue"
+    translation: "Nett said: Look, they are one people, and all have the same tongue."
+  - text: "Yt orker selen alkut smida."
+    morphemes: "yt ork-er selen alkut smid-a"
+    gloss: "now can-PRS 3PL.AN everything make-INF"
+    translation: "Now they can make anything."
+  - text: "Ma em dola eth skerva seleni sund."
+    morphemes: "ma em dol-a eth skerv-a seleni sund"
+    gloss: "OPT 1SG descend-INF and change-INF 3PL.AN.POSS tongue"
+    translation: "Let me go down and change their tongue."
+  - text: "Sva skyner selen ne sjosjo."
+    morphemes: "sva skyn-er selen ne sjosjo"
+    gloss: "thus understand-PRS 3PL.AN NEG RECP"
+    translation: "So they will not understand each other."
+  - text: "Sva skervade Nett al lydi sund, eth selen drestade ur burdin ve al alden."
+    morphemes: "sva skerv-ade Nett al lyd-i sund eth selen drest-ade ur burd-in ve al alden"
+    gloss: "thus change-PST Nett all person.PL-GEN tongue and 3PL.AN leave-PST from city-DEF to all world"
+    translation: "So Nett changed the tongue of all people, and they left the city for every part of the world."
+  - text: "Turin vas nekuna ulmad, eth emen skyner ne sjosjo til yt."
+    morphemes: "tur-in vas nekuna ulm-ad eth emen skyn-er ne sjosjo til yt"
+    gloss: "tower-DEF be.PST never end-PTCP and 1PL understand-PRS NEG RECP until now"
+    translation: "The tower was never finished, and to this day we do not understand each other."
+  notes:
+  - "Present tense with future meaning: Sva skyner selen ne sjosjo (VERB-04 allows the plain present for near future)."
+  - "dola 'to fall, descend' covers 'come down'; Nett falling from the sky echoes the Stardul, the Fall of the Star."
+  - "Purpose clauses ('to see the city') are avoided; Norsund chains verbs with eth instead."
+  - "The Lord of Genesis becomes Nett because Valia's gods live in the night sky (records/thiolden/auristar/auristar.yaml, Religion)."
+
+- id: north-wind-and-sun
+  title: The North Wind and the Sun
+  register: common
+  source: "Aesop, 'The North Wind and the Sun' (the International Phonetic Association's standard sample text)"
+  context: >
+    Told in the Vilnayan towns as a children's fable. The wind and the sun are personified, so they are animate (sel).
+  lines:
+  - text: "Norbrys eth Sauv brakkade ymb kum vas thrakugar."
+    morphemes: "Norbrys eth Sauv brakk-ade ymb kum vas thrakug-ar"
+    gloss: "north.wind and sun fight-PST about who be.PST strong-CMPR"
+    translation: "The North Wind and the Sun were quarrelling about which of them was stronger."
+  - text: "Thana leid yn wander i dalg kap."
+    morphemes: "thana leid yn wander i dalg kap"
+    gloss: "then come.PST one wanderer in warm cloak"
+    translation: "Then a wanderer came by in a warm cloak."
+  - text: "Selen mal: Sel ke ura henser wanderi kap, es thrakugar."
+    morphemes: "selen mal sel ke ura hens-er wander-i kap es thrakug-ar"
+    gloss: "3PL.AN say.PST 3SG.AN REL first take-PRS wanderer-GEN cloak be.PRS strong-CMPR"
+    translation: "They said: The one who first takes the wanderer's cloak is the stronger."
+  - text: "Thana brysade Norbrys hjo al seli thrak."
+    morphemes: "thana brys-ade Norbrys hjo al seli thrak"
+    gloss: "then blow-PST north.wind with all 3SG.AN.POSS strength"
+    translation: "Then the North Wind blew with all its strength."
+  - text: "Ava wanderin kromade seli kap ymb sjo."
+    morphemes: "ava wander-in krom-ade seli kap ymb sjo"
+    gloss: "but wanderer-DEF hold-PST 3SG.AN.POSS cloak around REFL"
+    translation: "But the wanderer held the cloak tight around himself."
+  - text: "Til ulm lytade Norbrys."
+    morphemes: "til ulm lyt-ade Norbrys"
+    gloss: "until end yield-PST north.wind"
+    translation: "At last the North Wind gave up."
+  - text: "Thana lysade Sauv ur holvin, eth snar hans wanderin seli kap."
+    morphemes: "thana lys-ade Sauv ur holv-in eth snar hans wander-in seli kap"
+    gloss: "then shine-PST sun from sky-DEF and soon take.PST wanderer-DEF 3SG.AN.POSS cloak"
+    translation: "Then the Sun shone from the sky, and soon the wanderer took off his cloak."
+  - text: "Sva nodade Norbrys mela ke Sauv vas thrakugar."
+    morphemes: "sva nod-ade Norbrys mel-a ke Sauv vas thrakug-ar"
+    gloss: "thus must-PST north.wind say-INF COMP sun be.PST strong-CMPR"
+    translation: "So the North Wind had to admit that the Sun was the stronger."
+  notes:
+  - "Norbrys and Sauv are written with capitals because the fable treats them as persons; as ordinary nouns they are norbrys and sauv."
+  - "The comparative of thrakug 'strong' is thrakugar (ADJ-04)."
+  - "hjo 'with' takes the possessive phrase al seli thrak 'all its strength'."
+  - "After a fronted adverb (thana, til ulm, snar) the subject follows the verb (SYN-01)."

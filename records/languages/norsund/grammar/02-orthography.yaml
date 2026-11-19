@@ -1,0 +1,78 @@
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: Orthography and romanization
+contributor: Vledic#0001
+status: ratified
+context:
+- The standard romanization is plain ASCII so that every contributor can type it. One spelling stands for one sound.
+- Native scripts (runes and Lysrit) are documented in records/languages/scripts.
+
+alphabet_order: [a, b, d, e, f, g, gj, h, i, j, k, kj, l, m, n, ng, o, p, r, s, t, th, u, v, w, y]
+
+rules:
+- id: ORTH-01
+  title: Letters
+  rule: >
+    Norsund is written with a b d e f g h i j k l m n o p r s t u v w y and the digraphs th, kj, gj, ng.
+    No accents, no apostrophes, no c, q, x or z. Dictionaries sort the digraphs as separate letters,
+    in the order given above (so kjold comes after kyr).
+
+- id: ORTH-02
+  title: ei and ay
+  rule: >
+    The diphthong /ej/ is written ei inside a word and ay at the end of a word. A stem that ends in ay keeps it
+    when suffixes are added.
+  examples:
+  - {form: "heim"}
+  - {form: "nay"}
+  - {form: "Vilnayan"}
+
+- id: ORTH-03
+  title: Compounds
+  rule: >
+    Compounds are written as one word. Where two elements meet and the letters would be misread as a digraph
+    (n+g, t+h, k+j, g+j), write a hyphen: nim-gand, not nimgand. Three identical consonants in a row reduce to two
+    (kull + land = kulland).
+  examples:
+  - {form: "Kjoldmur"}
+  - {form: "nim-gand", translation: "night road"}
+
+- id: ORTH-04
+  title: Capital letters
+  rule: >
+    Capitalize proper names, gods, peoples and demonyms (Thiolnay, Aurinay), languages (Norsund, Kedre),
+    titles used with a name (Lys Thrimde), and the first word of a sentence. Ordinary nouns, days and months are lower-case.
+
+- id: ORTH-05
+  title: Foreign names
+  rule: >
+    Names from other languages keep their own spelling (Karhak'Modan, Kyr Thor'Vale, Luxis). An apostrophe in such a
+    name must stand for a real sound in that language (records/languages/languages.yaml lists what each one marks).
+    When such a name is fully absorbed into Norsund it is respelled (Kedre murra became Norsund mur).
+
+- id: ORTH-06
+  title: Standard spellings of canon names
+  rule: >
+    Where lore records spell a name in more than one way, the standard Norsund spelling is the first listed:
+    Midelmar (not Middlemar), Haakon (not Hakkon), Volggan (not Vloggan, Vlogan), Vairean (adjective of Vaire;
+    not Varian), Rechtar (not Rechatar). The lore records were corrected to these spellings on 2026-11-19.
+
+- id: ORTH-07
+  title: Scholarly spelling of Old Norsund
+  rule: >
+    When quoting Old Norsund, scholars may use þ for th, ð for th between vowels, and an acute accent for long vowels
+    (Old Norsund þjol). Reconstructed Proto-Norsund and Proto-Valian forms are starred and written in IPA-like letters
+    (*kjoldu, *geldhu). The modern standard never uses these letters.
+
+- id: ORTH-09
+  title: th + j is written thi
+  rule: >
+    The glide [j] after th is written i, because "thj" looks odd to English readers: thiol /θjol/, thiarka /ˈθjar.ka/.
+    After every other consonant it is written j (kjold, Starifjolden, hjalda).
+
+- id: ORTH-08
+  title: Punctuation
+  rule: >
+    Latin punctuation as in English. In verse, a raised dot (·) may separate the two half-lines. Evidential particles
+    are set off with a comma: Tyr kjoldade murin, sa.

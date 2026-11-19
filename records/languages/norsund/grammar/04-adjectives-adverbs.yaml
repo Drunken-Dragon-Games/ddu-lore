@@ -1,0 +1,70 @@
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: Adjectives and adverbs
+contributor: Vledic#0001
+status: ratified
+
+morphology:
+  comparative: ar
+  superlative: ast
+  adverb: t
+  adverb_epenthesis: "et (used when -t would make a coda not allowed by grammar/01: lang > langet, gorm > gormet)"
+  irregular_comparison:
+  - {base: "hel", comparative: "batar", superlative: "bast", gloss: "good"}
+  - {base: "vond", comparative: "verr", superlative: "verst", gloss: "bad"}
+  - {base: "myk", comparative: "meir", superlative: "mest", gloss: "much, many"}
+  - {base: "lit", comparative: "minn", superlative: "minst", gloss: "little, few"}
+  irregular_adverbs:
+  - {base: "hel", adverb: "helt", gloss: "well"}
+
+rules:
+- id: ADJ-01
+  title: Position and form
+  rule: Adjectives come before the noun and never change for number or definiteness.
+  examples:
+  - {form: "aur star", gloss: "silver star", translation: "a silver star"}
+  - {form: "aur star-in", gloss: "silver star-DEF", translation: "the silver star"}
+
+- id: ADJ-02
+  title: Predicate adjectives
+  rule: >
+    After the copula vesa the adjective is unchanged. In mottos, inscriptions and poetry (the "carved style") the present
+    copula is left out.
+  examples:
+  - {form: "Kyr-in es skarp.", gloss: "blade-DEF be.PRS sharp", translation: "The blade is sharp."}
+  - {form: "Vil kyr-in.", gloss: "free blade-DEF", translation: "The blade (is) free."}
+
+- id: ADJ-03
+  title: Adjectives as nouns
+  rule: >
+    Any adjective can name a person or thing with that quality. It then takes noun endings, animate by default:
+    thiol-in "the brave one", thiol-en "brave ones", thiol-ene "the brave ones".
+  examples:
+  - {form: "thiol-en", gloss: "brave-PL.AN", translation: "brave ones, the brave"}
+
+- id: ADJ-04
+  title: Comparison
+  rule: >
+    Comparative -ar, superlative -ast; "than" is thon; "as ... as" is sam ... sam. Four common adjectives are irregular
+    (table above). In Auristar the superlative is folk-etymologized as "starred".
+  examples:
+  - {form: "Tyr es thiol-ar thon Ulf.", gloss: "Tyr be.PRS brave-CMPR than Ulf", translation: "Tyr is braver than Ulf."}
+  - {form: "thiol-ast Vilkyr-in", gloss: "brave-SUPL free.sword-DEF", translation: "the bravest free sword"}
+  - {form: "sam thiol sam Tyr", gloss: "as brave as Tyr", translation: "as brave as Tyr"}
+
+- id: ADJ-05
+  title: Adverbs
+  rule: >
+    Adverbs of manner add -t to the adjective (thiolt "bravely", vilt "freely"); where -t would make an illegal
+    word ending, they add -et instead (lang > langet). Intensifier ful "very" goes before the
+    adjective or adverb. Hel "good" has the adverb helt "well".
+  examples:
+  - {form: "Sel brakkade thiol-t.", gloss: "3SG.AN fight-PST brave-ADV", translation: "She fought bravely."}
+  - {form: "ful aur", gloss: "very silver", translation: "very bright"}
+
+- id: ADJ-06
+  title: Adjectives from nouns
+  rule: >
+    -a "of, belonging to" (Vilnaya "of the free folk"), -ug "full of, -y" (starug "starry"), -nuth "without, -less"
+    (lysnuth "lightless"). See Word formation.

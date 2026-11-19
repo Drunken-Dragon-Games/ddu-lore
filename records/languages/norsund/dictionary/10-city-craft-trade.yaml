@@ -1,0 +1,163 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: City, craft and trade
+field: city
+contributor: Vledic#0001
+defaults: {layer: native, tier: common, status: ratified, epoch: old}
+context:
+- Auristar's rings, folds and canals; building and stone-carving; crafts, tools and metals; trade, money, guilds, law and the library.
+- Following grammar/12, masonry, canal engineering, trade and law vocabulary is often Kedre (occupation loans clipped, learned loans whole); older crafts are native.
+
+entries:
+# --- The city ---
+- lemma: burd
+  pos: noun
+  class: inanimate
+  gloss: [city, walled town]
+  derived:
+  - {lemma: burdlud, pos: noun, class: animate, gloss: [citizen, townsperson], parts: [burd, lud]}
+  - {lemma: kvitburd, pos: noun, class: inanimate, gloss: [Auristar (kenning, lit. the white city)], register: poetic, parts: [kvit, burd]}
+- {lemma: Ura Kreth, pos: name, class: inanimate, gloss: [the First Ring (Starirauggheim and government)], parts: [ura, kreth]}
+- {lemma: Dovde Kreth, pos: name, class: inanimate, gloss: [the Second Ring (study)], parts: [dovde, kreth]}
+- {lemma: Thrimde Kreth, pos: name, class: inanimate, gloss: [the Third Ring (finest homes, the festival plaza)], parts: [thrimde, kreth]}
+- {lemma: Veste Kreth, pos: name, class: inanimate, gloss: [the Fourth Ring (trade, gardens, crops)], parts: [veste, kreth]}
+- {lemma: Thamde Kreth, pos: name, class: inanimate, gloss: [the Fifth Ring (the entrance, barracks, law)], parts: [thamde, kreth]}
+- {lemma: Aftkreth, pos: name, class: inanimate, gloss: [the Back Ring], parts: [aft, kreth]}
+- {lemma: lagthun, pos: noun, class: inanimate, gloss: [government quarter, seat of the rulers' offices], parts: [lag, thun], notes: "the palace itself is drottheim (03-people-society)"}
+- {lemma: kall, pos: noun, class: inanimate, gloss: [street, narrow lane], layer: kedre, epoch: contact, etymology: "Kedre kalla"}
+- {lemma: grjotgand, pos: noun, class: inanimate, gloss: [paved road], parts: [grjot, gand]}
+- {lemma: kampkelda, pos: noun, class: inanimate, gloss: [public fountain], parts: [kamp, kelda]}
+- {lemma: lystur, pos: noun, class: inanimate, gloss: [beacon tower, lighthouse], parts: [lys, tur]}
+- {lemma: grindtur, pos: noun, class: inanimate, gloss: [gatehouse], parts: [grind, tur]}
+- {lemma: tyrtur, pos: noun, class: inanimate, gloss: [spire (lit. point-tower)], parts: [tyr, tur]}
+- {lemma: dyng, pos: noun, class: inanimate, gloss: [bell], derived: [{lemma: dynga, pos: verb, class: weak, gloss: [to ring, to toll]}, {lemma: dyngtur, pos: noun, class: inanimate, gloss: [bell tower], parts: [dyng, tur]}]}
+- {lemma: denrit, pos: noun, class: inanimate, gloss: [map (lit. land-writing)], parts: [den, rit]}
+
+# --- Canals and boats ---
+- {lemma: fond, pos: noun, class: inanimate, gloss: [quay, canal embankment], layer: kedre, epoch: contact, etymology: "Kedre fonda"}
+- {lemma: mol, pos: noun, class: inanimate, gloss: [pier, jetty], layer: kedre, epoch: contact, etymology: "Kedre molu"}
+- {lemma: trag, pos: noun, class: inanimate, gloss: [ferry crossing], layer: kedre, epoch: contact, etymology: "Kedre trageto"}
+- {lemma: ylvgrind, pos: noun, class: inanimate, gloss: [canal lock, sluice (lit. water-gate)], parts: [ylv, grind]}
+- {lemma: ylvspenn, pos: noun, class: inanimate, gloss: [aqueduct (lit. water-bridge)], parts: [ylv, spenn]}
+- {lemma: stemm, pos: noun, class: inanimate, gloss: [dam, weir]}
+- {lemma: krum, pos: noun, class: inanimate, gloss: [arch, curve], derived: [{lemma: krumspenn, pos: noun, class: inanimate, gloss: [arched bridge], parts: [krum, spenn]}, {lemma: kruma, pos: verb, class: weak, gloss: [to bend, to arch]}]}
+- {lemma: skeiheim, pos: noun, class: inanimate, gloss: [boatyard, boathouse], parts: [skei, heim]}
+- lemma: arl
+  pos: noun
+  class: inanimate
+  gloss: [oar]
+  derived:
+  - {lemma: arla, pos: verb, class: weak, gloss: [to row]}
+  - {lemma: arlir, pos: noun, class: animate, gloss: [rower, canal boatman]}
+  - {lemma: arlsund, pos: noun, class: inanimate, gloss: [boatman's song, canal song], parts: [arl, sund]}
+
+# --- Building and stone ---
+- {lemma: hjaldir, pos: noun, class: animate, gloss: [builder], etymology: "agent of hjalda 'to build'", derived: [{lemma: marhjaldir, pos: noun, class: animate, gloss: [architect, master builder], parts: [mar, hjaldir], notes: "Erdrik 'the Great Architect' of Marheim"}]}
+- lemma: riska
+  pos: verb
+  class: weak
+  gloss: [to carve, to engrave]
+  derived:
+  - {lemma: riskir, pos: noun, class: animate, gloss: [carver, engraver]}
+  - {lemma: riskning, pos: noun, class: inanimate, gloss: [carving, engraving]}
+  - {lemma: grjotriskir, pos: noun, class: animate, gloss: [stonecarver], parts: [grjot, riskir]}
+- {lemma: kvitgrjot, pos: noun, class: inanimate, gloss: [white stone, marble], parts: [kvit, grjot], notes: "the masterfully carved white stone of Auristar"}
+- {lemma: thyrn-grjot, pos: noun, class: inanimate, gloss: [brick (lit. flame-stone)], parts: [thyrn, grjot]}
+- {lemma: grjotskym, pos: noun, class: inanimate, gloss: [statue (lit. stone-shadow)], parts: [grjot, skym], notes: "a grjotlud is a golem (05-beasts)"}
+- {lemma: kalk, pos: noun, class: inanimate, gloss: [lime, mortar], layer: kedre, epoch: contact, etymology: "Kedre kalka"}
+- {lemma: kolona, pos: noun, class: inanimate, gloss: [column, pillar], layer: kedre-learned, epoch: modern, register: learned}
+- lemma: glarr
+  pos: noun
+  class: inanimate
+  gloss: [glass]
+  layer: kedre
+  epoch: contact
+  etymology: "Kedre glara"
+  derived:
+  - {lemma: lysglarr, pos: noun, class: inanimate, gloss: [stained glass (lit. light-glass)], parts: [lys, glarr], notes: "the domes of Auristar are lysglarr of Starifjolden crystal"}
+  - {lemma: glarrsmidir, pos: noun, class: animate, gloss: [glassmaker], parts: [glarr, smidir]}
+- {lemma: pens, pos: noun, class: inanimate, gloss: [paint], derived: [{lemma: pensa, pos: verb, class: weak, gloss: [to paint]}, {lemma: pensir, pos: noun, class: animate, gloss: [painter]}]}
+
+# --- Crafts and tools ---
+- {lemma: brukk, pos: noun, class: inanimate, gloss: [tool, implement]}
+- {lemma: smidheim, pos: noun, class: inanimate, gloss: [workshop, forge], parts: [smid, heim]}
+- {lemma: bauk, pos: noun, class: inanimate, gloss: [hammer], derived: [{lemma: bauka, pos: verb, class: weak, gloss: [to hammer]}]}
+- {lemma: thrunn, pos: noun, class: inanimate, gloss: [anvil]}
+- {lemma: klemm, pos: noun, class: inanimate, gloss: [tongs, clamp]}
+- {lemma: riv, pos: noun, class: inanimate, gloss: [saw], derived: [{lemma: riva, pos: verb, class: weak, gloss: [to saw]}]}
+- {lemma: skurp, pos: noun, class: inanimate, gloss: [chisel]}
+- {lemma: travsmidir, pos: noun, class: animate, gloss: [carpenter (lit. wood-crafter)], parts: [trav, smidir]}
+- {lemma: gleimsmidir, pos: noun, class: animate, gloss: [jeweller (lit. gem-crafter)], parts: [gleim, smidir]}
+- {lemma: bargsmidir, pos: noun, class: animate, gloss: [tanner, leatherworker], parts: [barg, smidir]}
+- {lemma: hwelker, pos: noun, class: inanimate, gloss: [carriage, cart (lit. wheel-vessel)], parts: [hwel, ker]}
+
+# --- Metals ---
+- {lemma: valm, pos: noun, class: inanimate, gloss: [iron], derived: [{lemma: marvalm, pos: noun, class: inanimate, gloss: [steel (lit. high-iron)], parts: [mar, valm]}, {lemma: valmsmidir, pos: noun, class: animate, gloss: [blacksmith], parts: [valm, smidir]}]}
+- {lemma: aurvalm, pos: noun, class: inanimate, gloss: [silver (lit. silver-bright metal)], parts: [aur, valm]}
+- {lemma: hyll, pos: noun, class: inanimate, gloss: [gold], derived: [{lemma: hyllug, pos: adj, gloss: [golden]}]}
+- {lemma: velg, pos: noun, class: inanimate, gloss: [copper]}
+- {lemma: skjim, pos: noun, class: inanimate, gloss: [tin]}
+
+# --- Trade and money ---
+- {lemma: hesk, pos: noun, class: inanimate, gloss: [money], derived: [{lemma: heskvard, pos: noun, class: animate, gloss: [money-changer, banker (lit. money-warden)], parts: [hesk, vard]}]}
+- {lemma: denar, pos: noun, class: inanimate, gloss: [coin], layer: kedre, epoch: contact, etymology: "Kedre denaru, the imperial coin"}
+- {lemma: mett, pos: noun, class: inanimate, gloss: [price, worth], derived: [{lemma: metta, pos: verb, class: weak, gloss: [to cost, to be worth]}]}
+- {lemma: saulk, pos: noun, class: inanimate, gloss: [wares, goods, merchandise]}
+- {lemma: sauka, pos: verb, class: weak, gloss: [to buy]}
+- {lemma: veila, pos: verb, class: weak, gloss: [to sell], derived: [{lemma: veilir, pos: noun, class: animate, gloss: [seller, vendor]}]}
+- {lemma: gjalva, pos: verb, class: weak, gloss: [to owe], derived: [{lemma: gjalv, pos: noun, class: inanimate, gloss: [debt]}, {lemma: gjalvir, pos: noun, class: animate, gloss: [debtor]}]}
+- {lemma: ovdel, pos: noun, class: inanimate, gloss: [profit, surplus (lit. beyond-share)], parts: [ova, del]}
+- {lemma: merkbol, pos: noun, class: inanimate, gloss: [shop (lit. trade-house)], parts: [merk, bol]}
+- {lemma: merkraugg, pos: noun, class: inanimate, gloss: [warehouse], parts: [merk, raugg]}
+- {lemma: merkdag, pos: noun, class: inanimate, gloss: [market day], parts: [merk, dag]}
+- {lemma: vethrit, pos: noun, class: inanimate, gloss: [contract (lit. oath-writing)], parts: [veth, rit]}
+- {lemma: feth, pos: noun, class: inanimate, gloss: [wealth, property], derived: [{lemma: fetha, pos: adj, gloss: [wealthy, rich]}, {lemma: nefetha, pos: adj, gloss: [poor]}]}
+- {lemma: laum, pos: noun, class: inanimate, gloss: [bribe], derived: [{lemma: lauma, pos: verb, class: weak, gloss: [to bribe]}]}
+- {lemma: dunkmerk, pos: noun, class: inanimate, gloss: [black market (lit. dark market)], parts: [dunk, merk]}
+- {lemma: vimmerka, pos: verb, class: weak, gloss: [to smuggle (lit. to whisper-trade)], parts: [vim, merka], derived: [{lemma: vimmerkir, pos: noun, class: animate, gloss: [smuggler]}]}
+- {lemma: Sniklag, pos: name, class: inanimate, gloss: [the Thieves Guild of Auristar (lit. steal-guild)], parts: [snik, lag], notes: "snika 'to steal' and snikir 'thief' are in 03-people-society"}
+- {lemma: dela, pos: verb, class: weak, gloss: [to share out, to levy tax], etymology: "from del 'part, share'", derived: [{lemma: drottdel, pos: noun, class: inanimate, gloss: [tax (lit. ruler's share)], parts: [drott, del]}, {lemma: delir, pos: noun, class: animate, gloss: [tax collector]}, {lemma: portdel, pos: noun, class: inanimate, gloss: [toll (lit. gate-share)], parts: [port, del]}]}
+- {lemma: portvard, pos: noun, class: animate, gloss: [gatekeeper, toll-keeper], parts: [port, vard]}
+
+# --- Guilds and unions ---
+- {lemma: brodlag, pos: noun, class: inanimate, gloss: [brotherhood, fellowship order (lit. sibling-law)], parts: [brod, lag]}
+- {lemma: lagvard, pos: noun, class: animate, gloss: [guild master (lit. law-warden)], parts: [lag, vard], notes: "Vale is the lagvard of the Sniklag"}
+- {lemma: thammlag, pos: noun, class: inanimate, gloss: [craft union (lit. hand-guild)], parts: [thamm, lag], notes: "the unions of Auristar that draw their materials from Midelmar"}
+
+# --- Law and courts ---
+- lemma: laga
+  pos: verb
+  class: weak
+  gloss: [to judge, to rule by law]
+  etymology: "from lag 'law'"
+  derived:
+  - {lemma: lagir, pos: noun, class: animate, gloss: [judge]}
+  - {lemma: lagning, pos: noun, class: inanimate, gloss: [judgment, verdict]}
+  - {lemma: lagheim, pos: noun, class: inanimate, gloss: [court of law, courthouse], parts: [lag, heim]}
+  - {lemma: nelaga, pos: verb, class: weak, gloss: [to break the law]}
+  - {lemma: nelag, pos: noun, class: inanimate, gloss: [crime], parts: [ne, lag]}
+  - {lemma: nelagir, pos: noun, class: animate, gloss: [criminal, lawbreaker]}
+  - {lemma: laggjalv, pos: noun, class: inanimate, gloss: [fine, penalty (lit. law-debt)], parts: [lag, gjalv]}
+- {lemma: tribuna, pos: noun, class: inanimate, gloss: [high court (imperial-style)], layer: kedre-learned, epoch: modern, register: learned}
+- {lemma: sajir, pos: noun, class: animate, gloss: [witness (lit. one who saw)], etymology: "agent of saja 'to see'", derived: [{lemma: saning, pos: noun, class: inanimate, gloss: [testimony], notes: "testimony must end in the evidential sa or it is hearsay"}, {lemma: sundmal, pos: noun, class: inanimate, gloss: [hearsay (lit. song-speech)], parts: [sund, mal]}]}
+- {lemma: skarna, pos: verb, class: weak, gloss: [to punish]}
+- {lemma: fjolkjold, pos: noun, class: inanimate, gloss: [prison, dungeon (lit. deep-ward)], parts: [fjol, kjold]}
+
+# --- Books and the library ---
+- {lemma: ritheim, pos: noun, class: inanimate, gloss: [library (lit. writing-house)], parts: [rit, heim], derived: [{lemma: Starlys Ritheim, pos: name, class: inanimate, gloss: [the Starlight Library of Auristar], parts: [starlys, ritheim], epoch: modern}, {lemma: runraugg, pos: noun, class: inanimate, gloss: [restricted section (lit. secret-vault)], parts: [run, raugg]}]}
+- {lemma: starlys, pos: noun, class: inanimate, gloss: [starlight], parts: [star, lys]}
+- {lemma: folm, pos: noun, class: inanimate, gloss: [book, codex]}
+- {lemma: rulv, pos: noun, class: inanimate, gloss: [scroll]}
+- {lemma: ritpjalk, pos: noun, class: inanimate, gloss: [quill, pen (lit. writing-stick)], parts: [rit, pjalk]}
+- {lemma: sjen, pos: noun, class: inanimate, gloss: [sigil, seal, emblem], derived: [{lemma: sjena, pos: verb, class: weak, gloss: [to seal, to stamp]}]}
+
+# --- Further derivations ---
+- {lemma: burdmur, pos: noun, class: inanimate, gloss: [city wall], parts: [burd, mur]}
+- {lemma: valmug, pos: adj, gloss: [iron-hard, unyielding], parts: [valm, ug]}
+- {lemma: hylla, pos: verb, class: weak, gloss: [to gild], etymology: "verb from hyll"}
+- {lemma: hesknuth, pos: adj, gloss: [penniless], parts: [hesk, nuth]}
+- {lemma: laumir, pos: noun, class: animate, gloss: [briber], etymology: "agent of lauma"}
+- {lemma: folmrekk, pos: noun, class: inanimate, gloss: [bookshelf, row of books], parts: [folm, rekk]}
+- {lemma: rulva, pos: verb, class: weak, gloss: [to roll up (a scroll)], etymology: "verb from rulv"}
+- {lemma: brukka, pos: verb, class: weak, gloss: [to use, to wield a tool], etymology: "verb from brukk"}

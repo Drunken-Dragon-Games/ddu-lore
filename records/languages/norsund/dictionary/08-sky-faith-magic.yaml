@@ -1,0 +1,210 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: Sky, faith and magic
+field: faith
+contributor: Vledic#0001
+defaults: {layer: native, tier: common, status: ratified, epoch: old}
+context:
+- The star religion of Auristar, the Church of Light of the empire, the old gods of the Kullmyr and Nurmyr, and the two forces of magic (records/magic-rules.yaml).
+- In Starisund, star-words for beings (stars, constellations, the transcended) are animate.
+
+entries:
+# --- The heavens ---
+- {lemma: starheim, pos: noun, class: inanimate, gloss: [constellation (lit. star-home)], parts: [star, heim], notes: "the abode of those who triumphed in life; animate in Starisund"}
+- {lemma: wanderstar, pos: noun, class: inanimate, gloss: [comet (lit. wanderer-star)], parts: [wander, star]}
+- {lemma: dulstar, pos: noun, class: inanimate, gloss: [meteor, falling star], parts: [dul, star]}
+- {lemma: dulgrjot, pos: noun, class: inanimate, gloss: [meteorite], parts: [dul, grjot]}
+- {lemma: Stargleim, pos: name, class: inanimate, gloss: [the Star-Gem (the gem of the Auristar kept in the Starirauggheim)], parts: [star, gleim]}
+- {lemma: stevstar, pos: noun, class: inanimate, gloss: [seven-pointed star (Auristar's emblem)], parts: [stev, star], register: starisund}
+- {lemma: Alholv, pos: name, class: animate, gloss: [the All-Vault (epithet of Nett)], parts: [al, holv]}
+- {lemma: Urkelda, pos: name, class: animate, gloss: [the Wellspring (epithet of Ur)], parts: [ur, kelda]}
+- {lemma: Nimlys, pos: name, class: animate, gloss: [the Night Light (epithet of Lysmar)], parts: [nim, lys]}
+- {lemma: Kullvard, pos: name, class: animate, gloss: [the Ember-Warden (epithet of Fyren)], parts: [kull, vard]}
+- {lemma: Nurvard, pos: name, class: animate, gloss: [the Green-Warden (epithet of Naum)], parts: [nur, vard]}
+- {lemma: nettkraft, pos: noun, class: inanimate, gloss: [cosmic energy (lit. sky-power)], parts: [nett, kraft], notes: "what Haakon gathers in his orb to heal"}
+
+# --- Gods, souls and the beyond ---
+- lemma: ilm
+  pos: noun
+  class: animate
+  gloss: [god, deity]
+  tier: core
+  derived:
+  - {lemma: ilma, pos: adj, gloss: [divine]}
+  - {lemma: ilmnuth, pos: adj, gloss: [godless]}
+  - {lemma: ilmkraft, pos: noun, class: inanimate, gloss: [divine magic], parts: [ilm, kraft], notes: "the magic of the old night sky that Tyr was taught"}
+- {lemma: fylg, pos: noun, class: inanimate, gloss: [soul, spirit-self], tier: core}
+- lemma: stara
+  pos: verb
+  class: weak
+  gloss: [to transcend, to join the stars]
+  etymology: "verb from star"
+  notes: "Those who transcend become stars; in Starisund the transcended are simply staren."
+  derived:
+  - {lemma: starning, pos: noun, class: inanimate, gloss: [transcendence]}
+- {lemma: nuthnay, pos: noun, class: animate, gloss: [void-folk, the negative entities of the void], parts: [nuth, nay]}
+- {lemma: nuthi grind, pos: noun, class: inanimate, gloss: [the void-gate, death without transcendence (kenning)], register: poetic, parts: [nuth, i, grind]}
+- {lemma: starilag, pos: noun, class: inanimate, gloss: [fate, destiny (lit. the stars' law)], parts: [stari, lag]}
+- {lemma: gaf, pos: noun, class: inanimate, gloss: [luck, chance], derived: [{lemma: gafug, pos: adj, gloss: [lucky]}, {lemma: negafug, pos: adj, gloss: [unlucky]}]}
+- lemma: trod
+  pos: noun
+  class: inanimate
+  gloss: [devotion, religious duty]
+  derived:
+  - {lemma: troda, pos: adj, gloss: [devout, pious]}
+  - {lemma: trodnuth, pos: adj, gloss: [impious]}
+
+# --- Worship ---
+- lemma: bena
+  pos: verb
+  class: weak
+  gloss: [to pray]
+  derived:
+  - {lemma: benning, pos: noun, class: inanimate, gloss: [prayer]}
+  - {lemma: benir, pos: noun, class: animate, gloss: [worshipper, one who prays]}
+- lemma: gleida
+  pos: verb
+  class: weak
+  gloss: [to bless]
+  derived:
+  - {lemma: gleidning, pos: noun, class: inanimate, gloss: [blessing]}
+  - {lemma: gleidad, pos: adj, gloss: [blessed]}
+- lemma: sonn
+  pos: noun
+  class: inanimate
+  gloss: [sacrifice, offering]
+  notes: "In Auristar sacrifice means devoted work and self-denial, the way to exaltation, more than slaughter."
+  derived:
+  - {lemma: sonna, pos: verb, class: weak, gloss: [to sacrifice, to offer]}
+- {lemma: ilinheim, pos: noun, class: inanimate, gloss: [temple], parts: [ilin, heim]}
+- {lemma: ilindask, pos: noun, class: inanimate, gloss: [altar], parts: [ilin, dask]}
+- {lemma: marilinir, pos: noun, class: animate, gloss: [high priest], parts: [mar, ilinir], notes: "ilinir 'priest' is in 03-people-society"}
+- {lemma: ilinsund, pos: noun, class: inanimate, gloss: [hymn], parts: [ilin, sund]}
+- {lemma: ilindag, pos: noun, class: inanimate, gloss: [holy day], parts: [ilin, dag]}
+- {lemma: ilinlag, pos: noun, class: inanimate, gloss: [ritual, rite], parts: [ilin, lag]}
+- {lemma: ilinthiauk, pos: noun, class: inanimate, gloss: [incense (lit. holy smoke)], parts: [ilin, thiauk]}
+- {lemma: ilinwander, pos: noun, class: animate, gloss: [pilgrim], parts: [ilin, wander]}
+- {lemma: neilin, pos: adj, gloss: [unholy, profane], parts: [ne, ilin]}
+- {lemma: orda, pos: noun, class: inanimate, gloss: [religious order, church (institution)], layer: kedre, epoch: contact, etymology: "Kedre orda 'order'", derived: [{lemma: Lysorda, pos: name, class: inanimate, gloss: [the Church of Light], parts: [lys, orda]}]}
+- {lemma: lysdrott, pos: noun, class: animate, gloss: [pope, head of the Church of Light (lit. light-ruler)], parts: [lys, drott], notes: "Rechtar Vaire held the title"}
+
+# --- Prophecy, omens and star-reading ---
+- lemma: vorda
+  pos: verb
+  class: weak
+  gloss: [to foretell, to prophesy]
+  derived:
+  - {lemma: vordning, pos: noun, class: inanimate, gloss: [prophecy]}
+  - {lemma: vordir, pos: noun, class: animate, gloss: [seer, prophet, star-reader]}
+- {lemma: hwarf, pos: noun, class: inanimate, gloss: [omen, sign in the sky]}
+- {lemma: stariskyn, pos: noun, class: inanimate, gloss: [star-lore, astronomy and astrology], parts: [stari, skyn]}
+- {lemma: startur, pos: noun, class: inanimate, gloss: [observatory (lit. star-tower)], parts: [star, tur], notes: "Haakon, the Fifth Light, keeps the one in Auristar"}
+- {lemma: sajen, pos: noun, class: inanimate, gloss: [vision, a thing seen], etymology: "participle of saja 'to see' used as a noun", derived: [{lemma: Thiarkisajen, pos: name, class: inanimate, gloss: [the Visions of the Hunt (the Vilkyren gift)], parts: [thiark, i, sajen]}]}
+- {lemma: ylm, pos: noun, class: inanimate, gloss: [aura (the glow around a magical being)], notes: "Vilkyren see ylm and decorate their gear with the ylm of beasts they slew"}
+
+# --- Magic ---
+- lemma: skeld
+  pos: noun
+  class: inanimate
+  gloss: [arcane force (physical magic)]
+  notes: "One of the two forces of magic; it gathers in fields."
+  derived:
+  - {lemma: skeldvang, pos: noun, class: inanimate, gloss: [arcane field], parts: [skeld, vang]}
+  - {lemma: skeldug, pos: adj, gloss: [arcane, charged with arcane force]}
+- lemma: sjol
+  pos: noun
+  class: inanimate
+  gloss: [aether (abstract magic)]
+  notes: "The other force of magic; it runs in currents. The water of the Auristar is rich in sjol."
+  derived:
+  - {lemma: sjolryl, pos: noun, class: inanimate, gloss: [aether current], parts: [sjol, ryl]}
+  - {lemma: sjola, pos: verb, class: weak, gloss: [to charge with aether (as runes are charged)]}
+  - {lemma: sjolug, pos: adj, gloss: [aether-rich]}
+- lemma: galm
+  pos: noun
+  class: inanimate
+  gloss: [spell, incantation]
+  derived:
+  - {lemma: galma, pos: verb, class: weak, gloss: [to cast a spell, to enchant]}
+  - {lemma: galmir, pos: noun, class: animate, gloss: [spellsinger, enchanter]}
+  - {lemma: galmning, pos: noun, class: inanimate, gloss: [enchantment]}
+  - {lemma: galmad, pos: adj, gloss: [enchanted]}
+  - {lemma: galmkjal, pos: noun, class: inanimate, gloss: [potion (lit. spell-drink)], parts: [galm, kjal]}
+  - {lemma: galmpjalk, pos: noun, class: inanimate, gloss: [wand, magic staff], parts: [galm, pjalk]}
+  - {lemma: dunkgalm, pos: noun, class: inanimate, gloss: [witchcraft, dark sorcery], parts: [dunk, galm]}
+  - {lemma: dunkgalmir, pos: noun, class: animate, gloss: [witch, dark sorcerer]}
+- {lemma: kraftkreth, pos: noun, class: inanimate, gloss: [magic circle], parts: [kraft, kreth]}
+- {lemma: kjoldsjen, pos: noun, class: inanimate, gloss: [amulet, warding charm (lit. ward-sigil)], parts: [kjold, sjen]}
+- {lemma: hwel, pos: noun, class: inanimate, gloss: [orb, sphere, wheel], derived: [{lemma: nuthhwel, pos: noun, class: inanimate, gloss: [void-orb], parts: [nuth, hwel], notes: "Ulf, the Second Light, conjures small ones"}]}
+- {lemma: ylka, pos: verb, class: weak, gloss: [to summon, to call forth], derived: [{lemma: ylkir, pos: noun, class: animate, gloss: [summoner]}, {lemma: ylkning, pos: noun, class: inanimate, gloss: [summoning]}]}
+
+# --- Runes and rune-craft ---
+- {lemma: lysrun, pos: noun, class: inanimate, gloss: [charged rune, glowing rune], parts: [lys, run], notes: "a rune charged with aether glows; forbidden in Auristar"}
+- {lemma: runpjalk, pos: noun, class: inanimate, gloss: [rune-stave (a carved stick)], parts: [run, pjalk]}
+- {lemma: vethrun, pos: noun, class: inanimate, gloss: [bind-rune], parts: [veth, run]}
+- {lemma: vondrun, pos: noun, class: inanimate, gloss: [miscarved rune, wrong rune], parts: [vond, run], notes: "the cause of most rune disasters, the cataclysm of Marheim among them"}
+- {lemma: runrekk, pos: noun, class: inanimate, gloss: [rune-row (the runic alphabet)], parts: [run, rekk]}
+
+# --- Shamans, curses, the dead and demons ---
+- lemma: trum
+  pos: noun
+  class: inanimate
+  gloss: [drum]
+  derived:
+  - {lemma: truma, pos: verb, class: weak, gloss: [to drum]}
+  - {lemma: trumir, pos: noun, class: animate, gloss: [shaman (lit. drummer)], notes: "the Kullmyr shamans of Dethiol's tradition"}
+- lemma: gremm
+  pos: noun
+  class: inanimate
+  gloss: [curse]
+  derived:
+  - {lemma: gremma, pos: verb, class: weak, gloss: [to curse]}
+  - {lemma: gremmad, pos: adj, gloss: [cursed]}
+- lemma: glaum
+  pos: noun
+  class: animate
+  gloss: [wraith-light, will-o'-the-wisp]
+  notes: "a ghost or wraith in general is svip (see 05)"
+  derived:
+  - {lemma: glauma, pos: verb, class: weak, gloss: [to flicker, to lure with false light]}
+- lemma: yrka
+  pos: verb
+  class: weak
+  gloss: [to rouse, to raise up (the dead)]
+  derived:
+  - {lemma: dauthyrkir, pos: noun, class: animate, gloss: [necromancer (lit. death-rouser)], parts: [dauth, yrkir]}
+  - {lemma: dauthkraft, pos: noun, class: inanimate, gloss: [necromancy (lit. death-power)], parts: [dauth, kraft]}
+- {lemma: dauthlud, pos: noun, class: animate, gloss: [corpse, dead body], parts: [dauth, lud]}
+- {lemma: dauthheim, pos: noun, class: inanimate, gloss: [grave, tomb (kenning, lit. death's home)], register: poetic, parts: [dauth, heim]}
+- lemma: gyrm
+  pos: noun
+  class: animate
+  gloss: [void-spirit, demon of the void (summoned or bound)]
+  derived:
+  - {lemma: gyrmvethning, pos: noun, class: inanimate, gloss: [demon-binding], parts: [gyrm, vethning]}
+  - {lemma: gyrmvethir, pos: noun, class: animate, gloss: [demon-binder], parts: [gyrm, vethir]}
+
+# --- Contests, trials and the Council ---
+- lemma: dysk
+  pos: noun
+  class: inanimate
+  gloss: [game, play, sport]
+  notes: "a formal contest is thrask (03-people-society)"
+  derived:
+  - {lemma: dyska, pos: verb, class: weak, gloss: [to play]}
+  - {lemma: dyskir, pos: noun, class: animate, gloss: [player, sportsman]}
+  - {lemma: gafdysk, pos: noun, class: inanimate, gloss: [game of chance], parts: [gaf, dysk]}
+- {lemma: rathlag, pos: noun, class: inanimate, gloss: [council, assembly (lit. counsel-law)], parts: [rath, lag], derived: [{lemma: Midelmari Rathlag, pos: name, class: inanimate, gloss: [the Council of Midelmar], parts: [Midelmar, i, rathlag]}, {lemma: rathlud, pos: noun, class: animate, gloss: [councillor], parts: [rath, lud]}]}
+- {lemma: tholn, pos: noun, class: inanimate, gloss: [trial, ordeal], derived: [{lemma: Marstartholn, pos: name, class: inanimate, gloss: [the Trial of Mountain and Star], parts: [mar, star, tholn]}]}
+- {lemma: elga, pos: verb, class: weak, gloss: [to choose, to elect], derived: [{lemma: elgad, pos: adj, gloss: [chosen]}, {lemma: elgning, pos: noun, class: inanimate, gloss: [election, choosing]}]}
+
+# --- Further derivations ---
+- {lemma: galmrit, pos: noun, class: inanimate, gloss: [spellbook, grimoire], parts: [galm, rit]}
+- {lemma: skelda, pos: verb, class: weak, gloss: [to channel arcane force], etymology: "verb from skeld", derived: [{lemma: skeldir, pos: noun, class: animate, gloss: [arcanist]}]}
+- {lemma: glaumug, pos: adj, gloss: [haunted], parts: [glaum, ug]}
+- {lemma: gyrmug, pos: adj, gloss: [demon-ridden, possessed], parts: [gyrm, ug]}
+- {lemma: hwarfa, pos: verb, class: weak, gloss: [to portend, to bode], etymology: "verb from hwarf"}
+- {lemma: tholna, pos: verb, class: weak, gloss: [to endure, to undergo a trial], etymology: "verb from tholn"}
+- {lemma: benheim, pos: noun, class: inanimate, gloss: [chapel, prayer-house], parts: [ben, heim]}
+- {lemma: gremmir, pos: noun, class: animate, gloss: [hexer, one who curses], etymology: "agent of gremma"}

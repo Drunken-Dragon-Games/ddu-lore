@@ -1,0 +1,20 @@
+document: fact-record/v1
+topic: The Vairean Empire
+contributor: Vledic#0001
+context: 
+- import: ./time-measurements
+  subtopic: Vairean Imperial System for Dates
+subtopics:
+- topic: The Vairean Empire
+  facts:
+  - The Vairean Empire was the most important historic event of the last 300 years.
+  - Currently split.
+  - Located at the north-western part of Valnor, the northern part of Valia.
+  - Starts at the Kingdom of Reinovaire.
+  - Founded on 0 a.v.e led by a human called Rechtar Vaire.
+
+- topic: Rechtar Vaire
+  facts:
+  - Rechtar was the emperor of the Vairean Empire.
+  - Deseased on 210 a.v.e
+  - Lived 253 years.

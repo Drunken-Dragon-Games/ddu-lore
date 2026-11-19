@@ -1,0 +1,145 @@
+document: lang-text/v1
+language: old-norsund
+version: 1.0.0
+topic: Old Norsund texts
+contributor: Vledic#0001
+texts:
+- id: vilkyr-oath
+  title: The Vilkyr oath
+  register: old (oath)
+  source: new
+  context: >
+    Sworn by every Vilkyr (free sword) on taking up the hunt, hand on blade, before two witnesses. The oath is still
+    sworn in Old Norsund. Its first line is the Vilkyr code, which Norsund keeps as "Vil kyrin, vothen sundin".
+  lines:
+  - text: "Vil kyr, vothin sund."
+    morphemes: "vil kyr voth-in sund"
+    gloss: "free blade bind-PTCP word"
+    translation: "Free blade, bound word."
+  - text: "Em vethur a kyre eth a thamme."
+    morphemes: "em veth-ur a kyr-e eth a thamm-e"
+    gloss: "1SG.NOM swear-PRS.SG on blade-DAT and on hand-DAT"
+    translation: "I swear on blade and on hand."
+  - text: "Ter Thioldene, ter heime eth nege, kjoldur em."
+    morphemes: "ter Thiolden-e ter heim-e eth neg-e kjold-ur em"
+    gloss: "for Thiolden-DAT for home-DAT and folk-DAT guard-PRS.SG 1SG.NOM"
+    translation: "For Thiolden, for home and folk, I keep watch."
+  - text: "Skryma thiarkur em, eth em ne skrinkur."
+    morphemes: "skrym-a thiark-ur em eth em ne skrink-ur"
+    gloss: "monster-ACC hunt-PRS.SG 1SG.NOM and 1SG.NOM NEG flee-PRS.SG"
+    translation: "The monster I hunt, and I do not flee."
+  - text: "Kyr emi bitur thasa ys vond es."
+    morphemes: "kyr emi bit-ur thas-a ys vond es"
+    gloss: "blade 1SG.GEN bite-PRS.SG that.one-ACC REL evil be.PRS.SG"
+    translation: "My blade bites the one who is evil."
+  - text: "Sajir es Myr, sajir es Heid."
+    morphemes: "saj-ir es Myr saj-ir es Heid"
+    gloss: "see-AGT be.PRS.SG Myr see-AGT be.PRS.SG Heid"
+    translation: "Myr is witness, Heid is witness."
+  - text: "Sof em vath brestur, biti kyr emi om."
+    morphemes: "sof em vath brest-ur bit-i kyr emi om"
+    gloss: "if 1SG.NOM oath break-PRS.SG bite-OPT blade 1SG.GEN 1SG.ACC"
+    translation: "If I break the oath, may my blade bite me."
+  - text: "Sva vethur em."
+    morphemes: "sva veth-ur em"
+    gloss: "thus swear-PRS.SG 1SG.NOM"
+    translation: "Thus I swear."
+  notes:
+  - There are no evidential particles; Old Norsund calls the gods as witnesses instead (line 6).
+  - The accusative -a on skrym lets the object come first in line 4 without ambiguity.
+  - Subordinate clauses put the verb last (sof em vath brestur, ys vond es).
+  - The curse in line 7 uses the optative with the verb first.
+
+- id: kjoldmur-law
+  title: Law formula of the Kjoldmur
+  register: old (law)
+  source: records/thiolden/auristar/auristar.yaml (the rune-magic ban)
+  context: >
+    Carved beside the gates of the First Ring of the Kjoldmur (built 91-99 a.v.e.). Auristar was founded after Old Norsund
+    had given way to Norsund, but law is written in the old register. The formula bans rune magic (a charged rune glows),
+    not rune writing.
+  lines:
+  - text: "Hes es lag Kjoldmuri."
+    morphemes: "hes es lag Kjoldmur-i"
+    gloss: "this be.PRS.SG law Kjoldmur-GEN"
+    translation: "This is the law of the Kjoldmur."
+  - text: "Kum ys lysande run fjol stare ristur, thas es utlag."
+    morphemes: "kum ys lys-ande run fjol star-e rist-ur thas es ut-lag"
+    gloss: "who REL shine-PRS.PTCP rune beneath star-DAT carve-PRS.SG that.one be.PRS.SG outside-law"
+    translation: "Whoever carves a shining rune beneath the star, that one is outlaw."
+  - text: "Kjold eth grith halur mur vesa."
+    morphemes: "kjold eth grith hal-ur mur ves-a"
+    gloss: "ward and sanctuary owe-PRS.SG wall be-INF"
+    translation: "Ward and sanctuary the wall shall be."
+  - text: "Kum ys mur ne kjoldur, ne kjoldur heim."
+    morphemes: "kum ys mur ne kjold-ur ne kjold-ur heim"
+    gloss: "who REL wall NEG guard-PRS.SG NEG guard-PRS.SG home"
+    translation: "Whoever does not guard the wall does not guard home."
+  - text: "Sva skilum emin, skilirin Kjoldmuri."
+    morphemes: "sva skil-um emin skil-ir-in Kjoldmur-i"
+    gloss: "thus judge-PRS.PL 1PL.NOM judge-AGT-PL Kjoldmur-GEN"
+    translation: "Thus we judge, the judges of the Kjoldmur."
+  notes:
+  - The genitive follows its noun (lag Kjoldmuri), as is usual in law language.
+  - halur + infinitive is the old future; Norsund hal comes from it.
+  - Kjoldmur contains the Kedre loan mur. The name is younger than true Old Norsund and is used here as a fixed name.
+
+- id: settlers-slate-marheim
+  title: A settlers' rune slate from Marheim
+  register: old (runic memorial)
+  source: records/thiolden/general-timeline.yaml (Marheim founded 432 b.v.e.)
+  context: >
+    A slate carved in the first years of Marheim, when the surviving settlers were raising the village in northern
+    Thiolden. It is not the Merfolk slate the Mad Chronicler reads in records/user-submitted-stories/marv.yaml;
+    Merfolk runes are a separate tradition. The rune-row does not mark vowel length or double consonants, so the
+    reading below is a scholar's normalization.
+  lines:
+  - text: "Yn hwander ristade runar hesar aft brode seli, ys i Norvire dul."
+    morphemes: "yn hwander rist-ade run-ar hes-ar aft brod-e seli ys i Norvir-e dul"
+    gloss: "one wanderer carve-PST.SG rune-PL.IN this-PL.IN after sibling-DAT 3SG.GEN REL in North.forest-DAT fall.PST.SG"
+    translation: "A wanderer carved these runes in memory of their sibling, who fell in the North-forest."
+  - text: "Marheim hjaldum emin."
+    morphemes: "Marheim hjald-um emin"
+    gloss: "Marheim raise-PRS.PL 1PL.NOM"
+    translation: "We are raising Marheim."
+  - text: "Myr kjoldi heim eth hwanderin."
+    morphemes: "Myr kjold-i heim eth hwander-in"
+    gloss: "Myr guard-OPT home and wanderer-PL.ACC"
+    translation: "May Myr guard the home and the wanderers."
+  notes:
+  - The formula "X carved these runes after Y" is the standard memorial opening.
+  - The demonstrative follows the noun (runar hesar), an old word order.
+  - hwander keeps the initial hw that Norsund simplified to w (wander).
+
+- id: invocation-myr-heid
+  title: Temple invocation to Myr and Heid
+  register: old (liturgy)
+  source: records/thiolden/general-timeline.yaml (57 a.v.e., the blessings of Myr and Heid)
+  context: >
+    Opening words of the oldest rite of Auristar's temples, from the years of the Seven Wandering Houses. It uses the old
+    names Myr and Heid for Ur and Nett. In modern Starisund temple speech the same lines are followed by stari.
+  lines:
+  - text: "Em heitur Myra eth Heida."
+    morphemes: "em heit-ur Myr-a eth Heid-a"
+    gloss: "1SG.NOM invoke-PRS.SG Myr-ACC and Heid-ACC"
+    translation: "I call upon Myr and Heid."
+  - text: "Myr, ur ys emin lidum; Heid, ve ys emin ganum."
+    morphemes: "Myr ur ys emin lid-um Heid ve ys emin gan-um"
+    gloss: "Myr out.of REL 1PL.NOM come-PRS.PL Heid toward REL 1PL.NOM go-PRS.PL"
+    translation: "Myr, from whom we come; Heid, to whom we go."
+  - text: "Jov omum thioleth, jov omum lys."
+    morphemes: "jov omum thiol-eth jov omum lys"
+    gloss: "give.IMP 1PL.DAT brave-NMLZ give.IMP 1PL.DAT light"
+    translation: "Give us courage, give us light."
+  - text: "Kuna dauth lidur, marlidim emin ve Heide."
+    morphemes: "kuna dauth lid-ur mar-lid-im emin ve Heid-e"
+    gloss: "when death come-PRS.SG high-come-OPT.PL 1PL.NOM toward Heid-DAT"
+    translation: "When death comes, may we rise to Heid."
+  - text: "Sva es urlag."
+    morphemes: "sva es ur-lag"
+    gloss: "thus be.PRS.SG origin-law"
+    translation: "So is fate."
+  notes:
+  - Myr is the god of origin and kin, Heid of the sky and the destination, matching Ur and Nett.
+  - marlida "rise, ascend" describes the triumphant dead joining the constellations (starmyr).
+  - urlag "fate" is literally "origin-law".

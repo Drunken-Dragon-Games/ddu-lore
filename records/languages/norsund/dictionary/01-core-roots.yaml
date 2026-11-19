@@ -1,0 +1,357 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: Core roots (canon-attested and seed words)
+field: core
+contributor: Vledic#0001
+defaults: {layer: native, tier: core, status: ratified, epoch: proto}
+context:
+- Every root found inside a canon name, with its etymology, plus the seed words used by the grammar. Other dictionary files build on these.
+
+entries:
+- lemma: aur
+  pos: adj
+  gloss: [silver-bright, gleaming, the colour of starlight]
+  etymology: "Proto-Valian *auru (Kedre auro)"
+  attested: [Auristar, Aurinay]
+  derived:
+  - {lemma: aureth, pos: noun, class: inanimate, gloss: [gleam, brightness]}
+- lemma: den
+  pos: noun
+  class: inanimate
+  gloss: [land, realm, region]
+  etymology: "Proto-Valian *dhens (Kedre fens)"
+  attested: [Thiolden, Ilinvirden, Starifjolden]
+  notes: "mostly the head of compounds"
+- lemma: far
+  pos: adj
+  gloss: [far, distant]
+  attested: [Farheim]
+  derived:
+  - {lemma: farnay, pos: noun, class: animate, gloss: [stranger, foreigner (lit. far-folk)]}
+- lemma: fyr
+  pos: noun
+  class: inanimate
+  gloss: [fire, hearth-fire]
+  etymology: "Proto-Norsund *fyri"
+  attested: [Firen]
+  notes: "Used of a person it means a tavern cook (canon: cooks are called 'fire') and is then animate: fyren 'cooks'."
+  derived:
+  - {lemma: fyra, pos: verb, class: weak, gloss: [to light a fire, to cook]}
+  - {lemma: fyrheim, pos: noun, class: inanimate, gloss: [kitchen], parts: [fyr, heim]}
+- lemma: heim
+  pos: noun
+  class: inanimate
+  gloss: [home, dwelling, settlement, town]
+  etymology: "Proto-Valian *kaimu (Kedre kaimo)"
+  attested: [Oudeheim, Marheim, Farheim, Starirauggheim]
+  derived:
+  - {lemma: heima, pos: adj, gloss: [domestic, of home]}
+  - {lemma: urheim, pos: noun, class: inanimate, gloss: [ancestral home, homeland], parts: [ur, heim]}
+- lemma: heid
+  pos: noun
+  class: inanimate
+  gloss: [clear sky, honour]
+  layer: old-norsund
+  register: old
+  attested: [Heid]
+- lemma: ilin
+  pos: adj
+  gloss: [holy, hallowed, sacred]
+  etymology: "Proto-Valian *iliinu (Kedre ilino)"
+  attested: [Ilinvirden]
+  derived:
+  - {lemma: ilina, pos: verb, class: weak, gloss: [to hallow, to consecrate]}
+  - {lemma: ilineth, pos: noun, class: inanimate, gloss: [holiness]}
+- lemma: kjold
+  pos: noun
+  class: inanimate
+  gloss: [ward, guard-post, shield, watch]
+  etymology: "Old Norsund kjold < Proto-Norsund *kjoldu < Proto-Valian *geldhu (Kedre geldo)"
+  attested: [Nimkjold, Kjoldmur, Norstarkjold]
+  notes: "As the name of a guard body (Nimkjold) it is a collective; a single sentry is kjolder."
+  derived:
+  - {lemma: kjolda, pos: verb, class: weak, gloss: [to guard, to keep watch, to keep safe]}
+  - {lemma: kjolder, pos: noun, class: animate, gloss: [sentry, guard (person)], notes: "old agent form in -er"}
+  - {lemma: kjoldning, pos: noun, class: inanimate, gloss: [watch, guard duty]}
+  - {lemma: markjold, pos: noun, class: inanimate, gloss: [citadel, stronghold], parts: [mar, kjold]}
+- lemma: kull
+  pos: noun
+  class: inanimate
+  gloss: [ember, live coal, charcoal]
+  etymology: "Proto-Valian *gulnu (Kedre gulno)"
+  attested: [Kullmyr]
+  derived:
+  - {lemma: kullug, pos: adj, gloss: [sooty, ember-dark]}
+- lemma: kyr
+  pos: noun
+  class: inanimate
+  gloss: [blade, sword]
+  etymology: "Proto-Valian *guri > *kuri > *kyri (Kedre guri)"
+  attested: [Vilkyr, Kyr Thor'Vale]
+  notes: "As a title (Kyr) it marks a sworn mercenary blade and is animate."
+  derived:
+  - {lemma: kyrling, pos: noun, class: inanimate, gloss: [dagger, knife]}
+  - {lemma: kyrsund, pos: noun, class: inanimate, gloss: [battle (kenning, lit. blade-song)], register: poetic, parts: [kyr, sund]}
+- lemma: lys
+  pos: noun
+  class: inanimate
+  gloss: [light]
+  etymology: "Proto-Valian *luksi (Kedre luxi, the goddess Luxis)"
+  attested: [Lysmar, Lysrit]
+  notes: "As a title, Lys 'a Light' (member of the Seven Lights) is animate: Stevlysen."
+  derived:
+  - {lemma: lysa, pos: verb, class: weak, gloss: [to shine, to glow]}
+  - {lemma: lysnuth, pos: adj, gloss: [lightless, dark]}
+  - {lemma: lysug, pos: adj, gloss: [luminous, bright]}
+- lemma: mar
+  pos: adj
+  gloss: [high, lofty, great]
+  etymology: "Proto-Valian *maru (Kedre maro)"
+  attested: [Midelmar, Lysmar, Marheim]
+  notes: "As a noun, mar is 'peak, height'; as a preposition, 'above'."
+- lemma: midel
+  pos: adj
+  gloss: [middle, central]
+  attested: [Midelmar]
+- lemma: mur
+  pos: noun
+  class: inanimate
+  gloss: [wall, stone wall]
+  layer: kedre
+  epoch: contact
+  etymology: "Kedre murra 'wall' (occupation-era loan)"
+  attested: [Kjoldmur]
+  derived:
+  - {lemma: mura, pos: verb, class: weak, gloss: [to wall in, to build in stone]}
+  - {lemma: murir, pos: noun, class: animate, gloss: [mason]}
+- lemma: myr
+  pos: noun
+  class: animate
+  gloss: [kin, god-blessed tribe]
+  etymology: "Proto-Valian *muri (Kedre muri)"
+  attested: [Nurmyr, Kullmyr, Runmyren, Myr]
+- lemma: nay
+  pos: noun
+  class: animate
+  gloss: [folk, people (of a place)]
+  etymology: "Old Norsund negi < Proto-Valian *naghi (Kedre nahi)"
+  attested: [Thiolnay, Aurinay, Vilnay, Virnayen]
+- lemma: nett
+  pos: noun
+  class: inanimate
+  gloss: [night sky, firmament (as a sacred realm)]
+  etymology: "Proto-Valian *neddu (Kedre neddo)"
+  attested: [Nett]
+  derived:
+  - {lemma: nettylv, pos: noun, class: inanimate, gloss: [the water of the Auristar (kenning, lit. sky-water)], register: poetic, parts: [nett, ylv]}
+- lemma: nim
+  pos: noun
+  class: inanimate
+  gloss: [night (as a time)]
+  etymology: "Proto-Valian *nimu (Kedre nimo)"
+  attested: [Nimkjold]
+- lemma: nor
+  pos: noun
+  class: inanimate
+  gloss: [north]
+  etymology: "Proto-Valian *noru (Kedre noro)"
+  attested: [Norsund, Norstarkjold]
+  derived:
+  - {lemma: nora, pos: adj, gloss: [northern]}
+  - {lemma: Norstar, pos: name, gloss: [the North Star, the fixed star (the Auristar)], parts: [nor, star]}
+- lemma: nur
+  pos: adj
+  gloss: [green, living, healing]
+  etymology: "Proto-Valian *nuru (Kedre nuro)"
+  attested: [Nurmyr]
+  derived:
+  - {lemma: nura, pos: verb, class: weak, gloss: [to heal, to grow green]}
+  - {lemma: nurir, pos: noun, class: animate, gloss: [healer]}
+- lemma: oude
+  pos: adj
+  gloss: [old, of the past, ancient]
+  attested: [Oudeheim]
+- lemma: raugg
+  pos: noun
+  class: inanimate
+  gloss: [hoard, vault, sacred keeping]
+  attested: [Starirauggheim]
+  derived:
+  - {lemma: rauggheim, pos: noun, class: inanimate, gloss: [treasury, reliquary], parts: [raugg, heim]}
+- lemma: run
+  pos: noun
+  class: inanimate
+  gloss: [rune, secret]
+  etymology: "Proto-Valian *runu (Kedre runo)"
+  attested: [Runmyren]
+  notes: "Animate in Kullmyr speech (runen), because they treat runes as living."
+  derived:
+  - {lemma: runa, pos: verb, class: weak, gloss: [to carve runes]}
+  - {lemma: runir, pos: noun, class: animate, gloss: [rune-carver]}
+  - {lemma: runkraft, pos: noun, class: inanimate, gloss: [rune magic], parts: [run, kraft]}
+- lemma: star
+  pos: noun
+  class: inanimate
+  gloss: [star]
+  etymology: "Proto-Valian *staru (Kedre staro)"
+  attested: [Auristar, Norstarkjold, Starifjolden, Starirauggheim]
+  notes: "Animate in Starisund (staren, sel). Linking form stari-."
+  derived:
+  - {lemma: starug, pos: adj, gloss: [starry]}
+  - {lemma: starigand, pos: noun, class: inanimate, gloss: [canal of Auristar (kenning, lit. star-road)], register: poetic, parts: [stari, gand]}
+- lemma: sund
+  pos: noun
+  class: inanimate
+  gloss: [voice, song, word, tongue, language]
+  etymology: "Proto-Valian *sundhu (Kedre sundo)"
+  attested: [Norsund, Sundwanderen, Starisund]
+  derived:
+  - {lemma: sunda, pos: verb, class: weak, gloss: [to sing, to speak formally]}
+  - {lemma: sundir, pos: noun, class: animate, gloss: [singer]}
+  - {lemma: sundlag, pos: noun, class: inanimate, gloss: [the bardic verse measure (lit. song-law)], parts: [sund, lag]}
+- lemma: thiol
+  pos: adj
+  gloss: [brave, bold]
+  etymology: "Proto-Valian *telu > *thelu > Old Norsund thiol by breaking (Kedre telo)"
+  attested: [Thiolden, Thiolnay, Dethiol]
+  derived:
+  - {lemma: thioleth, pos: noun, class: inanimate, gloss: [bravery, valour]}
+  - {lemma: nethiol, pos: adj, gloss: [cowardly]}
+- lemma: tyr
+  pos: noun
+  class: inanimate
+  gloss: [edge, point, spearhead]
+  etymology: "Proto-Valian *duri (Kedre duri)"
+  attested: [Tyr, Vimtyr]
+- lemma: ulf
+  pos: noun
+  class: animate
+  gloss: [wolf]
+  attested: [Ulf]
+  derived:
+  - {lemma: ulfling, pos: noun, class: animate, gloss: [wolf cub]}
+  - {lemma: marulf, pos: noun, class: animate, gloss: [great wolf, dire wolf]}
+- lemma: vil
+  pos: adj
+  gloss: [free, unbound]
+  etymology: "Proto-Valian *wili (Kedre vili)"
+  attested: [Vilkyr, Vilnay, Vilnayan]
+  derived:
+  - {lemma: vileth, pos: noun, class: inanimate, gloss: [freedom]}
+  - {lemma: nevil, pos: adj, gloss: [bound, unfree]}
+- lemma: vim
+  pos: noun
+  class: inanimate
+  gloss: [whisper, hush]
+  attested: [Vimtyr]
+  derived:
+  - {lemma: vima, pos: verb, class: weak, gloss: [to whisper]}
+- lemma: vir
+  pos: noun
+  class: inanimate
+  gloss: [forest, deepwood]
+  etymology: "Proto-Valian *wiru (Kedre viro)"
+  attested: [Ilinvirden, Virnayen]
+- lemma: wander
+  pos: noun
+  class: animate
+  gloss: [wanderer]
+  epoch: old
+  etymology: "Old Norsund hwander < Proto-Valian *kwandhru (Kedre kvandro); fossil agent noun"
+  attested: [Sundwanderen]
+  derived:
+  - {lemma: wandra, pos: verb, class: weak, gloss: [to roam, to wander]}
+  - {lemma: Sundwander, pos: noun, class: animate, gloss: [bard, song-wanderer], parts: [sund, wander]}
+- lemma: dauth
+  pos: noun
+  class: inanimate
+  gloss: [death]
+  etymology: "Proto-Valian *dhautu (Kedre fauto)"
+  attested: [Dethiol]
+  derived:
+  - {lemma: dautha, pos: verb, class: weak, gloss: [to die]}
+  - {lemma: dauthnuth, pos: adj, gloss: [deathless, undying]}
+  - {lemma: dauthir, pos: noun, class: animate, gloss: [one of the undead, a risen corpse]}
+- lemma: ar
+  pos: noun
+  class: inanimate
+  gloss: [year]
+  etymology: "Proto-Valian *aru (Kedre aro)"
+- lemma: ur
+  pos: noun
+  class: inanimate
+  gloss: [origin, source]
+  etymology: "Proto-Valian *uru (Kedre uro)"
+  attested: [Ur]
+  notes: "Also the preposition 'out of, from'."
+
+# --- Seed words from the v0.1 proposal and the grammar ---
+- {lemma: kjala, pos: verb, class: weak, gloss: [to drink in company, to drink], derived: [{lemma: kjalheim, pos: noun, class: inanimate, gloss: [tavern, inn], parts: [kjala, heim]}, {lemma: kjal, pos: noun, class: inanimate, gloss: [a drink, a round]}]}
+- {lemma: thiarka, pos: verb, class: weak, gloss: [to track, to follow a trail, to hunt], derived: [{lemma: thiarkir, pos: noun, class: animate, gloss: [tracker, hunter]}]}
+- {lemma: hjalda, pos: verb, class: weak, gloss: [to raise, to build]}
+- {lemma: vyrna, pos: verb, class: weak, gloss: [to move, to stir]}
+- {lemma: skyna, pos: verb, class: weak, gloss: [to know, to understand], derived: [{lemma: alskyn, pos: adj, gloss: [all-knowing]}, {lemma: skyn, pos: noun, class: inanimate, gloss: [knowledge, understanding]}]}
+- {lemma: smida, pos: verb, class: weak, gloss: [to craft, to make, to forge], derived: [{lemma: smidir, pos: noun, class: animate, gloss: [crafter, smith]}]}
+- {lemma: drifa, pos: verb, class: weak, gloss: [to snow, to drift], notes: "weather verb with dummy subject: At drifer."}
+- {lemma: rit, pos: noun, class: inanimate, gloss: [writing, marks, script], derived: [{lemma: rita, pos: verb, class: weak, gloss: [to write]}, {lemma: ritir, pos: noun, class: animate, gloss: [scribe]}]}
+- {lemma: hask, pos: noun, class: inanimate, gloss: [axe]}
+- {lemma: nuth, pos: noun, class: inanimate, gloss: [void, nothingness], notes: "the plane of negative entities and the untranscended"}
+- {lemma: gand, pos: noun, class: inanimate, gloss: [road, way], derived: [{lemma: ylvgand, pos: noun, class: inanimate, gloss: [river (lit. water-road)], parts: [ylv, gand]}]}
+- {lemma: ylv, pos: noun, class: inanimate, gloss: [water, flowing water]}
+- {lemma: kreth, pos: noun, class: inanimate, gloss: [ring, girdle of walls]}
+- {lemma: thamm, pos: noun, class: animate, gloss: [hand], forms: {plural: themm}, notes: "umlaut plural; also the number five"}
+- {lemma: lud, pos: noun, class: animate, gloss: [person, human being], forms: {plural: lyd}}
+- {lemma: gat, pos: noun, class: animate, gloss: [goat], forms: {plural: get}}
+- {lemma: fuld, pos: noun, class: animate, gloss: [foot], forms: {plural: fyld}}
+- {lemma: tunn, pos: noun, class: animate, gloss: [tooth], forms: {plural: tynn}}
+- {lemma: brod, pos: noun, class: animate, gloss: [sibling, brother, sister], forms: {plural: bred}}
+- {lemma: hest, pos: noun, class: animate, gloss: [horse]}
+- {lemma: skarp, pos: adj, gloss: [sharp, keen]}
+- {lemma: hel, pos: adj, gloss: [good, whole, hale], forms: {comparative: batar, superlative: bast, adverb: helt}}
+- {lemma: vond, pos: adj, gloss: [bad, evil], forms: {comparative: verr, superlative: verst}}
+- {lemma: grjot, pos: noun, class: inanimate, gloss: [stone, rock]}
+- {lemma: aul, pos: noun, class: inanimate, gloss: [ale, beer]}
+- {lemma: kvit, pos: adj, gloss: [white]}
+- {lemma: dunk, pos: adj, gloss: [dark, dim]}
+- {lemma: vard, pos: noun, class: animate, gloss: [warden, keeper]}
+- {lemma: drott, pos: noun, class: animate, gloss: [ruler, king, sovereign]}
+- {lemma: tar, pos: noun, class: inanimate, gloss: [tear, drop]}
+- {lemma: dag, pos: noun, class: inanimate, gloss: [day]}
+- {lemma: lag, pos: noun, class: inanimate, gloss: [law, order, measure]}
+- {lemma: kraft, pos: noun, class: inanimate, gloss: [power, force, magic]}
+- {lemma: skei, pos: noun, class: inanimate, gloss: [boat], derived: [{lemma: rieskei, pos: noun, class: inanimate, gloss: [canal boat], parts: [rie, skei]}]}
+- {lemma: jor, pos: noun, class: animate, gloss: [steed], register: poetic, layer: old-norsund}
+- {lemma: bran, pos: noun, class: inanimate, gloss: [blade], register: poetic, layer: old-norsund}
+- {lemma: ljom, pos: noun, class: inanimate, gloss: [radiance], register: poetic, layer: old-norsund}
+
+# --- Place-name generics (fixed by grammar/11-naming.yaml) ---
+- {lemma: tjorn, pos: noun, class: inanimate, gloss: [lake, tarn]}
+- {lemma: skyl, pos: noun, class: inanimate, gloss: [waterfall]}
+- {lemma: rie, pos: noun, class: inanimate, gloss: [canal], layer: kedre, epoch: contact, etymology: "Kedre rivia 'channel'"}
+- {lemma: vang, pos: noun, class: inanimate, gloss: [field, open place]}
+- {lemma: kamp, pos: noun, class: inanimate, gloss: [city square, plaza], layer: kedre, epoch: contact, etymology: "Kedre kampo 'field, square'"}
+- {lemma: haug, pos: noun, class: inanimate, gloss: [barrow, burial mound], derived: [{lemma: haugden, pos: noun, class: inanimate, gloss: [tumulus plain, barrow-land], parts: [haug, den]}]}
+- {lemma: skar, pos: noun, class: inanimate, gloss: [isle, skerry]}
+- {lemma: spenn, pos: noun, class: inanimate, gloss: [bridge]}
+- {lemma: tur, pos: noun, class: inanimate, gloss: [tower], layer: kedre, epoch: contact, etymology: "Kedre turra"}
+- {lemma: turra, pos: noun, class: inanimate, gloss: [fortress-tower (military treatises)], layer: kedre-learned, epoch: modern, register: learned, notes: "learned doublet of tur"}
+- {lemma: grind, pos: noun, class: inanimate, gloss: [gate (in a wall)]}
+- {lemma: port, pos: noun, class: inanimate, gloss: [city gate], layer: kedre, epoch: contact, etymology: "Kedre porta"}
+- {lemma: fald, pos: noun, class: inanimate, gloss: [quarter, district (a 'fold' of Auristar)]}
+- {lemma: svel, pos: noun, class: inanimate, gloss: [valley]}
+- {lemma: skard, pos: noun, class: inanimate, gloss: [mountain pass]}
+- {lemma: kelda, pos: noun, class: inanimate, gloss: [spring, well]}
+- {lemma: vad, pos: noun, class: inanimate, gloss: [ford]}
+- {lemma: merk, pos: noun, class: inanimate, gloss: [market], layer: kedre, epoch: contact, etymology: "Kedre merkadu", derived: [{lemma: merka, pos: verb, class: weak, gloss: [to trade, to buy and sell]}, {lemma: merkir, pos: noun, class: animate, gloss: [trader, merchant]}, {lemma: merkvang, pos: noun, class: inanimate, gloss: [market field], parts: [merk, vang]}]}
+- {lemma: sul, pos: noun, class: inanimate, gloss: [south]}
+- {lemma: aust, pos: noun, class: inanimate, gloss: [east]}
+- {lemma: vesk, pos: noun, class: inanimate, gloss: [west]}
+- {lemma: alkimia, pos: noun, class: inanimate, gloss: [alchemy], layer: kedre-learned, epoch: modern, register: learned}
+- {lemma: medikina, pos: noun, class: inanimate, gloss: [medicine (learned)], layer: kedre-learned, epoch: modern, register: learned}
+- {lemma: kupola, pos: noun, class: inanimate, gloss: [dome], layer: kedre-learned, epoch: modern, register: learned}
+
+# --- Rune names (records/languages/scripts/runar.yaml) ---
+- {lemma: plog, pos: noun, class: inanimate, gloss: [plough], notes: "name of the p rune"}
+- {lemma: gjal, pos: noun, class: inanimate, gloss: [echo], notes: "name of the gj rune", derived: [{lemma: gjala, pos: verb, class: weak, gloss: [to echo, to ring back]}]}
+- {lemma: esk, pos: noun, class: inanimate, gloss: [ash tree], notes: "name of the e rune"}

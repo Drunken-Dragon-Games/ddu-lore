@@ -2,7 +2,7 @@ document: fact-record/v1
 topic: The City-state of Auristar
 contributor: Vledic#0001
 context: 
-- Dates use the Varian Imperial System of meassuring years, where year 0 is the founding of the Varian Empire
+- Dates use the Vairean Imperial System of meassuring years, where year 0 is the founding of the Vairean Empire
 subtopics: 
 
 - topic: About Auristar
@@ -15,7 +15,7 @@ subtopics:
 - topic: Background
   needsReview: true
   facts:
-  - After 37 years of campaign in Arbury and Exeter, Emperor Rechtar Vaire arrived in Thiolden
+  - After 37 years of campaign in Arbaire and Exaire, Emperor Rechtar Vaire arrived in Thiolden
   - He brought a large army to Oudeheim, but the city held its own for 13 years
   - Rechtar caused a cataclysm, destroying the city and contaminating the north of Thiolden
   - The event strained relations with the Emperor of Keria and the clans of Thiolden
@@ -130,7 +130,7 @@ subtopics:
   contributor: Marv2.0/ChaosDelivery#2855
   facts:
   - Goes by many name amongst the townsfolk
-  - 'Chronicler' is fine by him
+  - "'Chronicler' is fine by him"
   - Presents himself as a tired old man
   - Knowledgable about Merfolk
   

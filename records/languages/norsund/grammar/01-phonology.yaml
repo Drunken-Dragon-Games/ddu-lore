@@ -1,0 +1,162 @@
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: Phonology
+contributor: Vledic#0001
+status: ratified
+context:
+- Norsund ("north-tongue") is the common language of Thiolden. This file is the authoritative list of its sounds and sound rules.
+- The machine-readable blocks (inventory, onsets, codas) are read by tools/norsund to validate new words.
+- IPA is given between slashes for phonemes and square brackets for actual pronunciations.
+
+inventory:
+  consonants:
+  - {letter: "p", ipa: "p", place: "labial", manner: "stop", voiced: false}
+  - {letter: "b", ipa: "b", place: "labial", manner: "stop", voiced: true}
+  - {letter: "t", ipa: "t", place: "coronal", manner: "stop", voiced: false}
+  - {letter: "d", ipa: "d", place: "coronal", manner: "stop", voiced: true}
+  - {letter: "kj", ipa: "c", place: "palatal", manner: "stop", voiced: false}
+  - {letter: "gj", ipa: "ɟ", place: "palatal", manner: "stop", voiced: true}
+  - {letter: "k", ipa: "k", place: "velar", manner: "stop", voiced: false}
+  - {letter: "g", ipa: "g", place: "velar", manner: "stop", voiced: true}
+  - {letter: "f", ipa: "f", place: "labial", manner: "fricative", voiced: false}
+  - {letter: "v", ipa: "v", place: "labial", manner: "fricative", voiced: true}
+  - {letter: "th", ipa: "θ", place: "coronal", manner: "fricative", voiced: false}
+  - {letter: "s", ipa: "s", place: "coronal", manner: "fricative", voiced: false}
+  - {letter: "h", ipa: "h", place: "glottal", manner: "fricative", voiced: false}
+  - {letter: "m", ipa: "m", place: "labial", manner: "nasal", voiced: true}
+  - {letter: "n", ipa: "n", place: "coronal", manner: "nasal", voiced: true}
+  - {letter: "ng", ipa: "ŋ", place: "velar", manner: "nasal", voiced: true}
+  - {letter: "l", ipa: "l", place: "coronal", manner: "liquid", voiced: true}
+  - {letter: "r", ipa: "r", place: "coronal", manner: "liquid", voiced: true}
+  - {letter: "j", ipa: "j", place: "palatal", manner: "glide", voiced: true}
+  - {letter: "w", ipa: "w", place: "labial", manner: "glide", voiced: true}
+  vowels:
+  - {letter: "i", ipa: "i", height: "high", backness: "front", rounded: false}
+  - {letter: "y", ipa: "y", height: "high", backness: "front", rounded: true}
+  - {letter: "u", ipa: "u", height: "high", backness: "back", rounded: true}
+  - {letter: "e", ipa: "e", height: "mid", backness: "front", rounded: false}
+  - {letter: "o", ipa: "o", height: "mid", backness: "back", rounded: true}
+  - {letter: "a", ipa: "a", height: "low", backness: "central", rounded: false}
+  long_vowels:
+  - {letter: "aa", ipa: "aː"}
+  - {letter: "ee", ipa: "eː"}
+  - {letter: "ii", ipa: "iː"}
+  - {letter: "oo", ipa: "oː"}
+  - {letter: "uu", ipa: "uː"}
+  - {letter: "yy", ipa: "yː"}
+  diphthongs:
+  - {letter: "ei", ipa: "ej", note: "written ay at the end of a word (nay, Thiolnay); a stem keeps ay before suffixes (Vilnayan)"}
+  - {letter: "ay", ipa: "ej", note: "word-final spelling of ei"}
+  - {letter: "au", ipa: "au"}
+  - {letter: "ou", ipa: "ou"}
+  reduced_vowel: {ipa: ə, spelled: e, note: allophone of e in an unstressed final syllable; see PHON-06}
+
+# Allowed syllable margins, written in letters (digraphs count as one consonant).
+onsets:
+  single: [p, b, t, d, kj, gj, k, g, f, v, th, s, h, m, n, l, r, j, w]
+  double: [pr, br, tr, dr, kr, gr, fr, vr, thr,
+           pl, bl, kl, gl, fl, sl,
+           fj, thj, hj, sj, bj, mj, nj, vj, pj, lj,
+           sk, st, sp, sm, sn, sv, sw, skj,
+           tw, dw, kw, thw, hw, kv, gv, tv, dv, tj, dj, kl]
+  triple: [str, spr, skr, stj, skj, grj, brj, frj, trj, skv]
+codas:
+  single: [p, b, t, d, k, g, f, v, th, s, m, n, ng, l, r]
+  double: [rk, rg, rd, rt, rn, rm, rl, rf, rv, rs, rth, rp,
+           lk, lg, ld, lt, lm, ln, lf, lv, ls, lth, lp,
+           nd, nt, nk, ns, nth, ngs,
+           mp, mb, ms,
+           st, sk, sp, ft, kt, ks, ps, pt, ts, ds, gd]
+  triple: [rst, rsk, rnd, rks, nds, lds, lsk, mst, nst, rts]
+  geminates: [bb, dd, ff, gg, kk, ll, mm, nn, pp, rr, ss, tt]
+
+rules:
+- id: PHON-01
+  title: Twenty consonants, six vowels
+  rule: >
+    Norsund has 20 consonants and 6 vowel qualities (a e i o u y), each of which can be long (written double).
+    There are three diphthongs: ei/ay, au and ou. The letters c, q, x and z are not used.
+  examples:
+  - {form: "kjold", ipa: "/cold/", translation: "ward, guard"}
+  - {form: "thiol", ipa: "/θjol/", translation: "brave"}
+
+- id: PHON-02
+  title: Stress
+  rule: >
+    Native words are stressed on the first syllable. Compounds take primary stress on the first element and one
+    secondary stress on the first syllable of the next element (none if that element starts at the second syllable). Learned Kedre loans (layer kedre-learned)
+    keep Kedre's stress on the second-to-last syllable.
+  examples:
+  - {form: "Thiolden", ipa: "[ˈθjol.dən]"}
+  - {form: "Starirauggheim", ipa: "[ˈsta.riˌraugː.hejm]"}
+  - {form: "alkimia", ipa: "[al.kiˈmi.a]", translation: "alchemy (learned Kedre loan)"}
+
+- id: PHON-03
+  title: Syllable shape
+  rule: >
+    The syllable is (C)(C)(C)V(C)(C)(C). Allowed onsets and codas are listed above. "ng" never starts a word;
+    h, j and w never end a syllable; kj and gj never end a word. Double consonants (geminates) occur only after
+    a vowel, never at the start of a word.
+  examples:
+  - {form: "strenk", translation: "allowed (str- onset, -nk coda)"}
+  - {form: "ngar", translation: "not allowed (ng- onset)"}
+
+- id: PHON-04
+  title: The th sound
+  rule: >
+    th is [θ] (thin) at the start of a word and next to voiceless consonants, and [ð] (this) between vowels and
+    after a vowel at the end of a word. In Starisund (Auristar) it is [s] everywhere.
+  examples:
+  - {form: "thiol", ipa: "[θjol]"}
+  - {form: "Lysrit", ipa: "[ˈlys.rit]"}
+  - {form: "vetha", ipa: "[ˈve.ða]", translation: "to bind"}
+
+- id: PHON-05
+  title: Glides from i and u
+  rule: >
+    An unstressed i before another vowel in the same syllable is the glide [j]; an unstressed u before a vowel is [w].
+    The stressed vowel is the second one.
+  examples:
+  - {form: "Thiolden", ipa: "[ˈθjol.dən]"}
+
+- id: PHON-06
+  title: Reduction of final e
+  rule: >
+    The letter e in an unstressed final syllable is pronounced [ə] (the a in "sofa"). This applies to each element
+    of a compound separately and to all inflectional endings (-en, -er, -ene, -ade, -de).
+  examples:
+  - {form: "Vilkyren", ipa: "[ˈvil.ky.rən]"}
+  - {form: "Oudeheim", ipa: "[ˈou.dəˌhejm]"}
+
+- id: PHON-07
+  title: Nasal assimilation
+  rule: n before k or g is pronounced [ŋ].
+  examples:
+  - {form: "strenk", ipa: "[streŋk]"}
+
+- id: PHON-08
+  title: Long consonants
+  rule: >
+    Written double consonants are held long in common Norsund and Old Norsund. Starisund shortens them in speech
+    but keeps the double spelling.
+  examples:
+  - {form: "kull", ipa: "[kulː]", translation: "ember"}
+
+- id: PHON-09
+  title: r
+  rule: r is a tap [ɾ] between vowels and a trill [r] elsewhere. It is never the English glide.
+
+- id: PHON-10
+  title: Starisund accent
+  rule: >
+    The Auristar accent applies three Venetian-style changes in speech only: th becomes [s], word-final n becomes [ŋ],
+    and double consonants are short. Saying "Thiolden" as [ˈsjol.dəŋ] marks a city speaker.
+  examples:
+  - {form: "Thiolden", ipa: "[ˈsjol.dəŋ]", translation: "as said in Auristar"}
+
+- id: PHON-11
+  title: English-friendly readings
+  rule: >
+    For voice work, y may be read as "ee" with rounded lips, kj as "ky", and r as a light tap. Never read j as in "jam",
+    g as in "gem", s as "z", or a as in "cat". See docs/languages/norsund/pronunciation-guide.md.

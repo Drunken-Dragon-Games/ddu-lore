@@ -1,0 +1,216 @@
+document: lang-grammar/v1
+language: old-norsund
+version: 1.0.0
+topic: Old Norsund grammar sketch
+contributor: Vledic#0001
+status: ratified
+context:
+- Old Norsund is the language of the settlers who came to Thiolden from the island of Farheim around 450 b.v.e. It gave way to Norsund around 100 a.v.e.
+- It survives as the high register for oaths, law, temple liturgy, rune-craft and sagas (records/languages/norsund/grammar/12-registers-dialects.yaml).
+- Its word forms are the output of the pv-pn and pn-on stages in records/languages/norsund/grammar/13-history.yaml. The Old Norsund column of the cognate table there is authoritative.
+- Glosses follow the Leipzig Glossing Rules. NOM nominative, ACC accusative, GEN genitive, DAT dative, AN animate, IN inanimate, OPT optative, AGT agent.
+
+# Machine-readable endings, in the same spirit as the Norsund grammar files.
+morphology:
+  nouns:
+    animate:
+      singular: {nominative: "", accusative: a, genitive: i, dative: e}
+      plural:   {nominative: in, accusative: in, genitive: ini, dative: um}
+    inanimate:
+      singular: {nominative: "", accusative: "", genitive: i, dative: e}
+      plural:   {nominative: ar, accusative: ar, genitive: ari, dative: um}
+    after_vowel:
+      genitive: s
+      note: "A stem ending in -i drops the i before an ending that begins with a vowel: negi, ACC nega, GEN negis, DAT nege, PL negin."
+    umlaut_plurals: [lud/lyd, thamm/themm, gat/get, fuld/fyld, tunn/tynn, brod/bred]
+  article:
+    singular: hin
+    plural: hine
+    position: after the noun, as a separate word
+  adjectives:
+    agreement: "Adjectives take the case and number endings of the noun's class (thiola Vilkyra 'brave free sword' ACC)."
+    comparative: ar
+    superlative: ast
+  pronouns:
+  - {person: 1sg,    nominative: em,    accusative: om,    genitive: emi,    dative: ome}
+  - {person: 2sg,    nominative: dy,    accusative: du,    genitive: dys,    dative: due}
+  - {person: 3sg.an, nominative: sel,   accusative: sal,   genitive: seli,   dative: sale}
+  - {person: 3sg.in, nominative: at,    accusative: at,    genitive: ati,    dative: ate}
+  - {person: 1pl,    nominative: emin,  accusative: omin,  genitive: emini,  dative: omum}
+  - {person: 2pl,    nominative: dyn,   accusative: dun,   genitive: dyni,   dative: dunum}
+  - {person: 3pl.an, nominative: selin, accusative: salin, genitive: selini, dative: salum}
+  - {person: 3pl.in, nominative: atar,  accusative: atar,  genitive: atari,  dative: atum}
+  demonstratives:
+  - {form: hes,  gloss: this, inflects: like an adjective (hesar 'these', of things)}
+  - {form: thas, gloss: "that, that one", inflects: like an adjective (thasa ACC)}
+  relative: {form: ys, gloss: "who, which, that", note: "invariable; replaced by the Kedre loan ke in Norsund"}
+  verbs:
+    infinitive: a
+    present: {singular: ur, plural: um}
+    past_weak: {singular: ade, plural: adum}
+    participle_weak: ad
+    participle_strong: in
+    present_participle: ande
+    imperative: ""
+    optative: {singular: i, plural: im}
+    strong_verbs: "Same ablaut classes as Norsund (lida leid lidin, dola dul dolin, vetha vath vothin, aga og agin ...); the participle ends in -in."
+    irregular:
+    - {infinitive: vesa, present: {singular: es, plural: erum}, past: {singular: vas, plural: varum}, participle: vesin, optative: si, gloss: to be}
+    - {infinitive: hala, present: {singular: halur, plural: halum}, past: {singular: halde, plural: haldum}, gloss: "to owe, to be bound to (future auxiliary)"}
+    - {infinitive: maga, present: {singular: magur, plural: magum}, past: {singular: matte, plural: mattum}, gloss: "to be able, to have the power to"}
+
+rules:
+- id: ON-SND-01
+  title: Sounds
+  rule: >
+    Old Norsund has the same consonants and vowels as Norsund, with three differences. g between vowels is still a
+    stop (negi, later nay). Words may begin with hw (hwander, later wander). The diphthong ey (from umlaut of au)
+    has not yet merged with ei. Long vowels exist and are written double in ASCII (tiir "glory").
+  examples:
+  - {form: negi, translation: "folk (Norsund nay)"}
+  - {form: hwander, translation: "wanderer (Norsund wander)"}
+
+- id: ON-SND-02
+  title: Full vowels in endings
+  rule: >
+    Unstressed endings keep their full vowels: animate plural -in, present -ur, strong participle -in. The Norsund
+    reduction rule later turned them into -en, -er, -en, all pronounced [ən]/[ər].
+  examples:
+  - {form: Vilkyr-in, gloss: free.sword-PL.NOM, translation: "free swords (Norsund Vilkyren)"}
+  - {form: kjold-ur, gloss: guard-PRS.SG, translation: "guards (Norsund kjolder)"}
+
+- id: ON-SND-03
+  title: Stress
+  rule: Stress falls on the first syllable of every word, as in Norsund. There are no Kedre loans in true Old Norsund.
+
+- id: ON-ORTH-01
+  title: Two ways to write it
+  rule: >
+    In English-language lore, write Old Norsund in the plain ASCII romanization used for Norsund (th, kj, double vowels
+    for length). Scholarly citations may use þ for th at the start of a word, ð for th between vowels and at the end of
+    a word after a vowel, and an acute accent for long vowels: thiol = þjol, vetha = veða, tiir = tír. Reconstructed
+    Proto-Norsund forms are starred (*kjoldu).
+
+- id: ON-NOUN-01
+  title: Four cases
+  rule: >
+    Nouns have four cases: nominative (subject), accusative (object), genitive (possession) and dative (after
+    prepositions and for the receiver of a gift). Animate nouns mark the accusative singular with -a; inanimate nouns
+    use the same form for nominative and accusative, like neuter nouns in older Germanic languages. All prepositions
+    take the dative.
+  examples:
+  - {form: Skrym-a thiark-ur em., gloss: monster-ACC hunt-PRS.SG 1SG.NOM, translation: The monster I hunt.}
+  - {form: a kyr-e, gloss: on blade-DAT, translation: on the blade}
+
+- id: ON-NOUN-02
+  title: Noun paradigms
+  rule: Animate and inanimate nouns differ in the accusative singular and in the plural.
+  examples:
+  - {form: Vilkyr Vilkyra Vilkyri Vilkyre, translation: "free sword NOM, ACC, GEN, DAT"}
+  - {form: Vilkyrin Vilkyrin Vilkyrini Vilkyrum, translation: "free swords NOM, ACC, GEN, DAT"}
+  - {form: kyr kyr kyri kyre, translation: "blade NOM, ACC, GEN, DAT"}
+  - {form: kyrar kyrar kyrari kyrum, translation: "blades NOM, ACC, GEN, DAT"}
+
+- id: ON-NOUN-03
+  title: The article was still a word
+  rule: >
+    Old Norsund had no suffixed article. "The" was the word hin (plural hine) placed after the noun: kyr hin "the blade".
+    In Norsund it fused onto the noun as -in, -ene and -arne. It fused after the reduction rule had stopped, which is why
+    the singular -in kept its i while the old plural -in became -en.
+  examples:
+  - {form: kyr hin, gloss: blade the, translation: the blade}
+  - {form: kyrar hine, gloss: blade-PL.IN the.PL, translation: "the blades (Norsund kyrarne)"}
+
+- id: ON-NOUN-04
+  title: Genitives may follow
+  rule: >
+    In law and verse a genitive often follows its noun (lag Kjoldmuri "the law of the Kjoldmur"). In ordinary speech it
+    came first, as it does in Norsund (Tyri kyr).
+
+- id: ON-ADJ-01
+  title: Adjectives agree
+  rule: >
+    Adjectives stand before the noun and take its case and number endings. Norsund lost this agreement.
+  examples:
+  - {form: thiol-a Vilkyr-a, gloss: brave-ACC free.sword-ACC, translation: the brave free sword (as object)}
+
+- id: ON-PRON-01
+  title: Pronouns and possessives
+  rule: >
+    Personal pronouns have four cases (table above). The plural pronouns end in -in, which became -en in Norsund
+    (emin > emen, selin > selen). Possessive pronouns (the genitive forms) follow the noun: kyr emi "my blade".
+  examples:
+  - {form: kyr emi, gloss: blade 1SG.GEN, translation: my blade}
+
+- id: ON-VERB-01
+  title: Verbs agree in number
+  rule: >
+    The present and past still distinguish a singular and a plural subject: kjoldur "guards" (one), kjoldum "guard"
+    (several). Norsund kept only the singular form for every subject.
+  examples:
+  - {form: Emin hjald-um Marheim., gloss: 1PL.NOM raise-PRS.PL Marheim, translation: We are raising Marheim.}
+
+- id: ON-VERB-02
+  title: Optative instead of ma
+  rule: >
+    Wishes, blessings and curses use the optative ending -i (plural -im). Blessings usually put the subject first
+    (Myr kjoldi heim "may Myr guard the home"); curses put the verb first (Biti kyr emi om "may my blade bite me").
+    Norsund replaced the optative with ma + infinitive; ma is worn down from maga "to have the power to".
+  examples:
+  - {form: Bit-i kyr emi om., gloss: bite-OPT blade 1SG.GEN 1SG.ACC, translation: May my blade bite me.}
+
+- id: ON-VERB-03
+  title: Future with hala
+  rule: >
+    hala "to owe, to be bound to" + infinitive expresses what will or must happen. Its present halur wore down to
+    the Norsund future auxiliary hal; its past halde became Norsund halde "would".
+  examples:
+  - {form: Kjold eth grith hal-ur mur ves-a., gloss: ward and sanctuary owe-PRS.SG wall be-INF, translation: Ward and sanctuary the wall shall be.}
+
+- id: ON-SYN-01
+  title: Verb second, verb last
+  rule: >
+    Main clauses are verb-second, as in Norsund. Subordinate clauses put the finite verb last, with ne right before it
+    (sof em vath brestur "if I break the oath"). Norsund later moved the verb forward to subject-verb-object in all clauses.
+  examples:
+  - {form: kum ys mur ne kjold-ur, gloss: who REL wall NEG guard-PRS.SG, translation: whoever does not guard the wall}
+
+- id: ON-SYN-02
+  title: Negation
+  rule: >
+    ne comes directly before the finite verb in every clause (Em ne skrinkur "I do not flee"). In Norsund main clauses
+    it moved after the verb.
+
+- id: ON-SYN-03
+  title: Relative clauses
+  rule: The invariable particle ys introduces relative clauses. Norsund replaced it with the Kedre loan ke.
+  examples:
+  - {form: thas-a ys vond es, gloss: that.one-ACC REL evil be.PRS.SG, translation: the one who is evil}
+
+- id: ON-SYN-04
+  title: No evidentials
+  rule: >
+    Old Norsund has no evidential particles. Oaths name the gods as witnesses instead (Sajir es Myr "Myr is witness").
+    To modern ears the old oaths sound strangely bare, which is part of their solemnity.
+
+- id: ON-REG-01
+  title: Where Old Norsund is still heard
+  rule: >
+    Vilkyr oaths, the laws carved on the Kjoldmur, the oldest temple invocations (which use the old god-names Myr and
+    Heid), sagas, and every rune-craft formula. Farheim island speech keeps some Old Norsund forms in everyday songs.
+
+tables:
+- id: ON-T1
+  title: Old Norsund and Norsund endings side by side
+  columns: [category, Old Norsund, Norsund]
+  rows:
+  - [animate plural, -in (Vilkyrin), -en (Vilkyren)]
+  - [inanimate plural, -ar (kyrar), -ar (kyrar)]
+  - [genitive, -i / -s, -i / -s]
+  - [present, -ur / -um, -er]
+  - [weak past, -ade / -adum, -ade]
+  - [strong participle, -in (vothin), -en (vothen)]
+  - [the, hin after the noun (kyr hin), suffix -in (kyrin)]
+  - [relative, ys, ke (Kedre loan)]
+  - [wish, optative -i (kjoldi), ma + infinitive (ma kjolda)]
+  - [future, halur + infinitive, hal + infinitive]

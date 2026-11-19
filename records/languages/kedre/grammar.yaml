@@ -1,0 +1,137 @@
+document: lang-grammar/v1
+language: kedre
+version: 1.0.0
+topic: Kedre grammar sketch
+contributor: Vledic#0001
+status: ratified
+context:
+- Kedre is the language of the Vairean Empire, spoken in Keras and the old Kingdom of Reinovaire, north-west of Thiolden in Valnor.
+- It is a distant cousin of Norsund; both descend from Proto-Valian. Its sound history is the pv-kedre stage of records/languages/norsund/grammar/13-history.yaml.
+- This is a sketch, enough to source loanwords, imperial names and short texts. It looks Latin to a reader on purpose, as the conquerors' language does in-world, but it has its own rules.
+- Glosses follow the Leipzig Glossing Rules. DIGN = dignity suffix, AGT = agent.
+
+morphology:
+  nouns:
+    gender: none
+    plural:
+      o: i      # posto > posti
+      a: e      # legia > legie
+      e: i      # kedre > kedri
+      i: ie     # luxi > luxie (not luxis, which is the goddess)
+      consonant: es   # fens > fenses
+  dignity_suffix: {form: s, meaning: "marks a god, an emperor's title or a holy city", examples: [Luxis, Keras]}
+  agent_suffix: {form: aro, examples: [keraro "emperor", primaro "first priest", alkimiaro "alchemist"]}
+  place_suffixes:
+  - {form: ia,   meaning: "land of", examples: [Keria "crown-land, the Empire", rivia "channel (land of running water)"]}
+  - {form: aire, meaning: "domain, house of", examples: [Vaire, Reinovaire, Exaire, Arbaire]}
+  pronouns:
+  - {person: 1sg, form: me,  possessive: mue}
+  - {person: 2sg, form: te,  possessive: tue}
+  - {person: 3sg, form: se,  possessive: sue}
+  - {person: 1pl, form: nos, possessive: nostre}
+  - {person: 2pl, form: vos, possessive: vostre}
+  - {person: 3pl, form: sei, possessive: sue}
+  verbs:
+    classes: [are, ire]
+    present:
+      are: {1sg: o, 2sg: i, 3sg: a, 1pl: amo, 2pl: ate, 3pl: an}
+      ire: {1sg: o, 2sg: i, 3sg: e, 1pl: imo, 2pl: ite, 3pl: en}
+    past: "present endings after -av- (are verbs) or -iv- (ire verbs): luxava 'blessed', teniva 'held'"
+    participle: {are: ato, ire: ito}
+    imperative: {are: a, ire: i}
+    future: "vole + infinitive (vole luxare 'will bless')"
+    esere: {gloss: to be, present.3sg: es, present.3pl: son, past.3sg: era, optative.3sg: sia}
+
+rules:
+- id: KED-SND-01
+  title: Sounds
+  rule: >
+    Kedre has p t k b d g f v s h m n l r and the vowels a e i o u, with the diphthongs ai, au and ei. It has no th,
+    no y, no kj or gj and no w (Proto-Valian w became v). Breathy stops became f (bh, dh) and h (gh): Kedre fens "land"
+    beside Norsund den, Kedre fovo "two" beside Norsund dov.
+  examples:
+  - {form: fens, translation: "land, estate (Norsund den)"}
+  - {form: nahi, translation: "nation, people (Norsund nay)"}
+
+- id: KED-SND-02
+  title: Stress
+  rule: >
+    Stress falls on the second-to-last syllable: KE-ras, ke-RI-a, rei-no-VAI-re, al-ki-MI-a. Norsund kept this stress only in
+    learned loans (alkimia, medikina, kupola).
+
+- id: KED-SND-03
+  title: Word endings
+  rule: >
+    Most words end in a vowel. Final consonants are limited to s, n and r (Keras, Luxis, fens, Rechtar, Doir). A Proto-Valian
+    final u became o (*telu > telo). A few words end in u where Proto-Valian had a final *-ugh, whose gh was lost after it
+    became h (merkadu "market").
+
+- id: KED-ORTH-01
+  title: Spelling
+  rule: >
+    k is always written k (Keras, Keria). x stands for ks (luxi, Luxis). The old spelling cht, found only in names such as
+    Rechtar, stands for [xt]. There are no accents.
+
+- id: KED-NOUN-01
+  title: Nouns
+  rule: >
+    Kedre nouns have no gender and no case. The plural changes the final vowel (posto > posti, legia > legie, kedre > kedri,
+    luxi > luxie) or adds -es after a consonant (fens > fenses). There are no articles.
+  examples:
+  - {form: post-i, gloss: heir-PL, translation: heirs}
+
+- id: KED-NOUN-02
+  title: Head-first compounds and genitives
+  rule: >
+    The head comes first and the modifier or owner follows, the opposite of Norsund: reino Vaire "realm of Vaire" (written
+    as one name, Reinovaire), sangia Vaire "the bloodline of Vaire", Domo Luxis "the House of Luxis" (the Church of Light).
+  examples:
+  - {form: sangia Vaire, gloss: bloodline Vaire, translation: the bloodline of Vaire}
+
+- id: KED-NOUN-03
+  title: The dignity suffix -s
+  rule: >
+    -s marks a deity, an imperial title or a holy city: luxi "light" > Luxis "Light (the goddess)", kera "crown" > Keras
+    "the Crowned (city)". Norsund speakers translate the goddess as Lysmar instead of borrowing the name.
+
+- id: KED-ADJ-01
+  title: Adjectives
+  rule: Adjectives follow the noun and do not change (legia telo "a brave legion").
+
+- id: KED-PRON-01
+  title: Pronouns
+  rule: me, te, se, nos, vos, sei; possessives mue, tue, sue, nostre, vostre follow the noun (luxi tue "your light").
+
+- id: KED-VERB-01
+  title: Verbs
+  rule: >
+    Two classes, -are and -ire, with person endings in the present (luxo, luxi, luxa, luxamo, luxate, luxan). The past adds -av- or -iv-
+    before the endings (luxava "blessed"). The participle ends in -ato or -ito and often serves as a noun: jubato "decree"
+    (lit. "the commanded"). The future is vole + infinitive.
+  examples:
+  - {form: Lux-is lux-av-a sangia Vaire., gloss: light-DIGN bless-PST-3SG bloodline Vaire, translation: Luxis blessed the bloodline of Vaire.}
+
+- id: KED-SYN-01
+  title: Word order
+  rule: >
+    Everyday speech is subject-verb-object. Imperial decrees put the verb first (Juba Rechtar ... "Rechtar commands ...").
+    Negation is no before the verb.
+  examples:
+  - {form: Jub-a Rechtar Vaire., gloss: command-PRS.3SG Rechtar Vaire, translation: Rechtar Vaire commands.}
+
+- id: KED-SYN-02
+  title: One word for every subordinate clause
+  rule: >
+    ke introduces every subordinate clause: "that", "who", "which". Norsund borrowed it during the occupation and uses it for
+    relative clauses and "that" clauses.
+  examples:
+  - {form: Kai ke sta kontra keraro, gloss: who REL stand.PRS.3SG against emperor, translation: whoever stands against the emperor}
+
+- id: KED-REL-01
+  title: How Kedre words entered Norsund
+  rule: >
+    Occupation-era loans (37-51 a.v.e. and Doir Vaire's rule) lost their final vowel, simplified double consonants and moved
+    stress to the first syllable: murra > mur, merkadu > merk, kampo > kamp, porta > port, turra > tur. In rivia > rie the
+    v between vowels was also lost and the ending was heard as Norsund unstressed -e.
+    Learned loans, taken later from books, kept their shape and stress: alkimia, medikina, kupola. The same word borrowed
+    twice gives a doublet (tur and turra in Norsund). See records/languages/norsund/grammar/12-registers-dialects.yaml.

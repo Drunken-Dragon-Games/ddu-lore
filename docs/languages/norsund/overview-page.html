@@ -1,0 +1,951 @@
+<!-- Source of the published "Norsund" overview page (claude.ai artifact 567B2qUyWBWA8wHfJRoWDw). Artifact format: no doctype/html/head wrapper. -->
+<title>Norsund</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+/* Layout: a long-form language spec — tall condensed display type ("height over width", like Auristar's towers),
+   star-script glyphs as the one bold element, everything else quiet stone and night-sky ink. */
+:root{
+  --bg:#eef0f4; --surface:#ffffff; --sunk:#e4e7ef; --ink:#121733; --muted:#545d7c; --line:#d3d8e5;
+  --cyan:#0a7584; --violet:#8a33a8; --mint:#1b7556; --glyph:#121733; --node:#aeb5cc; --star:#0a7584;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --lang:"Gentium Book Plus","Charis SIL","Doulos SIL",Georgia,serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b1024; --surface:#121935; --sunk:#0f1530; --ink:#e7e5e0; --muted:#98a1c3; --line:#262f52;
+    --cyan:#63d5e3; --violet:#cf86e8; --mint:#7fdfbc; --glyph:#e7e5e0; --node:#3b4672; --star:#8ef0ff; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b1024; --surface:#121935; --sunk:#0f1530; --ink:#e7e5e0; --muted:#98a1c3; --line:#262f52;
+  --cyan:#63d5e3; --violet:#cf86e8; --mint:#7fdfbc; --glyph:#e7e5e0; --node:#3b4672; --star:#8ef0ff; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
+a{color:var(--cyan)}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+
+/* Hero */
+header.hero{padding-block:48px 28px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,auto);gap:32px;align-items:end;margin-top:12px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(4.2rem,14vw,9.5rem);line-height:.86;letter-spacing:.01em;margin:0;text-transform:uppercase}
+.hero p.lede{max-width:62ch;font-size:1.12rem;color:var(--ink);margin:18px 0 0}
+.hero-glyph{min-width:0;overflow-x:auto}
+.hero-glyph svg{display:block}
+.notice{margin-top:24px;border:1px solid var(--violet);border-radius:6px;padding:12px 16px;max-width:78ch;font-size:.95rem;background:var(--surface)}
+.notice strong{color:var(--violet)}
+
+/* Body layout */
+.layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;padding-block:32px 80px}
+nav.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 20px);align-self:start;font-size:.88rem}
+nav.toc ol{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+nav.toc a{color:var(--muted);text-decoration:none;display:block;padding:3px 0}
+nav.toc a:hover{color:var(--ink)}
+nav.toc .grp{margin-top:14px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+main{min-width:0}
+section{padding-block:28px;border-top:1px solid var(--line)}
+section:first-child{border-top:0;padding-top:0}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(2rem,4.6vw,2.9rem);line-height:1;letter-spacing:.01em;text-transform:uppercase;margin:0 0 6px;text-wrap:balance}
+h3{font-family:var(--body);font-weight:600;font-size:1.12rem;margin:28px 0 8px;text-wrap:balance}
+.kicker{color:var(--muted);margin:0 0 18px;max-width:70ch}
+p,li{max-width:72ch}
+.lang{font-family:var(--lang);font-size:1.06em}
+.ipa{font-family:var(--lang);color:var(--muted)}
+.sc{font-variant:small-caps;letter-spacing:.03em}
+code,.mono{font-family:var(--mono);font-size:.86em}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px;margin:6px 0 4px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.stat b{font-family:var(--display);font-weight:800;font-size:2.2rem;line-height:1;font-variant-numeric:tabular-nums;color:var(--cyan)}
+.stat span{font-size:.88rem;color:var(--muted)}
+
+/* Principles */
+.principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;margin-top:8px}
+.pr{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+.pr h4{margin:0;font-size:1rem;font-weight:600}
+.pr p{margin:0;font-size:.93rem;color:var(--ink)}
+.pr .apply{color:var(--muted);font-size:.88rem}
+.pr .src{font-size:.78rem;color:var(--muted);margin-top:auto}
+
+/* Tables */
+.tbl{overflow-x:auto;margin:10px 0 6px;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+th{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--sunk);white-space:nowrap}
+td.w{font-family:var(--lang);font-size:1.05rem;white-space:nowrap}
+td.num{font-variant-numeric:tabular-nums}
+.chip{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.chip.drafted{color:var(--mint)}
+.chip.partial{color:var(--cyan)}
+.chip.open{color:var(--violet)}
+.chip.later{color:var(--muted)}
+.chip.canon{color:var(--mint)}
+.chip.prop{color:var(--cyan)}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;font-size:.85rem;color:var(--muted);margin:6px 0 4px}
+.legend span{display:flex;gap:8px;align-items:center}
+.inv-grp{margin-top:22px}
+.inv-grp h3{margin-top:0;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.inv-grp h3 small{font-weight:400;color:var(--muted);font-size:.86rem}
+
+/* Decisions */
+.decisions{display:grid;gap:10px;margin-top:6px;padding:0;list-style:none}
+.decisions li{max-width:none;display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 16px}
+.decisions .id{font-family:var(--display);font-weight:800;font-size:1.5rem;line-height:1;color:var(--violet);min-width:2.2ch}
+.decisions p{margin:0}
+.decisions .why{color:var(--muted);font-size:.9rem;margin-top:3px}
+
+/* Interlinear gloss */
+.ex{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 18px;margin:12px 0}
+.ex .label{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.gl{display:flex;flex-wrap:wrap;gap:4px 14px;margin:8px 0 6px}
+.gl > span{display:flex;flex-direction:column}
+.gl .f{font-family:var(--lang);font-size:1.18rem}
+.gl .g{font-family:var(--lang);font-size:.82rem;color:var(--muted)}
+.ex .tr{margin:2px 0 0;font-style:italic;font-family:var(--lang)}
+.ex .note{margin:6px 0 0;font-size:.88rem;color:var(--muted)}
+
+/* Family tree */
+.tree{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:10px;margin-top:10px}
+.node{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+.node .when{font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.node h4{margin:2px 0 4px;font-family:var(--display);font-weight:800;font-size:1.35rem;text-transform:uppercase;letter-spacing:.01em}
+.node p{margin:0;font-size:.9rem}
+.node.k{border-style:dashed}
+
+/* Lysrit */
+.lys-demo{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px 18px;margin-top:12px}
+.lys-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.lys-row label{font-size:.85rem;color:var(--muted)}
+.lys-row input[type=text]{font-family:var(--lang);font-size:1.2rem;padding:6px 10px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink);min-width:0;width:min(100%,280px)}
+.lys-out{overflow-x:auto;margin-top:12px;padding-bottom:4px}
+.lys-out svg{display:block}
+.lys-msg{font-size:.85rem;color:var(--muted);margin:6px 0 0;min-height:1.3em}
+.chart{display:grid;gap:14px;margin-top:12px}
+.chart-row{display:flex;flex-wrap:wrap;gap:6px;align-items:flex-end}
+.chart-row .rl{width:100%;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.cell{display:flex;flex-direction:column;align-items:center;gap:2px;background:var(--bg);border-radius:4px;padding:4px 4px 3px}
+.cell span{font-family:var(--lang);font-size:.9rem}
+svg .nd{fill:var(--node)}
+svg .ln{stroke:var(--glyph);stroke-width:2.1;stroke-linecap:round;fill:none}
+svg .vd{fill:var(--star)}
+svg .st{fill:var(--star)}
+svg .lg{stroke:var(--star);stroke-width:1.2;fill:none}
+svg .gm{stroke:var(--glyph);stroke-width:1.6;stroke-linecap:round}
+svg .sac{fill:var(--violet)}
+svg .fx{stroke:var(--violet);stroke-width:1.6;fill:none}
+
+pre.yaml{background:var(--sunk);border:1px solid var(--line);border-radius:6px;padding:14px 16px;overflow-x:auto;font-family:var(--mono);font-size:.82rem;line-height:1.5;margin:10px 0}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:14px}
+.two > div{min-width:0}
+ul.tight{padding-left:20px;margin:6px 0}
+ul.tight li{margin:3px 0}
+.sources{columns:2 320px;column-gap:32px;font-size:.88rem;padding-left:18px}
+.sources li{break-inside:avoid;margin-bottom:6px}
+footer{border-top:1px solid var(--line);padding-block:24px 40px;color:var(--muted);font-size:.85rem}
+
+@media (max-width:860px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:8px}
+  nav.toc{position:static;border:1px solid var(--line);border-radius:6px;padding:10px 14px;background:var(--surface)}
+  nav.toc ol{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+  .hero-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:no-preference){
+  .hero-glyph .st{animation:twinkle 4.8s ease-in-out infinite}
+  .hero-glyph .st:nth-of-type(2n){animation-delay:1.6s}
+  @keyframes twinkle{0%,100%{opacity:1}50%{opacity:.45}}
+}
+</style>
+
+<div class="wrap">
+<header class="hero">
+  <div class="eyebrow">Drunken Dragon Universe · Norsund 1.0 · approved 19 Nov 2026 · branch norsund-language</div>
+  <div class="hero-grid">
+    <div>
+      <h1>Norsund</h1>
+      <p class="lede">The common tongue of Thiolden, built in full: all three phases are done. It has Norse bones and a Kedre layer like English after 1066. The Auristar accent adds a Venetian softness, and the whole language is obsessed with stars. Every name already in canon decodes into it, and everything here lives in the lore repo with tools to translate, write, check and teach it.</p>
+    </div>
+    <div class="hero-glyph" id="hero-glyph" aria-label="The word Norsund written in the proposed Lysrit star script"></div>
+  </div>
+  <div class="notice"><strong>About the concept image:</strong> it never reached the build, and the lore lead decided that Norsund 1.0 stands without it (D1). The language is built from the words already in <code>records/</code>.</div>
+</header>
+
+<div class="layout">
+<nav class="toc" aria-label="Contents">
+  <ol>
+    <li class="grp">Norsund 1.0</li>
+    <li><a href="#shipped">What shipped</a></li>
+    <li class="grp">Before designing</li>
+    <li><a href="#research">What the research says</a></li>
+    <li><a href="#inventory">What we had to invent</a></li>
+    <li><a href="#decisions">Decisions</a></li>
+    <li class="grp">The language</li>
+    <li><a href="#identity">Identity &amp; history</a></li>
+    <li><a href="#decode">Decoding canon names</a></li>
+    <li><a href="#sounds">Sounds &amp; spelling</a></li>
+    <li><a href="#grammar">Grammar sketch</a></li>
+    <li><a href="#words">Words &amp; name-building</a></li>
+    <li><a href="#texts">Sample texts</a></li>
+    <li><a href="#dialects">Dialects &amp; Kedre</a></li>
+    <li><a href="#writing">Runes &amp; Lysrit</a></li>
+    <li><a href="#canon">Repo formats &amp; governance</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#sources">Sources</a></li>
+  </ol>
+</nav>
+
+<main>
+
+<section id="shipped">
+  <h2>What shipped</h2>
+  <p class="kicker">Norsund 1.0 is on the <code>norsund-language</code> branch of the lore repo. It passes its own validator with 0 errors, and the engine's 25 tests pass.</p>
+  <div class="stats">
+    <div class="stat"><b>2,059</b><span>Norsund words (1,170 roots plus derived words), each with class, gloss, layer and epoch</span></div>
+    <div class="stat"><b>126</b><span>grammar rules in 14 files, with glossed examples</span></div>
+    <div class="stat"><b>31</b><span>cognate sets: Proto-Valian to Old Norsund, Norsund and Kedre, checked by the sound-change engine</span></div>
+    <div class="stat"><b>30</b><span>Norsund texts (223 glossed lines) and a 136-phrase phrasebook</span></div>
+    <div class="stat"><b>2</b><span>scripts (24 runes and Lysrit), 3 fonts and 4 production art sheets</span></div>
+    <div class="stat"><b>404</b><span>reference recordings: every canon name, the phrasebook and the sample texts</span></div>
+    <div class="stat"><b>28</b><span>engine tests in CI, including hate-symbol screening of the rune row</span></div>
+    <div class="stat"><b>2</b><span>sister languages: Old Norsund and Kedre, each with a grammar, dictionary and texts</span></div>
+  </div>
+  <h3>Where everything lives</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>What</th><th>Where</th></tr></thead>
+    <tbody>
+      <tr><td>Grammar (authoritative)</td><td><code>records/languages/norsund/grammar/01-phonology.yaml … 14-poetics.yaml</code></td></tr>
+      <tr><td>Dictionary</td><td><code>records/languages/norsund/dictionary/</code> (16 files by meaning field), readable as <code>docs/languages/norsund/dictionary.md</code> and <code>english-index.md</code></td></tr>
+      <tr><td>Texts and phrasebook</td><td><code>records/languages/norsund/texts/</code></td></tr>
+      <tr><td>Old Norsund, Kedre, languages of Valia</td><td><code>records/languages/old-norsund/</code>, <code>kedre/</code>, <code>languages.yaml</code></td></tr>
+      <tr><td>Runes and Lysrit</td><td><code>records/languages/scripts/</code>, fonts in <code>assets/fonts/</code></td></tr>
+      <tr><td>Guides</td><td><code>docs/languages/norsund/</code>: reference grammar, pronunciation guide, naming guide, phrasebook, writers' and actors' kit, a 10-lesson course, dialects, writing systems, contributing words, changelog</td></tr>
+      <tr><td>Tools</td><td><code>tools/</code>: engine, command line, validator, tests, CI (<code>.github/workflows/norsund.yml</code>)</td></tr>
+      <tr><td>Workbench</td><td><a href="https://claude.ai/artifact/CA2a7yRiUdNU4zfVPDGknV">Norsund Workbench</a> (dictionary, translator, script writer, name forge, sound lab), or locally from <code>tools/web/</code></td></tr>
+      <tr><td>Reference audio</td><td><code>assets/audio/norsund/</code>: names at three speeds, phrases and texts at two, listed in <code>manifest.json</code></td></tr>
+      <tr><td>Art direction</td><td><code>docs/languages/norsund/writing-systems.md</code> (Production art direction) and <code>img/art-*.svg</code></td></tr>
+      <tr><td>Licences</td><td><code>docs/languages/LICENSES.md</code>: language CC BY 4.0, fonts OFL, tools MIT</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Try it from the repo</h3>
+<pre class="yaml">cd tools &amp;&amp; npm install
+node cli.mjs translate "The brave hunters guarded the wall at night."
+#  Thiol thiarkirene kjoldade murin i nimin.
+node cli.mjs packet "Kjal, thiolen! Ma staren kjolda dun."   # actor packet: IPA, respelling, gloss
+node cli.mjs name place --count 5                             # Ulfkjold "wolf guard-post", people: Ulfnay
+node cli.mjs render lysrit "Auristar" --out auristar.svg
+node cli.mjs validate                                          # run before every language pull request</pre>
+</section>
+
+<!-- ============ RESEARCH ============ -->
+<section id="research">
+  <h2>What the research says</h2>
+  <p class="kicker">I covered five research tracks: construction method, historical sound change and language flavor, vocabulary and naming, writing systems, and how film/TV/game languages were built and governed. These nine rules came out of them, and each one shapes a choice below. The full report is in <code>docs/languages/research/conlang-craft-report.md</code>.</p>
+  <div class="principles">
+    <div class="pr"><h4>1 · Build from the names you already have</h4><p>Every famous screen language grew out of a few words already on the page. High Valyrian came from two sentences and a handful of nouns, Dothraki from about 50 book words, and Klingon from a few lines in the first film.</p><p class="apply">→ For us: decode the canon words; don't rename them.</p><p class="src">Peterson, dothraki.com; Okrand interviews</p></div>
+    <div class="pr"><h4>2 · Start with a naming language</h4><p>A "naming language" is a sound system plus rules for compounding. With about 150 meaningful elements you can generate millions of consistent names. That's the layer a community of writers needs first.</p><p class="apply">→ For us: Phase 1 is the name-building kit.</p><p class="src">Henning 1995, Fiat Lingua</p></div>
+    <div class="pr"><h4>3 · Get the Norse feel from how the grammar works</h4><p>Peterson warns against taking a real language and changing bits of it ("Englerika"). The feel should come from processes: vowel changes (umlaut), the verb in second position (V2), a definite article on the end of the noun, verbs that change vowel for the past, and kennings.</p><p class="apply">→ For us: new roots are invented; Germanic look only where canon already has it.</p><p class="src">Peterson, Fiat Lingua FL-00005A</p></div>
+    <div class="pr"><h4>4 · Give the language a history</h4><p>Build an ancestor language, apply ordered regular sound changes, and let irregular forms come out of that history. Big cities change their speech fastest: Peterson made Meereen the most divergent dialect.</p><p class="apply">→ For us: Proto → Old Norsund → Norsund, with Auristar as the innovator.</p><p class="src">Rosenfelder, LCK; Eldamo; Peterson</p></div>
+    <div class="pr"><h4>5 · Let the culture carve the meanings</h4><p>Whatever a culture cares about gets short, efficient words. Splitting and merging meanings differently from English is the cure for "English with new words".</p><p class="apply">→ For us: stars count as living beings in the grammar; a tavern cook is called "fire".</p><p class="src">Frommer; Rosenfelder; Nautilus</p></div>
+    <div class="pr"><h4>6 · Keep the spelling boring</h4><p>Spelling should be "as uncreative as humanly possible", and apostrophes are "an abomination" unless they stand for a real sound such as a glottal stop.</p><p class="apply">→ For us: keyboard letters only, no accents, no apostrophes in Norsund.</p><p class="src">Peterson, FL-00005A</p></div>
+    <div class="pr"><h4>7 · Shape the script to its medium</h4><p>The writing tool shapes the letters: runes were cut in wood and Skyrim's dragon script was "carved with a talon". Tolkien's Cirth survived only for carving once Tengwar took over. Avoid one-for-one Latin letter swaps.</p><p class="apply">→ For us: runes for wood and old magic, a star script for Auristar's stone and crystal.</p><p class="src">Bethesda; Cirth/Tengwar; neography.info</p></div>
+    <div class="pr"><h4>8 · Govern it like a living language</h4><p>The models that work have a small fixed core plus controlled growth (Esperanto), tiers (Toki Pona's Linku survey), and batch releases (the Klingon Language Institute, Frommer's Na'vi blog). Whether a language can be copyrighted is unsettled: the Axanar court declined to rule.</p><p class="apply">→ For us: versioned core, PR-based growth, an open licence.</p><p class="src">Linku; KLI; conlang.org/axanar</p></div>
+    <div class="pr"><h4>9 · Ship a kit with the language</h4><p>Actors get the English line, the conlang line, a phonetic respelling, and audio at three speeds. Peterson's 4-page High Valyrian pronunciation guide pairs each letter with an English word and a "never like…" warning.</p><p class="apply">→ For us: a pronunciation sheet and naming guide alongside v1.0.</p><p class="src">dedalvs.com HV guide</p></div>
+  </div>
+</section>
+
+<!-- ============ INVENTORY ============ -->
+<section id="inventory">
+  <h2>What we had to invent</h2>
+  <p class="kicker">The full checklist for a franchise-grade language, grouped by layer. Every item is done in 1.0; the description says where it lives.</p>
+  <div class="legend"><span><span class="chip drafted">Done</span> built in Norsund 1.0; paths are relative to the repo root (grammar/ and dictionary/ are under records/languages/norsund/)</span></div>
+
+  <div class="inv-grp"><h3>A · Foundations <small>what the language is, and why</small></h3>
+  <div class="tbl"><table><thead><tr><th>Item</th><th>What it covers</th><th>Status</th></tr></thead><tbody>
+    <tr><td>Purpose &amp; scope</td><td>Naming kit first, then a speakable language for stories and games. How much Norsund appears on screen.<br><code>records/languages/norsund/norsund.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Design stance</td><td>Germanic look only for words already in canon; invented roots for everything else; Norse feel from grammar processes.<br><code>docs/languages/norsund/reference-grammar.md</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Family tree &amp; history</td><td>Proto-Norsund (Farheim) → Old Norsund (runic, 450 b.v.e) → Norsund; Kedre contact from the conquest (37–51 a.v.e).<br><code>grammar/13-history.yaml, records/languages/languages.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Speaker map</td><td>Who speaks Norsund natively and who as a second language: dwarves of Karhak'Modan, elves, Vulkin, Dragonkin, Merfolk.<br><code>records/languages/languages.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+  </tbody></table></div></div>
+
+  <div class="inv-grp"><h3>B · Sounds &amp; spelling</h3>
+  <div class="tbl"><table><thead><tr><th>Item</th><th>What it covers</th><th>Status</th></tr></thead><tbody>
+    <tr><td>Sound inventory</td><td>Consonants and vowels, including long vowels and diphthongs.<br><code>grammar/01-phonology.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Syllable rules</td><td>Which consonant clusters are allowed at the start and end of syllables.<br><code>grammar/01-phonology.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Stress &amp; rhythm</td><td>First-syllable stress; how compounds and Kedre loans behave.<br><code>grammar/01-phonology.yaml (PHON-02)</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Sound variants</td><td>Rules like "th" sounding as in "this" between vowels, and Auristar softening.<br><code>grammar/01-phonology.yaml (PHON-04 to 10)</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Romanization standard</td><td>How Norsund is spelled in English-language lore: ASCII only.<br><code>grammar/02-orthography.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Pronunciation guide</td><td>One page in the High Valyrian format, plus easier "English-friendly" readings for voice actors.<br><code>docs/languages/norsund/pronunciation-guide.md, audio in assets/audio/norsund/</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Sound-change history</td><td>Ordered rules Proto → Old → Modern. v0.1 has 5; a full history needs 12–20.<br><code>grammar/13-history.yaml: 34 ordered rules, 31 tested cognate sets</code></td><td><span class="chip drafted">Done</span></td></tr>
+  </tbody></table></div></div>
+
+  <div class="inv-grp"><h3>C · Grammar</h3>
+  <div class="tbl"><table><thead><tr><th>Item</th><th>What it covers</th><th>Status</th></tr></thead><tbody>
+    <tr><td>Nouns</td><td>Living vs non-living nouns, plurals, the article on the end of the noun, possessive -i.<br><code>grammar/03-nouns.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Pronouns</td><td>Persons and numbers; no gender (it suits a world of many races).<br><code>grammar/05-pronouns-determiners.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Verbs</td><td>Tenses, regular past tense -ade, irregular verbs that change vowel, future, "may", commands.<br><code>grammar/06-verbs.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Evidentials</td><td>Grammar that marks how you know something: I saw it / so it's sung / so the stars say.<br><code>grammar/07-evidentials.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Word order</td><td>Verb in second position in main clauses; subordinate clauses; questions.<br><code>grammar/08-syntax.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Question words, relative clauses, comparison</td><td>who/what/where/why; "the star that…"; brave/braver/bravest.<br><code>grammar/04, 05 and 08</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Registers</td><td>Honorifics for the Seven Lights, oath and law speech, bardic poetry, Thieves Guild slang.<br><code>grammar/12-registers-dialects.yaml, docs/languages/norsund/dialects.md</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Irregular forms</td><td>A curated list of exceptions that fall out of the sound history.<br><code>umlaut plurals (grammar/03), strong verbs (06), irregular comparison (04)</code></td><td><span class="chip drafted">Done</span></td></tr>
+  </tbody></table></div></div>
+
+  <div class="inv-grp"><h3>D · Words &amp; names</h3>
+  <div class="tbl"><table><thead><tr><th>Item</th><th>What it covers</th><th>Status</th></tr></thead><tbody>
+    <tr><td>Name-building kit</td><td>Name parts plus rules so any contributor can coin consistent place and people names.<br><code>grammar/11-naming.yaml, docs/languages/norsund/naming-guide.md</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Place-name &amp; demonym rules</td><td>Thiolden → Thiolnay, Auristar → Aurinay, made into a general rule.<br><code>grammar/11-naming.yaml, grammar/09 (WF-03)</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Personal naming</td><td>Given names, parent-names (Norse "-son" equivalents), house names, epithets like "the Whispering Axe", titles.<br><code>grammar/11-naming.yaml (NAME-03 to 06)</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Core vocabulary</td><td>Grow to 300, then 1,000 (Na'vi at launch), then 1,700+ (Dothraki at pitch) words, sorted by topic.<br><code>dictionary/ (2,059 words), docs/languages/norsund/dictionary.md</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Numbers</td><td>1–10, ordinals for the Seven Lights, the sacred 7; maybe the Old Norse "long hundred" of 120.<br><code>grammar/10-numbers.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Time &amp; calendar</td><td>Days, months, festivals (the 7-yearly Council games), a Norsund name for the imperial dating system.<br><code>dictionary/12-time-measure.yaml: a 7-day week, 13 months of 28 days</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Colours &amp; materials</td><td>Aurora and crystal colours, white stone, Starifjolden crystal, fungus, ice.<br><code>dictionary/13-qualities.yaml, 07-nature-land.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Family &amp; social roles</td><td>Family terms, guild ranks, Vilkyr ranks, the seven Wandering Houses.<br><code>dictionary/03-people-society.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Religion &amp; cosmos</td><td>Ur/Nett vs Myr/Heid, the void, transcending into constellations.<br><code>dictionary/08-sky-faith-magic.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Kennings, toasts, oaths, curses</td><td>The material bards, taverns and adventurers actually say out loud.<br><code>grammar/14-poetics.yaml, texts/04-phrasebook.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Translation convention</td><td>When lore writes "Vimtyr" and when "the Whispering Axe"; English for Norsund titles.<br><code>grammar/11-naming.yaml (NAME-08), docs/languages/norsund/writers-and-actors-kit.md</code></td><td><span class="chip drafted">Done</span></td></tr>
+  </tbody></table></div></div>
+
+  <div class="inv-grp"><h3>E · Neighbours &amp; layers</h3>
+  <div class="tbl"><table><thead><tr><th>Item</th><th>What it covers</th><th>Status</th></tr></thead><tbody>
+    <tr><td>Old Norsund</td><td>Rune-slate language and archaic oath/law speech; full vowels in endings.<br><code>records/languages/old-norsund/</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Starisund vs common Norsund</td><td>Auristar's prestige dialect vs the speech of the Vilnayan towns.<br><code>grammar/12-registers-dialects.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Kedre sketch</td><td>The imperial language: enough sounds and words to source loanwords and imperial names (Luxis, Reinovaire, Keras).<br><code>records/languages/kedre/</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Other races' tongues</td><td>Scope and name rules for Karhak'Modan dwarvish, Ik'nal'tar, Ath'alan elvish, Merfolk, Vulkin (Thor'Vale), Dragonkin.<br><code>records/languages/languages.yaml (scope and what each apostrophe marks)</code></td><td><span class="chip drafted">Done</span></td></tr>
+  </tbody></table></div></div>
+
+  <div class="inv-grp"><h3>F · Writing</h3>
+  <div class="tbl"><table><thead><tr><th>Item</th><th>What it covers</th><th>Status</th></tr></thead><tbody>
+    <tr><td>Runes</td><td>About 16–20 staves, rune names, wood and stone variants, what makes runes magical (and glow).<br><code>records/languages/scripts/runar.yaml: 24 staves, long-branch and short-twig</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Lysrit star script</td><td>Auristar's script: built on a 7-point grid, vowels drawn as stars. Concept and renderer below.<br><code>records/languages/scripts/lysrit.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Hate-symbol screening</td><td>Check every rune, bind-rune and logo against the ADL database. Some real rune shapes are extremist symbols.<br><code>runar.yaml: screened 2026-11-19; the rules run as CI tests (tools/test/scripts.test.mjs)</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Numerals &amp; punctuation</td><td>Digits, word dividers, the sacred-name mark.<br><code>lysrit.yaml, runar.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Fonts</td><td>Fonts that map onto Latin letters with ligatures, easiest for game engines (Unity TextMesh Pro has limited support).<br><code>assets/fonts/: Lysrit, Runar, Runar Twig (OFL); art sheets in docs/languages/norsund/img/</code></td><td><span class="chip drafted">Done</span></td></tr>
+  </tbody></table></div></div>
+
+  <div class="inv-grp"><h3>G · Canon, tooling &amp; production</h3>
+  <div class="tbl"><table><thead><tr><th>Item</th><th>What it covers</th><th>Status</th></tr></thead><tbody>
+    <tr><td><code>lang-grammar/v1</code> &amp; <code>lang-dictionary/v1</code></td><td>The README names these formats but defines no schema. A draft schema is below.<br><code>README.md (four record types)</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Coinage process</td><td>How a contributor proposes a word, the checks it passes, who ratifies it, word tiers.<br><code>docs/languages/norsund/contributing-words.md</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Licence</td><td>CC0 or CC BY for the grammar and dictionary, plus a contributor agreement.<br><code>docs/languages/LICENSES.md</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Tooling</td><td>A spelling and sound checker in CI, a word generator, a sound-change tool (Lexurgy).<br><code>tools/: engine, CLI, validator, tests, CI</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Test texts</td><td>Babel text, "The North Wind and the Sun", and 3 Thiolden texts (Vilkyr oath, tavern song, Kjoldmur law).<br><code>texts/02-test-texts.yaml, texts/03-thiolden-texts.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Writer &amp; actor kit</td><td>Phrasebook, naming guide, audio at 3 speeds, how to request a translation.<br><code>docs/languages/norsund/writers-and-actors-kit.md, the packet command and the reference audio</code></td><td><span class="chip drafted">Done</span></td></tr>
+  </tbody></table></div></div>
+</section>
+
+<!-- ============ DECISIONS ============ -->
+<section id="decisions">
+  <h2>Decisions</h2>
+  <p class="kicker">These were lore calls, not linguistics. All ten are settled for 1.0 and recorded in <code>records/languages/norsund/norsund.yaml</code>.</p>
+  <ul class="decisions">
+    <li><span class="id">D1</span><div><p><strong>Re-share the concept image so it can be reconciled.</strong> </p><p class="why">Decided by the lore lead: 1.0 stands as built, without the image.</p></div></li>
+    <li><span class="id">D2</span><div><p><strong>How "Auristar" is said.</strong> </p><p class="why">OW-ree-star; au is always as in "cow".</p></div></li>
+    <li><span class="id">D3</span><div><p><strong>Myr &amp; Heid and Ur &amp; Nett.</strong> </p><p class="why">The same pair: Myr and Heid are the Wandering Houses' old names, Ur and Nett the temple names.</p></div></li>
+    <li><span class="id">D4</span><div><p><strong>Are stars grammatically alive in Auristar?</strong> </p><p class="why">Yes: Starisund says staren and uses sel for a star; country speech says starar.</p></div></li>
+    <li><span class="id">D5</span><div><p><strong>Runes in Auristar.</strong> </p><p class="why">Allowed as plain, non-glowing writing; only rune magic is banned. Lysrit is the sacred and civic script beside them.</p></div></li>
+    <li><span class="id">D6</span><div><p><strong>Is aur native or Kedre?</strong> </p><p class="why">Native, so Auristar is a fully native name.</p></div></li>
+    <li><span class="id">D7</span><div><p><strong>Spelling drift in canon.</strong> </p><p class="why">Standard spellings applied across the lore records: Midelmar, Haakon, Volggan, Vairean, Rechtar (ORTH-06). varian-empire.yaml and vloggan.yaml were renamed to match.</p></div></li>
+    <li><span class="id">D8</span><div><p><strong>Names that collide with other works.</strong> </p><p class="why">Renamed in the lore records: Valinor to Valnor ("north Valia"), Worgenkin to Ulfkin, Exeter to Exaire, Arbury to Arbaire (NAME-09).</p></div></li>
+    <li><span class="id">D9</span><div><p><strong>Licence and steward.</strong> </p><p class="why">Language CC BY 4.0, fonts OFL, tools MIT. A Language Steward appointed by the lore lead reviews words before the vote.</p></div></li>
+    <li><span class="id">D10</span><div><p><strong>Do Kedre and Norsund share an ancestor?</strong> </p><p class="why">Yes: Proto-Valian. Lysmar and Luxis are true cognates, and Grimm-style shifts separate the two branches.</p></div></li>
+  </ul>
+</section>
+
+<!-- ============ IDENTITY ============ -->
+<section id="identity">
+  <h2>Identity &amp; history</h2>
+  <p class="kicker">Norsund means "north-tongue" (<span class="lang">nor</span> "north" + <span class="lang">sund</span> "voice, song, tongue"). Its history mirrors English after 1066: a Germanic language survives a Romance-speaking conqueror and keeps a lasting layer of the conqueror's vocabulary.</p>
+  <div class="tree">
+    <div class="node k"><div class="when">deep past · Farheim</div><h4>Proto-Norsund</h4><p>Reconstructed only. Starred forms such as <span class="lang">*kuri</span>. Its sound changes produced the y-vowels and short roots.</p></div>
+    <div class="node"><div class="when">450 b.v.e → c. 100 a.v.e</div><h4>Old Norsund</h4><p>The settlers' tongue, written on rune slates. Canon: <span class="lang">Vilkyr</span> means "free sword" in Old Norsund. Later kept for oaths, law and rune-craft.</p></div>
+    <div class="node"><div class="when">c. 100 a.v.e → now</div><h4>Norsund</h4><p>Common speech of the Vilnayan towns and the language most Thiolden races share.</p></div>
+    <div class="node"><div class="when">90 a.v.e → now · Auristar</div><h4>Starisund</h4><p>"Star-tongue": Auristar's prestige dialect. As the biggest city it innovates fastest: living stars, Kedre trade words, softened sounds.</p></div>
+    <div class="node k"><div class="when">imperial · Keras</div><h4>Kedre</h4><p>The Vairean Empire's Latin-looking language (<span class="lang">Luxis</span> = Norsund <span class="lang">Lysmar</span>). It arrived with the conquest of 37–51 a.v.e and Doir Vaire's rule over the Vilnayan towns.</p></div>
+  </div>
+  <h3>The design in one paragraph</h3>
+  <p>Norsund's <strong>native layer</strong> covers everyday life, war, nature and family. It is Norse-feeling: short roots, clusters like <span class="lang">kj-</span>, <span class="lang">thj-</span> and <span class="lang">fj-</span>, the y-vowel, and stress on the first syllable. The <strong>Kedre layer</strong> covers trade, law, stone masonry and canals (<span class="lang">mur</span> "wall", <span class="lang">rie</span> "canal", <span class="lang">merk</span> "market"), the way Norman French gave English "beef", "court" and "castle". In Auristar, the <strong>Starisund accent</strong> shortens double consonants, softens final <span class="lang">-n</span> and turns <span class="lang">th</span> into s, much as Venetian softens Italian. Say "Thiolden" and you've told everyone where you grew up. That gives "Viking Venice" in sound as well as in stone.</p>
+</section>
+
+<!-- ============ DECODE ============ -->
+<section id="decode">
+  <h2>Decoding canon names</h2>
+  <p class="kicker">This is the test that matters most: the existing names have to make sense in the language, not be replaced by it. Six canon facts anchor the system. The rest are proposed etymologies that fit the same rules.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Canon word</th><th>Parts</th><th>Literal</th><th>What it is in lore</th><th></th></tr></thead>
+    <tbody>
+      <tr><td class="w">Thiolden</td><td>thiol + den</td><td>brave-land</td><td>the country; canon: "land of the brave"</td><td><span class="chip canon">Canon</span></td></tr>
+      <tr><td class="w">Thiolnay</td><td>thiol + nay</td><td>brave-folk</td><td>demonym of Thiolden</td><td><span class="chip canon">Canon</span></td></tr>
+      <tr><td class="w">Vilkyr · Vilkyren</td><td>vil + kyr · + en</td><td>free blade · free blades</td><td>monster hunters; canon: "free sword", Old Norsund</td><td><span class="chip canon">Canon</span></td></tr>
+      <tr><td class="w">Nimkjold</td><td>nim + kjold</td><td>night-ward</td><td>canon: the night guard of Vilnayan towns</td><td><span class="chip canon">Canon</span></td></tr>
+      <tr><td class="w">Lysmar</td><td>lys + mar</td><td>high light</td><td>canon: goddess of light (Kedre <span class="lang">Luxis</span>)</td><td><span class="chip canon">Canon</span></td></tr>
+      <tr><td class="w">Vilnay · Vilnayan · Vilnaya</td><td>vil + nay · + an · + a</td><td>free folk · free-folk lands · of the free folk</td><td>canon: demonym · the independent towns · adjective</td><td><span class="chip canon">Canon</span></td></tr>
+      <tr><td class="w">Norsund</td><td>nor + sund</td><td>north-tongue</td><td>the language itself</td><td><span class="chip prop">Proposed</span></td></tr>
+      <tr><td class="w">Sundwanderen</td><td>sund + wander + en</td><td>song-wanderers</td><td>bards, the news-carriers of Thiolden</td><td><span class="chip prop">Proposed</span></td></tr>
+      <tr><td class="w">Kjoldmur</td><td>kjold + mur</td><td>ward-wall</td><td>Auristar's ring walls; <span class="lang">mur</span> is a Kedre loan</td><td><span class="chip prop">Proposed</span></td></tr>
+      <tr><td class="w">Norstarkjold</td><td>nor + star + kjold</td><td>north-star ward</td><td>Tyr's guard. The "immovable star" of the prophecy is a pole star, so the Norstar is the Auristar itself</td><td><span class="chip prop">Proposed</span></td></tr>
+      <tr><td class="w">Auristar · Aurinay</td><td>aur + i + star · aur + i + nay</td><td>star of silver-light · silver-star folk</td><td>matches the prophecy's "immovable <em>silver</em> star"</td><td><span class="chip prop">Proposed</span></td></tr>
+      <tr><td class="w">Starifjolden</td><td>star + i + fjol + den</td><td>the stars' under-land</td><td>the cosmic caverns beneath Midelmar</td><td><span class="chip prop">Proposed</span></td></tr>
+      <tr><td class="w">Starirauggheim</td><td>star + i + raugg + heim</td><td>house of the star's keeping</td><td>the tower that houses the gem</td><td><span class="chip prop">Proposed</span></td></tr>
+      <tr><td class="w">Midelmar</td><td>midel + mar</td><td>the middle height</td><td>the lonely mountain at Thiolden's centre</td><td><span class="chip prop">Proposed</span></td></tr>
+      <tr><td class="w">Farheim · Marheim · Oudeheim</td><td>far/mar/oude + heim</td><td>far home · high home · old home</td><td>settlers' island · the walled city · its ruin</td><td><span class="chip prop">Proposed</span></td></tr>
+      <tr><td class="w">Nurmyr · Kullmyr · Runmyren</td><td>nur/kull/run + myr (+ en)</td><td>green-kin · ember-kin · rune-kin</td><td>peoples blessed by Naum, by Firen, and adventurers who joined native races</td><td><span class="chip prop">Proposed</span></td></tr>
+      <tr><td class="w">Firen</td><td>fyr + in</td><td>the Fire</td><td>the Kullmyr god; Kullmyr speech turns <span class="lang">y</span> into <span class="lang">i</span></td><td><span class="chip prop">Proposed</span></td></tr>
+      <tr><td class="w">Ilinvirden · Virnayen</td><td>ilin + vir + den · vir + nay + en</td><td>holy forest-land · forest-folk</td><td>the Nurmyr's sacred forest · a forest people</td><td><span class="chip prop">Proposed</span></td></tr>
+      <tr><td class="w">Tyr · Vimtyr</td><td>tyr · vim + tyr</td><td>spearhead · whisper-edge</td><td>"Spearhead of the Seven Lights" · "the Whispering Axe"</td><td><span class="chip prop">Proposed</span></td></tr>
+      <tr><td class="w">Kyr Thor'Vale</td><td>kyr + (Vulkin name)</td><td>Blade Thor'Vale</td><td><span class="lang">Kyr</span> as a sworn-blade rank; the apostrophe belongs to Vulkin naming, not Norsund</td><td><span class="chip prop">Proposed</span></td></tr>
+      <tr><td class="w">Ur · Nett · Myr · Heid</td><td>ur "out of, origin"; nett "night sky"</td><td>the Source · the Firmament</td><td>where life comes from and where the triumphant go (D3)</td><td><span class="chip canon">Decided</span></td></tr>
+    </tbody>
+  </table></div>
+  <p>Patterns already hidden in canon: <span class="lang">-en</span> is always a plural of persons (<span class="lang">Vilkyren, Sundwanderen, Runmyren, Virnayen</span>). The demonym always takes the <em>first</em> element plus <span class="lang">-nay</span>. Compounds always put the modifier first. So the community has been writing a head-final Germanic language without a grammar, and the grammar below formalises what was already there.</p>
+  <p>Still open: <span class="lang">Dethiol</span> (possibly Old Norsund <span class="lang">*dauth-thiol</span>, "brave unto death", which suits "the Undying"), <span class="lang">Naum</span>, <span class="lang">Lindorin</span>, <span class="lang">Alkregg</span>, <span class="lang">Loogandril</span>. Inherited Farheim names (Astrid, Haakon, Ulf, Tyr) can keep in-world meanings where they help: <span class="lang">ulf</span> "wolf".</p>
+</section>
+
+<!-- ============ SOUNDS ============ -->
+<section id="sounds">
+  <h2>Sounds &amp; spelling</h2>
+  <p class="kicker">There are 24 letters and digraphs, all on an English keyboard. One spelling makes one sound. No c, q, x, z, accents or apostrophes.</p>
+  <div class="two">
+    <div>
+      <h3>Consonants</h3>
+      <div class="tbl"><table>
+        <thead><tr><th></th><th>Lips</th><th>Teeth/ridge</th><th>Palate</th><th>Velum</th><th>Throat</th></tr></thead>
+        <tbody>
+          <tr><th>Stop</th><td class="w">p b</td><td class="w">t d</td><td class="w">kj gj</td><td class="w">k g</td><td></td></tr>
+          <tr><th>Fricative</th><td class="w">f v</td><td class="w">th s</td><td></td><td></td><td class="w">h</td></tr>
+          <tr><th>Nasal</th><td class="w">m</td><td class="w">n</td><td></td><td class="w">ng</td><td></td></tr>
+          <tr><th>Liquid</th><td></td><td class="w">l r</td><td></td><td></td><td></td></tr>
+          <tr><th>Glide</th><td class="w">w</td><td></td><td class="w">j</td><td></td><td></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div>
+      <h3>Vowels</h3>
+      <div class="tbl"><table>
+        <thead><tr><th></th><th>Front</th><th>Front-round</th><th>Back</th></tr></thead>
+        <tbody>
+          <tr><th>High</th><td class="w">i</td><td class="w">y</td><td class="w">u</td></tr>
+          <tr><th>Mid</th><td class="w">e</td><td></td><td class="w">o</td></tr>
+          <tr><th>Low</th><td class="w" colspan="3">a</td></tr>
+          <tr><th>Long</th><td class="w" colspan="3">aa ee ii oo uu yy</td></tr>
+          <tr><th>Diphthong</th><td class="w" colspan="3">ei ~ ay · au · ou</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+  <h3>Pronunciation sheet <small style="font-weight:400;color:var(--muted)">(High Valyrian format)</small></h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Letter</th><th>Sound</th><th>Like</th><th>Never like</th></tr></thead>
+    <tbody>
+      <tr><td class="w">a</td><td class="ipa">/a/</td><td>father</td><td>cat, late</td></tr>
+      <tr><td class="w">e</td><td class="ipa">/e/, unstressed final /ə/</td><td>bed; the "a" in sofa in endings (-en, -er)</td><td>me</td></tr>
+      <tr><td class="w">i · o · u</td><td class="ipa">/i/ /o/ /u/</td><td>machine · more · rule</td><td>ice · hot · cup</td></tr>
+      <tr><td class="w">y</td><td class="ipa">/y/</td><td>French <em>tu</em>, German <em>ü</em>. Easier reading: "ee" with rounded lips</td><td>yes, my</td></tr>
+      <tr><td class="w">ei / ay</td><td class="ipa">/ej/</td><td>day. Spelled <em>ay</em> at the end of a word, <em>ei</em> inside it</td><td>eye</td></tr>
+      <tr><td class="w">au · ou</td><td class="ipa">/au/ · /ou/</td><td>cow · go</td><td>caught · out</td></tr>
+      <tr><td class="w">j</td><td class="ipa">/j/</td><td>yes</td><td>jam</td></tr>
+      <tr><td class="w">kj · gj</td><td class="ipa">/c/ · /ɟ/</td><td>"k-y" in cute · "g-y" in argue</td><td>kid · jet</td></tr>
+      <tr><td class="w">th</td><td class="ipa">/θ/, between vowels [ð]</td><td>thin; this</td><td>tea</td></tr>
+      <tr><td class="w">g · s</td><td class="ipa">/g/ · /s/</td><td>go · sun</td><td>gem · rose</td></tr>
+      <tr><td class="w">r</td><td class="ipa">/r/</td><td>tapped or rolled, as in Spanish <em>pero</em></td><td>English "r" glide</td></tr>
+      <tr><td class="w">ll, gg, kk…</td><td class="ipa">long</td><td>held longer, as in Italian <em>bello</em> (Auristar speech shortens them)</td><td>a single sound</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>Stress</strong> goes on the first syllable, always, and in compounds on the first element: <span class="lang">THYOL-den, VIL-kyr-en, STAR-i-fjol-den</span>. Kedre loans that keep two syllables keep Kedre's second-to-last stress, so you can hear the loan layer.</p>
+  <p><strong>Syllables</strong> are (s)(C)(C)V(C)(C). Allowed onsets: single consonants; C+j (<span class="lang">kj, fj, thj, hj, sj</span>); C+r/l (<span class="lang">br, dr, gr, kr, tr, thr, fl, kl, sl</span>); s+stop (<span class="lang">sk, st, sp, str, skj</span>); <span class="lang">sw, dw, kw</span>. Common codas: <span class="lang">-r, -l, -n, -nd, -ld, -rd, -rk, -st, -sk</span> and double consonants. An unstressed <span class="lang">i</span> before a vowel is a glide: <span class="lang">Thiol-</span> = /θjol/.</p>
+  <h3>Canon names, said aloud</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Name</th><th>IPA</th><th>Easy respelling</th></tr></thead>
+    <tbody>
+      <tr><td class="w">Thiolden</td><td class="ipa">/ˈθjol.dən/</td><td>THYOL-den</td></tr>
+      <tr><td class="w">Auristar</td><td class="ipa">/ˈau.ri.star/</td><td>OW-ree-star (D2)</td></tr>
+      <tr><td class="w">Norsund</td><td class="ipa">/ˈnor.sund/</td><td>NOR-soond</td></tr>
+      <tr><td class="w">Vilkyren</td><td class="ipa">/ˈvil.ky.rən/</td><td>VIL-kü-ren</td></tr>
+      <tr><td class="w">Kjoldmur</td><td class="ipa">/ˈcold.mur/</td><td>KYOLD-moor</td></tr>
+      <tr><td class="w">Starirauggheim</td><td class="ipa">/ˈsta.riˌraugː.hejm/</td><td>STAR-ee-rowg-haym</td></tr>
+      <tr><td class="w">Starifjolden</td><td class="ipa">/ˈsta.riˌfjol.dən/</td><td>STAR-ee-fyol-den</td></tr>
+      <tr><td class="w">Midelmar</td><td class="ipa">/ˈmi.dəl.mar/</td><td>MEE-del-mar</td></tr>
+      <tr><td class="w">Oudeheim</td><td class="ipa">/ˈou.dəˌhejm/</td><td>OH-deh-haym</td></tr>
+      <tr><td class="w">Sundwanderen</td><td class="ipa">/ˈsund.wan.de.rən/</td><td>SOOND-wan-de-ren</td></tr>
+      <tr><td class="w">Lysmar</td><td class="ipa">/ˈlys.mar/</td><td>LÜS-mar (easy: LEES-mar)</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ============ GRAMMAR ============ -->
+<section id="grammar">
+  <h2>Grammar sketch</h2>
+  <p class="kicker">The essentials. The complete grammar (126 rules) is in <code>grammar/</code> and <code>docs/languages/norsund/reference-grammar.md</code>. Glosses follow the Leipzig rules.</p>
+
+  <h3>Nouns: living things vs objects</h3>
+  <p>Every noun is <strong>animate</strong> (people, beasts, gods) or <strong>inanimate</strong>. Animacy decides the plural, and that's why <span class="lang">-en</span> only ever appears on people in canon.</p>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>Singular</th><th>Plural</th><th>"the" singular</th><th>"the" plural</th></tr></thead>
+    <tbody>
+      <tr><td>animate (<span class="lang">Vilkyr</span>, a free sword)</td><td class="w">Vilkyr</td><td class="w">Vilkyren</td><td class="w">Vilkyrin</td><td class="w">Vilkyrene</td></tr>
+      <tr><td>inanimate (<span class="lang">kyr</span>, a blade)</td><td class="w">kyr</td><td class="w">kyrar</td><td class="w">kyrin</td><td class="w">kyrarne</td></tr>
+      <tr><td>after a vowel (<span class="lang">nay</span>, folk)</td><td class="w">nay</td><td class="w">nayen</td><td class="w">nayn</td><td class="w">nayene</td></tr>
+    </tbody>
+  </table></div>
+  <ul class="tight">
+    <li>The same root can switch class: <span class="lang">kyr</span> "blade" → <span class="lang">kyrar</span>, but <span class="lang">Vilkyr</span> "free-sword (person)" → <span class="lang">Vilkyren</span>.</li>
+    <li>"The" is a suffix (<span class="lang">-in</span>), as in Scandinavian. There is no word for "a": a bare noun is indefinite.</li>
+    <li><strong>Possession</strong> uses <span class="lang">-i</span> (after a vowel, <span class="lang">-s</span>), placed <em>before</em> the owned thing: <span class="lang">Tyri kyr</span> "Tyr's blade". The same <span class="lang">-i</span> links compounds: <span class="lang">Stari-fjolden</span>, <span class="lang">Aur-i-star</span>.</li>
+    <li>Nouns have no other cases. Old Norsund had four, and they survive only in set phrases.</li>
+    <li><strong>Theology in the grammar (D4):</strong> Starisund treats <span class="lang">star</span> as animate (<span class="lang">staren</span>); country speech still says <span class="lang">starar</span>.</li>
+  </ul>
+
+  <h3>Adjectives</h3>
+  <p>Adjectives go before the noun and don't change form: <span class="lang">aur star</span> "silver star". Used as a noun, an adjective takes the people-plural: <span class="lang">thiolen</span> "the brave ones". Superlative <span class="lang">-ast</span>: <span class="lang">thiolast</span> "bravest" (Auristar folk etymology: "starred"). Adjectives from nouns take <span class="lang">-a</span>: <span class="lang">Vilnaya</span> "of the free folk".</p>
+
+  <h3>Pronouns</h3>
+  <p>There's no he or she: the third person marks only animate vs inanimate, which suits a world of Vulkin, Worgenkin, Dragonkin and humans. The object forms change the vowel, an old Germanic-style alternation.</p>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>Subject</th><th>Object</th><th>Possessive</th><th>Plural subj.</th><th>Plural obj.</th><th>Plural poss.</th></tr></thead>
+    <tbody>
+      <tr><td>1st</td><td class="w">em</td><td class="w">om</td><td class="w">emi</td><td class="w">emen</td><td class="w">omen</td><td class="w">emeni</td></tr>
+      <tr><td>2nd</td><td class="w">dy</td><td class="w">du</td><td class="w">dys</td><td class="w">dyn</td><td class="w">dun</td><td class="w">dyni</td></tr>
+      <tr><td>3rd animate</td><td class="w">sel</td><td class="w">sal</td><td class="w">seli</td><td class="w">selen</td><td class="w">salen</td><td class="w">seleni</td></tr>
+      <tr><td>3rd inanimate</td><td class="w">at</td><td class="w">at</td><td class="w">ati</td><td class="w">atar</td><td class="w">atar</td><td class="w">atari</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Verbs</h3>
+  <p>Verbs don't change for person: one form covers I, you and they, as in Norwegian. Most verbs are regular; a few old, frequent ones change their vowel instead.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Form</th><th>Regular: <span class="lang">kjolda</span> "guard"</th><th>Irregular: <span class="lang">dola</span> "fall"</th><th>Irregular: <span class="lang">saja</span> "see"</th></tr></thead>
+    <tbody>
+      <tr><td>infinitive <span class="lang">-a</span></td><td class="w">kjolda</td><td class="w">dola</td><td class="w">saja</td></tr>
+      <tr><td>present <span class="lang">-er</span></td><td class="w">kjolder</td><td class="w">doler</td><td class="w">sajer</td></tr>
+      <tr><td>past</td><td class="w">kjoldade</td><td class="w">dul</td><td class="w">sa</td></tr>
+      <tr><td>participle</td><td class="w">kjoldad</td><td class="w">dolen</td><td class="w">sajen</td></tr>
+      <tr><td>command (bare stem)</td><td class="w">kjold!</td><td class="w">dol!</td><td class="w">se!</td></tr>
+    </tbody>
+  </table></div>
+  <ul class="tight">
+    <li>Future or intent: <span class="lang">hal</span> + infinitive: <span class="lang">Tyr hal kjolda</span> "Tyr will guard".</li>
+    <li>Wishes and blessings: <span class="lang">ma</span> + infinitive: <span class="lang">Ma staren kjolda dun</span> "may the stars guard you".</li>
+    <li>Negation: <span class="lang">ne</span> right after the verb in main clauses, before it in subordinate clauses (Scandinavian style).</li>
+  </ul>
+
+  <h3>Evidentials: how do you know?</h3>
+  <p>An optional word at the end of the sentence says where the knowledge came from. It's required in oaths, prophecy and bardic tellings. Each one grew out of an ordinary word, which is how real grammar forms.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Particle</th><th>Meaning</th><th>Came from</th><th>Who uses it most</th></tr></thead>
+    <tbody>
+      <tr><td class="w">sa</td><td>I witnessed it</td><td>past of <span class="lang">saja</span> "see"</td><td>Vilkyren reporting a hunt</td></tr>
+      <tr><td class="w">sund</td><td>so it is sung, I heard it</td><td><span class="lang">sund</span> "song"</td><td>Sundwanderen; tavern gossip</td></tr>
+      <tr><td class="w">stari</td><td>so the stars say, it is fated</td><td><span class="lang">star-i</span> "of the stars"</td><td>Auristar clergy, the Lights, prophecy</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Word order</h3>
+  <p>Main clauses put the verb <strong>second</strong> (V2). Front anything, and the subject moves after the verb. Yes/no questions start with the verb. Relative clauses take <span class="lang">ke</span> ("that, which, who"), a Kedre loan, just as English took "because" from French.</p>
+</section>
+
+<!-- ============ WORDS ============ -->
+<section id="words">
+  <h2>Words &amp; name-building</h2>
+  <p class="kicker">Contributors need this most: a kit of parts and seven rules, enough to name a new village, river or guild without a linguist.</p>
+
+  <h3>Seven rules for coining names</h3>
+  <ol>
+    <li><strong>Modifier first, head last.</strong> <span class="lang">Thiol-den</span>, <span class="lang">Nim-kjold</span>, <span class="lang">Kjold-mur</span>.</li>
+    <li><strong>Link with <span class="lang">-i-</span></strong> when the first part owns the second: <span class="lang">Stari-rauggheim</span> "the star's keeping-house".</li>
+    <li><strong>Demonym = first element + <span class="lang">-nay</span>:</strong> Thiolden → Thiolnay, Auristar → Aurinay, Oudeheim → <span class="lang">Oudenay</span>, Midelmar → <span class="lang">Midelnay</span>.</li>
+    <li><strong>Plural:</strong> <span class="lang">-en</span> for people, <span class="lang">-ar</span> for things.</li>
+    <li><strong>Stress the first syllable</strong>, and keep names to three syllables or fewer when you can.</li>
+    <li><strong>Only these letters:</strong> a b d e f g h i j k l m n o p r s t u v w y and th kj gj ng.</li>
+    <li><strong>No apostrophes in Norsund.</strong> They belong to other races' languages, and each of those must say what sound the apostrophe marks.</li>
+  </ol>
+
+  <h3>The kit: name parts</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Part</th><th>Role</th><th>Meaning</th><th>Seen in</th></tr></thead>
+    <tbody>
+      <tr><td class="w">-heim</td><td>head</td><td>home, settled place</td><td>Farheim, Oudeheim</td></tr>
+      <tr><td class="w">-den</td><td>head</td><td>land, realm</td><td>Thiolden, Ilinvirden</td></tr>
+      <tr><td class="w">-mar</td><td>head / modifier</td><td>height, peak; high</td><td>Midelmar, Lysmar</td></tr>
+      <tr><td class="w">vir</td><td>head</td><td>forest, deepwood</td><td>Ilinvirden</td></tr>
+      <tr><td class="w">fjol</td><td>head / prep.</td><td>the deep, cavern; under</td><td>Starifjolden</td></tr>
+      <tr><td class="w">kjold</td><td>head</td><td>ward, guard-post, shield</td><td>Nimkjold</td></tr>
+      <tr><td class="w">mur</td><td>head</td><td>wall (Kedre loan)</td><td>Kjoldmur</td></tr>
+      <tr><td class="w">raugg</td><td>head</td><td>hoard, sacred vault</td><td>Starirauggheim</td></tr>
+      <tr><td class="w">kreth</td><td>head</td><td>ring, girdle of walls</td><td><em>Thrimde Kreth</em>, the Third Ring</td></tr>
+      <tr><td class="w">gand · ylv · rie</td><td>head</td><td>road · water · canal (Kedre)</td><td><em>ylvgand</em> "river"</td></tr>
+      <tr><td class="w">nor · far · oude · midel</td><td>modifier</td><td>north · far · old · middle</td><td>Norsund, Oudeheim</td></tr>
+      <tr><td class="w">aur · star · lys · nim · nett</td><td>modifier</td><td>silver-bright · star · light · night · night sky</td><td>Auristar, Nimkjold</td></tr>
+      <tr><td class="w">ilin · nur · kull · run</td><td>modifier</td><td>holy · green, living · ember · rune, secret</td><td>Nurmyr, Runmyren</td></tr>
+      <tr><td class="w">thiol · vil · vim · ulf</td><td>modifier</td><td>brave · free · whisper · wolf</td><td>Thiolden, Vimtyr</td></tr>
+      <tr><td class="w">-nay · -an · -myr</td><td>suffix</td><td>folk of · lands of a folk · god-blessed kin</td><td>Vilnayan, Kullmyr</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Seed vocabulary beyond names</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Word</th><th>IPA</th><th>Meaning</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td class="w">kjala</td><td class="ipa">/ˈca.la/</td><td>to drink in company</td><td><span class="lang">kjalheim</span> "tavern" (drinking-home)</td></tr>
+      <tr><td class="w">fyr</td><td class="ipa">/fyr/</td><td>fire; a tavern cook</td><td>canon: cooks are called "fire"</td></tr>
+      <tr><td class="w">thiarka</td><td class="ipa">/ˈθjar.ka/</td><td>to track, follow a trail</td><td>a hunters' word; th + j is spelled thi</td></tr>
+      <tr><td class="w">vetha</td><td class="ipa">/ˈve.θa/</td><td>to bind by oath</td><td>irregular: <span class="lang">vath</span>, <span class="lang">vothen</span></td></tr>
+      <tr><td class="w">hjalda</td><td class="ipa">/ˈhjal.da/</td><td>to raise, to build</td><td></td></tr>
+      <tr><td class="w">vyrna</td><td class="ipa">/ˈvyr.na/</td><td>to move, to stir</td><td></td></tr>
+      <tr><td class="w">lysa · sunda · wandra</td><td class="ipa">/ˈly.sa/</td><td>to shine · to sing · to roam</td><td>from canon roots</td></tr>
+      <tr><td class="w">tyr</td><td class="ipa">/tyr/</td><td>edge, point, spearhead</td><td>Tyr, Vimtyr</td></tr>
+      <tr><td class="w">hask</td><td class="ipa">/hask/</td><td>axe</td><td></td></tr>
+      <tr><td class="w">nuth</td><td class="ipa">/nuθ/</td><td>the void</td><td>plane of the untranscended</td></tr>
+      <tr><td class="w">merk</td><td class="ipa">/merk/</td><td>market</td><td>Kedre loan</td></tr>
+      <tr><td class="w">rit</td><td class="ipa">/rit/</td><td>writing, marks</td><td><span class="lang">Lysrit</span> "light-writing"</td></tr>
+      <tr><td class="w">i · a · ve · ur · fjol · mar · hjo</td><td class="ipa"></td><td>in · on/at · toward · out of · under · above · with</td><td>prepositions</td></tr>
+      <tr><td class="w">eth · ava · vo · sof · ke</td><td class="ipa"></td><td>and · but · or · if · that/which</td><td><span class="lang">ke</span> is a Kedre loan</td></tr>
+      <tr><td class="w">hes · thas · thal</td><td class="ipa"></td><td>this · that · there</td><td></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Numbers</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr></thead>
+    <tbody><tr><td class="w">yn</td><td class="w">dov</td><td class="w">thrim</td><td class="w">ves</td><td class="w">thamm</td><td class="w">sesk</td><td class="w">sev · <em>stev</em></td><td class="w">ath</td><td class="w">nyv</td><td class="w">tamm</td></tr></tbody>
+  </table></div>
+  <p><span class="lang">thamm</span> means both "hand" and "five", and ten, tamm, is worn down from <span class="lang">*dov-thamm</span> "two hands", a common real-world origin for numbers. In Auristar, seven became <span class="lang">stev</span>, reshaped by <span class="lang">star</span>, the way English "female" was reshaped by "male". Ordinals take <span class="lang">-de/-te</span>, and "first" is <span class="lang">ura</span> ("from the origin"). Titles put the ordinal after the noun: <span class="lang">Lys Thrimde</span>, the Third Light. The Seven Lights together are <span class="lang">Stevlysen</span>.</p>
+
+  <h3>Kennings for the Sundwanderen</h3>
+  <ul class="tight">
+    <li><span class="lang">kyrsund</span> "blade-song": battle</li>
+    <li><span class="lang">starigand</span> "star-road": a canal of Auristar, which mirrors the sky</li>
+    <li><span class="lang">nettylv</span> "sky-water": the water of the Auristar, with stars inside it</li>
+    <li><span class="lang">fyrin kjalheimi</span> "the fire of the drinking-home": the tavern cook</li>
+  </ul>
+</section>
+
+<!-- ============ TEXTS ============ -->
+<section id="texts">
+  <h2>Sample texts</h2>
+  <p class="kicker">Four texts from the world itself, glossed word by word, plus two pairs that show the grammar working.</p>
+
+  <div class="ex"><div class="label">Toast · Winterbeard's Sigil (Starisund)</div>
+    <div class="gl"><span><span class="f">Kjal,</span><span class="g">drink.<span class="sc">imp</span></span></span><span><span class="f">thiol-en!</span><span class="g">brave-<span class="sc">pl.an</span></span></span><span><span class="f">Ma</span><span class="g"><span class="sc">opt</span></span></span><span><span class="f">star-en</span><span class="g">star-<span class="sc">pl.an</span></span></span><span><span class="f">kjold-a</span><span class="g">guard-<span class="sc">inf</span></span></span><span><span class="f">dun.</span><span class="g">2<span class="sc">pl.obj</span></span></span></div>
+    <p class="tr">"Drink, brave ones! May the stars keep you."</p>
+    <p class="note">In a Vilnayan tavern the stars would be <span class="lang">starar</span>.</p>
+  </div>
+
+  <div class="ex"><div class="label">The Vilkyr code</div>
+    <div class="gl"><span><span class="f">Vil</span><span class="g">free</span></span><span><span class="f">kyr-in,</span><span class="g">blade-<span class="sc">def</span></span></span><span><span class="f">voth-en</span><span class="g">bind-<span class="sc">ptcp</span></span></span><span><span class="f">sund-in.</span><span class="g">word-<span class="sc">def</span></span></span></div>
+    <p class="tr">"Free the blade, bound the word."</p>
+    <p class="note">It alliterates (vil / vothen), as Norse oaths do.</p>
+  </div>
+
+  <div class="ex"><div class="label">Gate inscription · First Ring of the Kjoldmur</div>
+    <div class="gl"><span><span class="f">Fjol</span><span class="g">under</span></span><span><span class="f">star-in</span><span class="g">star-<span class="sc">def</span></span></span><span><span class="f">lys-er</span><span class="g">shine-<span class="sc">prs</span></span></span><span><span class="f">run</span><span class="g">rune</span></span><span><span class="f">ne.</span><span class="g"><span class="sc">neg</span></span></span></div>
+    <p class="tr">"Beneath the star, no rune shines."</p>
+    <p class="note">Verb second: the phrase is fronted, so the subject <span class="lang">run</span> follows the verb. "Shines" is literal: a charged rune glows, so the gate bans rune magic, not rune writing.</p>
+  </div>
+
+  <div class="ex"><div class="label">The Prophecy of the Auristar · 57 a.v.e</div>
+    <div class="gl"><span><span class="f">Thiark</span><span class="g">seek.<span class="sc">imp</span></span></span><span><span class="f">aur</span><span class="g">silver</span></span><span><span class="f">star</span><span class="g">star</span></span><span><span class="f">ke</span><span class="g"><span class="sc">rel</span></span></span><span><span class="f">ne</span><span class="g"><span class="sc">neg</span></span></span><span><span class="f">vyrn-er.</span><span class="g">move-<span class="sc">prs</span></span></span><span><span class="f">Thal</span><span class="g">there</span></span><span><span class="f">dol-er</span><span class="g">fall-<span class="sc">prs</span></span></span><span><span class="f">sel,</span><span class="g">3<span class="sc">sg.an</span></span></span><span><span class="f">thal</span><span class="g">there</span></span><span><span class="f">hjald</span><span class="g">raise.<span class="sc">imp</span></span></span><span><span class="f">dyn-i</span><span class="g">2<span class="sc">pl-gen</span></span></span><span><span class="f">heim.</span><span class="g">home</span></span><span><span class="f">Stari.</span><span class="g"><span class="sc">evid.fated</span></span></span></div>
+    <p class="tr">"Seek a silver star that does not move. Where it falls, there raise your home. So the stars say."</p>
+    <p class="note">The star is <span class="lang">sel</span> ("he/she"), not <span class="lang">at</span> ("it"): it's a living being. In the subordinate clause, <span class="lang">ne</span> comes before the verb.</p>
+  </div>
+
+  <div class="two">
+    <div class="ex"><div class="label">Evidentials</div>
+      <p class="lang" style="margin:6px 0 2px">Tyr kjoldade murin, <strong>sa</strong>.</p><p class="note" style="margin:0 0 8px">Tyr guarded the wall. (I saw it.)</p>
+      <p class="lang" style="margin:6px 0 2px">Tyr kjoldade murin, <strong>sund</strong>.</p><p class="note" style="margin:0 0 8px">Tyr guarded the wall. (So the songs say.)</p>
+      <p class="lang" style="margin:6px 0 2px">Tyr hal kjolda murin, <strong>stari</strong>.</p><p class="note" style="margin:0">Tyr will guard the wall. (It is foretold.)</p>
+    </div>
+    <div class="ex"><div class="label">Verb second</div>
+      <p class="lang" style="margin:6px 0 2px">Tyr <strong>kjolder</strong> murin i nimin.</p><p class="note" style="margin:0 0 8px">Tyr guards the wall at night.</p>
+      <p class="lang" style="margin:6px 0 2px">I nimin <strong>kjolder</strong> Tyr murin.</p><p class="note" style="margin:0 0 8px">At night, Tyr guards the wall. (The verb stays second.)</p>
+      <p class="lang" style="margin:6px 0 2px"><strong>Kjolder</strong> dy murin?</p><p class="note" style="margin:0">Do you guard the wall?</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIALECTS ============ -->
+<section id="dialects">
+  <h2>Dialects &amp; Kedre</h2>
+  <p class="kicker">There are three registers above everyday speech, plus sound changes that explain the forms. Auristar is the big city, so its speech innovates; the countryside keeps older forms.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Feature</th><th>Starisund · Auristar</th><th>Common Norsund · Vilnayan</th><th>Old Norsund · runic, oaths</th></tr></thead>
+    <tbody>
+      <tr><td>Stars</td><td class="w">staren (alive)</td><td class="w">starar (objects)</td><td class="w">starar</td></tr>
+      <tr><td>Seven</td><td class="w">stev</td><td class="w">sev</td><td class="w">sev</td></tr>
+      <tr><td>Final -n</td><td>[ŋ]</td><td>[n]</td><td>[n]</td></tr>
+      <tr><td>th</td><td>[s], a shibboleth: <span class="lang">Thiolden</span> [ˈsjol.dəŋ]</td><td>[θ]</td><td>[θ]</td></tr>
+      <tr><td>Double consonants</td><td>short in speech (spelling keeps them)</td><td>long</td><td>long</td></tr>
+      <tr><td>Kedre loans</td><td>many: trade, law, canals</td><td>few</td><td>none</td></tr>
+      <tr><td>Favourite evidential</td><td class="w">stari</td><td class="w">sund</td><td>none yet</td></tr>
+      <tr><td>People-plural</td><td class="w">-en</td><td class="w">-en</td><td class="w">-in</td></tr>
+    </tbody>
+  </table></div>
+  <p>Kullmyr speech unrounds <span class="lang">y</span> to <span class="lang">i</span>, which explains why the Fire god is <span class="lang">Firen</span> and not <span class="lang">Fyrin</span>.</p>
+
+  <h3>Sound history (five of the 34 rules)</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Stage</th><th>Rule</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td>Proto → Old</td><td>1. Umlaut: <span class="lang">u</span> → <span class="lang">y</span> before <span class="lang">i</span> in the next syllable</td><td class="w">*kuri → *kyri</td></tr>
+      <tr><td>Proto → Old</td><td>2. Final <span class="lang">-i</span> drops after a single non-velar consonant</td><td class="w">*kyri → kyr · *muri → myr</td></tr>
+      <tr><td>Old → Norsund</td><td>3. A g between vowels melts into a glide</td><td class="w">negi → nay</td></tr>
+      <tr><td>Old → Norsund</td><td>4. Unstressed final <span class="lang">i, u</span> become [ə], spelled e</td><td class="w">Vilkyrin → Vilkyren · kjoldur → kjolder</td></tr>
+      <tr><td>Starisund only</td><td>5. Venetian-style: final -n → [ŋ]; th → [s]; double consonants shorten</td><td class="w">Thiolden → [ˈsjol.dəŋ]</td></tr>
+    </tbody>
+  </table></div>
+  <p>The order matters. Umlaut (rule 1) has to happen before the <span class="lang">-i</span> that triggered it disappears (rule 2). That's why <span class="lang">kyr</span> has a y with no i left in sight: the kind of fossil that makes a language feel real. The full history in <code>grammar/13-history.yaml</code> starts in Proto-Valian with three Grimm-style consonant shifts, Norse-style breaking (<span class="lang">*telu</span> → <span class="lang">thiol</span>) and umlaut. The engine runs it and its tests check all 31 cognate sets.</p>
+
+  <h3>Kedre, the conquerors' layer</h3>
+  <p>Kedre has a recognisable shape: vowel-final words, stress on the second-to-last syllable, no <span class="lang">th</span> or <span class="lang">y</span>, endings like <span class="lang">-is, -as, -aire</span> (Luxis, Keras, Reinovaire). When Norsund borrows a word it drops the final vowel and moves stress to the front: Kedre <span class="lang">murra</span> → <span class="lang">mur</span>, <span class="lang">rivia</span> → <span class="lang">rie</span>, <span class="lang">merkadu</span> → <span class="lang">merk</span>, <span class="lang">ke</span> → <span class="lang">ke</span>. Kedre and Proto-Norsund descend from one deep ancestor, Proto-Valian, the way Latin and Germanic descend from Proto-Indo-European, so <span class="lang">Luxis</span> and <span class="lang">lys</span> are true cognates (D10). The full sketch is in <code>records/languages/kedre/</code>.</p>
+</section>
+
+<!-- ============ WRITING ============ -->
+<section id="writing">
+  <h2>Runes &amp; Lysrit</h2>
+  <p class="kicker">There are two scripts with two different jobs, as in Tolkien's world, where Cirth carried on for carving after Tengwar took over everyday writing. Confirmed on 19 Nov: runes may appear in Auristar as plain writing that never glows; only rune magic is banned.</p>
+  <div class="two">
+    <div class="node"><h4>Runes · <span class="lang" style="text-transform:none">runar</span></h4><p>Old Norsund's everyday script: staves cut into wood, bone and slate, still used across Thiolden, Auristar included. Canon says the runes are "just the written word of the people alive at that time". They become magic only when charged with aether, and a charged rune <em>glows</em>. That charging is what raised the dead at Marheim, and it's what Auristar forbids. Every rune is also a Norsund word. A short-twig form is used on wood, a long-branch form on stone. Merfolk runes are a separate tradition. <em>Not designed yet; screen every design against hate-symbol databases.</em></p></div>
+    <div class="node"><h4>Lysrit · "light-writing"</h4><p>Auristar's sacred and civic script, proposed as an invention of Starlight Library scholars after the First Ring was built (c. 100–124 a.v.e). It's used on temples, the Kjoldmur, the Lights' decrees and anything holy. Because it was designed rather than evolved, it can be systematic, as Hangul is. Each letter is drawn on the <strong>seven-point grid of Auristar's emblem</strong>, top point up. Consonants are straight strokes between the seven points. Vowels are <strong>stars</strong> placed on a point, laid out like a vowel chart: front vowels on the right, back vowels on the left, low vowels at the bottom. The emblem's cyan heart is lit for voiced sounds. A violet seven-pointed star before a word marks a sacred name.</p></div>
+  </div>
+  <p>Lysrit fits the visual brief: inlaid crystal studs at each point and carved lines in white stone. At night, lit windows could spell words across a tower face. It also works as an embroidery or laser-cut pattern on techwear, and as crisp vector shapes in game interfaces.</p>
+
+  <div class="lys-demo">
+    <div class="lys-row">
+      <label for="lys-in">Type Norsund</label>
+      <input id="lys-in" type="text" value="Auristar Thiolden" autocomplete="off" spellcheck="false">
+      <label style="display:flex;gap:6px;align-items:center"><input id="lys-sac" type="checkbox" checked> Mark first word as sacred</label>
+    </div>
+    <div class="lys-out" id="lys-out"></div>
+    <p class="lys-msg" id="lys-msg"></p>
+  </div>
+
+  <h3>Concept letter sheet</h3>
+  <p style="color:var(--muted);font-size:.92rem">Sounds made in the same part of the mouth share a base bar: lips use the top bar, the tooth ridge the middle bar, the back of the mouth the bottom bar. Extra strokes give the manner of the sound, and a dot at the centre means voiced. <span class="lang">ə</span> is the unstressed <span class="lang">e</span> of endings. The script makes that distinction, which the romanization leaves out. The shapes are final. Treatments for carved stone, stained glass, UI, wood, slate and embroidery are in <code>writing-systems.md</code>. The full sheet, with digits, the long-hundred sign and evidential sigils, is in the workbench's Write tab.</p>
+  <div class="chart" id="lys-chart"></div>
+</section>
+
+<!-- ============ CANON ============ -->
+<section id="canon">
+  <h2>Repo formats &amp; governance</h2>
+  <p class="kicker">The README now defines four record types: <code>lang-grammar/v1</code>, <code>lang-dictionary/v1</code>, <code>lang-text/v1</code> and <code>lang-script/v1</code>. They match the fact-record style and Toki Pona's git-based word files, and the validator enforces them.</p>
+  <div class="two">
+    <div>
+<pre class="yaml">document: lang-dictionary/v1
+language: norsund
+canon_version: 0.1.0
+entries:
+- lemma: kjold
+  ipa: /cold/
+  pos: noun
+  animacy: inanimate      # plural kjoldar
+  glosses: [ward, guard, shield]
+  layer: native           # native | kedre | old-norsund
+  etymology: Old Norsund kjold
+  attested_in: [Nimkjold, Kjoldmur, Norstarkjold]
+  tier: core              # core | common | sandbox
+  status: proposed        # proposed | ratified
+  ratified_by: null       # PR / vote reference
+  contributor: Vledic#0001</pre>
+    </div>
+    <div>
+<pre class="yaml">document: lang-grammar/v1
+language: norsund
+canon_version: 0.1.0
+topic: Nouns
+rules:
+- id: NOUN-PL-1
+  rule: >
+    Animate nouns form the plural with -en,
+    inanimate nouns with -ar.
+  examples:
+  - form: Vilkyren
+    gloss: free.sword-PL.AN
+    means: free swords
+  - form: kyrar
+    gloss: blade-PL.IN
+    means: blades
+  status: proposed</pre>
+    </div>
+  </div>
+  <h3>How a new word becomes canon</h3>
+  <ol>
+    <li><strong>Propose</strong> by pull request: one YAML entry with meaning, parts, and the story or product that needs it.</li>
+    <li><strong>Check automatically</strong> in CI: allowed letters, syllable rules, no clash with an existing word, no real-world slur or brand in any major language.</li>
+    <li><strong>Review:</strong> a language steward (D9) checks fit and suggests the better form, as Frommer does for Na'vi.</li>
+    <li><strong>Ratify</strong> by the existing contributor vote, released in batches (KLI-style word releases).</li>
+    <li><strong>Tier it:</strong> <em>core</em> words change only by supermajority; <em>common</em> words grow freely; a <em>sandbox</em> lets products use unratified words if they're labelled.</li>
+    <li><strong>Version it:</strong> "official" means the product passes the checker against a named canon version, e.g. Norsund 1.0. Mistakes already shipped become recorded variants and are never silently erased, as Okrand treated on-screen Klingon.</li>
+  </ol>
+</section>
+
+<!-- ============ ROADMAP ============ -->
+<section id="roadmap">
+  <h2>Roadmap</h2>
+  <div class="tree">
+    <div class="node"><div class="when">Phase 1 · done</div><h4>Name kit</h4><p>Sounds, spelling, name rules, about 50 name parts with a generator, the pronunciation guide, and D2–D10 settled.</p></div>
+    <div class="node"><div class="when">Phase 2 · done</div><h4>Speakable</h4><p>The full grammar, 2,059 words, the Babel text and "The North Wind and the Sun" plus Thiolden texts, Kedre and Old Norsund, screened runes, and Lysrit with digits and sigils.</p></div>
+    <div class="node"><div class="when">Phase 3 · done</div><h4>Production</h4><p>Past the Dothraki benchmark of 1,700 words. Fonts, the writers' and actors' kit, the CLI, validator, CI and browser workbench, and dialect sound rules. Also reference audio for every name and phrase, and the production design pass on both scripts.</p></div>
+  </div>
+</section>
+
+<!-- ============ SOURCES ============ -->
+<section id="sources">
+  <h2>Sources</h2>
+  <p class="kicker">Selected from the research notes in <code>research_notes/Conlang craft for fantasy worlds/</code>. Some secondary claims there come only from search snippets and are flagged as such.</p>
+  <ul class="sources">
+    <li>Rosenfelder, <a href="https://zompist.com/kitlong.html">The Language Construction Kit</a>, plus <a href="https://zompist.com/kitwrite.html">writing systems</a> and <a href="https://www.zompist.com/sca2.html">SCA²</a></li>
+    <li>Peterson, <a href="https://fiatlingua.org/wp-content/uploads/2019/02/fl-00005A-00.pdf">"Names Aren't Neutral"</a>, Fiat Lingua 2019</li>
+    <li>Henning, <a href="http://fiatlingua.org/wp-content/uploads/2016/10/fl-00003E-00.pdf">"A Naming Language"</a> (1995; Fiat Lingua 2016)</li>
+    <li>Peterson, <a href="https://fiatlingua.org/wp-content/uploads/2025/12/fl-00010C-00.pdf">review of <em>How to Create a Language: The Conlang Guide</em></a>, Fiat Lingua 2025</li>
+    <li>Peterson, <a href="https://dothraki.com/2014/05/the-state-of-valyrian/">"The State of Valyrian"</a> and <a href="https://dedalvs.com/work/house-of-the-dragon/misc/pronunciation_guide.pdf">High Valyrian Pronunciation Guide</a></li>
+    <li><a href="https://www.eva.mpg.de/lingua/resources/glossing-rules.php">Leipzig Glossing Rules</a> · <a href="https://wals.info/">WALS Online</a></li>
+    <li><a href="https://en.wikibooks.org/wiki/Conlang/Intermediate/History/Common_sound_changes">Common sound changes</a> (Wikibooks) · <a href="https://github.com/def-gthill/lexurgy">Lexurgy</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Old_Norse_morphology">Old Norse morphology</a> · <a href="https://en.wikipedia.org/wiki/Kenning">Kenning</a> · <a href="https://www.abdn.ac.uk/news/8745/">Viking naming</a> (Univ. of Aberdeen)</li>
+    <li><a href="https://en.wikipedia.org/wiki/Venetian_language">Venetian language</a> · <a href="https://en.wikipedia.org/wiki/Norman_toponymy">Norman toponymy</a></li>
+    <li><a href="https://www.zompist.com/lexipedia.html">The Conlanger's Lexipedia</a> · <a href="https://en.wikipedia.org/wiki/Leipzig%E2%80%93Jakarta_list">Leipzig–Jakarta list</a></li>
+    <li>Bethesda, <a href="https://elderscrolls.bethesda.net/en-AU/news/how-bethesda-game-studios-made-skyrims-dragon-language">How Skyrim's dragon language was made</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Cirth">Cirth</a> · <a href="https://en.wikipedia.org/wiki/Younger_Futhark">Younger Futhark</a> · <a href="https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/religion-magic-death-and-rituals/runic-magic/">Runic magic</a> (National Museum of Denmark)</li>
+    <li><a href="https://neography.info/create-a-script/">neography.info</a> · <a href="https://www.adl.org/resources/hate-symbols/search">ADL Hate Symbols database</a></li>
+    <li><a href="https://www.kli.org/about-klingon/new-klingon-words/">KLI new Klingon words</a> · <a href="https://naviteri.org/">naviteri.org</a> (Frommer)</li>
+    <li><a href="https://linku.la/about">Linku</a> · <a href="https://github.com/lipu-linku/sona">lipu-linku/sona</a> · <a href="https://en.wikipedia.org/wiki/Akademio_de_Esperanto">Akademio de Esperanto</a></li>
+    <li>Language Creation Society, <a href="https://conlang.org/axanar/">Axanar amicus brief</a></li>
+  </ul>
+</section>
+</main>
+</div>
+
+<footer>Norsund 1.0, approved by the lore lead on 19 Nov 2026 and built on the <code>norsund-language</code> branch of the Drunken Dragon Universe lore repo. It enters canon when that branch is merged.</footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var NS = "http://www.w3.org/2000/svg";
+  var R = 15, CW = 40, CH = 44, CX = 20, CY = 22;
+  function node(k){ if(k === "C") return [CX, CY]; var a = (-90 + k*360/7) * Math.PI/180; return [CX + R*Math.cos(a), CY + R*Math.sin(a)]; }
+  // Consonants: base bar by place (labial 6-1, coronal 5-2, dorsal 4-3), extra strokes by manner, v = voiced (lit centre)
+  var CONS = {
+    p:{e:[[6,1]]}, b:{e:[[6,1]],v:1}, f:{e:[[6,1],[1,2]]}, v:{e:[[6,1],[1,2]],v:1}, m:{e:[[6,1],[6,5]]}, w:{e:[[6,1],[6,5],[1,2]]},
+    t:{e:[[5,2]]}, d:{e:[[5,2]],v:1}, th:{e:[[5,2],[2,3]]}, s:{e:[[5,2],[2,1]]}, n:{e:[[5,2],[5,4]]}, l:{e:[[5,2],[5,6]]}, r:{e:[[5,2],[5,4],[2,3]]},
+    k:{e:[[4,3]]}, g:{e:[[4,3]],v:1}, kj:{e:[[4,3],[3,2]]}, gj:{e:[[4,3],[3,2]],v:1}, ng:{e:[[4,3],[4,5]]}, j:{e:[[4,3],[3,2],[4,5]]},
+    h:{e:[[0,"C"]]}
+  };
+  var VOW = {y:0, i:1, e:2, a:3, "ə":4, o:5, u:6};
+  var VDIG = {ei:["e","i"], ay:["e","i"], au:["a","u"], ou:["o","u"]};
+  var CDIG = ["th","kj","gj","ng"];
+  var FOREIGN = {c:"k", q:"k", x:"ks", z:"s"};
+
+  function el(name, attrs, parent){ var n = document.createElementNS(NS, name); for (var k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; }
+  function sparkle(x, y, s){ return "M"+x+","+(y-s)+" Q"+x+","+y+" "+(x+s)+","+y+" Q"+x+","+y+" "+x+","+(y+s)+" Q"+x+","+y+" "+(x-s)+","+y+" Q"+x+","+y+" "+x+","+(y-s)+" Z"; }
+  function heptagram(cx, cy, ro, ri){ var p = []; for (var k=0;k<14;k++){ var r = k%2 ? ri : ro; var a = (-90 + k*180/7) * Math.PI/180; p.push((cx + r*Math.cos(a)).toFixed(2)+","+(cy + r*Math.sin(a)).toFixed(2)); } return p.join(" "); }
+
+  // word -> list of tokens {t:'c'|'v', v:value, long, gem}
+  function tokenize(word, notes){
+    var w = word.toLowerCase().replace(/[’']/g, ""), out = [], i = 0;
+    while (i < w.length){
+      var two = w.substr(i, 2), ch = w[i];
+      if (VDIG[two]) { out.push({t:"v", v:VDIG[two][0], dig:1}); out.push({t:"v", v:VDIG[two][1], dig:1}); i += 2; continue; }
+      if (CDIG.indexOf(two) >= 0) { out.push({t:"c", v:two}); i += 2; continue; }
+      if (FOREIGN[ch]) { notes.push("“"+ch+"” is not a Norsund letter, so it is written as “"+FOREIGN[ch]+"”."); FOREIGN[ch].split("").forEach(function(x){ out.push({t:"c", v:x}); }); i++; continue; }
+      if (VOW.hasOwnProperty(ch)) {
+        if (w[i+1] === ch) { out.push({t:"v", v:ch, long:1}); i += 2; } else { out.push({t:"v", v:ch}); i++; }
+        continue;
+      }
+      if (CONS[ch]) {
+        if (w[i+1] === ch) { out.push({t:"c", v:ch, gem:1}); i += 2; } else { out.push({t:"c", v:ch}); i++; }
+        continue;
+      }
+      i++;
+    }
+    // Unstressed final-syllable e -> schwa (only in words of 2+ vowel groups)
+    var groups = [], prevV = false;
+    out.forEach(function(tk, idx){ if (tk.t === "v") { if (!prevV) groups.push([]); groups[groups.length-1].push(idx); prevV = true; } else prevV = false; });
+    if (groups.length >= 2) { var last = groups[groups.length-1]; if (last.length === 1 && out[last[0]].v === "e" && !out[last[0]].long) out[last[0]].v = "ə"; }
+    return out;
+  }
+  function cellsOf(tokens){
+    var cells = [];
+    tokens.forEach(function(tk){
+      if (tk.t === "c") cells.push({c:tk.v, gem:tk.gem, v:[]});
+      else { var cur = cells[cells.length-1]; if (cur && cur.v.length < 2) cur.v.push(tk); else cells.push({c:null, v:[tk]}); }
+    });
+    return cells;
+  }
+  function drawCell(svg, cell, ox){
+    var g = el("g", {transform:"translate("+ox+",0)"}, svg);
+    ["C",0,1,2,3,4,5,6].forEach(function(k){ var p = node(k); el("circle", {cx:p[0], cy:p[1], r:1.15, "class":"nd"}, g); });
+    if (cell.c){
+      var spec = CONS[cell.c];
+      spec.e.forEach(function(e){ var a = node(e[0]), b = node(e[1]); el("line", {x1:a[0], y1:a[1], x2:b[0], y2:b[1], "class":"ln"}, g); });
+      if (spec.v) el("circle", {cx:CX, cy:CY, r:2.7, "class":"vd"}, g);
+      if (cell.gem) el("line", {x1:CX-6, y1:CH-2.5, x2:CX+6, y2:CH-2.5, "class":"gm"}, g);
+    }
+    cell.v.forEach(function(v){ var p = node(VOW[v.v]); el("path", {d:sparkle(p[0], p[1], 4.4), "class":"st"}, g); if (v.long) el("circle", {cx:p[0], cy:p[1], r:6.2, "class":"lg"}, g); });
+  }
+  function render(text, sacredFirst, scale){
+    var notes = [], words = text.trim().split(/[\s\-]+/).filter(Boolean);
+    var layout = [], x = 0, GAP = 14;
+    words.forEach(function(wd, wi){
+      var cells = cellsOf(tokenize(wd, notes));
+      if (!cells.length) return;
+      var sac = sacredFirst && wi === 0;
+      layout.push({x:x, cells:cells, sac:sac});
+      x += (sac ? 26 : 0) + cells.length*CW + GAP;
+    });
+    var width = Math.max(x - GAP, 10), s = scale || 1;
+    var svg = el("svg", {viewBox:"0 0 "+width+" "+CH, width:(width*s).toFixed(0), height:(CH*s).toFixed(0), role:"img"});
+    el("title", {}, svg).textContent = text;
+    layout.forEach(function(wl){
+      var ox = wl.x;
+      if (wl.sac){ el("polygon", {points:heptagram(11, CY, 9, 3.8), "class":"sac"}, svg); ox += 26; }
+      wl.cells.forEach(function(c, i){ drawCell(svg, c, ox + i*CW); });
+    });
+    return {svg:svg, notes:notes};
+  }
+  window.lysrit = render;
+
+  // Hero
+  var hero = document.getElementById("hero-glyph");
+  if (hero) hero.appendChild(render("Norsund", false, 1.9).svg);
+
+  // Demo
+  var inp = document.getElementById("lys-in"), sac = document.getElementById("lys-sac"), out = document.getElementById("lys-out"), msg = document.getElementById("lys-msg");
+  function update(){
+    var r = render(inp.value || "", sac.checked, 1.6);
+    out.innerHTML = ""; out.appendChild(r.svg);
+    var uniq = r.notes.filter(function(n, i, a){ return a.indexOf(n) === i; });
+    msg.textContent = uniq.length ? uniq.join(" ") : "Each cell holds one consonant and the stars of the vowels that follow it.";
+  }
+  if (inp){ inp.addEventListener("input", update); sac.addEventListener("change", update); update(); }
+
+  // Letter sheet
+  var chart = document.getElementById("lys-chart");
+  var rows = [
+    ["Vowels: stars on the grid", [["y",{c:null,v:[{v:"y"}]}],["i",{c:null,v:[{v:"i"}]}],["e",{c:null,v:[{v:"e"}]}],["a",{c:null,v:[{v:"a"}]}],["ə",{c:null,v:[{v:"ə"}]}],["o",{c:null,v:[{v:"o"}]}],["u",{c:null,v:[{v:"u"}]}],["aa (long)",{c:null,v:[{v:"a",long:1}]}]]],
+    ["Lips: top bar", ["p","b","f","v","m","w"]],
+    ["Tooth ridge: middle bar", ["t","d","th","s","n","l","r"]],
+    ["Back of mouth: bottom bar, plus h", ["k","g","kj","gj","ng","j","h"]],
+    ["Combined: consonant + vowel in one cell", [["ka",{c:"k",v:[{v:"a"}]}],["ly",{c:"l",v:[{v:"y"}]}],["th + io",{c:"th",v:[{v:"i"},{v:"o"}]}],["gg (double)",{c:"g",gem:1,v:[]}]]]
+  ];
+  if (chart) rows.forEach(function(row){
+    var div = document.createElement("div"); div.className = "chart-row";
+    var lab = document.createElement("div"); lab.className = "rl"; lab.textContent = row[0]; div.appendChild(lab);
+    row[1].forEach(function(item){
+      var label = Array.isArray(item) ? item[0] : item, cell = Array.isArray(item) ? item[1] : {c:item, v:[]};
+      var box = document.createElement("div"); box.className = "cell";
+      var svg = el("svg", {viewBox:"0 0 "+CW+" "+CH, width:52, height:57, role:"img"});
+      el("title", {}, svg).textContent = label;
+      drawCell(svg, cell, 0); box.appendChild(svg);
+      var sp = document.createElement("span"); sp.textContent = label; box.appendChild(sp);
+      div.appendChild(box);
+    });
+    chart.appendChild(div);
+  });
+})();
+</script>

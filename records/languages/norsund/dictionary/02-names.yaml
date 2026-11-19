@@ -1,0 +1,82 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: Proper names, peoples, titles and gods
+field: names
+contributor: Vledic#0001
+defaults: {pos: name, layer: native, tier: core, status: ratified, epoch: old}
+context:
+- Canon names decoded into Norsund. "attested" points to the lore record where the name appears.
+
+entries:
+# --- Places ---
+- {lemma: Thiolden, class: inanimate, gloss: [Thiolden, land of the brave], parts: [thiol, den], attested: [records/thiolden/thiolden.yaml], notes: "canon meaning"}
+- {lemma: Auristar, class: animate, gloss: [Auristar (the star and the city), star of silver light], parts: [aur, i, star], attested: [records/thiolden/auristar/auristar.yaml], notes: "the star is animate in Starisund; the city is inanimate in common speech"}
+- {lemma: Midelmar, class: inanimate, gloss: [Midelmar, the middle height], parts: [midel, mar], notes: "standard spelling; 'Middlemar' is an English respelling"}
+- {lemma: Oudeheim, class: inanimate, gloss: [Oudeheim, old home], parts: [oude, heim]}
+- {lemma: Marheim, class: inanimate, gloss: [Marheim, high home], parts: [mar, heim]}
+- {lemma: Farheim, class: inanimate, gloss: [Farheim, far home (the settlers' island)], parts: [far, heim]}
+- {lemma: Kjoldmur, class: inanimate, gloss: [the Kjoldmur, ward-wall (Auristar's ring walls)], parts: [kjold, mur]}
+- {lemma: Starifjolden, class: inanimate, gloss: [the Starifjolden, the stars' under-land (caverns)], parts: [stari, fjol, den]}
+- {lemma: Starirauggheim, class: inanimate, gloss: [the Starirauggheim, house of the star's keeping (tower of the gem)], parts: [stari, raugg, heim]}
+- {lemma: Ilinvirden, class: inanimate, gloss: [Ilinvirden, holy forest-land], parts: [ilin, vir, den]}
+- {lemma: Vilnayan, class: inanimate, gloss: [the Vilnayan towns, lands of the free folk], parts: [vil, nay, an]}
+- {lemma: Valnor, class: inanimate, gloss: [Valnor, north Valia], parts: [Val, nor], notes: "replaced 'Valinor' (a Tolkien name) in the lore records"}
+- {lemma: Valia, class: inanimate, gloss: [Valia (the continent)], layer: foreign}
+- {lemma: Kharakskard, class: inanimate, gloss: [the Pass of Kharak], parts: [Kharak, skard]}
+- {lemma: Norfald, class: inanimate, gloss: [the North Fold (of Auristar)], parts: [nor, fald]}
+- {lemma: Austfald, class: inanimate, gloss: [the East Fold (of Auristar)], parts: [aust, fald]}
+
+# --- Peoples and demonyms ---
+- {lemma: Thiolnay, class: animate, gloss: [Thiolnay, people of Thiolden], parts: [thiol, nay]}
+- {lemma: Aurinay, class: animate, gloss: [Aurinay, people of Auristar], parts: [aur, i, nay]}
+- {lemma: Vilnay, class: animate, gloss: [Vilnay, the free folk (of the Vilnayan towns)], parts: [vil, nay]}
+- {lemma: Vilnaya, pos: adj, gloss: [Vilnayan (adjective), of the free folk], parts: [vil, nay, a]}
+- {lemma: Oudenay, class: animate, gloss: [people of Oudeheim]}
+- {lemma: Midelnay, class: animate, gloss: [people of Midelmar]}
+- {lemma: Farnay, class: animate, gloss: [Farheim islanders]}
+- {lemma: Nurmyr, class: animate, gloss: [the Nurmyr, the green kin (blessed by Naum)], parts: [nur, myr]}
+- {lemma: Kullmyr, class: animate, gloss: [the Kullmyr, the ember kin (blessed by Firen)], parts: [kull, myr]}
+- {lemma: Runmyren, class: animate, gloss: [the Runmyren, the rune-kin], parts: [run, myr, en], notes: "plural; singular Runmyr"}
+- {lemma: Virnayen, class: animate, gloss: [the Virnayen, the forest-folk], parts: [vir, nay, en], notes: "plural"}
+- {lemma: Ulfkin, class: animate, gloss: [Ulfkin, wolf-kin], notes: "replaced 'Worgenkin' (a Warcraft name) in the lore records; Haakon is a Farheim descendant Ulfkin"}
+
+# --- Callings, bodies and titles ---
+- {lemma: Vilkyr, pos: noun, class: animate, gloss: [free sword, monster hunter], parts: [vil, kyr], layer: old-norsund, notes: "canon: Old Norsund 'Free Sword'; plural Vilkyren"}
+- {lemma: Nimkjold, pos: noun, class: inanimate, gloss: [the night guard (of a Vilnayan town)], parts: [nim, kjold], notes: "a member is a nimkjolder"}
+- {lemma: Norstarkjold, pos: noun, class: inanimate, gloss: [the Norstarkjold, guard of the North Star (Tyr's guard)], parts: [nor, star, kjold]}
+- {lemma: Lys, pos: noun, class: animate, gloss: [a Light (one of the Seven Lights of Auristar)], notes: "title; with ordinal: Lys Thrimde"}
+- {lemma: Stevlysen, class: animate, gloss: [the Seven Lights], parts: [stev, lys, en], register: starisund}
+- {lemma: Sevlysen, class: animate, gloss: [the Seven Lights (common Norsund)], parts: [sev, lys, en]}
+- {lemma: Kyr, pos: noun, class: animate, gloss: [Blade (title of a sworn mercenary)]}
+
+# --- Gods and holy things ---
+- {lemma: Ur, class: animate, gloss: [Ur, the Source (god of origin and growth)], notes: "temple name; Myr in the Wandering Houses' tradition"}
+- {lemma: Nett, class: animate, gloss: [Nett, the Firmament (god of fulfilment)], notes: "temple name; Heid in the Wandering Houses' tradition"}
+- {lemma: Myr, class: animate, gloss: [Myr, the Kin-maker (old name of Ur)], layer: old-norsund, register: old}
+- {lemma: Heid, class: animate, gloss: [Heid, the Clear Sky (old name of Nett)], layer: old-norsund, register: old}
+- {lemma: Lysmar, class: animate, gloss: [Lysmar, the High Light (goddess of light; Kedre Luxis)], parts: [lys, mar]}
+- {lemma: Naum, class: animate, gloss: [Naum (god of the Nurmyr)]}
+- {lemma: Fyren, class: animate, gloss: [Fyren, the Fire (god of the Kullmyr)], notes: "Kullmyr pronunciation Firen, the canon spelling"}
+- {lemma: Firen, class: animate, gloss: [Firen (Kullmyr form of Fyren)], register: kullmyr}
+- {lemma: Stardul, class: inanimate, gloss: [the Fall of the Star (90 a.v.e.)], parts: [star, dul]}
+
+# --- People ---
+- {lemma: Tyr, class: animate, gloss: [Tyr, "'Spearhead'"], parts: [tyr]}
+- {lemma: Vimtyr, class: animate, gloss: [Vimtyr, "'whisper-edge' (the Whispering Axe)"], parts: [vim, tyr]}
+- {lemma: Dethiol, class: animate, gloss: [Dethiol, "'brave unto death'"], etymology: "Old Norsund *dauth-thiol, worn down in Kullmyr speech"}
+- {lemma: Ulf, class: animate, gloss: [Ulf, "'wolf'"], parts: [ulf]}
+
+# --- Languages and scripts ---
+- {lemma: Norsund, class: inanimate, gloss: [Norsund, the north-tongue], parts: [nor, sund]}
+- {lemma: Starisund, class: inanimate, gloss: [Starisund, the star-tongue (Auristar's dialect)], parts: [stari, sund]}
+- {lemma: Kedre, class: inanimate, gloss: [Kedre (the imperial language)], layer: kedre}
+- {lemma: Lysrit, class: inanimate, gloss: [Lysrit, light-writing (Auristar's sacred script)], parts: [lys, rit]}
+- {lemma: runar, pos: noun, class: inanimate, gloss: [the runes (the runic script)], parts: [run, ar]}
+
+# --- Kedre names used in Norsund ---
+- {lemma: Luxis, class: animate, gloss: [Luxis (Kedre name of Lysmar)], layer: kedre}
+- {lemma: Keras, class: inanimate, gloss: [Keras (the imperial city)], layer: kedre}
+- {lemma: Vaire, class: animate, gloss: [Vaire (the imperial dynasty)], layer: kedre}
+- {lemma: Vairean, pos: adj, gloss: [Vairean, of the Vaire Empire], layer: kedre}
+- {lemma: Reinovaire, class: inanimate, gloss: [Reinovaire, realm of Vaire], layer: kedre}

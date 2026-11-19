@@ -1,0 +1,65 @@
+document: lang-text/v1
+language: kedre
+version: 1.0.0
+topic: Kedre texts
+contributor: Vledic#0001
+texts:
+- id: decree-year-zero
+  title: The decree of year zero
+  register: imperial decree
+  source: records/thiolden/general-timeline.yaml (Year 0 a.v.e.)
+  context: >
+    Proclaimed in Keras at the end of the first Reinovairean civil war, when Rechtar Vaire became Emperor and first priest
+    of the Church of Light, and the Vairean calendar began. Decrees put the verb first.
+  lines:
+  - text: "Juba Rechtar Vaire, keraro ed primaro:"
+    morphemes: "jub-a Rechtar Vaire ker-aro ed prim-aro"
+    gloss: "command-PRS.3SG Rechtar Vaire crown-AGT and first-AGT"
+    translation: "Rechtar Vaire, emperor and first priest, commands:"
+  - text: "Oie nasa Keria, ed Reinovaire kresa in Keria."
+    morphemes: "oie nas-a Keria ed reino-Vaire kres-a in Keria"
+    gloss: "today be.born-PRS.3SG Keria and realm-Vaire grow-PRS.3SG into Keria"
+    translation: "Today the Empire is born, and the realm of Vaire grows into the Empire."
+  - text: "Luxis luxava sangia Vaire."
+    morphemes: "Lux-is lux-av-a sangia Vaire"
+    gloss: "light-DIGN bless-PST-3SG bloodline Vaire"
+    translation: "Luxis has blessed the bloodline of Vaire."
+  - text: "Kai ke sta kontra keraro, sta kontra Luxis."
+    morphemes: "kai ke st-a kontra ker-aro st-a kontra Lux-is"
+    gloss: "who REL stand-PRS.3SG against crown-AGT stand-PRS.3SG against light-DIGN"
+    translation: "Whoever stands against the emperor stands against Luxis."
+  - text: "Aro nulo, Keras."
+    morphemes: "aro nulo Kera-s"
+    gloss: "year zero crown-DIGN"
+    translation: "Year zero, at Keras."
+  notes:
+  - The decree opens verb-first (Juba "commands"), the fixed style of imperial proclamations.
+  - Keria is the crown-land (kera + -ia); Keras is the Crowned city (kera + dignity -s).
+  - In Norsund the goddess is Lysmar, not Luxis.
+
+- id: blessing-of-the-bloodline
+  title: The Church of Light's blessing of the Vaire bloodline
+  register: liturgy (Domo Luxis)
+  source: records/thiolden/general-timeline.yaml (Year 0 a.v.e., Luxis blesses the Vaire bloodline)
+  context: >
+    Recited by the priests of the Domo Luxis (the Church of Light) at the birth of every heir of the house of Vaire.
+  lines:
+  - text: "Luxis, luxa sangia Vaire."
+    morphemes: "Lux-is lux-a sangia Vaire"
+    gloss: "light-DIGN bless-IMP bloodline Vaire"
+    translation: "Luxis, bless the bloodline of Vaire."
+  - text: "Kada posto ke nasa, tene luxi tue."
+    morphemes: "kada posto ke nas-a ten-e luxi tue"
+    gloss: "every heir REL be.born-PRS.3SG hold-PRS.3SG light 2SG.POSS"
+    translation: "Every heir who is born holds your light."
+  - text: "Ed nimo no vinka luxi Vaire."
+    morphemes: "ed nimo no vink-a luxi Vaire"
+    gloss: "and night NEG conquer-PRS.3SG light Vaire"
+    translation: "And night does not conquer the light of Vaire."
+  - text: "Sik sia."
+    morphemes: "sik sia"
+    gloss: "thus be.OPT.3SG"
+    translation: "So be it."
+  notes:
+  - Possessives follow the noun (luxi tue "your light"), and owners follow what they own (sangia Vaire).
+  - luxare "to illuminate" is the Church's word for "to bless".

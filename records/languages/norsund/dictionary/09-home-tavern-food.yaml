@@ -1,0 +1,166 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: Home, tavern and food
+field: home
+contributor: Vledic#0001
+defaults: {layer: native, tier: common, status: ratified, epoch: old}
+context:
+- The house and its furniture, the tavern (kjalheim) and its gear, food and drink, cooking, clothing, cloth and fire-keeping.
+- Fine goods that came with the empire (wine, peaches, silk, glass windows, fine bread, cups) are Kedre loans.
+
+entries:
+# --- House ---
+- lemma: bol
+  pos: noun
+  class: inanimate
+  gloss: [house, dwelling]
+  tier: core
+  derived:
+  - {lemma: fjolbol, pos: noun, class: inanimate, gloss: [cellar (lit. deep-house)], parts: [fjol, bol]}
+  - {lemma: kjoldbol, pos: noun, class: inanimate, gloss: [barracks, guardhouse], parts: [kjold, bol]}
+- {lemma: kamar, pos: noun, class: inanimate, gloss: [room, chamber], layer: kedre, epoch: contact, etymology: "Kedre kamara"}
+- {lemma: lukk, pos: noun, class: inanimate, gloss: [door], tier: core, derived: [{lemma: lukka, pos: verb, class: weak, gloss: [to shut, to close]}]}
+- {lemma: fenn, pos: noun, class: inanimate, gloss: [window], layer: kedre, epoch: contact, etymology: "Kedre fennestra (glazed windows came with imperial builders)"}
+- {lemma: hjalv, pos: noun, class: inanimate, gloss: [roof]}
+- {lemma: flet, pos: noun, class: inanimate, gloss: [floor]}
+- {lemma: thrinn, pos: noun, class: inanimate, gloss: [stair, step], notes: "Auristar builds high, so thrinnar (stairs) are everywhere", derived: [{lemma: thrinna, pos: verb, class: weak, gloss: [to climb stairs]}]}
+- {lemma: thun, pos: noun, class: inanimate, gloss: [courtyard, yard]}
+- {lemma: fyrkreth, pos: noun, class: inanimate, gloss: [hearth (lit. fire-ring)], parts: [fyr, kreth]}
+- {lemma: thiaukgand, pos: noun, class: inanimate, gloss: [chimney (lit. smoke-road)], parts: [thiauk, gand]}
+- {lemma: mosraugg, pos: noun, class: inanimate, gloss: [pantry, larder (lit. food-hoard)], parts: [mos, raugg]}
+- {lemma: klinn, pos: noun, class: inanimate, gloss: [lock, latch], derived: [{lemma: klinna, pos: verb, class: weak, gloss: [to lock]}]}
+- {lemma: tyrk, pos: noun, class: inanimate, gloss: [key]}
+- {lemma: holk, pos: noun, class: inanimate, gloss: [bucket, pail]}
+- {lemma: skylla, pos: verb, class: weak, gloss: [to rinse, to wash], etymology: "from skyl 'waterfall'", derived: [{lemma: ylvker, pos: noun, class: inanimate, gloss: [bathtub, bath], parts: [ylv, ker]}]}
+
+# --- Furniture and light ---
+- {lemma: lekk, pos: noun, class: inanimate, gloss: [bed]}
+- {lemma: sjald, pos: noun, class: inanimate, gloss: [chair, seat], derived: [{lemma: langsjald, pos: noun, class: inanimate, gloss: [bench], parts: [lang, sjald]}]}
+- {lemma: dask, pos: noun, class: inanimate, gloss: [table], derived: [{lemma: kjaldask, pos: noun, class: inanimate, gloss: [bar counter], parts: [kjal, dask]}, {lemma: merkdask, pos: noun, class: inanimate, gloss: [market stall], parts: [merk, dask]}]}
+- {lemma: ark, pos: noun, class: inanimate, gloss: [chest, coffer], layer: kedre, epoch: contact, etymology: "Kedre arka"}
+- lemma: ker
+  pos: noun
+  class: inanimate
+  gloss: [vessel, jug, tub]
+  derived:
+  - {lemma: lysker, pos: noun, class: inanimate, gloss: [lantern (lit. light-vessel)], parts: [lys, ker]}
+  - {lemma: brysker, pos: noun, class: inanimate, gloss: [bellows (lit. wind-vessel)], parts: [brys, ker]}
+- {lemma: vauk, pos: noun, class: inanimate, gloss: [wax], derived: [{lemma: lyspjalk, pos: noun, class: inanimate, gloss: [candle (lit. light-stick)], parts: [lys, pjalk]}]}
+- {lemma: tov, pos: noun, class: inanimate, gloss: [wool, fleece], derived: [{lemma: tovvev, pos: noun, class: inanimate, gloss: [blanket, woollen cloth], parts: [tov, vev]}, {lemma: tovug, pos: adj, gloss: [woolly]}]}
+
+# --- Water power ---
+- {lemma: molv, pos: noun, class: inanimate, gloss: [mill], derived: [{lemma: molva, pos: verb, class: weak, gloss: [to grind, to mill]}, {lemma: molvir, pos: noun, class: animate, gloss: [miller]}, {lemma: molvdwim, pos: noun, class: inanimate, gloss: [flour (lit. mill-dust)], parts: [molv, dwim]}]}
+- {lemma: ylvhwel, pos: noun, class: inanimate, gloss: [water wheel], parts: [ylv, hwel], notes: "Auristar's tavern-keepers first used them to speed up brewing"}
+
+# --- Tavern ---
+- {lemma: heimir, pos: noun, class: animate, gloss: [householder, host of a home], etymology: "from heim 'home'", notes: "a tavern host is a kjalvard (03-people-society)"}
+- {lemma: lidir, pos: noun, class: animate, gloss: [guest, visitor (lit. one who comes)], etymology: "agent of lida 'to come'"}
+- {lemma: heimkjold, pos: noun, class: inanimate, gloss: [hospitality, the duty to shelter guests (lit. home-ward)], parts: [heim, kjold]}
+- lemma: byrda
+  pos: verb
+  class: weak
+  gloss: [to serve (at table)]
+  derived:
+  - {lemma: byrdir, pos: noun, class: animate, gloss: [server, tavern maiden or lad]}
+- lemma: bikk
+  pos: noun
+  class: inanimate
+  gloss: [tankard, beaker]
+  derived:
+  - {lemma: bikkling, pos: noun, class: inanimate, gloss: [mug, small cup]}
+  - {lemma: bikksund, pos: noun, class: inanimate, gloss: [the clink of tankards in a toast (kenning, lit. tankard-song)], register: poetic, parts: [bikk, sund]}
+- {lemma: ambel, pos: noun, class: inanimate, gloss: [barrel, cask]}
+- {lemma: lagel, pos: noun, class: inanimate, gloss: [flask, bottle]}
+- {lemma: tass, pos: noun, class: inanimate, gloss: [cup (fine, with a handle)], layer: kedre, epoch: contact, etymology: "Kedre tassa"}
+- {lemma: aulsund, pos: noun, class: inanimate, gloss: [drinking song (lit. ale-song)], parts: [aul, sund]}
+- {lemma: sundnim, pos: noun, class: inanimate, gloss: [night of songs and shows (at a tavern)], parts: [sund, nim]}
+- {lemma: gafgrjot, pos: noun, class: inanimate, gloss: [dice (lit. luck-stones)], parts: [gaf, grjot]}
+- {lemma: kjalir, pos: noun, class: animate, gloss: [drinker, drunkard], etymology: "agent of kjala 'to drink'", derived: [{lemma: aftkjal, pos: noun, class: inanimate, gloss: [hangover (lit. after-drink)], parts: [aft, kjal]}, {lemma: kjalthurs, pos: noun, class: inanimate, gloss: [thirst], parts: [kjal, thurs]}]}
+
+# --- Drink ---
+- lemma: valla
+  pos: verb
+  class: weak
+  gloss: [to brew, to ferment]
+  derived:
+  - {lemma: vallir, pos: noun, class: animate, gloss: [brewer]}
+  - {lemma: vallheim, pos: noun, class: inanimate, gloss: [brewery], parts: [vall, heim]}
+- {lemma: seim, pos: noun, class: inanimate, gloss: [honey], derived: [{lemma: seimkjal, pos: noun, class: inanimate, gloss: [mead (lit. honey-drink)], parts: [seim, kjal], notes: "the best is brewed with Farheim honey"}]}
+- {lemma: vin, pos: noun, class: inanimate, gloss: [wine], layer: kedre, epoch: contact, etymology: "Kedre vino", derived: [{lemma: persvin, pos: noun, class: inanimate, gloss: [peach wine], parts: [pers, vin]}]}
+- {lemma: grustylv, pos: noun, class: inanimate, gloss: [tea (lit. herb-water)], parts: [grust, ylv], notes: "black tea is dunk grustylv"}
+- {lemma: fyrkjal, pos: noun, class: inanimate, gloss: [spirits, strong liquor (lit. fire-drink)], parts: [fyr, kjal]}
+- {lemma: mjolv, pos: noun, class: inanimate, gloss: [milk], tier: core}
+
+# --- Food and eating ---
+- lemma: mosa
+  pos: verb
+  class: weak
+  gloss: [to eat]
+  tier: core
+  epoch: proto
+  derived:
+  - {lemma: mos, pos: noun, class: inanimate, gloss: [food]}
+  - {lemma: mosning, pos: noun, class: inanimate, gloss: [meal]}
+  - {lemma: dagmos, pos: noun, class: inanimate, gloss: [breakfast (lit. day-food)], parts: [dag, mos]}
+  - {lemma: nimmos, pos: noun, class: inanimate, gloss: [supper (lit. night-food)], parts: [nim, mos]}
+  - {lemma: mosthurs, pos: noun, class: inanimate, gloss: [hunger], parts: [mos, thurs]}
+  - {lemma: kjelmos, pos: noun, class: inanimate, gloss: [stew, soup (lit. pot-food)], parts: [kjel, mos]}
+- {lemma: fosk, pos: noun, class: inanimate, gloss: [meat, flesh], tier: core}
+- {lemma: gyll, pos: noun, class: inanimate, gloss: [bread, loaf], tier: core, etymology: "zero noun from gylla 'to bake'"}
+- {lemma: pann, pos: noun, class: inanimate, gloss: [fine wheat bread], layer: kedre, epoch: contact, etymology: "Kedre panna"}
+- {lemma: ryth, pos: noun, class: inanimate, gloss: [grain, cereal]}
+- {lemma: yst, pos: noun, class: inanimate, gloss: [cheese]}
+- {lemma: flyth, pos: noun, class: inanimate, gloss: [butter]}
+- {lemma: mulv, pos: noun, class: inanimate, gloss: [porridge]}
+- {lemma: krass, pos: noun, class: inanimate, gloss: [spice, sharp seasoning], derived: [{lemma: krassug, pos: adj, gloss: [spicy]}]}
+- {lemma: velth, pos: noun, class: inanimate, gloss: [feast, banquet], derived: [{lemma: veltha, pos: verb, class: weak, gloss: [to feast]}, {lemma: velthkamp, pos: noun, class: inanimate, gloss: [festival square], parts: [velth, kamp]}]}
+- {lemma: gusta, pos: verb, class: weak, gloss: [to taste, to savour], layer: kedre, epoch: contact, etymology: "Kedre gusta"}
+
+# --- Cooking ---
+- {lemma: gylla, pos: verb, class: weak, gloss: [to bake], derived: [{lemma: gyllir, pos: noun, class: animate, gloss: [baker]}, {lemma: gyllheim, pos: noun, class: inanimate, gloss: [oven, bakehouse], parts: [gyll, heim]}]}
+- {lemma: bulka, pos: verb, class: weak, gloss: [to boil, to bubble]}
+- {lemma: svelda, pos: verb, class: weak, gloss: [to roast]}
+- {lemma: frasa, pos: verb, class: weak, gloss: [to fry]}
+- {lemma: sneda, pos: verb, class: weak, gloss: [to chop, to slice]}
+- {lemma: kjel, pos: noun, class: inanimate, gloss: [pot, cauldron, kettle]}
+- {lemma: skolm, pos: noun, class: inanimate, gloss: [bowl]}
+- {lemma: dyll, pos: noun, class: inanimate, gloss: [plate, platter]}
+- {lemma: skeiling, pos: noun, class: inanimate, gloss: [spoon (lit. little boat)], parts: [skei, ling]}
+- {lemma: tyrling, pos: noun, class: inanimate, gloss: [fork (lit. little point)], parts: [tyr, ling]}
+
+# --- Fire-keeping ---
+- {lemma: flysk, pos: noun, class: inanimate, gloss: [spark], derived: [{lemma: flyska, pos: verb, class: weak, gloss: [to spark, to kindle]}, {lemma: flyskgrjot, pos: noun, class: inanimate, gloss: [flint (lit. spark-stone)], parts: [flysk, grjot]}]}
+- {lemma: skirr, pos: noun, class: inanimate, gloss: [tinder]}
+- {lemma: fyrvard, pos: noun, class: animate, gloss: [fire-keeper], parts: [fyr, vard]}
+- {lemma: fyrtrav, pos: noun, class: inanimate, gloss: [firewood], parts: [fyr, trav]}
+
+# --- Cloth and clothing ---
+- {lemma: strenk, pos: noun, class: inanimate, gloss: [rope, cord], derived: [{lemma: strenkling, pos: noun, class: inanimate, gloss: [string, twine]}]}
+- {lemma: vev, pos: noun, class: inanimate, gloss: [cloth, woven fabric], derived: [{lemma: veva, pos: verb, class: weak, gloss: [to weave]}, {lemma: vevir, pos: noun, class: animate, gloss: [weaver]}]}
+- {lemma: spunn, pos: noun, class: inanimate, gloss: [thread, yarn]}
+- {lemma: pring, pos: noun, class: inanimate, gloss: [needle], derived: [{lemma: pringa, pos: verb, class: weak, gloss: [to sew]}]}
+- {lemma: serika, pos: noun, class: inanimate, gloss: [silk], layer: kedre-learned, epoch: modern, etymology: "Kedre serika (a luxury import, borrowed whole)"}
+- {lemma: barg, pos: noun, class: inanimate, gloss: [leather, tanned hide]}
+- {lemma: skrud, pos: noun, class: inanimate, gloss: [clothing, garb], derived: [{lemma: skruda, pos: verb, class: weak, gloss: [to dress, to clothe]}]}
+- {lemma: kap, pos: noun, class: inanimate, gloss: [cloak, cape], layer: kedre, epoch: contact, etymology: "Kedre kapa"}
+- {lemma: blusk, pos: noun, class: inanimate, gloss: [tunic]}
+- {lemma: dresk, pos: noun, class: inanimate, gloss: [trousers]}
+- {lemma: hosk, pos: noun, class: inanimate, gloss: [shoe, boot]}
+- {lemma: gyrd, pos: noun, class: inanimate, gloss: [belt, girdle]}
+- {lemma: skarv, pos: noun, class: inanimate, gloss: [hood, cowl]}
+- {lemma: skaul, pos: noun, class: inanimate, gloss: [loincloth], notes: "canon: the acceptable bare minimum of Auristar dress"}
+
+# --- Further derivations ---
+- {lemma: bolvard, pos: noun, class: animate, gloss: [housekeeper, steward], parts: [bol, vard]}
+- {lemma: lekka, pos: verb, class: weak, gloss: [to bed down, to lie down to sleep], etymology: "verb from lekk"}
+- {lemma: sjalda, pos: verb, class: weak, gloss: [to seat (a guest)], etymology: "verb from sjald"}
+- {lemma: daskvev, pos: noun, class: inanimate, gloss: [tablecloth], parts: [dask, vev]}
+- {lemma: ambelsmidir, pos: noun, class: animate, gloss: [cooper, barrel-maker], parts: [ambel, smidir]}
+- {lemma: seimug, pos: adj, gloss: [honeyed, sweet as honey], parts: [seim, ug]}
+- {lemma: vinvang, pos: noun, class: inanimate, gloss: [vineyard], parts: [vin, vang]}
+- {lemma: ysta, pos: verb, class: weak, gloss: [to make cheese, to curdle], etymology: "verb from yst"}
+- {lemma: skrudsmidir, pos: noun, class: animate, gloss: [tailor], parts: [skrud, smidir]}
+- {lemma: strenka, pos: verb, class: weak, gloss: [to tie, to bind with rope], etymology: "verb from strenk"}
+- {lemma: hosksmidir, pos: noun, class: animate, gloss: [cobbler, bootmaker], parts: [hosk, smidir]}
+- {lemma: tova, pos: verb, class: weak, gloss: [to shear (wool)], etymology: "verb from tov"}

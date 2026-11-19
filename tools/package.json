@@ -1,0 +1,25 @@
+{
+  "name": "norsund-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Engine and command-line tools for Norsund, the common tongue of Thiolden (Drunken Dragon Universe).",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "norsund": "./cli.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "validate": "node cli.mjs validate",
+    "build": "node build.mjs",
+    "audio": "node audio/build_audio.mjs && node audio/verify_audio.mjs",
+    "audio:check": "node audio/build_audio.mjs --check",
+    "audio:verify": "node audio/verify_audio.mjs"
+  },
+  "dependencies": {
+    "js-yaml": "4.1.0"
+  }
+}

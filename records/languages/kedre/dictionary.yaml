@@ -1,0 +1,158 @@
+document: lang-dictionary/v1
+language: kedre
+version: 1.0.0
+topic: Kedre dictionary
+field: kedre
+contributor: Vledic#0001
+defaults: {layer: native, tier: common, status: ratified, epoch: proto}
+context:
+- Words of Kedre, the imperial language. forms.norsund gives the Norsund cognate or loan where one exists.
+- "Etymologies use the Proto-Valian forms and the pv-kedre stage in records/languages/norsund/grammar/13-history.yaml."
+- "Entries with forms.norsund_loan are the sources of Norsund loanwords; entries with forms.norsund are cognates (inherited by both languages)."
+
+entries:
+# --- Cognate set (must match grammar/13-history.yaml) ---
+- {lemma: telo,    pos: adj,  gloss: [brave, valiant], forms: {norsund: thiol}, etymology: "Proto-Valian *telu", tier: core}
+- {lemma: geldo,   pos: noun, gloss: [shield, guard], forms: {norsund: kjold, plural: geldi}, etymology: "Proto-Valian *geldhu"}
+- {lemma: guri,    pos: noun, gloss: [sword, blade], forms: {norsund: kyr, plural: gurie}, etymology: "Proto-Valian *guri"}
+- {lemma: duri,    pos: noun, gloss: [point, spike], forms: {norsund: tyr, plural: durie}, etymology: "Proto-Valian *duri"}
+- {lemma: staro,   pos: noun, gloss: [star], forms: {norsund: star, plural: stari}, etymology: "Proto-Valian *staru", tier: core}
+- {lemma: luxi,    pos: noun, gloss: [light], forms: {norsund: lys, plural: luxie}, etymology: "Proto-Valian *luksi", tier: core, derived: [{lemma: luxare, pos: verb, class: are, gloss: [to illuminate, to bless]}, {lemma: luxato, pos: adj, gloss: [blessed, lit]}]}
+- {lemma: fens,    pos: noun, gloss: [land, estate], forms: {norsund: den, plural: fenses}, etymology: "Proto-Valian *dhens"}
+- {lemma: kaimo,   pos: noun, gloss: [home, dwelling], forms: {norsund: heim, plural: kaimi}, etymology: "Proto-Valian *kaimu"}
+- {lemma: sundo,   pos: noun, gloss: [voice, song], forms: {norsund: sund}, etymology: "Proto-Valian *sundhu", derived: [{lemma: sundare, pos: verb, class: are, gloss: [to sing]}]}
+- {lemma: noro,    pos: noun, gloss: [north], forms: {norsund: nor}, etymology: "Proto-Valian *noru"}
+- {lemma: vili,    pos: adj,  gloss: [free], forms: {norsund: vil}, etymology: "Proto-Valian *wili"}
+- {lemma: nahi,    pos: noun, gloss: [nation, people], forms: {norsund: nay, plural: nahie}, etymology: "Proto-Valian *naghi", tier: core}
+- {lemma: muri,    pos: noun, gloss: [family, kin], forms: {norsund: myr}, etymology: "Proto-Valian *muri"}
+- {lemma: maro,    pos: adj,  gloss: [high, great], forms: {norsund: mar}, etymology: "Proto-Valian *maru"}
+- {lemma: gulno,   pos: noun, gloss: [ember], forms: {norsund: kull}, etymology: "Proto-Valian *gulnu"}
+- {lemma: nuro,    pos: adj,  gloss: [green], forms: {norsund: nur}, etymology: "Proto-Valian *nuru"}
+- {lemma: runo,    pos: noun, gloss: [secret], forms: {norsund: run}, etymology: "Proto-Valian *runu", notes: "means only 'secret' in Kedre; see runa for rune magic"}
+- {lemma: viro,    pos: noun, gloss: [forest], forms: {norsund: vir}, etymology: "Proto-Valian *wiru"}
+- {lemma: ilino,   pos: adj,  gloss: [holy], forms: {norsund: ilin}, etymology: "Proto-Valian *iliinu", derived: [{lemma: ilinaro, pos: noun, gloss: [priest]}]}
+- {lemma: pelo,    pos: prep, gloss: [below, under], forms: {norsund: fjol}, etymology: "Proto-Valian *pelu"}
+- {lemma: auro,    pos: adj,  gloss: [gleaming, silver-bright], forms: {norsund: aur}, etymology: "Proto-Valian *auru"}
+- {lemma: nimo,    pos: noun, gloss: [night], forms: {norsund: nim}, etymology: "Proto-Valian *nimu"}
+- {lemma: neddo,   pos: noun, gloss: [firmament, sky], forms: {norsund: nett}, etymology: "Proto-Valian *neddu"}
+- {lemma: uro,     pos: noun, gloss: [origin, source], forms: {norsund: ur}, etymology: "Proto-Valian *uru"}
+- {lemma: tammo,   pos: noun, gloss: [hand], forms: {norsund: thamm}, etymology: "Proto-Valian *tammu", notes: "also the number five"}
+- {lemma: fovo,    pos: num,  gloss: [two], forms: {norsund: dov}, etymology: "Proto-Valian *dhowu", tier: core}
+- {lemma: trimi,   pos: num,  gloss: [three], forms: {norsund: thrim}, etymology: "Proto-Valian *trimi", tier: core}
+- {lemma: sevi,    pos: num,  gloss: [seven], forms: {norsund: sev}, etymology: "Proto-Valian *sewi", tier: core}
+- {lemma: kvandro, pos: noun, gloss: [wanderer, vagrant], forms: {norsund: wander}, etymology: "Proto-Valian *kwandhru", derived: [{lemma: kvandare, pos: verb, class: are, gloss: [to banish, to make wander]}]}
+- {lemma: fauto,   pos: noun, gloss: [death], forms: {norsund: dauth}, etymology: "Proto-Valian *dhautu", derived: [{lemma: fautire, pos: verb, class: ire, gloss: [to die]}, {lemma: fautare, pos: verb, class: are, gloss: [to kill]}, {lemma: fautaro, pos: noun, gloss: [dead one, revenant], forms: {plural: fautari}, notes: "the Kedre word for the undead of Marheim"}]}
+- {lemma: aro,     pos: noun, gloss: [year], forms: {norsund: ar}, etymology: "Proto-Valian *aru"}
+
+# --- Sources of Norsund loanwords ---
+- {lemma: murra,    pos: noun, gloss: [wall], forms: {norsund_loan: mur, plural: murre}, epoch: contact, notes: "occupation-era loan; Norsund Kjoldmur"}
+- {lemma: rivia,    pos: noun, gloss: [channel, canal], forms: {norsund_loan: rie, plural: rivie}, parts: [riva, ia], epoch: contact, notes: "occupation-era loan"}
+- {lemma: merkadu,  pos: noun, gloss: [market], forms: {norsund_loan: merk, plural: merkadi}, epoch: contact, notes: "keeps a final u from Proto-Valian *-ugh", derived: [{lemma: merkadaro, pos: noun, gloss: [merchant]}]}
+- {lemma: kampo,    pos: noun, gloss: [field, square], forms: {norsund_loan: kamp, plural: kampi}, epoch: contact}
+- {lemma: porta,    pos: noun, gloss: [gate], forms: {norsund_loan: port, plural: porte}, epoch: contact}
+- {lemma: turra,    pos: noun, gloss: [tower, fortress-tower], forms: {norsund_loan: tur, plural: turre}, epoch: contact, notes: "borrowed twice: tur (occupation) and turra (learned)"}
+- {lemma: ke,       pos: conj, gloss: [that, who, which], forms: {norsund_loan: ke}, tier: core, notes: "introduces every subordinate clause"}
+- {lemma: alkimia,  pos: noun, gloss: [alchemy], forms: {norsund_loan: alkimia}, epoch: contact, notes: "learned loan", derived: [{lemma: alkimiaro, pos: noun, gloss: [alchemist]}]}
+- {lemma: medikina, pos: noun, gloss: [medicine], forms: {norsund_loan: medikina}, epoch: contact, notes: "learned loan"}
+- {lemma: kupola,   pos: noun, gloss: [dome], forms: {norsund_loan: kupola}, epoch: contact, notes: "learned loan"}
+
+# --- Grammar words ---
+- {lemma: me,     pos: pron, gloss: [I, me], forms: {possessive: mue}, tier: core}
+- {lemma: te,     pos: pron, gloss: [you (one)], forms: {possessive: tue}, tier: core}
+- {lemma: se,     pos: pron, gloss: [he, she, it], forms: {possessive: sue}, tier: core}
+- {lemma: nos,    pos: pron, gloss: [we, us], forms: {possessive: nostre}}
+- {lemma: vos,    pos: pron, gloss: [you (several)], forms: {possessive: vostre}}
+- {lemma: sei,    pos: pron, gloss: [they, them], forms: {possessive: sue}}
+- {lemma: kai,    pos: pron, gloss: [who, whoever]}
+- {lemma: kado,   pos: pron, gloss: [what]}
+- {lemma: kaube,  pos: adv,  gloss: [where]}
+- {lemma: kada,   pos: det,  gloss: [every, each]}
+- {lemma: ed,     pos: conj, gloss: [and]}
+- {lemma: sed,    pos: conj, gloss: [but]}
+- {lemma: au,     pos: conj, gloss: [or]}
+- {lemma: no,     pos: part, gloss: [not]}
+- {lemma: sik,    pos: adv,  gloss: [thus, so]}
+- {lemma: oie,    pos: adv,  gloss: [today]}
+- {lemma: in,     pos: prep, gloss: [in, into]}
+- {lemma: a,      pos: prep, gloss: [to, at]}
+- {lemma: de,     pos: prep, gloss: [from]}
+- {lemma: kon,    pos: prep, gloss: [with]}
+- {lemma: per,    pos: prep, gloss: [through, by]}
+- {lemma: kontra, pos: prep, gloss: [against]}
+- {lemma: nulo,   pos: num,  gloss: [zero, none]}
+- {lemma: eno,    pos: num,  gloss: [one]}
+- {lemma: kvaro,  pos: num,  gloss: [four]}
+- {lemma: sesi,   pos: num,  gloss: [six]}
+- {lemma: atti,   pos: num,  gloss: [eight]}
+- {lemma: nevi,   pos: num,  gloss: [nine]}
+- {lemma: dekra,  pos: num,  gloss: [ten]}
+- {lemma: kenti,  pos: num,  gloss: [hundred]}
+- {lemma: mila,   pos: num,  gloss: [thousand]}
+- {lemma: primo,  pos: adj,  gloss: [first]}
+
+# --- Verbs ---
+- {lemma: esere,   pos: verb, class: irregular, gloss: [to be], forms: {present.3sg: es, present.3pl: son, past.3sg: era, optative.3sg: sia}}
+- {lemma: jubare,  pos: verb, class: are, gloss: [to command, to decree], derived: [{lemma: jubato, pos: noun, gloss: [decree (lit. the commanded)]}]}
+- {lemma: nasare,  pos: verb, class: are, gloss: [to be born]}
+- {lemma: kresare, pos: verb, class: are, gloss: [to grow]}
+- {lemma: stare,   pos: verb, class: are, gloss: [to stand]}
+- {lemma: tenire,  pos: verb, class: ire, gloss: [to hold, to keep]}
+- {lemma: vinkare, pos: verb, class: are, gloss: [to conquer, to defeat]}
+- {lemma: vokare,  pos: verb, class: are, gloss: [to call upon, to pray]}
+- {lemma: ofrare,  pos: verb, class: are, gloss: [to offer, to give]}
+- {lemma: ardire,  pos: verb, class: ire, gloss: [to burn], derived: [{lemma: ardo, pos: noun, gloss: [altar, fire-altar]}]}
+- {lemma: rektare, pos: verb, class: are, gloss: [to rule, to set straight], notes: "root of the name Rechtar"}
+- {lemma: obsedare, pos: verb, class: are, gloss: [to besiege], derived: [{lemma: obsedo, pos: noun, gloss: [siege], notes: "the thirteen-year siege of Marheim (37-50 a.v.e.)"}]}
+- {lemma: vole,    pos: verb, class: auxiliary, gloss: [will (future)], notes: "vole + infinitive"}
+
+# --- Empire, law and war ---
+- {lemma: kera,     pos: noun, gloss: [crown], forms: {plural: kere}, derived: [{lemma: keraro, pos: noun, gloss: [emperor (lit. crown-bearer)]}]}
+- {lemma: reio,     pos: noun, gloss: [king], derived: [{lemma: reino, pos: noun, gloss: [realm, kingdom]}, {lemma: reiato, pos: noun, gloss: [regent, governor], notes: "Doir Vaire's title over the Vilnayan towns"}]}
+- {lemma: dovra,    pos: noun, gloss: [law, statute]}
+- {lemma: sedio,    pos: noun, gloss: [throne, seat], derived: [{lemma: sedira, pos: noun, gloss: [court, tribunal]}, {lemma: sedaro, pos: noun, gloss: [judge]}]}
+- {lemma: legia,    pos: noun, gloss: [legion, army], derived: [{lemma: legaro, pos: noun, gloss: [soldier]}]}
+- {lemma: lanka,    pos: noun, gloss: [spear]}
+- {lemma: korra,    pos: noun, gloss: [armour]}
+- {lemma: pugra,    pos: noun, gloss: [war]}
+- {lemma: tranka,   pos: noun, gloss: [peace]}
+- {lemma: traio,    pos: noun, gloss: [traitor], notes: "said of Rundir Voidet after 50 a.v.e."}
+- {lemma: dino,     pos: noun, gloss: [coin]}
+- {lemma: kriso,    pos: noun, gloss: [gold]}
+- {lemma: vika,     pos: noun, gloss: [town, quarter of a city]}
+
+# --- Church of Light and learning ---
+- {lemma: domo,     pos: noun, gloss: [house], derived: [{lemma: Domo Luxis, pos: name, gloss: [the Church of Light (lit. House of Luxis)], parts: [domo, Luxis]}]}
+- {lemma: primaro,  pos: noun, gloss: [first priest (head of the Church of Light)], parts: [primo, aro], notes: "Rechtar Vaire took this title in 0 a.v.e."}
+- {lemma: divo,     pos: noun, gloss: [god]}
+- {lemma: sango,    pos: noun, gloss: [blood], derived: [{lemma: sangia, pos: noun, gloss: [bloodline, lineage]}]}
+- {lemma: posto,    pos: noun, gloss: [heir (lit. the one after)]}
+- {lemma: neto,     pos: noun, gloss: [child]}
+- {lemma: genaro,   pos: noun, gloss: [parent]}
+- {lemma: lekio,    pos: noun, gloss: [school, academy], notes: "Lekio Alkimie Kerana: the Imperial Academy of Alchemy"}
+- {lemma: krepito,  pos: noun, gloss: [explosive powder]}
+- {lemma: runa,     pos: noun, gloss: [rune magic (of Thiolden)], forms: {plural: rune}, layer: norsund-loan, epoch: contact, notes: "borrowed from Norsund run; a doublet of native runo 'secret'"}
+- {lemma: kedre,    pos: noun, gloss: [tongue, speech], forms: {plural: kedri}, notes: "the name of the language: the Tongue"}
+- {lemma: dia,      pos: noun, gloss: [day, sun]}
+- {lemma: riva,     pos: noun, gloss: [running water]}
+- {lemma: exa,      pos: noun, gloss: [spring, fountain]}
+- {lemma: arbo,     pos: noun, gloss: [tree], forms: {plural: arbi}}
+- {lemma: fusko,    pos: adj,  gloss: [dark]}
+- {lemma: anto,     pos: adj,  gloss: [old, ancient]}
+- {lemma: neo,      pos: adj,  gloss: [new]}
+
+# --- Names ---
+- {lemma: Luxis,      pos: name, gloss: [Luxis, goddess of light], parts: [luxi, s], forms: {norsund: Lysmar}, attested: [records/thiolden/general-timeline.yaml], notes: "luxi 'light' + dignity -s; Norsund calls her Lysmar"}
+- {lemma: Keras,      pos: name, gloss: [Keras, the imperial city (lit. the Crowned)], parts: [kera, s], attested: [records/thiolden/general-timeline.yaml]}
+- {lemma: Keria,      pos: name, gloss: [Keria, the Empire (lit. crown-land)], parts: [kera, ia], attested: [records/thiolden/auristar/auristar.yaml]}
+- {lemma: Vaire,      pos: name, gloss: [Vaire, the imperial house], notes: "ends in the dynastic -aire 'house, domain'; the first element is lost"}
+- {lemma: Vairean,    pos: adj,  gloss: [Vairean, of the house of Vaire], notes: "English adjective; standard spelling (not Varian)"}
+- {lemma: Reinovaire, pos: name, gloss: [Reinovaire, realm of Vaire], parts: [reino, Vaire], attested: [records/thiolden/general-timeline.yaml]}
+- {lemma: Rechtar,    pos: name, gloss: [Rechtar, 'ruler'], etymology: "rektare 'to rule' + agent -ar, in the old spelling cht", attested: [records/vairean-empire.yaml]}
+- {lemma: Doir,       pos: name, gloss: [Doir, daughter of Rechtar], attested: [records/thiolden/general-timeline.yaml]}
+- {lemma: Rundir,     pos: name, gloss: [Rundir, head of the Imperial Academy of Alchemy], notes: "a Kedre name; Norsund speakers hear run 'rune' in it, which sharpened his notoriety"}
+- {lemma: Voidet,     pos: name, gloss: [Voidet, family name 'of the emptiness'], etymology: "voida 'emptiness'"}
+- {lemma: voida,      pos: noun, gloss: [emptiness]}
+- {lemma: Exaire,     pos: name, gloss: [Exaire, domain of the springs], parts: [exa, aire], notes: "suggested replacement for the real-world name Exeter"}
+- {lemma: Arbaire,    pos: name, gloss: [Arbaire, domain of the trees], parts: [arbo, aire], notes: "suggested replacement for the real-world name Arbury"}
+- {lemma: Kedre,      pos: name, gloss: [Kedre, the Tongue (the imperial language)], parts: [kedre]}
+- {lemma: Valnor,     pos: name, gloss: [Valnor, north Valia], layer: norsund-loan, notes: "Norsund name used for the empire's homeland; replaced Valinor in the lore records"}

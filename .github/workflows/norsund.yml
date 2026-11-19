@@ -1,0 +1,44 @@
+name: Norsund language checks
+
+on:
+  pull_request:
+    paths:
+      - 'records/languages/**'
+      - 'tools/**'
+      - '.github/workflows/norsund.yml'
+  push:
+    paths:
+      - 'records/languages/**'
+      - 'tools/**'
+      - '.github/workflows/norsund.yml'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tools
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tools/package-lock.json
+      - name: Install
+        run: npm ci
+      - name: Engine tests
+        run: npm test
+      - name: Validate language records
+        run: node cli.mjs validate --verbose
+      - name: Check that every text can be voiced (reference audio)
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng
+          node audio/build_audio.mjs --check
+      - name: Build data and generated docs
+        run: node build.mjs
+      - name: Generated files are up to date
+        run: |
+          if ! git diff --quiet -- web ../docs/languages/norsund/dictionary.md ../docs/languages/norsund/english-index.md; then
+            echo "::warning::Generated files (dictionary docs or the web workbench) changed. Run 'node build.mjs' in tools/ and commit the result."
+          fi

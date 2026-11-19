@@ -1,0 +1,83 @@
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: Syntax
+contributor: Vledic#0001
+status: ratified
+
+rules:
+- id: SYN-01
+  title: Verb second (V2)
+  rule: >
+    In a main statement the finite verb is always the second element. The first slot can hold the subject, an object,
+    an adverb or a phrase; whatever is put first, the subject moves after the verb. Basic order is subject, verb, object, then
+    adverbials (manner, place, time).
+  examples:
+  - {form: "Tyr kjold-er mur-in i nim-in.", gloss: "Tyr guard-PRS wall-DEF in night-DEF", translation: "Tyr guards the wall at night."}
+  - {form: "I nim-in kjold-er Tyr mur-in.", gloss: "in night-DEF guard-PRS Tyr wall-DEF", translation: "At night, Tyr guards the wall."}
+  - {form: "Mur-in kjold-er Tyr.", gloss: "wall-DEF guard-PRS Tyr", translation: "The wall, Tyr guards. (context and animacy show who guards whom)"}
+
+- id: SYN-02
+  title: Questions
+  rule: >
+    Yes/no questions put the verb first. Questions with a ku- word put that word first and the verb second.
+    Answers: hel "yes" (literally "good, whole"), ne "no".
+  examples:
+  - {form: "Kjold-er dy mur-in?", gloss: "guard-PRS 2SG wall-DEF", translation: "Do you guard the wall?"}
+  - {form: "Kur ganer sel?", gloss: "where go.PRS 3SG.AN", translation: "Where is she going?"}
+
+- id: SYN-03
+  title: Subordinate clauses
+  rule: >
+    Subordinate clauses do not use V2: subject, then negation (ne), then verb. They are introduced by ke "that", sof "if",
+    kuna "when", ter ke "because", for ke "before", aft ke "after", thon "than".
+  examples:
+  - {form: "Em skyn-er ke Tyr ne kjold-er mur-in.", gloss: "1SG know-PRS COMP Tyr NEG guard-PRS wall-DEF", translation: "I know that Tyr does not guard the wall."}
+
+- id: SYN-04
+  title: Relative clauses
+  rule: >
+    A relative clause follows its noun and starts with ke "who, which, that" (a Kedre loan). The relativized noun leaves a gap;
+    for a possessor, a resumptive possessive is used.
+  examples:
+  - {form: "Vilkyr-in ke kjold-ade mur-in", gloss: "free.sword-DEF REL guard-PST wall-DEF", translation: "the free sword who guarded the wall"}
+  - {form: "Vilkyr-in ke seli kyr brast", gloss: "free.sword-DEF REL 3SG.AN.POSS blade burst.PST", translation: "the free sword whose blade broke"}
+
+- id: SYN-05
+  title: Noun phrase order
+  rule: >
+    Determiner or possessor, number, adjective, noun, prepositional phrase, relative clause. A genitive possessor takes the
+    determiner slot.
+  examples:
+  - {form: "Tyr-i dov skarp kyr-ar", gloss: "Tyr-GEN two sharp blade-PL.IN", translation: "Tyr's two sharp blades"}
+  - {form: "hes thrim aur star-en i nett-in", gloss: "this three silver star-PL.AN in sky-DEF", translation: "these three silver stars in the sky"}
+
+- id: SYN-06
+  title: Coordination
+  rule: eth "and", ava "but", vo "or". "Both ... and" is eth ... eth; "either ... or" is vo ... vo.
+  examples:
+  - {form: "Ur eth Nett", translation: "Ur and Nett"}
+
+- id: SYN-07
+  title: Emphasis (cleft)
+  rule: To focus a phrase, use es + phrase + ke + clause.
+  examples:
+  - {form: "Es Tyr ke kjold-er mur-in.", gloss: "be.PRS Tyr REL guard-PRS wall-DEF", translation: "It is Tyr who guards the wall."}
+
+- id: SYN-08
+  title: Existence
+  rule: >
+    "There is" uses es with the place first (V2) or at as a dummy subject.
+  examples:
+  - {form: "I mur-in es run.", gloss: "in wall-DEF be.PRS rune", translation: "There is a rune in the wall."}
+
+- id: SYN-09
+  title: Prepositions
+  rule: >
+    Norsund has prepositions only: i "in", a "on, at", ve "to, toward", ur "out of, from, by", fjol "under, beneath",
+    mar "above, over", hjo "with, beside", ter "for", thurg "through", ymb "around", mid "among, amid", for "before",
+    aft "after", ute "outside", inn "into". The full list is in dictionary/00-grammar-words.yaml.
+
+- id: SYN-10
+  title: Evidentials at the edge
+  rule: An evidential particle closes the sentence after everything else, set off by a comma (see Evidentials).

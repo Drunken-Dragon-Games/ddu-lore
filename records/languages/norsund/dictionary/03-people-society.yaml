@@ -1,0 +1,375 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: People, kin and society
+field: people
+contributor: Vledic#0001
+defaults: {layer: native, tier: common, status: ratified, epoch: old}
+context:
+- Kinship, races and peoples, guests and hosts, callings and professions named in the lore, social standing, and the Thieves' cant.
+- Kin terms are gender-neutral where English is not (ung "child", brod "sibling", hjun "spouse"), as is the whole pronoun system.
+
+entries:
+# --- Kin ---
+- lemma: amme
+  pos: noun
+  class: animate
+  gloss: [mother]
+  tier: core
+  epoch: proto
+  derived:
+  - {lemma: uramme, pos: noun, class: animate, gloss: [grandmother], parts: [ur, amme]}
+  - {lemma: ammeling, pos: noun, class: animate, gloss: [mummy, mama (child's word)], parts: [amme, ling]}
+- lemma: thade
+  pos: noun
+  class: animate
+  gloss: [father]
+  tier: core
+  epoch: proto
+  derived:
+  - {lemma: urthade, pos: noun, class: animate, gloss: [grandfather], parts: [ur, thade]}
+  - {lemma: thadeling, pos: noun, class: animate, gloss: [papa, dada (child's word)], parts: [thade, ling]}
+- lemma: ammethade
+  pos: noun
+  class: animate
+  gloss: [parent]
+  parts: [amme, thade]
+  notes: "a pair-compound, 'mother-father'; plural ammethaden 'parents'"
+  derived:
+  - {lemma: ammethadenuth, pos: adj, gloss: [orphaned, parentless], parts: [ammethade, nuth]}
+- lemma: ung
+  pos: noun
+  class: animate
+  gloss: [child, offspring]
+  tier: core
+  epoch: proto
+  notes: "Source of the parent-name suffix -ung ('child of'). It deliberately echoes the Germanic root for 'young'."
+  derived:
+  - {lemma: ungling, pos: noun, class: animate, gloss: [infant, little child], parts: [ung, ling]}
+  - {lemma: ungung, pos: noun, class: animate, gloss: [grandchild], parts: [ung, ung]}
+  - {lemma: ungnuth, pos: adj, gloss: [childless], parts: [ung, nuth]}
+  - {lemma: drottung, pos: noun, class: animate, gloss: [heir to a ruler, prince, princess], parts: [drott, ung]}
+  - {lemma: kyrung, pos: noun, class: animate, gloss: [squire (lit. blade-child)], parts: [kyr, ung]}
+- lemma: yng
+  pos: adj
+  gloss: [young]
+  tier: core
+  epoch: proto
+  etymology: "umlaut form of ung"
+  derived:
+  - {lemma: yngeth, pos: noun, class: inanimate, gloss: [youth (the time of being young)], parts: [yng, eth]}
+- lemma: hjun
+  pos: noun
+  class: animate
+  gloss: [spouse, wedded partner]
+  derived:
+  - {lemma: hjuna, pos: verb, class: weak, gloss: [to marry, to wed]}
+  - {lemma: hjunning, pos: noun, class: inanimate, gloss: [wedding, marriage]}
+  - {lemma: hjunnuth, pos: adj, gloss: [unwed, unmarried]}
+- {lemma: urlud, pos: noun, class: animate, gloss: [ancestor, forebear], parts: [ur, lud], forms: {plural: urlyd}, notes: "umlaut plural like lud"}
+- lemma: bryl
+  pos: noun
+  class: inanimate
+  gloss: [clan, kindred, extended family]
+  derived:
+  - {lemma: bryla, pos: adj, gloss: [kindred, of the clan], parts: [bryl, a]}
+  - {lemma: brylvard, pos: noun, class: animate, gloss: [clan elder, head of a clan], parts: [bryl, vard]}
+- {lemma: heimlyd, pos: noun, class: animate, gloss: [household, family (those living under one roof)], parts: [heim, lyd], notes: "a plural noun: 'home-people'"}
+- {lemma: dovling, pos: noun, class: animate, gloss: [twin], parts: [dov, ling]}
+- {lemma: kjalbrod, pos: noun, class: animate, gloss: [comrade, drinking companion (lit. drink-sibling)], parts: [kjal, brod], forms: {plural: kjalbred}, notes: "the warmest word for a friend in tavern culture"}
+- lemma: ulda
+  pos: verb
+  class: weak
+  gloss: [to inherit]
+  derived:
+  - {lemma: uldir, pos: noun, class: animate, gloss: [heir]}
+  - {lemma: uldning, pos: noun, class: inanimate, gloss: [inheritance, legacy]}
+
+# --- People, races and kinds ---
+- {lemma: hoth, pos: noun, class: animate, gloss: [man, male], tier: core, epoch: proto, notes: "used mainly when sex matters; lud 'person' is the everyday word"}
+- {lemma: dis, pos: noun, class: animate, gloss: [woman, female], tier: core, epoch: proto, notes: "used mainly when sex matters; lud 'person' is the everyday word"}
+- lemma: kin
+  pos: noun
+  class: inanimate
+  gloss: [kind, race, breed]
+  attested: [Vulkin, Dragonkin, Ulfkin]
+  notes: "Kept because canon race names (Vulkin, Dragonkin) already use it; it happens to match English 'kin'. A person of a race is animate: ludkin, haurnkin."
+  derived:
+  - {lemma: ludkin, pos: noun, class: animate, gloss: [human, humankind], parts: [lud, kin]}
+  - {lemma: grjotkin, pos: noun, class: animate, gloss: [dwarf, dwarves (lit. stone-kin)], parts: [grjot, kin], notes: "the dwarves of Karhak'Modan"}
+  - {lemma: haurnkin, pos: noun, class: animate, gloss: [Dragonkin], parts: [haurn, kin], notes: "Firewing Dragonkin = fyrflaug haurnkin"}
+  - {lemma: Vulkin, pos: name, class: animate, gloss: [Vulkin (lit. fox-kin)], parts: [vul, kin], notes: "proposed etymology"}
+- lemma: ysil
+  pos: noun
+  class: animate
+  gloss: [elf]
+  derived:
+  - {lemma: ysila, pos: adj, gloss: [elven, of the elves], parts: [ysil, a]}
+- {lemma: marlud, pos: noun, class: animate, gloss: [giant (lit. great person)], parts: [mar, lud], forms: {plural: marlyd}}
+- {lemma: virlud, pos: noun, class: animate, gloss: [outlaw (lit. forest-person)], parts: [vir, lud], forms: {plural: virlyd}}
+- {lemma: farlud, pos: noun, class: animate, gloss: [exile, one who lives far from home], parts: [far, lud], forms: {plural: farlyd}}
+- {lemma: uteheim, pos: noun, class: inanimate, gloss: [exile, banishment], parts: [ute, heim]}
+- {lemma: Wanderungen, pos: name, class: animate, gloss: [the Wandering Houses of Oudeheim (lit. children of the wanderers)], parts: [wander, ung, en]}
+- {lemma: vethbrod, pos: noun, class: animate, gloss: [sworn sibling, oath-brother, oath-sister], parts: [veth, brod], forms: {plural: vethbred}}
+- {lemma: brylvaldir, pos: noun, class: animate, gloss: [kinslayer], parts: [bryl, valdir]}
+- {lemma: orthlud, pos: noun, class: animate, gloss: [hero (lit. renown-person)], parts: [orth, lud], forms: {plural: orthlyd}}
+
+# --- Guests, hosts, friends and foes ---
+- lemma: velk
+  pos: noun
+  class: animate
+  gloss: [guest]
+  derived:
+  - {lemma: velka, pos: verb, class: weak, gloss: [to welcome, to host]}
+  - {lemma: velk, pos: interj, gloss: [welcome!]}
+  - {lemma: velkning, pos: noun, class: inanimate, gloss: [hospitality, welcome]}
+- {lemma: kjalthenir, pos: noun, class: animate, gloss: [tavern server, barmaid, potboy], parts: [kjal, thenir]}
+- lemma: dryn
+  pos: noun
+  class: animate
+  gloss: [friend]
+  tier: core
+  derived:
+  - {lemma: dryneth, pos: noun, class: inanimate, gloss: [friendship], parts: [dryn, eth]}
+  - {lemma: drynug, pos: adj, gloss: [friendly], parts: [dryn, ug]}
+  - {lemma: drynnuth, pos: adj, gloss: [friendless], parts: [dryn, nuth]}
+- lemma: skath
+  pos: noun
+  class: animate
+  gloss: [enemy, foe]
+  tier: core
+  derived:
+  - {lemma: skatha, pos: verb, class: weak, gloss: [to harm, to wrong]}
+  - {lemma: skatheth, pos: noun, class: inanimate, gloss: [enmity, feud], parts: [skath, eth]}
+  - {lemma: skathug, pos: adj, gloss: [hostile], parts: [skath, ug]}
+- lemma: thylk
+  pos: noun
+  class: inanimate
+  gloss: [crowd, throng, herd, pack]
+  derived:
+  - {lemma: thylka, pos: verb, class: weak, gloss: [to gather, to forage, to throng]}
+  - {lemma: thylkir, pos: noun, class: animate, gloss: [gatherer, forager]}
+  - {lemma: thylkvard, pos: noun, class: animate, gloss: [herder, shepherd], parts: [thylk, vard]}
+  - {lemma: ulfthylk, pos: noun, class: inanimate, gloss: [wolf pack], parts: [ulf, thylk]}
+- {lemma: byl, pos: noun, class: animate, gloss: [neighbour]}
+- {lemma: forir, pos: noun, class: animate, gloss: [leader, one who goes first], parts: [for, ir]}
+- {lemma: aftir, pos: noun, class: animate, gloss: [follower], parts: [aft, ir]}
+- lemma: lauta
+  pos: verb
+  class: weak
+  gloss: [to betray]
+  derived:
+  - {lemma: lautir, pos: noun, class: animate, gloss: [traitor], notes: "Rundir Voidet is the lautir of the Vairean Empire"}
+  - {lemma: lautning, pos: noun, class: inanimate, gloss: [betrayal, treason]}
+- lemma: trov
+  pos: adj
+  gloss: [loyal, "true", steadfast]
+  derived:
+  - {lemma: troveth, pos: noun, class: inanimate, gloss: [loyalty, troth], parts: [trov, eth]}
+  - {lemma: netrov, pos: adj, gloss: [disloyal, faithless], parts: [ne, trov]}
+
+# --- Rank and standing ---
+- lemma: orl
+  pos: noun
+  class: animate
+  gloss: [lord, noble]
+  derived:
+  - {lemma: orla, pos: adj, gloss: [noble, highborn], parts: [orl, a]}
+  - {lemma: orleth, pos: noun, class: inanimate, gloss: [nobility], parts: [orl, eth]}
+- lemma: kivid
+  pos: noun
+  class: animate
+  gloss: [citizen (of Auristar)]
+  layer: kedre
+  epoch: contact
+  etymology: "Kedre kividu 'citizen'"
+  derived:
+  - {lemma: kivideth, pos: noun, class: inanimate, gloss: [citizenship], parts: [kivid, eth]}
+- lemma: imperar
+  pos: noun
+  class: animate
+  gloss: [emperor]
+  layer: kedre
+  epoch: contact
+  etymology: "Kedre imperaru"
+  notes: "Rechtar Vaire is i Imperar in Norsund chronicles"
+- {lemma: sess, pos: noun, class: inanimate, gloss: [seat, rank, place (in a council)], notes: "champions of the Council games win a sess in the council"}
+- lemma: thena
+  pos: verb
+  class: weak
+  gloss: [to serve]
+  derived:
+  - {lemma: thenir, pos: noun, class: animate, gloss: [servant, attendant]}
+  - {lemma: thenning, pos: noun, class: inanimate, gloss: [service, duty]}
+- lemma: thigga
+  pos: verb
+  class: weak
+  gloss: [to beg]
+  derived:
+  - {lemma: thiggir, pos: noun, class: animate, gloss: [beggar]}
+- {lemma: thynung, pos: noun, class: inanimate, gloss: [parent-name, patronymic or matronymic], parts: [thyn, ung], notes: "thyn 'name' is in 11-mind-speech-arts.yaml"}
+- {lemma: brylthyn, pos: noun, class: inanimate, gloss: [clan name, family name], parts: [bryl, thyn]}
+- {lemma: orlung, pos: noun, class: animate, gloss: [young noble, child of a lord], parts: [orl, ung]}
+- {lemma: aventa, pos: verb, class: weak, gloss: [to venture, to go adventuring], parts: [avent, a], layer: kedre, epoch: contact}
+- {lemma: pagvard, pos: noun, class: animate, gloss: [paymaster], parts: [pag, vard]}
+- lemma: orth
+  pos: noun
+  class: inanimate
+  gloss: [renown, fame, good name]
+  derived:
+  - {lemma: orthug, pos: adj, gloss: [famous, renowned], parts: [orth, ug]}
+  - {lemma: orthnuth, pos: adj, gloss: [unknown, of no renown], parts: [orth, nuth]}
+- lemma: skyrn
+  pos: noun
+  class: inanimate
+  gloss: [shame, disgrace]
+  derived:
+  - {lemma: skyrna, pos: verb, class: weak, gloss: [to shame, to disgrace]}
+  - {lemma: skyrnug, pos: adj, gloss: [shameful], parts: [skyrn, ug]}
+  - {lemma: skyrnnuth, pos: adj, gloss: [shameless], parts: [skyrn, nuth]}
+- lemma: sidd
+  pos: noun
+  class: inanimate
+  gloss: [custom, tradition]
+  derived:
+  - {lemma: sidda, pos: adj, gloss: [traditional, customary], parts: [sidd, a]}
+- {lemma: jovning, pos: noun, class: inanimate, gloss: [gift, present], parts: [jova, ning]}
+- lemma: thul
+  pos: noun
+  class: inanimate
+  gloss: [news, tidings, message]
+  derived:
+  - {lemma: thulir, pos: noun, class: animate, gloss: [messenger, herald]}
+  - {lemma: thula, pos: verb, class: weak, gloss: [to announce, to bring news]}
+
+# --- Councils and contests ---
+- lemma: ratha
+  pos: verb
+  class: weak
+  gloss: [to advise, to counsel]
+  derived:
+  - {lemma: rathning, pos: noun, class: inanimate, gloss: [counsel, advice]}
+  - {lemma: rathir, pos: noun, class: animate, gloss: [advisor, counsellor], notes: "the Lights advise the two rulers; Ulf is the king's rathir"}
+  - {lemma: rathheim, pos: noun, class: inanimate, gloss: [council hall], parts: [rath, heim], notes: "rath 'council' is in 08-sky-faith-magic.yaml"}
+- {lemma: Stevdysk, pos: name, class: inanimate, gloss: [the Council games (held every seven years for seven days)], parts: [stev, dysk], register: starisund, notes: "dysk 'contest' is in 08-sky-faith-magic.yaml; champions win a sess in the council"}
+- lemma: prov
+  pos: noun
+  class: inanimate
+  gloss: [trial, test, ordeal]
+  layer: kedre
+  epoch: contact
+  etymology: "Kedre probu 'proof, test'"
+  derived:
+  - {lemma: prova, pos: verb, class: weak, gloss: [to test, to try]}
+
+# --- Callings and professions ---
+- lemma: sodal
+  pos: noun
+  class: inanimate
+  gloss: [guild, union, sworn fellowship]
+  layer: kedre
+  epoch: contact
+  etymology: "Kedre sodalu 'fellowship'"
+  derived:
+  - {lemma: sodalvard, pos: noun, class: animate, gloss: [guild master], parts: [sodal, vard], notes: "Vale is the sodalvard of the Thieves Guild"}
+  - {lemma: sodalnay, pos: noun, class: animate, gloss: [guild members, guildsfolk], parts: [sodal, nay]}
+- lemma: avent
+  pos: noun
+  class: inanimate
+  gloss: [adventure, venture]
+  layer: kedre
+  epoch: contact
+  etymology: "Kedre aventura"
+  derived:
+  - {lemma: aventir, pos: noun, class: animate, gloss: [adventurer]}
+  - {lemma: Aventsodal, pos: name, class: inanimate, gloss: [the Adventurers' Guild], parts: [avent, sodal]}
+- {lemma: snikning, pos: noun, class: inanimate, gloss: [theft], parts: [snika, ning], notes: "snika 'to steal' and snikir 'thief' are in 10-city-craft-trade.yaml"}
+- {lemma: Snikirsodal, pos: name, class: inanimate, gloss: [the Thieves Guild of Auristar], parts: [snikir, sodal]}
+- lemma: pag
+  pos: noun
+  class: inanimate
+  gloss: [pay, wage, hire]
+  layer: kedre
+  epoch: contact
+  etymology: "Kedre pagu 'payment'"
+  derived:
+  - {lemma: paga, pos: verb, class: weak, gloss: [to pay, to hire]}
+  - {lemma: pagir, pos: noun, class: animate, gloss: [mercenary, sellsword]}
+  - {lemma: pagnuth, pos: adj, gloss: [unpaid], parts: [pag, nuth]}
+- lemma: ridir
+  pos: noun
+  class: animate
+  gloss: [rider, horseman]
+  parts: [rida, ir]
+  derived:
+  - {lemma: ridkjold, pos: noun, class: inanimate, gloss: [cavalry corps], parts: [rid, kjold]}
+  - {lemma: kjoldridir, pos: noun, class: animate, gloss: [knight (lit. ward-rider)], parts: [kjold, ridir], notes: "Marendil is a kjoldridir"}
+- {lemma: lyskyr, pos: noun, class: animate, gloss: [paladin (lit. light-blade)], parts: [lys, kyr], notes: "Tyr is a lyskyr"}
+- {lemma: kraftir, pos: noun, class: animate, gloss: [mage, wielder of magic], parts: [kraft, ir], notes: "Ulf, Magi of the Seven Lights, is a kraftir"}
+- {lemma: alkimir, pos: noun, class: animate, gloss: [alchemist], parts: [alkimia, ir], notes: "learned loan + native suffix; Rundir Voidet was the empire's foremost alkimir"}
+- {lemma: stariglynir, pos: noun, class: animate, gloss: [astronomer, star-watcher], parts: [stari, glynir], notes: "Haakon keeps the observatory"}
+- {lemma: ritvard, pos: noun, class: animate, gloss: [librarian, keeper of writings], parts: [rit, vard]}
+- {lemma: skynvard, pos: noun, class: animate, gloss: [lore keeper], parts: [skyn, vard], notes: "Othil's title"}
+- {lemma: Kjoldmurvard, pos: noun, class: animate, gloss: [Protector of the Kjoldmur], parts: [Kjoldmur, vard], notes: "Marendil's title"}
+- lemma: staul
+  pos: noun
+  class: inanimate
+  gloss: [stall, shop, booth]
+  derived:
+  - {lemma: staulvard, pos: noun, class: animate, gloss: [shopkeeper], parts: [staul, vard]}
+- {lemma: dunkmerkir, pos: noun, class: animate, gloss: [black-market trader], parts: [dunk, merkir], notes: "Gulnim's trade"}
+- lemma: vanga
+  pos: verb
+  class: weak
+  gloss: [to till, to farm]
+  etymology: "from vang 'field'"
+  derived:
+  - {lemma: vangir, pos: noun, class: animate, gloss: [farmer]}
+- lemma: hylda
+  pos: verb
+  class: weak
+  gloss: [to dig, to mine]
+  derived:
+  - {lemma: hyldir, pos: noun, class: animate, gloss: [digger]}
+  - {lemma: fjolhyldir, pos: noun, class: animate, gloss: [miner (lit. deep-digger)], parts: [fjol, hyldir]}
+- {lemma: vimir, pos: noun, class: animate, gloss: [spy, informer (lit. whisperer)], parts: [vima, ir]}
+- {lemma: vyrthkjolder, pos: noun, class: animate, gloss: [bodyguard], parts: [vyrth, kjolder]}
+
+# --- Players, performers and fools ---
+- lemma: lyka
+  pos: verb
+  class: weak
+  gloss: [to perform, to play (music or a part)]
+  notes: "to play a game is dyska (see 08)"
+  derived:
+  - {lemma: lykir, pos: noun, class: animate, gloss: [performer, musician]}
+  - {lemma: lykning, pos: noun, class: inanimate, gloss: [play, performance, show]}
+  - {lemma: lykvang, pos: noun, class: inanimate, gloss: [circus (lit. play-field)], parts: [lyk, vang], notes: "Vadanna performed in the Auristar lykvang"}
+- {lemma: kyfir, pos: noun, class: animate, gloss: [juggler (lit. thrower)], parts: [kyfa, ir]}
+- lemma: spylla
+  pos: verb
+  class: weak
+  gloss: [to vault, to somersault]
+  derived:
+  - {lemma: spyllir, pos: noun, class: animate, gloss: [acrobat, trapeze artist]}
+- lemma: gykk
+  pos: noun
+  class: animate
+  gloss: [fool]
+  derived:
+  - {lemma: gykka, pos: verb, class: weak, gloss: [to jest, to play the fool]}
+  - {lemma: gykkir, pos: noun, class: animate, gloss: [jester, clown]}
+  - {lemma: gykketh, pos: noun, class: inanimate, gloss: [folly, foolishness], parts: [gykk, eth]}
+
+# --- Thieves' cant (backslang; sandbox) ---
+- {lemma: krem, pos: noun, class: inanimate, gloss: [market (cant)], register: cant, tier: sandbox, status: proposed, etymology: "merk reversed"}
+- {lemma: ryk, pos: noun, class: inanimate, gloss: [blade, knife (cant)], register: cant, tier: sandbox, status: proposed, etymology: "kyr reversed"}
+- {lemma: drav, pos: noun, class: animate, gloss: [city guard, warden (cant)], register: cant, tier: sandbox, status: proposed, etymology: "vard reversed"}
+- {lemma: ryf, pos: noun, class: animate, gloss: [cook (cant)], register: cant, tier: sandbox, status: proposed, etymology: "fyr reversed"}
+- {lemma: syl, pos: noun, class: animate, gloss: [a Light; the law, the authorities (cant)], register: cant, tier: sandbox, status: proposed, etymology: "lys reversed"}
+- {lemma: min, pos: noun, class: inanimate, gloss: [night, a job done by night (cant)], register: cant, tier: sandbox, status: proposed, etymology: "nim reversed"}
+- {lemma: lados, pos: noun, class: inanimate, gloss: [the Guild (cant)], register: cant, tier: sandbox, status: proposed, etymology: "sodal reversed"}
+- {lemma: rikrem, pos: noun, class: animate, gloss: [rich merchant, a fat mark (cant)], register: cant, tier: sandbox, status: proposed, etymology: "merkir reversed"}
+- {lemma: gad, pos: noun, class: inanimate, gloss: [day, daylight (cant)], register: cant, tier: sandbox, status: proposed, etymology: "dag reversed"}
+- {lemma: rigap, pos: noun, class: animate, gloss: [hired blade, mercenary (cant)], register: cant, tier: sandbox, status: proposed, etymology: "pagir reversed"}
+- {lemma: divik, pos: noun, class: animate, gloss: [honest citizen, an easy mark (cant)], register: cant, tier: sandbox, status: proposed, etymology: "kivid reversed"}

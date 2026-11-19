@@ -1,0 +1,133 @@
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: Verbs
+contributor: Vledic#0001
+status: ratified
+context:
+- Verbs do not agree with the subject. One present form serves every person, as in Norwegian and Swedish.
+- Every verb's dictionary form (infinitive) ends in -a after a consonant. The stem is the infinitive minus -a.
+
+morphology:
+  weak:
+    infinitive: a
+    present: er
+    past: ade
+    participle: ad
+    present_participle: ande
+    verbal_noun: ning
+    agent: ir
+    imperative: ""
+    imperative_epenthesis: "e (added when the bare stem would end in a cluster that is not a legal coda: wandra > wandre!)"
+  strong_participle: en
+  strong:
+  - {infinitive: "lida", present: "lider", past: "leid", participle: "liden", class: "I", gloss: "to come"}
+  - {infinitive: "rida", present: "rider", past: "reid", participle: "riden", class: "I", gloss: "to ride"}
+  - {infinitive: "skrida", present: "skrider", past: "skreid", participle: "skriden", class: "I", gloss: "to creep, to crawl"}
+  - {infinitive: "bita", present: "biter", past: "beit", participle: "biten", class: "I", gloss: "to bite"}
+  - {infinitive: "bida", present: "bider", past: "beid", participle: "biden", class: "I", gloss: "to wait"}
+  - {infinitive: "skuva", present: "skuver", past: "skauv", participle: "skoven", class: "II", gloss: "to push, to shove"}
+  - {infinitive: "drypa", present: "dryper", past: "draup", participle: "dropen", class: "II", gloss: "to drip, to trickle"}
+  - {infinitive: "hensa", present: "henser", past: "hans", participle: "honsen", class: "III", gloss: "to take"}
+  - {infinitive: "mela", present: "meler", past: "mal", participle: "molen", class: "III", gloss: "to say, to speak"}
+  - {infinitive: "vetha", present: "vether", past: "vath", participle: "vothen", class: "III", gloss: "to bind by oath"}
+  - {infinitive: "bresta", present: "brester", past: "brast", participle: "brosten", class: "III", gloss: "to burst, to break"}
+  - {infinitive: "dola", present: "doler", past: "dul", participle: "dolen", class: "IV", gloss: "to fall, to descend"}
+  - {infinitive: "aga", present: "ager", past: "og", participle: "agen", class: "V", gloss: "to have, to own"}
+  - {infinitive: "gana", present: "ganer", past: "gon", participle: "ganen", class: "V", gloss: "to go, to walk"}
+  irregular:
+  - {infinitive: "vesa", present: "es", past: "vas", participle: "vesen", imperative: "ves", gloss: "to be"}
+  - {infinitive: "saja", present: "sajer", past: "sa", participle: "sajen", imperative: "se", gloss: "to see"}
+  - {infinitive: "jova", present: "jover", past: "jav", participle: "joven", imperative: "jov", gloss: "to give"}
+  auxiliaries:
+  - {form: "hal", gloss: "will, shall (future)", takes: "infinitive"}
+  - {form: "halde", gloss: "would (conditional)", takes: "infinitive"}
+  - {form: "ma", gloss: "may ... (wish, blessing)", takes: "infinitive"}
+  modals:
+  - {infinitive: "orka", gloss: "can, to be able"}
+  - {infinitive: "noda", gloss: "must, to have to"}
+  - {infinitive: "thursa", gloss: "to want, to desire"}
+  - {infinitive: "lofa", gloss: "may, to be allowed"}
+
+rules:
+- id: VERB-01
+  title: Regular (weak) verbs
+  rule: >
+    Present -er, past -ade, participle -ad, present participle -ande, command = bare stem. If the bare stem would end in
+    a cluster that is not a legal coda (grammar/01), the command adds -e: wandra > wandre!, sundra > sundre!.
+  examples:
+  - {form: "Tyr kjold-er mur-in.", gloss: "Tyr guard-PRS wall-DEF", translation: "Tyr guards the wall."}
+  - {form: "Tyr kjold-ade mur-in.", gloss: "Tyr guard-PST wall-DEF", translation: "Tyr guarded the wall."}
+  - {form: "Kjold!", gloss: "guard.IMP", translation: "Guard!"}
+
+- id: VERB-02
+  title: Strong verbs
+  rule: >
+    About twenty old, frequent verbs change their vowel in the past (ablaut) and take -en in the participle, in five
+    classes: I i-ei-i, II u/y-au-o, III e-a-o, IV o-u-o, V a-o-a. Their present is regular (-er). New verbs are always weak.
+  examples:
+  - {form: "Auristar dul.", gloss: "Auristar fall.PST", translation: "The Auristar fell."}
+  - {form: "Em leid.", gloss: "1SG come.PST", translation: "I came."}
+
+- id: VERB-03
+  title: To be
+  rule: >
+    vesa is irregular: present es, past vas, participle vesen. The present es is dropped in the carved style
+    (mottos, inscriptions, verse) and in short exclamations.
+  examples:
+  - {form: "Sel es thiol.", gloss: "3SG.AN be.PRS brave", translation: "She is brave."}
+  - {form: "Vil kyr-in, voth-en sund-in.", gloss: "free blade-DEF bind-PTCP word-DEF", translation: "Free the blade, bound the word."}
+
+- id: VERB-04
+  title: Future and conditional
+  rule: hal + infinitive marks the future or a firm intention; halde + infinitive means "would".
+  examples:
+  - {form: "Tyr hal kjold-a mur-in.", gloss: "Tyr FUT guard-INF wall-DEF", translation: "Tyr will guard the wall."}
+  - {form: "Sof em vas thiol, em halde rid-a.", gloss: "if 1SG be.PST brave 1SG COND ride-INF", translation: "If I were brave, I would ride."}
+
+- id: VERB-05
+  title: Perfect and pluperfect
+  rule: aga "have" (present ager, past og) + participle.
+  examples:
+  - {form: "Tyr ag-er kjold-ad mur-in.", gloss: "Tyr have-PRS guard-PTCP wall-DEF", translation: "Tyr has guarded the wall."}
+
+- id: VERB-06
+  title: Progressive
+  rule: vesa + present participle (-ande) for an action in progress.
+  examples:
+  - {form: "Tyr es kjold-ande.", gloss: "Tyr be.PRS guard-PRS.PTCP", translation: "Tyr is (on) guard."}
+
+- id: VERB-07
+  title: Passive
+  rule: vesa + participle; the doer, if named, follows ur "from, by".
+  examples:
+  - {form: "Mur-in vas kjold-ad ur Tyr.", gloss: "wall-DEF be.PST guard-PTCP from Tyr", translation: "The wall was guarded by Tyr."}
+
+- id: VERB-08
+  title: Wishes and blessings
+  rule: ma + infinitive, usually with the subject after ma.
+  examples:
+  - {form: "Ma star-en kjold-a dun!", gloss: "OPT star-PL.AN guard-INF 2PL.OBJ", translation: "May the stars keep you!"}
+
+- id: VERB-09
+  title: Modal verbs
+  rule: orka "can", noda "must", thursa "want", lofa "may (be allowed)" take a bare infinitive.
+  examples:
+  - {form: "Em ork-er ne rid-a.", gloss: "1SG can-PRS NEG ride-INF", translation: "I cannot ride."}
+
+- id: VERB-10
+  title: Negation
+  rule: >
+    In a main clause, ne comes right after the finite verb, or after the subject when the subject follows the verb.
+    In a subordinate clause, ne comes before the verb. A prohibition is ne + bare stem.
+  examples:
+  - {form: "Tyr kjold-er ne mur-in.", gloss: "Tyr guard-PRS NEG wall-DEF", translation: "Tyr does not guard the wall."}
+  - {form: "Fjol star-in lys-er run ne.", gloss: "under star-DEF shine-PRS rune NEG", translation: "Beneath the star, no rune shines."}
+  - {form: "...star ke ne vyrn-er", gloss: "star REL NEG move-PRS", translation: "...a star that does not move"}
+  - {form: "Ne kjal!", gloss: "NEG drink.IMP", translation: "Don't drink!"}
+
+- id: VERB-11
+  title: Verbs from nouns
+  rule: >
+    Any noun can become a weak verb by adding -a: sund "song" > sunda "to sing", lys "light" > lysa "to shine",
+    rit "writing" > rita "to write", kjold "ward" > kjolda "to guard".

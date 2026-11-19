@@ -1,0 +1,50 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: Additions for the texts and phrasebook
+field: additions
+contributor: Vledic#0001
+defaults: {layer: native, tier: common, status: ratified, epoch: modern}
+context:
+- Words the sample texts and the phrasebook (texts/01-04) needed that no other dictionary file had.
+
+entries:
+- lemma: thyn
+  pos: noun
+  class: inanimate
+  gloss: [name]
+  field: mind
+  epoch: old
+  notes: "root of marthyn 'fame', thynung 'parent-name' and brylthyn 'clan name'"
+  derived:
+  - {lemma: thyna, pos: verb, class: weak, gloss: [to name, to call]}
+- lemma: snika
+  pos: verb
+  class: weak
+  gloss: [to steal]
+  field: people
+  notes: "root of snikning 'theft', Sniklag and Snikirsodal"
+  derived:
+  - {lemma: snikir, pos: noun, class: animate, gloss: [thief]}
+- lemma: sjon
+  pos: noun
+  class: inanimate
+  gloss: [pardon, forgiveness]
+  field: mind
+  derived:
+  - {lemma: sjona, pos: verb, class: weak, gloss: [to forgive, to pardon]}
+- {lemma: sjon, pos: interj, gloss: ["sorry!", "pardon me!"], field: mind, notes: "Norsund has no word for 'please'; polite requests use ma (may) and, in Auristar, the plural dyn"}
+- {lemma: Jalkvyrsk, pos: name, class: animate, gloss: [Winterbeard (family name of Alkregg and Astrid)], parts: [jalk, vyrsk], field: names}
+- {lemma: Jalkvyrski Sjen, pos: name, class: inanimate, gloss: ["Winterbeard's Sigil (the tavern in the Fourth Ring of Auristar)"], parts: [Jalkvyrsk, i, sjen], field: names}
+- {lemma: Kjalad Haurn, pos: name, class: inanimate, gloss: [the Drunken Dragon (the tavern that names the universe)], parts: [kjalad, haurn], field: names}
+
+# --- Canon characters (records/thiolden/auristar/characters/, user-submitted-stories/) ---
+- {lemma: Haakon, pos: name, class: animate, gloss: [Haakon (the Fifth Light)], layer: old-norsund, field: names, notes: "inherited Farheim name; meaning lost"}
+- {lemma: Astrid, pos: name, class: animate, gloss: ["Astrid (innkeeper of Winterbeard's Sigil)"], layer: old-norsund, field: names, notes: "inherited Farheim name; full name Astrid Alkreggung"}
+- {lemma: Alkregg, pos: name, class: animate, gloss: [Alkregg Winterbeard (Astrid's father)], layer: old-norsund, field: names}
+- {lemma: Kilia, pos: name, class: animate, gloss: [Kilia (a bard)], layer: foreign, field: names}
+- {lemma: Othil, pos: name, class: animate, gloss: [Othil (the Seventh Light; Ath'alan elf)], layer: foreign, field: names}
+- {lemma: Vadanna, pos: name, class: animate, gloss: [Vadanna (the Joybringer; elf)], layer: foreign, field: names}
+- {lemma: Gadrull, pos: name, class: animate, gloss: [Gadrull (the Culinary Flame; Dragonkin)], layer: foreign, field: names}
+- {lemma: Marendil, pos: name, class: animate, gloss: [Marendil (Protector of the Kjoldmur)], layer: foreign, field: names}
+- {lemma: Volggan, pos: name, class: animate, gloss: [Volggan (the collector of the East Fold; Vulkin)], layer: foreign, field: names, notes: "standard spelling (ORTH-06)"}

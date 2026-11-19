@@ -1,0 +1,386 @@
+<title>Norsund Workbench</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+/* Layout: a working tool — night-sky header with the star script, a tab rail, then one panel at a time.
+   Tall condensed display type for names, Gentium for every Norsund form, quiet stone surfaces elsewhere. */
+:root{
+  --bg:#eef0f4; --surface:#ffffff; --sunk:#e4e7ef; --ink:#121733; --muted:#545d7c; --line:#d3d8e5;
+  --cyan:#0a7584; --violet:#8a33a8; --mint:#1b7556; --warn:#a4501a; --night:#0b1024; --night-ink:#e7e5e0;
+  --lysrit-star:#0a7584; --lysrit-sacred:#8a33a8; --runar-glow:#18b6c9;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --lang:"Gentium Book Plus","Charis SIL","Doulos SIL",Georgia,serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b1024; --surface:#121935; --sunk:#0f1530; --ink:#e7e5e0; --muted:#98a1c3; --line:#262f52;
+    --cyan:#63d5e3; --violet:#cf86e8; --mint:#7fdfbc; --warn:#f0a36b; --night:#070b1a; --night-ink:#e7e5e0;
+    --lysrit-star:#8ef0ff; --lysrit-sacred:#cf86e8; --runar-glow:#8ef0ff; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b1024; --surface:#121935; --sunk:#0f1530; --ink:#e7e5e0; --muted:#98a1c3; --line:#262f52;
+  --cyan:#63d5e3; --violet:#cf86e8; --mint:#7fdfbc; --warn:#f0a36b; --night:#070b1a; --night-ink:#e7e5e0;
+  --lysrit-star:#8ef0ff; --lysrit-sacred:#cf86e8; --runar-glow:#8ef0ff; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--cyan)}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+[hidden]{display:none!important}
+.lang{font-family:var(--lang)}
+.ipa{font-family:var(--lang);color:var(--muted)}
+.mono{font-family:var(--mono);font-size:.85em}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.small{font-size:.86rem}
+
+/* Header band */
+.band{background:var(--night);color:var(--night-ink);--lysrit-star:#8ef0ff;--lysrit-sacred:#cf86e8}
+.band .wrap{padding-block:22px 0}
+.head{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:flex-end;justify-content:space-between}
+.head h1{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,9vw,4.6rem);line-height:.9;margin:0;text-transform:uppercase;letter-spacing:.01em}
+.head p{margin:6px 0 0;max-width:60ch;color:#b9c0dc;font-size:.95rem}
+.head .glyph{min-width:0;overflow:hidden;color:var(--night-ink)}
+.head .glyph svg{display:block;max-width:100%;height:auto}
+.stats{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:10px;font-size:.82rem;color:#b9c0dc;font-variant-numeric:tabular-nums}
+.stats b{color:var(--night-ink);font-weight:600}
+.tabs{display:flex;gap:2px;margin-top:18px;overflow-x:auto;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.tabs a{flex:0 0 auto;color:#b9c0dc;text-decoration:none;padding:10px 14px 11px;border-radius:6px 6px 0 0;font-weight:500;font-size:.95rem}
+.tabs a:hover{color:#fff}
+.tabs a[aria-current="page"]{background:var(--bg);color:var(--ink)}
+.theme-btn{background:transparent;border:1px solid #3b4672;color:#b9c0dc;border-radius:999px;padding:4px 12px;font-size:.8rem;cursor:pointer}
+.theme-btn:hover{color:#fff;border-color:#8ef0ff}
+
+main{padding-block:24px 64px}
+.panel h2{font-family:var(--display);font-weight:800;font-size:clamp(1.8rem,4.5vw,2.5rem);line-height:1;text-transform:uppercase;margin:0 0 6px;letter-spacing:.01em}
+.panel .lede{color:var(--muted);margin:0 0 18px;max-width:72ch}
+h3{font-size:1.02rem;font-weight:600;margin:22px 0 8px}
+.grid2{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:24px;align-items:start}
+.grid-even{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:20px;align-items:start}
+.grid-even > *,.grid2 > *{min-width:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px 18px}
+.field{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
+.field label,.lbl{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+input[type=text],input[type=search],input[type=number],select,textarea{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 10px;min-width:0;width:100%}
+textarea{resize:vertical;min-height:70px;font-family:var(--lang);font-size:1.08rem}
+input.big{font-family:var(--lang);font-size:1.15rem}
+.btn{background:var(--ink);color:var(--bg);border:0;border-radius:6px;padding:8px 14px;font-weight:600;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn:hover{opacity:.9}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 10px;font-size:.85rem;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--cyan);border-color:var(--cyan);color:var(--bg)}
+.chip.lang{font-size:.95rem}
+.badge{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid currentColor;color:var(--muted);white-space:nowrap}
+.badge.core{color:var(--mint)}.badge.kedre{color:var(--violet)}.badge.poetic,.badge.old{color:var(--cyan)}.badge.proposed,.badge.sandbox{color:var(--warn)}
+
+/* Dictionary */
+.results{list-style:none;margin:8px 0 0;padding:0;border:1px solid var(--line);border-radius:8px;background:var(--surface);max-height:62vh;overflow:auto}
+.results li{border-bottom:1px solid var(--line)}
+.results li:last-child{border-bottom:0}
+.results button{all:unset;box-sizing:border-box;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;width:100%;padding:8px 12px;cursor:pointer}
+.results button:hover,.results button[aria-current="true"]{background:var(--sunk)}
+.results button:focus-visible{outline:2px solid var(--cyan);outline-offset:-2px}
+.results .w{font-family:var(--lang);font-size:1.08rem}
+.results .p{font-size:.75rem;color:var(--muted);align-self:center}
+.results .g{grid-column:1/-1;font-size:.86rem;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.letters{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px}
+.letters button{font-family:var(--lang);border:1px solid var(--line);background:var(--surface);border-radius:4px;min-width:30px;padding:2px 6px;cursor:pointer}
+.letters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.forms-hint{font-size:.88rem;margin-top:8px;display:flex;flex-direction:column;gap:4px}
+.forms-hint button{all:unset;cursor:pointer;color:var(--cyan)}
+.entry-head{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline}
+.headword{overflow-wrap:anywhere;font-family:var(--lang);font-size:clamp(2.2rem,6vw,3.2rem);line-height:1.05;font-weight:700;margin:0}
+.pron{display:flex;flex-wrap:wrap;gap:4px 18px;margin:6px 0 4px;font-size:.95rem}
+.pron span b{font-weight:600;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-right:6px;font-family:var(--body)}
+.glosses{font-size:1.15rem;margin:10px 0 6px}
+.meta-list{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:6px 14px;margin:14px 0 0;font-size:.93rem}
+.meta-list dt{color:var(--muted);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;padding-top:2px}
+.meta-list dd{margin:0}
+.linkword{all:unset;cursor:pointer;color:var(--cyan);font-family:var(--lang)}
+.linkword:hover{text-decoration:underline}
+.linkword:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:7px 12px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+th{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--sunk);white-space:nowrap}
+td.f{font-family:var(--lang);font-size:1.02rem}
+.scripts-out{display:flex;flex-direction:column;gap:12px}
+.svgbox{overflow-x:auto;color:var(--ink);padding:4px 0}
+.svgbox svg{display:block}
+.svg-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+
+/* Interlinear */
+.ilg{display:flex;flex-wrap:wrap;gap:6px 14px;margin:6px 0}
+.ilg > span{display:flex;flex-direction:column}
+.ilg .m{font-family:var(--lang);font-size:1.1rem}
+.ilg .g{font-family:var(--lang);font-size:.82rem;color:var(--muted)}
+.ilg .m.unk{color:var(--warn)}
+.out-line{font-family:var(--lang);font-size:clamp(1.3rem,3.6vw,1.75rem);line-height:1.25;margin:4px 0 8px}
+.tr{font-family:var(--lang);font-style:italic;margin:2px 0 0}
+.notes{margin:10px 0 0;padding-left:18px;font-size:.9rem;color:var(--muted)}
+.warnline{color:var(--warn);font-size:.9rem}
+.okline{color:var(--mint);font-size:.9rem}
+
+/* Names */
+.name-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:12px;margin-top:12px}
+.name-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.name-card .n{overflow-wrap:anywhere;font-family:var(--display);font-weight:800;font-size:1.7rem;line-height:1;text-transform:uppercase;letter-spacing:.01em}
+.name-card .svgbox{padding-top:6px}
+
+/* Sheets */
+.sheet{display:flex;flex-wrap:wrap;gap:6px}
+.glyphcell{display:flex;flex-direction:column;align-items:center;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:6px 6px 4px;min-width:58px;color:var(--ink)}
+.glyphcell span{font-family:var(--lang);font-size:.88rem}
+.glyphcell small{font-size:.7rem;color:var(--muted)}
+
+/* Steps */
+.steps td.f{white-space:nowrap}
+.arrow{color:var(--muted)}
+
+/* Texts / Grammar */
+.text-block{border-top:1px solid var(--line);padding-top:16px;margin-top:18px}
+.text-block h3{margin-top:0;font-family:var(--display);font-weight:800;font-size:1.5rem;text-transform:uppercase;letter-spacing:.01em}
+.line{padding:8px 0;border-bottom:1px dashed var(--line)}
+.line:last-child{border-bottom:0}
+.line .t{font-family:var(--lang);font-size:1.15rem;font-weight:700}
+.rule{border-top:1px solid var(--line);padding:14px 0}
+.rule .id{font-family:var(--mono);font-size:.78rem;color:var(--violet)}
+.rule h4{margin:2px 0 6px;font-size:1.02rem}
+.rule p{margin:0 0 6px;max-width:75ch}
+.ex{background:var(--sunk);border-radius:6px;padding:6px 12px;margin:6px 0}
+.topics{display:flex;flex-direction:column;gap:2px}
+.topics button{all:unset;cursor:pointer;padding:6px 10px;border-radius:6px;font-size:.93rem}
+.topics button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.topics button:focus-visible{outline:2px solid var(--cyan)}
+pre.json{background:var(--sunk);border:1px solid var(--line);border-radius:6px;padding:12px;overflow:auto;font-family:var(--mono);font-size:.78rem;max-height:360px}
+details summary{cursor:pointer;color:var(--muted);font-size:.9rem}
+.loading{color:var(--muted);font-style:italic}
+footer{border-top:1px solid var(--line);padding-block:20px 36px;color:var(--muted);font-size:.85rem}
+.copied{color:var(--mint);font-size:.85rem}
+.mobile-only{display:none}
+
+@media (max-width:820px){
+  .grid2{grid-template-columns:minmax(0,1fr)}
+  .results{max-height:40vh}
+  .head .glyph{width:100%}
+  .mobile-only{display:block}
+  #gr-topics{display:none}
+}
+@media (prefers-reduced-motion:no-preference){
+  .band .glyph svg path{animation:twinkle 5s ease-in-out infinite}
+  .band .glyph svg path:nth-of-type(2n){animation-delay:1.7s}
+  @keyframes twinkle{0%,100%{opacity:1}50%{opacity:.5}}
+}
+</style>
+<!-- Generated from tools/web/index.html by tools/build.mjs: the same page without the document wrapper, for publishing as an Artifact. Edit index.html, not this file. -->
+<div class="band">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <h1>Norsund Workbench</h1>
+        <p>Look up, translate, write and name things in Norsund, the common tongue of Thiolden. Everything here runs on the same engine and data as the repo's command-line tools.</p>
+        <div class="stats" id="stats"><span>Version <b>1.0.0</b></span><span><b>2,040</b> words</span><span>Loading the dictionary…</span></div>
+      </div>
+      <div class="row" style="gap:14px;align-items:flex-end">
+        <div class="glyph" id="hero-glyph" aria-label="The word Norsund in Lysrit"></div>
+        <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch colour theme">Theme: system</button>
+      </div>
+    </div>
+    <nav class="tabs" aria-label="Workbench sections">
+      <a href="#dictionary" aria-current="page">Dictionary</a>
+      <a href="#translate">Translate</a>
+      <a href="#write">Write</a>
+      <a href="#names">Names</a>
+      <a href="#sounds">Sounds</a>
+      <a href="#numbers">Numbers</a>
+      <a href="#texts">Texts</a>
+      <a href="#grammar">Grammar</a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+
+<!-- Dictionary -->
+<section class="panel" id="panel-dictionary">
+  <h2>Dictionary</h2>
+  <p class="lede">Search a Norsund word, an inflected form (kjoldade, Vilkyrene) or an English meaning. Pick a letter to browse in Norsund alphabetical order, where kj, gj, ng and th are letters of their own.</p>
+  <div class="grid2">
+    <div>
+      <div class="field"><label for="dict-q">Search</label><input id="dict-q" type="search" class="big" placeholder="kjold, guard, Vilkyrene…" autocomplete="off" spellcheck="false"></div>
+      <div class="row small">
+        <label class="lbl" for="dict-field" style="margin:0">Field</label>
+        <select id="dict-field" style="width:auto"><option value="">All fields</option></select>
+        <label class="lbl" for="dict-pos" style="margin:0">Part</label>
+        <select id="dict-pos" style="width:auto"><option value="">All</option></select>
+      </div>
+      <div class="letters" id="dict-letters" aria-label="Browse by letter"></div>
+      <div class="forms-hint" id="dict-forms"></div>
+      <ul class="results" id="dict-results" aria-label="Results"></ul>
+      <p class="small muted" id="dict-count"></p>
+    </div>
+    <article class="card" id="dict-entry" aria-live="polite">
+      <div class="entry-head"><h3 class="headword">kjold</h3><span class="badge core">core</span></div>
+      <div class="pron"><span><b>IPA</b>[cold]</span><span><b>Say</b>KYOLD</span></div>
+      <p class="glosses">ward, guard-post, shield, watch</p>
+      <p class="loading">Loading forms, etymology and scripts…</p>
+    </article>
+  </div>
+</section>
+
+<!-- Translate -->
+<section class="panel" id="panel-translate" hidden>
+  <h2>Translate</h2>
+  <p class="lede">English to Norsund uses a small rule-based grammar: simple clauses, tenses, modals, negation, questions, possessives and evidential hints. Norsund to English gives a word-by-word Leipzig gloss and a rough reading. Always check the gloss before using a line in canon.</p>
+  <div class="grid-even">
+    <div class="card">
+      <div class="field"><label for="tr-en">English</label><textarea id="tr-en" rows="3">The brave hunters guarded the wall at night.</textarea></div>
+      <div class="row small">
+        <label class="lbl" for="tr-dialect" style="margin:0">Dialect</label>
+        <select id="tr-dialect" style="width:auto"><option value="common">Common Norsund</option><option value="starisund">Starisund (Auristar)</option></select>
+        <label class="lbl" for="tr-you" style="margin:0">"You" is</label>
+        <select id="tr-you" style="width:auto"><option value="one">one person</option><option value="several">several people</option><option value="polite">polite (Starisund)</option></select>
+      </div>
+      <div class="chips" id="tr-en-examples" style="margin-top:10px"></div>
+      <div id="tr-en-out" style="margin-top:14px"></div>
+    </div>
+    <div class="card">
+      <div class="field"><label for="tr-ns">Norsund</label><textarea id="tr-ns" rows="3">Fjol starin lyser run ne.</textarea></div>
+      <div class="chips" id="tr-ns-examples"></div>
+      <div id="tr-ns-out" style="margin-top:14px"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Write -->
+<section class="panel" id="panel-write" hidden>
+  <h2>Write</h2>
+  <p class="lede">Lysrit is Auristar's sacred and civic script: consonants are strokes on the seven-point grid of the Auristar emblem and vowels are stars. Runes are Thiolden's everyday script. Ordinary writing never glows; a glowing rune is charged with aether, which is rune magic and forbidden in Auristar.</p>
+  <div class="card">
+    <div class="field"><label for="wr-text">Text (Norsund romanization)</label><input id="wr-text" type="text" class="big" value="Fjol starin lyser run ne" autocomplete="off" spellcheck="false"></div>
+    <div class="row small">
+      <label class="lbl" for="wr-sacred" style="margin:0">Sacred mark</label>
+      <select id="wr-sacred" style="width:auto"><option value="auto">Holy names</option><option value="first">First word</option><option value="none">None</option></select>
+      <label class="lbl" for="wr-variant" style="margin:0">Runes</label>
+      <select id="wr-variant" style="width:auto"><option value="long">Long-branch (stone)</option><option value="short">Short-twig (wood)</option></select>
+      <label class="row" style="gap:6px"><input id="wr-glow" type="checkbox"> Charged (glowing)</label>
+      <label class="lbl" for="wr-scale" style="margin:0">Size</label>
+      <input id="wr-scale" type="range" min="0.8" max="2.6" step="0.1" value="1.4" style="width:120px">
+    </div>
+    <p class="warnline" id="wr-glow-note" hidden>Charged runes are rune magic. In Auristar they are forbidden; use this only for magic scenes outside the city.</p>
+    <h3>Lysrit</h3>
+    <div class="svgbox" id="wr-lysrit"></div>
+    <div class="row"><button class="btn ghost" type="button" data-copy="lysrit" data-theme="light">Copy SVG (light)</button><button class="btn ghost" type="button" data-copy="lysrit" data-theme="dark">Copy SVG (dark)</button><span class="copied" id="wr-copied-lysrit" aria-live="polite"></span></div>
+    <p class="small muted" id="wr-lysrit-notes"></p>
+    <h3>Runes</h3>
+    <div class="svgbox" id="wr-runes"></div>
+    <div class="row"><button class="btn ghost" type="button" data-copy="runes" data-theme="light">Copy SVG (light)</button><button class="btn ghost" type="button" data-copy="runes" data-theme="dark">Copy SVG (dark)</button><span class="copied" id="wr-copied-runes" aria-live="polite"></span></div>
+    <p class="small"><span class="lbl">Rune names</span> <span class="lang" id="wr-runenames"></span></p>
+    <textarea id="wr-fallback" rows="3" class="mono" hidden aria-label="SVG markup to copy"></textarea>
+  </div>
+  <div class="grid-even" style="margin-top:20px">
+    <div><h3>Lysrit letter sheet</h3><div id="wr-lysrit-sheet"></div></div>
+    <div><h3>The rune row</h3><div id="wr-rune-sheet"></div></div>
+  </div>
+</section>
+
+<!-- Names -->
+<section class="panel" id="panel-names" hidden>
+  <h2>Names</h2>
+  <p class="lede">Place names are modifiers plus one generic head (Nor + skyl = Norskyl, "North Falls"). The people of a place take the first element plus -nay. Person names are a given name and a parent-name in -ung, "child of".</p>
+  <div class="grid-even">
+    <div class="card">
+      <h3 style="margin-top:0">Place forge</h3>
+      <div class="field"><label for="nm-generic">Generic (what kind of place)</label><select id="nm-generic"><option value="">Any</option></select></div>
+      <div class="lbl" style="margin-bottom:6px">Modifiers (optional, pick in order)</div>
+      <div class="chips" id="nm-mods"></div>
+      <div class="row" style="margin-top:12px"><button class="btn" type="button" id="nm-forge">Forge places</button><button class="btn ghost" type="button" id="nm-clear">Clear modifiers</button></div>
+      <div class="name-cards" id="nm-places"></div>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">People</h3>
+      <div class="row"><button class="btn" type="button" id="nm-people-btn">Forge people</button></div>
+      <div class="name-cards" id="nm-people"></div>
+      <h3>Check a name</h3>
+      <div class="field"><label for="nm-check">Name</label><input id="nm-check" type="text" class="big" value="Kvitport" autocomplete="off" spellcheck="false"></div>
+      <div id="nm-check-out"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Sounds -->
+<section class="panel" id="panel-sounds" hidden>
+  <h2>Sounds</h2>
+  <p class="lede">Hear a word in every dialect, check whether a new word follows Norsund's sound rules, and watch Proto-Valian roots turn into Old Norsund, Norsund and Kedre, rule by rule.</p>
+  <div class="grid-even">
+    <div class="card">
+      <h3 style="margin-top:0">Pronunciation and sound rules</h3>
+      <div class="field"><label for="snd-word">Word</label><input id="snd-word" type="text" class="big" value="Starirauggheim" autocomplete="off" spellcheck="false"></div>
+      <div id="snd-out"></div>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Sound-change lab</h3>
+      <div class="row">
+        <div class="field" style="flex:1 1 160px"><label for="snd-pv">Proto-Valian form</label><input id="snd-pv" type="text" class="big" value="geldhu" autocomplete="off" spellcheck="false"></div>
+        <div class="field" style="flex:1 1 160px"><label for="snd-path">Show steps for</label><select id="snd-path"></select></div>
+      </div>
+      <div id="snd-results"></div>
+      <div id="snd-steps"></div>
+    </div>
+  </div>
+  <h3>The cognate sets</h3>
+  <p class="small muted">Thirty-one Proto-Valian roots and their descendants. Select a row to load it into the lab.</p>
+  <div class="tbl" id="snd-cognates"></div>
+</section>
+
+<!-- Numbers -->
+<section class="panel" id="panel-numbers" hidden>
+  <h2>Numbers</h2>
+  <p class="lede">Norsund counts in tens. Five is thamm, "hand", and ten is tamm, worn down from "two hands". In Auristar seven is stev, reshaped by star. Old markets count in the long hundred (langhaun) of 120.</p>
+  <div class="grid-even">
+    <div class="card">
+      <div class="field"><label for="num-n">Number</label><input id="num-n" type="number" min="0" max="999999" value="523208"></div>
+      <div id="num-out"></div>
+      <div class="field" style="margin-top:14px"><label for="num-words">Norsund words to number</label><input id="num-words" type="text" class="big" value="dovtamm sev" autocomplete="off" spellcheck="false"></div>
+      <div id="num-back"></div>
+    </div>
+    <div><div class="tbl" id="num-table"></div></div>
+  </div>
+</section>
+
+<!-- Texts -->
+<section class="panel" id="panel-texts" hidden>
+  <h2>Texts</h2>
+  <p class="lede">Every translated text in the repo, glossed word by word: Norsund, Old Norsund and Kedre.</p>
+  <div class="row small"><label class="lbl" for="tx-lang" style="margin:0">Language</label><select id="tx-lang" style="width:auto"><option value="">All languages</option></select></div>
+  <div id="tx-out"></div>
+</section>
+
+<!-- Grammar -->
+<section class="panel" id="panel-grammar" hidden>
+  <h2>Grammar</h2>
+  <p class="lede">The authoritative grammar files from records/languages/norsund/grammar, rule by rule, with glossed examples.</p>
+  <div class="grid2">
+    <div><label class="lbl" for="gr-select" style="display:block;margin-bottom:6px">Topic</label><select id="gr-select" class="mobile-only"></select><div class="topics" id="gr-topics" style="margin-top:8px"></div></div>
+    <div id="gr-out"></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap">
+  Norsund 1.0 · the language is CC BY 4.0, the tools MIT. Source: <span class="mono">records/languages/</span> and <span class="mono">tools/</span> in the Drunken Dragon Universe lore repo. Rebuild with <span class="mono">node tools/build.mjs</span>.
+</footer>
+
+<script type="module" src="./app.js"></script>

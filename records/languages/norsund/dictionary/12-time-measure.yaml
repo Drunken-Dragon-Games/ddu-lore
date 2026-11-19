@@ -1,0 +1,165 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: Time, calendar and measure
+field: time
+contributor: Vledic#0001
+defaults: {layer: native, tier: common, status: ratified, epoch: old}
+context:
+- "The Thiolden calendar has a week of seven days (sevnim, Starisund stevnim), named in order from Ur (the origin) to Nett (fulfilment). A year has thirteen months (reith) of four weeks each, 364 days, plus Lysnim, the year-end Night of Light, which belongs to no month."
+- "Months are named after the four seasons (jalk winter, nyrk spring, daulm summer, hyst autumn, in 07-nature-land.yaml) with an ordinal: ura jalkreith, dovde jalkreith, thrimde jalkreith. The thirteenth month is lysreith, at midsummer."
+- "Time words follow one metaphor: the future lies ahead (for) and the past behind (aft): fordag 'tomorrow', aftdag 'yesterday'."
+- Hours are counted by the water clocks of Auristar, so an hour is a dryp, a "drip".
+
+entries:
+# --- Parts of the day ---
+- {lemma: dryp, pos: noun, class: inanimate, gloss: [hour (lit. drip)], parts: [drypa], tier: core, notes: "from the water clocks of Auristar"}
+- {lemma: drypling, pos: noun, class: inanimate, gloss: [minute, a short while (lit. little drip)], parts: [dryp, ling]}
+- {lemma: drypvard, pos: noun, class: inanimate, gloss: [water clock (lit. drip-warden)], parts: [dryp, vard]}
+- {lemma: nimdryp, pos: noun, class: inanimate, gloss: [hour of the night, a night watch], parts: [nim, dryp]}
+- lemma: frim
+  pos: noun
+  class: inanimate
+  gloss: [morning]
+  tier: core
+  derived:
+  - {lemma: frima, pos: adj, gloss: [early, of the morning]}
+  - {lemma: frimsund, pos: noun, class: inanimate, gloss: [morning song, matins], parts: [frim, sund]}
+- lemma: dalm
+  pos: noun
+  class: inanimate
+  gloss: [evening]
+  tier: core
+  derived:
+  - {lemma: dalma, pos: adj, gloss: [late, of the evening]}
+  - {lemma: dalmlys, pos: noun, class: inanimate, gloss: [evening glow, afterglow], parts: [dalm, lys]}
+  - {lemma: dalmsund, pos: noun, class: inanimate, gloss: [evening song, vespers], parts: [dalm, sund]}
+- {lemma: marlys, pos: noun, class: inanimate, gloss: [noon (lit. high light)], parts: [mar, lys]}
+- {lemma: midnim, pos: noun, class: inanimate, gloss: [midnight], parts: [mid, nim]}
+- {lemma: aftdag, pos: adv, gloss: [yesterday (lit. the day behind)], parts: [aft, dag], tier: core}
+- {lemma: fordag, pos: adv, gloss: [tomorrow (lit. the day ahead)], parts: [for, dag], tier: core}
+- {lemma: aftnim, pos: adv, gloss: [last night], parts: [aft, nim]}
+
+# --- Week and days ---
+- {lemma: sevnim, pos: noun, class: inanimate, gloss: [week (lit. seven nights)], parts: [sev, nim], tier: core}
+- {lemma: stevnim, pos: noun, class: inanimate, gloss: [week (Starisund)], parts: [stev, nim], register: starisund}
+- {lemma: urdag, pos: noun, class: inanimate, gloss: [first day of the week (Ur's day)], parts: [Ur, dag], notes: "day of beginnings; journeys and apprenticeships start on urdag"}
+- {lemma: lysdag, pos: noun, class: inanimate, gloss: [second day of the week (Lysmar's day)], parts: [lys, dag]}
+- {lemma: ylvdag, pos: noun, class: inanimate, gloss: [third day of the week (water day)], parts: [ylv, dag], notes: "the canals of Auristar are cleared on ylvdag"}
+- {lemma: kjolddag, pos: noun, class: inanimate, gloss: [fourth day of the week (ward day)], parts: [kjold, dag], notes: "the Nimkjold changes watch"}
+- {lemma: fyrdag, pos: noun, class: inanimate, gloss: [fifth day of the week (hearth day)], parts: [fyr, dag], notes: "market and tavern day"}
+- {lemma: sunddag, pos: noun, class: inanimate, gloss: [sixth day of the week (song day)], parts: [sund, dag], notes: "the Sundwanderen perform"}
+- {lemma: nettdag, pos: noun, class: inanimate, gloss: [seventh day of the week (Nett's day)], parts: [Nett, dag], notes: "the holy day of rest and temple"}
+- {lemma: velthdag, pos: noun, class: inanimate, gloss: [holiday, feast day], parts: [velth, dag]}
+
+# --- Months, seasons and the year ---
+- lemma: reith
+  pos: noun
+  class: inanimate
+  gloss: [month (of 28 days)]
+  tier: core
+  derived:
+  - {lemma: jalkreith, pos: noun, class: inanimate, gloss: [winter month], parts: [jalk, reith]}
+  - {lemma: nyrkreith, pos: noun, class: inanimate, gloss: [spring month], parts: [nyrk, reith]}
+  - {lemma: daulmreith, pos: noun, class: inanimate, gloss: [summer month], parts: [daulm, reith]}
+  - {lemma: hystreith, pos: noun, class: inanimate, gloss: [autumn month], parts: [hyst, reith]}
+  - {lemma: lysreith, pos: noun, class: inanimate, gloss: [the light-month (thirteenth month, at midsummer)], parts: [lys, reith]}
+  - {lemma: reithug, pos: adj, gloss: [monthly]}
+- {lemma: ardel, pos: noun, class: inanimate, gloss: [season (lit. year-share)], parts: [ar, del]}
+- {lemma: Lysnim, pos: name, class: inanimate, gloss: [Night of Light (the year-end festival)], parts: [lys, nim], notes: "the one day outside the months; every window in Auristar is lit"}
+- {lemma: Stardulvelth, pos: name, class: inanimate, gloss: [Feast of the Fall of the Star], parts: [Stardul, velth], notes: "kept on the anniversary of 90 a.v.e."}
+- {lemma: arsnarv, pos: noun, class: inanimate, gloss: [turn of the year, new year], parts: [ar, snarva]}
+- {lemma: haunar, pos: noun, class: inanimate, gloss: [century], parts: [haun, ar]}
+- {lemma: tammar, pos: noun, class: inanimate, gloss: [decade], parts: [tamm, ar]}
+- {lemma: morkar, pos: noun, class: inanimate, gloss: [millennium], parts: [mork, ar]}
+
+# --- The Council games and the Trial ---
+- lemma: thrysk
+  pos: noun
+  class: inanimate
+  gloss: [trial, ordeal, test]
+  derived:
+  - {lemma: thryskug, pos: adj, gloss: [difficult, testing]}
+  - {lemma: thryskir, pos: noun, class: animate, gloss: [candidate, one undergoing a trial]}
+- {lemma: Sevthrask, pos: name, class: inanimate, gloss: [the Council games (lit. the seven-contest)], parts: [sev, thrask], notes: "held every seven years for seven days; winners take a seat in the Council of Midelmar"}
+- {lemma: Stevthrask, pos: name, class: inanimate, gloss: [the Council games (Starisund)], parts: [stev, thrask], register: starisund}
+
+# --- Time in general ---
+- lemma: orv
+  pos: noun
+  class: inanimate
+  gloss: [time, span of time]
+  tier: core
+  derived:
+  - {lemma: aftorv, pos: noun, class: inanimate, gloss: [the past (lit. time behind)], parts: [aft, orv]}
+  - {lemma: fororv, pos: noun, class: inanimate, gloss: [the future (lit. time ahead)], parts: [for, orv]}
+  - {lemma: ytorv, pos: noun, class: inanimate, gloss: [the present (lit. now-time)], parts: [yt, orv]}
+  - {lemma: langorv, pos: noun, class: inanimate, gloss: [era, age (lit. long time)], parts: [lang, orv]}
+  - {lemma: orvrit, pos: noun, class: inanimate, gloss: [calendar (lit. time-writing)], parts: [orv, rit]}
+  - {lemma: orvug, pos: adj, gloss: [timely, in good time]}
+  - {lemma: orvnuth, pos: adj, gloss: [timeless, eternal]}
+- {lemma: vimling, pos: noun, class: inanimate, gloss: [moment, instant (lit. a little whisper)], parts: [vim, ling]}
+- {lemma: mykt, pos: adv, gloss: [often], parts: [myk, t]}
+- {lemma: aftast, pos: adj, gloss: [last, hindmost], parts: [aft, ast]}
+- lemma: lop
+  pos: noun
+  class: inanimate
+  gloss: [time, occasion (as in "three times")]
+  notes: "thrim lopar 'three times'"
+  derived:
+  - {lemma: ynlop, pos: adv, gloss: [once], parts: [yn, lop]}
+
+# --- Counting ---
+- lemma: skent
+  pos: noun
+  class: inanimate
+  gloss: [number, count]
+  tier: core
+  derived:
+  - {lemma: skenta, pos: verb, class: weak, gloss: [to count, to reckon], tier: core}
+  - {lemma: skentir, pos: noun, class: animate, gloss: [reckoner, accountant]}
+  - {lemma: skentning, pos: noun, class: inanimate, gloss: [reckoning, accounts]}
+  - {lemma: skentug, pos: adj, gloss: [numerous, countless]}
+- {lemma: nuth, pos: num, gloss: [zero, nought], notes: "the noun nuth 'void' used as a number in the Starlight Library's reckoning"}
+- {lemma: tolm, pos: noun, class: inanimate, gloss: [dozen]}
+- {lemma: hjenn, pos: noun, class: inanimate, gloss: [pair, couple (of things)]}
+- {lemma: dovfald, pos: adj, gloss: [double, twofold], parts: [dov, fald]}
+- {lemma: thrimfald, pos: adj, gloss: [triple, threefold], parts: [thrim, fald]}
+- {lemma: sevfald, pos: adj, gloss: [sevenfold], parts: [sev, fald]}
+- {lemma: stevfald, pos: adj, gloss: [sevenfold (Starisund); perfect, complete], parts: [stev, fald], register: starisund}
+
+# --- Measures ---
+- lemma: mjal
+  pos: noun
+  class: inanimate
+  gloss: [measure, standard]
+  derived:
+  - {lemma: mjala, pos: verb, class: weak, gloss: [to measure]}
+  - {lemma: mjalir, pos: noun, class: animate, gloss: [measurer, surveyor]}
+- {lemma: brid, pos: noun, class: inanimate, gloss: [inch (a finger's breadth)]}
+- {lemma: vod, pos: noun, class: inanimate, gloss: [pace, stride (a measure of about a yard)], derived: [{lemma: voda, pos: verb, class: weak, gloss: [to pace out (a distance)]}, {lemma: haunvod, pos: noun, class: inanimate, gloss: [furlong (lit. hundred paces)], parts: [haun, vod]}, {lemma: morkvod, pos: noun, class: inanimate, gloss: [mile (lit. thousand paces)], parts: [mork, vod]}]}
+- {lemma: glenn, pos: noun, class: inanimate, gloss: [league (about an hour's walk)]}
+- {lemma: daggand, pos: noun, class: inanimate, gloss: [a day's journey], parts: [dag, gand]}
+- {lemma: vangdel, pos: noun, class: inanimate, gloss: [acre, field-share], parts: [vang, del]}
+- {lemma: fareth, pos: noun, class: inanimate, gloss: [distance (lit. farness)], parts: [far, eth]}
+- lemma: bolm
+  pos: noun
+  class: inanimate
+  gloss: [weight, a pound-weight]
+  tier: core
+  derived:
+  - {lemma: bolma, pos: verb, class: weak, gloss: [to weigh]}
+  - {lemma: bolmug, pos: adj, gloss: [heavy], tier: core}
+- {lemma: mjull, pos: noun, class: inanimate, gloss: [grain-weight (the smallest weight)]}
+- {lemma: kolv, pos: noun, class: inanimate, gloss: [jug-measure (of liquid)], notes: "a kolv of ale is the tavern standard"}
+- {lemma: aurling, pos: noun, class: inanimate, gloss: [silver penny of Auristar (lit. little bright one)], parts: [aur, ling]}
+- {lemma: kulling, pos: noun, class: inanimate, gloss: [copper coin (lit. little ember)], parts: [kull, ling], notes: "kull + ling with three l reduced to two"}
+- lemma: klemb
+  pos: noun
+  class: inanimate
+  gloss: [gong, alarm-plate]
+  notes: "gongs sound the watches on the Kjoldmur; a bell is dyng (see 10)"
+  derived:
+  - {lemma: klemba, pos: verb, class: weak, gloss: [to strike a gong, to sound the alarm]}
+  - {lemma: klembtur, pos: noun, class: inanimate, gloss: [alarm tower, gong tower], parts: [klemb, tur]}
+  - {lemma: klembir, pos: noun, class: animate, gloss: [bell-ringer]}

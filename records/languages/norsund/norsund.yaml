@@ -1,0 +1,58 @@
+document: fact-record/v1
+topic: Norsund, the common tongue of Thiolden
+contributor: Vledic#0001
+context:
+- Version 1.0.0 of the language, approved by the lore lead on 2026-11-19. Language files live beside this record in grammar/, dictionary/ and texts/.
+- Human-readable documentation is in docs/languages/norsund/. Tools for translating, writing and checking Norsund are in tools/.
+facts:
+- Norsund means "north-tongue" (nor "north" + sund "tongue, voice, song").
+- Norsund is the most common language of Thiolden and the second language of most of its races.
+- Thiolden means "land of the brave" in Norsund (thiol "brave" + den "land").
+subtopics:
+
+- topic: History
+  facts:
+  - Norsund descends from Old Norsund, the language of the adventurers who settled Thiolden from the island of Farheim around 450 b.v.e.
+  - Old Norsund descends from Proto-Norsund, spoken on Farheim, which descends from Proto-Valian, the deep ancestor of Valia's languages.
+  - Kedre, the language of the Vairean Empire, is a distant cousin of Norsund; Lysmar and Luxis are the same word in the two branches.
+  - The imperial conquest of Thiolden (37 to 51 a.v.e.) left a layer of Kedre words in Norsund for walls, canals, markets, towers and gates, much as the Norman conquest left French words in English.
+  - Old Norsund is still used for oaths, law, temple liturgy and rune-craft.
+
+- topic: Dialects
+  facts:
+  - Starisund ("star-tongue") is the speech of Auristar. It treats stars as living beings, calls seven stev, and softens th to s.
+  - Common Norsund is spoken in the Vilnayan towns and across Thiolden.
+  - The Kullmyr say i for y (Firen for Fyren); the Nurmyr drop initial h; Farheim keeps the oldest forms.
+  - The Thieves Guild of Auristar uses a backslang cant.
+
+- topic: Writing
+  facts:
+  - Norsund is written in runes (runar) for everyday use across Thiolden, and in Lysrit ("light-writing") for sacred and civic texts in Auristar.
+  - Rune magic happens only when runes are charged with aether, which makes them glow. Auristar forbids rune magic but not rune writing, so runes in Auristar never glow.
+  - In English-language lore, Norsund is written in a plain ASCII romanization with no accents or apostrophes.
+  - The glyph shapes of both scripts are final for version 1.0, with production treatments for stone, glass, UI, wood, slate and embroidery.
+
+- topic: Hearing Norsund
+  facts:
+  - Reference recordings of every canon name, the phrasebook and the sample texts are in assets/audio/norsund, generated from the language's IPA.
+
+- topic: Culture in the grammar
+  facts:
+  - Speakers mark how they know what they say with sa ("I saw it"), sund ("so it is sung") or stari ("so the stars say").
+  - Court testimony in Auristar must carry sa, or it counts as hearsay.
+  - Tavern cooks are called fyr ("fire").
+  - Norsund pronouns mark living versus non-living, not sex or gender.
+
+- topic: Decisions recorded for version 1.0 (2026-11-19)
+  facts:
+  - Auristar is pronounced OW-ree-star; au is always as in "cow".
+  - Myr and Heid are the old Wandering-House names of Ur and Nett, not four separate gods.
+  - Stars are grammatically animate in Starisund and inanimate elsewhere.
+  - Runes are allowed in Auristar as plain, non-glowing writing; only rune magic is forbidden.
+  - aur "silver-bright" is a native Norsund word, so Auristar is a fully native name.
+  - "Standard spellings: Midelmar, Haakon, Volggan, Vairean, Rechtar."
+  - "Names that collided with other works were renamed in the lore records: Valinor to Valnor, Worgenkin to Ulfkin, Exeter to Exaire, Arbury to Arbaire. The standard spellings were applied too, and the record files varian-empire.yaml and vloggan.yaml became vairean-empire.yaml and volggan.yaml."
+  - Kedre and Norsund share a deep ancestor, Proto-Valian.
+  - "The language (grammar, dictionary, texts, scripts) is licensed CC BY 4.0, fonts SIL OFL 1.1 and tools MIT. See docs/languages/LICENSES.md."
+  - A Language Steward, appointed by the lore lead, reviews new words before the contributor vote. See docs/languages/norsund/contributing-words.md.
+  - The concept image shared on 2026-11-19 never reached the build. The lore lead decided that Norsund 1.0 stands as built and the image does not need to be merged in.
