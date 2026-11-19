@@ -1,29 +1,41 @@
 document: lang-grammar/v1
 language: kedre
 version: 1.0.0
-topic: Kedre grammar sketch
+topic: Kedre grammar
 contributor: Vledic#0001
 status: ratified
 context:
-- Kedre is the language of the Vairean Empire, spoken in Keras and the old Kingdom of Reinovaire, north-west of Thiolden in Valnor.
+- Kedre ("the Tongue") is the language of the Vairean Empire, spoken in Keras and the old Kingdom of Reinovaire, north-west of Thiolden in Valnor.
 - It is a distant cousin of Norsund; both descend from Proto-Valian. Its sound history is the pv-kedre stage of records/languages/norsund/grammar/13-history.yaml.
-- This is a sketch, enough to source loanwords, imperial names and short texts. It looks Latin to a reader on purpose, as the conquerors' language does in-world, but it has its own rules.
-- Glosses follow the Leipzig Glossing Rules. DIGN = dignity suffix, AGT = agent.
+- It looks Latin to a reader on purpose, as the conquerors' language does in-world, but it has its own rules. This file is the complete 1.0 grammar.
+- Glosses follow the Leipzig Glossing Rules. DIGN = dignity suffix, AGT = agent, SBJV = subjunctive, Q = question particle.
 
 morphology:
   nouns:
     gender: none
+    case: none
+    articles: none
     plural:
       o: i      # posto > posti
       a: e      # legia > legie
       e: i      # kedre > kedri
       i: ie     # luxi > luxie (not luxis, which is the goddess)
+      u: ui     # merkadu > merkadui (camp forms)
       consonant: es   # fens > fenses
   dignity_suffix: {form: s, meaning: "marks a god, an emperor's title or a holy city", examples: [Luxis, Keras]}
   agent_suffix: {form: aro, examples: [keraro "emperor", primaro "first priest", alkimiaro "alchemist"]}
   place_suffixes:
-  - {form: ia,   meaning: "land of", examples: [Keria "crown-land, the Empire", rivia "channel (land of running water)"]}
-  - {form: aire, meaning: "domain, house of", examples: [Vaire, Reinovaire, Exaire, Arbaire]}
+  - {form: "ia,   meaning: \"land of; also abstract domain\", examples: [Keria \"crown-land, the Empire\", rivia \"channel (land of running water)\"]"}
+  - {form: "aire, meaning: \"domain, house of\", examples: [Vaire, Reinovaire, Exaire, Arbaire]"}
+  other_suffixes:
+  - {form: "anza, meaning: \"abstract noun (-ness, -ance)\", examples: [telanza \"valour\", vinkanza \"victory\"]"}
+  - {form: "ino,  meaning: \"small, young\", examples: [kaimino \"cottage\", netino \"infant\"]"}
+  - {form: "orio, meaning: \"place where something is done\", examples: [ardorio \"furnace, alchemist's hearth\", skriborio \"chancery\"]"}
+  - {form: "ato,  meaning: \"past participle; also the thing done\", examples: [jubato \"decree\", probato \"experiment\"]"}
+  - {form: "e,    meaning: \"adverb from adjective\", examples: [tele \"bravely\", alte \"loudly\"]"}
+  prefixes:
+  - {form: "supra, meaning: \"most (superlative); over\", examples: [supratelo \"bravest\"]"}
+  - {form: "ni,    meaning: \"no- (negative pronouns)\", examples: [nikai \"no one\", nikado \"nothing\", nikando \"never\"]"}
   pronouns:
   - {person: 1sg, form: me,  possessive: mue}
   - {person: 2sg, form: te,  possessive: tue}
@@ -31,27 +43,52 @@ morphology:
   - {person: 1pl, form: nos, possessive: nostre}
   - {person: 2pl, form: vos, possessive: vostre}
   - {person: 3pl, form: sei, possessive: sue}
+  reflexive: sui
+  demonstratives: {this: esto, that: ilo}
+  question_words: {who: kai, what: kado, where: kaube, when: kando, why: perkado, how: kalo, "how much": kanto, which: kaio}
   verbs:
     classes: [are, ire]
+    infinitive: {are: are, ire: ire}
     present:
       are: {1sg: o, 2sg: i, 3sg: a, 1pl: amo, 2pl: ate, 3pl: an}
       ire: {1sg: o, 2sg: i, 3sg: e, 1pl: imo, 2pl: ite, 3pl: en}
-    past: "present endings after -av- (are verbs) or -iv- (ire verbs): luxava 'blessed', teniva 'held'"
-    participle: {are: ato, ire: ito}
-    imperative: {are: a, ire: i}
-    future: "vole + infinitive (vole luxare 'will bless')"
-    esere: {gloss: to be, present.3sg: es, present.3pl: son, past.3sg: era, optative.3sg: sia}
+    past:
+      are: {1sg: avo, 2sg: avi, 3sg: ava, 1pl: avamo, 2pl: avate, 3pl: avan}
+      ire: {1sg: ivo, 2sg: ivi, 3sg: iva, 1pl: ivamo, 2pl: ivate, 3pl: ivan}
+    subjunctive: {singular: ia, plural: ian}
+    imperative:
+      are: {singular: a, plural: ate}
+      ire: {singular: i, plural: ite}
+    past_participle: {are: ato, ire: ito}
+    present_participle: {are: ante, ire: ente}
+    future: "vole + infinitive (vole luxare 'will bless'); vole never changes"
+    passive: "esere + past participle (Marheim es obsidato 'Marheim is besieged')"
+    esere:
+      present: {1sg: so, 2sg: ses, 3sg: es, 1pl: somo, 2pl: sete, 3pl: son}
+      past: {1sg: ero, 2sg: eri, 3sg: era, 1pl: eramo, 2pl: erate, 3pl: eran}
+      subjunctive: {singular: sia, plural: sian}
+      imperative: si
+      participle: esito
+  numbers:
+    cardinals: {0: nulo, 1: eno, 2: fovo, 3: trimi, 4: kvaro, 5: tammo, 6: sesi, 7: sevi, 8: atti, 9: nevi, 10: dekra}
+    tens: "unit + dekre (plural of dekra): 20 fovo dekre, 70 sevi dekre"
+    compound: "tens + ed + unit: 27 fovo dekre ed sevi"
+    hundreds: "unit + kentie (plural of kenti): 300 trimi kentie; 100 is kenti"
+    thousands: "unit + mile (plural of mila): 2000 fovo mile; 1000 is mila"
+    ordinals: "primo 'first'; otherwise drop the final vowel and add -esmo: fovesmo, trimesmo, kvaresmo, tammesmo, sesesmo, sevesmo, attesmo, nevesmo, dekresmo"
+    cognates: "fovo, trimi, tammo and sevi share Proto-Valian roots with Norsund dov, thrim, thamm and sev (13-history cognates). eno, kvaro, sesi, atti, nevi and dekra are Kedre's own."
 
 rules:
 - id: KED-SND-01
   title: Sounds
   rule: >
-    Kedre has p t k b d g f v s h m n l r and the vowels a e i o u, with the diphthongs ai, au and ei. It has no th,
-    no y, no kj or gj and no w (Proto-Valian w became v). Breathy stops became f (bh, dh) and h (gh): Kedre fens "land"
-    beside Norsund den, Kedre fovo "two" beside Norsund dov.
+    Kedre has the consonants p t k b d g f v s h m n l r j and the vowels a e i o u, with the diphthongs ai, au and ei.
+    It has no th, no y, no kj or gj and no w (Proto-Valian w became v). Breathy stops became f at the start of a word and
+    b or d inside it (bh, dh), and gh became h (rules k-breathy-initial, k-breathy-medial and k-gh in 13-history): Kedre
+    fens "land" beside Norsund den, fovo "two" beside dov, geldo "shield" beside kjold.
   examples:
-  - {form: fens, translation: "land, estate (Norsund den)"}
-  - {form: nahi, translation: "nation, people (Norsund nay)"}
+  - {form: "fens", translation: "land, estate (Norsund den)"}
+  - {form: "nahi", translation: "nation, people (Norsund nay)"}
 
 - id: KED-SND-02
   title: Stress
@@ -63,22 +100,47 @@ rules:
   title: Word endings
   rule: >
     Most words end in a vowel. Final consonants are limited to s, n and r (Keras, Luxis, fens, Rechtar, Doir). A Proto-Valian
-    final u became o (*telu > telo). A few words end in u where Proto-Valian had a final *-ugh, whose gh was lost after it
-    became h (merkadu "market").
+    final u became o (rule k-final-u: *telu > telo). Court Kedre keeps that o; camp Kedre (KED-REG-04) still says u in many
+    nouns (merkadu, kividu, denaru).
+
+- id: KED-SND-04
+  title: Sound inventory
+  rule: >
+    Consonants by place: lips p b f v m; teeth and ridge t d s n l r; palate j [j]; velum k g; throat h. The old name spelling
+    cht stands for a rasping [xt], found only in Rechtar. Vowels are short; Proto-Valian long vowels shortened (rule k-length).
+
+- id: KED-SND-05
+  title: Syllables and clusters
+  rule: >
+    Syllables are (C)(C)V(C). Allowed onsets are any single consonant; a stop or f plus r or l (pr, br, tr, dr, kr, gr, fr,
+    pl, bl, kl, gl, fl); s plus p, t or k; and kv (from Proto-Valian kw: kvandro). Inside a word a syllable may close on
+    r, l, n, m or s, or on the first half of a double consonant (murra, legia has none, atti, osso). Words end in a vowel or
+    in s, n, r. There is never more than one consonant at the end of a word.
+  examples:
+  - {form: "fen.nes.tra", translation: "window: three syllables, double n split, tr onset"}
+  - {form: "kvan.dro", translation: "wanderer: kv onset, n closing the first syllable"}
 
 - id: KED-ORTH-01
   title: Spelling
   rule: >
-    k is always written k (Keras, Keria). x stands for ks (luxi, Luxis). The old spelling cht, found only in names such as
-    Rechtar, stands for [xt]. There are no accents.
+    k is always written k (Keras, Keria), never c. x stands for ks (luxi, Luxis). j is the y-sound of "yes" (jubare). The old
+    spelling cht, found only in names such as Rechtar, stands for [xt]. Double consonants are written double. There are no accents.
+
+- id: KED-ORTH-02
+  title: Kedre names in Norsund lore
+  rule: >
+    In English-language lore, Kedre names keep their Kedre spelling (Rechtar Vaire, Luxis, Reinovaire, Rundir Voidet). The
+    adjective of Vaire is Vairean in English. Norsund speakers either keep a Kedre name (Keras) or replace it with their own
+    word (Luxis is Lysmar). A Kedre name inside a Norsund compound keeps its capital.
 
 - id: KED-NOUN-01
   title: Nouns
   rule: >
     Kedre nouns have no gender and no case. The plural changes the final vowel (posto > posti, legia > legie, kedre > kedri,
-    luxi > luxie) or adds -es after a consonant (fens > fenses). There are no articles.
+    luxi > luxie, merkadu > merkadui) or adds -es after a consonant (fens > fenses). There are no articles: a bare noun is
+    "a" or "the" as context needs.
   examples:
-  - {form: post-i, gloss: heir-PL, translation: heirs}
+  - {form: "post-i", gloss: "heir-PL", translation: "heirs"}
 
 - id: KED-NOUN-02
   title: Head-first compounds and genitives
@@ -86,7 +148,7 @@ rules:
     The head comes first and the modifier or owner follows, the opposite of Norsund: reino Vaire "realm of Vaire" (written
     as one name, Reinovaire), sangia Vaire "the bloodline of Vaire", Domo Luxis "the House of Luxis" (the Church of Light).
   examples:
-  - {form: sangia Vaire, gloss: bloodline Vaire, translation: the bloodline of Vaire}
+  - {form: "sangia Vaire", gloss: "bloodline Vaire", translation: "the bloodline of Vaire"}
 
 - id: KED-NOUN-03
   title: The dignity suffix -s
@@ -94,13 +156,31 @@ rules:
     -s marks a deity, an imperial title or a holy city: luxi "light" > Luxis "Light (the goddess)", kera "crown" > Keras
     "the Crowned (city)". Norsund speakers translate the goddess as Lysmar instead of borrowing the name.
 
+- id: KED-NP-01
+  title: Noun phrase order
+  rule: >
+    Numbers and quantifiers (kada "every", toto "all", multo "many") come before the noun. Everything else follows it, in
+    this order: adjective, demonstrative, possessive, owner: legia telo esto "this brave legion", luxi tue "your light",
+    fovo legie Vaire "two legions of Vaire".
+  examples:
+  - {form: "kada posto", gloss: "every heir", translation: "every heir"}
+  - {form: "legia telo esto", gloss: "legion brave this", translation: "this brave legion"}
+
 - id: KED-ADJ-01
   title: Adjectives
-  rule: Adjectives follow the noun and do not change (legia telo "a brave legion").
+  rule: >
+    Adjectives follow the noun and do not change (legia telo "a brave legion", legie telo "brave legions"). The comparative
+    is plu before the adjective with ke "than"; the superlative takes the prefix supra-; adverbs change the final vowel to -e.
+  examples:
+  - {form: "legia plu telo ke nahi", gloss: "legion more brave than nation", translation: "a legion braver than a nation"}
+  - {form: "legaro supra-telo", gloss: "soldier SUPL-brave", translation: "the bravest soldier"}
+  - {form: "pugn-a tel-e", gloss: "fight-PRS.3SG brave-ADV", translation: "he fights bravely"}
 
 - id: KED-PRON-01
   title: Pronouns
-  rule: me, te, se, nos, vos, sei; possessives mue, tue, sue, nostre, vostre follow the noun (luxi tue "your light").
+  rule: >
+    me, te, se, nos, vos, sei serve as subject and object; possessives mue, tue, sue, nostre, vostre follow the noun
+    (luxi tue "your light"). sui is the reflexive for every person; esto "this" and ilo "that" follow the noun.
 
 - id: KED-VERB-01
   title: Verbs
@@ -109,7 +189,52 @@ rules:
     before the endings (luxava "blessed"). The participle ends in -ato or -ito and often serves as a noun: jubato "decree"
     (lit. "the commanded"). The future is vole + infinitive.
   examples:
-  - {form: Lux-is lux-av-a sangia Vaire., gloss: light-DIGN bless-PST-3SG bloodline Vaire, translation: Luxis blessed the bloodline of Vaire.}
+  - {form: "Lux-is lux-av-a sangia Vaire.", gloss: "light-DIGN bless-PST-3SG bloodline Vaire", translation: "Luxis blessed the bloodline of Vaire."}
+
+- id: KED-VERB-02
+  title: Full verb paradigms
+  rule: >
+    Every regular verb follows one of the two tables below. The subjunctive (-ia, -ian) expresses wishes and blessings, and
+    purpose after a ke "so that". The imperative is -a/-i for one person and -ate/-ite for several. The present participle
+    (-ante, -ente) is an adjective: luxi luxante "shining light". The passive is esere + past participle.
+  examples:
+  - {form: "Lux-is lux-ia nos.", gloss: "light-DIGN bless-SBJV.SG 1PL", translation: "May Luxis bless us."}
+  - {form: "Marheim es obsid-ato.", gloss: "Marheim be.PRS.3SG besiege-PTCP", translation: "Marheim is besieged."}
+
+- id: KED-VERB-03
+  title: The verb esere "to be"
+  rule: >
+    esere is the only irregular verb: present so, ses, es, somo, sete, son; past ero, eri, era, eramo, erate, eran;
+    subjunctive sia, sian; imperative si; participle esito. "Sik sia" ("so be it") closes every prayer. vole, the future
+    marker, never changes.
+
+- id: KED-NUM-01
+  title: Numbers
+  rule: >
+    Cardinals: nulo 0, eno 1, fovo 2, trimi 3, kvaro 4, tammo 5, sesi 6, sevi 7, atti 8, nevi 9, dekra 10, kenti 100, mila 1000.
+    Tens, hundreds and thousands are counted with the plural of the base word (fovo dekre 20, trimi kentie 300, fovo mile 2000);
+    units follow with ed "and" (fovo dekre ed sevi, 27). Ordinals: primo, then -esmo (fovesmo, trimesmo ... dekresmo).
+    fovo, trimi, tammo ("hand, five") and sevi are cognate with Norsund dov, thrim, thamm and sev.
+  examples:
+  - {form: "trimi dekre ed sevi aro", gloss: "three tens and seven year", translation: "thirty-seven years"}
+
+- id: KED-NEG-01
+  title: Negation
+  rule: >
+    no comes right before the verb: "no vinka" "does not conquer"; "no luxa!" "do not bless!". The negative pronouns
+    nikai "no one", nikado "nothing", nikando "never" take no other negation when they come first.
+  examples:
+  - {form: "Nimo no vink-a luxi Vaire.", gloss: "night NEG conquer-PRS.3SG light Vaire", translation: "Night does not conquer the light of Vaire."}
+  - {form: "Nikai vink-a Keria.", gloss: "no.one conquer-PRS.3SG Keria", translation: "No one conquers the Empire."}
+
+- id: KED-Q-01
+  title: Questions
+  rule: >
+    A yes/no question starts with the particle ka and keeps statement order. A question word (kai who, kado what, kaube where,
+    kando when, perkado why, kalo how, kanto how much, kaio which) comes first. Answers: si "yes", no "no".
+  examples:
+  - {form: "Ka ten-e te geldo?", gloss: "Q hold-PRS.2SG 2SG shield", translation: "Do you hold the shield?"}
+  - {form: "Kaube es Rundir?", gloss: "where be.PRS.3SG Rundir", translation: "Where is Rundir?"}
 
 - id: KED-SYN-01
   title: Word order
@@ -117,15 +242,88 @@ rules:
     Everyday speech is subject-verb-object. Imperial decrees put the verb first (Juba Rechtar ... "Rechtar commands ...").
     Negation is no before the verb.
   examples:
-  - {form: Jub-a Rechtar Vaire., gloss: command-PRS.3SG Rechtar Vaire, translation: Rechtar Vaire commands.}
+  - {form: "Jub-a Rechtar Vaire.", gloss: "command-PRS.3SG Rechtar Vaire", translation: "Rechtar Vaire commands."}
 
 - id: KED-SYN-02
   title: One word for every subordinate clause
   rule: >
-    ke introduces every subordinate clause: "that", "who", "which". Norsund borrowed it during the occupation and uses it for
-    relative clauses and "that" clauses.
+    ke introduces every subordinate clause: "that", "who", "which", and "than" after plu. Norsund borrowed it during the
+    occupation and uses it for relative clauses and "that" clauses.
   examples:
-  - {form: Kai ke sta kontra keraro, gloss: who REL stand.PRS.3SG against emperor, translation: whoever stands against the emperor}
+  - {form: "Kai ke sta kontra keraro", gloss: "who REL stand.PRS.3SG against emperor", translation: "whoever stands against the emperor"}
+
+- id: KED-SYN-03
+  title: Coordination and subordination
+  rule: >
+    ed "and", sed "but", au "or", ned "nor". Subordinate clauses keep statement order and are introduced by ke or by a
+    phrase ending in ke: si "if", perke "because", a ke "so that" (with the subjunctive), ante ke "before", post ke "after",
+    kando "when", dum "while".
+  examples:
+  - {form: "Jub-o a ke murra kad-ia.", gloss: "command-PRS.1SG to REL wall fall-SBJV.SG", translation: "I command that the wall fall."}
+  - {form: "Si legia ven-e, porta no es aperto.", gloss: "if legion come-PRS.3SG gate NEG be.PRS.3SG open", translation: "If the legion comes, the gate is not open."}
+
+- id: KED-WF-01
+  title: Word formation
+  rule: >
+    -aro makes the doer (legaro "soldier", alkimiaro "alchemist"); -ato/-ito the thing done (jubato "decree"); -anza an
+    abstract noun (telanza "valour"); -ino something small (kaimino "cottage"); -orio a workplace (ardorio "furnace");
+    -ia a land or domain (Keria); -aire a house or domain (Vaire, Exaire); -s dignity (Luxis, Keras). Verbs come from nouns
+    with -are (kera "crown" > kerare "to crown"). Compounds put the head first (reino + Vaire = Reinovaire).
+
+- id: KED-NAME-01
+  title: Personal and house names
+  rule: >
+    A person has a given name and a house name, in that order (Rechtar Vaire, Doir Vaire, Rundir Voidet). The house name
+    is the "owner" in head-first order: Rechtar "of" Vaire. Given names are not marked for sex (Rechtar, Doir). Great houses
+    end in -aire "house, domain" (Vaire); lesser families often take a descriptive name (Voidet "of the emptiness").
+
+- id: KED-NAME-02
+  title: Titles
+  rule: >
+    Titles come before the name: Keraro Rechtar Vaire "Emperor Rechtar Vaire". keraro "crown-bearer" is the Emperor at court;
+    soldiers say imperaru "commander" (KED-REG-04). primaro "first priest" is the head of the Domo Luxis, the Church of Light
+    (Rechtar took the title in 0 a.v.e.; English lore calls it Pope). reiato "regent, governor" is Doir Vaire's title over
+    the Vilnayan towns. sedaro is a judge, duko a general, alkimiaro supraro the head of the Imperial Academy of Alchemy.
+
+- id: KED-NAME-03
+  title: Place names
+  rule: >
+    Domains end in -aire (Reinovaire, Exaire "domain of the springs", Arbaire "domain of the trees"); lands in -ia (Keria);
+    holy cities and gods take dignity -s, which gives the endings -as and -is (Keras "the Crowned", Luxis). Kedre calls the
+    empire's homeland Valnor, a Norsund word ("north Valia") borrowed back.
+
+- id: KED-REG-01
+  title: Court decree
+  rule: >
+    Decrees begin with the verb and name the ruler in the third person (Juba Rechtar Vaire ...), list the commands as
+    short clauses joined by ed, and close with the place and year (Aro nulo, Keras).
+
+- id: KED-REG-02
+  title: Church liturgy
+  rule: >
+    Prayers address the goddess by her dignity name in the vocative position at the start of the line (Luxis, ...), use the
+    subjunctive for every wish, and close with "Sik sia" ("so be it").
+
+- id: KED-REG-03
+  title: The Academy's learned style
+  rule: >
+    Writers of the Imperial Academy of Alchemy pile up participle nouns and numbers, prefer the passive (es mixtato "is
+    mixed"), and coin terms with -anza and -orio. Norsund's learned loans (alkimia, medikina, kupola) come from this style.
+
+- id: KED-REG-04
+  title: Camp Kedre (soldiers and traders)
+  rule: >
+    The speech of the legions and camp-followers in Thiolden kept an older final -u where court Kedre has -o (camp kividu,
+    imperaru, denaru, molu, obsidiu, probu, pagu, sodalu, kastellu beside court kivido, imperaro, denaro, molo, obsidio,
+    probo, pago, sodalo, kastello), clipped titles and swore by the Emperor rather than by Luxis. Norsund heard Kedre mostly
+    in this form, which is why its occupation loans cite camp forms. The u-ending also survives in merkadu everywhere.
+
+- id: KED-DATE-01
+  title: Dates
+  rule: >
+    Kedre counts years from the founding of the Empire, Keria: aro N post Keria "year N after Keria" (English a.v.e.) and
+    aro N ante Keria "year N before Keria" (b.v.e.). Year zero is aro nulo. Rechtar's conquest of Thiolden began
+    aro trimi dekre ed sevi post Keria (37 a.v.e.).
 
 - id: KED-REL-01
   title: How Kedre words entered Norsund
@@ -134,4 +332,27 @@ rules:
     stress to the first syllable: murra > mur, merkadu > merk, kampo > kamp, porta > port, turra > tur. In rivia > rie the
     v between vowels was also lost and the ending was heard as Norsund unstressed -e.
     Learned loans, taken later from books, kept their shape and stress: alkimia, medikina, kupola. The same word borrowed
-    twice gives a doublet (tur and turra in Norsund). See records/languages/norsund/grammar/12-registers-dialects.yaml.
+    twice gives a doublet (tur and turra in Norsund). These are the "occupation" and "learned" layers of
+    records/languages/norsund/grammar/12-registers-dialects.yaml (kedre_layers) and its rule REG-02.
+
+- id: KED-REL-02
+  title: Camp forms behind the occupation loans
+  rule: >
+    Most occupation loans were heard in camp Kedre (KED-REG-04): kividu > kivid "citizen", imperaru > imperar "emperor",
+    denaru > denar "coin", molu > mol "pier", obsidiu > obsid "siege", probu > prov "test", pagu > pag "pay", sodalu > sodal
+    "guild", kastellu > kastell "fortress". The cognate pairs (telo/thiol, fovo/dov) are not loans: they come down from
+    Proto-Valian through the pv-kedre and Norsund stages of 13-history.
+
+- id: KED-REL-03
+  title: Norsund words in Kedre
+  rule: >
+    Kedre borrowed runa from Norsund run to name the rune magic of Thiolden (native runo means only "secret"), and Valnor for
+    its own homeland. Rundir Voidet's rune explosives are krepito runa, "rune powder".
+
+tables:
+- {id: KED-T-SND, title: "Consonants", columns: [manner, lips, ridge, palate, velum, throat], rows: [[stop, "p b", "t d", "", "k g", ""], [fricative, "f v", s, "", "", h], [nasal, m, n, "", "", ""], [liquid, "", "l r", "", "", ""], [glide, "", "", j, "", ""]]}
+- {id: KED-T-NOUN, title: "Plurals", columns: [singular ending, plural ending, example], rows: [[-o, -i, "legaro > legari"], [-a, -e, "legia > legie"], [-e, -i, "kedre > kedri"], [-i, -ie, "luxi > luxie"], [-u (camp), -ui, "merkadu > merkadui"], [consonant, -es, "fens > fenses"]]}
+- {id: KED-T-ARE, title: "luxare 'to bless, to illuminate'", columns: [person, present, past, subjunctive], rows: [[1sg, luxo, luxavo, luxia], [2sg, luxi, luxavi, luxia], [3sg, luxa, luxava, luxia], [1pl, luxamo, luxavamo, luxian], [2pl, luxate, luxavate, luxian], [3pl, luxan, luxavan, luxian]]}
+- {id: KED-T-IRE, title: "tenire 'to hold'", columns: [person, present, past, subjunctive], rows: [[1sg, teno, tenivo, tenia], [2sg, teni, tenivi, tenia], [3sg, tene, teniva, tenia], [1pl, tenimo, tenivamo, tenian], [2pl, tenite, tenivate, tenian], [3pl, tenen, tenivan, tenian]]}
+- {id: KED-T-NONFIN, title: "Other forms", columns: [form, are, ire], rows: [[infinitive, luxare, tenire], [imperative (one), luxa, teni], [imperative (several), luxate, tenite], [past participle, luxato, tenito], [present participle, luxante, tenente], [future, vole luxare, vole tenire], [passive, es luxato, es tenito]]}
+- {id: KED-T-NUM, title: "Numbers", columns: [value, Kedre, ordinal, Norsund], rows: [["1", eno, primo, yn], ["2", fovo, fovesmo, dov], ["3", trimi, trimesmo, thrim], ["4", kvaro, kvaresmo, ves], ["5", tammo, tammesmo, thamm], ["6", sesi, sesesmo, sesk], ["7", sevi, sevesmo, sev], ["8", atti, attesmo, ath], ["9", nevi, nevesmo, nyv], ["10", dekra, dekresmo, tamm], ["100", kenti, kentesmo, haun], ["1000", mila, milesmo, mork]]}

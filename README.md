@@ -77,7 +77,7 @@ document: fact-records/v1
 topic: The Drunken Dragon Universe
 contributor: Vledic#0001
 context: 
-- Dates use the Varian Imperial System of meassuring years, where year 0 is the founding of the Varian Empire
+- Dates use the Vairean Imperial System of meassuring years, where year 0 is the founding of the Vairean Empire
 facts:
 - Gods exist and are morally grey.
 subtopics:

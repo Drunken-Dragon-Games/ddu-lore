@@ -1,7 +1,7 @@
 document: lang-grammar/v1
 language: old-norsund
 version: 1.0.0
-topic: Old Norsund grammar sketch
+topic: Old Norsund grammar
 contributor: Vledic#0001
 status: ratified
 context:
@@ -58,6 +58,38 @@ morphology:
     - {infinitive: vesa, present: {singular: es, plural: erum}, past: {singular: vas, plural: varum}, participle: vesin, optative: si, gloss: to be}
     - {infinitive: hala, present: {singular: halur, plural: halum}, past: {singular: halde, plural: haldum}, gloss: "to owe, to be bound to (future auxiliary)"}
     - {infinitive: maga, present: {singular: magur, plural: magum}, past: {singular: matte, plural: mattum}, gloss: "to be able, to have the power to"}
+
+  numbers:
+    cardinals: {1: yn, 2: dov, 3: thrim, 4: ves, 5: thamm, 6: sesk, 7: sev, 8: ath, 9: nyv, 10: dovthamm, 100: haun, 1000: mork}
+    teens: "dovthamm eth + unit: 11 dovthamm eth yn (Norsund tammyn)"
+    tens: "unit + dovthamm as two words: 20 dov dovthamm, 70 sev dovthamm (Norsund dovtamm, sevtamm)"
+    long_hundred: {form: langhaun, value: 120}
+    ordinals: {1: ura, 2: dovde, 3: thrimde, 4: veste, 5: thamde, 6: seskte, 7: sevde, 8: atte, 9: nyvde, 10: dovthammde}
+  correlatives:
+    note: "Old Norsund wrote the indefinite, negative and universal forms as two words; Norsund fused them (yn kum > ynkum)."
+    interrogative: {who: kum, what: kut, where: kur, when: kuna, why: kuvi, how: kuso, how_much: kumik, which: kul}
+    indefinite: "yn + question word (yn kum 'someone')"
+    negative: "ne + question word (ne kut 'nothing')"
+    universal: "al + question word (al kur 'everywhere')"
+  comparison:
+    regular: {comparative: ar, superlative: ast}
+    irregular:
+    - {base: hel,  comparative: batar, superlative: bast,  gloss: good}
+    - {base: vond, comparative: verr,  superlative: verst, gloss: bad}
+    - {base: myk,  comparative: meir,  superlative: mest,  gloss: much}
+    - {base: lit,  comparative: minn,  superlative: minst, gloss: little}
+  strong_verb_principal_parts:
+  - {infinitive: lida,   present: lidur,   past: leid,  past_plural: leidum,  participle: lidin,   class: I}
+  - {infinitive: rida,   present: ridur,   past: reid,  past_plural: reidum,  participle: ridin,   class: I}
+  - {infinitive: bida,   present: bidur,   past: beid,  past_plural: beidum,  participle: bidin,   class: I}
+  - {infinitive: skuva,  present: skuvur,  past: skauv, past_plural: skauvum, participle: skovin,  class: II}
+  - {infinitive: drypa,  present: drypur,  past: draup, past_plural: draupum, participle: dropin,  class: II}
+  - {infinitive: vetha,  present: vethur,  past: vath,  past_plural: vathum,  participle: vothin,  class: III}
+  - {infinitive: bresta, present: brestur, past: brast, past_plural: brastum, participle: brostin, class: III}
+  - {infinitive: dola,   present: dolur,   past: dul,   past_plural: dulum,   participle: dolin,   class: IV}
+  - {infinitive: gana,   present: ganur,   past: gon,   past_plural: gonum,   participle: ganin,   class: V}
+  - {infinitive: aga,    present: agur,    past: og,    past_plural: ogum,    participle: agin,    class: V}
+  - {infinitive: saja,   present: sajur,   past: sa,    past_plural: saum,    participle: sajin,   class: irregular}
 
 rules:
 - id: ON-SND-01
@@ -199,6 +231,236 @@ rules:
     Vilkyr oaths, the laws carved on the Kjoldmur, the oldest temple invocations (which use the old god-names Myr and
     Heid), sagas, and every rune-craft formula. Farheim island speech keeps some Old Norsund forms in everyday songs.
 
+- id: ON-SND-04
+  title: Syllables and clusters
+  rule: >
+    Old Norsund syllables follow the Norsund onset and coda lists (records/languages/norsund/grammar/01-phonology.yaml),
+    with two additions: hw- may begin a word (hwander), and a vowel may end a word after k or g (negi, because the
+    final-i-loss rule of 13-history spared velars). Endings keep full vowels, so words often have one more clear syllable
+    than their Norsund descendants.
+  examples:
+  - {form: "hwander", translation: "wanderer (Norsund wander)"}
+  - {form: "negi", translation: "folk (Norsund nay)"}
+
+- id: ON-ORTH-02
+  title: Reading runes
+  rule: >
+    The rune-row (records/languages/scripts/runar.yaml) writes one rune per sound, but carvers did not mark long vowels
+    or double consonants, and they wrote no vowel twice in a row. A word divider (a dot or two) separates words. Scholars
+    normalize a carving into the plain spelling: the runes for t-i-r may stand for tir or tiir "glory". When a reading is
+    uncertain, give the normalized form and say so.
+  examples:
+  - {form: "kul · vas · hel", translation: "a carving that may be read kull vas hel 'the ember was good' (kul for kull)"}
+
+- id: ON-NOUN-05
+  title: Full noun paradigms
+  rule: >
+    Every noun follows one of four patterns: animate, inanimate, vowel stem, or umlaut plural (tables ON-T2 and ON-T3).
+    Prepositions take the dative. The dative plural -um is the same for every class.
+  examples:
+  - {form: "i Vilkyr-um", gloss: "among free.sword-PL.DAT", translation: "among the free swords"}
+  - {form: "skei-um", gloss: "ship-PL.DAT", translation: "(in) ships"}
+
+- id: ON-NOUN-06
+  title: Umlaut plurals in the cases
+  rule: >
+    The six umlaut nouns (lud/lyd, thamm/themm, gat/get, fuld/fyld, tunn/tynn, brod/bred) change the vowel in every
+    plural case and add the plural case endings to it: lyd, lydi, lydum. The singular is regular animate: lud, luda,
+    ludi, lude.
+  examples:
+  - {form: "langhaun get", gloss: "long.hundred goat.PL", translation: "a long hundred (120) goats"}
+
+- id: ON-ADJ-02
+  title: Comparison
+  rule: >
+    Comparative -ar, superlative -ast, then the agreement ending (thiolara Vilkyra "the braver free sword", ACC). Four
+    adjectives are irregular and were inherited unchanged by Norsund: hel batar bast, vond verr verst, myk meir mest,
+    lit minn minst. "Than" is thon, followed by the nominative.
+  examples:
+  - {form: "Tyr es thiol-ar thon Ulf.", gloss: "Tyr be.PRS.SG brave-CMPR than Ulf", translation: "Tyr is braver than Ulf."}
+
+- id: ON-NUM-01
+  title: Numbers
+  rule: >
+    Old Norsund counts in tens, but ten is still dovthamm "two hands" and tens are two words: dov dovthamm "twenty",
+    sev dovthamm "seventy". Teens add eth "and": dovthamm eth yn "eleven". Norsund contracted these to tamm, dovtamm,
+    tammyn. Markets counted goods in the long hundred, langhaun (120). Numbers above one take a plural noun in the case
+    the sentence needs.
+  examples:
+  - {form: "i ves skei-um", gloss: "in four ship-PL.DAT", translation: "in four ships"}
+  - {form: "dov dovthamm ar-ar", gloss: "two ten year-PL.IN", translation: "twenty years"}
+
+- id: ON-NUM-02
+  title: Ordinals
+  rule: >
+    Ordinals add -de after voiced sounds and -te after voiceless ones (thrimde, veste); "first" is ura, "from the origin".
+    Ordinals inflect like adjectives. Seven is sev everywhere: the Starisund form stev did not yet exist.
+  examples:
+  - {form: "a nyv-de dag-e", gloss: "on nine-ORD day-DAT", translation: "on the ninth day"}
+
+- id: ON-PRON-02
+  title: Reflexive, reciprocal and demonstratives
+  rule: >
+    sjo "self" serves every person and does not inflect; sjosjo means "each other". The demonstratives hes "this" and
+    thas "that" inflect like adjectives (hesar runar "these runes", thasa ACC). In memorial formulas the demonstrative
+    follows its noun: runar hesar.
+
+- id: ON-PRON-03
+  title: Question words and their family
+  rule: >
+    The question words are the same as in Norsund (kum, kut, kur, kuna, kuvi, kuso, kumik, kul). The "some-", "no-" and
+    "every-" words are still two words: yn kum "someone", ne kut "nothing", al kur "everywhere". kum and kut inflect
+    like animate and inanimate nouns (kuma "whom", kuti "whose").
+  examples:
+  - {form: "Ne kut skrinkur em.", gloss: "NEG what flee-PRS.SG 1SG.NOM", translation: "From nothing do I flee."}
+
+- id: ON-VERB-04
+  title: Weak verb paradigm
+  rule: >
+    Weak verbs agree with a singular or plural subject in the present and past (table ON-T4). The infinitive ends in -a,
+    the imperative is the bare stem, and the optative is -i (singular) or -im (plural).
+
+- id: ON-VERB-05
+  title: Strong verbs
+  rule: >
+    Strong verbs change their vowel for the past, as in Norsund, and add -um for a plural subject (dul "fell", dulum
+    "they fell"). The participle ends in -in, which Norsund reduced to -en. Principal parts are listed in the morphology
+    block above.
+  examples:
+  - {form: "Skeiar gon-um ur Farheim-e.", gloss: "ship-PL.IN go.PST-PL out.of Farheim-DAT", translation: "The ships went out from Farheim."}
+
+- id: ON-VERB-06
+  title: Perfect, passive and participles
+  rule: >
+    The perfect is aga "have" + participle (agur kjoldad "has guarded"); the passive is vesa + participle (es vothin
+    "is bound"). The present participle -ande works as an adjective and agrees (lysande run "a shining rune").
+
+- id: ON-SYN-05
+  title: Coordination and subordination
+  rule: >
+    eth "and", ava "but", vo "or" join clauses without changing word order. Subordinate clauses put the finite verb last:
+    sof "if", kuna "when", ys "that, which, who", ter ys "because", for ys "before", aft ys "after", thon "than".
+    ys is both the relative and the complementizer; Norsund replaced it with ke, so Norsund ter ke continues ter ys.
+  examples:
+  - {form: "Em ne skrink-ur, ter ys Myr om kjold-ur.", gloss: "1SG.NOM NEG flee-PRS.SG because REL Myr 1SG.ACC guard-PRS.SG", translation: "I do not flee, because Myr guards me."}
+
+- id: ON-WF-01
+  title: Word formation
+  rule: >
+    Old Norsund builds words as Norsund does: compounds with the head last (nimkjold), the linking genitive -i-
+    (starisund), and the suffixes -ir (agent: skilir "judge"), -ning (deed or result), -eth (quality: thioleth), -ling
+    (small or young), -ug (full of), -nuth (without), -a (adjectives and verbs), and the prefixes ne-, mar-, ur-, al-.
+    Several of these suffixes now look the same in both languages, but not by inheritance. The reduction rule turned
+    inherited -ir into -er (Old kjoldir became Norsund kjolder). Norsund then re-borrowed -ir, -ning, -ling and -ug from
+    Old Norsund law and liturgy in their old shape, as English borrowed learned Latin endings.
+  examples:
+  - {form: "skil-ir", gloss: "judge-AGT", translation: "judge"}
+  - {form: "kjold-ir", gloss: "guard-AGT", translation: "sentry (Norsund kjolder)"}
+
+- id: ON-WF-02
+  title: Kennings
+  rule: >
+    Kennings came from Old Norsund verse and are still composed in it. The base noun takes the case of the sentence; the
+    modifier stays in the genitive or is compounded. Kennings may nest.
+  examples:
+  - {form: "hjaul-i hest", gloss: "sea-GEN horse", translation: "ship"}
+  - {form: "kyr-i sund", gloss: "blade-GEN song", translation: "battle"}
+  - {form: "ulf-i kjal", gloss: "wolf-GEN drink", translation: "blood"}
+  - {form: "Heid-i glyn", gloss: "Heid-GEN eye", translation: "the sun"}
+
+- id: ON-NAME-01
+  title: Personal names and bynames
+  rule: >
+    A person is named by given name + parent-name in -ung ("child of"; Alkregg > Alkreggung) and, for the famous, a
+    byname: adjective or noun + the article hin after it (Tyr thiol hin, "Tyr the brave"). In Norsund the article fused
+    and the byname became Tyr Thiolin. Given names are one or two name elements (Aur + hask = Aurhask "silver-axe").
+    Inherited Farheim names (Astrid, Haakon, Ulf) are older than Old Norsund itself.
+
+- id: ON-NAME-02
+  title: Houses and memorial stones
+  rule: >
+    A house is "the children of" its founder: founder + -ungin (Norsund -ungen). Memorial stones follow a fixed formula:
+    WHO carved these runes after WHOM (dative), relationship; a line of praise; a blessing in the optative; and a closing
+    ban on charging the runes, because rune magic near the dead raises them.
+  examples:
+  - {form: "rist-adum run-ar hes-ar aft Aurhask-e", gloss: "carve-PST.PL rune-PL.IN this-PL.IN after Aurhask-DAT", translation: "carved these runes in memory of Aurhask"}
+
+- id: ON-REG-02
+  title: The oath register
+  rule: >
+    Oaths are first person, present tense, and end with the gods named as witnesses (Sajir es Myr) and a conditional
+    curse in the optative (Sof em vath brestur, biti kyr emi om). The hand on the blade (a kyre eth a thamme) is part of the formula.
+
+- id: ON-REG-03
+  title: The law register
+  rule: >
+    Laws open with Hes es lag X-i ("this is the law of X"). Each rule is a relative clause plus a main clause: Kum ys ... ,
+    thas ... ("whoever ..., that one ..."). Penalties use the future auxiliary hala or the noun utlag. Judgments close with
+    Sva skilum emin. A witness who did not see may not swear. That is the root of the Auristar rule that testimony
+    without the evidential sa is hearsay.
+
+- id: ON-REG-04
+  title: The liturgy register
+  rule: >
+    Invocations open with Em heitur X-a ("I call upon X"), use the old god-names Myr and Heid, make requests with the
+    imperative jov "give" or the optative, and close with Sva es urlag ("so is fate"). Modern Starisund priests add stari
+    after these lines.
+
+- id: ON-REG-05
+  title: The saga register
+  rule: >
+    Sagas open with Hes es frast X-i ("this is the tale of X") and tell events in the past tense, with short clauses joined
+    by eth and ava. Time is counted in days and nights (a nyvde dage "on the ninth day"). Speech is quoted with mal "said".
+
+- id: ON-REG-06
+  title: Rune-magic incantations
+  rule: >
+    An incantation has a fixed shape: the carver names the act (Run ristur em, run ladur em, "a rune I carve, a rune I
+    charge"), names the powers (vald, the arcane field; sveim, the aether current), commands the runes in the optative,
+    and ends with Glod! ("glow!"). Then the runes glow. Charging runes is rune magic: it destroyed Marheim, it is forbidden
+    in Auristar by the law of the Kjoldmur, and a glowing rune in Auristar is always a crime or a sign of forbidden magic.
+    Plain runic writing never glows.
+
+- id: ON-POET-01
+  title: Old Norsund verse
+  rule: >
+    Old Norsund verse uses the sundlag of records/languages/norsund/grammar/14-poetics.yaml: two half-lines of two stresses,
+    linked by alliteration on the first stressed syllable of the second half. The full endings give more unstressed
+    syllables than Norsund, so the old lines sound longer and heavier. Heiti (jor, bran, ljom, varg, log, berg, dreyr)
+    replace everyday nouns.
+  examples:
+  - {form: "Vil kyr · vothin sund", translation: "Free blade · bound word (v alliterates)"}
+  - {form: "Skryma thiarkur em · em ne skrinkur", translation: "The monster I hunt · I shrink not (sk alliterates)"}
+
+- id: ON-HIST-01
+  title: Where Old Norsund came from
+  rule: >
+    Old Norsund is Proto-Valian after the pv-pn and pn-on stages of 13-history. Grimm-style shifts (grimm-1, grimm-2,
+    grimm-3) gave its consonants. Breaking (breaking-u) gave thiol from *telu and kjold from *geldhu. Palatalization
+    gave kj; umlaut gave kyr from *guri and myr from *muri. final-u-loss and final-i-loss shortened words like *staru to
+    star; ln-assimilation gave kull. The Old Norsund column of the 31 cognate sets is authoritative.
+
+- id: ON-HIST-02
+  title: How Old Norsund became Norsund
+  rule: >
+    Sound changes of the on-n stage of 13-history:
+    ey-merger (ey > ei);
+    g-gliding and glide-i-loss with ej-diphthong (negi > nay);
+    reduction (final -in, -ur > -en, -er: Vilkyrin > Vilkyren, kjoldur > kjolder);
+    unstressed-shortening (iliin > ilin);
+    hw-simplification (hwander > wander).
+    Grammar changes:
+    the cases fell away except the genitive;
+    number agreement on verbs and adjectives was lost;
+    the article hin fused onto the noun as -in after reduction had stopped;
+    subordinate clauses became subject-verb-object;
+    ne moved after the verb in main clauses;
+    the Kedre loan ke replaced ys;
+    ma (from maga) replaced the optative;
+    hal (from halur) became the future auxiliary.
+    Evidentials grew out of Old words:
+    sa is the past of saja, sund is the noun "song", and stari is the genitive of star.
+
 tables:
 - id: ON-T1
   title: Old Norsund and Norsund endings side by side
@@ -214,3 +476,57 @@ tables:
   - [relative, ys, ke (Kedre loan)]
   - [wish, optative -i (kjoldi), ma + infinitive (ma kjolda)]
   - [future, halur + infinitive, hal + infinitive]
+
+- id: ON-T2
+  title: Noun paradigms (animate and inanimate)
+  columns: [case, animate sg (Vilkyr), animate pl, inanimate sg (kyr), inanimate pl]
+  rows:
+  - [nominative, Vilkyr, Vilkyrin, kyr, kyrar]
+  - [accusative, Vilkyra, Vilkyrin, kyr, kyrar]
+  - [genitive, Vilkyri, Vilkyrini, kyri, kyrari]
+  - [dative, Vilkyre, Vilkyrum, kyre, kyrum]
+
+- id: ON-T3
+  title: Vowel stems and umlaut plurals
+  columns: [case, vowel stem sg (negi), vowel stem pl, umlaut sg (lud), umlaut pl]
+  rows:
+  - [nominative, negi, negin, lud, lyd]
+  - [accusative, nega, negin, luda, lyd]
+  - [genitive, negis, negini, ludi, lydi]
+  - [dative, nege, negum, lude, lydum]
+
+- id: ON-T4
+  title: Verb paradigms
+  columns: [form, weak (kjolda), strong (dola), irregular (vesa)]
+  rows:
+  - [infinitive, kjolda, dola, vesa]
+  - [present singular, kjoldur, dolur, es]
+  - [present plural, kjoldum, dolum, erum]
+  - [past singular, kjoldade, dul, vas]
+  - [past plural, kjoldadum, dulum, varum]
+  - [participle, kjoldad, dolin, vesin]
+  - [present participle, kjoldande, dolande, vesande]
+  - [imperative, kjold, dol, ves]
+  - [optative singular, kjoldi, doli, si]
+  - [optative plural, kjoldim, dolim, sim]
+
+- id: ON-T5
+  title: Numbers
+  columns: [value, Old Norsund, Norsund]
+  rows:
+  - ["1", yn, yn]
+  - ["2", dov, dov]
+  - ["3", thrim, thrim]
+  - ["4", ves, ves]
+  - ["5", thamm, thamm]
+  - ["6", sesk, sesk]
+  - ["7", sev, sev / stev]
+  - ["8", ath, ath]
+  - ["9", nyv, nyv]
+  - ["10", dovthamm, tamm]
+  - ["11", dovthamm eth yn, tammyn]
+  - ["20", dov dovthamm, dovtamm]
+  - ["100", haun, haun]
+  - ["120", langhaun, langhaun]
+  - ["1000", mork, mork]
+

@@ -9,8 +9,8 @@ Two published pages (private to their owner until shared): the **Norsund overvie
 | Language | Who speaks it | Status | Guide |
 |---|---|---|---|
 | **Norsund** | the common tongue of Thiolden | complete, version 1.0 | [norsund/](norsund/README.md) |
-| **Old Norsund** | the settlers of 450 b.v.e.; still used for oaths, law, liturgy and runes | sketch | [old-norsund.md](old-norsund.md) |
-| **Kedre** | the Vairean Empire | sketch | [kedre.md](kedre.md) |
+| **Old Norsund** | the settlers of 450 b.v.e.; still used for oaths, law, liturgy and runes | complete, version 1.0 | [old-norsund.md](old-norsund.md) |
+| **Kedre** | the Vairean Empire | complete, version 1.0 | [kedre.md](kedre.md) |
 | Other tongues | dwarves of Karhak'Modan, the Ik'nal'tar, Ath'alan elves, Merfolk, Vulkin, Dragonkin | scope notes only | [records/languages/languages.yaml](../../records/languages/languages.yaml) |
 
 ```

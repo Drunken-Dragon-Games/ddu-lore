@@ -68,7 +68,7 @@ entries:
 - {lemma: kut,   pos: pron, gloss: [what, whatever]}
 - {lemma: sva,   pos: adv,  gloss: [thus, so]}
 - {lemma: i,     pos: prep, gloss: [in]}
-- {lemma: a,     pos: prep, gloss: [on, at]}
+- {lemma: a,     pos: prep, gloss: ["on", at]}
 - {lemma: ve,    pos: prep, gloss: [to, toward]}
 - {lemma: ter,   pos: prep, gloss: [for, for the sake of]}
 - {lemma: aft,   pos: prep, gloss: [after, in memory of]}
@@ -184,3 +184,201 @@ entries:
 - {lemma: Thiolden, pos: name, class: inanimate, gloss: [Thiolden, land of the brave], parts: [thiol, den], forms: {dative: Thioldene}}
 - {lemma: Farheim,  pos: name, class: inanimate, gloss: [Farheim, far home], parts: [far, heim]}
 - {lemma: Kjoldmur, pos: name, class: inanimate, gloss: [the Kjoldmur], parts: [kjold, mur], notes: "built 91-124 a.v.e.; mur is a Kedre loan, so the name is not true Old Norsund, but it is used in Old Norsund law formulas"}
+
+# --- Swadesh core (Old forms of the Norsund words; animate nouns show ACC and PL, inanimate show PL) ---
+- {lemma: al,     pos: det,  gloss: [all, every], forms: {norsund: al}, tier: core}
+- {lemma: myk,    pos: det,  gloss: [much, many], forms: {norsund: myk, comparative: meir, superlative: mest}, tier: core}
+- {lemma: lit,    pos: det,  gloss: [little, few], forms: {norsund: lit, comparative: minn, superlative: minst}}
+- {lemma: gorm,   pos: adj,  gloss: [big, great], forms: {norsund: gorm}, tier: core}
+- {lemma: lang,   pos: adj,  gloss: [long], forms: {norsund: lang}, tier: core}
+- {lemma: piv,    pos: adj,  gloss: [small], forms: {norsund: piv}, tier: core}
+- {lemma: dis,    pos: noun, class: animate, gloss: [woman], forms: {norsund: dis, accusative: disa, plural: disin}, tier: core}
+- {lemma: hoth,   pos: noun, class: animate, gloss: [man], forms: {norsund: hoth, accusative: hotha, plural: hothin}, tier: core}
+- {lemma: kolm,   pos: noun, class: animate, gloss: [fish], forms: {norsund: kolm, plural: kolmin}, tier: core, derived: [{lemma: markolm, pos: noun, class: animate, gloss: [whale (lit. great fish)], parts: [mar, kolm]}]}
+- {lemma: flaun,  pos: noun, class: animate, gloss: [bird], forms: {norsund: flaun, plural: flaunin}, tier: core}
+- {lemma: rakk,   pos: noun, class: animate, gloss: [dog, hound], forms: {norsund: rakk, plural: rakkin}, tier: core}
+- {lemma: nyt,    pos: noun, class: animate, gloss: [louse], forms: {norsund: nyt}, tier: core}
+- {lemma: brin,   pos: noun, class: inanimate, gloss: [tree], forms: {norsund: brin, plural: brinar}, tier: core}
+- {lemma: spyr,   pos: noun, class: inanimate, gloss: [seed], forms: {norsund: spyr}, tier: core}
+- {lemma: lyv,    pos: noun, class: inanimate, gloss: [leaf], forms: {norsund: lyv}, tier: core}
+- {lemma: thurm,  pos: noun, class: inanimate, gloss: [root], forms: {norsund: thurm, scholarly: þurm}, tier: core}
+- {lemma: skalv,  pos: noun, class: inanimate, gloss: [bark (of a tree)], forms: {norsund: skalv}, tier: core}
+- {lemma: hjud,   pos: noun, class: inanimate, gloss: [skin, hide], forms: {norsund: hjud}, tier: core}
+- {lemma: bram,   pos: noun, class: inanimate, gloss: [flesh], forms: {norsund: bram}, tier: core}
+- {lemma: blyth,  pos: noun, class: inanimate, gloss: [blood], forms: {norsund: blyth, scholarly: blyð}, tier: core}
+- {lemma: skell,  pos: noun, class: inanimate, gloss: [bone], forms: {norsund: skell}, tier: core}
+- {lemma: gloth,  pos: noun, class: inanimate, gloss: [fat, grease], forms: {norsund: gloth}, tier: core}
+- {lemma: yll,    pos: noun, class: inanimate, gloss: [egg], forms: {norsund: yll}, tier: core}
+- {lemma: hyrn,   pos: noun, class: inanimate, gloss: [horn], forms: {norsund: hyrn}, tier: core}
+- {lemma: sterd,  pos: noun, class: inanimate, gloss: [tail], forms: {norsund: sterd}, tier: core}
+- {lemma: fjoth,  pos: noun, class: inanimate, gloss: [feather], forms: {norsund: fjoth, scholarly: fjoð}, tier: core}
+- {lemma: thrud,  pos: noun, class: inanimate, gloss: [hair], forms: {norsund: thrud}, tier: core}
+- {lemma: skult,  pos: noun, class: inanimate, gloss: [head], forms: {norsund: skult}, tier: core}
+- {lemma: hyrl,   pos: noun, class: inanimate, gloss: [ear], forms: {norsund: hyrl}, tier: core}
+- {lemma: glyn,   pos: noun, class: inanimate, gloss: [eye], forms: {norsund: glyn}, tier: core}
+- {lemma: snyth,  pos: noun, class: inanimate, gloss: [nose], forms: {norsund: snyth}, tier: core}
+- {lemma: gom,    pos: noun, class: inanimate, gloss: [mouth], forms: {norsund: gom}, tier: core}
+- {lemma: tunn,   pos: noun, class: animate, gloss: [tooth], forms: {norsund: tunn, plural: tynn}, tier: core, notes: "umlaut plural"}
+- {lemma: lunn,   pos: noun, class: inanimate, gloss: [tongue (the organ)], forms: {norsund: lunn}, tier: core}
+- {lemma: krall,  pos: noun, class: inanimate, gloss: [claw, talon], forms: {norsund: krall}, tier: core}
+- {lemma: fuld,   pos: noun, class: animate, gloss: [foot], forms: {norsund: fuld, plural: fyld}, tier: core, notes: "umlaut plural"}
+- {lemma: kyll,   pos: noun, class: inanimate, gloss: [knee], forms: {norsund: kyll}, tier: core}
+- {lemma: vomb,   pos: noun, class: inanimate, gloss: [belly], forms: {norsund: vomb}, tier: core}
+- {lemma: hjals,  pos: noun, class: inanimate, gloss: [neck], forms: {norsund: hjals}, tier: core}
+- {lemma: barm,   pos: noun, class: inanimate, gloss: [breast, chest], forms: {norsund: barm}, tier: core}
+- {lemma: kjarth, pos: noun, class: inanimate, gloss: [heart], forms: {norsund: kjarth, scholarly: kjarð}, tier: core}
+- {lemma: lomm,   pos: noun, class: inanimate, gloss: [liver], forms: {norsund: lomm}, tier: core}
+- {lemma: mosa,   pos: verb, class: weak, gloss: [to eat], forms: {norsund: mosa, present: mosur}, tier: core}
+- {lemma: hyrla,  pos: verb, class: weak, gloss: [to hear], forms: {norsund: hyrla, present: hyrlur}, tier: core}
+- {lemma: skyna,  pos: verb, class: weak, gloss: [to know], forms: {norsund: skyna, present: skynur}, tier: core}
+- {lemma: svafa,  pos: verb, class: weak, gloss: [to sleep], forms: {norsund: svafa, present: svafur}, tier: core, derived: [{lemma: svaf, pos: noun, class: inanimate, gloss: [sleep]}]}
+- {lemma: dautha,  pos: verb, class: weak, gloss: [to die], forms: {norsund: dautha, present: dauthur, scholarly: dauða}, tier: core}
+- {lemma: valda,  pos: verb, class: weak, gloss: [to slay, to kill], forms: {norsund: valda, present: valdur, past: valdade}, tier: core}
+- {lemma: sjomma, pos: verb, class: weak, gloss: [to swim], forms: {norsund: sjomma}, tier: core}
+- {lemma: flauga, pos: verb, class: weak, gloss: [to fly], forms: {norsund: flauga}, tier: core}
+- {lemma: lorna,  pos: verb, class: weak, gloss: [to lie down], forms: {norsund: lorna}, tier: core}
+- {lemma: sjota,  pos: verb, class: weak, gloss: [to sit], forms: {norsund: sjota}, tier: core}
+- {lemma: stima,  pos: verb, class: weak, gloss: [to stand], forms: {norsund: stima}, tier: core}
+- {lemma: sauv,   pos: noun, class: inanimate, gloss: [sun], forms: {norsund: sauv}, tier: core, notes: "in verse: Heidi glyn 'Heid's eye'"}
+- {lemma: ysk,    pos: noun, class: inanimate, gloss: [moon], forms: {norsund: ysk}, tier: core}
+- {lemma: drus,   pos: noun, class: inanimate, gloss: [rain], forms: {norsund: drus}, tier: core}
+- {lemma: sorn,   pos: noun, class: inanimate, gloss: [sand], forms: {norsund: sorn}, tier: core}
+- {lemma: hurn,   pos: noun, class: inanimate, gloss: [earth, soil], forms: {norsund: hurn}, tier: core}
+- {lemma: svaul,  pos: noun, class: inanimate, gloss: [cloud], forms: {norsund: svaul}, tier: core}
+- {lemma: thiauk, pos: noun, class: inanimate, gloss: [smoke], forms: {norsund: thiauk}, tier: core}
+- {lemma: sveth,  pos: noun, class: inanimate, gloss: [ash, cinders], forms: {norsund: sveth}, tier: core}
+- {lemma: thyrna, pos: verb, class: weak, gloss: [to burn], forms: {norsund: thyrna, present: thyrnur}, tier: core}
+- {lemma: gand,   pos: noun, class: inanimate, gloss: [road, path], forms: {norsund: gand}, tier: core}
+- {lemma: krun,   pos: noun, class: inanimate, gloss: [hill], forms: {norsund: krun}, tier: core}
+- {lemma: ryd,    pos: adj,  gloss: [red], forms: {norsund: ryd}, tier: core, derived: [{lemma: ryda, pos: verb, class: weak, gloss: [to redden, to stain runes red]}]}
+- {lemma: gilm,   pos: adj,  gloss: [yellow], forms: {norsund: gilm}, tier: core}
+- {lemma: kvit,   pos: adj,  gloss: [white], forms: {norsund: kvit}, tier: core}
+- {lemma: vorn,   pos: adj,  gloss: [black], forms: {norsund: vorn}, tier: core}
+- {lemma: dunk,   pos: adj,  gloss: [dark], forms: {norsund: dunk}, tier: core}
+- {lemma: fyrug,  pos: adj,  gloss: [hot, fiery], parts: [fyr, ug], forms: {norsund: fyrug}, tier: core}
+- {lemma: kjeld,  pos: noun, class: inanimate, gloss: [cold, frost], forms: {norsund: kjeld}, tier: core, derived: [{lemma: kjeldug, pos: adj, gloss: [cold, frosty]}]}
+- {lemma: mydd,   pos: adj,  gloss: [full], forms: {norsund: mydd}, tier: core}
+- {lemma: friv,   pos: adj,  gloss: [new, fresh], forms: {norsund: friv}, tier: core}
+- {lemma: olv,    pos: adj,  gloss: [round], forms: {norsund: olv}, tier: core}
+- {lemma: skorr,  pos: adj,  gloss: [dry], forms: {norsund: skorr}, tier: core}
+- {lemma: thyn,   pos: noun, class: inanimate, gloss: [name], forms: {norsund: thyn}, tier: core, derived: [{lemma: thyna, pos: verb, class: weak, gloss: [to name]}]}
+
+# --- Kinship ---
+- {lemma: amme,   pos: noun, class: animate, gloss: [mother], forms: {norsund: amme, accusative: amma, plural: ammin}}
+- {lemma: thade,  pos: noun, class: animate, gloss: [father], forms: {norsund: thade, accusative: thada, plural: thadin}}
+- {lemma: ung,    pos: noun, class: animate, gloss: [child, offspring], forms: {norsund: ung, accusative: unga, plural: ungin}, notes: "also the parent-name suffix -ung and the house suffix -ungin (Norsund -ungen)"}
+- {lemma: hjun,   pos: noun, class: animate, gloss: [spouse], forms: {norsund: hjun}}
+- {lemma: urlud,  pos: noun, class: animate, gloss: [ancestor], parts: [ur, lud], forms: {norsund: urlud, plural: urlyd}}
+- {lemma: ulda,   pos: verb, class: weak, gloss: [to inherit], forms: {norsund: ulda}, derived: [{lemma: uldir, pos: noun, class: animate, gloss: [heir], parts: [ulda, ir]}]}
+- {lemma: bryl,   pos: noun, class: inanimate, gloss: [clan, kindred], forms: {norsund: bryl}}
+- {lemma: vethbrod, pos: noun, class: animate, gloss: [sworn sibling], parts: [veth, brod], forms: {norsund: vethbrod, plural: vethbred}}
+
+# --- Sea and settlement ---
+- {lemma: hjaul,  pos: noun, class: inanimate, gloss: [sea], forms: {norsund: hjaul}}
+- {lemma: valt,   pos: noun, class: inanimate, gloss: [wave], forms: {norsund: valt}}
+- {lemma: skei,   pos: noun, class: inanimate, gloss: [ship, boat], forms: {norsund: skei, plural: skeiar, dative.plural: skeium}}
+- {lemma: hjaulhest, pos: noun, class: inanimate, gloss: [ship (kenning, lit. sea-horse)], register: poetic, parts: [hjaul, hest]}
+- {lemma: arl,    pos: noun, class: inanimate, gloss: [oar], forms: {norsund: arl}, derived: [{lemma: arla, pos: verb, class: weak, gloss: [to row]}]}
+- {lemma: byra,   pos: verb, class: weak, gloss: [to sail], forms: {norsund: byra}}
+- {lemma: hjolm,  pos: noun, class: inanimate, gloss: [shore], forms: {norsund: hjolm}}
+- {lemma: thrusk, pos: noun, class: inanimate, gloss: [storm], forms: {norsund: thrusk}}
+- {lemma: sask,   pos: noun, class: inanimate, gloss: [salt], forms: {norsund: sask}}
+- {lemma: nausta, pos: noun, class: inanimate, gloss: [boat-shed], notes: "lost in Norsund; the inland settlers no longer needed the word"}
+- {lemma: landa,  pos: verb, class: weak, gloss: [to make landfall], notes: "lost in Norsund"}
+
+# --- War and saga ---
+- {lemma: hyrsk,  pos: noun, class: inanimate, gloss: [spear], forms: {norsund: hyrsk}}
+- {lemma: kumb,   pos: noun, class: inanimate, gloss: [helmet], forms: {norsund: kumb}}
+- {lemma: fylk,   pos: noun, class: inanimate, gloss: [host, army, battle-line], forms: {norsund: fylk}}
+- {lemma: skath,  pos: noun, class: animate, gloss: [enemy, foe], forms: {norsund: skath, accusative: skatha, plural: skathin}, derived: [{lemma: skatheth, pos: noun, class: inanimate, gloss: [feud, enmity], parts: [skath, eth]}]}
+- {lemma: hjal,   pos: noun, class: inanimate, gloss: [peace], forms: {norsund: hjal}, derived: [{lemma: hjalveth, pos: noun, class: inanimate, gloss: [truce, peace-oath], parts: [hjal, veth]}]}
+- {lemma: vyng,   pos: noun, class: inanimate, gloss: [victory], forms: {norsund: vyng}}
+- {lemma: svern,  pos: noun, class: inanimate, gloss: [wound], forms: {norsund: svern}, derived: [{lemma: sverna, pos: verb, class: weak, gloss: [to wound]}]}
+- {lemma: vrek,   pos: noun, class: inanimate, gloss: [vengeance, repayment], forms: {norsund: vrek}}
+- {lemma: frast,  pos: noun, class: inanimate, gloss: [tale, saga], forms: {norsund: frast}}
+- {lemma: orth,   pos: noun, class: inanimate, gloss: [renown, fame], forms: {norsund: orth}, derived: [{lemma: orthlud, pos: noun, class: animate, gloss: [hero (lit. renown-person)], parts: [orth, lud]}]}
+- {lemma: fremd,  pos: noun, class: inanimate, gloss: [deed, feat], notes: "saga word, lost in everyday Norsund"}
+- {lemma: velth,  pos: noun, class: inanimate, gloss: [feast], forms: {norsund: velth}}
+- {lemma: seimkjal, pos: noun, class: inanimate, gloss: [mead (lit. honey-drink)], forms: {norsund: seimkjal}}
+- {lemma: daggand, pos: noun, class: inanimate, gloss: [a day's journey], parts: [dag, gand], forms: {norsund: daggand}}
+- {lemma: farlud, pos: noun, class: animate, gloss: [exile, one far from home], parts: [far, lud], forms: {norsund: farlud}}
+- {lemma: svip,   pos: noun, class: animate, gloss: [wraith, ghost], forms: {norsund: svip, accusative: svipa, plural: svipin}}
+- {lemma: dauthlud, pos: noun, class: animate, gloss: [the risen dead, a walking corpse], parts: [dauth, lud]}
+- {lemma: hask,   pos: noun, class: inanimate, gloss: [axe], forms: {norsund: hask}}
+- {lemma: Aurhask, pos: name, class: animate, gloss: [Aurhask, "silver-axe (a given name)"], parts: [aur, hask], notes: "from the memorial stone in texts.yaml"}
+- {lemma: Sauvdis, pos: name, class: animate, gloss: [Sauvdis, "sun-woman (a given name)"], parts: [sauv, dis]}
+- {lemma: Haugden, pos: name, class: inanimate, gloss: [the Haugden, the barrow plains], parts: [haug, den], forms: {dative: Haugdene}}
+
+# --- Law and oath ---
+- {lemma: lagsund, pos: noun, class: inanimate, gloss: [law-speech, the reciting of the law], parts: [lag, sund], derived: [{lemma: lagsundir, pos: noun, class: animate, gloss: [law-speaker], parts: [lagsund, ir]}]}
+- {lemma: lagbrest, pos: noun, class: inanimate, gloss: [breach of the law], parts: [lag, brest]}
+- {lemma: uteheim, pos: noun, class: inanimate, gloss: [banishment, exile], parts: [ute, heim], forms: {norsund: uteheim}}
+- {lemma: snika,  pos: verb, class: weak, gloss: [to steal], forms: {norsund: snika}, derived: [{lemma: snikir, pos: noun, class: animate, gloss: [thief], parts: [snika, ir]}]}
+- {lemma: rand,   pos: noun, class: inanimate, gloss: [boundary, border], notes: "law word, lost in Norsund"}
+- {lemma: vethstav, pos: noun, class: inanimate, gloss: [pledge-stave (a carved token of a promise)], parts: [veth, stav]}
+- {lemma: veth,   pos: noun, class: inanimate, gloss: [pledge, sworn bond], notes: "combining form of vetha 'to swear'"}
+
+# --- Liturgy ---
+- {lemma: bena,   pos: verb, class: weak, gloss: [to pray], forms: {norsund: bena}}
+- {lemma: gleida, pos: verb, class: weak, gloss: [to bless], forms: {norsund: gleida}}
+- {lemma: ilinsund, pos: noun, class: inanimate, gloss: [hymn], parts: [iliin, sund], forms: {norsund: ilinsund}}
+- {lemma: ilm,    pos: noun, class: animate, gloss: [god, deity], forms: {norsund: ilm, accusative: ilma, plural: ilmin}}
+- {lemma: vordning, pos: noun, class: inanimate, gloss: [prophecy], forms: {norsund: vordning}}
+- {lemma: holv,   pos: noun, class: inanimate, gloss: [sky, the vault of the sky], forms: {norsund: holv}}
+- {lemma: gremm,  pos: noun, class: inanimate, gloss: [curse], forms: {norsund: gremm}, derived: [{lemma: gremma, pos: verb, class: weak, gloss: [to curse]}]}
+
+# --- Rune-craft ---
+- {lemma: runir,  pos: noun, class: animate, gloss: [rune-master, rune-carver], parts: [run, ir], forms: {norsund: runir}}
+- {lemma: skif,   pos: noun, class: inanimate, gloss: [slate], forms: {norsund: skif}, derived: [{lemma: runskif, pos: noun, class: inanimate, gloss: [rune slate], parts: [run, skif]}]}
+- {lemma: trav,   pos: noun, class: inanimate, gloss: [wood, timber], forms: {norsund: trav}}
+- {lemma: kyrling, pos: noun, class: inanimate, gloss: [knife, carving knife], parts: [kyr, ling], forms: {norsund: kyrling}}
+- {lemma: galda,  pos: verb, class: weak, gloss: [to chant a spell-song], notes: "from gald"}
+- {lemma: ladning, pos: noun, class: inanimate, gloss: [the charging of a rune], parts: [lada, ning], notes: "rune magic; forbidden in Auristar"}
+- {lemma: lysrun, pos: noun, class: inanimate, gloss: [glowing rune, a charged rune], parts: [lys, run], notes: "a rune that glows has been charged; it is rune magic"}
+- {lemma: kjoldrun, pos: noun, class: inanimate, gloss: [ward-rune], parts: [kjold, run]}
+- {lemma: gremmrun, pos: noun, class: inanimate, gloss: [curse-rune], parts: [gremm, run]}
+- {lemma: kjoldir, pos: noun, class: animate, gloss: [sentry], parts: [kjold, ir], forms: {norsund: kjolder}, notes: "inherited agent noun; the reduction rule made it Norsund kjolder"}
+
+# --- Numbers and grammar words ---
+- {lemma: ves,    pos: num,  gloss: [four], forms: {norsund: ves, ordinal: veste}, tier: core}
+- {lemma: thamm,  pos: num,  gloss: [five], forms: {norsund: thamm, ordinal: thamde}, tier: core, notes: "the same word as thamm 'hand'"}
+- {lemma: sesk,   pos: num,  gloss: [six], forms: {norsund: sesk, ordinal: seskte}, tier: core}
+- {lemma: ath,    pos: num,  gloss: [eight], forms: {norsund: ath, ordinal: atte}, tier: core}
+- {lemma: nyv,    pos: num,  gloss: [nine], forms: {norsund: nyv, ordinal: nyvde}, tier: core}
+- {lemma: mork,   pos: num,  gloss: [thousand], forms: {norsund: mork}}
+- {lemma: langhaun, pos: num, gloss: [long hundred (120)], parts: [lang, haun], forms: {norsund: langhaun}}
+- {lemma: ura,    pos: num,  gloss: [first], forms: {norsund: ura}, etymology: "ur 'origin' + -a"}
+- {lemma: kur,    pos: adv,  gloss: [where], tier: core}
+- {lemma: kuvi,   pos: adv,  gloss: [why]}
+- {lemma: kuso,   pos: adv,  gloss: [how]}
+- {lemma: kumik,  pos: adv,  gloss: [how much, how many]}
+- {lemma: kul,    pos: det,  gloss: [which]}
+- {lemma: nok,    pos: det,  gloss: [some, a few]}
+- {lemma: annar,  pos: det,  gloss: [other, another]}
+- {lemma: hir,    pos: adv,  gloss: [here]}
+- {lemma: thal,   pos: adv,  gloss: [there]}
+- {lemma: yt,     pos: adv,  gloss: [now]}
+- {lemma: thana,  pos: adv,  gloss: [then]}
+- {lemma: lang,   pos: adv,  gloss: [long ago]}
+- {lemma: thon,   pos: conj, gloss: [than]}
+- {lemma: mot,    pos: prep, gloss: [against]}
+- {lemma: ur,     pos: prep, gloss: [out of, from]}
+- {lemma: mar,    pos: prep, gloss: [above, over]}
+- {lemma: thurg,  pos: prep, gloss: [through]}
+- {lemma: ymb,    pos: prep, gloss: [around]}
+- {lemma: for,    pos: prep, gloss: [before]}
+- {lemma: inn,    pos: prep, gloss: [into]}
+- {lemma: til,    pos: prep, gloss: [until]}
+- {lemma: vei,    pos: interj, gloss: [alas]}
+- {lemma: sjosjo, pos: pron, gloss: [each other]}
+- {lemma: glod,   pos: interj, gloss: ["glow! (the word that seals a charged rune)"], notes: "the noun glod 'glow' used as a command in incantations"}
+
+# --- More strong and weak verbs ---
+- {lemma: rida,   pos: verb, class: strong, gloss: [to ride], forms: {present: ridur, past: reid, past.plural: reidum, participle: ridin}}
+- {lemma: bida,   pos: verb, class: strong, gloss: [to wait], forms: {present: bidur, past: beid, past.plural: beidum, participle: bidin}}
+- {lemma: skrida, pos: verb, class: strong, gloss: [to creep, to crawl], forms: {present: skridur, past: skreid, participle: skridin}}
+- {lemma: skuva,  pos: verb, class: strong, gloss: [to push, to shove], forms: {present: skuvur, past: skauv, past.plural: skauvum, participle: skovin}}
+- {lemma: drypa,  pos: verb, class: strong, gloss: [to drip], forms: {present: drypur, past: draup, participle: dropin}}
+- {lemma: smida,  pos: verb, class: weak, gloss: [to craft, to forge], forms: {norsund: smida}, derived: [{lemma: smidir, pos: noun, class: animate, gloss: [smith, crafter], parts: [smida, ir]}]}
+- {lemma: fyra,   pos: verb, class: weak, gloss: [to light a fire, to cook], forms: {norsund: fyra}}
+- {lemma: thurma, pos: verb, class: weak, gloss: [to take root, to settle], forms: {norsund: thurma}, notes: "the settlers' word for founding a home"}

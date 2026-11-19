@@ -191,7 +191,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;color:var(--mute
     <li><a href="#identity">Identity &amp; history</a></li>
     <li><a href="#decode">Decoding canon names</a></li>
     <li><a href="#sounds">Sounds &amp; spelling</a></li>
-    <li><a href="#grammar">Grammar sketch</a></li>
+    <li><a href="#grammar">Grammar</a></li>
     <li><a href="#words">Words &amp; name-building</a></li>
     <li><a href="#texts">Sample texts</a></li>
     <li><a href="#dialects">Dialects &amp; Kedre</a></li>
@@ -215,7 +215,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;color:var(--mute
     <div class="stat"><b>2</b><span>scripts (24 runes and Lysrit), 3 fonts and 4 production art sheets</span></div>
     <div class="stat"><b>404</b><span>reference recordings: every canon name, the phrasebook and the sample texts</span></div>
     <div class="stat"><b>28</b><span>engine tests in CI, including hate-symbol screening of the rune row</span></div>
-    <div class="stat"><b>2</b><span>sister languages: Old Norsund and Kedre, each with a grammar, dictionary and texts</span></div>
+    <div class="stat"><b>2</b><span>sister languages, complete: Old Norsund (43 rules, 353 words) and Kedre (34 rules, 384 words), with 14 texts</span></div>
   </div>
   <h3>Where everything lives</h3>
   <div class="tbl"><table>
@@ -315,9 +315,9 @@ node cli.mjs validate                                          # run before ever
 
   <div class="inv-grp"><h3>E · Neighbours &amp; layers</h3>
   <div class="tbl"><table><thead><tr><th>Item</th><th>What it covers</th><th>Status</th></tr></thead><tbody>
-    <tr><td>Old Norsund</td><td>Rune-slate language and archaic oath/law speech; full vowels in endings.<br><code>records/languages/old-norsund/</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Old Norsund</td><td>The settlers' tongue and the register of oaths, law, liturgy and runes: full grammar (43 rules), 353 words and 8 texts.<br><code>records/languages/old-norsund/</code></td><td><span class="chip drafted">Done</span></td></tr>
     <tr><td>Starisund vs common Norsund</td><td>Auristar's prestige dialect vs the speech of the Vilnayan towns.<br><code>grammar/12-registers-dialects.yaml</code></td><td><span class="chip drafted">Done</span></td></tr>
-    <tr><td>Kedre sketch</td><td>The imperial language: enough sounds and words to source loanwords and imperial names (Luxis, Reinovaire, Keras).<br><code>records/languages/kedre/</code></td><td><span class="chip drafted">Done</span></td></tr>
+    <tr><td>Kedre</td><td>The imperial language: full grammar (34 rules), 384 words and 6 texts, including the source of every Kedre loan in Norsund.<br><code>records/languages/kedre/</code></td><td><span class="chip drafted">Done</span></td></tr>
     <tr><td>Other races' tongues</td><td>Scope and name rules for Karhak'Modan dwarvish, Ik'nal'tar, Ath'alan elvish, Merfolk, Vulkin (Thor'Vale), Dragonkin.<br><code>records/languages/languages.yaml (scope and what each apostrophe marks)</code></td><td><span class="chip drafted">Done</span></td></tr>
   </tbody></table></div></div>
 
@@ -481,7 +481,7 @@ node cli.mjs validate                                          # run before ever
 
 <!-- ============ GRAMMAR ============ -->
 <section id="grammar">
-  <h2>Grammar sketch</h2>
+  <h2>Grammar</h2>
   <p class="kicker">The essentials. The complete grammar (126 rules) is in <code>grammar/</code> and <code>docs/languages/norsund/reference-grammar.md</code>. Glosses follow the Leipzig rules.</p>
 
   <h3>Nouns: living things vs objects</h3>
@@ -506,7 +506,7 @@ node cli.mjs validate                                          # run before ever
   <p>Adjectives go before the noun and don't change form: <span class="lang">aur star</span> "silver star". Used as a noun, an adjective takes the people-plural: <span class="lang">thiolen</span> "the brave ones". Superlative <span class="lang">-ast</span>: <span class="lang">thiolast</span> "bravest" (Auristar folk etymology: "starred"). Adjectives from nouns take <span class="lang">-a</span>: <span class="lang">Vilnaya</span> "of the free folk".</p>
 
   <h3>Pronouns</h3>
-  <p>There's no he or she: the third person marks only animate vs inanimate, which suits a world of Vulkin, Worgenkin, Dragonkin and humans. The object forms change the vowel, an old Germanic-style alternation.</p>
+  <p>There's no he or she: the third person marks only animate vs inanimate, which suits a world of Vulkin, Ulfkin, Dragonkin and humans. The object forms change the vowel, an old Germanic-style alternation.</p>
   <div class="tbl"><table>
     <thead><tr><th></th><th>Subject</th><th>Object</th><th>Possessive</th><th>Plural subj.</th><th>Plural obj.</th><th>Plural poss.</th></tr></thead>
     <tbody>
@@ -702,7 +702,7 @@ node cli.mjs validate                                          # run before ever
   <p>The order matters. Umlaut (rule 1) has to happen before the <span class="lang">-i</span> that triggered it disappears (rule 2). That's why <span class="lang">kyr</span> has a y with no i left in sight: the kind of fossil that makes a language feel real. The full history in <code>grammar/13-history.yaml</code> starts in Proto-Valian with three Grimm-style consonant shifts, Norse-style breaking (<span class="lang">*telu</span> → <span class="lang">thiol</span>) and umlaut. The engine runs it and its tests check all 31 cognate sets.</p>
 
   <h3>Kedre, the conquerors' layer</h3>
-  <p>Kedre has a recognisable shape: vowel-final words, stress on the second-to-last syllable, no <span class="lang">th</span> or <span class="lang">y</span>, endings like <span class="lang">-is, -as, -aire</span> (Luxis, Keras, Reinovaire). When Norsund borrows a word it drops the final vowel and moves stress to the front: Kedre <span class="lang">murra</span> → <span class="lang">mur</span>, <span class="lang">rivia</span> → <span class="lang">rie</span>, <span class="lang">merkadu</span> → <span class="lang">merk</span>, <span class="lang">ke</span> → <span class="lang">ke</span>. Kedre and Proto-Norsund descend from one deep ancestor, Proto-Valian, the way Latin and Germanic descend from Proto-Indo-European, so <span class="lang">Luxis</span> and <span class="lang">lys</span> are true cognates (D10). The full sketch is in <code>records/languages/kedre/</code>.</p>
+  <p>Kedre has a recognisable shape: vowel-final words, stress on the second-to-last syllable, no <span class="lang">th</span> or <span class="lang">y</span>, endings like <span class="lang">-is, -as, -aire</span> (Luxis, Keras, Reinovaire). When Norsund borrows a word it drops the final vowel and moves stress to the front: Kedre <span class="lang">murra</span> → <span class="lang">mur</span>, <span class="lang">rivia</span> → <span class="lang">rie</span>, <span class="lang">merkadu</span> → <span class="lang">merk</span>, <span class="lang">ke</span> → <span class="lang">ke</span>. Kedre and Proto-Norsund descend from one deep ancestor, Proto-Valian, the way Latin and Germanic descend from Proto-Indo-European, so <span class="lang">Luxis</span> and <span class="lang">lys</span> are true cognates (D10). The complete grammar, dictionary and texts are in <code>records/languages/kedre/</code>.</p>
 </section>
 
 <!-- ============ WRITING ============ -->
