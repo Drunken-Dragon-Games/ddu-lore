@@ -1,0 +1,74 @@
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: Numbers
+contributor: Vledic#0001
+status: ratified
+context:
+- Norsund counts in tens. Old Vilnayan markets also reckon in the "long hundred" of 120 (langhaun).
+- Seven is sacred in Auristar (Seven Lights, seven-pointed star, the Council games every seven years for seven days).
+
+morphology:
+  cardinals:
+    1: yn
+    2: dov
+    3: thrim
+    4: ves
+    5: thamm
+    6: sesk
+    7: sev
+    8: ath
+    9: nyv
+    10: tamm
+    100: haun
+    1000: mork
+  starisund: {7: stev}
+  teens: "tamm + unit: 11 tammyn, 12 tammdov, 17 tammsev"
+  tens: "unit + tamm: 20 dovtamm, 30 thrimtamm, 70 sevtamm"
+  compound: "Larger numbers read largest first, without 'and': 523 = thammhaun dovtamm thrim"
+  thousands: "N mork: 523,208 = thammhaun dovtamm thrim mork, dovhaun ath"
+  long_hundred: {form: langhaun, value: 120}
+  ordinals:
+    1: ura
+    2: dovde
+    3: thrimde
+    4: veste
+    5: thamde
+    6: seskte
+    7: sevde
+    8: atte
+    9: nyvde
+    10: tamde
+  ordinal_rule: "cardinal + -de (after voiced sounds) or -te (after voiceless); 'first' is ura; Starisund 7th is stevde"
+  fractions: {half: mid, third: thrimdel, quarter: vesdel}
+
+rules:
+- id: NUM-01
+  title: Hand and five
+  rule: >
+    thamm means both "hand" and "five". Ten, tamm, is a contraction of Proto-Norsund *dov-thamm "two hands".
+    These are common real-world origins for number words.
+
+- id: NUM-02
+  title: Sacred seven
+  rule: >
+    In Starisund, sev "seven" became stev, reshaped by star (as English "female" was reshaped by "male").
+    The Seven Lights are Stevlysen; individual Lights are Lys Ura, Lys Dovde, Lys Thrimde, Lys Veste, Lys Thamde,
+    Lys Seskte and Lys Stevde.
+
+- id: NUM-03
+  title: Counting nouns
+  rule: A number before a noun takes the plural (except yn).
+  examples:
+  - {form: "dov kyr-ar", gloss: "two blade-PL.IN", translation: "two blades"}
+  - {form: "yn Vilkyr", translation: "one free sword"}
+
+- id: NUM-04
+  title: Titles put the ordinal after
+  rule: Normally ordinals come before the noun (thrimde kreth "third ring"); in titles they follow (Lys Thrimde, the Third Light).
+
+- id: NUM-05
+  title: Years
+  rule: >
+    Vairean dates are read as numbers with ar "year": ar dovtamm sev aft Vaire (27 a.v.e), ar thrimhaun thammtamm for Vaire
+    (350 b.v.e). Auristar also counts years from the fall of the star (90 a.v.e): ar yn aft Stardul.

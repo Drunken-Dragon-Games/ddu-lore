@@ -1,0 +1,51 @@
+document: fact-record/v1
+topic: Kedre, the imperial tongue
+contributor: Vledic#0001
+context:
+- Version 1.0.0, part of the Norsund language build approved on 2026-11-19. The full grammar (34 rules), dictionary (384 entries) and texts (6 texts) live beside this record.
+- Dates use the Vairean imperial system (b.v.e. / a.v.e.).
+facts:
+- Kedre is the language of the Vairean Empire. Its name means "the Tongue".
+- Kedre is spoken in Keras, the imperial city, and in the old Kingdom of Reinovaire, in Valnor.
+- Kedre and Norsund are distant cousins; both descend from Proto-Valian.
+- Lysmar (Norsund) and Luxis (Kedre) are the same word in the two branches, both meaning light.
+subtopics:
+
+- topic: How it looks and sounds
+  facts:
+  - Most Kedre words end in a vowel, and stress falls on the second-to-last syllable.
+  - Kedre has no th, y or w sounds, and no kj or gj.
+  - Kedre writes k for the k sound (Keras, Keria), x for ks (Luxis) and j for the y-sound of "yes".
+  - Kedre puts the head of a phrase first (Reinovaire "realm of Vaire", sangia Vaire "the bloodline of Vaire"), the opposite of Norsund.
+  - The suffix -s marks gods, imperial titles and holy cities (Luxis, Keras).
+
+- topic: Grammar
+  facts:
+  - Kedre has no gender, no case and no articles. Plurals change the final vowel (legia, legie).
+  - Verbs fall into two classes, -are and -ire, with person endings, a past in -av-/-iv-, a subjunctive in -ia, a future with vole and a passive with esere.
+  - Imperial decrees begin with the verb; prayers end with "Sik sia", "so be it".
+  - ke introduces every subordinate clause.
+  - Kedre counts in tens. It shares the numbers two, three, five and seven with Norsund (fovo, trimi, tammo, sevi).
+
+- topic: Registers
+  facts:
+  - Court Kedre is the speech of Keras, the decrees and the Church of Light.
+  - Camp Kedre, the speech of the legions and traders in Thiolden, kept an old final -u (kividu, imperaru, denaru). Most Norsund loans were heard in camp Kedre.
+  - The learned style of the Imperial Academy of Alchemy is full of participle nouns and passives.
+
+- topic: Kedre in Thiolden
+  facts:
+  - Kedre arrived in Thiolden with Rechtar Vaire's conquest (37 to 51 a.v.e.) and Doir Vaire's rule over the Vilnayan towns.
+  - Norsund borrowed Kedre words for walls, canals, markets, squares, towers and gates (mur, rie, merk, kamp, tur, port) and the subordinator ke, and later learned words such as alkimia, medikina and kupola.
+  - Kedre borrowed runa from Norsund to name the rune magic of Thiolden; native Kedre runo only means "secret". Rundir Voidet's explosives were krepito runa, "rune powder".
+
+- topic: Names and titles
+  facts:
+  - Keras means "the Crowned" and Keria "the crown-land", the Empire. Rechtar means "ruler".
+  - A Kedre name is a given name followed by a house name (Rechtar Vaire, Rundir Voidet).
+  - The Emperor is keraro "crown-bearer" at court and imperaru "commander" among soldiers. The head of the Church of Light is the primaro, and Doir Vaire ruled Thiolden as reiato, "regent".
+  - The Kedre names Exaire ("domain of the springs") and Arbaire ("domain of the trees") replaced the real-world names Exeter and Arbury in the lore records.
+
+- topic: Texts
+  facts:
+  - The surviving Kedre texts are the decree of year zero, the blessing of the Vaire bloodline, Rechtar's siege order at Marheim, a page of Rundir Voidet's notes, a hymn to Luxis, and Doir Vaire's proclamation to the Vilnayan towns.

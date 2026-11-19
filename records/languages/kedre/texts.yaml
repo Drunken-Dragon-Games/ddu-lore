@@ -1,0 +1,202 @@
+document: lang-text/v1
+language: kedre
+version: 1.0.0
+topic: Kedre texts
+contributor: Vledic#0001
+texts:
+- id: decree-year-zero
+  title: The decree of year zero
+  register: imperial decree
+  source: records/thiolden/general-timeline.yaml (Year 0 a.v.e.)
+  context: >
+    Proclaimed in Keras at the end of the first Reinovairean civil war, when Rechtar Vaire became Emperor and first priest
+    of the Church of Light, and the Vairean calendar began. Decrees put the verb first.
+  lines:
+  - text: "Juba Rechtar Vaire, keraro ed primaro:"
+    morphemes: "jub-a Rechtar Vaire ker-aro ed prim-aro"
+    gloss: "command-PRS.3SG Rechtar Vaire crown-AGT and first-AGT"
+    translation: "Rechtar Vaire, emperor and first priest, commands:"
+  - text: "Oie nasa Keria, ed Reinovaire kresa in Keria."
+    morphemes: "oie nas-a Keria ed reino-Vaire kres-a in Keria"
+    gloss: "today be.born-PRS.3SG Keria and realm-Vaire grow-PRS.3SG into Keria"
+    translation: "Today the Empire is born, and the realm of Vaire grows into the Empire."
+  - text: "Luxis luxava sangia Vaire."
+    morphemes: "Lux-is lux-av-a sangia Vaire"
+    gloss: "light-DIGN bless-PST-3SG bloodline Vaire"
+    translation: "Luxis has blessed the bloodline of Vaire."
+  - text: "Kai ke sta kontra keraro, sta kontra Luxis."
+    morphemes: "kai ke st-a kontra ker-aro st-a kontra Lux-is"
+    gloss: "who REL stand-PRS.3SG against crown-AGT stand-PRS.3SG against light-DIGN"
+    translation: "Whoever stands against the emperor stands against Luxis."
+  - text: "Aro nulo, Keras."
+    morphemes: "aro nulo Kera-s"
+    gloss: "year zero crown-DIGN"
+    translation: "Year zero, at Keras."
+  notes:
+  - The decree opens verb-first (Juba "commands"), the fixed style of imperial proclamations.
+  - Keria is the crown-land (kera + -ia); Keras is the Crowned city (kera + dignity -s).
+  - In Norsund the goddess is Lysmar, not Luxis.
+
+- id: blessing-of-the-bloodline
+  title: The Church of Light's blessing of the Vaire bloodline
+  register: liturgy (Domo Luxis)
+  source: records/thiolden/general-timeline.yaml (Year 0 a.v.e., Luxis blesses the Vaire bloodline)
+  context: >
+    Recited by the priests of the Domo Luxis (the Church of Light) at the birth of every heir of the house of Vaire.
+  lines:
+  - text: "Luxis, luxa sangia Vaire."
+    morphemes: "Lux-is lux-a sangia Vaire"
+    gloss: "light-DIGN bless-IMP bloodline Vaire"
+    translation: "Luxis, bless the bloodline of Vaire."
+  - text: "Kada posto ke nasa, tene luxi tue."
+    morphemes: "kada posto ke nas-a ten-e luxi tue"
+    gloss: "every heir REL be.born-PRS.3SG hold-PRS.3SG light 2SG.POSS"
+    translation: "Every heir who is born holds your light."
+  - text: "Ed nimo no vinka luxi Vaire."
+    morphemes: "ed nimo no vink-a luxi Vaire"
+    gloss: "and night NEG conquer-PRS.3SG light Vaire"
+    translation: "And night does not conquer the light of Vaire."
+  - text: "Sik sia."
+    morphemes: "sik sia"
+    gloss: "thus be.OPT.3SG"
+    translation: "So be it."
+  notes:
+  - Possessives follow the noun (luxi tue "your light"), and owners follow what they own (sangia Vaire).
+  - luxare "to illuminate" is the Church's word for "to bless".
+
+- id: siege-order-marheim
+  title: Rechtar's siege order at Marheim
+  register: imperial decree
+  source: records/thiolden/general-timeline.yaml (Years 49-50 a.v.e.)
+  context: >
+    Read out to the legions before the last assault on Marheim, after thirteen years of siege. It orders the rune powder
+    of Rundir Voidet, head of the Imperial Academy of Alchemy, used against the colossal walls. The blast destroyed the
+    walls and most of the city, and the dead rose from the ruin: Marheim became Oudeheim, "Rechtar's Regret".
+  lines:
+  - text: "Juba Keraro Rechtar Vaire a legie Vaire:"
+    morphemes: "jub-a ker-aro Rechtar Vaire a legi-e Vaire"
+    gloss: "command-PRS.3SG crown-AGT Rechtar Vaire to legion-PL Vaire"
+    translation: "Emperor Rechtar Vaire commands the legions of Vaire:"
+  - text: "Dekra ed trimi ari Marheim stava kontra Keria."
+    morphemes: "dekra ed trimi ar-i Marheim st-av-a kontra Keria"
+    gloss: "ten and three year-PL Marheim stand-PST-3SG against Keria"
+    translation: "For thirteen years Marheim has stood against the Empire."
+  - text: "Oie krepito runa vole rumpire murre Marheim."
+    morphemes: "oie krepito runa vole rump-ire murr-e Marheim"
+    gloss: "today powder rune FUT break-INF wall-PL Marheim"
+    translation: "Today rune powder will break the walls of Marheim."
+  - text: "Rundir Voidet, alkimiaro supraro, trahe krepito a murra."
+    morphemes: "Rundir Voidet alkimi-aro supr-aro trah-e krepito a murra"
+    gloss: "Rundir Voidet alchemy-AGT over-AGT bring-PRS.3SG powder to wall"
+    translation: "Rundir Voidet, chief alchemist, brings the powder to the wall."
+  - text: "Kai ke fuje, es traio."
+    morphemes: "kai ke fuj-e es traio"
+    gloss: "who REL flee-PRS.3SG be.PRS.3SG traitor"
+    translation: "Whoever flees is a traitor."
+  - text: "Aro tammo dekre post Keria, kastra Marheim."
+    morphemes: "aro tammo dekr-e post Keria kastra Marheim"
+    gloss: "year five ten-PL after Keria camp Marheim"
+    translation: "Year fifty after Keria, at the camp before Marheim."
+  notes:
+  - Decree style (KED-REG-01) opens with the verb and closes with the year and the place.
+  - Thirteen is dekra ed trimi, "ten and three"; nouns after a number above one are plural (ari "years").
+  - "Within the year the same Empire called Rundir a traio, a traitor, and banished him (kvandare)."
+
+- id: voidet-notes
+  title: From the notebook of Rundir Voidet
+  register: learned (Imperial Academy of Alchemy)
+  source: records/thiolden/general-timeline.yaml (Year 49 a.v.e., Rundir Voidet makes explosives from local rune magic)
+  context: >
+    A page from the notes Rundir Voidet kept while making explosives from the rune magic of Thiolden. The learned style
+    (KED-REG-03) heaps up participle nouns and prefers the passive.
+  lines:
+  - text: "Probato sevesmo: salo, sulfo ed kinera runa son mixtato."
+    morphemes: "prob-ato sev-esmo salo sulfo ed kinera runa son mixt-ato"
+    gloss: "test-PTCP seven-ORD salt sulphur and ash rune be.PRS.3PL mix-PTCP"
+    translation: "Seventh experiment: salt, sulphur and rune-ash are mixed."
+  - text: "Etera kurre per runa, kando runa es kalido."
+    morphemes: "etera kurr-e per runa kando runa es kalido"
+    gloss: "aether flow-PRS.3SG through rune when rune be.PRS.3SG hot"
+    translation: "Aether flows through the rune when the rune is hot."
+  - text: "Eno fiala krepito runa rumpe porta."
+    morphemes: "eno fiala krepito runa rump-e porta"
+    gloss: "one flask powder rune break-PRS.3SG gate"
+    translation: "One flask of rune powder breaks a gate."
+  - text: "Sed kinera fautari no dorme."
+    morphemes: "sed kinera faut-ar-i no dorm-e"
+    gloss: "but ash death-AGT-PL NEG sleep-PRS.3SG"
+    translation: "But the ash of the dead does not sleep."
+  - text: "No mixta runa kon akva!"
+    morphemes: "no mixt-a runa kon akva"
+    gloss: "NEG mix-IMP rune with water"
+    translation: "Never mix the rune with water!"
+  notes:
+  - The fourth line foreshadows what happened at Marheim, where the dead rose from the rune-blasted walls.
+  - runa is a Norsund loan in Kedre (KED-REL-03); native runo only means "secret".
+
+- id: hymn-to-luxis
+  title: Hymn to Luxis
+  register: liturgy (Domo Luxis)
+  source: new (the Church of Light, records/thiolden/general-timeline.yaml, Year 0 a.v.e.)
+  context: >
+    Sung at dusk in the houses of the Domo Luxis, the Church of Light, whose first priest is the Emperor. Every wish is in the
+    subjunctive and the hymn closes with "Sik sia" (KED-REG-02).
+  lines:
+  - text: "Luxis, luxi supra nimo,"
+    morphemes: "Lux-is luxi supra nimo"
+    gloss: "light-DIGN light above night"
+    translation: "Luxis, light above the night,"
+  - text: "luxia sangia Vaire ed kada nahi."
+    morphemes: "lux-ia sangia Vaire ed kada nahi"
+    gloss: "bless-SBJV.SG bloodline Vaire and every nation"
+    translation: "bless the bloodline of Vaire and every nation."
+  - text: "Ke dia tue ardia in ardo,"
+    morphemes: "ke dia tue ard-ia in ardo"
+    gloss: "COMP day 2SG.POSS burn-SBJV.SG in altar"
+    translation: "May your day burn on the altar,"
+  - text: "ed fauto no tenia anime nostre."
+    morphemes: "ed fauto no ten-ia anim-e nostre"
+    gloss: "and death NEG hold-SBJV.SG soul-PL 1PL.POSS"
+    translation: "and may death not hold our souls."
+  - text: "Sik sia."
+    morphemes: "sik sia"
+    gloss: "thus be.SBJV.SG"
+    translation: "So be it."
+  notes:
+  - In Norsund the goddess is Lysmar, "the High Light"; the two names come from the same Proto-Valian root.
+
+- id: doir-proclamation
+  title: Doir Vaire's proclamation to the Vilnayan towns
+  register: imperial decree
+  source: records/thiolden/general-timeline.yaml (Year 51 a.v.e., Doir Vaire is left in charge of the Vilnayan towns)
+  context: >
+    Proclaimed in every Vilnayan town square when Rechtar's campaign ended and his daughter Doir became regent (reiato).
+    Its words for market, gate and tribute are the ones Norsund borrowed (merk, port).
+  lines:
+  - text: "Juba Doir Vaire, reiato Keria, a vike vili Thiolden:"
+    morphemes: "jub-a Doir Vaire rei-ato Keria a vik-e vili Thiolden"
+    gloss: "command-PRS.3SG Doir Vaire king-PTCP Keria to town-PL free Thiolden"
+    translation: "Doir Vaire, regent of the Empire, commands the free towns of Thiolden:"
+  - text: "Pugra es finito; tranka nasa."
+    morphemes: "pugra es fin-ito tranka nas-a"
+    gloss: "war be.PRS.3SG end-PTCP peace be.born-PRS.3SG"
+    translation: "The war is over; peace is born."
+  - text: "Kada vika paga tributo a Keras, ed Keria gelda vike."
+    morphemes: "kada vika pag-a tributo a Kera-s ed Keria geld-a vik-e"
+    gloss: "every town pay-PRS.3SG tribute to crown-DIGN and Keria shield-PRS.3SG town-PL"
+    translation: "Every town pays tribute to Keras, and the Empire shields the towns."
+  - text: "Merkadui ed porte son aperto a merkadari Keria."
+    morphemes: "merkadu-i ed port-e son aperto a merkad-ar-i Keria"
+    gloss: "market-PL and gate-PL be.PRS.3PL open to market-AGT-PL Keria"
+    translation: "Markets and gates are open to the merchants of the Empire."
+  - text: "Kai ke tene runa kontra Keria, vole esere kvandato."
+    morphemes: "kai ke ten-e runa kontra Keria vole esere kvand-ato"
+    gloss: "who REL hold-PRS.3SG rune against Keria FUT be.INF banish-PTCP"
+    translation: "Whoever holds runes against the Empire will be banished."
+  - text: "Aro tammo dekre ed eno post Keria."
+    morphemes: "aro tammo dekr-e ed eno post Keria"
+    gloss: "year five ten-PL and one after Keria"
+    translation: "Year fifty-one after Keria."
+  notes:
+  - merkadu keeps the old camp ending -u everywhere (court Kedre has no -o form of it); its plural is merkadui.
+  - The vike vili, "free towns", translate Norsund Vilnayan, "lands of the free folk".

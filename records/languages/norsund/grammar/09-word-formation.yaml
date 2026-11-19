@@ -1,0 +1,81 @@
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: Word formation
+contributor: Vledic#0001
+status: ratified
+context:
+- Most Norsund vocabulary is built from a few hundred roots with the affixes below and with compounding.
+- Contributors coining a new word should first try to build it from existing roots.
+
+morphology:
+  suffixes:
+  - {form: "ir", makes: "noun.animate", from: "verb", meaning: "one who does (agent)", example: "smida > smidir (crafter)"}
+  - {form: "ning", makes: "noun.inanimate", from: "verb", meaning: "the act or result of", example: "kjolda > kjoldning (watch, guarding)"}
+  - {form: "eth", makes: "noun.inanimate", from: "adjective", meaning: "-ness, -dom (quality)", example: "thiol > thioleth (bravery), vil > vileth (freedom)"}
+  - {form: "ling", makes: "noun", from: "noun", meaning: "small or young one", example: "ulf > ulfling (wolf cub), kyr > kyrling (dagger)"}
+  - {form: "heim", makes: "noun.inanimate", from: "noun/verb", meaning: "dwelling, house of", example: "kjala > kjalheim (tavern)"}
+  - {form: "vang", makes: "noun.inanimate", from: "noun/verb", meaning: "open place, field for", example: "merk > merkvang (market field)"}
+  - {form: "a", makes: "adjective", from: "noun", meaning: "of, belonging to", example: "Vilnay > Vilnaya"}
+  - {form: "ug", makes: "adjective", from: "noun", meaning: "full of, -y", example: "star > starug (starry)"}
+  - {form: "nuth", makes: "adjective", from: "noun", meaning: "without, -less", example: "lys > lysnuth (lightless)"}
+  - {form: "t", makes: "adverb", from: "adjective", meaning: "-ly", example: "thiol > thiolt (bravely)"}
+  - {form: "nay", makes: "noun.animate", from: "place", meaning: "folk of (demonym)", example: "Thiolden > Thiolnay"}
+  - {form: "an", makes: "noun.inanimate", from: "people", meaning: "lands or holdings of a folk", example: "Vilnay > Vilnayan"}
+  - {form: "den", makes: "noun.inanimate", from: "noun/adj", meaning: "land, realm of", example: "thiol > Thiolden"}
+  - {form: "myr", makes: "noun.animate", from: "noun/adj", meaning: "god-blessed kin, tribe", example: "kull > Kullmyr"}
+  - {form: "ung", makes: "name", from: "name", meaning: "child of (parent-name)", example: "Alkregg > Alkreggung"}
+  prefixes:
+  - {form: "ne", meaning: "un-, not", example: "nethiol (cowardly), nevil (bound, unfree)"}
+  - {form: "mar", meaning: "great, high, arch-", example: "marulf (great wolf), markjold (citadel)"}
+  - {form: "ur", meaning: "original, first, ancient", example: "urheim (ancestral home)"}
+  - {form: "al", meaning: "all-, whole", example: "alskyn (all-knowing)"}
+  zero_derivation: "Any noun can be used as a weak verb with -a; any adjective can be used as a noun with noun endings."
+
+rules:
+- id: WF-01
+  title: Compounds are head-final
+  rule: The last element is the head and decides class and meaning; earlier elements modify it.
+  examples:
+  - {form: "nim-kjold", gloss: "night-ward", translation: "night guard (Nimkjold)"}
+  - {form: "kjold-mur", gloss: "ward-wall", translation: "Auristar's ring walls (Kjoldmur)"}
+
+- id: WF-02
+  title: The linking -i-
+  rule: >
+    When the first element owns or contains the second, a linking -i- (the old genitive) joins them:
+    Stari-fjolden "the stars' under-land", Aur-i-star "star of silver light", Stari-sund "the star-tongue".
+
+- id: WF-03
+  title: Demonyms
+  rule: >
+    Take the first element of the place name and add -nay. Thiolden > Thiolnay, Auristar > Aurinay,
+    Oudeheim > Oudenay, Midelmar > Midelnay, Farheim > Farnay. A one-element name adds -nay directly.
+
+- id: WF-04
+  title: Agent nouns and the old -er
+  rule: >
+    The living agent suffix is -ir (smidir "crafter", thjarkir "tracker"). A handful of old agent nouns keep the dead
+    Old Norsund suffix -er: wander "wanderer" (as in Sundwanderen), kjolder "sentry".
+
+- id: WF-05
+  title: Kennings
+  rule: >
+    A kenning names a thing by a two-part image: a base word plus a modifier, often with -i-. Kennings can nest
+    (Snorri allowed up to five parts). Bards use them in place of plain nouns; see Poetics.
+  examples:
+  - {form: "kyr-sund", gloss: "blade-song", translation: "battle"}
+  - {form: "star-i-gand", gloss: "star-LINK-road", translation: "a canal of Auristar"}
+
+- id: WF-07
+  title: The two -a suffixes
+  rule: >
+    -a makes adjectives from nouns (Vilnay > Vilnaya) and also turns nouns into verbs (sund > sunda). Context and the
+    dictionary decide; a coined word should use only one reading, and the dictionary lists which.
+
+- id: WF-06
+  title: Checklist for coining a word
+  rule: >
+    1. Can existing roots and affixes express it? 2. If not, pick a new root that passes the phonotactic checker and is not
+    a real word in a major language or a slur. 3. Mark its layer (native, kedre) and epoch. 4. Submit as a pull request
+    (docs/languages/norsund/contributing-words.md).

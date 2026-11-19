@@ -1,0 +1,263 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: Nature, land and weather
+field: nature
+contributor: Vledic#0001
+defaults: {layer: native, tier: common, status: ratified, epoch: old}
+context:
+- Sky-lights, weather, seasons, land, water, plants, stone and the living rock of the Starifjolden.
+- Basic colour adjectives are in 13-qualities; animals are in 05-beasts.
+
+entries:
+# --- Sun, moon and sky ---
+- lemma: sauv
+  pos: noun
+  class: inanimate
+  gloss: [sun]
+  tier: core
+  epoch: proto
+  derived:
+  - {lemma: sauvug, pos: adj, gloss: [sunny]}
+  - {lemma: sauvlys, pos: noun, class: inanimate, gloss: [sunlight], parts: [sauv, lys]}
+  - {lemma: sauvlid, pos: noun, class: inanimate, gloss: [sunrise, dawn], parts: [sauv, lid], notes: "lit. sun-coming (lida 'come')"}
+  - {lemma: sauvdul, pos: noun, class: inanimate, gloss: [sunset, dusk], parts: [sauv, dul], notes: "lit. sun-fall, built like Stardul"}
+  - {lemma: sauvnuth, pos: adj, gloss: [sunless]}
+  - {lemma: sauvdunk, pos: noun, class: inanimate, gloss: [eclipse], parts: [sauv, dunk]}
+  - {lemma: sauvkyr, pos: noun, class: inanimate, gloss: [sunbeam (kenning, lit. sun-blade)], register: poetic, parts: [sauv, kyr]}
+- lemma: ysk
+  pos: noun
+  class: inanimate
+  gloss: [moon]
+  tier: core
+  epoch: proto
+  derived:
+  - {lemma: yskug, pos: adj, gloss: [moonlit]}
+  - {lemma: yskdel, pos: noun, class: inanimate, gloss: [phase of the moon], parts: [ysk, del]}
+  - {lemma: yskling, pos: noun, class: inanimate, gloss: [crescent moon]}
+- lemma: holv
+  pos: noun
+  class: inanimate
+  gloss: [sky (the everyday, weather sky), vault of the sky]
+  tier: core
+  notes: "nett is the sacred night sky; holv is the sky that rains and clears"
+  derived:
+  - {lemma: holvug, pos: adj, gloss: [open-skied, clear]}
+- {lemma: sverl, pos: noun, class: inanimate, gloss: [aurora, sky-lights], notes: "the green-violet lights above Midelmar; Aurinay read them as the stars dancing", derived: [{lemma: sverling, pos: noun, class: inanimate, gloss: [rainbow (lit. little aurora)]}, {lemma: Lysmarispenn, pos: noun, class: inanimate, gloss: [rainbow (kenning, lit. Lysmar's bridge)], register: poetic, parts: [Lysmar, i, spenn]}]}
+
+# --- Weather ---
+- lemma: haum
+  pos: noun
+  class: inanimate
+  gloss: [weather]
+  derived:
+  - {lemma: haumskyn, pos: noun, class: inanimate, gloss: [weather-lore], parts: [haum, skyn]}
+- lemma: drus
+  pos: noun
+  class: inanimate
+  gloss: [rain]
+  tier: core
+  derived:
+  - {lemma: drusa, pos: verb, class: weak, gloss: [to rain], notes: "At druser. 'It is raining.'"}
+  - {lemma: drusug, pos: adj, gloss: [rainy]}
+  - {lemma: drusling, pos: noun, class: inanimate, gloss: [drizzle]}
+- lemma: brys
+  pos: noun
+  class: inanimate
+  gloss: [wind, air, breeze]
+  tier: core
+  derived:
+  - {lemma: brysa, pos: verb, class: weak, gloss: [to blow (of wind), to be windy], notes: "At bryser."}
+  - {lemma: brysug, pos: adj, gloss: [windy]}
+  - {lemma: norbrys, pos: noun, class: inanimate, gloss: [north wind], parts: [nor, brys]}
+- lemma: svaul
+  pos: noun
+  class: inanimate
+  gloss: [cloud]
+  tier: core
+  derived:
+  - {lemma: svaulug, pos: adj, gloss: [cloudy, overcast]}
+- lemma: mjost
+  pos: noun
+  class: inanimate
+  gloss: [fog, mist]
+  tier: core
+  derived:
+  - {lemma: mjostug, pos: adj, gloss: [foggy, misty]}
+- {lemma: drif, pos: noun, class: inanimate, gloss: [snow, snowdrift], tier: core, etymology: "zero noun from drifa 'to snow'", derived: [{lemma: drifug, pos: adj, gloss: [snowy]}, {lemma: drifmar, pos: noun, class: inanimate, gloss: [snowy peak], parts: [drif, mar]}]}
+- lemma: fjarn
+  pos: noun
+  class: inanimate
+  gloss: [ice]
+  tier: core
+  derived:
+  - {lemma: fjarna, pos: verb, class: weak, gloss: [to freeze]}
+  - {lemma: fjarnug, pos: adj, gloss: [icy]}
+  - {lemma: marfjarn, pos: noun, class: inanimate, gloss: [glacier (lit. great ice)], parts: [mar, fjarn]}
+  - {lemma: fjarnling, pos: noun, class: inanimate, gloss: [icicle]}
+- {lemma: kjeld, pos: noun, class: inanimate, gloss: [frost, cold], derived: [{lemma: kjelda, pos: verb, class: weak, gloss: [to chill, to frost over]}, {lemma: kjeldug, pos: adj, gloss: [frosty, cold]}]}
+- {lemma: thyda, pos: verb, class: weak, gloss: [to thaw, to melt]}
+- {lemma: dauv, pos: noun, class: inanimate, gloss: [dew]}
+- {lemma: krask, pos: noun, class: inanimate, gloss: [hail], notes: "no verb; say Krask doler 'hail falls'"}
+- lemma: thrusk
+  pos: noun
+  class: inanimate
+  gloss: [storm]
+  derived:
+  - {lemma: thruska, pos: verb, class: weak, gloss: [to storm, to rage]}
+  - {lemma: thruskug, pos: adj, gloss: [stormy]}
+  - {lemma: hjaulthrusk, pos: noun, class: inanimate, gloss: [sea storm], parts: [hjaul, thrusk]}
+- {lemma: brum, pos: noun, class: inanimate, gloss: [thunder], derived: [{lemma: bruma, pos: verb, class: weak, gloss: [to thunder, to rumble]}]}
+- {lemma: blik, pos: noun, class: inanimate, gloss: [lightning, flash], derived: [{lemma: blika, pos: verb, class: weak, gloss: [to flash, to flicker]}]}
+- {lemma: skym, pos: noun, class: inanimate, gloss: [shadow, shade], tier: core, derived: [{lemma: skymug, pos: adj, gloss: [shadowy, shady]}, {lemma: skyma, pos: verb, class: weak, gloss: [to overshadow, to darken]}]}
+
+# --- Seasons ---
+- {lemma: nyrk, pos: noun, class: inanimate, gloss: [spring (season)]}
+- {lemma: daulm, pos: noun, class: inanimate, gloss: [summer]}
+- {lemma: hyst, pos: noun, class: inanimate, gloss: [autumn]}
+- {lemma: jalk, pos: noun, class: inanimate, gloss: [winter], derived: [{lemma: jalknim, pos: noun, class: inanimate, gloss: [midwinter night, longest night], parts: [jalk, nim]}]}
+
+# --- Fire ---
+- lemma: thyrn
+  pos: noun
+  class: inanimate
+  gloss: [flame]
+  tier: core
+  derived:
+  - {lemma: thyrna, pos: verb, class: weak, gloss: [to burn], tier: core}
+  - {lemma: thyrnug, pos: adj, gloss: [fiery, burning]}
+  - {lemma: thyrnling, pos: noun, class: inanimate, gloss: [small flame, candle flame]}
+- lemma: thiauk
+  pos: noun
+  class: inanimate
+  gloss: [smoke]
+  tier: core
+  derived:
+  - {lemma: thiauka, pos: verb, class: weak, gloss: [to smoke, to give off smoke]}
+  - {lemma: thiaukug, pos: adj, gloss: [smoky]}
+- {lemma: sveth, pos: noun, class: inanimate, gloss: [ash, cinders], tier: core, derived: [{lemma: svethug, pos: adj, gloss: [ashen, grey with ash]}]}
+- {lemma: fyrmar, pos: noun, class: inanimate, gloss: [volcano (lit. fire-mountain)], parts: [fyr, mar]}
+
+# --- Land and earth ---
+- {lemma: alden, pos: noun, class: inanimate, gloss: [the world, all lands], parts: [al, den], tier: core}
+- lemma: hurn
+  pos: noun
+  class: inanimate
+  gloss: [earth, soil, ground]
+  tier: core
+  derived:
+  - {lemma: hurnbrestning, pos: noun, class: inanimate, gloss: [earthquake (lit. ground-bursting)], parts: [hurn, brestning]}
+  - {lemma: hurnug, pos: adj, gloss: [earthy]}
+- {lemma: sorn, pos: noun, class: inanimate, gloss: [sand], tier: core}
+- {lemma: dwim, pos: noun, class: inanimate, gloss: [dust], tier: core, derived: [{lemma: dwimug, pos: adj, gloss: [dusty]}]}
+- {lemma: slom, pos: noun, class: inanimate, gloss: [mud], derived: [{lemma: slomug, pos: adj, gloss: [muddy]}]}
+- {lemma: lerv, pos: noun, class: inanimate, gloss: [clay]}
+- {lemma: bauld, pos: noun, class: inanimate, gloss: [boulder], derived: [{lemma: grjotling, pos: noun, class: inanimate, gloss: [pebble], parts: [grjot, ling]}]}
+- {lemma: krun, pos: noun, class: inanimate, gloss: [hill]}
+- {lemma: brunk, pos: noun, class: inanimate, gloss: [cliff, precipice]}
+- {lemma: kamb, pos: noun, class: inanimate, gloss: [ridge, crest]}
+- {lemma: sliv, pos: noun, class: inanimate, gloss: [slope, hillside]}
+- {lemma: rekk, pos: noun, class: inanimate, gloss: [row, line, range], derived: [{lemma: marrekk, pos: noun, class: inanimate, gloss: [mountain range], parts: [mar, rekk]}, {lemma: skylrekk, pos: noun, class: inanimate, gloss: [cascade, chain of waterfalls], parts: [skyl, rekk]}]}
+- {lemma: slaun, pos: noun, class: inanimate, gloss: [plain, open grassland]}
+- {lemma: gjop, pos: noun, class: inanimate, gloss: [hole, pit]}
+- {lemma: kullkelda, pos: noun, class: inanimate, gloss: [hot spring], parts: [kull, kelda]}
+
+# --- Thiolden biomes ---
+- {lemma: thallvir, pos: noun, class: inanimate, gloss: [dark pine forest], parts: [thall, vir], notes: "the commonest biome of Thiolden"}
+- {lemma: glaumden, pos: noun, class: inanimate, gloss: [wraith lands], parts: [glaum, den], notes: "regions plagued by the undead"}
+- {lemma: kraftvir, pos: noun, class: inanimate, gloss: [enchanted forest (lit. power-forest)], parts: [kraft, vir]}
+- {lemma: ilinvir, pos: noun, class: inanimate, gloss: [sacred grove], parts: [ilin, vir]}
+
+# --- Water ---
+- lemma: hjaul
+  pos: noun
+  class: inanimate
+  gloss: [sea]
+  tier: core
+  derived:
+  - {lemma: hjaula, pos: adj, gloss: [of the sea, maritime]}
+  - {lemma: hjaulnay, pos: noun, class: animate, gloss: [merfolk (lit. sea-folk)], parts: [hjaul, nay]}
+  - {lemma: hjaulylv, pos: noun, class: inanimate, gloss: [seawater, brine], parts: [hjaul, ylv]}
+  - {lemma: hjaulhest, pos: noun, class: inanimate, gloss: [ship (kenning, lit. sea-horse)], register: poetic, parts: [hjaul, hest]}
+- {lemma: ylva, pos: verb, class: weak, gloss: [to flow, to stream], etymology: "verb from ylv 'water'", derived: [{lemma: ylvande, pos: adj, gloss: [flowing, running (of water)]}]}
+- {lemma: lysylv, pos: noun, class: inanimate, gloss: [glowing water (of the Starifjolden)], parts: [lys, ylv]}
+- {lemma: ryl, pos: noun, class: inanimate, gloss: [stream, brook, rill]}
+- {lemma: brusk, pos: noun, class: inanimate, gloss: [rapids, rushing water], derived: [{lemma: bruska, pos: verb, class: weak, gloss: [to rush, to roar (of water)]}]}
+- {lemma: fyss, pos: noun, class: inanimate, gloss: [spray, mist of falling water]}
+- {lemma: skylling, pos: noun, class: inanimate, gloss: [small waterfall, trickle-fall], parts: [skyl, ling]}
+- {lemma: marskyl, pos: noun, class: inanimate, gloss: [great waterfall], parts: [mar, skyl]}
+- {lemma: gyl, pos: noun, class: inanimate, gloss: [bog, marsh], derived: [{lemma: gylug, pos: adj, gloss: [boggy]}]}
+- {lemma: hjolm, pos: noun, class: inanimate, gloss: [shore, bank]}
+- {lemma: valt, pos: noun, class: inanimate, gloss: [wave], derived: [{lemma: valta, pos: verb, class: weak, gloss: [to roll in waves, to surge]}]}
+- {lemma: sask, pos: noun, class: inanimate, gloss: [salt], tier: core, derived: [{lemma: saskug, pos: adj, gloss: [salty]}, {lemma: saska, pos: verb, class: weak, gloss: [to salt]}]}
+
+# --- Plants ---
+- lemma: brin
+  pos: noun
+  class: inanimate
+  gloss: [tree]
+  tier: core
+  derived:
+  - {lemma: brinling, pos: noun, class: inanimate, gloss: [sapling]}
+- {lemma: thall, pos: noun, class: inanimate, gloss: [pine]}
+- {lemma: bjel, pos: noun, class: inanimate, gloss: [birch]}
+- {lemma: tronn, pos: noun, class: inanimate, gloss: [oak]}
+- {lemma: trav, pos: noun, class: inanimate, gloss: [wood (material), timber], tier: core}
+- {lemma: pjalk, pos: noun, class: inanimate, gloss: [stick, staff], tier: core}
+- {lemma: lyv, pos: noun, class: inanimate, gloss: [leaf, page], tier: core, derived: [{lemma: lyvug, pos: adj, gloss: [leafy]}]}
+- {lemma: thurm, pos: noun, class: inanimate, gloss: [root], tier: core, derived: [{lemma: thurma, pos: verb, class: weak, gloss: [to take root, to settle]}]}
+- {lemma: skalv, pos: noun, class: inanimate, gloss: [bark (of a tree)], tier: core}
+- lemma: spyr
+  pos: noun
+  class: inanimate
+  gloss: [seed]
+  tier: core
+  derived:
+  - {lemma: spyra, pos: verb, class: weak, gloss: [to sprout, to grow]}
+  - {lemma: spyrling, pos: noun, class: inanimate, gloss: [sprout, young plant, plant]}
+- {lemma: sjur, pos: noun, class: inanimate, gloss: [fruit], tier: core}
+- {lemma: bjar, pos: noun, class: inanimate, gloss: [berry]}
+- {lemma: nykk, pos: noun, class: inanimate, gloss: [nut, kernel]}
+- {lemma: pers, pos: noun, class: inanimate, gloss: [peach], layer: kedre, epoch: contact, etymology: "Kedre persika", notes: "imported from the empire; peach wine is persvin"}
+- {lemma: nyla, pos: noun, class: inanimate, gloss: [flower], tier: core, derived: [{lemma: nylug, pos: adj, gloss: [flowering, in bloom]}, {lemma: nylvang, pos: noun, class: inanimate, gloss: [meadow of flowers], parts: [nyla, vang]}]}
+- {lemma: gred, pos: noun, class: inanimate, gloss: [grass], tier: core}
+- {lemma: grust, pos: noun, class: inanimate, gloss: [herb, wild herb], derived: [{lemma: grustvang, pos: noun, class: inanimate, gloss: [herb garden], parts: [grust, vang]}, {lemma: grustir, pos: noun, class: animate, gloss: [herbalist], notes: "from grusta 'to gather herbs'"}, {lemma: grusta, pos: verb, class: weak, gloss: [to gather herbs]}]}
+- {lemma: flos, pos: noun, class: inanimate, gloss: [moss]}
+- {lemma: thiorn, pos: noun, class: inanimate, gloss: [thorn]}
+- lemma: hulv
+  pos: noun
+  class: inanimate
+  gloss: [fungus, mushroom]
+  notes: "Thiolden's caves and forests are full of glowing fungus"
+  derived:
+  - {lemma: lyshulv, pos: noun, class: inanimate, gloss: [glowing fungus], parts: [lys, hulv]}
+  - {lemma: hulvug, pos: adj, gloss: [mouldy, overgrown with fungus]}
+
+# --- Stone, ore and the living rock ---
+- lemma: skirn
+  pos: noun
+  class: inanimate
+  gloss: [crystal]
+  derived:
+  - {lemma: stariskirn, pos: noun, class: inanimate, gloss: [star-crystal (of the Starifjolden)], parts: [stari, skirn], notes: "crystals that seem to hold stars, grown in star-shapes pointing at the Auristar"}
+  - {lemma: skirnug, pos: adj, gloss: [crystalline]}
+  - {lemma: skirnlys, pos: noun, class: inanimate, gloss: [crystal-light], parts: [skirn, lys]}
+- {lemma: gleim, pos: noun, class: inanimate, gloss: [gem, jewel]}
+- {lemma: vuld, pos: noun, class: inanimate, gloss: [ore], derived: [{lemma: vuldgand, pos: noun, class: inanimate, gloss: [vein of ore (lit. ore-road)], parts: [vuld, gand]}]}
+- {lemma: fjolwander, pos: noun, class: animate, gloss: [living rock-comet of the Starifjolden], parts: [fjol, wander], notes: "the rock-based lifeforms that fly across the cavern roofs like comets"}
+- {lemma: skif, pos: noun, class: inanimate, gloss: [slate], derived: [{lemma: runskif, pos: noun, class: inanimate, gloss: [rune slate], parts: [run, skif]}]}
+
+# --- Further derivations ---
+- {lemma: drifling, pos: noun, class: inanimate, gloss: [snowflake], parts: [drif, ling]}
+- {lemma: sverla, pos: verb, class: weak, gloss: [to shimmer (like the aurora)], etymology: "verb from sverl"}
+- {lemma: brinug, pos: adj, gloss: [wooded], parts: [brin, ug]}
+- {lemma: sornug, pos: adj, gloss: [sandy], parts: [sorn, ug]}
+- {lemma: sornden, pos: noun, class: inanimate, gloss: [desert, sand-waste], parts: [sorn, den], notes: "known in Thiolden only from travellers' tales"}
+- {lemma: skirna, pos: verb, class: weak, gloss: [to crystallize], etymology: "verb from skirn"}
+- {lemma: vulda, pos: verb, class: weak, gloss: [to mine ore], etymology: "verb from vuld", derived: [{lemma: vuldir, pos: noun, class: animate, gloss: [miner]}, {lemma: vuldgjop, pos: noun, class: inanimate, gloss: [mine, ore pit], parts: [vuld, gjop]}]}
+- {lemma: krunug, pos: adj, gloss: [hilly], parts: [krun, ug]}
+- {lemma: jalkug, pos: adj, gloss: [wintry], parts: [jalk, ug]}
+- {lemma: daulmnim, pos: noun, class: inanimate, gloss: [midsummer night], parts: [daulm, nim]}
+- {lemma: hurna, pos: verb, class: weak, gloss: [to bury (in earth)], etymology: "verb from hurn"}
+- {lemma: dwima, pos: verb, class: weak, gloss: [to crumble to dust], etymology: "verb from dwim"}
+- {lemma: lervker, pos: noun, class: inanimate, gloss: [clay pot, earthenware], parts: [lerv, ker]}

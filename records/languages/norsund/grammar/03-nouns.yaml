@@ -1,0 +1,124 @@
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: Nouns
+contributor: Vledic#0001
+status: ratified
+context:
+- Glosses follow the Leipzig Glossing Rules. AN = animate, IN = inanimate, DEF = definite, GEN = genitive.
+
+# Machine-readable endings, read by tools/norsund (morphology engine).
+morphology:
+  stem_final_e: "When a stem ends in unstressed -e, the e of a suffix that begins with e or a is dropped (rie + ar = rier, rie + in = rien)."
+  stem_final_a: "When a stem ends in -a, a suffix that begins with a drops that a (kelda + ar = keldar, kelda + arne = keldarne)."
+  animate:
+    plural: en
+    definite: in
+    definite_plural: ene
+  inanimate:
+    plural: ar
+    definite: in
+    definite_plural: arne
+  after_vowel:
+    note: "After a stem ending in a vowel other than unstressed e, definite -in becomes -n (nay + in = nayn); plurals keep their full form (nay + en = nayen)."
+    definite: n
+  genitive:
+    after_consonant: i
+    after_vowel: s
+  umlaut_plurals:
+  - {singular: "lud", plural: "lyd", gloss: "person / people"}
+  - {singular: "thamm", plural: "themm", gloss: "hand / hands"}
+  - {singular: "gat", plural: "get", gloss: "goat / goats"}
+  - {singular: "fuld", plural: "fyld", gloss: "foot / feet"}
+  - {singular: "tunn", plural: "tynn", gloss: "tooth / teeth"}
+  - {singular: "brod", plural: "bred", gloss: "sibling / siblings"}
+  umlaut: {a: e, u: y, o: e, au: ei}
+
+rules:
+- id: NOUN-01
+  title: Two noun classes
+  rule: >
+    Every noun is animate (people, gods, spirits, beasts and other living beings) or inanimate (everything else).
+    Class is fixed in the dictionary and decides the plural. In Starisund, stars, constellations and the Auristar itself
+    are animate; in common Norsund and Old Norsund they are inanimate.
+  examples:
+  - {form: "Vilkyr", gloss: "free.sword", translation: "a free sword (animate)"}
+  - {form: "kyr", gloss: "blade", translation: "a blade (inanimate)"}
+
+- id: NOUN-02
+  title: Plural
+  rule: Animate nouns add -en; inanimate nouns add -ar. Stems in unstressed -e drop the suffix vowel.
+  examples:
+  - {form: "Vilkyr-en", gloss: "free.sword-PL.AN", translation: "free swords"}
+  - {form: "kyr-ar", gloss: "blade-PL.IN", translation: "blades"}
+  - {form: "rie-r", gloss: "canal-PL.IN", translation: "canals"}
+  - {form: "nay-en", gloss: "folk-PL.AN", translation: "peoples"}
+
+- id: NOUN-03
+  title: Umlaut plurals
+  rule: >
+    Six very old animate nouns form the plural by changing the vowel instead of adding -en: lud/lyd, thamm/themm,
+    gat/get, fuld/fyld, tunn/tynn, brod/bred. They are leftovers of a Proto-Norsund plural -iz that changed the vowel
+    (umlaut) and was then lost. Their definite plurals add -ene to the changed vowel (lydene, "the people").
+    Hand, foot and tooth are animate for historical reasons only.
+  examples:
+  - {form: "lyd", gloss: "person.PL", translation: "people"}
+  - {form: "lyd-ene", gloss: "person.PL-DEF.PL", translation: "the people"}
+
+- id: NOUN-04
+  title: The definite suffix
+  rule: >
+    "The" is a suffix: -in in the singular, -ene (animate) or -arne (inanimate) in the plural. After a vowel the
+    singular is -n. There is no word for "a"; a bare noun is indefinite. The number yn "one" can mean "a certain".
+  examples:
+  - {form: "kyr-in", gloss: "blade-DEF", translation: "the blade"}
+  - {form: "kyr-arne", gloss: "blade-DEF.PL.IN", translation: "the blades"}
+  - {form: "Vilkyr-ene", gloss: "free.sword-DEF.PL.AN", translation: "the free swords"}
+  - {form: "nay-n", gloss: "folk-DEF", translation: "the folk"}
+
+- id: NOUN-05
+  title: Genitive
+  rule: >
+    Possession is marked with -i after a consonant and -s after a vowel, on the last word of the possessor noun
+    (after any plural or definite suffix). The possessor comes first. A possessed noun takes no definite suffix:
+    the possessor already makes it definite.
+  examples:
+  - {form: "Tyr-i kyr", gloss: "Tyr-GEN blade", translation: "Tyr's blade"}
+  - {form: "kyr-in-i tyr", gloss: "blade-DEF-GEN edge", translation: "the blade's edge"}
+  - {form: "Vilkyr-ene-s grind", gloss: "free.sword-DEF.PL.AN-GEN gate", translation: "the free swords' gate"}
+
+- id: NOUN-06
+  title: No other cases
+  rule: >
+    Subjects and objects are not marked on nouns; word order (see Syntax) and pronoun forms show who does what.
+    Old Norsund had four cases, which survive only in set phrases and in the archaic register.
+
+- id: NOUN-07
+  title: Mass nouns
+  rule: Nouns for substances (ylv "water", aul "ale", grjot "stone" as material) have no plural unless they mean kinds or portions.
+
+- id: NOUN-08
+  title: Honorific vocative
+  rule: >
+    In Starisund, a title used to address someone takes -a: Lysa! ("O Light!"), Kyra! ("O Blade!"), Fyra! (to a tavern cook,
+    "O Fire!"). Ordinary names are not changed.
+
+- id: NOUN-09
+  title: Theology in the grammar
+  rule: >
+    Because stars are animate in Starisund, an Aurinay says staren ("the stars", as beings) and uses the animate pronoun
+    sel for a star. Country speech says starar and at. Using the inanimate forms in an Auristar temple is a known faux pas.
+  examples:
+  - {form: "star-en", gloss: "star-PL.AN", translation: "stars (Starisund)"}
+  - {form: "star-ar", gloss: "star-PL.IN", translation: "stars (common Norsund)"}
+
+tables:
+- id: NOUN-T1
+  title: Full paradigms
+  columns: [class, singular, plural, definite, definite plural, genitive (def.)]
+  rows:
+  - [animate, Vilkyr, Vilkyren, Vilkyrin, Vilkyrene, Vilkyrini]
+  - [inanimate, kyr, kyrar, kyrin, kyrarne, kyrini]
+  - [animate (vowel stem), nay, nayen, nayn, nayene, nayni]
+  - [inanimate (-e stem), rie, rier, rien, rierne, rieni]
+  - [animate (umlaut), lud, lyd, ludin, lydene, ludini]

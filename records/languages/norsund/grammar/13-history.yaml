@@ -1,0 +1,137 @@
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: History and sound changes
+contributor: Vledic#0001
+status: ratified
+context:
+- "Family tree: Proto-Valian (deep past, all of Valia) splits into Proto-Norsund (Farheim) and Kedre (Keras, the Vairean heartland). Proto-Norsund > Old Norsund (settlers, 450 b.v.e.; rune slates) > Norsund (c. 100 a.v.e. onward), which splits into common Norsund, Starisund and other dialects."
+- Kedre and Norsund are distant cousins, as Latin and the Germanic languages are. Lysmar and Luxis are true cognates.
+- The rules below are machine-readable. tools/norsund applies them in order and its tests check that every cognate set comes out right.
+- "Rule notation: env is a space-separated pattern. _ is the changing segment, # a word edge, V C F L N are categories, [a b] is a set, ? optional, + one or more, * zero or more. A rule with `unless` does not apply where that pattern matches."
+
+segments: [bh, dh, gh, hw, kj, gj, th, ng, aa, ee, ii, oo, uu, yy, ai, au, ei, ey, ou]
+categories:
+  V: [a, e, i, o, u, y, aa, ee, ii, oo, uu, yy, ai, au, ei, ey, ou]
+  C: [p, b, t, d, k, g, kj, gj, f, v, th, s, h, m, n, ng, l, r, j, w, bh, dh, gh, z]
+  F: [e, i]
+  L: [l, r]
+  N: [p, b, t, d, f, v, th, s, m, n, l, r]
+
+stages:
+- id: pv-pn
+  name: Proto-Valian to Proto-Norsund
+  rules:
+  - {id: "grimm-1", name: "First shift: voiceless stops become fricatives", from: [p, t, k], to: [f, th, h], env: "_", unless: "s _"}
+  - {id: "grimm-2", name: "Second shift: voiced stops lose voice", from: [b, d, g], to: [p, t, k], env: "_"}
+  - {id: "grimm-3", name: "Third shift: breathy stops become plain voiced", from: [bh, dh, gh], to: [b, d, g], env: "_"}
+  - {id: "w-initial", name: "w becomes v at the start of a word", from: [w], to: [v], env: "# _"}
+  - {id: "w-medial", name: "w becomes v between vowels", from: [w], to: [v], env: "V _ V"}
+- id: pn-on
+  name: Proto-Norsund to Old Norsund
+  rules:
+  - {id: "palatalization", name: "k and g become kj and gj at the start of a word before e or i", from: [k, g], to: [kj, gj], env: "# _ F"}
+  - {id: "breaking-u", name: "Breaking: e becomes jo before u in the next syllable", from: [e], to: ["j o"], env: "_ L? C u"}
+  - {id: "breaking-a", name: "Breaking: e becomes ja before a in the next syllable", from: [e], to: ["j a"], env: "_ L? C a"}
+  - {id: "j-merge", name: "j merges into a preceding kj or gj", from: [j], to: [""], env: "[kj gj] _"}
+  - {id: "umlaut", name: "i-umlaut: back vowels front before i in the next syllable", from: [a, u, o, au], to: [e, y, e, ey], env: "_ C* i"}
+  - {id: "h-loss", name: "h is lost before s", from: [h], to: [""], env: "_ s"}
+  - {id: "ln-assimilation", name: "n becomes l after l", from: [n], to: [l], env: "l _"}
+  - {id: "final-u-loss", name: "final u is lost after a consonant in longer words", from: [u], to: [""], env: "V C+ _ #"}
+  - {id: "final-i-loss", name: "final i is lost after a single non-velar consonant", from: [i], to: [""], env: "V N _ #"}
+  - {id: "r-epenthesis", name: "a final r after a consonant becomes -er", from: [r], to: ["e r"], env: "C _ #"}
+  - {id: "ns-loss", name: "final s is lost after n", from: [s], to: [""], env: "n _ #"}
+  - {id: "ai-raising", name: "ai becomes ei", from: [ai], to: [ei], env: "_"}
+- id: on-n
+  name: Old Norsund to Norsund
+  rules:
+  - {id: "ey-merger", name: "the umlaut diphthong ey merges with ei", from: [ey], to: [ei], env: "_"}
+  - {id: "g-gliding", name: "g between vowels becomes j", from: [g], to: [j], env: "V _ V"}
+  - {id: "glide-i-loss", name: "final i is lost after ej", from: [i], to: [""], env: "e j _ #"}
+  - {id: "ej-diphthong", name: "e + j becomes the diphthong ei", from: ["e j"], to: [ei], env: "_"}
+  - {id: "reduction", name: "i and u in a final closed syllable become e [ə]", from: [i, u], to: [e, e], env: "V C+ _ C+ #"}
+  - {id: "unstressed-shortening", name: "long vowels shorten outside the stressed first syllable", from: [aa, ee, ii, oo, uu, yy], to: [a, e, i, o, u, y], env: "V C* _"}
+  - {id: "hw-simplification", name: "initial hw becomes w", from: [h], to: [""], env: "# _ w"}
+- id: starisund
+  name: Norsund to Starisund pronunciation (speech only; spelling unchanged)
+  rules:
+  - {id: "th-fronting", name: "th becomes s", from: [th], to: [s], env: "_"}
+- id: kullmyr
+  name: Norsund to Kullmyr speech
+  rules:
+  - {id: "y-unrounding", name: "y becomes i", from: [y], to: [i], env: "_"}
+- id: pv-kedre
+  name: Proto-Valian to Kedre
+  rules:
+  - {id: "k-breathy-initial", name: "breathy bh and dh become f at the start of a word", from: [bh, dh], to: [f, f], env: "# _"}
+  - {id: "k-breathy-medial", name: "breathy bh and dh become b and d elsewhere", from: [bh, dh], to: [b, d], env: "_"}
+  - {id: "k-gh", name: "breathy gh becomes h", from: [gh], to: [h], env: "_"}
+  - {id: "k-w", name: "w becomes v", from: [w], to: [v], env: "_"}
+  - {id: "k-final-u", name: "final u becomes o", from: [u], to: [o], env: "_ #"}
+  - {id: "k-length", name: "long vowels shorten", from: [aa, ee, ii, oo, uu], to: [a, e, i, o, u], env: "_"}
+
+romanization:
+- "th + j is written thi (thiol, not thjol)."
+- "Word-final ei is written ay (nay)."
+- "In Kedre, k + s is written x (luxi)."
+
+paths:
+  norsund: [pv-pn, pn-on, on-n]
+  old_norsund: [pv-pn, pn-on]
+  starisund: [pv-pn, pn-on, on-n, starisund]
+  kullmyr: [pv-pn, pn-on, on-n, kullmyr]
+  kedre: [pv-kedre]
+
+cognates:
+- {pv: "telu", gloss: "brave", old_norsund: "thiol", norsund: "thiol", kedre: "telo"}
+- {pv: "geldhu", gloss: "ward, shield", old_norsund: "kjold", norsund: "kjold", kedre: "geldo"}
+- {pv: "guri", gloss: "blade", old_norsund: "kyr", norsund: "kyr", kedre: "guri"}
+- {pv: "duri", gloss: "point, edge", old_norsund: "tyr", norsund: "tyr", kedre: "duri"}
+- {pv: "staru", gloss: "star", old_norsund: "star", norsund: "star", kedre: "staro"}
+- {pv: "luksi", gloss: "light", old_norsund: "lys", norsund: "lys", kedre: "luxi"}
+- {pv: "dhens", gloss: "land", old_norsund: "den", norsund: "den", kedre: "fens"}
+- {pv: "kaimu", gloss: "home", old_norsund: "heim", norsund: "heim", kedre: "kaimo"}
+- {pv: "sundhu", gloss: "voice, song", old_norsund: "sund", norsund: "sund", kedre: "sundo"}
+- {pv: "noru", gloss: "north", old_norsund: "nor", norsund: "nor", kedre: "noro"}
+- {pv: "wili", gloss: "free", old_norsund: "vil", norsund: "vil", kedre: "vili"}
+- {pv: "naghi", gloss: "folk", old_norsund: "negi", norsund: "nay", kedre: "nahi"}
+- {pv: "muri", gloss: "kin", old_norsund: "myr", norsund: "myr", kedre: "muri"}
+- {pv: "maru", gloss: "high", old_norsund: "mar", norsund: "mar", kedre: "maro"}
+- {pv: "gulnu", gloss: "ember", old_norsund: "kull", norsund: "kull", kedre: "gulno"}
+- {pv: "nuru", gloss: "green", old_norsund: "nur", norsund: "nur", kedre: "nuro"}
+- {pv: "runu", gloss: "rune, secret", old_norsund: "run", norsund: "run", kedre: "runo"}
+- {pv: "wiru", gloss: "forest", old_norsund: "vir", norsund: "vir", kedre: "viro"}
+- {pv: "iliinu", gloss: "holy", old_norsund: "iliin", norsund: "ilin", kedre: "ilino"}
+- {pv: "pelu", gloss: "beneath", old_norsund: "fjol", norsund: "fjol", kedre: "pelo"}
+- {pv: "auru", gloss: "silver-bright", old_norsund: "aur", norsund: "aur", kedre: "auro"}
+- {pv: "nimu", gloss: "night", old_norsund: "nim", norsund: "nim", kedre: "nimo"}
+- {pv: "neddu", gloss: "firmament", old_norsund: "nett", norsund: "nett", kedre: "neddo"}
+- {pv: "uru", gloss: "origin", old_norsund: "ur", norsund: "ur", kedre: "uro"}
+- {pv: "tammu", gloss: "hand, five", old_norsund: "thamm", norsund: "thamm", kedre: "tammo"}
+- {pv: "dhowu", gloss: "two", old_norsund: "dov", norsund: "dov", kedre: "fovo"}
+- {pv: "trimi", gloss: "three", old_norsund: "thrim", norsund: "thrim", kedre: "trimi"}
+- {pv: "sewi", gloss: "seven", old_norsund: "sev", norsund: "sev", kedre: "sevi"}
+- {pv: "kwandhru", gloss: "wanderer", old_norsund: "hwander", norsund: "wander", kedre: "kvandro"}
+- {pv: "dhautu", gloss: "death", old_norsund: "dauth", norsund: "dauth", kedre: "fauto"}
+- {pv: "aru", gloss: "year", old_norsund: "ar", norsund: "ar", kedre: "aro"}
+
+morphological_history:
+- "Old Norsund animate plural -in and present tense -ur became -en and -er by the reduction rule (Vilkyrin > Vilkyren, kjoldur > kjolder)."
+- "Umlaut plurals (lud/lyd) come from a Proto-Norsund plural *-iz that triggered umlaut and was then lost."
+- "Ten (tamm) is a contraction of *dov-thamm 'two hands'."
+- "The evidential sa is the past tense of saja 'see'; sund is the noun 'song'; stari is the genitive of star."
+- "ilin keeps its i because the vowel was long in Old Norsund (iliin): reduction only hit short vowels, and the long vowel shortened afterwards."
+- "Starisund stev 'seven' is sev reshaped by star (contamination, not a regular sound change)."
+- "Dethiol, the Kullmyr leader's name, is Old Norsund *dauth-thiol 'brave unto death' worn down in Kullmyr speech."
+
+rules:
+- id: HIST-01
+  title: Why kyr has no kj
+  rule: >
+    Palatalization (k > kj before front vowels) happened before umlaut created the y of kyr (*kuri > *kyri > kyr). By the time
+    the vowel was front, the k-rule was over. Rule order explains the exception, as it does in real languages.
+- id: HIST-02
+  title: Time depth
+  rule: >
+    About 575 documented years separate the settlers (450 b.v.e.) from Auristar's walls (124 a.v.e.). Old Norsund is therefore
+    hard but partly readable for modern speakers, roughly as Chaucer is for English speakers.

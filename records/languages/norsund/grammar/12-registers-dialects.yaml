@@ -1,0 +1,87 @@
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: Registers and dialects
+contributor: Vledic#0001
+status: ratified
+context:
+- Big cities innovate and isolated places conserve. Auristar's speech therefore changes fastest; Farheim and the countryside keep older forms.
+- Three high registers sit above everyday speech: Old Norsund (oath, law, liturgy, runes), learned Kedre (scholarship, imperial law) and bardic verse.
+
+dialects:
+- id: common
+  name: Common Norsund
+  speakers: Vilnayan towns and most of Thiolden; the second language of most races
+  features:
+  - Stars are inanimate (starar).
+  - Seven is sev.
+  - Long double consonants; th is [θ]/[ð].
+  - Favourite evidential sund.
+- id: starisund
+  name: Starisund ("star-tongue")
+  speakers: Auristar (Aurinay)
+  features:
+  - Stars, constellations and the Auristar are animate (staren, sel).
+  - Seven is stev; the Seven Lights are Stevlysen.
+  - "Venetian-style accent: th is [s], final n is [ŋ], double consonants are short (spelling unchanged)."
+  - Plural dyn/dun/dyni is polite for one person.
+  - Vocative -a on titles (Lysa!).
+  - Many Kedre loans in trade, law, building and canals (merk, kamp, port, tur, rie).
+  - Favourite evidential stari.
+- id: farheim
+  name: Farheim island speech
+  speakers: the island of Farheim and its emigrants
+  features:
+  - Most conservative; keeps some Old Norsund -in plurals (Vilkyrin) and the old present -ur in songs.
+- id: kullmyr
+  name: Kullmyr speech
+  speakers: the shamanistic Kullmyr
+  features:
+  - y becomes i (Fyren > Firen, the Fire god; kyr > kir).
+  - Runes are animate (runen), because the Kullmyr treat them as living.
+- id: nurmyr
+  name: Nurmyr speech
+  speakers: the forest-dwelling Nurmyr of Ilinvirden
+  features:
+  - Initial h is dropped (heim > eim), which other speakers find rustic.
+- id: cant
+  name: Thieves' cant
+  speakers: the Thieves Guild of Auristar and black-market traders
+  features:
+  - Backslang: a word's letters are reversed when legal (merk > krem "market", kyr > ryk "blade", vard > drav "warden").
+  - Unratified slang lives in the sandbox tier of the dictionary.
+
+registers:
+- id: old
+  name: Old Norsund (archaic register)
+  use: oaths, law, temple liturgy, rune-craft, sagas
+  note: "Full Old Norsund grammar is in records/languages/old-norsund/old-norsund.yaml. No evidentials."
+- id: learned
+  name: Learned register
+  use: Starlight Library scholarship, alchemy, medicine, imperial law
+  note: Pristine Kedre loans with Kedre stress (alkimia, medikina).
+- id: poetic
+  name: Bardic verse (sundlag)
+  use: Sundwanderen songs, praise poems, epitaphs
+  note: Kennings, heiti and alliteration. See grammar/14-poetics.yaml.
+- id: carved
+  name: Carved style
+  use: inscriptions, mottos, banners
+  note: Present copula dropped; articles kept; very short clauses.
+
+kedre_layers:
+- {id: "early", period: "first contacts before 37 a.v.e", treatment: "fully nativized; indistinguishable from native words"}
+- {id: "occupation", period: "37-51 a.v.e and Doir Vaire's rule", treatment: "final vowel dropped, geminates simplified, v between vowels lost (rivia > rie), stress on first syllable", examples: [mur < murra, rie < rivia, merk < merkadu, kamp < kampo, port < porta, tur < turra, ke < ke]}
+- {id: "learned", period: "after 100 a.v.e, from written Kedre", treatment: "kept whole, Kedre stress on second-to-last syllable", examples: ["alkimia", "medikina", "kupola"]}
+
+rules:
+- id: REG-01
+  title: Shibboleths
+  rule: >
+    Thiolden as [ˈsjol.dəŋ] marks an Aurinay; staren vs starar marks a temple-goer vs a villager; eim for heim marks a
+    Nurmyr; Firen for Fyren marks the Kullmyr name of the Fire god.
+- id: REG-02
+  title: Doublets
+  rule: >
+    The same Kedre root borrowed twice gives a worn-down everyday word and a learned one: tur "tower" (occupation)
+    and turra "fortress-tower" (learned, in military treatises).

@@ -1,0 +1,163 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: Grammar words
+field: grammar
+contributor: Vledic#0001
+defaults: {layer: native, tier: core, status: ratified, epoch: proto}
+context:
+- Pronouns, determiners, question words, prepositions, conjunctions, particles, numbers, auxiliaries and the irregular verbs.
+- Entry schema is documented in README.md (Fictional Language Dictionary Records).
+
+entries:
+# --- Personal pronouns ---
+- {lemma: em,    pos: pron, gloss: [I], forms: {object: om, possessive: emi}, notes: "1st person singular"}
+- {lemma: dy,    pos: pron, gloss: [you (one person)], forms: {object: du, possessive: dys}}
+- {lemma: sel,   pos: pron, gloss: [he, she, they (one being)], forms: {object: sal, possessive: seli}, notes: "animate; no gender"}
+- {lemma: at,    pos: pron, gloss: [it], forms: {object: at, possessive: ati}, notes: "inanimate; also the dummy subject of weather verbs"}
+- {lemma: emen,  pos: pron, gloss: [we], forms: {object: omen, possessive: emeni}}
+- {lemma: dyn,   pos: pron, gloss: [you (several), you (polite, Starisund)], forms: {object: dun, possessive: dyni}}
+- {lemma: selen, pos: pron, gloss: [they (beings)], forms: {object: salen, possessive: seleni}}
+- {lemma: atar,  pos: pron, gloss: [they (things)], forms: {object: atar, possessive: atari}}
+- {lemma: sjo,   pos: pron, gloss: [self, oneself], notes: "reflexive for all persons"}
+- {lemma: sjosjo, pos: pron, gloss: [each other]}
+
+# --- Determiners and quantifiers ---
+- {lemma: hes,   pos: det, gloss: [this, these], notes: "takes a definite noun: hes kyrin"}
+- {lemma: thas,  pos: det, gloss: [that, those]}
+- {lemma: al,    pos: det, gloss: [all, every]}
+- {lemma: sver,  pos: det, gloss: [each]}
+- {lemma: myk,   pos: det, gloss: [much, many], forms: {comparative: meir, superlative: mest}}
+- {lemma: lit,   pos: det, gloss: [little, few], forms: {comparative: minn, superlative: minst}}
+- {lemma: nok,   pos: det, gloss: [some, a few]}
+- {lemma: nen,   pos: det, gloss: ["no", not any]}
+- {lemma: annar, pos: det, gloss: [other, another]}
+- {lemma: sam,   pos: det, gloss: [same, as (in sam ... sam)]}
+
+# --- Question words and correlatives ---
+- {lemma: kum,   pos: pron, gloss: [who]}
+- {lemma: kut,   pos: pron, gloss: [what]}
+- {lemma: kur,   pos: adv,  gloss: [where]}
+- {lemma: kuna,  pos: adv,  gloss: [when], notes: "also the conjunction 'when'"}
+- {lemma: kuvi,  pos: adv,  gloss: [why]}
+- {lemma: kuso,  pos: adv,  gloss: [how]}
+- {lemma: kumik, pos: adv,  gloss: [how much, how many]}
+- {lemma: kul,   pos: det,  gloss: [which]}
+- {lemma: ynkum, pos: pron, gloss: [someone]}
+- {lemma: ynkut, pos: pron, gloss: [something]}
+- {lemma: ynkur, pos: adv,  gloss: [somewhere]}
+- {lemma: ynkuna, pos: adv, gloss: [sometime, once]}
+- {lemma: ynkuso, pos: adv, gloss: [somehow]}
+- {lemma: nekum, pos: pron, gloss: [no one, nobody]}
+- {lemma: nekut, pos: pron, gloss: [nothing]}
+- {lemma: nekur, pos: adv,  gloss: [nowhere]}
+- {lemma: nekuna, pos: adv, gloss: [never]}
+- {lemma: alkum, pos: pron, gloss: [everyone]}
+- {lemma: alkut, pos: pron, gloss: [everything]}
+- {lemma: alkur, pos: adv,  gloss: [everywhere]}
+- {lemma: alkuna, pos: adv, gloss: [always]}
+
+# --- Place, time and manner adverbs ---
+- {lemma: hir,   pos: adv, gloss: [here]}
+- {lemma: thal,  pos: adv, gloss: [there]}
+- {lemma: yt,    pos: adv, gloss: [now]}
+- {lemma: thana, pos: adv, gloss: [then, at that time]}
+- {lemma: sva,   pos: adv, gloss: [thus, so, like this]}
+- {lemma: ok,    pos: adv, gloss: [also, too]}
+- {lemma: enn,   pos: adv, gloss: [still, yet]}
+- {lemma: snar,  pos: adv, gloss: [soon]}
+- {lemma: lang,  pos: adv, gloss: [long ago, for a long time]}
+- {lemma: ful,   pos: adv, gloss: [very]}
+- {lemma: tho,   pos: adv, gloss: [though, however]}
+- {lemma: aftar, pos: adv, gloss: [again, back]}
+- {lemma: idag,  pos: adv, gloss: [today], parts: [i, dag]}
+- {lemma: inim,  pos: adv, gloss: [tonight], parts: [i, nim]}
+
+# --- Prepositions ---
+- {lemma: i,     pos: prep, gloss: [in, at (a time)]}
+- {lemma: a,     pos: prep, gloss: ["on", at]}
+- {lemma: ve,    pos: prep, gloss: [to, toward]}
+- {lemma: ur,    pos: prep, gloss: [out of, from, by (agent)], notes: "same word as Ur, the god of origins"}
+- {lemma: fjol,  pos: prep, gloss: [under, beneath], notes: "also a noun: the deep, cavern"}
+- {lemma: mar,   pos: prep, gloss: [above, over], notes: "also an adjective: high"}
+- {lemma: hjo,   pos: prep, gloss: [with, beside]}
+- {lemma: ter,   pos: prep, gloss: [for, for the sake of]}
+- {lemma: thurg, pos: prep, gloss: [through]}
+- {lemma: ymb,   pos: prep, gloss: [around, about]}
+- {lemma: mid,   pos: prep, gloss: [among, amid], notes: "also the noun 'half'"}
+- {lemma: for,   pos: prep, gloss: [before, in front of]}
+- {lemma: aft,   pos: prep, gloss: [after, behind]}
+- {lemma: ute,   pos: prep, gloss: [outside, without]}
+- {lemma: inn,   pos: prep, gloss: [into]}
+- {lemma: mot,   pos: prep, gloss: [against]}
+- {lemma: til,   pos: prep, gloss: [until]}
+- {lemma: ova,   pos: prep, gloss: [across, beyond]}
+
+# --- Conjunctions and subordinators ---
+- {lemma: eth,   pos: conj, gloss: [and]}
+- {lemma: ava,   pos: conj, gloss: [but]}
+- {lemma: vo,    pos: conj, gloss: [or]}
+- {lemma: ke,    pos: conj, gloss: [that, who, which], layer: kedre, epoch: contact, etymology: "Kedre ke 'that'", notes: "complementizer and relative marker"}
+- {lemma: sof,   pos: conj, gloss: [if]}
+- {lemma: thon,  pos: conj, gloss: [than]}
+- {lemma: ter ke, pos: conj, gloss: [because], parts: [ter, ke]}
+- {lemma: for ke, pos: conj, gloss: [before (conj.)], parts: [for, ke]}
+- {lemma: aft ke, pos: conj, gloss: [after (conj.)], parts: [aft, ke]}
+- {lemma: medan, pos: conj, gloss: [while]}
+
+# --- Particles and interjections ---
+- {lemma: ne,    pos: part, gloss: [not, no], notes: "negation; also 'no' as an answer"}
+- {lemma: hel,   pos: interj, gloss: [yes], notes: "the adjective hel 'good, whole' used as an answer"}
+- {lemma: ma,    pos: part, gloss: [may (wish or blessing)], notes: "ma + infinitive"}
+- {lemma: sa,    pos: part, gloss: [EVID.SEEN (I saw it)], notes: "evidential; from the past of saja"}
+- {lemma: sund,  pos: part, gloss: [EVID.SUNG (so it is sung)], notes: "evidential; also the noun 'song, voice, tongue' (see 01-core-roots)"}
+- {lemma: stari, pos: part, gloss: [EVID.FATED (so the stars say)], notes: "evidential; genitive of star"}
+- {lemma: o,     pos: interj, gloss: [oh, O (in address)]}
+- {lemma: vei,   pos: interj, gloss: [alas, woe]}
+- {lemma: heia,  pos: interj, gloss: [hey!, come on!]}
+- {lemma: hyss,  pos: interj, gloss: [hush, quiet], register: common}
+
+# --- Auxiliaries, modals and irregular verbs ---
+- {lemma: hal,   pos: verb, class: auxiliary, gloss: [will, shall], notes: "future auxiliary + infinitive; invariable"}
+- {lemma: halde, pos: verb, class: auxiliary, gloss: [would], notes: "conditional auxiliary + infinitive"}
+- {lemma: orka,  pos: verb, class: modal, gloss: [can, to be able]}
+- {lemma: noda,  pos: verb, class: modal, gloss: [must, to have to]}
+- {lemma: thursa, pos: verb, class: modal, gloss: [to want, to desire]}
+- {lemma: lofa,  pos: verb, class: modal, gloss: [may, to be allowed]}
+- {lemma: vesa,  pos: verb, class: irregular, gloss: [to be], forms: {present: es, past: vas, participle: vesen, imperative: ves}}
+- {lemma: saja,  pos: verb, class: irregular, gloss: [to see], forms: {present: sajer, past: sa, participle: sajen, imperative: se}}
+- {lemma: jova,  pos: verb, class: irregular, gloss: [to give], forms: {present: jover, past: jav, participle: joven, imperative: jov}}
+- {lemma: aga,   pos: verb, class: strong, gloss: [to have, to own], forms: {past: og, participle: agen}}
+- {lemma: gana,  pos: verb, class: strong, gloss: [to go, to walk], forms: {past: gon, participle: ganen}}
+- {lemma: lida,  pos: verb, class: strong, gloss: [to come], forms: {past: leid, participle: liden}}
+- {lemma: rida,  pos: verb, class: strong, gloss: [to ride], forms: {past: reid, participle: riden}}
+- {lemma: skrida, pos: verb, class: strong, gloss: [to creep, to crawl], forms: {past: skreid, participle: skriden}}
+- {lemma: bita,  pos: verb, class: strong, gloss: [to bite], forms: {past: beit, participle: biten}}
+- {lemma: bida,  pos: verb, class: strong, gloss: [to wait], forms: {past: beid, participle: biden}}
+- {lemma: skuva, pos: verb, class: strong, gloss: [to push, to shove], forms: {past: skauv, participle: skoven}}
+- {lemma: drypa, pos: verb, class: strong, gloss: [to drip, to trickle], forms: {past: draup, participle: dropen}}
+- {lemma: hensa, pos: verb, class: strong, gloss: [to take], forms: {past: hans, participle: honsen}}
+- {lemma: mela,  pos: verb, class: strong, gloss: [to say, to speak], forms: {past: mal, participle: molen}}
+- {lemma: vetha, pos: verb, class: strong, gloss: [to bind by oath, to swear], forms: {past: vath, participle: vothen}}
+- {lemma: bresta, pos: verb, class: strong, gloss: [to burst, to break], forms: {past: brast, participle: brosten}}
+- {lemma: dola,  pos: verb, class: strong, gloss: [to fall, to descend], forms: {past: dul, participle: dolen}}
+
+# --- Numbers ---
+- {lemma: yn,    pos: num, gloss: [one, a certain], forms: {ordinal: ura}}
+- {lemma: dov,   pos: num, gloss: [two], forms: {ordinal: dovde}, etymology: "Proto-Valian *dhowu"}
+- {lemma: thrim, pos: num, gloss: [three], forms: {ordinal: thrimde}, etymology: "Proto-Valian *trimi"}
+- {lemma: ves,   pos: num, gloss: [four], forms: {ordinal: veste}}
+- {lemma: thamm, pos: num, gloss: [five], forms: {ordinal: thamde}, notes: "same word as thamm 'hand'"}
+- {lemma: sesk,  pos: num, gloss: [six], forms: {ordinal: seskte}}
+- {lemma: sev,   pos: num, gloss: [seven], forms: {ordinal: sevde, starisund: stev}, etymology: "Proto-Valian *sewi"}
+- {lemma: stev,  pos: num, gloss: [seven (Starisund)], register: starisund, forms: {ordinal: stevde}, etymology: "sev reshaped by star"}
+- {lemma: ath,   pos: num, gloss: [eight], forms: {ordinal: atte}}
+- {lemma: nyv,   pos: num, gloss: [nine], forms: {ordinal: nyvde}}
+- {lemma: tamm,  pos: num, gloss: [ten], forms: {ordinal: tamde}, etymology: "contracted from *dov-thamm 'two hands'"}
+- {lemma: haun,  pos: num, gloss: [hundred]}
+- {lemma: langhaun, pos: num, gloss: [long hundred (120)], parts: [lang, haun], notes: "old market reckoning"}
+- {lemma: mork,  pos: num, gloss: [thousand]}
+- {lemma: ura,   pos: num, gloss: [first, foremost], etymology: "ur 'origin' + -a"}
+- {lemma: thrimdel, pos: noun, class: inanimate, gloss: [a third], parts: [thrim, del]}
+- {lemma: vesdel, pos: noun, class: inanimate, gloss: [a quarter], parts: [ves, del]}
+- {lemma: del,   pos: noun, class: inanimate, gloss: [part, share, portion]}

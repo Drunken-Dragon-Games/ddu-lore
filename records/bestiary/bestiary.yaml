@@ -8,7 +8,7 @@ subtopics:
 - topic: Thiolden's Beasts
   contributor: dvwl#3447
   facts:
-  - Since the founding of the Varian Imperial System, adventurers have been documenting evolved beasts, new monsters, undead and demons they encountered hoping to help others following their footsteps.
+  - Since the founding of the Vairean Imperial System, adventurers have been documenting evolved beasts, new monsters, undead and demons they encountered hoping to help others following their footsteps.
 
 - import: ./bears
 - import: ./birds

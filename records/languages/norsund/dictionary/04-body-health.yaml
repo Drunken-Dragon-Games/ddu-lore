@@ -1,0 +1,350 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: Body, senses and health
+field: body
+contributor: Vledic#0001
+defaults: {layer: native, tier: core, status: ratified, epoch: proto}
+context:
+- Body parts (the full Swadesh set), the senses, sleep and waking, age, sickness, wounds and healing.
+- Hand (thamm), foot (fuld) and tooth (tunn) are in 01-core-roots.yaml; they are animate and take umlaut plurals.
+- anth means both "breath" and "life", as in many real languages.
+
+entries:
+# --- The body ---
+- lemma: vyrth
+  pos: noun
+  class: inanimate
+  gloss: [body]
+  derived:
+  - {lemma: vyrtha, pos: adj, gloss: [bodily, of the body], parts: [vyrth, a]}
+  - {lemma: dauthbram, pos: noun, class: inanimate, gloss: [corpse, dead body], parts: [dauth, bram], tier: common}
+- lemma: hjud
+  pos: noun
+  class: inanimate
+  gloss: [skin, hide]
+  derived:
+  - {lemma: hjudug, pos: adj, gloss: [leathery, thick-skinned], parts: [hjud, ug], tier: common}
+- lemma: bram
+  pos: noun
+  class: inanimate
+  gloss: [flesh, meat (of a body)]
+  derived:
+  - {lemma: bramug, pos: adj, gloss: [fleshy, plump], parts: [bram, ug], tier: common}
+- lemma: blyth
+  pos: noun
+  class: inanimate
+  gloss: [blood]
+  notes: "kennings: ulfi kjal 'the wolf's drink', graunkjal 'raven's ale'"
+  derived:
+  - {lemma: blytha, pos: verb, class: weak, gloss: [to bleed]}
+  - {lemma: blythug, pos: adj, gloss: [bloody], parts: [blyth, ug]}
+  - {lemma: blythnuth, pos: adj, gloss: [bloodless, pale], parts: [blyth, nuth], tier: common}
+  - {lemma: blythbryl, pos: noun, class: inanimate, gloss: [blood-kin, close family], parts: [blyth, bryl], tier: common}
+- lemma: skell
+  pos: noun
+  class: inanimate
+  gloss: [bone]
+  derived:
+  - {lemma: skultskell, pos: noun, class: inanimate, gloss: [skull], parts: [skult, skell]}
+  - {lemma: stjurnskell, pos: noun, class: inanimate, gloss: [spine, backbone], parts: [stjurn, skell]}
+  - {lemma: skellnurir, pos: noun, class: animate, gloss: [bonesetter, surgeon], parts: [skell, nurir], tier: common}
+- {lemma: sperr, pos: noun, class: inanimate, gloss: [rib], notes: "also a roof rafter: the ribs are the body's rafters"}
+- lemma: gloth
+  pos: noun
+  class: inanimate
+  gloss: [fat, grease, tallow]
+  derived:
+  - {lemma: glothug, pos: adj, gloss: [fat (of a body), greasy], parts: [gloth, ug]}
+- lemma: skult
+  pos: noun
+  class: inanimate
+  gloss: [head]
+  derived:
+  - {lemma: skulta, pos: verb, class: weak, gloss: [to lead, to head], tier: common}
+  - {lemma: skultir, pos: noun, class: animate, gloss: [chief, headman], tier: common}
+  - {lemma: skultnuth, pos: adj, gloss: [headless], parts: [skult, nuth], tier: common}
+- {lemma: myll, pos: noun, class: inanimate, gloss: [brain]}
+- {lemma: anst, pos: noun, class: inanimate, gloss: [face]}
+- lemma: thrud
+  pos: noun
+  class: inanimate
+  gloss: [hair]
+  derived:
+  - {lemma: thrudug, pos: adj, gloss: [hairy, shaggy], parts: [thrud, ug]}
+  - {lemma: thrudnuth, pos: adj, gloss: [bald], parts: [thrud, nuth]}
+- lemma: vyrsk
+  pos: noun
+  class: inanimate
+  gloss: [beard]
+  derived:
+  - {lemma: vyrskug, pos: adj, gloss: [bearded], parts: [vyrsk, ug]}
+- lemma: hyrl
+  pos: noun
+  class: inanimate
+  gloss: [ear]
+  derived:
+  - {lemma: hyrla, pos: verb, class: weak, gloss: [to hear, to listen]}
+  - {lemma: hyrlning, pos: noun, class: inanimate, gloss: [hearing]}
+  - {lemma: hyrlnuth, pos: adj, gloss: [deaf], parts: [hyrl, nuth]}
+- lemma: glyn
+  pos: noun
+  class: inanimate
+  gloss: [eye]
+  derived:
+  - {lemma: glyna, pos: verb, class: weak, gloss: [to look, to gaze, to watch]}
+  - {lemma: glynning, pos: noun, class: inanimate, gloss: [sight, a look]}
+  - {lemma: glynnuth, pos: adj, gloss: [blind], parts: [glyn, nuth]}
+  - {lemma: glynir, pos: noun, class: animate, gloss: [watcher, scout, lookout], tier: common}
+- lemma: snyth
+  pos: noun
+  class: inanimate
+  gloss: [nose, snout]
+  derived:
+  - {lemma: snytha, pos: verb, class: weak, gloss: [to smell, to sniff]}
+  - {lemma: snythning, pos: noun, class: inanimate, gloss: [sense of smell, a scent]}
+- lemma: gom
+  pos: noun
+  class: inanimate
+  gloss: [mouth]
+- {lemma: varr, pos: noun, class: inanimate, gloss: [lip]}
+- lemma: lunn
+  pos: noun
+  class: inanimate
+  gloss: [tongue (the organ)]
+  notes: "the language sense of 'tongue' is sund"
+  derived:
+  - {lemma: lunna, pos: verb, class: weak, gloss: [to lick]}
+- {lemma: kjav, pos: noun, class: inanimate, gloss: [jaw]}
+- lemma: svelg
+  pos: noun
+  class: inanimate
+  gloss: [throat, gullet]
+  derived:
+  - {lemma: svelga, pos: verb, class: weak, gloss: [to swallow, to gulp]}
+- {lemma: hjals, pos: noun, class: inanimate, gloss: [neck]}
+- {lemma: skuld, pos: noun, class: inanimate, gloss: [shoulder]}
+- lemma: jalm
+  pos: noun
+  class: inanimate
+  gloss: [arm]
+  derived:
+  - {lemma: jalmnuth, pos: adj, gloss: [armless], parts: [jalm, nuth], tier: common}
+- {lemma: vrist, pos: noun, class: inanimate, gloss: [wrist]}
+- {lemma: jalmkyll, pos: noun, class: inanimate, gloss: [elbow (lit. arm-knee)], parts: [jalm, kyll]}
+- {lemma: lend, pos: noun, class: inanimate, gloss: [hip, loin]}
+- lemma: tind
+  pos: noun
+  class: inanimate
+  gloss: [finger]
+  derived:
+  - {lemma: fuldtind, pos: noun, class: inanimate, gloss: [toe (lit. foot-finger)], parts: [fuld, tind]}
+- {lemma: nyl, pos: noun, class: inanimate, gloss: [fingernail, toenail]}
+- lemma: krall
+  pos: noun
+  class: inanimate
+  gloss: [claw, talon]
+  derived:
+  - {lemma: kralla, pos: verb, class: weak, gloss: [to claw, to scratch]}
+  - {lemma: krallug, pos: adj, gloss: [clawed], parts: [krall, ug], tier: common}
+- {lemma: barm, pos: noun, class: inanimate, gloss: [breast, chest, bosom]}
+- lemma: kjarth
+  pos: noun
+  class: inanimate
+  gloss: [heart, core]
+  derived:
+  - {lemma: kjartha, pos: adj, gloss: [heartfelt, innermost], parts: [kjarth, a], tier: common}
+  - {lemma: kjarthnuth, pos: adj, gloss: [heartless, cruel], parts: [kjarth, nuth], tier: common}
+  - {lemma: kjarthklakk, pos: noun, class: inanimate, gloss: [heartbeat, pulse], parts: [kjarth, klakk], tier: common}
+- {lemma: lomm, pos: noun, class: inanimate, gloss: [liver]}
+- {lemma: vomb, pos: noun, class: inanimate, gloss: [belly, stomach]}
+- {lemma: tharm, pos: noun, class: inanimate, gloss: [gut, intestine], notes: "plural tharmar 'guts'"}
+- {lemma: stjurn, pos: noun, class: inanimate, gloss: [back (of the body)]}
+- lemma: lunk
+  pos: noun
+  class: inanimate
+  gloss: [leg]
+  derived:
+  - {lemma: lunknuth, pos: adj, gloss: [legless], parts: [lunk, nuth], tier: common}
+- lemma: kyll
+  pos: noun
+  class: inanimate
+  gloss: [knee]
+  derived:
+  - {lemma: kylla, pos: verb, class: weak, gloss: [to kneel], tier: common}
+- lemma: hyrn
+  pos: noun
+  class: inanimate
+  gloss: [horn]
+  derived:
+  - {lemma: hyrnug, pos: adj, gloss: [horned], parts: [hyrn, ug]}
+- {lemma: sterd, pos: noun, class: inanimate, gloss: [tail]}
+- lemma: fjoth
+  pos: noun
+  class: inanimate
+  gloss: [feather]
+  derived:
+  - {lemma: fjothug, pos: adj, gloss: [feathered], parts: [fjoth, ug]}
+- lemma: flaug
+  pos: noun
+  class: inanimate
+  gloss: [wing]
+  derived:
+  - {lemma: flauga, pos: verb, class: weak, gloss: [to fly]}
+  - {lemma: flaugir, pos: noun, class: animate, gloss: [flier, anything that flies], tier: common}
+  - {lemma: flaugning, pos: noun, class: inanimate, gloss: [flight (flying)], tier: common}
+  - {lemma: flaugnuth, pos: adj, gloss: [wingless, flightless], parts: [flaug, nuth], tier: common}
+  - {lemma: fyrflaug, pos: adj, gloss: [fire-winged, Firewing], parts: [fyr, flaug], tier: common, notes: "Gadrull is a fyrflaug haurnkin, a Firewing Dragonkin"}
+
+# --- Breath and life ---
+- lemma: anth
+  pos: noun
+  class: inanimate
+  gloss: [breath, life, spirit]
+  derived:
+  - {lemma: antha, pos: verb, class: weak, gloss: [to breathe, to live]}
+  - {lemma: anthug, pos: adj, gloss: [alive, living], parts: [anth, ug]}
+  - {lemma: anthnuth, pos: adj, gloss: [lifeless, breathless], parts: [anth, nuth]}
+  - {lemma: anthheim, pos: noun, class: inanimate, gloss: [lung (lit. breath-home)], parts: [anth, heim]}
+- lemma: fyda
+  pos: verb
+  class: weak
+  gloss: [to give birth, to bear]
+  derived:
+  - {lemma: fydning, pos: noun, class: inanimate, gloss: [birth]}
+  - {lemma: fydad, pos: adj, gloss: [born], parts: [fyda, ad]}
+  - {lemma: fydnurir, pos: noun, class: animate, gloss: [midwife], parts: [fyd, nurir], tier: common}
+- lemma: ald
+  pos: noun
+  class: inanimate
+  gloss: [age, years of life]
+  derived:
+  - {lemma: alda, pos: verb, class: weak, gloss: [to age, to grow old]}
+  - {lemma: aldug, pos: adj, gloss: [aged, elderly], parts: [ald, ug]}
+  - {lemma: aldir, pos: noun, class: animate, gloss: [elder]}
+
+# --- Senses ---
+- lemma: smyla
+  pos: verb
+  class: weak
+  gloss: [to taste]
+  derived:
+  - {lemma: smyl, pos: noun, class: inanimate, gloss: [taste, flavour]}
+  - {lemma: smylnuth, pos: adj, gloss: [tasteless, bland], parts: [smyl, nuth], tier: common}
+- lemma: tagga
+  pos: verb
+  class: weak
+  gloss: [to touch, to feel (with the hands)]
+  derived:
+  - {lemma: tagg, pos: noun, class: inanimate, gloss: [touch]}
+
+# --- Hunger, thirst, sleep and waking ---
+- lemma: glypp
+  pos: noun
+  class: inanimate
+  gloss: [hunger]
+  derived:
+  - {lemma: glyppug, pos: adj, gloss: [hungry], parts: [glypp, ug]}
+- lemma: thursk
+  pos: noun
+  class: inanimate
+  gloss: [thirst]
+  etymology: "related to thursa 'to want, to desire'"
+  derived:
+  - {lemma: thurskug, pos: adj, gloss: [thirsty], parts: [thursk, ug]}
+- lemma: svafa
+  pos: verb
+  class: weak
+  gloss: [to sleep]
+  derived:
+  - {lemma: svaf, pos: noun, class: inanimate, gloss: [sleep]}
+  - {lemma: svafnuth, pos: adj, gloss: [sleepless], parts: [svaf, nuth]}
+  - {lemma: svafir, pos: noun, class: animate, gloss: [sleeper], tier: common}
+- lemma: vek
+  pos: adj
+  gloss: [awake]
+  derived:
+  - {lemma: veka, pos: verb, class: weak, gloss: [to wake, to wake up]}
+- lemma: myd
+  pos: adj
+  gloss: [tired, weary]
+  derived:
+  - {lemma: mydeth, pos: noun, class: inanimate, gloss: [weariness, fatigue], parts: [myd, eth]}
+- lemma: dyrma
+  pos: verb
+  class: weak
+  gloss: [to faint, to swoon]
+  tier: common
+  derived:
+  - {lemma: dyrmug, pos: adj, gloss: [dizzy, faint], parts: [dyrm, ug]}
+
+# --- Strength, health and sickness ---
+- lemma: thrak
+  pos: noun
+  class: inanimate
+  gloss: [strength, might]
+  derived:
+  - {lemma: thrakug, pos: adj, gloss: [strong, mighty], parts: [thrak, ug]}
+  - {lemma: thraknuth, pos: adj, gloss: [weak, feeble], parts: [thrak, nuth]}
+  - {lemma: thraka, pos: verb, class: weak, gloss: [to strengthen], tier: common}
+- {lemma: heleth, pos: noun, class: inanimate, gloss: [health, wholeness], parts: [hel, eth]}
+- lemma: kranth
+  pos: noun
+  class: inanimate
+  gloss: [sickness, illness]
+  derived:
+  - {lemma: kranthug, pos: adj, gloss: [sick, ill], parts: [kranth, ug]}
+  - {lemma: fyrkranth, pos: noun, class: inanimate, gloss: [fever (lit. fire-sickness)], parts: [fyr, kranth]}
+  - {lemma: dauthkranth, pos: noun, class: inanimate, gloss: [plague (lit. death-sickness)], parts: [dauth, kranth], tier: common}
+- lemma: skeng
+  pos: noun
+  class: inanimate
+  gloss: [pain, ache]
+  derived:
+  - {lemma: skenga, pos: verb, class: weak, gloss: [to ache, to hurt]}
+  - {lemma: skengug, pos: adj, gloss: [painful], parts: [skeng, ug]}
+- lemma: sverna
+  pos: verb
+  class: weak
+  gloss: [to wound, to injure]
+  derived:
+  - {lemma: svern, pos: noun, class: inanimate, gloss: [wound, injury]}
+  - {lemma: svernad, pos: adj, gloss: [wounded], parts: [sverna, ad]}
+- {lemma: ryft, pos: noun, class: inanimate, gloss: [scar], tier: common}
+- lemma: svyrt
+  pos: noun
+  class: inanimate
+  gloss: [poison, venom]
+  tier: common
+  derived:
+  - {lemma: svyrta, pos: verb, class: weak, gloss: [to poison]}
+  - {lemma: svyrtug, pos: adj, gloss: [poisonous, venomous], parts: [svyrt, ug]}
+- lemma: lauk
+  pos: noun
+  class: inanimate
+  gloss: [healing herb, medicinal plant]
+  tier: common
+  derived:
+  - {lemma: nurlauk, pos: noun, class: inanimate, gloss: [healing herb, purple-flowered healwort (Bodica's herb)], parts: [nur, lauk]}
+  - {lemma: lauknurir, pos: noun, class: animate, gloss: [herbalist], parts: [lauk, nurir]}
+- {lemma: smyr, pos: noun, class: inanimate, gloss: [salve, ointment], tier: common}
+- {lemma: skultskeng, pos: noun, class: inanimate, gloss: [headache], parts: [skult, skeng], tier: common}
+- {lemma: vombskeng, pos: noun, class: inanimate, gloss: [bellyache], parts: [vomb, skeng], tier: common}
+- {lemma: kranthheim, pos: noun, class: inanimate, gloss: [infirmary, house of healing], parts: [kranth, heim], tier: common}
+- lemma: hjokk
+  pos: noun
+  class: inanimate
+  gloss: [cough]
+  tier: common
+  derived:
+  - {lemma: hjokka, pos: verb, class: weak, gloss: [to cough]}
+- lemma: vyrr
+  pos: adj
+  gloss: [mad, crazed, out of one's wits]
+  tier: common
+  notes: "the Mad Chronicler is called vyrr behind his back"
+  derived:
+  - {lemma: vyrreth, pos: noun, class: inanimate, gloss: [madness], parts: [vyrr, eth]}
+
+# --- The tavern's own ailments ---
+- {lemma: kjalskeng, pos: noun, class: inanimate, gloss: [hangover (lit. drink-ache)], parts: [kjal, skeng], tier: common, epoch: modern, notes: "kjalad 'drunk' is in 09-home-tavern-food.yaml"}

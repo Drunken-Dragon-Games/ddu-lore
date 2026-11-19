@@ -1,0 +1,312 @@
+document: lang-text/v1
+language: old-norsund
+version: 1.0.0
+topic: Old Norsund texts
+contributor: Vledic#0001
+texts:
+- id: vilkyr-oath
+  title: The Vilkyr oath
+  register: old (oath)
+  source: new
+  context: >
+    Sworn by every Vilkyr (free sword) on taking up the hunt, hand on blade, before two witnesses. The oath is still
+    sworn in Old Norsund. Its first line is the Vilkyr code, which Norsund keeps as "Vil kyrin, vothen sundin".
+  lines:
+  - text: "Vil kyr, vothin sund."
+    morphemes: "vil kyr voth-in sund"
+    gloss: "free blade bind-PTCP word"
+    translation: "Free blade, bound word."
+  - text: "Em vethur a kyre eth a thamme."
+    morphemes: "em veth-ur a kyr-e eth a thamm-e"
+    gloss: "1SG.NOM swear-PRS.SG on blade-DAT and on hand-DAT"
+    translation: "I swear on blade and on hand."
+  - text: "Ter Thioldene, ter heime eth nege, kjoldur em."
+    morphemes: "ter Thiolden-e ter heim-e eth neg-e kjold-ur em"
+    gloss: "for Thiolden-DAT for home-DAT and folk-DAT guard-PRS.SG 1SG.NOM"
+    translation: "For Thiolden, for home and folk, I keep watch."
+  - text: "Skryma thiarkur em, eth em ne skrinkur."
+    morphemes: "skrym-a thiark-ur em eth em ne skrink-ur"
+    gloss: "monster-ACC hunt-PRS.SG 1SG.NOM and 1SG.NOM NEG flee-PRS.SG"
+    translation: "The monster I hunt, and I do not flee."
+  - text: "Kyr emi bitur thasa ys vond es."
+    morphemes: "kyr emi bit-ur thas-a ys vond es"
+    gloss: "blade 1SG.GEN bite-PRS.SG that.one-ACC REL evil be.PRS.SG"
+    translation: "My blade bites the one who is evil."
+  - text: "Sajir es Myr, sajir es Heid."
+    morphemes: "saj-ir es Myr saj-ir es Heid"
+    gloss: "see-AGT be.PRS.SG Myr see-AGT be.PRS.SG Heid"
+    translation: "Myr is witness, Heid is witness."
+  - text: "Sof em vath brestur, biti kyr emi om."
+    morphemes: "sof em vath brest-ur bit-i kyr emi om"
+    gloss: "if 1SG.NOM oath break-PRS.SG bite-OPT blade 1SG.GEN 1SG.ACC"
+    translation: "If I break the oath, may my blade bite me."
+  - text: "Sva vethur em."
+    morphemes: "sva veth-ur em"
+    gloss: "thus swear-PRS.SG 1SG.NOM"
+    translation: "Thus I swear."
+  notes:
+  - There are no evidential particles; Old Norsund calls the gods as witnesses instead (line 6).
+  - The accusative -a on skrym lets the object come first in line 4 without ambiguity.
+  - Subordinate clauses put the verb last (sof em vath brestur, ys vond es).
+  - The curse in line 7 uses the optative with the verb first.
+
+- id: kjoldmur-law
+  title: Law formula of the Kjoldmur
+  register: old (law)
+  source: records/thiolden/auristar/auristar.yaml (the rune-magic ban)
+  context: >
+    Carved beside the gates of the First Ring of the Kjoldmur (built 91-99 a.v.e.). Auristar was founded after Old Norsund
+    had given way to Norsund, but law is written in the old register. The formula bans rune magic (a charged rune glows),
+    not rune writing.
+  lines:
+  - text: "Hes es lag Kjoldmuri."
+    morphemes: "hes es lag Kjoldmur-i"
+    gloss: "this be.PRS.SG law Kjoldmur-GEN"
+    translation: "This is the law of the Kjoldmur."
+  - text: "Kum ys lysande run fjol stare ristur, thas es utlag."
+    morphemes: "kum ys lys-ande run fjol star-e rist-ur thas es ut-lag"
+    gloss: "who REL shine-PRS.PTCP rune beneath star-DAT carve-PRS.SG that.one be.PRS.SG outside-law"
+    translation: "Whoever carves a shining rune beneath the star, that one is outlaw."
+  - text: "Kjold eth grith halur mur vesa."
+    morphemes: "kjold eth grith hal-ur mur ves-a"
+    gloss: "ward and sanctuary owe-PRS.SG wall be-INF"
+    translation: "Ward and sanctuary the wall shall be."
+  - text: "Kum ys mur ne kjoldur, ne kjoldur heim."
+    morphemes: "kum ys mur ne kjold-ur ne kjold-ur heim"
+    gloss: "who REL wall NEG guard-PRS.SG NEG guard-PRS.SG home"
+    translation: "Whoever does not guard the wall does not guard home."
+  - text: "Sva skilum emin, skilirin Kjoldmuri."
+    morphemes: "sva skil-um emin skil-ir-in Kjoldmur-i"
+    gloss: "thus judge-PRS.PL 1PL.NOM judge-AGT-PL Kjoldmur-GEN"
+    translation: "Thus we judge, the judges of the Kjoldmur."
+  notes:
+  - The genitive follows its noun (lag Kjoldmuri), as is usual in law language.
+  - halur + infinitive is the old future; Norsund hal comes from it.
+  - Kjoldmur contains the Kedre loan mur. The name is younger than true Old Norsund and is used here as a fixed name.
+
+- id: settlers-slate-marheim
+  title: A settlers' rune slate from Marheim
+  register: old (runic memorial)
+  source: records/thiolden/general-timeline.yaml (Marheim founded 432 b.v.e.)
+  context: >
+    A slate carved in the first years of Marheim, when the surviving settlers were raising the village in northern
+    Thiolden. It is not the Merfolk slate the Mad Chronicler reads in records/user-submitted-stories/marv.yaml;
+    Merfolk runes are a separate tradition. The rune-row does not mark vowel length or double consonants, so the
+    reading below is a scholar's normalization.
+  lines:
+  - text: "Yn hwander ristade runar hesar aft brode seli, ys i Norvire dul."
+    morphemes: "yn hwander rist-ade run-ar hes-ar aft brod-e seli ys i Norvir-e dul"
+    gloss: "one wanderer carve-PST.SG rune-PL.IN this-PL.IN after sibling-DAT 3SG.GEN REL in North.forest-DAT fall.PST.SG"
+    translation: "A wanderer carved these runes in memory of their sibling, who fell in the North-forest."
+  - text: "Marheim hjaldum emin."
+    morphemes: "Marheim hjald-um emin"
+    gloss: "Marheim raise-PRS.PL 1PL.NOM"
+    translation: "We are raising Marheim."
+  - text: "Myr kjoldi heim eth hwanderin."
+    morphemes: "Myr kjold-i heim eth hwander-in"
+    gloss: "Myr guard-OPT home and wanderer-PL.ACC"
+    translation: "May Myr guard the home and the wanderers."
+  notes:
+  - The formula "X carved these runes after Y" is the standard memorial opening.
+  - The demonstrative follows the noun (runar hesar), an old word order.
+  - hwander keeps the initial hw that Norsund simplified to w (wander).
+
+- id: invocation-myr-heid
+  title: Temple invocation to Myr and Heid
+  register: old (liturgy)
+  source: records/thiolden/general-timeline.yaml (57 a.v.e., the blessings of Myr and Heid)
+  context: >
+    Opening words of the oldest rite of Auristar's temples, from the years of the Seven Wandering Houses. It uses the old
+    names Myr and Heid for Ur and Nett. In modern Starisund temple speech the same lines are followed by stari.
+  lines:
+  - text: "Em heitur Myra eth Heida."
+    morphemes: "em heit-ur Myr-a eth Heid-a"
+    gloss: "1SG.NOM invoke-PRS.SG Myr-ACC and Heid-ACC"
+    translation: "I call upon Myr and Heid."
+  - text: "Myr, ur ys emin lidum; Heid, ve ys emin ganum."
+    morphemes: "Myr ur ys emin lid-um Heid ve ys emin gan-um"
+    gloss: "Myr out.of REL 1PL.NOM come-PRS.PL Heid toward REL 1PL.NOM go-PRS.PL"
+    translation: "Myr, from whom we come; Heid, to whom we go."
+  - text: "Jov omum thioleth, jov omum lys."
+    morphemes: "jov omum thiol-eth jov omum lys"
+    gloss: "give.IMP 1PL.DAT brave-NMLZ give.IMP 1PL.DAT light"
+    translation: "Give us courage, give us light."
+  - text: "Kuna dauth lidur, marlidim emin ve Heide."
+    morphemes: "kuna dauth lid-ur mar-lid-im emin ve Heid-e"
+    gloss: "when death come-PRS.SG high-come-OPT.PL 1PL.NOM toward Heid-DAT"
+    translation: "When death comes, may we rise to Heid."
+  - text: "Sva es urlag."
+    morphemes: "sva es ur-lag"
+    gloss: "thus be.PRS.SG origin-law"
+    translation: "So is fate."
+  notes:
+  - Myr is the god of origin and kin, Heid of the sky and the destination, matching Ur and Nett.
+  - marlida "rise, ascend" describes the triumphant dead joining the constellations (starmyr).
+  - urlag "fate" is literally "origin-law".
+
+- id: barrow-memorial-stone
+  title: A memorial stone from the Haugden
+  register: old (runic memorial)
+  source: new (the tumulus plains of records/thiolden/thiolden.yaml)
+  context: >
+    A long-branch rune stone raised beside a barrow on the Haugden, the tumulus plains, around 200 b.v.e. It follows the
+    standard memorial formula (ON-NAME-02). The last line forbids anyone to charge the runes: rune magic near the dead
+    raises them, a fear the fall of Marheim in 50 a.v.e. proved right.
+  lines:
+  - text: "Ulf eth Sauvdis ristadum runar hesar aft Aurhaske, thade selini."
+    morphemes: "Ulf eth Sauvdis rist-adum run-ar hes-ar aft Aurhask-e thade selini"
+    gloss: "Ulf and Sauvdis carve-PST.PL rune-PL.IN this-PL.IN after Aurhask-DAT father.DAT 3PL.AN.GEN"
+    translation: "Ulf and Sauvdis carved these runes in memory of Aurhask, their father."
+  - text: "Sel dul i strithe a Haugdene."
+    morphemes: "sel dul i strith-e a Haugden-e"
+    gloss: "3SG.AN.NOM fall.PST.SG in strife-DAT on Barrow.plains-DAT"
+    translation: "He fell in battle on the barrow plains."
+  - text: "Thiol lud vas sel, eth hel ter nege seli."
+    morphemes: "thiol lud vas sel eth hel ter neg-e seli"
+    gloss: "brave person be.PST.SG 3SG.AN.NOM and good for folk-DAT 3SG.AN.GEN"
+    translation: "A brave man he was, and good to his people."
+  - text: "Myr kjoldi ond seli."
+    morphemes: "Myr kjold-i ond seli"
+    gloss: "Myr guard-OPT soul 3SG.AN.GEN"
+    translation: "May Myr keep his soul."
+  - text: "Haug hes hjaldum emin."
+    morphemes: "haug hes hjald-um emin"
+    gloss: "barrow this raise-PRS.PL 1PL.NOM"
+    translation: "This barrow we raise."
+  - text: "Ne lysi run a stave hese."
+    morphemes: "ne lys-i run a stav-e hes-e"
+    gloss: "NEG shine-OPT rune on stave-DAT this-DAT"
+    translation: "Let no rune shine on this stone."
+  notes:
+  - Read in long-branch runes, the carving does not mark the double consonants of Ulf's and Aurhask's kin; this is the scholars' normalization.
+  - The verb agrees with its plural subject (ristadum, hjaldum).
+  - The object comes first in line 5 and the verb stays second (V2).
+  - The closing line is a protective curse in the optative, verb first, with ne before it.
+
+- id: saga-of-the-landfall
+  title: The landfall (from the Saga of the Wanderers)
+  register: old (saga)
+  source: records/thiolden/general-timeline.yaml (450 b.v.e., the first settlers arrive from Farheim)
+  context: >
+    The opening of the saga the Sundwanderen still recite in Old Norsund: the settlers from the island of Farheim cross
+    the sea and reach the land they name Thiolden. Sagas tell events in the past tense and quote speech with mal "said".
+  lines:
+  - text: "Hes es frast hwanderini."
+    morphemes: "hes es frast hwander-ini"
+    gloss: "this be.PRS.SG tale wanderer-PL.GEN"
+    translation: "This is the tale of the wanderers."
+  - text: "Ur Farheime gonum selin a hjaule, i ves skeium."
+    morphemes: "ur Farheim-e gon-um selin a hjaul-e i ves skei-um"
+    gloss: "out.of Farheim-DAT go.PST-PL 3PL.AN.NOM on sea-DAT in four ship-PL.DAT"
+    translation: "From Farheim they went out on the sea, in four ships."
+  - text: "Thrusk skauv skeiar, eth hjaul vas vond."
+    morphemes: "thrusk skauv skei-ar eth hjaul vas vond"
+    gloss: "storm push.PST.SG ship-PL.IN and sea be.PST.SG bad"
+    translation: "Storm drove the ships, and the sea was cruel."
+  - text: "A nyvde dage saum selin hjolm."
+    morphemes: "a nyv-de dag-e sa-um selin hjolm"
+    gloss: "on nine-ORD day-DAT see.PST-PL 3PL.AN.NOM shore"
+    translation: "On the ninth day they saw a shore."
+  - text: "Vir hin vas dunk, eth skrymin beidum i vire."
+    morphemes: "vir hin vas dunk eth skrym-in beid-um i vir-e"
+    gloss: "forest the be.PST.SG dark and monster-PL.NOM wait.PST-PL in forest-DAT"
+    translation: "The forest was dark, and monsters waited in the forest."
+  - text: "Ava hwanderin ne skrinkadum."
+    morphemes: "ava hwander-in ne skrink-adum"
+    gloss: "but wanderer-PL.NOM NEG flee-PST.PL"
+    translation: "But the wanderers did not flee."
+  - text: "Thal mal drott selini: “Hes es den thiolini.”"
+    morphemes: "thal mal drott selini hes es den thiol-ini"
+    gloss: "there say.PST.SG ruler 3PL.AN.GEN this be.PRS.SG land brave-PL.GEN"
+    translation: "Then their leader said: “This is the land of the brave.”"
+  - text: "Sva agur den hin thyn ati: Thiolden."
+    morphemes: "sva ag-ur den hin thyn ati Thiolden"
+    gloss: "thus have-PRS.SG land the name 3SG.IN.GEN Thiolden"
+    translation: "So the land has its name: Thiolden."
+  notes:
+  - Line 7 gives the canon meaning of Thiolden, "land of the brave"; den thiolini ("land of the brave ones") was compounded to Thiolden.
+  - Strong past plurals add -um to the past stem (gonum, beidum); saja has the irregular plural saum.
+  - Dative after every preposition (ur Farheime, a hjaule, i vire).
+  - The saga never uses evidentials; the Sundwanderen add sund only when they retell it in Norsund.
+
+- id: law-of-the-marheim-moot
+  title: A law of the Marheim moot
+  register: old (law)
+  source: records/thiolden/general-timeline.yaml (Marheim, 432 b.v.e. to 50 a.v.e.)
+  context: >
+    From the laws recited at the stemn (moot) of Marheim before its fall. It sets the blood-price, the rule of witnesses
+    and the punishment for breaking the peace of the moot. Its witness rule is the origin of the Auristar requirement that
+    testimony carry sa.
+  lines:
+  - text: "Hes es lag stemni Marheimi."
+    morphemes: "hes es lag stemn-i Marheim-i"
+    gloss: "this be.PRS.SG law assembly-GEN Marheim-GEN"
+    translation: "This is the law of the moot of Marheim."
+  - text: "Kum ys luda valdur, thas jovur bot vo es utlag."
+    morphemes: "kum ys lud-a vald-ur thas jov-ur bot vo es ut-lag"
+    gloss: "who REL person-ACC slay-PRS.SG that.one give-PRS.SG blood.price or be.PRS.SG outside-law"
+    translation: "Whoever slays a person pays the blood-price or is outlaw."
+  - text: "Bot es langhaun get."
+    morphemes: "bot es lang-haun get"
+    gloss: "blood.price be.PRS.SG long-hundred goat.PL"
+    translation: "The blood-price is a long hundred goats (120)."
+  - text: "Sak skilur stemn, eth dov sajirin vethum."
+    morphemes: "sak skil-ur stemn eth dov saj-ir-in veth-um"
+    gloss: "case judge-PRS.SG assembly and two see-AGT-PL swear-PRS.PL"
+    translation: "The moot judges the case, and two witnesses swear."
+  - text: "Sajir ys ne sa, thas ne vethur."
+    morphemes: "saj-ir ys ne sa thas ne veth-ur"
+    gloss: "see-AGT REL NEG see.PST.SG that.one NEG swear-PRS.SG"
+    translation: "A witness who did not see does not swear."
+  - text: "Kum ys grith i stemne brestur, thas halur ute Marheime gana."
+    morphemes: "kum ys grith i stemn-e brest-ur thas hal-ur ute Marheim-e gan-a"
+    gloss: "who REL sanctuary in assembly-DAT break-PRS.SG that.one owe-PRS.SG outside Marheim-DAT go-INF"
+    translation: "Whoever breaks the peace of the moot shall go out of Marheim."
+  - text: "Sva skilum emin, skilirin Marheimi."
+    morphemes: "sva skil-um emin skil-ir-in Marheim-i"
+    gloss: "thus judge-PRS.PL 1PL.NOM judge-AGT-PL Marheim-GEN"
+    translation: "Thus we judge, the judges of Marheim."
+  notes:
+  - Each rule is a relative clause with the verb last, then a main clause beginning with thas ("that one").
+  - Line 3 counts in the long hundred and uses the umlaut plural get "goats".
+  - Line 5 is the root of the Auristar court rule; in Norsund the past sa "saw" became the evidential sa.
+
+- id: ward-incantation
+  title: A ward incantation (rune magic, forbidden in Auristar)
+  register: old (rune-craft)
+  source: new (rune magic, records/thiolden/general-timeline.yaml and records/thiolden/auristar/auristar.yaml)
+  context: >
+    WARNING FOR WRITERS: this is rune magic. Spoken while charging (lada) carved ward-runes on a doorpost, it makes the runes
+    glow. Rune magic raised the dead at Marheim and is forbidden in Auristar by the law of the Kjoldmur; a glowing rune
+    inside the city is always a crime or a sign of forbidden magic. Plain runic writing never glows. The text comes from a
+    Runmyren slate and follows the incantation shape of ON-REG-06.
+  lines:
+  - text: "Run ristur em, run ladur em."
+    morphemes: "run rist-ur em run lad-ur em"
+    gloss: "rune carve-PRS.SG 1SG.NOM rune charge-PRS.SG 1SG.NOM"
+    translation: "A rune I carve, a rune I charge."
+  - text: "Vald i grjote, sveim i stave."
+    morphemes: "vald i grjot-e sveim i stav-e"
+    gloss: "arcane.field in stone-DAT aether.current in stave-DAT"
+    translation: "Field in the stone, current in the stave."
+  - text: "Lysi run hin i dunke nime."
+    morphemes: "lys-i run hin i dunk-e nim-e"
+    gloss: "shine-OPT rune the in dark-DAT night-DAT"
+    translation: "May the rune shine in the dark night."
+  - text: "Ne lidi svip ve heime."
+    morphemes: "ne lid-i svip ve heim-e"
+    gloss: "NEG come-OPT wraith toward home-DAT"
+    translation: "May no wraith come to the home."
+  - text: "Kjoldi run hin ylv eth fyr, luda eth gata."
+    morphemes: "kjold-i run hin ylv eth fyr lud-a eth gat-a"
+    gloss: "guard-OPT rune the water and fire person-ACC and goat-ACC"
+    translation: "May the rune guard water and fire, person and goat."
+  - text: "Glod!"
+    morphemes: "glod"
+    gloss: "glow"
+    translation: "Glow!"
+  notes:
+  - The final word seals the charge; at that moment the runes begin to glow.
+  - vald and sveim are the two forces of magic in records/magic-rules.yaml (Arcane fields and Aether currents).
+  - Animate objects take the accusative -a (luda, gata); inanimate ones do not (ylv, fyr).
+  - Use this only for scenes of forbidden or wild magic, never as everyday Auristar practice.

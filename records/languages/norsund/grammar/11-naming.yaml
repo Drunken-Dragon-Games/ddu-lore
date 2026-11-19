@@ -1,0 +1,128 @@
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: Names and naming
+contributor: Vledic#0001
+status: ratified
+context:
+- This is the "naming language": enough rules and parts for any contributor to name people, places and groups consistently.
+- The tools/norsund name generator reads the place_generics and modifiers blocks below.
+
+place_generics:
+- {form: "heim", meaning: "home, settlement, town", example: "Oudeheim"}
+- {form: "den", meaning: "land, realm, region", example: "Thiolden"}
+- {form: "mar", meaning: "peak, mountain, height", example: "Midelmar"}
+- {form: "vir", meaning: "forest, deepwood", example: "Ilinvirden"}
+- {form: "fjol", meaning: "cavern, the deep", example: "Starifjolden"}
+- {form: "kjold", meaning: "guard-post, fort", example: "Norstarkjold"}
+- {form: "mur", meaning: "wall (Kedre loan)", example: "Kjoldmur"}
+- {form: "raugg", meaning: "vault, treasury, reliquary", example: "Starirauggheim"}
+- {form: "kreth", meaning: "ring (of walls)", example: "Thrimde Kreth"}
+- {form: "gand", meaning: "road, way", example: "Starigand"}
+- {form: "ylv", meaning: "water, river", example: "Aurylv"}
+- {form: "tjorn", meaning: "lake, tarn", example: "Nimtjorn"}
+- {form: "skyl", meaning: "waterfall", example: "Marskyl"}
+- {form: "rie", meaning: "canal (Kedre loan)", example: "Norrie"}
+- {form: "vang", meaning: "field, open place", example: "Merkvang"}
+- {form: "kamp", meaning: "city square (Kedre loan)", example: "Lyskamp"}
+- {form: "haug", meaning: "barrow, burial mound", example: "Haugden (the tumulus plains)"}
+- {form: "skar", meaning: "isle, skerry", example: "Farskar"}
+- {form: "spenn", meaning: "bridge", example: "Aurspenn"}
+- {form: "tur", meaning: "tower (Kedre loan)", example: "Lystur"}
+- {form: "grind", meaning: "gate (in a wall)", example: "Norgrind"}
+- {form: "port", meaning: "city gate (Kedre loan)", example: "Merkport"}
+- {form: "fald", meaning: "quarter, district of a city", example: "Norfald (the North Fold)"}
+- {form: "svel", meaning: "valley", example: "Kullsvel"}
+- {form: "skard", meaning: "mountain pass", example: "Kharakskard (the Pass of Kharak)"}
+- {form: "kelda", meaning: "spring, well", example: "Ilinkelda"}
+- {form: "vad", meaning: "ford", example: "Nurvad"}
+
+modifiers:
+- {form: "nor", meaning: "north"}
+- {form: "sul", meaning: "south"}
+- {form: "aust", meaning: "east"}
+- {form: "vesk", meaning: "west"}
+- {form: "far", meaning: "far"}
+- {form: "oude", meaning: "old"}
+- {form: "midel", meaning: "middle"}
+- {form: "aur", meaning: "silver-bright"}
+- {form: "star", meaning: "star", linking: "stari"}
+- {form: "lys", meaning: "light"}
+- {form: "nim", meaning: "night"}
+- {form: "nett", meaning: "night sky"}
+- {form: "ilin", meaning: "holy"}
+- {form: "nur", meaning: "green, living"}
+- {form: "kull", meaning: "ember"}
+- {form: "run", meaning: "rune, secret"}
+- {form: "thiol", meaning: "brave"}
+- {form: "vil", meaning: "free"}
+- {form: "vim", meaning: "whisper"}
+- {form: "ulf", meaning: "wolf"}
+- {form: "mar", meaning: "high, great"}
+- {form: "dunk", meaning: "dark"}
+- {form: "kvit", meaning: "white"}
+- {form: "grjot", meaning: "stone"}
+- {form: "ylv", meaning: "water"}
+- {form: "merk", meaning: "market"}
+- {form: "haug", meaning: "barrow"}
+
+rules:
+- id: NAME-01
+  title: Place names
+  rule: >
+    A place name is modifier(s) + one generic, written as one word, stress on the first syllable: Nor + skyl = Norskyl
+    ("North Falls"). Use the linking -i- when the modifier owns the place: Stari + fjol + den. Keep names to three
+    syllables where you can; four is the limit for everyday names.
+
+- id: NAME-02
+  title: Demonyms and peoples
+  rule: >
+    First element + -nay for the people of a place (Thiolnay, Aurinay, Oudenay). -an for the lands of a people
+    (Vilnayan). -myr for a god-blessed tribe (Nurmyr, Kullmyr). Plurals of peoples take -en (Runmyren).
+
+- id: NAME-03
+  title: Personal names
+  rule: >
+    A full name is given name + parent-name + optional byname. The parent-name is a parent's given name + -ung
+    ("child of"), for any gender: Astrid Alkreggung, "Astrid, Alkregg's child". Many Farheim given names are inherited
+    and have no known meaning (Astrid, Haakon). New given names are usually one or two name elements: Vim + tyr = Vimtyr.
+
+- id: NAME-04
+  title: Bynames
+  rule: >
+    A byname follows the name and carries the definite suffix: Eify Dunkstarin ("Eify the Darkstar"), Dethiol Dauthnuthin
+    ("Dethiol the Deathless"). In English prose, give the byname in English on first mention and Norsund in dialogue:
+    "Vimtyr, the Whispering Axe".
+
+- id: NAME-05
+  title: House names
+  rule: >
+    Noble houses of Auristar are named after a founder + -ungen ("the children of X"). Members use the house name after the
+    parent-name. The founders of the Seven Wandering Houses are not yet named in canon.
+
+- id: NAME-06
+  title: Titles
+  rule: >
+    Titles come before the name: Lys "Light" (a member of the Seven Lights, with an ordinal: Lys Thrimde), Kyr
+    "Blade" (a sworn mercenary rank: Kyr Thor'Vale), drott "ruler", vard "warden". A title used to address someone takes the
+    Starisund vocative -a: Lysa!
+
+- id: NAME-07
+  title: Names from other peoples
+  rule: >
+    Kedre names (Rechtar, Vaire, Luxis), dwarven names (Karhak'Modan) and others keep their own forms and rules.
+    Norsund speakers often make their own versions of foreign names: Luxis is Lysmar in Norsund.
+
+- id: NAME-08
+  title: Translation convention for lore writers
+  rule: >
+    Keep established Norsund proper names in English prose (Thiolden, Kjoldmur, Vilkyren). Translate titles and epithets
+    into English in narration on first use and keep Norsund in dialogue, inscriptions and songs. Never mix a Norsund name
+    with an English plural: write "the Vilkyren", not "the Vilkyrs".
+
+- id: NAME-09
+  title: Renames for names that collided with other works
+  rule: >
+    Valinor (Tolkien's Undying Lands) becomes Valnor, "north Valia" in Norsund (Val + nor). Worgenkin (Warcraft's worgen)
+    becomes Ulfkin, "wolf-kin". Exeter and Arbury (real English towns) become the Kedre names Exaire and Arbaire.
+    These renames were applied to the lore records on 2026-11-19.

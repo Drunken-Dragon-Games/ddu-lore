@@ -1,0 +1,3178 @@
+{
+ "generated": "2026-11-19",
+ "engine": "eSpeak NG",
+ "voice": "nb",
+ "speeds_wpm": {
+  "normal": 145,
+  "slow": 95,
+  "syllables": 110
+ },
+ "licence": "CC BY 4.0 (The Drunken Dragon Universe lore contributors)",
+ "note": "Synthetic reference audio generated from the engine IPA. Human recordings following docs/languages/norsund/writers-and-actors-kit.md may replace these files; keep the same names.",
+ "items": [
+  {
+   "id": "norsund",
+   "group": "names",
+   "text": "Norsund",
+   "ipa": "[ˈnor.sund]",
+   "respelling": "NOR-soond",
+   "dialect": "common",
+   "files": {
+    "normal": "names/norsund-normal.m4a",
+    "slow": "names/norsund-slow.m4a",
+    "syllables": "names/norsund-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.09,
+    "slow": 1.45,
+    "syllables": 1.92
+   }
+  },
+  {
+   "id": "thiolden",
+   "group": "names",
+   "text": "Thiolden",
+   "ipa": "[ˈθjol.dən]",
+   "respelling": "THYOL-den",
+   "dialect": "common",
+   "files": {
+    "normal": "names/thiolden-normal.m4a",
+    "slow": "names/thiolden-slow.m4a",
+    "syllables": "names/thiolden-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.14,
+    "slow": 1.49,
+    "syllables": 1.94
+   }
+  },
+  {
+   "id": "thiolnay",
+   "group": "names",
+   "text": "Thiolnay",
+   "ipa": "[ˈθjol.nej]",
+   "respelling": "THYOL-nay",
+   "dialect": "common",
+   "files": {
+    "normal": "names/thiolnay-normal.m4a",
+    "slow": "names/thiolnay-slow.m4a",
+    "syllables": "names/thiolnay-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.13,
+    "slow": 1.49,
+    "syllables": 1.97
+   }
+  },
+  {
+   "id": "auristar",
+   "group": "names",
+   "text": "Auristar",
+   "ipa": "[ˈau.riˌstar]",
+   "respelling": "OW-ree-star",
+   "dialect": "common",
+   "files": {
+    "normal": "names/auristar-normal.m4a",
+    "slow": "names/auristar-slow.m4a",
+    "syllables": "names/auristar-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.1,
+    "slow": 1.45,
+    "syllables": 2.5
+   }
+  },
+  {
+   "id": "aurinay",
+   "group": "names",
+   "text": "Aurinay",
+   "ipa": "[ˈau.ri.nej]",
+   "respelling": "OW-ree-nay",
+   "dialect": "common",
+   "files": {
+    "normal": "names/aurinay-normal.m4a",
+    "slow": "names/aurinay-slow.m4a",
+    "syllables": "names/aurinay-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 0.99,
+    "slow": 1.36,
+    "syllables": 2.53
+   }
+  },
+  {
+   "id": "starisund",
+   "group": "names",
+   "text": "Starisund",
+   "ipa": "[ˈsta.riˌsund]",
+   "respelling": "STAR-ee-soond",
+   "dialect": "common",
+   "files": {
+    "normal": "names/starisund-normal.m4a",
+    "slow": "names/starisund-slow.m4a",
+    "syllables": "names/starisund-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.2,
+    "slow": 1.58,
+    "syllables": 2.68
+   }
+  },
+  {
+   "id": "vilkyr",
+   "group": "names",
+   "text": "Vilkyr",
+   "ipa": "[ˈvil.kyr]",
+   "respelling": "VIL-kür",
+   "dialect": "common",
+   "files": {
+    "normal": "names/vilkyr-normal.m4a",
+    "slow": "names/vilkyr-slow.m4a",
+    "syllables": "names/vilkyr-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.06,
+    "slow": 1.37,
+    "syllables": 1.85
+   }
+  },
+  {
+   "id": "vilkyren",
+   "group": "names",
+   "text": "Vilkyren",
+   "ipa": "[ˈvil.ky.rən]",
+   "respelling": "VIL-kü-ren",
+   "dialect": "common",
+   "files": {
+    "normal": "names/vilkyren-normal.m4a",
+    "slow": "names/vilkyren-slow.m4a",
+    "syllables": "names/vilkyren-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.18,
+    "slow": 1.52,
+    "syllables": 2.74
+   }
+  },
+  {
+   "id": "vilnay",
+   "group": "names",
+   "text": "Vilnay",
+   "ipa": "[ˈvil.nej]",
+   "respelling": "VIL-nay",
+   "dialect": "common",
+   "files": {
+    "normal": "names/vilnay-normal.m4a",
+    "slow": "names/vilnay-slow.m4a",
+    "syllables": "names/vilnay-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.04,
+    "slow": 1.41,
+    "syllables": 1.92
+   }
+  },
+  {
+   "id": "vilnayan",
+   "group": "names",
+   "text": "Vilnayan",
+   "ipa": "[ˈvil.nej.an]",
+   "respelling": "VIL-nay-an",
+   "dialect": "common",
+   "files": {
+    "normal": "names/vilnayan-normal.m4a",
+    "slow": "names/vilnayan-slow.m4a",
+    "syllables": "names/vilnayan-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.14,
+    "slow": 1.53,
+    "syllables": 2.69
+   }
+  },
+  {
+   "id": "nimkjold",
+   "group": "names",
+   "text": "Nimkjold",
+   "ipa": "[ˈnim.cold]",
+   "respelling": "NIM-kyold",
+   "dialect": "common",
+   "files": {
+    "normal": "names/nimkjold-normal.m4a",
+    "slow": "names/nimkjold-slow.m4a",
+    "syllables": "names/nimkjold-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.12,
+    "slow": 1.44,
+    "syllables": 2.03
+   }
+  },
+  {
+   "id": "kjoldmur",
+   "group": "names",
+   "text": "Kjoldmur",
+   "ipa": "[ˈcold.mur]",
+   "respelling": "KYOLD-moor",
+   "dialect": "common",
+   "files": {
+    "normal": "names/kjoldmur-normal.m4a",
+    "slow": "names/kjoldmur-slow.m4a",
+    "syllables": "names/kjoldmur-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.16,
+    "slow": 1.52,
+    "syllables": 1.97
+   }
+  },
+  {
+   "id": "norstarkjold",
+   "group": "names",
+   "text": "Norstarkjold",
+   "ipa": "[ˈnor.star.cold]",
+   "respelling": "NOR-star-kyold",
+   "dialect": "common",
+   "files": {
+    "normal": "names/norstarkjold-normal.m4a",
+    "slow": "names/norstarkjold-slow.m4a",
+    "syllables": "names/norstarkjold-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.39,
+    "slow": 1.84,
+    "syllables": 2.86
+   }
+  },
+  {
+   "id": "starifjolden",
+   "group": "names",
+   "text": "Starifjolden",
+   "ipa": "[ˈsta.riˌfjol.dən]",
+   "respelling": "STAR-ee-fyol-den",
+   "dialect": "common",
+   "files": {
+    "normal": "names/starifjolden-normal.m4a",
+    "slow": "names/starifjolden-slow.m4a",
+    "syllables": "names/starifjolden-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.39,
+    "slow": 1.89,
+    "syllables": 3.62
+   }
+  },
+  {
+   "id": "starirauggheim",
+   "group": "names",
+   "text": "Starirauggheim",
+   "ipa": "[ˈsta.riˌraugː.hejm]",
+   "respelling": "STAR-ee-rowg-haym",
+   "dialect": "common",
+   "files": {
+    "normal": "names/starirauggheim-normal.m4a",
+    "slow": "names/starirauggheim-slow.m4a",
+    "syllables": "names/starirauggheim-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.51,
+    "slow": 2.01,
+    "syllables": 3.62
+   }
+  },
+  {
+   "id": "midelmar",
+   "group": "names",
+   "text": "Midelmar",
+   "ipa": "[ˈmi.dəlˌmar]",
+   "respelling": "MEE-del-mar",
+   "dialect": "common",
+   "files": {
+    "normal": "names/midelmar-normal.m4a",
+    "slow": "names/midelmar-slow.m4a",
+    "syllables": "names/midelmar-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.11,
+    "slow": 1.49,
+    "syllables": 2.6
+   }
+  },
+  {
+   "id": "oudeheim",
+   "group": "names",
+   "text": "Oudeheim",
+   "ipa": "[ˈou.dəˌhejm]",
+   "respelling": "OH-deh-haym",
+   "dialect": "common",
+   "files": {
+    "normal": "names/oudeheim-normal.m4a",
+    "slow": "names/oudeheim-slow.m4a",
+    "syllables": "names/oudeheim-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.17,
+    "slow": 1.59,
+    "syllables": 2.58
+   }
+  },
+  {
+   "id": "marheim",
+   "group": "names",
+   "text": "Marheim",
+   "ipa": "[ˈmar.hejm]",
+   "respelling": "MAR-haym",
+   "dialect": "common",
+   "files": {
+    "normal": "names/marheim-normal.m4a",
+    "slow": "names/marheim-slow.m4a",
+    "syllables": "names/marheim-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.07,
+    "slow": 1.39,
+    "syllables": 1.84
+   }
+  },
+  {
+   "id": "farheim",
+   "group": "names",
+   "text": "Farheim",
+   "ipa": "[ˈfar.hejm]",
+   "respelling": "FAR-haym",
+   "dialect": "common",
+   "files": {
+    "normal": "names/farheim-normal.m4a",
+    "slow": "names/farheim-slow.m4a",
+    "syllables": "names/farheim-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.09,
+    "slow": 1.42,
+    "syllables": 1.83
+   }
+  },
+  {
+   "id": "sundwanderen",
+   "group": "names",
+   "text": "Sundwanderen",
+   "ipa": "[ˈsund.wan.de.rən]",
+   "respelling": "SOOND-wan-der-en",
+   "dialect": "common",
+   "files": {
+    "normal": "names/sundwanderen-normal.m4a",
+    "slow": "names/sundwanderen-slow.m4a",
+    "syllables": "names/sundwanderen-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.38,
+    "slow": 1.84,
+    "syllables": 3.6
+   }
+  },
+  {
+   "id": "lysmar",
+   "group": "names",
+   "text": "Lysmar",
+   "ipa": "[ˈlys.mar]",
+   "respelling": "LÜS-mar",
+   "dialect": "common",
+   "files": {
+    "normal": "names/lysmar-normal.m4a",
+    "slow": "names/lysmar-slow.m4a",
+    "syllables": "names/lysmar-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 0.96,
+    "slow": 1.24,
+    "syllables": 1.72
+   }
+  },
+  {
+   "id": "lysrit",
+   "group": "names",
+   "text": "Lysrit",
+   "ipa": "[ˈlys.rit]",
+   "respelling": "LÜS-rit",
+   "dialect": "common",
+   "files": {
+    "normal": "names/lysrit-normal.m4a",
+    "slow": "names/lysrit-slow.m4a",
+    "syllables": "names/lysrit-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.02,
+    "slow": 1.28,
+    "syllables": 1.74
+   }
+  },
+  {
+   "id": "runar",
+   "group": "names",
+   "text": "runar",
+   "ipa": "[ˈru.nar]",
+   "respelling": "ROO-nar",
+   "dialect": "common",
+   "files": {
+    "normal": "names/runar-normal.m4a",
+    "slow": "names/runar-slow.m4a",
+    "syllables": "names/runar-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 0.92,
+    "slow": 1.2,
+    "syllables": 1.75
+   }
+  },
+  {
+   "id": "kullmyr",
+   "group": "names",
+   "text": "Kullmyr",
+   "ipa": "[ˈkulː.myr]",
+   "respelling": "KOOL-mür",
+   "dialect": "common",
+   "files": {
+    "normal": "names/kullmyr-normal.m4a",
+    "slow": "names/kullmyr-slow.m4a",
+    "syllables": "names/kullmyr-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.1,
+    "slow": 1.43,
+    "syllables": 1.87
+   }
+  },
+  {
+   "id": "nurmyr",
+   "group": "names",
+   "text": "Nurmyr",
+   "ipa": "[ˈnur.myr]",
+   "respelling": "NOOR-mür",
+   "dialect": "common",
+   "files": {
+    "normal": "names/nurmyr-normal.m4a",
+    "slow": "names/nurmyr-slow.m4a",
+    "syllables": "names/nurmyr-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 0.99,
+    "slow": 1.3,
+    "syllables": 1.76
+   }
+  },
+  {
+   "id": "runmyren",
+   "group": "names",
+   "text": "Runmyren",
+   "ipa": "[ˈrun.my.rən]",
+   "respelling": "ROON-mü-ren",
+   "dialect": "common",
+   "files": {
+    "normal": "names/runmyren-normal.m4a",
+    "slow": "names/runmyren-slow.m4a",
+    "syllables": "names/runmyren-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.11,
+    "slow": 1.42,
+    "syllables": 2.68
+   }
+  },
+  {
+   "id": "ilinvirden",
+   "group": "names",
+   "text": "Ilinvirden",
+   "ipa": "[ˈi.linˌvir.dən]",
+   "respelling": "EE-lin-vir-den",
+   "dialect": "common",
+   "files": {
+    "normal": "names/ilinvirden-normal.m4a",
+    "slow": "names/ilinvirden-slow.m4a",
+    "syllables": "names/ilinvirden-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.28,
+    "slow": 1.76,
+    "syllables": 3.52
+   }
+  },
+  {
+   "id": "virnayen",
+   "group": "names",
+   "text": "Virnayen",
+   "ipa": "[ˈvir.nej.ən]",
+   "respelling": "VIR-nay-en",
+   "dialect": "common",
+   "files": {
+    "normal": "names/virnayen-normal.m4a",
+    "slow": "names/virnayen-slow.m4a",
+    "syllables": "names/virnayen-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.14,
+    "slow": 1.51,
+    "syllables": 2.7
+   }
+  },
+  {
+   "id": "tyr",
+   "group": "names",
+   "text": "Tyr",
+   "ipa": "[tyr]",
+   "respelling": "TÜR",
+   "dialect": "common",
+   "files": {
+    "normal": "names/tyr-normal.m4a",
+    "slow": "names/tyr-slow.m4a",
+    "syllables": "names/tyr-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 0.8,
+    "slow": 0.98,
+    "syllables": 0.83
+   }
+  },
+  {
+   "id": "vimtyr",
+   "group": "names",
+   "text": "Vimtyr",
+   "ipa": "[ˈvim.tyr]",
+   "respelling": "VIM-tür",
+   "dialect": "common",
+   "files": {
+    "normal": "names/vimtyr-normal.m4a",
+    "slow": "names/vimtyr-slow.m4a",
+    "syllables": "names/vimtyr-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.02,
+    "slow": 1.3,
+    "syllables": 1.83
+   }
+  },
+  {
+   "id": "dethiol",
+   "group": "names",
+   "text": "Dethiol",
+   "ipa": "[ˈde.θjol]",
+   "respelling": "DEH-thyol",
+   "dialect": "common",
+   "files": {
+    "normal": "names/dethiol-normal.m4a",
+    "slow": "names/dethiol-slow.m4a",
+    "syllables": "names/dethiol-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.02,
+    "slow": 1.34,
+    "syllables": 1.85
+   }
+  },
+  {
+   "id": "stevlysen",
+   "group": "names",
+   "text": "Stevlysen",
+   "ipa": "[ˈstev.ly.sən]",
+   "respelling": "STEV-lü-sen",
+   "dialect": "common",
+   "files": {
+    "normal": "names/stevlysen-normal.m4a",
+    "slow": "names/stevlysen-slow.m4a",
+    "syllables": "names/stevlysen-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.23,
+    "slow": 1.6,
+    "syllables": 2.72
+   }
+  },
+  {
+   "id": "stardul",
+   "group": "names",
+   "text": "Stardul",
+   "ipa": "[ˈstar.dul]",
+   "respelling": "STAR-dool",
+   "dialect": "common",
+   "files": {
+    "normal": "names/stardul-normal.m4a",
+    "slow": "names/stardul-slow.m4a",
+    "syllables": "names/stardul-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.05,
+    "slow": 1.38,
+    "syllables": 1.77
+   }
+  },
+  {
+   "id": "valnor",
+   "group": "names",
+   "text": "Valnor",
+   "ipa": "[ˈval.nor]",
+   "respelling": "VAL-nor",
+   "dialect": "common",
+   "files": {
+    "normal": "names/valnor-normal.m4a",
+    "slow": "names/valnor-slow.m4a",
+    "syllables": "names/valnor-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.01,
+    "slow": 1.34,
+    "syllables": 1.85
+   }
+  },
+  {
+   "id": "ulfkin",
+   "group": "names",
+   "text": "Ulfkin",
+   "ipa": "[ˈulf.kin]",
+   "respelling": "OOLF-kin",
+   "dialect": "common",
+   "files": {
+    "normal": "names/ulfkin-normal.m4a",
+    "slow": "names/ulfkin-slow.m4a",
+    "syllables": "names/ulfkin-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 1.1,
+    "slow": 1.45,
+    "syllables": 1.92
+   }
+  },
+  {
+   "id": "kedre",
+   "group": "names",
+   "text": "Kedre",
+   "ipa": "[ˈke.drə]",
+   "respelling": "KEH-dreh",
+   "dialect": "common",
+   "files": {
+    "normal": "names/kedre-normal.m4a",
+    "slow": "names/kedre-slow.m4a",
+    "syllables": "names/kedre-syllables.m4a"
+   },
+   "seconds": {
+    "normal": 0.99,
+    "slow": 1.26,
+    "syllables": 1.78
+   }
+  },
+  {
+   "id": "toast-1",
+   "group": "texts",
+   "text": "Kjal, thiolen! Ma staren kjolda dun.",
+   "ipa": "[cal ˈsjo.ləŋ ma ˈsta.rəŋ ˈcol.da duŋ]",
+   "respelling": "KYAL THYOH-len MAH STAR-en KYOL-dah DOON",
+   "translation": "Drink, brave ones! May the stars keep you.",
+   "dialect": "starisund",
+   "files": {
+    "normal": "texts/toast-1-normal.m4a",
+    "slow": "texts/toast-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 3.33,
+    "slow": 7.02
+   }
+  },
+  {
+   "id": "vilkyr-code-1",
+   "group": "texts",
+   "text": "Vil kyrin, vothen sundin.",
+   "ipa": "[vil ˈky.rin ˈvo.ðən ˈsun.din]",
+   "respelling": "VIL KÜ-rin VOH-then SOON-din",
+   "translation": "Free the blade, bound the word.",
+   "dialect": "common",
+   "files": {
+    "normal": "texts/vilkyr-code-1-normal.m4a",
+    "slow": "texts/vilkyr-code-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.44,
+    "slow": 5.08
+   }
+  },
+  {
+   "id": "gate-inscription-1",
+   "group": "texts",
+   "text": "Fjol starin lyser run ne.",
+   "ipa": "[fjol ˈsta.rin ˈly.sər run ne]",
+   "respelling": "FYOL STAR-in LÜ-ser ROON NEH",
+   "translation": "Beneath the star, no rune shines.",
+   "dialect": "common",
+   "files": {
+    "normal": "texts/gate-inscription-1-normal.m4a",
+    "slow": "texts/gate-inscription-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.27,
+    "slow": 5.84
+   }
+  },
+  {
+   "id": "prophecy-1",
+   "group": "texts",
+   "text": "Thiark aur star ke ne vyrner.",
+   "ipa": "[sjark aur star ke ne ˈvyr.nər]",
+   "respelling": "THYARK OWR STAR KEH NEH VÜR-ner",
+   "translation": "Seek a silver star that does not move.",
+   "dialect": "starisund",
+   "files": {
+    "normal": "texts/prophecy-1-normal.m4a",
+    "slow": "texts/prophecy-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.5,
+    "slow": 6.55
+   }
+  },
+  {
+   "id": "prophecy-2",
+   "group": "texts",
+   "text": "Thal doler sel, thal hjald dyni heim.",
+   "ipa": "[sal ˈdo.lər sel sal hjald ˈdy.ni hejm]",
+   "respelling": "THAL DOH-ler SEL THAL HYALD DÜ-nee HAYM",
+   "translation": "Where it falls, there raise your home.",
+   "dialect": "starisund",
+   "files": {
+    "normal": "texts/prophecy-2-normal.m4a",
+    "slow": "texts/prophecy-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 3.08,
+    "slow": 7.79
+   }
+  },
+  {
+   "id": "prophecy-3",
+   "group": "texts",
+   "text": "Stari.",
+   "ipa": "[ˈsta.ri]",
+   "respelling": "STAR-ee",
+   "translation": "So the stars say.",
+   "dialect": "starisund",
+   "files": {
+    "normal": "texts/prophecy-3-normal.m4a",
+    "slow": "texts/prophecy-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.71,
+    "slow": 1.17
+   }
+  },
+  {
+   "id": "evidentials-1",
+   "group": "texts",
+   "text": "Tyr kjoldade murin, sa.",
+   "ipa": "[tyr ˈcol.da.də ˈmu.rin sa]",
+   "respelling": "TÜR KYOL-dah-deh MOO-rin SAH",
+   "translation": "Tyr guarded the wall. (I saw it.)",
+   "dialect": "common",
+   "files": {
+    "normal": "texts/evidentials-1-normal.m4a",
+    "slow": "texts/evidentials-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.24,
+    "slow": 4.63
+   }
+  },
+  {
+   "id": "evidentials-2",
+   "group": "texts",
+   "text": "Tyr kjoldade murin, sund.",
+   "ipa": "[tyr ˈcol.da.də ˈmu.rin sund]",
+   "respelling": "TÜR KYOL-dah-deh MOO-rin SOOND",
+   "translation": "Tyr guarded the wall. (So the songs say.)",
+   "dialect": "common",
+   "files": {
+    "normal": "texts/evidentials-2-normal.m4a",
+    "slow": "texts/evidentials-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.42,
+    "slow": 4.85
+   }
+  },
+  {
+   "id": "evidentials-3",
+   "group": "texts",
+   "text": "Tyr hal kjolda murin, stari.",
+   "ipa": "[tyr hal ˈcol.da ˈmu.rin ˈsta.ri]",
+   "respelling": "TÜR HAL KYOL-dah MOO-rin STAR-ee",
+   "translation": "Tyr will guard the wall. (It is foretold.)",
+   "dialect": "common",
+   "files": {
+    "normal": "texts/evidentials-3-normal.m4a",
+    "slow": "texts/evidentials-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.61,
+    "slow": 5.71
+   }
+  },
+  {
+   "id": "verb-second-1",
+   "group": "texts",
+   "text": "Tyr kjolder murin i nimin.",
+   "ipa": "[tyr ˈcol.dər ˈmu.rin i ˈni.min]",
+   "respelling": "TÜR KYOL-der MOO-rin EE NEE-min",
+   "translation": "Tyr guards the wall at night.",
+   "dialect": "common",
+   "files": {
+    "normal": "texts/verb-second-1-normal.m4a",
+    "slow": "texts/verb-second-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.33,
+    "slow": 5.69
+   }
+  },
+  {
+   "id": "verb-second-2",
+   "group": "texts",
+   "text": "I nimin kjolder Tyr murin.",
+   "ipa": "[i ˈni.min ˈcol.dər tyr ˈmu.rin]",
+   "respelling": "EE NEE-min KYOL-der TÜR MOO-rin",
+   "translation": "At night, Tyr guards the wall.",
+   "dialect": "common",
+   "files": {
+    "normal": "texts/verb-second-2-normal.m4a",
+    "slow": "texts/verb-second-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.31,
+    "slow": 5.69
+   }
+  },
+  {
+   "id": "verb-second-3",
+   "group": "texts",
+   "text": "Kjolder dy murin?",
+   "ipa": "[ˈcol.dər dy ˈmu.rin]",
+   "respelling": "KYOL-der DÜ MOO-rin",
+   "translation": "Do you guard the wall?",
+   "dialect": "common",
+   "files": {
+    "normal": "texts/verb-second-3-normal.m4a",
+    "slow": "texts/verb-second-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.51,
+    "slow": 3.44
+   }
+  },
+  {
+   "id": "greetings-1",
+   "group": "phrases",
+   "text": "Lys dy!",
+   "ipa": "[lys dy]",
+   "respelling": "LÜS DÜ",
+   "translation": "Hello! (lit. light to you; Auristar)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-1-normal.m4a",
+    "slow": "phrases/greetings-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.79,
+    "slow": 1.86
+   }
+  },
+  {
+   "id": "greetings-2",
+   "group": "phrases",
+   "text": "Lys dyn!",
+   "ipa": "[lys dyn]",
+   "respelling": "LÜS DÜN",
+   "translation": "Hello! (to several people, or politely to one)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-2-normal.m4a",
+    "slow": "phrases/greetings-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.85,
+    "slow": 1.98
+   }
+  },
+  {
+   "id": "greetings-3",
+   "group": "phrases",
+   "text": "Eth dy lys!",
+   "ipa": "[eð dy lys]",
+   "respelling": "ETH DÜ LÜS",
+   "translation": "And light to you! (the reply)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-3-normal.m4a",
+    "slow": "phrases/greetings-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.06,
+    "slow": 2.87
+   }
+  },
+  {
+   "id": "greetings-4",
+   "group": "phrases",
+   "text": "Thiol!",
+   "ipa": "[θjol]",
+   "respelling": "THYOL",
+   "translation": "Hail! (between hunters; lit. brave!)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-4-normal.m4a",
+    "slow": "phrases/greetings-4-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.77,
+    "slow": 1.26
+   }
+  },
+  {
+   "id": "greetings-5",
+   "group": "phrases",
+   "text": "Velk!",
+   "ipa": "[velk]",
+   "respelling": "VELK",
+   "translation": "Welcome! (to a guest)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-5-normal.m4a",
+    "slow": "phrases/greetings-5-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.76,
+    "slow": 1.21
+   }
+  },
+  {
+   "id": "greetings-6",
+   "group": "phrases",
+   "text": "Velk ve emi heim.",
+   "ipa": "[velk ve ˈe.mi hejm]",
+   "respelling": "VELK VEH EH-mee HAYM",
+   "translation": "Welcome to my home.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-6-normal.m4a",
+    "slow": "phrases/greetings-6-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.73,
+    "slow": 4.54
+   }
+  },
+  {
+   "id": "greetings-7",
+   "group": "phrases",
+   "text": "Hel frim!",
+   "ipa": "[hel frim]",
+   "respelling": "HEL FRIM",
+   "translation": "Good morning!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-7-normal.m4a",
+    "slow": "phrases/greetings-7-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.09,
+    "slow": 2.4
+   }
+  },
+  {
+   "id": "greetings-8",
+   "group": "phrases",
+   "text": "Hel nim!",
+   "ipa": "[hel nim]",
+   "respelling": "HEL NIM",
+   "translation": "Good night!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-8-normal.m4a",
+    "slow": "phrases/greetings-8-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.97,
+    "slow": 2.25
+   }
+  },
+  {
+   "id": "greetings-9",
+   "group": "phrases",
+   "text": "Kuso es dy?",
+   "ipa": "[ˈku.so es dy]",
+   "respelling": "KOO-soh ES DÜ",
+   "translation": "How are you?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-9-normal.m4a",
+    "slow": "phrases/greetings-9-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.26,
+    "slow": 3.08
+   }
+  },
+  {
+   "id": "greetings-10",
+   "group": "phrases",
+   "text": "Em es hel, mund. Eth dy?",
+   "ipa": "[em es hel mund eð dy]",
+   "respelling": "EM ES HEL MOOND ETH DÜ",
+   "translation": "I'm well, thanks. And you?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-10-normal.m4a",
+    "slow": "phrases/greetings-10-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.69,
+    "slow": 6.09
+   }
+  },
+  {
+   "id": "greetings-11",
+   "group": "phrases",
+   "text": "Kut es dys thyn?",
+   "ipa": "[kut es dys θyn]",
+   "respelling": "KOOT ES DÜS THÜN",
+   "translation": "What's your name?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-11-normal.m4a",
+    "slow": "phrases/greetings-11-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.56,
+    "slow": 4.05
+   }
+  },
+  {
+   "id": "greetings-12",
+   "group": "phrases",
+   "text": "Emi thyn es Astrid Alkreggung.",
+   "ipa": "[ˈe.mi θyn es ˈa.strid ˈal.kregː.uŋ]",
+   "respelling": "EH-mee THÜN ES AH-strid AL-kreg-oong",
+   "translation": "My name is Astrid, Alkregg's child.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-12-normal.m4a",
+    "slow": "phrases/greetings-12-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.69,
+    "slow": 6.07
+   }
+  },
+  {
+   "id": "greetings-13",
+   "group": "phrases",
+   "text": "Em es farnay hir.",
+   "ipa": "[em es ˈfar.nej hir]",
+   "respelling": "EM ES FAR-nay HIR",
+   "translation": "I'm a stranger here.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-13-normal.m4a",
+    "slow": "phrases/greetings-13-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.68,
+    "slow": 4.37
+   }
+  },
+  {
+   "id": "greetings-14",
+   "group": "phrases",
+   "text": "Starkjold!",
+   "ipa": "[ˈstar.cold]",
+   "respelling": "STAR-kyold",
+   "translation": "Farewell! (lit. star-ward)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-14-normal.m4a",
+    "slow": "phrases/greetings-14-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.97,
+    "slow": 1.51
+   }
+  },
+  {
+   "id": "greetings-15",
+   "group": "phrases",
+   "text": "Ma staren kjolda du.",
+   "ipa": "[ma ˈsta.rən ˈcol.da du]",
+   "respelling": "MAH STAR-en KYOL-dah DOO",
+   "translation": "May the stars keep you. (formal farewell, Auristar)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/greetings-15-normal.m4a",
+    "slow": "phrases/greetings-15-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.77,
+    "slow": 4.42
+   }
+  },
+  {
+   "id": "courtesy-1",
+   "group": "phrases",
+   "text": "Mund!",
+   "ipa": "[mund]",
+   "respelling": "MOOND",
+   "translation": "Thanks!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/courtesy-1-normal.m4a",
+    "slow": "phrases/courtesy-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.69,
+    "slow": 1.13
+   }
+  },
+  {
+   "id": "courtesy-2",
+   "group": "phrases",
+   "text": "Ful mund!",
+   "ipa": "[ful mund]",
+   "respelling": "FOOL MOOND",
+   "translation": "Many thanks!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/courtesy-2-normal.m4a",
+    "slow": "phrases/courtesy-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.03,
+    "slow": 2.31
+   }
+  },
+  {
+   "id": "courtesy-3",
+   "group": "phrases",
+   "text": "Nekut.",
+   "ipa": "[ˈne.kut]",
+   "respelling": "NEH-koot",
+   "translation": "You're welcome. (lit. nothing)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/courtesy-3-normal.m4a",
+    "slow": "phrases/courtesy-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.78,
+    "slow": 1.27
+   }
+  },
+  {
+   "id": "courtesy-4",
+   "group": "phrases",
+   "text": "Sjon!",
+   "ipa": "[sjon]",
+   "respelling": "SYON",
+   "translation": "Sorry! / Pardon me!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/courtesy-4-normal.m4a",
+    "slow": "phrases/courtesy-4-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.76,
+    "slow": 1.23
+   }
+  },
+  {
+   "id": "courtesy-5",
+   "group": "phrases",
+   "text": "Em sjoner du.",
+   "ipa": "[em ˈsjo.nər du]",
+   "respelling": "EM SYOH-ner DOO",
+   "translation": "I forgive you.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/courtesy-5-normal.m4a",
+    "slow": "phrases/courtesy-5-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.29,
+    "slow": 3.27
+   }
+  },
+  {
+   "id": "courtesy-6",
+   "group": "phrases",
+   "text": "Ma dy jova om aul.",
+   "ipa": "[ma dy ˈjo.va om aul]",
+   "respelling": "MAH DÜ YOH-vah OM OWL",
+   "translation": "Some ale, please. (lit. may you give me ale)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/courtesy-6-normal.m4a",
+    "slow": "phrases/courtesy-6-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.74,
+    "slow": 5.04
+   }
+  },
+  {
+   "id": "courtesy-7",
+   "group": "phrases",
+   "text": "Hel.",
+   "ipa": "[hel]",
+   "respelling": "HEL",
+   "translation": "Yes.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/courtesy-7-normal.m4a",
+    "slow": "phrases/courtesy-7-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.66,
+    "slow": 1.1
+   }
+  },
+  {
+   "id": "courtesy-8",
+   "group": "phrases",
+   "text": "Ne.",
+   "ipa": "[ne]",
+   "respelling": "NEH",
+   "translation": "No.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/courtesy-8-normal.m4a",
+    "slow": "phrases/courtesy-8-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.61,
+    "slow": 1.07
+   }
+  },
+  {
+   "id": "toasts-1",
+   "group": "phrases",
+   "text": "Kjal!",
+   "ipa": "[cal]",
+   "respelling": "KYAL",
+   "translation": "Cheers!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/toasts-1-normal.m4a",
+    "slow": "phrases/toasts-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.64,
+    "slow": 1.07
+   }
+  },
+  {
+   "id": "toasts-2",
+   "group": "phrases",
+   "text": "Kjal, thiolen!",
+   "ipa": "[cal ˈθjo.lən]",
+   "respelling": "KYAL THYOH-len",
+   "translation": "Drink, brave ones!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/toasts-2-normal.m4a",
+    "slow": "phrases/toasts-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.46,
+    "slow": 2.4
+   }
+  },
+  {
+   "id": "toasts-3",
+   "group": "phrases",
+   "text": "Ter Thiolden!",
+   "ipa": "[ter ˈθjol.dən]",
+   "respelling": "TER THYOL-den",
+   "translation": "To Thiolden!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/toasts-3-normal.m4a",
+    "slow": "phrases/toasts-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.28,
+    "slow": 2.56
+   }
+  },
+  {
+   "id": "toasts-4",
+   "group": "phrases",
+   "text": "Ter Jalkvyrski Sjen!",
+   "ipa": "[ter ˈjalk.vyr.ski sjen]",
+   "respelling": "TER YALK-vür-skee SYEN",
+   "translation": "To Winterbeard's Sigil!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/toasts-4-normal.m4a",
+    "slow": "phrases/toasts-4-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.85,
+    "slow": 4
+   }
+  },
+  {
+   "id": "toasts-5",
+   "group": "phrases",
+   "text": "Ter Kjalad Haurnin!",
+   "ipa": "[ter ˈca.lad ˈhaur.nin]",
+   "respelling": "TER KYAH-lad HOWR-nin",
+   "translation": "To the Drunken Dragon!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/toasts-5-normal.m4a",
+    "slow": "phrases/toasts-5-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.66,
+    "slow": 3.58
+   }
+  },
+  {
+   "id": "toasts-6",
+   "group": "phrases",
+   "text": "Ter dryneth, ter orth, ter heim!",
+   "ipa": "[ter ˈdry.nəð ter orθ ter hejm]",
+   "respelling": "TER DRÜ-neth TER ORTH TER HAYM",
+   "translation": "To friendship, to renown, to home!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/toasts-6-normal.m4a",
+    "slow": "phrases/toasts-6-slow.m4a"
+   },
+   "seconds": {
+    "normal": 3.09,
+    "slow": 6.64
+   }
+  },
+  {
+   "id": "toasts-7",
+   "group": "phrases",
+   "text": "Ter valene!",
+   "ipa": "[ter ˈva.lə.nə]",
+   "respelling": "TER VAH-leh-neh",
+   "translation": "To the fallen!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/toasts-7-normal.m4a",
+    "slow": "phrases/toasts-7-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.07,
+    "slow": 2.29
+   }
+  },
+  {
+   "id": "toasts-8",
+   "group": "phrases",
+   "text": "Yn kjal ter alkum!",
+   "ipa": "[yn cal ter ˈal.kum]",
+   "respelling": "ÜN KYAL TER AL-koom",
+   "translation": "A round for everyone!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/toasts-8-normal.m4a",
+    "slow": "phrases/toasts-8-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.68,
+    "slow": 4.31
+   }
+  },
+  {
+   "id": "toasts-9",
+   "group": "phrases",
+   "text": "Ma emi bikk nekuna vesa tymm.",
+   "ipa": "[ma ˈe.mi bikː ˈne.ku.na ˈve.sa tymː]",
+   "respelling": "MAH EH-mee BIK NEH-koo-nah VEH-sah TÜM",
+   "translation": "May my tankard never be empty.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/toasts-9-normal.m4a",
+    "slow": "phrases/toasts-9-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.73,
+    "slow": 6.83
+   }
+  },
+  {
+   "id": "tavern-1",
+   "group": "phrases",
+   "text": "Em thurser yn aul.",
+   "ipa": "[em ˈθur.sər yn aul]",
+   "respelling": "EM THOOR-ser ÜN OWL",
+   "translation": "I'd like an ale.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/tavern-1-normal.m4a",
+    "slow": "phrases/tavern-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.71,
+    "slow": 4.32
+   }
+  },
+  {
+   "id": "tavern-2",
+   "group": "phrases",
+   "text": "Dov seimkjalar, ter omen.",
+   "ipa": "[dov ˈsejm.ca.lar ter ˈo.mən]",
+   "respelling": "DOV SAYM-kyah-lar TER OH-men",
+   "translation": "Two meads for us.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/tavern-2-normal.m4a",
+    "slow": "phrases/tavern-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.3,
+    "slow": 4.81
+   }
+  },
+  {
+   "id": "tavern-3",
+   "group": "phrases",
+   "text": "Annar kjal, kjalthenir!",
+   "ipa": "[ˈanː.ar cal ˈcal.θe.nir]",
+   "respelling": "AN-ar KYAL KYAL-theh-nir",
+   "translation": "Another round, server!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/tavern-3-normal.m4a",
+    "slow": "phrases/tavern-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.97,
+    "slow": 3.81
+   }
+  },
+  {
+   "id": "tavern-4",
+   "group": "phrases",
+   "text": "Kut es i kjelin?",
+   "ipa": "[kut es i ˈce.lin]",
+   "respelling": "KOOT ES EE KYEH-lin",
+   "translation": "What's in the pot?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/tavern-4-normal.m4a",
+    "slow": "phrases/tavern-4-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.65,
+    "slow": 4.2
+   }
+  },
+  {
+   "id": "tavern-5",
+   "group": "phrases",
+   "text": "Fyrin smidade kjelmos.",
+   "ipa": "[ˈfy.rin ˈsmi.da.də ˈcel.mos]",
+   "respelling": "FÜ-rin SMEE-dah-deh KYEL-mos",
+   "translation": "The cook made stew. (cooks are called 'fire')",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/tavern-5-normal.m4a",
+    "slow": "phrases/tavern-5-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.99,
+    "slow": 4.05
+   }
+  },
+  {
+   "id": "tavern-6",
+   "group": "phrases",
+   "text": "Em es glyppug eth thurskug.",
+   "ipa": "[em es ˈglypː.ug eð ˈθur.skug]",
+   "respelling": "EM ES GLÜP-oog ETH THOOR-skoog",
+   "translation": "I'm hungry and thirsty.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/tavern-6-normal.m4a",
+    "slow": "phrases/tavern-6-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.45,
+    "slow": 5.82
+   }
+  },
+  {
+   "id": "tavern-7",
+   "group": "phrases",
+   "text": "Aulin es kjeldug, eth fyrin es dalg.",
+   "ipa": "[ˈau.lin es ˈcel.dug eð ˈfy.rin es dalg]",
+   "respelling": "OW-lin ES KYEL-doog ETH FÜ-rin ES DALG",
+   "translation": "The ale is cold and the fire is warm.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/tavern-7-normal.m4a",
+    "slow": "phrases/tavern-7-slow.m4a"
+   },
+   "seconds": {
+    "normal": 3.31,
+    "slow": 7.85
+   }
+  },
+  {
+   "id": "tavern-8",
+   "group": "phrases",
+   "text": "Kumik metter yn kamar ter yn nim?",
+   "ipa": "[ˈku.mik ˈmetː.ər yn ˈka.mar ter yn nim]",
+   "respelling": "KOO-mik MET-er ÜN KAH-mar TER ÜN NIM",
+   "translation": "How much is a room for one night?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/tavern-8-normal.m4a",
+    "slow": "phrases/tavern-8-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.93,
+    "slow": 7.7
+   }
+  },
+  {
+   "id": "tavern-9",
+   "group": "phrases",
+   "text": "Kur orker em svafa?",
+   "ipa": "[kur ˈor.kər em ˈsva.fa]",
+   "respelling": "KOOR OR-ker EM SVAH-fah",
+   "translation": "Where can I sleep?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/tavern-9-normal.m4a",
+    "slow": "phrases/tavern-9-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.9,
+    "slow": 4.6
+   }
+  },
+  {
+   "id": "tavern-10",
+   "group": "phrases",
+   "text": "Sund ter omen!",
+   "ipa": "[sund ter ˈo.mən]",
+   "respelling": "SOOND TER OH-men",
+   "translation": "Sing for us!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/tavern-10-normal.m4a",
+    "slow": "phrases/tavern-10-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.38,
+    "slow": 3.34
+   }
+  },
+  {
+   "id": "tavern-11",
+   "group": "phrases",
+   "text": "Thas es kjalfrast.",
+   "ipa": "[θas es ˈcal.frast]",
+   "respelling": "THAS ES KYAL-frast",
+   "translation": "That's a tavern tale. (a tall story)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/tavern-11-normal.m4a",
+    "slow": "phrases/tavern-11-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.64,
+    "slow": 3.52
+   }
+  },
+  {
+   "id": "tavern-12",
+   "group": "phrases",
+   "text": "Em pager ter alkum.",
+   "ipa": "[em ˈpa.gər ter ˈal.kum]",
+   "respelling": "EM PAH-gher TER AL-koom",
+   "translation": "I'm paying for everyone.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/tavern-12-normal.m4a",
+    "slow": "phrases/tavern-12-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.86,
+    "slow": 4.49
+   }
+  },
+  {
+   "id": "tavern-13",
+   "group": "phrases",
+   "text": "Em ager kjalskeng.",
+   "ipa": "[em ˈa.gər ˈcal.skeŋ]",
+   "respelling": "EM AH-gher KYAL-skeng",
+   "translation": "I have a hangover.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/tavern-13-normal.m4a",
+    "slow": "phrases/tavern-13-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.59,
+    "slow": 3.53
+   }
+  },
+  {
+   "id": "travel-1",
+   "group": "phrases",
+   "text": "Kur es gandin ve Auristar?",
+   "ipa": "[kur es ˈgan.din ve ˈau.riˌstar]",
+   "respelling": "KOOR ES GAN-din VEH OW-ree-star",
+   "translation": "Where is the road to Auristar?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/travel-1-normal.m4a",
+    "slow": "phrases/travel-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.32,
+    "slow": 5.83
+   }
+  },
+  {
+   "id": "travel-2",
+   "group": "phrases",
+   "text": "Gan ve norin, til spennin.",
+   "ipa": "[gan ve ˈno.rin til ˈspenː.in]",
+   "respelling": "GAN VEH NOR-in TIL SPEN-in",
+   "translation": "Go north, as far as the bridge.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/travel-2-normal.m4a",
+    "slow": "phrases/travel-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.54,
+    "slow": 5.9
+   }
+  },
+  {
+   "id": "travel-3",
+   "group": "phrases",
+   "text": "Snarv ve heg yrvin a kampin.",
+   "ipa": "[snarv ve heg ˈyr.vin a ˈkam.pin]",
+   "respelling": "SNARV VEH HEG ÜR-vin AH KAM-pin",
+   "translation": "Turn right at the square.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/travel-3-normal.m4a",
+    "slow": "phrases/travel-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.62,
+    "slow": 6.68
+   }
+  },
+  {
+   "id": "travel-4",
+   "group": "phrases",
+   "text": "Es at far?",
+   "ipa": "[es at far]",
+   "respelling": "ES AT FAR",
+   "translation": "Is it far?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/travel-4-normal.m4a",
+    "slow": "phrases/travel-4-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.17,
+    "slow": 2.83
+   }
+  },
+  {
+   "id": "travel-5",
+   "group": "phrases",
+   "text": "Yn daggand ve Midelmar.",
+   "ipa": "[yn ˈdag.gand ve ˈmi.dəlˌmar]",
+   "respelling": "ÜN DAG-gand VEH MEE-del-mar",
+   "translation": "A day's journey to Midelmar.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/travel-5-normal.m4a",
+    "slow": "phrases/travel-5-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.96,
+    "slow": 4.71
+   }
+  },
+  {
+   "id": "travel-6",
+   "group": "phrases",
+   "text": "Em ager myskad gandin.",
+   "ipa": "[em ˈa.gər ˈmy.skad ˈgan.din]",
+   "respelling": "EM AH-gher MÜ-skad GAN-din",
+   "translation": "I've lost my way.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/travel-6-normal.m4a",
+    "slow": "phrases/travel-6-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.93,
+    "slow": 4.47
+   }
+  },
+  {
+   "id": "travel-7",
+   "group": "phrases",
+   "text": "Kur orker em hytta yn kjalheim?",
+   "ipa": "[kur ˈor.kər em ˈhytː.a yn ˈcal.hejm]",
+   "respelling": "KOOR OR-ker EM HÜT-ah ÜN KYAL-haym",
+   "translation": "Where can I find an inn?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/travel-7-normal.m4a",
+    "slow": "phrases/travel-7-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.81,
+    "slow": 6.91
+   }
+  },
+  {
+   "id": "travel-8",
+   "group": "phrases",
+   "text": "Gandin es braskug i nimin.",
+   "ipa": "[ˈgan.din es ˈbra.skug i ˈni.min]",
+   "respelling": "GAN-din ES BRAH-skoog EE NEE-min",
+   "translation": "The road is dangerous at night.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/travel-8-normal.m4a",
+    "slow": "phrases/travel-8-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.33,
+    "slow": 5.65
+   }
+  },
+  {
+   "id": "travel-9",
+   "group": "phrases",
+   "text": "Ne gan inn virin!",
+   "ipa": "[ne gan inː ˈvi.rin]",
+   "respelling": "NEH GAN IN VEE-rin",
+   "translation": "Don't go into the forest!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/travel-9-normal.m4a",
+    "slow": "phrases/travel-9-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.57,
+    "slow": 4.26
+   }
+  },
+  {
+   "id": "travel-10",
+   "group": "phrases",
+   "text": "Kur ganer hes rieskein?",
+   "ipa": "[kur ˈga.nər hes ˈri.əˌskejn]",
+   "respelling": "KOOR GAH-ner HES REE-eh-skayn",
+   "translation": "Where does this canal boat go?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/travel-10-normal.m4a",
+    "slow": "phrases/travel-10-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.07,
+    "slow": 4.78
+   }
+  },
+  {
+   "id": "travel-11",
+   "group": "phrases",
+   "text": "Vog om ve Ura Kreth!",
+   "ipa": "[vog om ve ˈu.ra kreð]",
+   "respelling": "VOG OM VEH OO-rah KRETH",
+   "translation": "Row me to the First Ring! (Starisund)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/travel-11-normal.m4a",
+    "slow": "phrases/travel-11-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2,
+    "slow": 5.58
+   }
+  },
+  {
+   "id": "travel-12",
+   "group": "phrases",
+   "text": "At druser.",
+   "ipa": "[at ˈdru.sər]",
+   "respelling": "AT DROO-ser",
+   "translation": "It's raining.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/travel-12-normal.m4a",
+    "slow": "phrases/travel-12-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.03,
+    "slow": 2.11
+   }
+  },
+  {
+   "id": "trade-1",
+   "group": "phrases",
+   "text": "Kut veiler dy?",
+   "ipa": "[kut ˈvej.lər dy]",
+   "respelling": "KOOT VAY-ler DÜ",
+   "translation": "What are you selling?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/trade-1-normal.m4a",
+    "slow": "phrases/trade-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.37,
+    "slow": 3.22
+   }
+  },
+  {
+   "id": "trade-2",
+   "group": "phrases",
+   "text": "Kumik metter hes?",
+   "ipa": "[ˈku.mik ˈmetː.ər hes]",
+   "respelling": "KOO-mik MET-er HES",
+   "translation": "How much is this?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/trade-2-normal.m4a",
+    "slow": "phrases/trade-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.74,
+    "slow": 3.61
+   }
+  },
+  {
+   "id": "trade-3",
+   "group": "phrases",
+   "text": "At metter ful myk.",
+   "ipa": "[at ˈmetː.ər ful myk]",
+   "respelling": "AT MET-er FOOL MÜK",
+   "translation": "That costs too much.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/trade-3-normal.m4a",
+    "slow": "phrases/trade-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.75,
+    "slow": 4.27
+   }
+  },
+  {
+   "id": "trade-4",
+   "group": "phrases",
+   "text": "Thrim aurlingar, eth ne minn.",
+   "ipa": "[θrim ˈaur.liŋ.ar eð ne minː]",
+   "respelling": "THRIM OWR-ling-ar ETH NEH MIN",
+   "translation": "Three silver pennies, and not less.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/trade-4-normal.m4a",
+    "slow": "phrases/trade-4-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.5,
+    "slow": 5.89
+   }
+  },
+  {
+   "id": "trade-5",
+   "group": "phrases",
+   "text": "Em sauker at.",
+   "ipa": "[em ˈsau.kər at]",
+   "respelling": "EM SOW-ker AT",
+   "translation": "I'll buy it.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/trade-5-normal.m4a",
+    "slow": "phrases/trade-5-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.34,
+    "slow": 3.16
+   }
+  },
+  {
+   "id": "trade-6",
+   "group": "phrases",
+   "text": "Ma emen merka!",
+   "ipa": "[ma ˈe.mən ˈmer.ka]",
+   "respelling": "MAH EH-men MER-kah",
+   "translation": "Let's deal!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/trade-6-normal.m4a",
+    "slow": "phrases/trade-6-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.4,
+    "slow": 3.33
+   }
+  },
+  {
+   "id": "trade-7",
+   "group": "phrases",
+   "text": "Em veiler ne.",
+   "ipa": "[em ˈvej.lər ne]",
+   "respelling": "EM VAY-ler NEH",
+   "translation": "I'm not selling.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/trade-7-normal.m4a",
+    "slow": "phrases/trade-7-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.36,
+    "slow": 3.42
+   }
+  },
+  {
+   "id": "trade-8",
+   "group": "phrases",
+   "text": "Hes merkirin lusker!",
+   "ipa": "[hes ˈmer.ki.rin ˈlu.skər]",
+   "respelling": "HES MER-kee-rin LOO-sker",
+   "translation": "This trader is lying!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/trade-8-normal.m4a",
+    "slow": "phrases/trade-8-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.92,
+    "slow": 3.96
+   }
+  },
+  {
+   "id": "trade-9",
+   "group": "phrases",
+   "text": "Dy gjalver om thamm kullingar.",
+   "ipa": "[dy ˈɟal.vər om θamː ˈkulː.iŋ.ar]",
+   "respelling": "DÜ GYAL-ver OM THAM KOOL-ing-ar",
+   "translation": "You owe me five copper coins.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/trade-9-normal.m4a",
+    "slow": "phrases/trade-9-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.43,
+    "slow": 5.94
+   }
+  },
+  {
+   "id": "trade-10",
+   "group": "phrases",
+   "text": "Emen hal rita vethrit.",
+   "ipa": "[ˈe.mən hal ˈri.ta ˈveθ.rit]",
+   "respelling": "EH-men HAL REE-tah VETH-rit",
+   "translation": "We'll write a contract.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/trade-10-normal.m4a",
+    "slow": "phrases/trade-10-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.02,
+    "slow": 4.69
+   }
+  },
+  {
+   "id": "hunt-1",
+   "group": "phrases",
+   "text": "Thiol! Slodin es friv.",
+   "ipa": "[θjol ˈslo.din es friv]",
+   "respelling": "THYOL SLOH-din ES FRIV",
+   "translation": "Hail! The trail is fresh.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/hunt-1-normal.m4a",
+    "slow": "phrases/hunt-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.36,
+    "slow": 4.92
+   }
+  },
+  {
+   "id": "hunt-2",
+   "group": "phrases",
+   "text": "Em sajer blythslod.",
+   "ipa": "[em ˈsa.jər ˈblyθ.slod]",
+   "respelling": "EM SAH-yer BLÜTH-slod",
+   "translation": "I see a blood-trail.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/hunt-2-normal.m4a",
+    "slow": "phrases/hunt-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.65,
+    "slow": 3.59
+   }
+  },
+  {
+   "id": "hunt-3",
+   "group": "phrases",
+   "text": "Skrimmin es nolv.",
+   "ipa": "[ˈskrimː.in es nolv]",
+   "respelling": "SKRIM-in ES NOLV",
+   "translation": "The monster is close.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/hunt-3-normal.m4a",
+    "slow": "phrases/hunt-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.7,
+    "slow": 3.76
+   }
+  },
+  {
+   "id": "hunt-4",
+   "group": "phrases",
+   "text": "Vim! Bythin hyrler.",
+   "ipa": "[vim ˈby.ðin ˈhyr.lər]",
+   "respelling": "VIM BÜ-thin HÜR-ler",
+   "translation": "Quiet! The prey is listening.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/hunt-4-normal.m4a",
+    "slow": "phrases/hunt-4-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.93,
+    "slow": 3.6
+   }
+  },
+  {
+   "id": "hunt-5",
+   "group": "phrases",
+   "text": "Em sajer ati glod.",
+   "ipa": "[em ˈsa.jər ˈa.ti glod]",
+   "respelling": "EM SAH-yer AH-tee GLOD",
+   "translation": "I see its aura.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/hunt-5-normal.m4a",
+    "slow": "phrases/hunt-5-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.69,
+    "slow": 4.31
+   }
+  },
+  {
+   "id": "hunt-6",
+   "group": "phrases",
+   "text": "Hes skrimmin ager dov hyrnar.",
+   "ipa": "[hes ˈskrimː.in ˈa.gər dov ˈhyr.nar]",
+   "respelling": "HES SKRIM-in AH-gher DOV HÜR-nar",
+   "translation": "This monster has two horns.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/hunt-6-normal.m4a",
+    "slow": "phrases/hunt-6-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.54,
+    "slow": 6.04
+   }
+  },
+  {
+   "id": "hunt-7",
+   "group": "phrases",
+   "text": "Bythin vyskade ve virin.",
+   "ipa": "[ˈby.ðin ˈvy.ska.də ve ˈvi.rin]",
+   "respelling": "BÜ-thin VÜ-skah-deh VEH VEE-rin",
+   "translation": "The prey fled into the forest.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/hunt-7-normal.m4a",
+    "slow": "phrases/hunt-7-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.13,
+    "slow": 4.93
+   }
+  },
+  {
+   "id": "hunt-8",
+   "group": "phrases",
+   "text": "Kumik skrimmen ager dy thiarkad?",
+   "ipa": "[ˈku.mik ˈskrimː.ən ˈa.gər dy ˈθjar.kad]",
+   "respelling": "KOO-mik SKRIM-en AH-gher DÜ THYAR-kad",
+   "translation": "How many monsters have you hunted?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/hunt-8-normal.m4a",
+    "slow": "phrases/hunt-8-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.7,
+    "slow": 6
+   }
+  },
+  {
+   "id": "hunt-9",
+   "group": "phrases",
+   "text": "Thyddin henser em.",
+   "ipa": "[ˈθydː.in ˈhen.sər em]",
+   "respelling": "THÜD-in HEN-ser EM",
+   "translation": "The trophy is mine to take.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/hunt-9-normal.m4a",
+    "slow": "phrases/hunt-9-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.7,
+    "slow": 3.69
+   }
+  },
+  {
+   "id": "hunt-10",
+   "group": "phrases",
+   "text": "Thiarkningin vas hel, sa.",
+   "ipa": "[ˈθjark.niŋ.in vas hel sa]",
+   "respelling": "THYARK-ning-in VAS HEL SAH",
+   "translation": "The hunt went well, I saw it myself.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/hunt-10-normal.m4a",
+    "slow": "phrases/hunt-10-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.33,
+    "slow": 4.8
+   }
+  },
+  {
+   "id": "combat-1",
+   "group": "phrases",
+   "text": "Thryn!",
+   "ipa": "[θryn]",
+   "respelling": "THRÜN",
+   "translation": "To arms!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/combat-1-normal.m4a",
+    "slow": "phrases/combat-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.74,
+    "slow": 1.21
+   }
+  },
+  {
+   "id": "combat-2",
+   "group": "phrases",
+   "text": "Skerr!",
+   "ipa": "[skerː]",
+   "respelling": "SKER",
+   "translation": "Attack!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/combat-2-normal.m4a",
+    "slow": "phrases/combat-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.74,
+    "slow": 1.18
+   }
+  },
+  {
+   "id": "combat-3",
+   "group": "phrases",
+   "text": "Kjold murin!",
+   "ipa": "[cold ˈmu.rin]",
+   "respelling": "KYOLD MOO-rin",
+   "translation": "Guard the wall!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/combat-3-normal.m4a",
+    "slow": "phrases/combat-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.17,
+    "slow": 2.47
+   }
+  },
+  {
+   "id": "combat-4",
+   "group": "phrases",
+   "text": "Ne vysk!",
+   "ipa": "[ne vysk]",
+   "respelling": "NEH VÜSK",
+   "translation": "Don't run!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/combat-4-normal.m4a",
+    "slow": "phrases/combat-4-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.96,
+    "slow": 2.15
+   }
+  },
+  {
+   "id": "combat-5",
+   "group": "phrases",
+   "text": "Stim hjo omen!",
+   "ipa": "[stim hjo ˈo.mən]",
+   "respelling": "STIM HYOH OH-men",
+   "translation": "Stand with us!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/combat-5-normal.m4a",
+    "slow": "phrases/combat-5-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.4,
+    "slow": 3.39
+   }
+  },
+  {
+   "id": "combat-6",
+   "group": "phrases",
+   "text": "Skath ur austin!",
+   "ipa": "[skað ur ˈau.stin]",
+   "respelling": "SKATH OOR OW-stin",
+   "translation": "Enemy from the east!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/combat-6-normal.m4a",
+    "slow": "phrases/combat-6-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.43,
+    "slow": 3.34
+   }
+  },
+  {
+   "id": "combat-7",
+   "group": "phrases",
+   "text": "Jolm! Em es svernad!",
+   "ipa": "[jolm em es ˈsver.naˌd]",
+   "respelling": "YOLM EM ES SVER-nah-d",
+   "translation": "Help! I'm wounded!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/combat-7-normal.m4a",
+    "slow": "phrases/combat-7-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.25,
+    "slow": 4.69
+   }
+  },
+  {
+   "id": "combat-8",
+   "group": "phrases",
+   "text": "Ter Auristar eth ter Stevlysen!",
+   "ipa": "[ter ˈau.riˌstar eð ter ˈstev.ly.sən]",
+   "respelling": "TER OW-ree-star ETH TER STEV-lü-sen",
+   "translation": "For Auristar and the Seven Lights!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/combat-8-normal.m4a",
+    "slow": "phrases/combat-8-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.65,
+    "slow": 6.21
+   }
+  },
+  {
+   "id": "combat-9",
+   "group": "phrases",
+   "text": "Lyt, eth dy hal antha.",
+   "ipa": "[lyt eð dy hal ˈan.θa]",
+   "respelling": "LÜT ETH DÜ HAL AN-thah",
+   "translation": "Yield, and you will live.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/combat-9-normal.m4a",
+    "slow": "phrases/combat-9-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.03,
+    "slow": 4.95
+   }
+  },
+  {
+   "id": "oaths-1",
+   "group": "phrases",
+   "text": "Em vether a emi kyr.",
+   "ipa": "[em ˈve.ðər a ˈe.mi kyr]",
+   "respelling": "EM VEH-ther AH EH-mee KÜR",
+   "translation": "I swear on my blade.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/oaths-1-normal.m4a",
+    "slow": "phrases/oaths-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.87,
+    "slow": 5.15
+   }
+  },
+  {
+   "id": "oaths-2",
+   "group": "phrases",
+   "text": "Emi sund es vothen.",
+   "ipa": "[ˈe.mi sund es ˈvo.ðən]",
+   "respelling": "EH-mee SOOND ES VOH-then",
+   "translation": "My word is bound.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/oaths-2-normal.m4a",
+    "slow": "phrases/oaths-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.83,
+    "slow": 4.5
+   }
+  },
+  {
+   "id": "oaths-3",
+   "group": "phrases",
+   "text": "Em sa at, sa.",
+   "ipa": "[em sa at sa]",
+   "respelling": "EM SAH AT SAH",
+   "translation": "I saw it with my own eyes.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/oaths-3-normal.m4a",
+    "slow": "phrases/oaths-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.6,
+    "slow": 3.73
+   }
+  },
+  {
+   "id": "oaths-4",
+   "group": "phrases",
+   "text": "Ma Ur eth Nett vesa emi sajiren.",
+   "ipa": "[ma ur eð netː ˈve.sa ˈe.mi ˈsa.ji.rən]",
+   "respelling": "MAH OOR ETH NET VEH-sah EH-mee SAH-yee-ren",
+   "translation": "May Ur and Nett be my witnesses.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/oaths-4-normal.m4a",
+    "slow": "phrases/oaths-4-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.87,
+    "slow": 7.65
+   }
+  },
+  {
+   "id": "oaths-5",
+   "group": "phrases",
+   "text": "Sof em lusker, ma emi tynn dola.",
+   "ipa": "[sof em ˈlu.skər ma ˈe.mi tynː ˈdo.la]",
+   "respelling": "SOF EM LOO-sker MAH EH-mee TÜN DOH-lah",
+   "translation": "If I lie, may my teeth fall out.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/oaths-5-normal.m4a",
+    "slow": "phrases/oaths-5-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.99,
+    "slow": 7.5
+   }
+  },
+  {
+   "id": "oaths-6",
+   "group": "phrases",
+   "text": "Em jarter.",
+   "ipa": "[em ˈjar.tər]",
+   "respelling": "EM YAR-ter",
+   "translation": "I promise.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/oaths-6-normal.m4a",
+    "slow": "phrases/oaths-6-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.07,
+    "slow": 2.27
+   }
+  },
+  {
+   "id": "oaths-7",
+   "group": "phrases",
+   "text": "Dryn ter alkuna.",
+   "ipa": "[dryn ter ˈal.ku.na]",
+   "respelling": "DRÜN TER AL-koo-nah",
+   "translation": "Friends for ever.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/oaths-7-normal.m4a",
+    "slow": "phrases/oaths-7-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.48,
+    "slow": 3.49
+   }
+  },
+  {
+   "id": "insults-1",
+   "group": "phrases",
+   "text": "Vrok!",
+   "ipa": "[vrok]",
+   "respelling": "VROK",
+   "translation": "Damn!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/insults-1-normal.m4a",
+    "slow": "phrases/insults-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.71,
+    "slow": 1.13
+   }
+  },
+  {
+   "id": "insults-2",
+   "group": "phrases",
+   "text": "Gykk!",
+   "ipa": "[gykː]",
+   "respelling": "GHÜK",
+   "translation": "Fool!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/insults-2-normal.m4a",
+    "slow": "phrases/insults-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.65,
+    "slow": 1.01
+   }
+  },
+  {
+   "id": "insults-3",
+   "group": "phrases",
+   "text": "Dy glopp!",
+   "ipa": "[dy glopː]",
+   "respelling": "DÜ GLOP",
+   "translation": "You oaf!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/insults-3-normal.m4a",
+    "slow": "phrases/insults-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.95,
+    "slow": 2.07
+   }
+  },
+  {
+   "id": "insults-4",
+   "group": "phrases",
+   "text": "Dy es nethiol.",
+   "ipa": "[dy es ˈne.θjol]",
+   "respelling": "DÜ ES NEH-thyol",
+   "translation": "You're a coward.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/insults-4-normal.m4a",
+    "slow": "phrases/insults-4-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.37,
+    "slow": 3.23
+   }
+  },
+  {
+   "id": "insults-5",
+   "group": "phrases",
+   "text": "Luskir!",
+   "ipa": "[ˈlu.skir]",
+   "respelling": "LOO-skir",
+   "translation": "Liar!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/insults-5-normal.m4a",
+    "slow": "phrases/insults-5-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.83,
+    "slow": 1.34
+   }
+  },
+  {
+   "id": "insults-6",
+   "group": "phrases",
+   "text": "Dys bikk es tymm, eth dys skult ok.",
+   "ipa": "[dys bikː es tymː eð dys skult ok]",
+   "respelling": "DÜS BIK ES TÜM ETH DÜS SKOOLT OK",
+   "translation": "Your tankard is empty, and so is your head.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/insults-6-normal.m4a",
+    "slow": "phrases/insults-6-slow.m4a"
+   },
+   "seconds": {
+    "normal": 3.34,
+    "slow": 8.32
+   }
+  },
+  {
+   "id": "insults-7",
+   "group": "phrases",
+   "text": "Dy es sam vond sam kjalskeng.",
+   "ipa": "[dy es sam vond sam ˈcal.skeŋ]",
+   "respelling": "DÜ ES SAM VOND SAM KYAL-skeng",
+   "translation": "You're as bad as a hangover.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/insults-7-normal.m4a",
+    "slow": "phrases/insults-7-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.49,
+    "slow": 6.64
+   }
+  },
+  {
+   "id": "insults-8",
+   "group": "phrases",
+   "text": "Ma vrasken hensa du!",
+   "ipa": "[ma ˈvra.skən ˈhen.sa du]",
+   "respelling": "MAH VRAH-sken HEN-sah DOO",
+   "translation": "May demons take you!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/insults-8-normal.m4a",
+    "slow": "phrases/insults-8-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.86,
+    "slow": 4.52
+   }
+  },
+  {
+   "id": "insults-9",
+   "group": "phrases",
+   "text": "Ma dys heim vesa gremmad!",
+   "ipa": "[ma dys hejm ˈve.sa ˈgremː.ad]",
+   "respelling": "MAH DÜS HAYM VEH-sah GREM-ad",
+   "translation": "Cursed be your home!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/insults-9-normal.m4a",
+    "slow": "phrases/insults-9-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.25,
+    "slow": 5.62
+   }
+  },
+  {
+   "id": "insults-10",
+   "group": "phrases",
+   "text": "Gan ve nuthin!",
+   "ipa": "[gan ve ˈnu.ðin]",
+   "respelling": "GAN VEH NOO-thin",
+   "translation": "Go to the void! (the worst thing to wish anyone)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/insults-10-normal.m4a",
+    "slow": "phrases/insults-10-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.33,
+    "slow": 3.35
+   }
+  },
+  {
+   "id": "questions-1",
+   "group": "phrases",
+   "text": "Kum es dy?",
+   "ipa": "[kum es dy]",
+   "respelling": "KOOM ES DÜ",
+   "translation": "Who are you?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/questions-1-normal.m4a",
+    "slow": "phrases/questions-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.13,
+    "slow": 2.98
+   }
+  },
+  {
+   "id": "questions-2",
+   "group": "phrases",
+   "text": "Kut es hes?",
+   "ipa": "[kut es hes]",
+   "respelling": "KOOT ES HES",
+   "translation": "What is this?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/questions-2-normal.m4a",
+    "slow": "phrases/questions-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.34,
+    "slow": 3.13
+   }
+  },
+  {
+   "id": "questions-3",
+   "group": "phrases",
+   "text": "Kur es Starirauggheim?",
+   "ipa": "[kur es ˈsta.riˌraugː.hejm]",
+   "respelling": "KOOR ES STAR-ee-rowg-haym",
+   "translation": "Where is the Starirauggheim?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/questions-3-normal.m4a",
+    "slow": "phrases/questions-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.97,
+    "slow": 4.08
+   }
+  },
+  {
+   "id": "questions-4",
+   "group": "phrases",
+   "text": "Kuna lider dy aftar?",
+   "ipa": "[ˈku.na ˈli.dər dy ˈaf.tar]",
+   "respelling": "KOO-nah LEE-der DÜ AF-tar",
+   "translation": "When will you come back?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/questions-4-normal.m4a",
+    "slow": "phrases/questions-4-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.8,
+    "slow": 4.34
+   }
+  },
+  {
+   "id": "questions-5",
+   "group": "phrases",
+   "text": "Kuvi vysker dy?",
+   "ipa": "[ˈku.vi ˈvy.skər dy]",
+   "respelling": "KOO-vee VÜ-sker DÜ",
+   "translation": "Why are you running?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/questions-5-normal.m4a",
+    "slow": "phrases/questions-5-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.5,
+    "slow": 3.39
+   }
+  },
+  {
+   "id": "questions-6",
+   "group": "phrases",
+   "text": "Meler dy Norsund?",
+   "ipa": "[ˈme.lər dy ˈnor.sund]",
+   "respelling": "MEH-ler DÜ NOR-soond",
+   "translation": "Do you speak Norsund?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/questions-6-normal.m4a",
+    "slow": "phrases/questions-6-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.52,
+    "slow": 3.46
+   }
+  },
+  {
+   "id": "questions-7",
+   "group": "phrases",
+   "text": "Em skyner ne.",
+   "ipa": "[em ˈsky.nər ne]",
+   "respelling": "EM SKÜ-ner NEH",
+   "translation": "I don't understand.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/questions-7-normal.m4a",
+    "slow": "phrases/questions-7-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.27,
+    "slow": 3.27
+   }
+  },
+  {
+   "id": "questions-8",
+   "group": "phrases",
+   "text": "Kut hyrver hes sundin?",
+   "ipa": "[kut ˈhyr.vər hes ˈsun.din]",
+   "respelling": "KOOT HÜR-ver HES SOON-din",
+   "translation": "What does this word mean?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/questions-8-normal.m4a",
+    "slow": "phrases/questions-8-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.17,
+    "slow": 4.84
+   }
+  },
+  {
+   "id": "questions-9",
+   "group": "phrases",
+   "text": "Orker dy jolma om?",
+   "ipa": "[ˈor.kər dy ˈjol.ma om]",
+   "respelling": "OR-ker DÜ YOL-mah OM",
+   "translation": "Can you help me?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/questions-9-normal.m4a",
+    "slow": "phrases/questions-9-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.74,
+    "slow": 4.39
+   }
+  },
+  {
+   "id": "questions-10",
+   "group": "phrases",
+   "text": "Kumik ar ager dy?",
+   "ipa": "[ˈku.mik ar ˈa.gər dy]",
+   "respelling": "KOO-mik AR AH-gher DÜ",
+   "translation": "How old are you? (lit. how many years do you have?)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/questions-10-normal.m4a",
+    "slow": "phrases/questions-10-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.55,
+    "slow": 3.98
+   }
+  },
+  {
+   "id": "emergencies-1",
+   "group": "phrases",
+   "text": "Jolm!",
+   "ipa": "[jolm]",
+   "respelling": "YOLM",
+   "translation": "Help!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/emergencies-1-normal.m4a",
+    "slow": "phrases/emergencies-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.75,
+    "slow": 1.22
+   }
+  },
+  {
+   "id": "emergencies-2",
+   "group": "phrases",
+   "text": "Fyr! Fyr i kjalheimin!",
+   "ipa": "[fyr fyr i ˈcal.hej.min]",
+   "respelling": "FÜR FÜR EE KYAL-hay-min",
+   "translation": "Fire! Fire in the tavern!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/emergencies-2-normal.m4a",
+    "slow": "phrases/emergencies-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.15,
+    "slow": 4.54
+   }
+  },
+  {
+   "id": "emergencies-3",
+   "group": "phrases",
+   "text": "Snikir! Stemb sal!",
+   "ipa": "[ˈsni.kir stemb sal]",
+   "respelling": "SNEE-kir STEMB SAL",
+   "translation": "Thief! Stop them!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/emergencies-3-normal.m4a",
+    "slow": "phrases/emergencies-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.95,
+    "slow": 3.68
+   }
+  },
+  {
+   "id": "emergencies-4",
+   "group": "phrases",
+   "text": "Kur es nurir?",
+   "ipa": "[kur es ˈnu.rir]",
+   "respelling": "KOOR ES NOO-rir",
+   "translation": "Where is a healer?",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/emergencies-4-normal.m4a",
+    "slow": "phrases/emergencies-4-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.38,
+    "slow": 3.29
+   }
+  },
+  {
+   "id": "emergencies-5",
+   "group": "phrases",
+   "text": "Yms ylv!",
+   "ipa": "[yms ylv]",
+   "respelling": "ÜMS ÜLV",
+   "translation": "Bring water!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/emergencies-5-normal.m4a",
+    "slow": "phrases/emergencies-5-slow.m4a"
+   },
+   "seconds": {
+    "normal": 0.92,
+    "slow": 2.09
+   }
+  },
+  {
+   "id": "emergencies-6",
+   "group": "phrases",
+   "text": "Hjom Nimkjoldin!",
+   "ipa": "[hjom ˈnim.col.din]",
+   "respelling": "HYOM NIM-kyol-din",
+   "translation": "Call the night guard!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/emergencies-6-normal.m4a",
+    "slow": "phrases/emergencies-6-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.44,
+    "slow": 2.87
+   }
+  },
+  {
+   "id": "emergencies-7",
+   "group": "phrases",
+   "text": "Sel anther ne!",
+   "ipa": "[sel ˈan.θər ne]",
+   "respelling": "SEL AN-ther NEH",
+   "translation": "They're not breathing!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/emergencies-7-normal.m4a",
+    "slow": "phrases/emergencies-7-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.37,
+    "slow": 3.36
+   }
+  },
+  {
+   "id": "emergencies-8",
+   "group": "phrases",
+   "text": "Dauthirene lider!",
+   "ipa": "[ˈdau.ði.rə.nə ˈli.dər]",
+   "respelling": "DOW-thee-reh-neh LEE-der",
+   "translation": "The undead are coming!",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/emergencies-8-normal.m4a",
+    "slow": "phrases/emergencies-8-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.37,
+    "slow": 2.69
+   }
+  },
+  {
+   "id": "temple-1",
+   "group": "phrases",
+   "text": "Ilin lys, lys emi gand.",
+   "ipa": "[ˈi.lin lys lys ˈe.mi gand]",
+   "respelling": "EE-lin LÜS LÜS EH-mee GAND",
+   "translation": "Holy light, light my way.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/temple-1-normal.m4a",
+    "slow": "phrases/temple-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.18,
+    "slow": 5.24
+   }
+  },
+  {
+   "id": "temple-2",
+   "group": "phrases",
+   "text": "Em bener ter dyni heleth.",
+   "ipa": "[em ˈbe.nər ter ˈdy.ni ˈhe.ləð]",
+   "respelling": "EM BEH-ner TER DÜ-nee HEH-leth",
+   "translation": "I pray for your health. (polite)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/temple-2-normal.m4a",
+    "slow": "phrases/temple-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.1,
+    "slow": 5.48
+   }
+  },
+  {
+   "id": "temple-3",
+   "group": "phrases",
+   "text": "Ma Lysmar gleida du.",
+   "ipa": "[ma ˈlys.mar ˈglej.da du]",
+   "respelling": "MAH LÜS-mar GLAY-dah DOO",
+   "translation": "May Lysmar bless you.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/temple-3-normal.m4a",
+    "slow": "phrases/temple-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.69,
+    "slow": 4.36
+   }
+  },
+  {
+   "id": "temple-4",
+   "group": "phrases",
+   "text": "Ur Ur, ve Nett.",
+   "ipa": "[ur ur ve netː]",
+   "respelling": "OOR OOR VEH NET",
+   "translation": "From Ur, to Nett. (from the Source to the Firmament: the path of every life)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/temple-4-normal.m4a",
+    "slow": "phrases/temple-4-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.83,
+    "slow": 4.15
+   }
+  },
+  {
+   "id": "temple-5",
+   "group": "phrases",
+   "text": "Sel ager starad, stari.",
+   "ipa": "[sel ˈa.gər ˈsta.rad ˈsta.ri]",
+   "respelling": "SEL AH-gher STAR-ad STAR-ee",
+   "translation": "They have joined the stars. (said of the dead)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/temple-5-normal.m4a",
+    "slow": "phrases/temple-5-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.22,
+    "slow": 4.51
+   }
+  },
+  {
+   "id": "temple-6",
+   "group": "phrases",
+   "text": "Ma sel lysa mid staren.",
+   "ipa": "[ma sel ˈly.sa mid ˈsta.rən]",
+   "respelling": "MAH SEL LÜ-sah MID STAR-en",
+   "translation": "May they shine among the stars.",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/temple-6-normal.m4a",
+    "slow": "phrases/temple-6-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.09,
+    "slow": 5.46
+   }
+  },
+  {
+   "id": "temple-7",
+   "group": "phrases",
+   "text": "Kut meler staren?",
+   "ipa": "[kut ˈme.lər ˈsta.rən]",
+   "respelling": "KOOT MEH-ler STAR-en",
+   "translation": "What do the stars say? (asked of a star-reader)",
+   "dialect": "common",
+   "files": {
+    "normal": "phrases/temple-7-normal.m4a",
+    "slow": "phrases/temple-7-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.58,
+    "slow": 3.43
+   }
+  },
+  {
+   "id": "starisund-courtesy-1",
+   "group": "phrases",
+   "text": "Lysa, velk ve emeni heim.",
+   "ipa": "[ˈly.sa velk ve ˈe.me.ni hejm]",
+   "respelling": "LÜ-sah VELK VEH EH-meh-nee HAYM",
+   "translation": "O Light, welcome to our home.",
+   "dialect": "starisund",
+   "files": {
+    "normal": "phrases/starisund-courtesy-1-normal.m4a",
+    "slow": "phrases/starisund-courtesy-1-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.49,
+    "slow": 5.81
+   }
+  },
+  {
+   "id": "starisund-courtesy-2",
+   "group": "phrases",
+   "text": "Ma dyn sjota.",
+   "ipa": "[ma dyŋ ˈsjo.ta]",
+   "respelling": "MAH DÜN SYOH-tah",
+   "translation": "Please be seated.",
+   "dialect": "starisund",
+   "files": {
+    "normal": "phrases/starisund-courtesy-2-normal.m4a",
+    "slow": "phrases/starisund-courtesy-2-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.28,
+    "slow": 3.23
+   }
+  },
+  {
+   "id": "starisund-courtesy-3",
+   "group": "phrases",
+   "text": "Ma dyn sjona om.",
+   "ipa": "[ma dyŋ ˈsjo.na om]",
+   "respelling": "MAH DÜN SYOH-nah OM",
+   "translation": "I beg your pardon. (lit. may you forgive me)",
+   "dialect": "starisund",
+   "files": {
+    "normal": "phrases/starisund-courtesy-3-normal.m4a",
+    "slow": "phrases/starisund-courtesy-3-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.53,
+    "slow": 4.25
+   }
+  },
+  {
+   "id": "starisund-courtesy-4",
+   "group": "phrases",
+   "text": "Lysa, kjolder dyn emeni heim?",
+   "ipa": "[ˈly.sa ˈcol.dər dyŋ ˈe.me.ni hejm]",
+   "respelling": "LÜ-sah KYOL-der DÜN EH-meh-nee HAYM",
+   "translation": "O Light, will you guard our home?",
+   "dialect": "starisund",
+   "files": {
+    "normal": "phrases/starisund-courtesy-4-normal.m4a",
+    "slow": "phrases/starisund-courtesy-4-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.6,
+    "slow": 5.87
+   }
+  },
+  {
+   "id": "starisund-courtesy-5",
+   "group": "phrases",
+   "text": "Dyni sund es emi lag.",
+   "ipa": "[ˈdy.ni sund es ˈe.mi lag]",
+   "respelling": "DÜ-nee SOOND ES EH-mee LAG",
+   "translation": "Your word is my law.",
+   "dialect": "starisund",
+   "files": {
+    "normal": "phrases/starisund-courtesy-5-normal.m4a",
+    "slow": "phrases/starisund-courtesy-5-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.95,
+    "slow": 5.22
+   }
+  },
+  {
+   "id": "starisund-courtesy-6",
+   "group": "phrases",
+   "text": "Em lomber for dun.",
+   "ipa": "[em ˈlom.bər for duŋ]",
+   "respelling": "EM LOM-ber FOR DOON",
+   "translation": "I bow before you.",
+   "dialect": "starisund",
+   "files": {
+    "normal": "phrases/starisund-courtesy-6-normal.m4a",
+    "slow": "phrases/starisund-courtesy-6-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.76,
+    "slow": 4.55
+   }
+  },
+  {
+   "id": "starisund-courtesy-7",
+   "group": "phrases",
+   "text": "Kyra! Mund ter dyni kyr.",
+   "ipa": "[ˈky.ra mund ter ˈdy.ni kyr]",
+   "respelling": "KÜ-rah MOOND TER DÜ-nee KÜR",
+   "translation": "O Blade! Thanks for your sword. (to a sworn mercenary)",
+   "dialect": "starisund",
+   "files": {
+    "normal": "phrases/starisund-courtesy-7-normal.m4a",
+    "slow": "phrases/starisund-courtesy-7-slow.m4a"
+   },
+   "seconds": {
+    "normal": 2.24,
+    "slow": 5.31
+   }
+  },
+  {
+   "id": "starisund-courtesy-8",
+   "group": "phrases",
+   "text": "Sva vas starilag.",
+   "ipa": "[sva vas ˈsta.riˌlag]",
+   "respelling": "SVAH VAS STAR-ee-lag",
+   "translation": "So fate willed it.",
+   "dialect": "starisund",
+   "files": {
+    "normal": "phrases/starisund-courtesy-8-normal.m4a",
+    "slow": "phrases/starisund-courtesy-8-slow.m4a"
+   },
+   "seconds": {
+    "normal": 1.58,
+    "slow": 3.59
+   }
+  }
+ ]
+}

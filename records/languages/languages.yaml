@@ -1,0 +1,38 @@
+document: fact-record/v1
+topic: The languages of Valia
+contributor: Vledic#0001
+context:
+- Version 1.0.0 of the language records, approved by the lore lead on 2026-11-19.
+- Each language has its own folder. Grammar files use lang-grammar/v1, dictionaries lang-dictionary/v1, texts lang-text/v1 and scripts lang-script/v1 (see README.md).
+- Readable guides are in docs/languages/.
+facts:
+- Most languages of Thiolden and the Vairean Empire descend from Proto-Valian, the deep ancestor language of the continent of Valia.
+- Norsund is the common tongue of Thiolden.
+- Kedre is the language of the Vairean Empire.
+subtopics:
+
+- topic: Family tree
+  facts:
+  - Proto-Valian split into Proto-Norsund, spoken on the island of Farheim, and the ancestor of Kedre, spoken in the north-west of Valia.
+  - Proto-Norsund became Old Norsund, the language of the settlers who reached Thiolden around 450 b.v.e.
+  - Old Norsund became Norsund around 100 a.v.e.
+  - Norsund has several dialects. Starisund is the speech of Auristar; common Norsund is spoken in the Vilnayan towns; the Kullmyr, the Nurmyr and Farheim have their own varieties; the Thieves Guild of Auristar uses a backslang cant.
+  - The sound changes and cognate sets that connect these languages are recorded in records/languages/norsund/grammar/13-history.yaml.
+
+- topic: Other tongues of Thiolden
+  context:
+  - These languages are scoped but not yet built. Names from them keep their own spelling in Norsund texts.
+  - Any apostrophe in a name stands for a real sound, as records/languages/norsund/grammar/02-orthography.yaml requires. Each entry says which.
+  facts:
+  - "Dwarvish of Karhak'Modan: the tongue of the dwarves who hold the Pass of Kharak. Its apostrophe marks a glottal stop between the two elements of a compound name: Karhak'Modan is said [karhakʔmodan]. kh is a rasping [x], as in Scottish loch."
+  - "The Ik'nal'tar tongue: spoken by the people of Ik'nal'tar. Its apostrophe marks a glottal stop that closes a syllable: Ik'nal'tar is said [ikʔnalʔtar]."
+  - "Ath'alan Elvish: the language of the elves descended from Ath'alan, the lineage of Othil, Lore Keeper of the Seven Lights. Its apostrophe marks a glottal stop between two syllables that would otherwise run together: Ath'alan is said [aθʔalan]. Elvish personal names such as Othil and Elenidas use no apostrophe."
+  - "Merfolk: the tongue of the Merfolk, which has its own runes, separate from the Old Norsund runes (records/user-submitted-stories/marv.yaml). No apostrophes are attested."
+  - "Vulkin and Nightvul: the speech of the Vulkin. The apostrophe joins a clan name to a given name and is said as a short glottal catch: Thor'Vale is [θorʔvale], 'Vale of clan Thor'. In Norsund company the given name alone is used (Vale)."
+  - "Dragonkin: the speech of the Firewing Dragonkin and their kin (Gadrull). It is known for long rolled r and l sounds. No apostrophes are attested."
+  - "Ulfkin is the Norsund name for the wolf-folk formerly recorded as Worgenkin (Haakon's people). The word worgen belongs to another franchise."
+
+- import: ./norsund/norsund
+- import: ./old-norsund/old-norsund
+- import: ./kedre/kedre
+- import: ./scripts/scripts

@@ -1,0 +1,54 @@
+document: fact-record/v1
+topic: Old Norsund, the settlers' tongue
+contributor: Vledic#0001
+context:
+- Version 1.0.0, part of the Norsund language build approved on 2026-11-19. The complete grammar (43 rules, 5 tables), dictionary (353 entries) and texts (8 texts) live beside this record.
+- Dates use the Vairean imperial system (b.v.e. / a.v.e.).
+facts:
+- Old Norsund is the language of the adventurers who settled Thiolden from the island of Farheim around 450 b.v.e.
+- Old Norsund was the everyday language of Marheim and the first Vilnayan villages.
+- Old Norsund gave way to Norsund around 100 a.v.e., about the time the First Ring of the Kjoldmur was finished.
+- Vilkyr ("free sword") is an Old Norsund word that Norsund kept unchanged.
+- Old Norsund descends from Proto-Norsund, spoken on Farheim, and ultimately from Proto-Valian.
+- The name Thiolden comes from the Old Norsund phrase den thiolini, "land of the brave ones", spoken by the settlers' leader at the landfall.
+subtopics:
+
+- topic: Sounds and writing
+  facts:
+  - Old Norsund has the same sounds as Norsund, plus an initial hw (hwander), a g between vowels (negi), the diphthong ey, and full vowels in endings.
+  - Old Norsund was written in runes on wood, bone and slate. Carvers did not mark long vowels or double consonants, so a carving can be read more than one way.
+  - Scholars cite Old Norsund with þ, ð and acute accents for long vowels (þjol, veða, tír); lore writers use the plain spelling (thiol, vetha, tiir).
+
+- topic: Grammar
+  facts:
+  - Nouns have four cases (nominative, accusative, genitive, dative). Animate nouns mark the object with -a, and every preposition takes the dative.
+  - The word for "the" was hin, a separate word placed after the noun; Norsund fused it into the suffix -in.
+  - Adjectives agree with their noun in case and number.
+  - Verbs agree with singular and plural subjects (kjoldur "guards", kjoldum "they guard"), in the present and the past.
+  - Wishes, blessings and curses use the optative ending -i; the future uses hala "to owe" with an infinitive.
+  - Main clauses put the verb second and subordinate clauses put it last; ne always comes directly before the verb.
+  - Old Norsund has no evidential particles. Oaths name the gods as witnesses instead.
+  - Ten is dovthamm, "two hands", and markets counted in the long hundred (langhaun, 120).
+
+- topic: Names
+  facts:
+  - A person is named by given name and parent-name in -ung ("child of"); a famous person adds a byname followed by hin, as in Tyr thiol hin, "Tyr the brave".
+  - A noble house is "the children of" its founder, written with -ungin.
+  - Memorial stones follow a fixed formula and end with a ban on charging their runes, because rune magic near the dead raises them.
+
+- topic: Where it is still used
+  facts:
+  - Vilkyr oaths are sworn in Old Norsund.
+  - The laws carved on the Kjoldmur are written in Old Norsund, and the laws of the Marheim moot were recited in it.
+  - The oldest temple invocations of Auristar are in Old Norsund and use the old god-names Myr and Heid.
+  - Sagas such as the Saga of the Wanderers are recited in Old Norsund by the Sundwanderen.
+  - Rune-craft formulas and incantations are composed in Old Norsund. Charging runes makes them glow; this is rune magic, and it is forbidden in Auristar.
+  - Farheim island speech keeps some Old Norsund forms in songs.
+
+- topic: How it became Norsund
+  facts:
+  - Unstressed i and u in final syllables became e, so -in and -ur turned into -en and -er (Vilkyrin to Vilkyren, kjoldur to kjolder).
+  - g between vowels became j and merged into the diphthong ei (negi to nay); initial hw became w (hwander to wander); long vowels shortened outside the first syllable (iliin to ilin).
+  - The cases and number agreement fell away, the article fused onto the noun, and the Kedre loan ke replaced the relative particle ys.
+  - The evidentials grew from Old Norsund words: sa is the past of saja "see", sund is "song", and stari is "of the stars".
+  - The Old Norsund law that a witness who did not see may not swear is the origin of Auristar's rule that testimony needs the evidential sa.

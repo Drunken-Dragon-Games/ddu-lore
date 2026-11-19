@@ -1,0 +1,277 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: Beasts, monsters and the risen dead
+field: beasts
+contributor: Vledic#0001
+defaults: {layer: native, tier: common, status: ratified, epoch: old}
+context:
+- Animals of Thiolden and every species in the Compendium of Beasts (records/bestiary), plus evolved beasts, monsters, demons, wraiths and the undead.
+- All living beasts are animate. Golems, sprites and slimes count as living beings, so they are animate too.
+- Goat (gat), horse (hest) and wolf (ulf) are in 01-core-roots.yaml; body parts such as claw, horn, tail, feather and wing are in 04-body-health.yaml.
+
+entries:
+# --- Beasts in general ---
+- lemma: thiur
+  pos: noun
+  class: animate
+  gloss: [animal, creature]
+  tier: core
+  epoch: proto
+  notes: "spelled thiur, pronounced /θjur/ (th + j is written thi)"
+  derived:
+  - {lemma: thiurug, pos: adj, gloss: [beastly, bestial], parts: [thiur, ug]}
+  - {lemma: thiurheim, pos: noun, class: inanimate, gloss: [stable, animal pen], parts: [thiur, heim]}
+- lemma: skrimm
+  pos: noun
+  class: animate
+  gloss: [monster, beast (dangerous)]
+  derived:
+  - {lemma: skrimmug, pos: adj, gloss: [monstrous], parts: [skrimm, ug]}
+  - {lemma: marskrimm, pos: noun, class: animate, gloss: [great monster, terror of a region], parts: [mar, skrimm]}
+- lemma: vyrda
+  pos: verb
+  class: weak
+  gloss: [to evolve, to become, to change form]
+  notes: "said of beasts and sprites changed by magic: 'evolved beasts' are vyrdad thiuren"
+  derived:
+  - {lemma: vyrdning, pos: noun, class: inanimate, gloss: [evolution, transformation]}
+  - {lemma: vyrdad, pos: adj, gloss: [evolved, transformed], parts: [vyrda, ad]}
+- lemma: skjar
+  pos: adj
+  gloss: [wild, untamed]
+  derived:
+  - {lemma: skjareth, pos: noun, class: inanimate, gloss: [wildness, the wild], parts: [skjar, eth]}
+- lemma: spaka
+  pos: verb
+  class: weak
+  gloss: [to tame]
+  derived:
+  - {lemma: spak, pos: adj, gloss: [tame, gentle]}
+  - {lemma: spakir, pos: noun, class: animate, gloss: [tamer, beast-handler]}
+- {lemma: hith, pos: noun, class: inanimate, gloss: [lair, den]}
+- {lemma: spakthiur, pos: noun, class: animate, gloss: [pet, tame animal], parts: [spak, thiur]}
+- {lemma: marhjarm, pos: noun, class: animate, gloss: [cave bear, great bear], parts: [mar, hjarm]}
+- {lemma: snothling, pos: noun, class: animate, gloss: [little snake, adder], parts: [snoth, ling]}
+- lemma: flys
+  pos: noun
+  class: inanimate
+  gloss: [scale (of a fish or reptile)]
+  derived:
+  - {lemma: flysug, pos: adj, gloss: [scaly], parts: [flys, ug]}
+- lemma: hakk
+  pos: noun
+  class: inanimate
+  gloss: [beak, bill]
+  derived:
+  - {lemma: hakka, pos: verb, class: weak, gloss: [to peck]}
+- {lemma: thof, pos: noun, class: inanimate, gloss: [paw]}
+
+# --- Birds and eggs ---
+- lemma: flaun
+  pos: noun
+  class: animate
+  gloss: [bird]
+  tier: core
+  epoch: proto
+  derived:
+  - {lemma: flaunling, pos: noun, class: animate, gloss: [chick, fledgling], parts: [flaun, ling]}
+  - {lemma: nimflaun, pos: noun, class: animate, gloss: [bat (lit. night-bird)], parts: [nim, flaun]}
+  - {lemma: valflaun, pos: noun, class: animate, gloss: [raven (kenning, lit. bird of the slain)], parts: [val, flaun], register: poetic}
+  - {lemma: kakk, pos: noun, class: animate, gloss: [chicken, hen]}
+  - {lemma: markakk, pos: noun, class: animate, gloss: [rooster], parts: [mar, kakk]}
+- lemma: yll
+  pos: noun
+  class: inanimate
+  gloss: [egg]
+  tier: core
+  epoch: proto
+  derived:
+  - {lemma: ylla, pos: verb, class: weak, gloss: [to lay eggs]}
+  - {lemma: yllheim, pos: noun, class: inanimate, gloss: [nest (lit. egg-home)], parts: [yll, heim]}
+- lemma: skaurn
+  pos: noun
+  class: animate
+  gloss: [eagle]
+  notes: "the eagle's sight, which spots prey from very far, is the image behind many hunters' oaths"
+- lemma: graun
+  pos: noun
+  class: animate
+  gloss: [raven]
+  notes: "Lindorin is a graun of some sort. Ravens are counted as pests in Thiolden."
+  derived:
+  - {lemma: graunling, pos: noun, class: animate, gloss: [crow, jackdaw], parts: [graun, ling]}
+  - {lemma: graunkjal, pos: noun, class: inanimate, gloss: [blood (kenning, lit. raven's ale)], parts: [graun, kjal], register: poetic}
+- {lemma: kauv, pos: noun, class: animate, gloss: [owl], notes: "Fubuki, Aki's companion, hoots like a kauv"}
+
+# --- Beasts of field and forest ---
+- lemma: rakk
+  pos: noun
+  class: animate
+  gloss: [dog]
+  tier: core
+  epoch: proto
+  derived:
+  - {lemma: rakkling, pos: noun, class: animate, gloss: [puppy], parts: [rakk, ling]}
+  - {lemma: marrakk, pos: noun, class: animate, gloss: [hound, war-dog], parts: [mar, rakk]}
+- lemma: kis
+  pos: noun
+  class: animate
+  gloss: [cat]
+  derived:
+  - {lemma: kisling, pos: noun, class: animate, gloss: [kitten], parts: [kis, ling]}
+- {lemma: gaup, pos: noun, class: animate, gloss: [puma, mountain lion], notes: "secretive, found at mountain peaks; 'not to be confused with cats' (kis)"}
+- lemma: hjarm
+  pos: noun
+  class: animate
+  gloss: [bear]
+  derived:
+  - {lemma: hjarmling, pos: noun, class: animate, gloss: [bear cub], parts: [hjarm, ling]}
+  - {lemma: hjarmlodd, pos: noun, class: inanimate, gloss: [bearskin], parts: [hjarm, lodd]}
+- {lemma: vul, pos: noun, class: animate, gloss: [fox], notes: "proposed root of the race name Vulkin"}
+- lemma: ryn
+  pos: noun
+  class: animate
+  gloss: [deer]
+  derived:
+  - {lemma: marryn, pos: noun, class: animate, gloss: [stag], parts: [mar, ryn]}
+  - {lemma: rynling, pos: noun, class: animate, gloss: [fawn], parts: [ryn, ling]}
+- lemma: bors
+  pos: noun
+  class: animate
+  gloss: [pig, swine]
+  derived:
+  - {lemma: marbors, pos: noun, class: animate, gloss: [wild boar], parts: [mar, bors]}
+- lemma: kjur
+  pos: noun
+  class: animate
+  gloss: [cattle, cow]
+  derived:
+  - {lemma: kjurling, pos: noun, class: animate, gloss: [calf], parts: [kjur, ling]}
+  - {lemma: markjur, pos: noun, class: animate, gloss: [ox, bull], parts: [mar, kjur]}
+- lemma: tisk
+  pos: noun
+  class: animate
+  gloss: [mouse]
+  derived:
+  - {lemma: martisk, pos: noun, class: animate, gloss: [rat (lit. great mouse)], parts: [mar, tisk]}
+- {lemma: summ, pos: noun, class: animate, gloss: [bee], notes: "from the sound it makes"}
+- lemma: bjall
+  pos: noun
+  class: animate
+  gloss: [sheep]
+  derived:
+  - {lemma: bjalling, pos: noun, class: animate, gloss: [lamb], parts: [bjall, ling]}
+- lemma: lepp
+  pos: noun
+  class: animate
+  gloss: [rabbit, hare]
+  derived:
+  - {lemma: leppling, pos: noun, class: animate, gloss: [bunny, young rabbit], parts: [lepp, ling]}
+- {lemma: simm, pos: noun, class: animate, gloss: [monkey, ape], layer: kedre, epoch: contact, etymology: "Kedre simmia", notes: "a southern beast; Baboon of the tavern tales is a simm"}
+- {lemma: hestling, pos: noun, class: animate, gloss: [foal], parts: [hest, ling]}
+
+# --- Creeping things ---
+- lemma: snoth
+  pos: noun
+  class: animate
+  gloss: [snake, serpent]
+  tier: core
+  epoch: proto
+  derived:
+  - {lemma: snothug, pos: adj, gloss: [snaky, treacherous], parts: [snoth, ug]}
+- lemma: lynd
+  pos: noun
+  class: animate
+  gloss: [worm]
+  tier: core
+  epoch: proto
+  derived:
+  - {lemma: flauglynd, pos: noun, class: animate, gloss: [Comet Worm (lit. flying worm)], parts: [flaug, lynd], notes: "rock-bodied worms that fly through the Starifjolden drinking the arcane glow of the Auristar's water"}
+- lemma: nyt
+  pos: noun
+  class: animate
+  gloss: [louse]
+  tier: core
+  epoch: proto
+  derived:
+  - {lemma: nytug, pos: adj, gloss: [lousy, lice-ridden], parts: [nyt, ug]}
+- lemma: thryll
+  pos: noun
+  class: animate
+  gloss: [spider]
+  derived:
+  - {lemma: thryllheim, pos: noun, class: inanimate, gloss: [spider's web (lit. spider-home)], parts: [thryll, heim]}
+- {lemma: skridir, pos: noun, class: animate, gloss: [crawler, creeping beast], parts: [skrida, ir], derived: [{lemma: grjotskridir, pos: noun, class: animate, gloss: [Rock Crawler], parts: [grjot, skridir], notes: "so elusive that no one can describe it; said to live in the Starifjolden"}]}
+- lemma: glym
+  pos: noun
+  class: animate
+  gloss: [salamander, cave newt]
+  notes: "the axolotl-like creature of the Starifjolden is a fjolglym"
+  derived:
+  - {lemma: fjolglym, pos: noun, class: animate, gloss: [Starifjolden salamander (axolotl-like)], parts: [fjol, glym]}
+  - {lemma: fyrglym, pos: noun, class: animate, gloss: [fire salamander], parts: [fyr, glym]}
+
+# --- Fish ---
+- lemma: kolm
+  pos: noun
+  class: animate
+  gloss: [fish]
+  tier: core
+  epoch: proto
+  derived:
+  - {lemma: kolma, pos: verb, class: weak, gloss: [to fish]}
+  - {lemma: kolmir, pos: noun, class: animate, gloss: [fisher]}
+  - {lemma: markolm, pos: noun, class: animate, gloss: [whale (lit. great fish)], parts: [mar, kolm]}
+
+# --- Slimes, sprites and golems (beasts of magic) ---
+- lemma: sluth
+  pos: noun
+  class: animate
+  gloss: [slime]
+  notes: "flows rather than walks; summons more slimes instead of fleeing; tamable"
+  derived:
+  - {lemma: sluthug, pos: adj, gloss: [slimy], parts: [sluth, ug]}
+  - {lemma: aulsluth, pos: noun, class: animate, gloss: [Beer Slime], parts: [aul, sluth], notes: "found in tavern barrels; smells and tastes of beer"}
+  - {lemma: vinsluth, pos: noun, class: animate, gloss: [Wine Slime], parts: [vin, sluth], notes: "found in high-class taverns; vin 'wine' is a Kedre loan"}
+- lemma: tyll
+  pos: noun
+  class: animate
+  gloss: [sprite]
+  notes: "every sprite is born a plain tyll and can evolve (vyrda) into a kind below; all can be tamed"
+  derived:
+  - {lemma: fyrtyll, pos: noun, class: animate, gloss: [Volcanic Sprite], parts: [fyr, tyll], notes: "found at Lysmar Peak; aggressive; used as a light source"}
+  - {lemma: grjottyll, pos: noun, class: animate, gloss: [Rock Sprite], parts: [grjot, tyll], notes: "found in the Starifjolden; bold; used to seek rare minerals"}
+  - {lemma: lystyll, pos: noun, class: animate, gloss: [Light Sprite], parts: [lys, tyll], notes: "rare; timid; used in powerful magic"}
+  - {lemma: dunktyll, pos: noun, class: animate, gloss: [Dark Sprite], parts: [dunk, tyll], notes: "rare; hasty; used in powerful magic"}
+  - {lemma: brystyll, pos: noun, class: animate, gloss: [Wind Sprite], parts: [brys, tyll], notes: "found in the northern mountains of Talin's Rest; naughty; used in the forge"}
+  - {lemma: fjarntyll, pos: noun, class: animate, gloss: [Ice Sprite], parts: [fjarn, tyll], notes: "found at Lysmar Peak; calm; used to chill drinks"}
+- {lemma: grjotvard, pos: noun, class: animate, gloss: [golem (lit. stone-warden)], parts: [grjot, vard], notes: "beings of rock filled with arcane magic; the Magenta Golem's core crystal channels holy aurind magic and gravity"}
+
+# --- Dragons ---
+- lemma: haurn
+  pos: noun
+  class: animate
+  gloss: [dragon]
+  notes: "The Drunken Dragon (the tavern and the universe) is Kjalad Haurnin."
+  derived:
+  - {lemma: haurnling, pos: noun, class: animate, gloss: [young dragon, wyrmling], parts: [haurn, ling]}
+  - {lemma: haurnfyr, pos: noun, class: inanimate, gloss: [dragonfire], parts: [haurn, fyr]}
+
+# --- Demons, wraiths and the risen dead ---
+- lemma: vrask
+  pos: noun
+  class: animate
+  gloss: [demon, fiend (a demon in the flesh, of the wild lands)]
+  derived:
+  - {lemma: vraskug, pos: adj, gloss: [demonic, fiendish], parts: [vrask, ug]}
+  - {lemma: nuthvrask, pos: noun, class: animate, gloss: [void-demon], parts: [nuth, vrask]}
+- lemma: svip
+  pos: noun
+  class: animate
+  gloss: [wraith, phantom, ghost]
+  derived:
+  - {lemma: svipug, pos: adj, gloss: [ghostly, haunted], parts: [svip, ug]}
+  - {lemma: svipden, pos: noun, class: inanimate, gloss: [wraith-land, haunted country], parts: [svip, den], notes: "the wraith lands of Thiolden"}
+- {lemma: skellwander, pos: noun, class: animate, gloss: [risen skeleton (lit. bone-wanderer)], parts: [skell, wander]}
+- {lemma: dauthlyd, pos: noun, class: animate, gloss: [the undead (as a host)], parts: [dauth, lyd], notes: "plural; a single risen corpse is a dauthir"}

@@ -1,0 +1,91 @@
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: Pronouns and determiners
+contributor: Vledic#0001
+status: ratified
+context:
+- Third-person pronouns mark animacy, not sex or gender, which suits a world of many races. sel is "he", "she" or singular "they".
+
+morphology:
+  personal:
+  - {person: "1sg", subject: "em", object: "om", possessive: "emi", gloss: "I, me, my"}
+  - {person: "2sg", subject: "dy", object: "du", possessive: "dys", gloss: "you, your (one person)"}
+  - {person: "3sg.an", subject: "sel", object: "sal", possessive: "seli", gloss: "he/she/they, him/her/them, his/her/their (one being)"}
+  - {person: "3sg.in", subject: "at", object: "at", possessive: "ati", gloss: "it, its"}
+  - {person: "1pl", subject: "emen", object: "omen", possessive: "emeni", gloss: "we, us, our"}
+  - {person: "2pl", subject: "dyn", object: "dun", possessive: "dyni", gloss: "you, your (several; polite to one in Starisund)"}
+  - {person: "3pl.an", subject: "selen", object: "salen", possessive: "seleni", gloss: "they, them, their (beings)"}
+  - {person: "3pl.in", subject: "atar", object: "atar", possessive: "atari", gloss: "they, them, their (things)"}
+  reflexive: {form: sjo, gloss: "self (myself, yourself, itself...)"}
+  reciprocal: {form: sjosjo, gloss: each other}
+  demonstratives:
+  - {form: "hes", gloss: "this, these"}
+  - {form: "thas", gloss: "that, those"}
+  correlatives:
+    stems: {ku: interrogative, ynku: "some-", neku: "no-", alku: "every-"}
+    endings: {m: person, t: thing, r: place, na: time, vi: reason, so: manner, mik: amount}
+    table:
+    - [kum, kut, kur, kuna, kuvi, kuso, kumik]
+    - [ynkum, ynkut, ynkur, ynkuna, ynkuvi, ynkuso, ynkumik]
+    - [nekum, nekut, nekur, nekuna, nekuvi, nekuso, nekumik]
+    - [alkum, alkut, alkur, alkuna, alkuvi, alkuso, alkumik]
+    which: kul
+  quantifiers:
+  - {form: "al", gloss: "all, every"}
+  - {form: "myk", gloss: "much, many"}
+  - {form: "lit", gloss: "little, few"}
+  - {form: "nok", gloss: "some, a few"}
+  - {form: "nen", gloss: "no, not any"}
+  - {form: "sver", gloss: "each"}
+  - {form: "annar", gloss: "other, another"}
+
+rules:
+- id: PRON-01
+  title: Personal pronouns
+  rule: >
+    Pronouns have subject, object and possessive forms. The object forms change the vowel (em/om, dy/du, sel/sal), an old
+    vowel alternation. Possessives come before the noun and replace the definite suffix.
+  examples:
+  - {form: "Em sajer du.", gloss: "1SG see-PRS 2SG.OBJ", translation: "I see you."}
+  - {form: "emi kyr", gloss: "1SG.POSS blade", translation: "my blade"}
+  - {form: "Kyr-in es emi.", gloss: "blade-DEF be.PRS 1SG.POSS", translation: "The blade is mine."}
+
+- id: PRON-02
+  title: Polite you (Starisund)
+  rule: >
+    In Auristar, speaking to a Light, a superior or a stranger of rank uses the plural dyn/dun/dyni. Common Norsund uses
+    dy with everyone, which Aurinay find blunt.
+  examples:
+  - {form: "Lysa, kjolder dyn emeni heim?", gloss: "light.VOC guard.PRS 2PL 1PL.POSS home", translation: "O Light, will you guard our home?"}
+
+- id: PRON-03
+  title: Reflexive and reciprocal
+  rule: sjo "self" serves all persons; sjosjo means "each other".
+  examples:
+  - {form: "Tyr sajer sjo i ylv-in.", gloss: "Tyr see-PRS self in water-DEF", translation: "Tyr sees himself in the water."}
+
+- id: PRON-04
+  title: Demonstratives take the definite suffix
+  rule: hes "this" and thas "that" go before a noun that also carries the definite suffix (double definiteness).
+  examples:
+  - {form: "hes kyr-in", gloss: "this blade-DEF", translation: "this blade"}
+  - {form: "thas Vilkyr-ene", gloss: "that free.sword-DEF.PL.AN", translation: "those free swords"}
+
+- id: PRON-05
+  title: Question words and their family
+  rule: >
+    Question words start with ku- (kum "who", kut "what", kur "where", kuna "when", kuvi "why", kuso "how", kumik
+    "how much/many", kul "which"). Adding ynku-, neku- or alku- gives "some-", "no-" and "every-" words. kuna also means
+    "when" as a conjunction.
+  examples:
+  - {form: "Kum kjoldade mur-in?", gloss: "who guard-PST wall-DEF", translation: "Who guarded the wall?"}
+  - {form: "Nekum kjolder at.", gloss: "no.one guard.PRS 3SG.IN", translation: "No one guards it."}
+
+- id: PRON-06
+  title: Dummy subject
+  rule: >
+    Weather and other subjectless verbs take at "it" as a dummy subject, because a main clause needs something before
+    the verb (V2).
+  examples:
+  - {form: "At drifer.", gloss: "3SG.IN snow.PRS", translation: "It is snowing."}

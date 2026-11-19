@@ -1,0 +1,117 @@
+document: lang-text/v1
+language: norsund
+version: 1.0.0
+topic: Sample texts from the v0.1 proposal
+contributor: Vledic#0001
+context:
+- The first texts written in Norsund, kept as the canonical examples of the grammar. Each one shows a feature in use.
+
+texts:
+- id: toast
+  title: Toast at Winterbeard's Sigil
+  register: starisund
+  source: records/thiolden/auristar/auristar.yaml (Winterbeard's Sigil)
+  context: >
+    The standard toast of Auristar's taverns, raised when a round arrives. In Auristar the stars are living beings,
+    so they take the animate plural staren.
+  lines:
+  - text: "Kjal, thiolen! Ma staren kjolda dun."
+    morphemes: "kjal thiol-en ma star-en kjold-a dun"
+    gloss: "drink.IMP brave-PL.AN OPT star-PL.AN guard-INF 2PL.OBJ"
+    translation: "Drink, brave ones! May the stars keep you."
+  notes:
+  - "In a Vilnayan tavern the stars are objects: Ma starar kjolda dun."
+  - "thiolen is the adjective thiol 'brave' used as a noun, so it takes the people-plural -en (ADJ-03)."
+
+- id: vilkyr-code
+  title: The Vilkyr code
+  register: carved
+  source: records/thiolden/vilnayan.yaml (the Vilkyren's code of chivalry)
+  context: >
+    The motto every Vilkyr carves on the hilt of a first blade. It is the first line of the Vilkyr oath, in modern form.
+  lines:
+  - text: "Vil kyrin, vothen sundin."
+    morphemes: "vil kyr-in voth-en sund-in"
+    gloss: "free blade-DEF bind-PTCP word-DEF"
+    translation: "Free the blade, bound the word."
+  notes:
+  - "Carved style: the present copula is left out (ADJ-02, VERB-03)."
+  - "vil and vothen alliterate on v, as in all bardic verse (POET-01)."
+
+- id: gate-inscription
+  title: Gate inscription of the Kjoldmur
+  register: carved
+  source: records/thiolden/auristar/auristar.yaml (the city is prohibited from using runic magic)
+  context: >
+    Carved over every gate of the First Ring. A charged rune glows, so "no rune shines" bans rune magic, not rune writing.
+  lines:
+  - text: "Fjol starin lyser run ne."
+    morphemes: "fjol star-in lys-er run ne"
+    gloss: "under star-DEF shine-PRS rune NEG"
+    translation: "Beneath the star, no rune shines."
+  notes:
+  - "Verb second: the phrase fjol starin comes first, so the subject run follows the verb, and ne follows the subject (SYN-01, VERB-10)."
+
+- id: prophecy
+  title: The Prophecy of the Auristar
+  register: sacred
+  source: records/thiolden/general-timeline.yaml (57 a.v.e)
+  context: >
+    The vision given to the leaders of the seven Wandering Houses of Oudeheim. It is recited in the temples of Auristar in
+    this modern form; the immovable star is the Norstar, which fell on Midelmar in 90 a.v.e.
+  lines:
+  - text: "Thiark aur star ke ne vyrner."
+    morphemes: "thiark aur star ke ne vyrn-er"
+    gloss: "seek.IMP silver star REL NEG move-PRS"
+    translation: "Seek a silver star that does not move."
+  - text: "Thal doler sel, thal hjald dyni heim."
+    morphemes: "thal dol-er sel thal hjald dyni heim"
+    gloss: "there fall-PRS 3SG.AN there raise.IMP 2PL.POSS home"
+    translation: "Where it falls, there raise your home."
+  - text: "Stari."
+    morphemes: "stari"
+    gloss: "EVID.FATED"
+    translation: "So the stars say."
+  notes:
+  - "The star is sel 'she/he', not at 'it': in temple speech it is a living being (NOUN-09)."
+  - "In the relative clause ke ne vyrner, ne comes before the verb (VERB-10)."
+  - "Thal ... thal ('there ... there') pairs two clauses in place of a word for 'where'."
+  - "Prophecies end in stari (EVID-02)."
+
+- id: evidentials
+  title: Three ways of knowing
+  register: common
+  source: new
+  context: The same statement with each evidential particle (EVID-01).
+  lines:
+  - text: "Tyr kjoldade murin, sa."
+    morphemes: "Tyr kjold-ade mur-in sa"
+    gloss: "Tyr guard-PST wall-DEF EVID.SEEN"
+    translation: "Tyr guarded the wall. (I saw it.)"
+  - text: "Tyr kjoldade murin, sund."
+    morphemes: "Tyr kjold-ade mur-in sund"
+    gloss: "Tyr guard-PST wall-DEF EVID.SUNG"
+    translation: "Tyr guarded the wall. (So the songs say.)"
+  - text: "Tyr hal kjolda murin, stari."
+    morphemes: "Tyr hal kjold-a mur-in stari"
+    gloss: "Tyr FUT guard-INF wall-DEF EVID.FATED"
+    translation: "Tyr will guard the wall. (It is foretold.)"
+
+- id: verb-second
+  title: Verb second
+  register: common
+  source: new
+  context: The finite verb stays in second place whatever comes first (SYN-01, SYN-02).
+  lines:
+  - text: "Tyr kjolder murin i nimin."
+    morphemes: "Tyr kjold-er mur-in i nim-in"
+    gloss: "Tyr guard-PRS wall-DEF in night-DEF"
+    translation: "Tyr guards the wall at night."
+  - text: "I nimin kjolder Tyr murin."
+    morphemes: "i nim-in kjold-er Tyr mur-in"
+    gloss: "in night-DEF guard-PRS Tyr wall-DEF"
+    translation: "At night, Tyr guards the wall."
+  - text: "Kjolder dy murin?"
+    morphemes: "kjold-er dy mur-in"
+    gloss: "guard-PRS 2SG wall-DEF"
+    translation: "Do you guard the wall?"

@@ -1,0 +1,169 @@
+document: lang-script/v1
+script: lysrit
+name: Lysrit
+meaning: light-writing (lys "light" + rit "writing")
+language: norsund
+version: 1.0.0
+contributor: Vledic#0001
+status: ratified
+type: featural alphabet written in syllable cells
+direction: left to right, cells on one line
+context:
+- Auristar's sacred and civic script, designed by Starlight Library scholars (c. 99-124 a.v.e.). It is systematic because it was designed, as Hangul was.
+- Used for temples, the Kjoldmur, decrees of the Seven Lights, holy names and civic monuments. Everyday writing in Auristar still uses runes, which never glow there.
+- tools/norsund/scripts.js renders Lysrit to SVG from these tables; assets/fonts/Lysrit-Regular.otf types it from the romanization.
+- The glyphs of the v0.1 proposal (2026-11-19) are kept unchanged.
+
+# Geometry. Units are those of a single cell; y grows downward.
+grid:
+  cell_width: 40
+  cell_height: 44
+  centre: [20, 22]
+  radius: 15
+  nodes: "C is the centre; nodes 0-6 sit on the rim at angle -90 + k*360/7 degrees, clockwise from the top point (node 0)."
+  same_as_emblem: The seven rim nodes are the points of Auristar's emblem, top point up.
+  word_gap: 14
+  stroke_width: 2.1
+  stroke_caps: round
+  grid_nodes: Every cell shows the eight grid nodes as faint dots (radius 1.15). In carving they may be drilled or set with crystal; in small type they may be left out.
+
+# Consonants: straight strokes between nodes. The base bar shows where the sound is made:
+# labial (lips) 6-1, the top bar; coronal (tongue tip) 5-2, the middle bar; dorsal (back of the mouth) 4-3, the bottom bar.
+# Extra strokes show how it is made. voiced: true lights the centre (a cyan dot of radius 2.7).
+consonants:
+- {letter: p,  place: labial,  manner: stop,         voiced: false, strokes: [[6, 1]]}
+- {letter: b,  place: labial,  manner: stop,         voiced: true,  strokes: [[6, 1]]}
+- {letter: f,  place: labial,  manner: fricative,    voiced: false, strokes: [[6, 1], [1, 2]]}
+- {letter: v,  place: labial,  manner: fricative,    voiced: true,  strokes: [[6, 1], [1, 2]]}
+- {letter: m,  place: labial,  manner: nasal,        voiced: false, strokes: [[6, 1], [6, 5]]}
+- {letter: w,  place: labial,  manner: glide,        voiced: false, strokes: [[6, 1], [6, 5], [1, 2]]}
+- {letter: t,  place: coronal, manner: stop,         voiced: false, strokes: [[5, 2]]}
+- {letter: d,  place: coronal, manner: stop,         voiced: true,  strokes: [[5, 2]]}
+- {letter: th, place: coronal, manner: fricative,    voiced: false, strokes: [[5, 2], [2, 3]]}
+- {letter: s,  place: coronal, manner: sibilant,     voiced: false, strokes: [[5, 2], [2, 1]]}
+- {letter: n,  place: coronal, manner: nasal,        voiced: false, strokes: [[5, 2], [5, 4]]}
+- {letter: l,  place: coronal, manner: lateral,      voiced: false, strokes: [[5, 2], [5, 6]]}
+- {letter: r,  place: coronal, manner: rhotic,       voiced: false, strokes: [[5, 2], [5, 4], [2, 3]]}
+- {letter: k,  place: dorsal,  manner: stop,         voiced: false, strokes: [[4, 3]]}
+- {letter: g,  place: dorsal,  manner: stop,         voiced: true,  strokes: [[4, 3]]}
+- {letter: kj, place: dorsal,  manner: palatal stop, voiced: false, strokes: [[4, 3], [3, 2]]}
+- {letter: gj, place: dorsal,  manner: palatal stop, voiced: true,  strokes: [[4, 3], [3, 2]]}
+- {letter: ng, place: dorsal,  manner: nasal,        voiced: false, strokes: [[4, 3], [4, 5]]}
+- {letter: j,  place: dorsal,  manner: glide,        voiced: false, strokes: [[4, 3], [3, 2], [4, 5]]}
+- {letter: h,  place: glottal, manner: fricative,    voiced: false, strokes: [[0, C]]}
+
+# Vowels are four-pointed stars (half-size 4.4) placed on a node, laid out like a vowel chart:
+# front vowels on the right, back vowels on the left, the low vowel at the bottom.
+vowels:
+- {letter: y, node: 0, note: high front rounded; the top point}
+- {letter: i, node: 1}
+- {letter: e, node: 2}
+- {letter: a, node: 3}
+- {letter: ə, node: 4, note: "the unstressed e of final syllables (-en, -er, -ade). The romanization writes e; Lysrit writes the difference."}
+- {letter: o, node: 5}
+- {letter: u, node: 6}
+
+diphthongs:
+- {spelling: ei, stars: [e, i]}
+- {spelling: ay, stars: [e, i]}
+- {spelling: au, stars: [a, u]}
+- {spelling: ou, stars: [o, u]}
+
+marks:
+- {name: voiced, form: "lit centre: filled star-coloured dot, radius 2.7"}
+- {name: long vowel, form: "ring of radius 6.2 around the vowel star"}
+- {name: geminate, form: "short bar under the cell, from x 14 to 26 at y 41.5"}
+- {name: number, form: "bar over the cell, the full cell width at y 2.6, so adjacent number cells join into one bar"}
+- {name: sacred, form: "violet seven-pointed star (heptagram, outer radius 9, inner 3.8) in a 26-unit cell before a holy word"}
+
+cells:
+- A cell holds at most one consonant and the vowel stars that follow it (at most two).
+- A vowel with no consonant before it, or a third vowel, opens an empty cell of its own.
+- A doubled consonant is one geminate cell; a doubled vowel is one long star.
+- th, kj, gj and ng are single consonants. ei, ay, au and ou are two stars in one cell.
+- c, q, x and z are not Norsund letters. When a foreign name must be written they become k, k, ks and s.
+- An unstressed e in the last syllable of a word of two or more syllables is drawn as ə (node 4).
+- Words are separated by a gap of 14 units, or by the word divider in inscriptions.
+
+# Numerals. All number cells carry the number bar. Write digits most significant first, in base ten.
+numerals:
+  system: >
+    1 to 7 trace the rim clockwise from the top point, one edge per unit; 7 is the closed heptagon, the "full count".
+    8 lights the centre of the closed heptagon; 9 adds the ray from the centre to the top point. 0 is a hollow
+    centre, nuth "the void". The long hundred (langhaun, 120) is the closed heptagon with Auristar's seven-pointed star
+    drawn inside it in fine lines; it is used as a unit sign in old market reckoning (3 + long hundred = 360).
+  digits:
+  - {digit: 0, strokes: [], centre_ring: true}
+  - {digit: 1, strokes: [[0, 1]]}
+  - {digit: 2, strokes: [[0, 1], [1, 2]]}
+  - {digit: 3, strokes: [[0, 1], [1, 2], [2, 3]]}
+  - {digit: 4, strokes: [[0, 1], [1, 2], [2, 3], [3, 4]]}
+  - {digit: 5, strokes: [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5]]}
+  - {digit: 6, strokes: [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6]]}
+  - {digit: 7, strokes: [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 0]]}
+  - {digit: 8, strokes: [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 0]], centre_dot: true}
+  - {digit: 9, strokes: [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 0], [C, 0]], centre_dot: true}
+  long_hundred:
+    strokes: [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 0]]
+    fine_strokes: [[0, 3], [3, 6], [6, 2], [2, 5], [5, 1], [1, 4], [4, 0]]
+  examples:
+  - {number: 7, note: "one closed heptagon: the Seven Lights, the seven days of the Council games"}
+  - {number: 523208, note: "Auristar's population: six number cells under one bar"}
+
+# Punctuation cells are 14 units wide.
+punctuation:
+- {mark: "·", name: word divider, form: small diamond at mid-height, use: inscriptions and carved lines}
+- {mark: ",", name: comma, form: short vertical stroke low in the cell}
+- {mark: ".", name: full stop, form: two vertical strokes}
+- {mark: "?", name: question, form: vertical stroke under a small star}
+- {mark: "!", name: exclamation, form: vertical stroke over a dot}
+
+# A sentence may end with a sigil instead of the written evidential particle.
+evidential_sigils:
+- {particle: sa,    meaning: I saw it,               form: "a ring around a star at the centre (an eye)"}
+- {particle: sund,  meaning: so it is sung,          form: "three stars across the middle: nodes 5, centre, 2"}
+- {particle: stari, meaning: so the stars say,       form: "a star on every rim node: the full sky"}
+
+sacred_names: [Auristar, Ur, Nett, Myr, Heid, Lysmar, Naum, Fyren, Firen, Stevlysen, Sevlysen, Norstar, Stardul]
+
+rules:
+- id: LYS-01
+  title: Building a word
+  rule: >
+    Split the word into consonants and vowels, group each consonant with the vowels that follow it, and draw one cell per
+    group: the consonant's strokes, the lit centre if it is voiced, then the vowel stars.
+  examples:
+  - {form: Auristar, cells: "[au] r[i] s t[a] r"}
+  - {form: Thiolden, cells: "th[io] l d[ə] n"}
+  - {form: Kjoldmur, cells: "kj[o] l d m[u] r"}
+
+- id: LYS-02
+  title: Holy names
+  rule: Gods, the Auristar, the Seven Lights and the Fall of the Star take the violet sacred mark before them.
+
+- id: LYS-03
+  title: Inscription style
+  rule: >
+    In carved stone the strokes are V-cut, the grid nodes are drilled, and vowel stars and lit centres are set with
+    Starifjolden crystal. Words are separated by the diamond divider instead of a space.
+
+- id: LYS-04
+  title: Cursive (scribal hand)
+  rule: >
+    Scribes of the Starlight Library write a fast hand in which the grid nodes are left out, stars become plain dots, and
+    the last stroke of each cell runs on into the first stroke of the next along the baseline. The cursive is never used
+    for holy names, which are always written in full cells.
+
+- id: LYS-05
+  title: Light-writing at night
+  rule: >
+    Because every letter is a pattern of points, Lysrit can be written with lights alone: lit windows or crystal studs at the
+    node positions spell words across a tower face after dark. Stars and lit centres burn brightest; strokes are implied.
+
+design_notes:
+- The script's single physical metaphor is the constellation. Keep strokes straight, stars four-pointed and the grid visible.
+- "Palette: ink in deep navy (#121733) on white stone, stars and lit centres in cyan (#0a7584 on light, #8ef0ff on dark), sacred marks in violet (#8a33a8)."
+- For stained glass, strokes become lead lines, stars become small cyan panes and the lit centre a jewel; the heptagon rim may be leaded as a frame.
+- For techwear, each cell suits embroidery or laser-cut panels; a word reads well as a vertical strip of cells on a sleeve or strap.
+- In game UI, keep cells at 24 px or larger; below that, drop the grid nodes.
+- Lysrit has no circles crossed by lines and no spoked wheels. The only radial figures are Auristar's own seven-pointed star and the heptagon.

@@ -1,0 +1,153 @@
+document: lang-script/v1
+script: runar
+name: The runes (runar)
+meaning: runes (run "rune, secret" + inanimate plural -ar)
+language: norsund
+also_used_for: old-norsund
+version: 1.0.0
+contributor: Vledic#0001
+status: ratified
+type: alphabet (one rune per sound)
+direction: left to right; on round stones and staffs the line may turn with the surface
+context:
+- The everyday script of Thiolden, inherited from the Old Norsund settlers of Farheim.
+- Canon (records/user-submitted-stories/marv.yaml) says runes are "just the written word of the people alive at that time". Runes become rune magic only when charged with aether, and a charged rune glows. Auristar forbids rune magic but not rune writing, so runes in Auristar never glow.
+- These runes are an original design for the Drunken Dragon Universe. Some single shapes coincide with historical runes, but with different sound values; runar are not a cipher of the Elder or Younger Futhark.
+- tools/norsund/scripts.js renders runes to SVG from these tables; assets/fonts/Runar-Regular.otf (long-branch) and Runar-Twig.otf (short-twig) type them.
+
+# Geometry. The stave runs from (0, 0) at the top to (0, 1) at the bottom; x grows to the right.
+# Every rune has the stave [[0, 0], [0, 1]]; only the other strokes are listed.
+geometry:
+  stave: [[0, 0], [0, 1]]
+  stroke_caps: square (cut, not drawn)
+  elements:
+  - {name: falling branch (right), at: r, points: "[[0, r], [0.5, r+0.3]]"}
+  - {name: rising branch (right),  at: r, points: "[[0, r+0.3], [0.5, r]]"}
+  - {name: bow (right),            at: r, points: "[[0, r], [0.42, r+0.15], [0, r+0.3]]"}
+  - {name: rising branch (left),   at: r, points: "[[0, r+0.3], [-0.4, r]]"}
+  - {name: falling branch (left),  at: r, points: "[[0, r], [-0.4, r+0.3]]"}
+  - {name: bow (left),             at: r, points: "[[0, r], [-0.36, r+0.15], [0, r+0.3]]"}
+  - {name: heel (voicing),         points: "[[0, 1], [0.22, 1]]"}
+  - {name: palatal dot,            points: "[0.24, 0.55]"}
+  heights: {top: 0, middle: 0.35, low: 0.7}
+
+design_principles:
+- Consonants carry their strokes on the right of the stave; vowels on the left. No rune has strokes on both sides.
+- Where the sound is made decides the stroke: lips use a bow, the tongue tip a falling branch, the back of the mouth a rising branch.
+- How it is made decides the height. Stops use the top, fricatives the middle, nasals the bottom; liquids and glides use two strokes.
+- A voiced stop or fricative adds the heel at the foot of the stave.
+- kj and gj are k and g with the palatal dot.
+- Vowels are single strokes on the left. Front vowels rise (i, e), back vowels fall (o, u), and a and y are bows.
+- No curves. Every stroke can be cut with a knife across or along the grain.
+
+# The rune row (runrad) in its traditional order: lips, tongue tip, back of the mouth, vowels.
+runes:
+- {letter: p,  name: plog,   gloss: plough,        family: labial,  pua: U+E100, lines: [[[0, 0], [0.42, 0.15], [0, 0.3]]]}
+- {letter: b,  name: brod,   gloss: sibling,       family: labial,  pua: U+E101, lines: [[[0, 0], [0.42, 0.15], [0, 0.3]], [[0, 1], [0.22, 1]]]}
+- {letter: f,  name: fyr,    gloss: fire,          family: labial,  pua: U+E102, lines: [[[0, 0.35], [0.42, 0.5], [0, 0.65]]]}
+- {letter: v,  name: vil,    gloss: free,          family: labial,  pua: U+E103, lines: [[[0, 0.35], [0.42, 0.5], [0, 0.65]], [[0, 1], [0.22, 1]]]}
+- {letter: m,  name: mar,    gloss: height,        family: labial,  pua: U+E104, lines: [[[0, 0.7], [0.42, 0.85], [0, 1]]]}
+- {letter: w,  name: wander, gloss: wanderer,      family: labial,  pua: U+E105, lines: [[[0, 0.35], [0.42, 0.5], [0, 0.65]], [[0, 0.7], [0.42, 0.85], [0, 1]]]}
+- {letter: t,  name: tar,    gloss: "tear, drop",  family: coronal, pua: U+E106, lines: [[[0, 0], [0.5, 0.3]]]}
+- {letter: d,  name: den,    gloss: land,          family: coronal, pua: U+E107, lines: [[[0, 0], [0.5, 0.3]], [[0, 1], [0.22, 1]]]}
+- {letter: th, name: thiol,  gloss: brave,         family: coronal, pua: U+E108, lines: [[[0, 0.35], [0.5, 0.65]]]}
+- {letter: s,  name: sund,   gloss: "song, voice", family: coronal, pua: U+E109, lines: [[[0, 0.35], [0.5, 0.65]], [[0, 0.7], [0.5, 1]]]}
+- {letter: n,  name: nim,    gloss: night,         family: coronal, pua: U+E10A, lines: [[[0, 0.7], [0.5, 1]]]}
+- {letter: l,  name: lys,    gloss: light,         family: coronal, pua: U+E10B, lines: [[[0, 0], [0.5, 0.3]], [[0, 0.35], [0.5, 0.65]]]}
+- {letter: r,  name: run,    gloss: "rune, secret", family: coronal, pua: U+E10C, lines: [[[0, 0], [0.5, 0.3]], [[0, 0.7], [0.5, 1]]]}
+- {letter: k,  name: kyr,    gloss: blade,         family: dorsal,  pua: U+E10D, lines: [[[0, 0.3], [0.5, 0]]]}
+- {letter: g,  name: grjot,  gloss: stone,         family: dorsal,  pua: U+E10E, lines: [[[0, 0.3], [0.5, 0]], [[0, 1], [0.22, 1]]]}
+- {letter: kj, name: kjold,  gloss: ward,          family: dorsal,  pua: U+E10F, lines: [[[0, 0.3], [0.5, 0]]], dots: [[0.24, 0.55]]}
+- {letter: gj, name: gjal,   gloss: echo,          family: dorsal,  pua: U+E110, lines: [[[0, 0.3], [0.5, 0]], [[0, 1], [0.22, 1]]], dots: [[0.24, 0.55]]}
+- {letter: h,  name: heim,   gloss: home,          family: dorsal,  pua: U+E111, lines: [[[0, 0.65], [0.5, 0.35]]]}
+- {letter: ng, name: ung,    gloss: offspring,     family: dorsal,  pua: U+E112, lines: [[[0, 1], [0.5, 0.7]]]}
+- {letter: j,  name: jor,    gloss: steed,         family: dorsal,  pua: U+E113, lines: [[[0, 0.65], [0.5, 0.35]], [[0, 1], [0.5, 0.7]]]}
+- {letter: a,  name: aur,    gloss: silver-bright, family: vowel,   pua: U+E114, lines: [[[0, 0.7], [-0.36, 0.85], [0, 1]]]}
+- {letter: e,  name: esk,    gloss: ash tree,      family: vowel,   pua: U+E115, lines: [[[0, 0.65], [-0.4, 0.35]]]}
+- {letter: i,  name: ilin,   gloss: holy,          family: vowel,   pua: U+E116, lines: [[[0, 0.3], [-0.4, 0]]]}
+- {letter: o,  name: oude,   gloss: old,           family: vowel,   pua: U+E117, lines: [[[0, 0.35], [-0.4, 0.65]]]}
+- {letter: u,  name: ulf,    gloss: wolf,          family: vowel,   pua: U+E118, lines: [[[0, 0.7], [-0.4, 1]]]}
+- {letter: y,  name: ylv,    gloss: water,         family: vowel,   pua: U+E119, lines: [[[0, 0], [-0.36, 0.15], [0, 0.3]]]}
+
+variants:
+- id: long-branch
+  use: stone, monuments, boundary stones, anything meant to last
+  rule: the strokes as listed above
+- id: short-twig
+  use: wood, bone, tallies, letters and everyday notes
+  rule: >
+    Every stroke is pulled halfway toward the point where it meets the stave (a falling branch from (0, r) ends at
+    (0.25, r + 0.15); a bow keeps its centre and halves its size). Stave, heel position and dots stay where they are.
+  pua_offset: U+E140
+
+spelling:
+- One rune per sound. th, kj, gj and ng are single runes.
+- Long vowels and double consonants are written by repeating the rune (aa, ll).
+- Diphthongs (ei/ay, au, ou) are two runes. The unstressed e of endings is the e rune.
+- c and q are written with the k rune, x with k + s, z with s.
+- Words are separated by a single dot (·) and sentences by two dots (:), as on old runestones.
+
+numerals:
+  system: >
+    Runes have no digit signs. Numbers are written as words, or in merchants' tallies: one tally group per decimal digit,
+    most significant first. One to four are short notches; five is a "hand", a long stroke slanted across four notches;
+    six to nine are a hand followed by notches; zero is a short level dash. Vilnayan merchants also count goods in long
+    hundreds (langhaun, 120), cutting a notch on a separate stick for each long hundred.
+  notch: [[0, 0.35], [0, 1]]
+  hand: [[-0.15, 0.95], [0.75, 0.4]]
+  zero: [[0, 0.65], [0.2, 0.65]]
+
+punctuation:
+- {mark: "·", name: word divider, form: single square dot at mid-height}
+- {mark: ":", name: sentence end, form: two square dots}
+
+magic:
+- Writing a rune is not magic. A rune becomes magic only when the carver charges it with aether while cutting it.
+- A charged rune glows (cyan-white in art). Glow is the only visual sign of rune magic.
+- "Auristar law: runes may be written anywhere in the city, but never charged. In Auristar art and character design, runes never glow."
+- The rune magic used at Marheim (50 a.v.e.) was a mass charging of runes cut into siege charges; that is why the undead rose there.
+- Rune names are recited when carving charged runes; a wrongly cut or wrongly named rune is the classic cause of a spell gone wrong.
+
+# Names used for runes that are not yet in the Norsund dictionary; add them to records/languages/norsund/dictionary.
+new_words:
+- {lemma: plog, pos: noun, class: inanimate, gloss: [plough], note: name of the p rune}
+- {lemma: gjal, pos: noun, class: inanimate, gloss: [echo], note: name of the gj rune}
+- {lemma: ung,  pos: noun, class: animate,   gloss: [offspring, child], note: "name of the ng rune; the same element as the parent-name suffix -ung"}
+- {lemma: esk,  pos: noun, class: inanimate, gloss: [ash tree], note: name of the e rune}
+
+hate_symbol_screening:
+  status: Screened 2026-11-19 against the listed ADL entries; no rune matches. The rules below are enforced by tools/test/scripts.test.mjs in CI.
+  avoided:
+  - Othala / Odal rune, with or without "wings" or feet (a diamond on two legs)
+  - Algiz / "Life rune" (a stave with a symmetric fork) and the inverted "Death rune"
+  - Tiwaz / "Tyr rune" (an arrow pointing up)
+  - Sowilo / "Sig rune", single or doubled (lightning-bolt zigzag)
+  - Wolfsangel (a Z or hook with a crossbar)
+  - Hagal (Armanen six-armed rune, a stave crossed by an X)
+  - Black Sun (sunwheel of sig runes), Totenkopf, Celtic cross (cross in a circle), triskele and sunwheels
+  - swastika-like composites and bind-runes of any of the above
+  how:
+  - No rune has strokes on both sides of the stave, so no rune can form a symmetric fork, an arrowhead, an X or a crossed stave.
+  - No rune is a closed diamond, and no rune has a zigzag without a stave.
+  - The t rune is not called "tyr", to avoid the "Tyr rune" association; it is tar "tear, drop".
+  - Bind-runes (two runes sharing one stave) are not part of runar. Logos, sigils and props must not stack runes into composite marks.
+  - Lysrit has no spoked wheels or crossed circles; its only radial figures are Auristar's seven-pointed star and the heptagon.
+  screened: "2026-11-19: all 26 rune forms and all Lysrit letters compared with the entries above; none matches."
+  enforced_by: "tools/test/scripts.test.mjs: one stave per rune, strokes on one side only, no stroke crossing the stave, no duplicate or mirror-image runes"
+  composite_art: >
+    New composite marks (logos, emblems, merchandise, stacked or rotated glyphs) are compared against the ADL Hate Symbols
+    database (https://www.adl.org/resources/hate-symbols/search) as step 4 of the art release checklist in
+    docs/languages/norsund/writing-systems.md.
+
+rules:
+- id: RUN-01
+  title: Reading direction
+  rule: Left to right. Consonants "look forward" (strokes to the right) and vowels "look back" (strokes to the left).
+- id: RUN-02
+  title: Which form to cut
+  rule: Long-branch for stone and anything permanent, short-twig for wood, bone and quick notes. Both spell the same way.
+- id: RUN-03
+  title: Never glowing in Auristar
+  rule: >
+    Runes on Auristar buildings, armour and clothing are cut, inked, embroidered or inlaid, but never glowing.
+    A glowing rune in Auristar is a crime scene.

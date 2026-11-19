@@ -1,0 +1,326 @@
+document: lang-text/v1
+language: norsund
+version: 1.0.0
+topic: Texts of Thiolden
+contributor: Vledic#0001
+context:
+- Texts as they are spoken, sung and carved in the world: oaths, songs, laws, market talk, verse, watch calls, news and blessings.
+
+texts:
+- id: vilkyr-oath
+  title: The Vilkyr oath (modern Norsund)
+  register: common
+  source: records/thiolden/vilnayan.yaml (the Vilkyren's code); Old Norsund version in records/languages/old-norsund/texts.yaml
+  context: >
+    Sworn by a new Vilkyr, hand on blade, before two witnesses. Most guild halls still use the Old Norsund wording; this
+    modern version is used in Vilnayan towns that have no oath-keeper who knows the old tongue. An oath requires sa.
+  lines:
+  - text: "Vil kyrin, vothen sundin."
+    morphemes: "vil kyr-in voth-en sund-in"
+    gloss: "free blade-DEF bind-PTCP word-DEF"
+    translation: "Free the blade, bound the word."
+  - text: "Em vether a kyr eth a thamm."
+    morphemes: "em veth-er a kyr eth a thamm"
+    gloss: "1SG swear-PRS on blade and on hand"
+    translation: "I swear on blade and on hand."
+  - text: "Ter Thiolden, ter heim eth nay, kjolder em."
+    morphemes: "ter Thiolden ter heim eth nay kjold-er em"
+    gloss: "for Thiolden for home and folk guard-PRS 1SG"
+    translation: "For Thiolden, for home and folk, I keep watch."
+  - text: "Skrimmin thiarker em, eth em vysker ne."
+    morphemes: "skrimm-in thiark-er em eth em vysk-er ne"
+    gloss: "monster-DEF hunt-PRS 1SG and 1SG flee-PRS NEG"
+    translation: "The monster I hunt, and I do not flee."
+  - text: "Emi kyr biter sal ke es vond."
+    morphemes: "emi kyr bit-er sal ke es vond"
+    gloss: "1SG.POSS blade bite-PRS 3SG.AN.OBJ REL be.PRS evil"
+    translation: "My blade bites the one who is evil."
+  - text: "Ur eth Nett es emi sajiren, sa."
+    morphemes: "Ur eth Nett es emi sajir-en sa"
+    gloss: "Ur and Nett be.PRS 1SG.POSS witness-PL.AN EVID.SEEN"
+    translation: "Ur and Nett are my witnesses, as I see them."
+  - text: "Sof em brester vethin, ma emi kyr bita om."
+    morphemes: "sof em brest-er veth-in ma emi kyr bit-a om"
+    gloss: "if 1SG break-PRS oath-DEF OPT 1SG.POSS blade bite-INF 1SG.OBJ"
+    translation: "If I break the oath, may my blade bite me."
+  - text: "Sva vether em, sa."
+    morphemes: "sva veth-er em sa"
+    gloss: "thus swear-PRS 1SG EVID.SEEN"
+    translation: "Thus I swear, before witnesses."
+  notes:
+  - "Compare the Old Norsund oath: it has cases and no evidentials, so it calls the gods as witnesses instead of using sa."
+  - "Line 4 puts the object first (skrimmin) and the subject after the verb (SYN-01)."
+  - "Line 7: after a fronted if-clause, ma takes the verb-second slot (VERB-08)."
+
+- id: kilias-song
+  title: Kilia's song for Winterbeard's Sigil
+  register: poetic
+  source: records/user-submitted-stories/dvwl.yaml (Kilia's new song)
+  context: >
+    The bard Kilia's song, sung every time she visits Winterbeard's Sigil (Jalkvyrski Sjen) in the Fourth Ring of Auristar.
+    This is a sung translation: it keeps the meaning and the eight-line shape, not the English rhymes.
+  lines:
+  - text: "Heia, wanderen, nolv eth far,"
+    morphemes: "heia wander-en nolv eth far"
+    gloss: "hey wanderer-PL.AN near and far"
+    translation: "Come, travellers, near and far,"
+  - text: "lid ve Jalkvyrski Sjen, kur aul es i kerin."
+    morphemes: "lid ve Jalkvyrsk-i sjen kur aul es i ker-in"
+    gloss: "come.IMP to Winterbeard-GEN sigil where ale be.PRS in jug-DEF"
+    translation: "come to Winterbeard's Sigil, where the ale is in the jug."
+  - text: "Fyrin es dalg, aulin es kjeldug,"
+    morphemes: "fyr-in es dalg aul-in es kjeldug"
+    gloss: "fire-DEF be.PRS warm ale-DEF be.PRS cold"
+    translation: "The fire is warm, the ale is cool,"
+  - text: "eth frastarne es nekuna tump."
+    morphemes: "eth frast-arne es nekuna tump"
+    gloss: "and story-DEF.PL.IN be.PRS never dull"
+    translation: "and the stories are never dull."
+  - text: "Bast kjalar hytter dy i denin,"
+    morphemes: "bast kjal-ar hytt-er dy i den-in"
+    gloss: "best drink-PL.IN find-PRS 2SG in land-DEF"
+    translation: "The best drinks in the land you'll find here,"
+  - text: "byrdad ur bliddast themm."
+    morphemes: "byrd-ad ur blidd-ast themm"
+    gloss: "serve-PTCP from kind-SUPL hand.PL"
+    translation: "served by the kindest hands."
+  - text: "Lid, kjal hjo omen, eth lemb yn drypling,"
+    morphemes: "lid kjal hjo omen eth lemb yn drypling"
+    gloss: "come.IMP drink.IMP with 1PL.OBJ and stay.IMP one moment"
+    translation: "Come, drink with us, and stay a while,"
+  - text: "eth del dyni frastar, morkvod aft morkvod."
+    morphemes: "eth del dyni frast-ar morkvod aft morkvod"
+    gloss: "and share.IMP 2PL.POSS story-PL.IN mile after mile"
+    translation: "and share your tales, mile after mile."
+  notes:
+  - "Line 5 fronts the object (bast kjalar) for emphasis, so the subject dy follows the verb (SYN-01)."
+  - "themm 'hands' is an umlaut plural of thamm (NOUN-03)."
+  - "Kilia addresses a crowd, so she uses the plural dyni 'your'."
+
+- id: kjoldmur-law
+  title: Laws of the Kjoldmur
+  register: carved
+  source: records/thiolden/auristar/auristar.yaml (the rune-magic ban; the rings of the Kjoldmur)
+  context: >
+    Carved in the gatehouse of the Fifth Ring, where the city's courts sit. The Old Norsund formula above the First Ring
+    gate (records/languages/old-norsund/texts.yaml) is older; these are the common-tongue laws every citizen is expected to know.
+  lines:
+  - text: "Fjol starin lyser run ne."
+    morphemes: "fjol star-in lys-er run ne"
+    gloss: "under star-DEF shine-PRS rune NEG"
+    translation: "Beneath the star, no rune shines."
+  - text: "Sel ke sjoler run i burdin, hal vesa skarnad."
+    morphemes: "sel ke sjol-er run i burd-in hal ves-a skarn-ad"
+    gloss: "3SG.AN REL charge-PRS rune in city-DEF FUT be-INF punish-PTCP"
+    translation: "Whoever charges a rune with aether in the city shall be punished."
+  - text: "Saning ute sa es sundmal."
+    morphemes: "saning ute sa es sundmal"
+    gloss: "testimony without EVID.SEEN be.PRS hearsay"
+    translation: "Testimony without sa is hearsay."
+  - text: "Al kivid kjolder Kjoldmurin, eth Kjoldmurin kjolder al kivid."
+    morphemes: "al kivid kjold-er Kjoldmur-in eth Kjoldmur-in kjold-er al kivid"
+    gloss: "every citizen guard-PRS Kjoldmur-DEF and Kjoldmur-DEF guard-PRS every citizen"
+    translation: "Every citizen guards the Kjoldmur, and the Kjoldmur guards every citizen."
+  - text: "I nimin ganer nekum thurg portin."
+    morphemes: "i nim-in gan-er nekum thurg port-in"
+    gloss: "in night-DEF go-PRS nobody through gate-DEF"
+    translation: "At night, no one passes through the city gate."
+  - text: "Sva es lag."
+    morphemes: "sva es lag"
+    gloss: "thus be.PRS law"
+    translation: "Thus is the law."
+  notes:
+  - "Line 2: the whole subject sel ke sjoler run i burdin comes first, then the verb (SYN-01)."
+  - "Line 3 is the rule behind EVID-02: in an Auristar court, testimony must carry sa."
+
+- id: canal-haggle
+  title: Haggling on a canal boat
+  register: starisund
+  source: new
+  context: >
+    A pot-seller on a rieskei (canal boat) in the Fourth Ring and a citizen leaning over the quay. Both use the polite
+    plural dyn, as Aurinay do with strangers. The seller ends a price with stari, a joke every Auristar market knows.
+  lines:
+  - speaker: seller
+    text: "Lys dyn! Hes kjelin es fjelg eth helt smidad."
+    morphemes: "lys dyn hes kjel-in es fjelg eth hel-t smid-ad"
+    gloss: "light 2PL this pot-DEF be.PRS beautiful and good-ADV make-PTCP"
+    translation: "Light to you! This pot is beautiful and well made."
+  - speaker: buyer
+    text: "Eth dyn lys. Kumik metter at?"
+    morphemes: "eth dyn lys kumik mett-er at"
+    gloss: "and 2PL light how.much cost-PRS 3SG.IN"
+    translation: "And light to you. How much is it?"
+  - speaker: seller
+    text: "Ves aurlingar, stari."
+    morphemes: "ves aurling-ar stari"
+    gloss: "four silver.penny-PL.IN EVID.FATED"
+    translation: "Four silver pennies, as the stars decree."
+  - speaker: buyer
+    text: "Ves? At metter ful myk! Dov."
+    morphemes: "ves at mett-er ful myk dov"
+    gloss: "four 3SG.IN cost-PRS very much two"
+    translation: "Four? That's far too much! Two."
+  - speaker: seller
+    text: "Dov? Ne. Thrim, eth dyn henser ok lagelin."
+    morphemes: "dov ne thrim eth dyn hens-er ok lagel-in"
+    gloss: "two no three and 2PL take-PRS also flask-DEF"
+    translation: "Two? No. Three, and you take the flask as well."
+  - speaker: buyer
+    text: "Thrim eth lagelin? Hel, ma emen merka!"
+    morphemes: "thrim eth lagel-in hel ma emen merk-a"
+    gloss: "three and flask-DEF yes OPT 1PL trade-INF"
+    translation: "Three and the flask? Yes, let's deal!"
+  - speaker: seller
+    text: "Mund! Ma staren kjolda dun."
+    morphemes: "mund ma star-en kjold-a dun"
+    gloss: "thanks OPT star-PL.AN guard-INF 2PL.OBJ"
+    translation: "Thanks! May the stars keep you."
+  - speaker: buyer
+    text: "Starkjold!"
+    morphemes: "starkjold"
+    gloss: "farewell"
+    translation: "Farewell!"
+  notes:
+  - "Starisund accent: the seller says [ˈsta.rəŋ] and [duŋ] (PHON-10)."
+  - "Starkjold 'farewell' is the blessing ma staren kjolda du worn down to one word."
+
+- id: praise-of-the-lights
+  title: Praise of the Seven Lights (sundlag)
+  register: poetic
+  source: records/thiolden/auristar/characters/ (Tyr, Ulf, Haakon, Othil); the Third Light's death
+  context: >
+    A praise poem sung on the steps of the Starirauggheim on Stardulvelth, the Feast of the Fall of the Star. Each line has two
+    half-lines (·); the first stressed word of the second half alliterates with a stressed word of the first (POET-01).
+  lines:
+  - text: "Sund!"
+    morphemes: "sund"
+    gloss: "song"
+    translation: "Hear the song!"
+  - text: "Stevlysen ur ljomin · lyser ymb kvitburdin,"
+    morphemes: "stev-lys-en ur ljom-in lys-er ymb kvitburd-in"
+    gloss: "seven-light-PL.AN from radiance-DEF shine-PRS around white.city-DEF"
+    translation: "The Seven Lights from the radiance · shine around the white city,"
+  - text: "selen kjolder starigandar, · kjoldar i kyrsundin."
+    morphemes: "selen kjold-er starigand-ar kjold-ar i kyrsund-in"
+    gloss: "3PL.AN guard-PRS star.road-PL.IN shield-PL.IN in blade.song-DEF"
+    translation: "they guard the star-roads, · shields in the blade-song."
+  - text: "Tyr, hyrski tyr, · trammer for fylkin;"
+    morphemes: "Tyr hyrsk-i tyr tramm-er for fylk-in"
+    gloss: "Tyr spear-GEN point march-PRS before host-DEF"
+    translation: "Tyr, the spear's point, · marches before the host;"
+  - text: "Ulf i ritheimin, · ura i skyn;"
+    morphemes: "Ulf i ritheim-in ura i skyn"
+    gloss: "Ulf in library-DEF first in knowledge"
+    translation: "Ulf in the library, · foremost in knowledge;"
+  - text: "Haakon hjo nettkraft · heler al skeng;"
+    morphemes: "Haakon hjo nettkraft hel-er al skeng"
+    gloss: "Haakon with sky.power mend-PRS all pain"
+    translation: "Haakon with the sky's power · heals every pain;"
+  - text: "Othil, oude sundir, · orth ur aftorvin;"
+    morphemes: "Othil oude sund-ir orth ur aftorv-in"
+    gloss: "Othil old sing-AGT renown out.of past-DEF"
+    translation: "Othil, the old singer, · renown from times past;"
+  - text: "Thrimde Lys i nettin · thiolast mid staren."
+    morphemes: "thrim-de lys i nett-in thiol-ast mid star-en"
+    gloss: "three-ORD light in sky-DEF brave-SUPL among star-PL.AN"
+    translation: "The Third Light in the heavens · bravest among the stars."
+  - text: "Sva sundade em, stari."
+    morphemes: "sva sund-ade em stari"
+    gloss: "thus sing-PST 1SG EVID.FATED"
+    translation: "Thus I have sung, as the stars decree."
+  notes:
+  - "Alliteration: Stevlysen/ljomin with lyser (l); kjolder with kjoldar (kj); Tyr with trammer (t); Ulf, ura (vowels alliterate); Haakon with heler (h); Othil, oude, orth (vowels); Thrimde with thiolast (th)."
+  - "Kennings: kvitburd 'white city' (Auristar), starigand 'star-road' (canal), kyrsund 'blade-song' (battle), hyrski tyr 'the spear's point' (Tyr)."
+  - "The Third Light, killed by Dethiol, is praised as having transcended (stara) into the night sky."
+  - "Praise poems for the Lights close with stari instead of sund (POET-04)."
+
+- id: watch-call
+  title: Watch call of the Nimkjold
+  register: common
+  source: records/thiolden/vilnayan.yaml (the Nimkjold)
+  context: Cried from the walls of a Vilnayan town at each night hour, after three strokes on the gong (klemb).
+  lines:
+  - text: "Hir es Nimkjold! Thrimde nimdryp!"
+    morphemes: "hir es Nimkjold thrim-de nimdryp"
+    gloss: "here be.PRS night.guard three-ORD night.hour"
+    translation: "Here is the Night Guard! The third hour of the night!"
+  - text: "Grindarne es klinnad, eth fyrarne es kjoldad."
+    morphemes: "grind-arne es klinn-ad eth fyr-arne es kjold-ad"
+    gloss: "gate-DEF.PL.IN be.PRS lock-PTCP and fire-DEF.PL.IN be.PRS guard-PTCP"
+    translation: "The gates are locked, and the fires are watched."
+  - text: "Ute murin es skjareth eth nim."
+    morphemes: "ute mur-in es skjareth eth nim"
+    gloss: "outside wall-DEF be.PRS wild and night"
+    translation: "Outside the wall are the wild and the night."
+  - text: "I heimin es alkut hel."
+    morphemes: "i heim-in es alkut hel"
+    gloss: "in town-DEF be.PRS everything good"
+    translation: "In the town, all is well."
+  - text: "Svaf, lyd; emen kjolder."
+    morphemes: "svaf lyd emen kjold-er"
+    gloss: "sleep.IMP person.PL 1PL guard-PRS"
+    translation: "Sleep, people; we keep watch."
+
+- id: news-song
+  title: A Sundwanderen news-song
+  register: poetic
+  source: records/thiolden/auristar/characters/tyr.yaml and haakon.yaml (the murder of the Third Light; Tyr's campaign; Haakon's counsel)
+  context: >
+    How the death of the Third Light reached the Vilnayan towns: sung by a Sundwander in tavern after tavern. Every narrative
+    line carries sund, because the singer reports what others saw.
+  lines:
+  - text: "Sund!"
+    morphemes: "sund"
+    gloss: "song"
+    translation: "Hear the song!"
+  - text: "Thul ur kvitburdin, ur Midelmari mar:"
+    morphemes: "thul ur kvitburd-in ur Midelmar-i mar"
+    gloss: "news out.of white.city-DEF out.of Midelmar-GEN height"
+    translation: "News from the white city, from Midelmar's height:"
+  - text: "Lys Thrimde dauthade i nimin, sund."
+    morphemes: "lys thrim-de dauth-ade i nim-in sund"
+    gloss: "light three-ORD die-PST in night-DEF EVID.SUNG"
+    translation: "The Third Light died in the night, so it is sung."
+  - text: "Dethiol, Kullmyri skultir, hans seli anth, sund."
+    morphemes: "Dethiol Kullmyr-i skultir hans seli anth sund"
+    gloss: "Dethiol Kullmyr-GEN chief take.PST 3SG.AN.POSS breath EVID.SUNG"
+    translation: "Dethiol, chief of the Kullmyr, took the Light's breath, so it is sung."
+  - text: "Yt thiarker Tyr vrek, eth skrath nolver Thiolden, sund."
+    morphemes: "yt thiark-er Tyr vrek eth skrath nolv-er Thiolden sund"
+    gloss: "now hunt-PRS Tyr vengeance and war approach-PRS Thiolden EVID.SUNG"
+    translation: "Now Tyr hunts for vengeance, and war draws near Thiolden, so it is sung."
+  - text: "Ava Haakon meler: Ne brakk; mel!"
+    morphemes: "ava Haakon mel-er ne brakk mel"
+    gloss: "but Haakon say-PRS NEG fight.IMP speak.IMP"
+    translation: "But Haakon says: Do not fight; talk!"
+  - text: "Sva sundade em, sund."
+    morphemes: "sva sund-ade em sund"
+    gloss: "thus sing-PST 1SG EVID.SUNG"
+    translation: "Thus I sang it, as it is sung."
+
+- id: haakon-blessing
+  title: Haakon's healing blessing
+  register: sacred
+  source: records/thiolden/auristar/characters/haakon.yaml (he heals with the cosmic energy of the night sky)
+  context: Spoken by Haakon, the Fifth Light, over the sick who come to the observatory, with his orb raised.
+  lines:
+  - text: "Ma nettkraft nura du."
+    morphemes: "ma nettkraft nur-a du"
+    gloss: "OPT sky.power heal-INF 2SG.OBJ"
+    translation: "May the power of the sky heal you."
+  - text: "Ma Lysmar lysa ymb du."
+    morphemes: "ma Lysmar lys-a ymb du"
+    gloss: "OPT Lysmar shine-INF around 2SG.OBJ"
+    translation: "May Lysmar shine around you."
+  - text: "Ma Ur jova du anth, eth ma Nett jova du stilm."
+    morphemes: "ma Ur jov-a du anth eth ma Nett jov-a du stilm"
+    gloss: "OPT Ur give-INF 2SG.OBJ breath and OPT Nett give-INF 2SG.OBJ peace"
+    translation: "May Ur give you breath, and may Nett give you peace."
+  - text: "Heleth lider, stari."
+    morphemes: "heleth lid-er stari"
+    gloss: "health come-PRS EVID.FATED"
+    translation: "Health is coming; it is foretold."
+  notes:
+  - "Ur gives life (the Source) and Nett gives fulfilment (the Firmament): the two gods of Auristar in one line."
+  - "After a preposition, pronouns take the object form: ymb du 'around you' (PRON-01)."

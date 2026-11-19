@@ -1,0 +1,353 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: Qualities, colours and shapes
+field: qualities
+contributor: Vledic#0001
+defaults: {layer: native, tier: common, status: ratified, epoch: old}
+context:
+- "Adjectives go before the noun and never change. Most take -eth for the quality (gorm 'big' > gormeth 'size') and -a for a verb of becoming or making (dalg 'warm' > dalga 'to warm')."
+- "The adverb suffix -t only joins adjectives whose last consonant allows it (svilt, fjint); others use the adjective plainly after the verb."
+- "Colours of Auristar: the palette names the night sky (nettbylv indigo), the Auristar's water (glov cyan), and Kedre purple dye (porf), a luxury the empire taxed."
+- "Related words in other files include kjeld 'cold' and svethug 'ashen grey' (07), yng 'young' (03), thrakug 'strong' (04), fetha 'rich' (10), orla 'noble' (03), trov 'loyal' (03) and luskug 'false' (11)."
+
+entries:
+# --- Size and shape ---
+- lemma: gorm
+  pos: adj
+  gloss: [big, large, great]
+  tier: core
+  derived:
+  - {lemma: gormeth, pos: noun, class: inanimate, gloss: [size, bigness]}
+  - {lemma: gorma, pos: verb, class: weak, gloss: [to enlarge, to grow big]}
+- lemma: piv
+  pos: adj
+  gloss: [small, tiny]
+  tier: core
+  derived:
+  - {lemma: piveth, pos: noun, class: inanimate, gloss: [smallness]}
+  - {lemma: piva, pos: verb, class: weak, gloss: [to shrink, to dwindle]}
+  - {lemma: pivling, pos: noun, class: animate, gloss: [little one, tot (affectionate)]}
+- lemma: lang
+  pos: adj
+  gloss: [long]
+  tier: core
+  notes: "same word as the adverb lang 'long ago, for a long time'"
+  derived:
+  - {lemma: langeth, pos: noun, class: inanimate, gloss: [length]}
+  - {lemma: langa, pos: verb, class: weak, gloss: [to lengthen]}
+- lemma: kepp
+  pos: adj
+  gloss: [short]
+  tier: core
+  derived:
+  - {lemma: keppeth, pos: noun, class: inanimate, gloss: [shortness, brevity]}
+  - {lemma: keppa, pos: verb, class: weak, gloss: [to shorten]}
+- lemma: sveld
+  pos: adj
+  gloss: [wide, broad]
+  tier: core
+  derived:
+  - {lemma: sveldeth, pos: noun, class: inanimate, gloss: [width, breadth]}
+- lemma: trimp
+  pos: adj
+  gloss: [narrow, tight]
+  tier: core
+  derived:
+  - {lemma: trimpeth, pos: noun, class: inanimate, gloss: [narrowness]}
+  - {lemma: trimpa, pos: verb, class: weak, gloss: [to narrow, to tighten]}
+- lemma: dyrn
+  pos: adj
+  gloss: [thick]
+  tier: core
+  derived:
+  - {lemma: dyrneth, pos: noun, class: inanimate, gloss: [thickness]}
+- lemma: fjin
+  pos: adj
+  gloss: [thin, fine, slender]
+  tier: core
+  derived:
+  - {lemma: fjineth, pos: noun, class: inanimate, gloss: [fineness]}
+  - {lemma: fjina, pos: verb, class: weak, gloss: [to refine, to thin]}
+  - {lemma: fjint, pos: adv, gloss: [finely, delicately]}
+- lemma: svil
+  pos: adj
+  gloss: [light (not heavy)]
+  tier: core
+  notes: "the opposite of bolmug 'heavy' (12)"
+  derived:
+  - {lemma: svileth, pos: noun, class: inanimate, gloss: [lightness]}
+  - {lemma: svilt, pos: adv, gloss: [lightly]}
+- lemma: olv
+  pos: adj
+  gloss: [round]
+  tier: core
+  derived:
+  - {lemma: olva, pos: verb, class: weak, gloss: [to roll, to round]}
+  - {lemma: olveth, pos: noun, class: inanimate, gloss: [roundness]}
+- lemma: stip
+  pos: adj
+  gloss: [straight]
+  tier: core
+  derived:
+  - {lemma: stipa, pos: verb, class: weak, gloss: [to straighten]}
+  - {lemma: stipgand, pos: noun, class: inanimate, gloss: [straight road, highway], parts: [stip, gand]}
+- lemma: nedd
+  pos: adj
+  gloss: [low]
+  derived:
+  - {lemma: nedda, pos: verb, class: weak, gloss: [to lower]}
+  - {lemma: neddeth, pos: noun, class: inanimate, gloss: [lowness, humility]}
+- {lemma: fjola, pos: adj, gloss: [deep], parts: [fjol, a], tier: core, notes: "adjective from fjol 'the deep, under'"}
+
+# --- Colours ---
+- lemma: vyrm
+  pos: noun
+  class: inanimate
+  gloss: [colour, hue]
+  derived:
+  - {lemma: vyrma, pos: verb, class: weak, gloss: [to colour, to dye, to paint]}
+  - {lemma: vyrmir, pos: noun, class: animate, gloss: [dyer]}
+  - {lemma: vyrmug, pos: adj, gloss: [colourful, bright-hued]}
+  - {lemma: vyrmnuth, pos: adj, gloss: [colourless, pale]}
+- lemma: ryd
+  pos: adj
+  gloss: [red]
+  tier: core
+  derived:
+  - {lemma: ryda, pos: verb, class: weak, gloss: [to redden, to blush]}
+  - {lemma: rydeth, pos: noun, class: inanimate, gloss: [redness]}
+  - {lemma: kullryd, pos: adj, gloss: [orange (lit. ember-red)], parts: [kull, ryd]}
+- lemma: gilm
+  pos: adj
+  gloss: [yellow]
+  tier: core
+  derived:
+  - {lemma: gilmeth, pos: noun, class: inanimate, gloss: [yellowness]}
+- lemma: vorn
+  pos: adj
+  gloss: [black]
+  tier: core
+  derived:
+  - {lemma: vorna, pos: verb, class: weak, gloss: [to blacken]}
+  - {lemma: vorneth, pos: noun, class: inanimate, gloss: [blackness]}
+- lemma: bylv
+  pos: adj
+  gloss: [blue]
+  derived:
+  - {lemma: nettbylv, pos: adj, gloss: [indigo, deep night-blue (lit. sky-blue)], parts: [nett, bylv], notes: "the deep colour of Auristar's banners"}
+  - {lemma: bylvgryv, pos: adj, gloss: [slate, blue-grey], parts: [bylv, gryv]}
+- lemma: glov
+  pos: adj
+  gloss: [cyan, bright water-blue]
+  notes: "the colour of the Auristar's water"
+  derived:
+  - {lemma: nurglov, pos: adj, gloss: [mint, pale green-blue], parts: [nur, glov]}
+  - {lemma: gloveth, pos: noun, class: inanimate, gloss: [the cyan glow (of the Starifjolden waters)]}
+- lemma: porf
+  pos: adj
+  gloss: [purple]
+  layer: kedre
+  epoch: contact
+  etymology: "Kedre porfira 'purple dye', an imperial luxury"
+  derived:
+  - {lemma: lysporf, pos: adj, gloss: [magenta, bright purple], parts: [lys, porf]}
+  - {lemma: kvitporf, pos: adj, gloss: [lilac, pale purple], parts: [kvit, porf]}
+- lemma: gryv
+  pos: adj
+  gloss: [grey]
+  derived:
+  - {lemma: gryveth, pos: noun, class: inanimate, gloss: [greyness]}
+- lemma: morv
+  pos: adj
+  gloss: [brown]
+  derived:
+  - {lemma: morveth, pos: noun, class: inanimate, gloss: [brownness]}
+
+# --- Temperature, wetness and fullness ---
+- lemma: dalg
+  pos: adj
+  gloss: [warm]
+  tier: core
+  derived:
+  - {lemma: dalga, pos: verb, class: weak, gloss: [to warm, to heat]}
+  - {lemma: dalgeth, pos: noun, class: inanimate, gloss: [warmth]}
+  - {lemma: dalgheim, pos: noun, class: inanimate, gloss: [bathhouse, warm-house], parts: [dalg, heim]}
+- {lemma: fyrug, pos: adj, gloss: [hot, fiery], parts: [fyr, ug], tier: core}
+- {lemma: ylvug, pos: adj, gloss: [wet, watery], parts: [ylv, ug], tier: core}
+- lemma: skorr
+  pos: adj
+  gloss: [dry, parched]
+  tier: core
+  derived:
+  - {lemma: skorra, pos: verb, class: weak, gloss: [to dry]}
+  - {lemma: skorreth, pos: noun, class: inanimate, gloss: [dryness, drought]}
+- lemma: mydd
+  pos: adj
+  gloss: [full]
+  tier: core
+  derived:
+  - {lemma: mydda, pos: verb, class: weak, gloss: [to fill]}
+  - {lemma: myddeth, pos: noun, class: inanimate, gloss: [fullness]}
+  - {lemma: myddysk, pos: noun, class: inanimate, gloss: [full moon], parts: [mydd, ysk]}
+- lemma: tymm
+  pos: adj
+  gloss: [empty, hollow]
+  derived:
+  - {lemma: tymma, pos: verb, class: weak, gloss: [to empty]}
+  - {lemma: tymmeth, pos: noun, class: inanimate, gloss: [emptiness]}
+
+# --- Age, state and texture ---
+- lemma: friv
+  pos: adj
+  gloss: [new, fresh]
+  tier: core
+  derived:
+  - {lemma: friva, pos: verb, class: weak, gloss: [to renew]}
+  - {lemma: friveth, pos: noun, class: inanimate, gloss: [newness, freshness]}
+  - {lemma: frivheim, pos: noun, class: inanimate, gloss: [newly founded town], parts: [friv, heim]}
+- lemma: rosk
+  pos: adj
+  gloss: [rotten, decayed]
+  tier: core
+  derived:
+  - {lemma: roska, pos: verb, class: weak, gloss: [to rot, to decay]}
+  - {lemma: rosketh, pos: noun, class: inanimate, gloss: [rot, decay]}
+- lemma: flusk
+  pos: adj
+  gloss: [dirty, filthy]
+  tier: core
+  derived:
+  - {lemma: fluska, pos: verb, class: weak, gloss: [to soil, to dirty]}
+  - {lemma: flusketh, pos: noun, class: inanimate, gloss: [filth]}
+- lemma: sneld
+  pos: adj
+  gloss: [clean, pure]
+  derived:
+  - {lemma: snelda, pos: verb, class: weak, gloss: [to clean, to cleanse]}
+  - {lemma: sneldeth, pos: noun, class: inanimate, gloss: [cleanliness, purity]}
+  - {lemma: sneldir, pos: noun, class: animate, gloss: [cleaner, purifier]}
+- lemma: tump
+  pos: adj
+  gloss: [dull, blunt]
+  tier: core
+  notes: "the opposite of skarp 'sharp'"
+  derived:
+  - {lemma: tumpa, pos: verb, class: weak, gloss: [to blunt, to dull]}
+- lemma: slyv
+  pos: adj
+  gloss: [smooth, sleek]
+  tier: core
+  derived:
+  - {lemma: slyva, pos: verb, class: weak, gloss: [to smooth, to polish]}
+  - {lemma: slyvning, pos: noun, class: inanimate, gloss: [polish, sheen]}
+- lemma: skrapp
+  pos: adj
+  gloss: [rough, coarse]
+  derived:
+  - {lemma: skrappeth, pos: noun, class: inanimate, gloss: [roughness]}
+- lemma: kjarv
+  pos: adj
+  gloss: [hard, firm]
+  derived:
+  - {lemma: kjarva, pos: verb, class: weak, gloss: [to harden]}
+  - {lemma: kjarveth, pos: noun, class: inanimate, gloss: [hardness]}
+  - {lemma: kjarvgrjot, pos: noun, class: inanimate, gloss: [hardstone, granite], parts: [kjarv, grjot]}
+- lemma: molm
+  pos: adj
+  gloss: [soft]
+  derived:
+  - {lemma: molma, pos: verb, class: weak, gloss: [to soften]}
+  - {lemma: molmeth, pos: noun, class: inanimate, gloss: [softness]}
+
+# --- Distance and direction ---
+- lemma: nolv
+  pos: adj
+  gloss: [near, close]
+  tier: core
+  derived:
+  - {lemma: nolva, pos: verb, class: weak, gloss: [to approach, to draw near]}
+  - {lemma: nolvast, pos: adj, gloss: [nearest, next]}
+  - {lemma: nolveth, pos: noun, class: inanimate, gloss: [nearness]}
+- lemma: heg
+  pos: adj
+  gloss: [right (side)]
+  tier: core
+  derived:
+  - {lemma: kyrthamm, pos: noun, class: animate, gloss: [right hand (lit. blade-hand)], parts: [kyr, thamm], forms: {plural: kyrthemm}}
+- lemma: vonst
+  pos: adj
+  gloss: [left (side)]
+  tier: core
+  derived:
+  - {lemma: kjoldthamm, pos: noun, class: animate, gloss: [left hand (lit. shield-hand)], parts: [kjold, thamm], forms: {plural: kjoldthemm}}
+- {lemma: yrv, pos: noun, class: inanimate, gloss: [side, flank]}
+
+# --- Value and judgement ---
+- lemma: fjelg
+  pos: adj
+  gloss: [beautiful, fair]
+  derived:
+  - {lemma: fjelgeth, pos: noun, class: inanimate, gloss: [beauty]}
+  - {lemma: fjelga, pos: verb, class: weak, gloss: [to beautify]}
+  - {lemma: fjelgir, pos: noun, class: animate, gloss: [a beauty, a fair one]}
+- lemma: grums
+  pos: adj
+  gloss: [ugly]
+  derived:
+  - {lemma: grumseth, pos: noun, class: inanimate, gloss: [ugliness]}
+- lemma: sjand
+  pos: adj
+  gloss: ["true", real, genuine]
+  tier: core
+  derived:
+  - {lemma: sjandeth, pos: noun, class: inanimate, gloss: [truth]}
+  - {lemma: sjanda, pos: verb, class: weak, gloss: [to prove "true", to confirm]}
+  - {lemma: sjandir, pos: noun, class: animate, gloss: [witness, truth-teller], notes: "a witness swears with the evidential sa"}
+- lemma: ymp
+  pos: adj
+  gloss: [easy, simple]
+  derived:
+  - {lemma: ympeth, pos: noun, class: inanimate, gloss: [ease]}
+- {lemma: lagug, pos: adj, gloss: [correct, proper, lawful], parts: [lag, ug], tier: core}
+- lemma: brask
+  pos: noun
+  class: inanimate
+  gloss: [danger, peril]
+  notes: "Thiolden is known for its brask: evolved beasts, undead and demons"
+  derived:
+  - {lemma: braskug, pos: adj, gloss: [dangerous, perilous]}
+  - {lemma: braskir, pos: noun, class: animate, gloss: [daredevil, danger-seeker]}
+- {lemma: kjoldug, pos: adj, gloss: [safe, well-warded], parts: [kjold, ug]}
+- {lemma: kraftug, pos: adj, gloss: [powerful, potent], parts: [kraft, ug]}
+- {lemma: runug, pos: adj, gloss: [secretive, mysterious], parts: [run, ug]}
+- {lemma: heida, pos: adj, gloss: [clear, cloudless], parts: [heid, a], register: old}
+
+# --- Speed ---
+- lemma: sprind
+  pos: adj
+  gloss: [fast, quick]
+  tier: core
+  derived:
+  - {lemma: sprinda, pos: verb, class: weak, gloss: [to hurry, to hasten]}
+  - {lemma: sprindeth, pos: noun, class: inanimate, gloss: [speed, haste]}
+- lemma: lemb
+  pos: adj
+  gloss: [slow]
+  tier: core
+  derived:
+  - {lemma: lemba, pos: verb, class: weak, gloss: [to linger, to stay, to dawdle]}
+  - {lemma: lembeth, pos: noun, class: inanimate, gloss: [slowness]}
+
+# --- Taste and sound ---
+- lemma: semm
+  pos: adj
+  gloss: [sweet]
+  derived:
+  - {lemma: semmeth, pos: noun, class: inanimate, gloss: [sweetness]}
+- lemma: ulsk
+  pos: adj
+  gloss: [bitter, sour]
+  derived:
+  - {lemma: ulsketh, pos: noun, class: inanimate, gloss: [bitterness]}
+- {lemma: vimug, pos: adj, gloss: [quiet, hushed], parts: [vim, ug]}

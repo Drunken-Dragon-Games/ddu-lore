@@ -1,0 +1,304 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: General actions
+field: actions
+contributor: Vledic#0001
+defaults: {layer: native, tier: common, status: ratified, epoch: old}
+context:
+- General verbs that belong to no single domain. All are weak (present -er, past -ade) unless marked otherwise.
+- "Compounds of a strong verb with a preposition keep the strong forms of the verb: ovagana 'to cross', past ovagon."
+- "Related verbs in other files include antha 'to breathe, to live', svafa 'to sleep', hyrla 'to hear', snytha 'to smell', glyna 'to look', tagga 'to touch', veka 'to wake' and flauga 'to fly' (04); kyfa 'to throw' (06); fjarna 'to freeze', brysa 'to blow' and ylva 'to flow' (07); lukka 'to close', skylla 'to wash', pringa 'to sew' and thrinna 'to climb stairs' (09); arla 'to row' and dela 'to share out' (10); dyska 'to play', prova 'to try' and skulta 'to lead' (03); elga 'to choose' (08)."
+
+entries:
+# --- Body actions ---
+- {lemma: ulka, pos: verb, class: weak, gloss: [to vomit, to retch], tier: core}
+- {lemma: fytta, pos: verb, class: weak, gloss: [to spit], tier: core}
+- lemma: skjall
+  pos: noun
+  class: inanimate
+  gloss: [laughter, a laugh]
+  derived:
+  - {lemma: skjalla, pos: verb, class: weak, gloss: [to laugh], tier: core}
+  - {lemma: skjallug, pos: adj, gloss: [laughing, merry]}
+- {lemma: thumba, pos: verb, class: weak, gloss: [to swell], tier: core}
+- {lemma: sjupa, pos: verb, class: weak, gloss: [to suck, to sip], tier: core}
+- {lemma: dyrra, pos: verb, class: weak, gloss: [to shake, to tremble], derived: [{lemma: dyrr, pos: noun, class: inanimate, gloss: [tremor, shudder]}]}
+- {lemma: pifa, pos: verb, class: weak, gloss: [to whistle], derived: [{lemma: pif, pos: noun, class: inanimate, gloss: [a whistle]}]}
+- lemma: lomba
+  pos: verb
+  class: weak
+  gloss: [to bow (the head), to make obeisance]
+  derived:
+  - {lemma: lombning, pos: noun, class: inanimate, gloss: [a bow, obeisance], notes: "one bows to a Light; one raises a blade to a Vilkyr"}
+- lemma: ralm
+  pos: noun
+  class: inanimate
+  gloss: [dream]
+  tier: core
+  derived:
+  - {lemma: ralma, pos: verb, class: weak, gloss: [to dream], tier: core}
+  - {lemma: ralmir, pos: noun, class: animate, gloss: [dreamer]}
+  - {lemma: ralmug, pos: adj, gloss: [dreamy, far-away]}
+  - {lemma: nimralm, pos: noun, class: inanimate, gloss: [nightmare (lit. night-dream)], parts: [nim, ralm]}
+
+# --- Posture and rest ---
+- lemma: sjota
+  pos: verb
+  class: weak
+  gloss: [to sit]
+  tier: core
+  derived:
+  - {lemma: sjot, pos: noun, class: inanimate, gloss: [stool, low seat]}
+  - {lemma: sjotning, pos: noun, class: inanimate, gloss: [sitting, session (of a council)]}
+  - {lemma: drottsjot, pos: noun, class: inanimate, gloss: [throne (lit. ruler-seat)], parts: [drott, sjot]}
+- lemma: stima
+  pos: verb
+  class: weak
+  gloss: [to stand]
+  tier: core
+  derived:
+  - {lemma: stimning, pos: noun, class: inanimate, gloss: [stance, standing]}
+- lemma: lorna
+  pos: verb
+  class: weak
+  gloss: [to lie down, to recline]
+  tier: core
+  derived:
+  - {lemma: lorning, pos: noun, class: inanimate, gloss: [rest, repose]}
+  - {lemma: lornheim, pos: noun, class: inanimate, gloss: [bedchamber], parts: [lorna, heim]}
+- {lemma: svarpa, pos: verb, class: weak, gloss: [to hang, to dangle]}
+- lemma: stemba
+  pos: verb
+  class: weak
+  gloss: [to stop, to halt]
+  derived:
+  - {lemma: stemb, pos: noun, class: inanimate, gloss: [halt, stop]}
+
+# --- Handling things ---
+- lemma: kroma
+  pos: verb
+  class: weak
+  gloss: [to hold, to grasp]
+  tier: core
+  derived:
+  - {lemma: kromning, pos: noun, class: inanimate, gloss: [grip, hold]}
+- lemma: pjaka
+  pos: verb
+  class: weak
+  gloss: [to squeeze, to press]
+  tier: core
+  derived:
+  - {lemma: pjakning, pos: noun, class: inanimate, gloss: [pressure, a squeeze]}
+- {lemma: nugga, pos: verb, class: weak, gloss: [to rub, to chafe], tier: core}
+- {lemma: sverra, pos: verb, class: weak, gloss: [to wipe], tier: core}
+- lemma: draula
+  pos: verb
+  class: weak
+  gloss: [to pull, to drag]
+  tier: core
+  derived:
+  - {lemma: draulir, pos: noun, class: animate, gloss: [hauler]}
+- lemma: snerp
+  pos: noun
+  class: inanimate
+  gloss: [knot]
+  derived:
+  - {lemma: snerpa, pos: verb, class: weak, gloss: [to tie, to knot], tier: core}
+- lemma: snarva
+  pos: verb
+  class: weak
+  gloss: [to turn]
+  tier: core
+  derived:
+  - {lemma: snarvning, pos: noun, class: inanimate, gloss: [turning, a bend (in a road or canal)]}
+- {lemma: skilva, pos: verb, class: weak, gloss: [to split, to cleave], tier: core, derived: [{lemma: skilv, pos: noun, class: inanimate, gloss: [split, cleft]}]}
+- {lemma: yrpa, pos: verb, class: weak, gloss: [to bend], derived: [{lemma: yrp, pos: noun, class: inanimate, gloss: [a bend, a curve]}]}
+- {lemma: thella, pos: verb, class: weak, gloss: [to put, to place, to set], derived: [{lemma: thellning, pos: noun, class: inanimate, gloss: [placement, setting]}]}
+- {lemma: ausa, pos: verb, class: weak, gloss: [to pour, to ladle]}
+- {lemma: trokka, pos: verb, class: weak, gloss: [to knock], derived: [{lemma: trokk, pos: noun, class: inanimate, gloss: [a knock]}]}
+- {lemma: falda, pos: verb, class: weak, gloss: [to fold], parts: [fald], notes: "verb from fald 'fold, quarter'"}
+- lemma: luppa
+  pos: verb
+  class: weak
+  gloss: [to open]
+  tier: core
+  derived:
+  - {lemma: luppad, pos: adj, gloss: [open, opened]}
+  - {lemma: luppning, pos: noun, class: inanimate, gloss: [opening, gap]}
+- lemma: ferma
+  pos: verb
+  class: weak
+  gloss: [to carry, to bear]
+  tier: core
+  derived:
+  - {lemma: fermir, pos: noun, class: animate, gloss: [porter, carrier]}
+  - {lemma: fermskei, pos: noun, class: inanimate, gloss: [cargo boat], parts: [ferma, skei]}
+- {lemma: ymsa, pos: verb, class: weak, gloss: [to bring, to fetch], tier: core, derived: [{lemma: ymsir, pos: noun, class: animate, gloss: [fetcher, errand-runner]}]}
+- {lemma: hela, pos: verb, class: weak, gloss: [to mend, to make whole], parts: [hel], derived: [{lemma: helning, pos: noun, class: inanimate, gloss: [mending, repair]}]}
+
+# --- Finding, keeping and losing ---
+- lemma: hytta
+  pos: verb
+  class: weak
+  gloss: [to find, to discover]
+  tier: core
+  derived:
+  - {lemma: hytt, pos: noun, class: inanimate, gloss: [a find, discovery]}
+  - {lemma: hyttir, pos: noun, class: animate, gloss: [finder, discoverer]}
+- lemma: myska
+  pos: verb
+  class: weak
+  gloss: [to lose]
+  tier: core
+  derived:
+  - {lemma: myskning, pos: noun, class: inanimate, gloss: [loss]}
+- {lemma: varda, pos: verb, class: weak, gloss: [to keep, to look after], parts: [vard]}
+- lemma: gyma
+  pos: verb
+  class: weak
+  gloss: [to hide, to conceal]
+  derived:
+  - {lemma: gymad, pos: adj, gloss: [hidden, concealed]}
+  - {lemma: gymheim, pos: noun, class: inanimate, gloss: [hideout, hidden refuge], parts: [gyma, heim], notes: "the Thieves Guild's ruin of Grad'kirnin is called their gymheim"}
+- {lemma: daga, pos: verb, class: weak, gloss: [to show, to reveal (lit. to bring to day)], parts: [dag], derived: [{lemma: dagning, pos: noun, class: inanimate, gloss: [revelation, showing]}]}
+
+# --- Going and moving ---
+- lemma: dresta
+  pos: verb
+  class: weak
+  gloss: [to leave, to depart]
+  tier: core
+  derived:
+  - {lemma: drest, pos: noun, class: inanimate, gloss: [departure]}
+- {lemma: ovagana, pos: verb, class: strong, gloss: [to cross, to go across], parts: [ova, gana], forms: {past: ovagon, participle: ovaganen}}
+- {lemma: inn-gana, pos: verb, class: strong, gloss: [to enter, to go in], parts: [inn, gana], forms: {past: inn-gon, participle: inn-ganen}, notes: "hyphen because n + g would be misread as ng (ORTH-03)"}
+- {lemma: utegana, pos: verb, class: strong, gloss: [to go out, to exit], parts: [ute, gana], forms: {past: utegon, participle: uteganen}}
+- lemma: heimsa
+  pos: verb
+  class: weak
+  gloss: [to return home]
+  derived:
+  - {lemma: heimsning, pos: noun, class: inanimate, gloss: [homecoming]}
+- lemma: yrsa
+  pos: verb
+  class: weak
+  gloss: [to rise, to ascend]
+  tier: core
+  derived:
+  - {lemma: yrsning, pos: noun, class: inanimate, gloss: [ascent, rising]}
+- lemma: skulpa
+  pos: verb
+  class: weak
+  gloss: [to jump, to leap]
+  tier: core
+  derived:
+  - {lemma: skulp, pos: noun, class: inanimate, gloss: [a leap, a jump]}
+- {lemma: byrga, pos: verb, class: weak, gloss: [to float, to drift (on water)], tier: core}
+- lemma: sjomma
+  pos: verb
+  class: weak
+  gloss: [to swim]
+  tier: core
+  derived:
+  - {lemma: sjommir, pos: noun, class: animate, gloss: [swimmer]}
+- lemma: byra
+  pos: verb
+  class: weak
+  gloss: [to sail]
+  derived:
+  - {lemma: byrir, pos: noun, class: animate, gloss: [sailor]}
+  - {lemma: byrskei, pos: noun, class: inanimate, gloss: [sailing ship], parts: [byra, skei]}
+- lemma: voga
+  pos: verb
+  class: weak
+  gloss: [to row a canal boat]
+  layer: kedre
+  epoch: contact
+  register: starisund
+  etymology: "Kedre vogare 'to row'"
+  notes: "the Auristar word; arla is the general verb 'to row'"
+  derived:
+  - {lemma: vogir, pos: noun, class: animate, gloss: [canal oarsman, boatman of the Auristar canals]}
+- lemma: hyda
+  pos: verb
+  class: weak
+  gloss: [to meet, to encounter]
+  tier: core
+  derived:
+  - {lemma: hydning, pos: noun, class: inanimate, gloss: [meeting, encounter]}
+- {lemma: ganda, pos: verb, class: weak, gloss: [to send (on the road)], parts: [gand], derived: [{lemma: gandning, pos: noun, class: inanimate, gloss: [dispatch, sending]}]}
+
+# --- Doing and working ---
+- lemma: tharv
+  pos: noun
+  class: inanimate
+  gloss: [work, labour, toil]
+  tier: core
+  notes: "sacred in Auristar, where the faith exalts the individual through work, sacrifice and dedication"
+  derived:
+  - {lemma: tharva, pos: verb, class: weak, gloss: [to work, to toil], tier: core}
+  - {lemma: tharvir, pos: noun, class: animate, gloss: [worker, labourer]}
+  - {lemma: tharvug, pos: adj, gloss: [hard-working, diligent]}
+  - {lemma: tharvdag, pos: noun, class: inanimate, gloss: [working day], parts: [tharv, dag]}
+- lemma: jolm
+  pos: noun
+  class: inanimate
+  gloss: [help, aid]
+  tier: core
+  derived:
+  - {lemma: jolma, pos: verb, class: weak, gloss: [to help, to aid], tier: core}
+  - {lemma: jolmir, pos: noun, class: animate, gloss: [helper, ally], notes: "Aztuneio, Ally of Beasts"}
+  - {lemma: jolmug, pos: adj, gloss: [helpful]}
+- lemma: ynda
+  pos: verb
+  class: weak
+  gloss: [to use, to employ]
+  tier: core
+  derived:
+  - {lemma: yndning, pos: noun, class: inanimate, gloss: [use, usage]}
+  - {lemma: yndug, pos: adj, gloss: [useful]}
+  - {lemma: yndnuth, pos: adj, gloss: [useless]}
+- lemma: gynn
+  pos: noun
+  class: inanimate
+  gloss: [beginning, start]
+  tier: core
+  derived:
+  - {lemma: gynna, pos: verb, class: weak, gloss: [to begin, to start], tier: core}
+- lemma: ulm
+  pos: noun
+  class: inanimate
+  gloss: [end, close]
+  tier: core
+  derived:
+  - {lemma: ulma, pos: verb, class: weak, gloss: [to end, to finish], tier: core}
+  - {lemma: ulmnuth, pos: adj, gloss: [endless]}
+- lemma: skerv
+  pos: noun
+  class: inanimate
+  gloss: [change, shift]
+  tier: core
+  derived:
+  - {lemma: skerva, pos: verb, class: weak, gloss: [to change, to alter], tier: core}
+  - {lemma: skervug, pos: adj, gloss: [changeable, fickle]}
+- lemma: thyrm
+  pos: noun
+  class: inanimate
+  gloss: [event, happening]
+  derived:
+  - {lemma: thyrma, pos: verb, class: weak, gloss: [to happen, to befall]}
+- lemma: hjund
+  pos: noun
+  class: inanimate
+  gloss: [wish]
+  derived:
+  - {lemma: hjunda, pos: verb, class: weak, gloss: [to wish]}
+- lemma: skyrr
+  pos: noun
+  class: inanimate
+  gloss: [ban, prohibition]
+  notes: "runkrafti skyrr 'the ban on rune magic' in Auristar"
+  derived:
+  - {lemma: skyrra, pos: verb, class: weak, gloss: [to forbid, to ban]}
+  - {lemma: skyrrad, pos: adj, gloss: [forbidden]}

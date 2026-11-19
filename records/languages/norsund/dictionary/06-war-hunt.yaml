@@ -1,0 +1,321 @@
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: War, guard and hunt
+field: war
+contributor: Vledic#0001
+defaults: {layer: native, tier: common, status: ratified, epoch: old}
+context:
+- Weapons and armour, fighting, siegecraft, ranks, oaths, victory and defeat, and the Vilkyren's hunting craft.
+- Siege engines and fortresses are Kedre loans, because the Vairean army brought them in the conquest (37 to 51 a.v.e.).
+- Blade (kyr), axe (hask), shield (kjold) and guard (kjolda) are in 01-core-roots.yaml.
+
+entries:
+# --- War and peace ---
+- lemma: skrath
+  pos: noun
+  class: inanimate
+  gloss: [war]
+  tier: core
+  derived:
+  - {lemma: skratha, pos: verb, class: weak, gloss: [to wage war, to make war]}
+  - {lemma: skrathir, pos: noun, class: animate, gloss: [warrior]}
+  - {lemma: skrathug, pos: adj, gloss: [warlike], parts: [skrath, ug]}
+  - {lemma: skrathlys, pos: noun, class: inanimate, gloss: [sword (kenning, lit. war-light)], parts: [skrath, lys], register: poetic}
+  - {lemma: skrathmur, pos: noun, class: inanimate, gloss: [shield-wall (lit. war-wall)], parts: [skrath, mur]}
+- lemma: hjal
+  pos: noun
+  class: inanimate
+  gloss: [peace]
+  tier: core
+  derived:
+  - {lemma: hjala, pos: verb, class: weak, gloss: [to make peace]}
+  - {lemma: hjalug, pos: adj, gloss: [peaceful], parts: [hjal, ug]}
+- lemma: brakk
+  pos: noun
+  class: inanimate
+  gloss: [battle, clash, fight]
+  derived:
+  - {lemma: brakka, pos: verb, class: weak, gloss: [to fight, to clash], tier: core}
+  - {lemma: brakkir, pos: noun, class: animate, gloss: [fighter]}
+  - {lemma: dovbrakk, pos: noun, class: inanimate, gloss: [duel (lit. two-fight)], parts: [dov, brakk]}
+- lemma: fylk
+  pos: noun
+  class: inanimate
+  gloss: [army, host, battle-line]
+  derived:
+  - {lemma: fylkir, pos: noun, class: animate, gloss: [soldier]}
+  - {lemma: fylkvard, pos: noun, class: animate, gloss: [commander, general], parts: [fylk, vard]}
+  - {lemma: ungfylkir, pos: noun, class: animate, gloss: [recruit], parts: [ung, fylkir]}
+  - {lemma: aldfylkir, pos: noun, class: animate, gloss: [veteran], parts: [ald, fylkir]}
+- {lemma: thalt, pos: noun, class: inanimate, gloss: [camp, war camp], notes: "Tyr's forward camps far from the capital"}
+
+# --- Ranks and offices ---
+- {lemma: marvard, pos: noun, class: animate, gloss: [marshal], parts: [mar, vard], notes: "Marendil serves the marvard of Auristar's north fold"}
+- {lemma: kjoldvard, pos: noun, class: animate, gloss: [captain of the guard], parts: [kjold, vard]}
+- {lemma: nimkjolder, pos: noun, class: animate, gloss: [night-watchman, member of the Nimkjold], parts: [nim, kjolder]}
+- {lemma: kjoldtur, pos: noun, class: inanimate, gloss: [watchtower], parts: [kjold, tur]}
+- lemma: thraum
+  pos: noun
+  class: inanimate
+  gloss: [banner, standard]
+  derived:
+  - {lemma: thraumvard, pos: noun, class: animate, gloss: [standard-bearer], parts: [thraum, vard], notes: "in Vale's tale the thraumvarden fled and left their soldiers to die"}
+
+# --- Weapons ---
+- lemma: thryn
+  pos: noun
+  class: inanimate
+  gloss: [weapon]
+  tier: core
+  derived:
+  - {lemma: thryna, pos: verb, class: weak, gloss: [to arm]}
+  - {lemma: thrynnuth, pos: adj, gloss: [unarmed], parts: [thryn, nuth]}
+- lemma: hyrsk
+  pos: noun
+  class: inanimate
+  gloss: [spear]
+  tier: core
+  derived:
+  - {lemma: hyrska, pos: verb, class: weak, gloss: [to spear, to thrust with a spear]}
+  - {lemma: hyrskir, pos: noun, class: animate, gloss: [spearman]}
+  - {lemma: hyrsksund, pos: noun, class: inanimate, gloss: [battle (kenning, lit. spear-song)], parts: [hyrsk, sund], register: poetic}
+  - {lemma: kyfhyrsk, pos: noun, class: inanimate, gloss: [javelin (lit. throwing spear)], parts: [kyf, hyrsk]}
+- lemma: bjug
+  pos: noun
+  class: inanimate
+  gloss: [bow]
+  tier: core
+  derived:
+  - {lemma: bjugung, pos: noun, class: inanimate, gloss: [arrow (kenning, lit. bow's child)], parts: [bjug, ung], register: poetic}
+- lemma: pil
+  pos: noun
+  class: inanimate
+  gloss: [arrow]
+  tier: core
+  derived:
+  - {lemma: pila, pos: verb, class: weak, gloss: [to shoot (with a bow)]}
+  - {lemma: pilir, pos: noun, class: animate, gloss: [archer]}
+  - {lemma: pilheim, pos: noun, class: inanimate, gloss: [quiver (lit. arrow-home)], parts: [pil, heim]}
+- lemma: kyfa
+  pos: verb
+  class: weak
+  gloss: [to throw, to hurl]
+  tier: core
+  derived:
+  - {lemma: kyf, pos: noun, class: inanimate, gloss: [a throw, a cast]}
+- {lemma: kylf, pos: noun, class: inanimate, gloss: [club, mace]}
+- lemma: brodd
+  pos: noun
+  class: inanimate
+  gloss: [spike, point, prong]
+  derived:
+  - {lemma: brodda, pos: verb, class: weak, gloss: [to stab, to pierce], tier: core}
+
+# --- Armour ---
+- lemma: varn
+  pos: noun
+  class: inanimate
+  gloss: [armour]
+  derived:
+  - {lemma: varna, pos: verb, class: weak, gloss: [to armour, to put on armour]}
+  - {lemma: varnad, pos: adj, gloss: [armoured], parts: [varna, ad]}
+  - {lemma: varnnuth, pos: adj, gloss: [unarmoured], parts: [varn, nuth]}
+  - {lemma: barmvarn, pos: noun, class: inanimate, gloss: [breastplate], parts: [barm, varn], notes: "the Auristar breastplate carries scale details with the seven stars"}
+  - {lemma: skuldvarn, pos: noun, class: inanimate, gloss: [pauldron, shoulder guard], parts: [skuld, varn]}
+  - {lemma: vristvarn, pos: noun, class: inanimate, gloss: [bracer, wrist guard], parts: [vrist, varn]}
+  - {lemma: lunkvarn, pos: noun, class: inanimate, gloss: [greave, leg guard], parts: [lunk, varn]}
+  - {lemma: thammvarn, pos: noun, class: inanimate, gloss: [gauntlet], parts: [thamm, varn]}
+  - {lemma: krethvarn, pos: noun, class: inanimate, gloss: [ring mail, chain mail], parts: [kreth, varn]}
+  - {lemma: flysvarn, pos: noun, class: inanimate, gloss: [scale armour], parts: [flys, varn]}
+- {lemma: kumb, pos: noun, class: inanimate, gloss: [helmet, helm]}
+- {lemma: thammkjold, pos: noun, class: inanimate, gloss: [buckler (lit. hand-shield)], parts: [thamm, kjold]}
+
+# --- Fighting ---
+- lemma: klakka
+  pos: verb
+  class: weak
+  gloss: [to hit, to strike]
+  tier: core
+  derived:
+  - {lemma: klakk, pos: noun, class: inanimate, gloss: [blow, strike]}
+- lemma: snitha
+  pos: verb
+  class: weak
+  gloss: [to cut, to slash]
+  tier: core
+  derived:
+  - {lemma: snith, pos: noun, class: inanimate, gloss: [a cut, a slash]}
+- lemma: valda
+  pos: verb
+  class: weak
+  gloss: [to slay, to kill]
+  tier: core
+  derived:
+  - {lemma: val, pos: noun, class: animate, gloss: [the slain, the fallen in battle], notes: "a collective; the raven is valflaun, 'bird of the slain'"}
+  - {lemma: valdir, pos: noun, class: animate, gloss: [slayer, killer]}
+  - {lemma: nimval, pos: noun, class: inanimate, gloss: [murder (lit. night-slaying)], parts: [nim, val]}
+  - {lemma: nimvaldir, pos: noun, class: animate, gloss: [murderer], parts: [nim, valdir], notes: "the murder of the Third Light was a nimval"}
+- lemma: skerra
+  pos: verb
+  class: weak
+  gloss: [to attack, to assault]
+  derived:
+  - {lemma: skerr, pos: noun, class: inanimate, gloss: [attack, assault, raid]}
+  - {lemma: skerrir, pos: noun, class: animate, gloss: [attacker]}
+  - {lemma: vimskerr, pos: noun, class: inanimate, gloss: [ambush (lit. whisper-attack)], parts: [vim, skerr]}
+- lemma: vyska
+  pos: verb
+  class: weak
+  gloss: [to flee, to run away]
+  derived:
+  - {lemma: vyskir, pos: noun, class: animate, gloss: [fugitive, deserter]}
+  - {lemma: vyskning, pos: noun, class: inanimate, gloss: [flight, retreat, rout]}
+- lemma: fjeth
+  pos: noun
+  class: inanimate
+  gloss: [fetter, chain, shackle]
+  derived:
+  - {lemma: fjetha, pos: verb, class: weak, gloss: [to capture, to fetter]}
+  - {lemma: fjethling, pos: noun, class: animate, gloss: [prisoner, captive], parts: [fjeth, ling]}
+- lemma: lyta
+  pos: verb
+  class: weak
+  gloss: [to surrender, to yield, to bow down]
+  derived:
+  - {lemma: lytning, pos: noun, class: inanimate, gloss: [surrender]}
+- lemma: ryva
+  pos: verb
+  class: weak
+  gloss: [to destroy, to wreck]
+  derived:
+  - {lemma: ryvning, pos: noun, class: inanimate, gloss: [destruction]}
+  - {lemma: ryvheim, pos: noun, class: inanimate, gloss: [ruin, ruined hold], parts: [ryv, heim], notes: "Grad'kirnin, where Vale's guild settled, is a ryvheim"}
+
+# --- Siegecraft (imperial) ---
+- lemma: obsid
+  pos: noun
+  class: inanimate
+  gloss: [siege]
+  layer: kedre
+  epoch: contact
+  etymology: "Kedre obsidiu"
+  notes: "the thirteen-year siege of Marheim"
+  derived:
+  - {lemma: obsida, pos: verb, class: weak, gloss: [to besiege], layer: kedre, epoch: contact}
+- {lemma: kastell, pos: noun, class: inanimate, gloss: [fortress, castle], layer: kedre, epoch: contact, etymology: "Kedre kastellu"}
+- {lemma: makin, pos: noun, class: inanimate, gloss: [siege engine], layer: kedre, epoch: contact, etymology: "Kedre makina"}
+- {lemma: balist, pos: noun, class: inanimate, gloss: [ballista, catapult], layer: kedre, epoch: contact, etymology: "Kedre balista"}
+- {lemma: runbrast, pos: noun, class: inanimate, gloss: [rune-burst, alchemical explosive], parts: [run, brast], epoch: contact, notes: "Rundir Voidet's rune explosives that broke the walls of Marheim and raised its dead (50 a.v.e.)"}
+
+# --- Victory, defeat and honour ---
+- lemma: vyng
+  pos: noun
+  class: inanimate
+  gloss: [victory]
+  tier: core
+  derived:
+  - {lemma: vynga, pos: verb, class: weak, gloss: [to win, to conquer]}
+  - {lemma: vyngir, pos: noun, class: animate, gloss: [victor, champion], notes: "the champions of the Stevthrask are vyngiren"}
+  - {lemma: vyngug, pos: adj, gloss: [victorious], parts: [vyng, ug]}
+  - {lemma: vyngning, pos: noun, class: inanimate, gloss: [conquest]}
+- {lemma: dolning, pos: noun, class: inanimate, gloss: [defeat, downfall (lit. falling)], parts: [dola, ning]}
+- lemma: veth
+  pos: noun
+  class: inanimate
+  gloss: [oath, vow]
+  etymology: "back-formation from vetha 'to bind by oath'"
+  derived:
+  - {lemma: vethbrestir, pos: noun, class: animate, gloss: [oathbreaker], parts: [veth, brestir]}
+- lemma: vrek
+  pos: noun
+  class: inanimate
+  gloss: [vengeance, repayment, blood-price]
+  derived:
+  - {lemma: vreka, pos: verb, class: weak, gloss: [to avenge, to settle a score]}
+  - {lemma: vrekir, pos: noun, class: animate, gloss: [avenger], notes: "Vale is a vrekir against the lords who abandoned his order"}
+- lemma: ranst
+  pos: noun
+  class: inanimate
+  gloss: [loot, plunder, spoils]
+  derived:
+  - {lemma: ransta, pos: verb, class: weak, gloss: [to plunder, to raid]}
+  - {lemma: ranstir, pos: noun, class: animate, gloss: [raider, plunderer]}
+- {lemma: hyrnsund, pos: noun, class: inanimate, gloss: [war-horn call, battle signal], parts: [hyrn, sund]}
+- {lemma: hjalveth, pos: noun, class: inanimate, gloss: [peace treaty (lit. peace-oath)], parts: [hjal, veth]}
+- {lemma: brodveth, pos: noun, class: inanimate, gloss: [alliance (lit. sibling-oath)], parts: [brod, veth], notes: "Rechtar's alliance with the dwarves of Karhak'Modan that opened the Pass of Kharak"}
+- {lemma: ljometh, pos: noun, class: inanimate, gloss: [glory], parts: [ljom, eth]}
+- lemma: nera
+  pos: verb
+  class: weak
+  gloss: [to rescue, to save]
+  derived:
+  - {lemma: nerir, pos: noun, class: animate, gloss: [rescuer, saviour], notes: "Astrid is Gadrull's nerir"}
+  - {lemma: nerning, pos: noun, class: inanimate, gloss: [rescue]}
+- lemma: tramma
+  pos: verb
+  class: weak
+  gloss: [to march]
+  derived:
+  - {lemma: trammning, pos: noun, class: inanimate, gloss: [a march]}
+- {lemma: haskir, pos: noun, class: animate, gloss: [axe-fighter], parts: [hask, ir], notes: "Vimtyr, the Whispering Axe, is a haskir"}
+- {lemma: kyrir, pos: noun, class: animate, gloss: [swordsman, swordswoman], parts: [kyr, ir]}
+- {lemma: slauv, pos: noun, class: inanimate, gloss: [sling]}
+- {lemma: thrynheim, pos: noun, class: inanimate, gloss: [armoury], parts: [thryn, heim]}
+- {lemma: varnsmidir, pos: noun, class: animate, gloss: [armourer], parts: [varn, smidir]}
+- {lemma: pilbrodd, pos: noun, class: inanimate, gloss: [arrowhead], parts: [pil, brodd]}
+- {lemma: brakkvang, pos: noun, class: inanimate, gloss: [battlefield], parts: [brakk, vang]}
+- {lemma: kyrvard, pos: noun, class: animate, gloss: [swordmaster, master-at-arms], parts: [kyr, vard]}
+
+# --- The hunt ---
+- {lemma: thiarkning, pos: noun, class: inanimate, gloss: [the hunt, a hunt], parts: [thiarka, ning]}
+- lemma: slod
+  pos: noun
+  class: inanimate
+  gloss: [trail, track, spoor]
+  derived:
+  - {lemma: blythslod, pos: noun, class: inanimate, gloss: [blood-trail], parts: [blyth, slod]}
+  - {lemma: slodnuth, pos: adj, gloss: [trackless], parts: [slod, nuth]}
+- lemma: byth
+  pos: noun
+  class: animate
+  gloss: [prey, quarry]
+  derived:
+  - {lemma: thiarkthiur, pos: noun, class: animate, gloss: [predator (lit. hunting beast)], parts: [thiark, thiur]}
+- {lemma: thiarkhyrn, pos: noun, class: inanimate, gloss: [hunting horn], parts: [thiark, hyrn]}
+- {lemma: thiarkrakk, pos: noun, class: animate, gloss: [hunting dog], parts: [thiark, rakk]}
+- lemma: lurpa
+  pos: verb
+  class: weak
+  gloss: [to stalk, to creep up on]
+  derived:
+  - {lemma: lurpir, pos: noun, class: animate, gloss: [stalker]}
+- lemma: glupp
+  pos: noun
+  class: inanimate
+  gloss: [trap, snare, pit]
+  derived:
+  - {lemma: gluppa, pos: verb, class: weak, gloss: [to trap, to snare]}
+  - {lemma: gluppir, pos: noun, class: animate, gloss: [trapper]}
+- lemma: sneb
+  pos: noun
+  class: inanimate
+  gloss: [bait, lure]
+  derived:
+  - {lemma: sneba, pos: verb, class: weak, gloss: [to lure, to bait]}
+- lemma: glod
+  pos: noun
+  class: inanimate
+  gloss: [aura, the glow of a magic-filled creature]
+  notes: "the Vilkyren see the glod of magic-infused beasts and the trails they leave"
+  derived:
+  - {lemma: glodug, pos: adj, gloss: [aura-bright, magic-infused], parts: [glod, ug]}
+  - {lemma: glodglyn, pos: noun, class: inanimate, gloss: [aura-sight, the Visions of the Hunt], parts: [glod, glyn], notes: "the Vilkyren gift"}
+- lemma: thydd
+  pos: noun
+  class: inanimate
+  gloss: [trophy]
+  notes: "Vale wears a thydd from every lord he has robbed"
+  derived:
+  - {lemma: glodthydd, pos: noun, class: inanimate, gloss: [aura-trophy (a slain beast's aura worked into arms or armour)], parts: [glod, thydd], notes: "Vilkyren decorate weapons and armour with the auras of creatures they have slain"}
+  - {lemma: thydda, pos: verb, class: weak, gloss: [to take a trophy, to adorn with trophies]}

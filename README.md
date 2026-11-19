@@ -14,6 +14,10 @@ This repo allows the creation of alternate timelines by creating branches that f
 
 If GitHub or the process is too daunting for you but you still want to contribute your ideas, reach out to fellow Innkeeper or Lorekeeper in [Drunken Dragon Discord](https://discord.gg/drunkendragon) and they'll assist you to the best of their abilities. We promise not to bite.
 
+## Visual Design
+
+Concept boards, art direction and the tooling to generate more concept art live in [`visual-design/`](visual-design/README.md). They are design exploration, not canon: anything a board adds to the lore is listed there as a proposal and goes through the same review as any other record.
+
 ## Git Repository Usage
 
 The use of a Git repository to manage the lore of The Drunken Dragon Universe ensures that the universe remains consistent and coherent. The use of versioning and a hierarchical structure allows for the easy addition of new facts and subtopics while ensuring that the universe remains consistent over time.
@@ -73,7 +77,7 @@ document: fact-records/v1
 topic: The Drunken Dragon Universe
 contributor: Vledic#0001
 context: 
-- Dates use the Varian Imperial System of meassuring years, where year 0 is the founding of the Varian Empire
+- Dates use the Vairean Imperial System of meassuring years, where year 0 is the founding of the Vairean Empire
 facts:
 - Gods exist and are morally grey.
 subtopics:
@@ -84,11 +88,106 @@ subtopics:
 - import: ./magic-rules
 ```
 
-### Fictional Language Grammar Records
+### Fictional Language Records
 
-To document the grammar of fictional languages in The Drunken Dragon Universe, we use the following YAML structure:
+The languages of the universe live in `records/languages/`. Norsund, the common tongue of Thiolden, is the first fully documented one. Its readable guides are in `docs/languages/`, and the tools that translate, check and render it are in `tools/` (see `tools/README.md`).
 
-### Fictional Language Dictionary Records
+```
+records/languages/
+  languages.yaml              # overview of the languages of Valia (fact-record/v1)
+  norsund/
+    norsund.yaml              # facts about Norsund and the decisions behind it
+    grammar/                  # lang-grammar/v1, one file per topic (01-phonology ... 14-poetics)
+    dictionary/               # lang-dictionary/v1, one file per meaning field
+    texts/                    # lang-text/v1, translated and glossed texts
+  old-norsund/  kedre/        # related languages, same file types
+  scripts/                    # lang-script/v1: runes (runar) and Lysrit
+```
+
+Every language file has the same header as a fact record (`document`, `topic`, `contributor`, `context`) plus `language` and `version`.
+
+#### Fictional Language Grammar Records (`lang-grammar/v1`)
+
+```yaml
+document: lang-grammar/v1
+language: norsund
+version: 1.0.0
+topic: Nouns
+contributor: <discord_name>
+status: ratified              # proposed | ratified
+context:
+- <context_for_reader>
+morphology:                   # optional machine-readable tables used by tools/
+  animate: {plural: en, definite: in, definite_plural: ene}
+rules:
+- id: NOUN-02                 # stable id, used to cite the rule
+  title: Plural
+  rule: <plain-English statement of the rule>
+  examples:
+  - {form: Vilkyr-en, gloss: free.sword-PL.AN, translation: free swords}
+tables:                       # optional paradigm tables
+- {id: NOUN-T1, title: <title>, columns: [...], rows: [[...]]}
+```
+
+Examples are glossed with the [Leipzig Glossing Rules](https://www.eva.mpg.de/lingua/resources/glossing-rules.php): hyphens split morphemes in `form`, and `gloss` has a matching label for each part.
+
+#### Fictional Language Dictionary Records (`lang-dictionary/v1`)
+
+```yaml
+document: lang-dictionary/v1
+language: norsund
+version: 1.0.0
+topic: War and hunt
+field: war                    # meaning field of this file
+contributor: <discord_name>
+defaults: {layer: native, tier: common, status: ratified}   # applied to every entry
+entries:
+- lemma: kjold                # required: dictionary form
+  pos: noun                   # required: noun verb adj adv pron det prep conj part num interj affix name
+  class: inanimate            # nouns: animate | inanimate; verbs: weak | strong | irregular | modal | auxiliary
+  gloss: [ward, guard-post, shield]   # required: English meanings
+  forms: {plural: kjoldar}    # only irregular or notable forms
+  parts: [nim, kjold]         # compound parts
+  etymology: Old Norsund kjold < Proto-Valian *geldu
+  layer: native               # native | kedre | kedre-learned | old-norsund | foreign
+  epoch: proto                # proto | old | contact | modern: when it entered the language
+  register: common            # common | starisund | old | poetic | learned | cant | sacred | kullmyr | nurmyr
+  tier: core                  # core (frozen) | common | sandbox (unratified, usable if labelled)
+  status: ratified            # proposed | ratified
+  attested: [Nimkjold, Kjoldmur]   # canon names or records that use it
+  notes: <usage, culture, idioms>
+  derived:                    # words built from this one, same fields
+  - {lemma: kjolda, pos: verb, class: weak, gloss: [to guard]}
+```
+
+#### Fictional Language Text Records (`lang-text/v1`)
+
+```yaml
+document: lang-text/v1
+language: norsund
+version: 1.0.0
+topic: Sample texts
+contributor: <discord_name>
+texts:
+- id: gate-inscription
+  title: Gate inscription of the Kjoldmur
+  register: carved
+  source: records/thiolden/auristar/auristar.yaml
+  context: <where and why it is said or written>
+  lines:
+  - text: Fjol starin lyser run ne.
+    morphemes: fjol star-in lys-er run ne
+    gloss: under star-DEF shine-PRS rune NEG      # one gloss token per morpheme token
+    translation: Beneath the star, no rune shines.
+```
+
+#### Writing System Records (`lang-script/v1`)
+
+Each script (for example `records/languages/scripts/lysrit.yaml`) lists its type, direction, history and every glyph with its sound value and stroke geometry, so that tools and fonts can draw it.
+
+#### Adding a word
+
+Propose words by pull request and run `node tools/cli.mjs validate` first. The process, tiers and review steps are in `docs/languages/norsund/contributing-words.md`.
 
 ### Versioning
 
